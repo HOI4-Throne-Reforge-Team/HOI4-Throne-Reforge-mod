@@ -1,0 +1,7 @@
+# 行尾符保护配置
+* -text
+*.dds binary
+*.ogg binary
+*.tga binary
+*.bmp binary
+*.ttf binary

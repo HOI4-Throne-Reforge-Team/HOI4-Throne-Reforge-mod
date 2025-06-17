@@ -1,0 +1,4 @@
+# 创建pre-push钩子
+#/bin/sh
+git fetch origin
+git rebase origin/main
