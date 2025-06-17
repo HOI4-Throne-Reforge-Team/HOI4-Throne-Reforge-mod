@@ -40,7 +40,7 @@ We embrace community creativity within these guidelines:
 > *"History is written collectively - your creations shall make France eternal!"*
 
 ## 🔧 Current Development Status
-- **Core Systems**: Imperial legitimacy mechanics (80% complete)
+- **Core Systems**: Imperial legitimacy mechanics (0% complete)
 - **Focus Trees**: France (30%), German states (20%), Britain (10%)
 - **Events**: 120+ written (10% implemented)
 - **Assets**: Era-specific uniforms & icons (5% complete)
