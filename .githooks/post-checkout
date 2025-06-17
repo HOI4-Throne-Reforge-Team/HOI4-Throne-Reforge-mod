@@ -1,6 +1,0 @@
-# 创建post-checkout钩子
-#/bin/sh
-git config core.autocrlf false
-git config core.filemode false
-git config core.ignorecase true
-git config pull.rebase true
