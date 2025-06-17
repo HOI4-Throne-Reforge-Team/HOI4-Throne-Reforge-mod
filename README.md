@@ -41,9 +41,9 @@ We embrace community creativity within these guidelines:
 
 ## 🔧 Current Development Status
 - **Core Systems**: Imperial legitimacy mechanics (80% complete)
-- **Focus Trees**: France (90%), German states (60%), Britain (40%)
-- **Events**: 120+ written (60% implemented)
-- **Assets**: Era-specific uniforms & icons (70% complete)
+- **Focus Trees**: France (30%), German states (20%), Britain (10%)
+- **Events**: 120+ written (10% implemented)
+- **Assets**: Era-specific uniforms & icons (5% complete)
 
 ## 📥 Installation (Test Builds)
 1. Download latest test build from [Releases](https://github.com/Aenyrag/HOI4-Throne-Reforge-mod/releases)
