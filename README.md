@@ -62,6 +62,4 @@ All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/license
 - Non-commercial use only
 - Derivatives must use same license
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Development-7289da)]()
-
 > *"The eagles triumphed at Sedan... but greater battles await in this unfinished world."*
