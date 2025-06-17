@@ -283,6 +283,23 @@ focus_tree = {
 ##################################################
 focus_tree = {
 	id = denmark_focus_3	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
 
 	focus = { #重整军备
 		id = DEN_chongzheng_junbei
@@ -399,6 +416,23 @@ focus_tree = {
 }	
 focus_tree = {
 	id = denmark_focus_4
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
 
 	focus = { #专注防御
 		id = DEN_bentu_fangyu
