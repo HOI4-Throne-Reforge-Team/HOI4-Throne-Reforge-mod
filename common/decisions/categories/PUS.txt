@@ -1,0 +1,11 @@
+Prussian_parliamentary_elections = {
+	icon = x
+	visible = {
+		tag = PUS
+		has_completed_focus = PUS_Review_domestic_political_situation
+	}
+	visible_when_empty = yes
+	available = {
+		has_completed_focus = PUS_Review_domestic_political_situation
+	}
+}

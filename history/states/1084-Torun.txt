@@ -1,0 +1,35 @@
+state={
+	id=1084
+	name="STATE_1084"
+	manpower = 313370
+	
+	state_category = city
+	history={
+		owner = PUS
+
+		victory_points = {
+			3295 5
+		}
+		victory_points = {
+			279 1
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = PUS
+		add_core_of = KSH
+		add_core_of = POL
+		1938.3.12 = {
+			add_claim_by = GER
+		}
+	}
+
+	provinces={
+		243 279 3295 6347 
+	}
+
+	local_supplies=0.0 
+}

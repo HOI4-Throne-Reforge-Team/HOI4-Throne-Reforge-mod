@@ -1,0 +1,5451 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			1080 = {
+				set_state_flag = GERland
+			}
+			1081 = {
+				set_state_flag = GERland
+			}
+			1084 = {
+				set_state_flag = GERland
+			}
+			982 = {
+				set_state_flag = GERland
+			}
+			1041 = {
+				set_state_flag = GERland
+			}
+			978 = {
+				set_state_flag = GERland
+			}
+			8 = {
+				set_state_flag = GERland
+			}
+			42 = {
+				set_state_flag = GERland
+			}
+			50 = {
+				set_state_flag = GERland
+			}
+			51 = {
+				set_state_flag = GERland
+			}
+			52 = {
+				set_state_flag = GERland
+			}
+			53 = {
+				set_state_flag = GERland
+			}
+			54 = {
+				set_state_flag = GERland
+			}
+			55 = {
+				set_state_flag = GERland
+			}
+			56 = {
+				set_state_flag = GERland
+			}
+			57 = {
+				set_state_flag = GERland
+			}
+			58 = {
+				set_state_flag = GERland
+			}
+			59 = {
+				set_state_flag = GERland
+			}
+			60 = {
+				set_state_flag = GERland
+			}
+			61 = {
+				set_state_flag = GERland
+			}
+			62 = {
+				set_state_flag = GERland
+			}
+			63 = {
+				set_state_flag = GERland
+			}
+			64 = {
+				set_state_flag = GERland
+			}
+			65 = {
+				set_state_flag = GERland
+			}
+			66 = {
+				set_state_flag = GERland
+			}
+			67 = {
+				set_state_flag = GERland
+			}
+			68 = {
+				set_state_flag = GERland
+			}
+			1043 = {
+				set_state_flag = GERland
+			}
+			1017 = {
+				set_state_flag = GERland
+			}
+			1018 = {
+				set_state_flag = GERland
+			}
+			1019 = {
+				set_state_flag = GERland
+			}
+			1020 = {
+				set_state_flag = GERland
+			}
+			1021 = {
+				set_state_flag = GERland
+			}
+			1022 = {
+				set_state_flag = GERland
+			}
+			1023 = {
+				set_state_flag = GERland
+			}
+			1024 = {
+				set_state_flag = GERland
+			}
+			989 = {
+				set_state_flag = GERland
+			}
+			1003 = {
+				set_state_flag = GERland
+			}
+			1046 = {
+				set_state_flag = GERland
+			}
+			990 = {
+				set_state_flag = GERland
+			}
+			992 = {
+				set_state_flag = GERland
+			}
+			909 = {
+				set_state_flag = GERland
+			}
+			912 = {
+				set_state_flag = GERland
+			}
+			86 = {
+				set_state_flag = GERland
+			}
+			85 = {
+				set_state_flag = GERland
+			}
+			762 = {
+				set_state_flag = GERland
+			}
+			763 = {
+				set_state_flag = GERland
+			}
+			188 = {
+				set_state_flag = GERland
+			}
+			807 = {
+				set_state_flag = GERland
+			}
+			5 = {
+				set_state_flag = GERland
+			}
+			69 = {
+				set_state_flag = GERland
+			}
+			9 = {
+				set_state_flag = GERland
+			}
+			972 = {
+				set_state_flag = GERland
+			}
+			72 = {
+				set_state_flag = GERland
+			}
+			74 = {
+				set_state_flag = GERland
+			}
+			75 = {
+				set_state_flag = GERland
+			}
+			4 = {
+				set_state_flag = GERland
+			}
+			976 = {
+				set_state_flag = GERland
+			}
+			152 = {
+				set_state_flag = GERland
+			}
+			153 = {
+				set_state_flag = GERland
+			}
+			853 = {
+				set_state_flag = GERland
+			}
+			848 = {
+				set_state_flag = GERland
+			}
+			102 = {
+				set_state_flag = GERland
+			}
+			39 = {
+				set_state_flag = GERland
+			}
+
+		}
+		
+	}
+	on_startup = {
+		effect = {
+			#FRA
+			set_variable = {
+			    global.FRA_GERbalance_978 = 180
+			}
+			set_variable = {
+				global.FRA_GERbalance_50 = 130
+			}
+			set_variable = {
+				global.FRA_GERbalance_52 = 30
+			}
+			set_variable = {
+				global.FRA_GERbalance_53 = 30
+			}
+			set_variable = {
+				global.FRA_GERbalance_54 = 120
+			}
+			set_variable = {
+				global.FRA_GERbalance_56 = 150
+			}
+			set_variable = {
+				global.FRA_GERbalance_57 = 150
+			}
+			set_variable = {
+				global.FRA_GERbalance_59 = 100
+			}
+			set_variable = {
+				global.FRA_GERbalance_HES = 180
+			}
+			set_variable = {
+				global.FRA_GERbalance_1043 = 260
+			}
+			set_variable = {
+				global.FRA_GERbalance_LAY = 280
+			}
+			set_variable = {
+				global.FRA_GERbalance_989 = 280
+			}
+			set_variable = {
+				global.FRA_GERbalance_28 = 300
+			}
+			set_variable = {
+				global.FRA_GERbalance_Thrall = 300
+			}
+			set_variable = {
+				global.FRA_GERbalance_8 = 300
+			}
+			set_variable = {
+				global.FRA_GERbalance_1041 = 300
+			}
+			set_variable = {
+				global.FRA_GERbalance_60 = 80
+			}
+			set_variable = {
+				global.FRA_GERbalance_65 = 60
+			}
+			set_variable = {
+				global.FRA_GERbalance_1023 = 100
+			}
+			set_variable = {
+			    global.FRA_GERbalance_MKS = 60
+			}
+			set_variable = {
+				global.FRA_GERbalance_SCH = 0
+			}
+
+			set_variable = {
+			    global.FRA_GERbalance_BWK = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_ANH = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_1046 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_Brandenburg = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_WestPrussia = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_EastPrussia = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_Silesia = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_Gdynia = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_762 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_69 = 0
+			}
+
+			set_variable = {
+			    global.FRA_GERbalance_BHM = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_74 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_72 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_972 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_AUS = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_976 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_SLV = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_MarinaDistrict = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_Tyrol = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_848 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_850 = 0
+			}
+			set_variable = {
+			    global.FRA_GERbalance_975 = 0
+			}
+
+			#PUS
+			set_variable = {
+			    global.PUS_GERbalance_978 = 30
+			}
+			set_variable = {
+				global.PUS_GERbalance_50 = 40
+			}
+			set_variable = {
+				global.PUS_GERbalance_52 = 100
+			}
+			set_variable = {
+				global.PUS_GERbalance_53 = 100
+			}
+			set_variable = {
+				global.PUS_GERbalance_54 = 60
+			}
+			set_variable = {
+				global.PUS_GERbalance_56 = 110
+			}
+			set_variable = {
+				global.PUS_GERbalance_57 = 110
+			}
+			set_variable = {
+				global.PUS_GERbalance_59 = 150
+			}
+			set_variable = {
+				global.PUS_GERbalance_HES = 60
+			}
+			set_variable = {
+				global.PUS_GERbalance_1043 = 20
+			}
+			set_variable = {
+				global.PUS_GERbalance_LAY = 10
+			}
+			set_variable = {
+				global.PUS_GERbalance_989 = 10
+			}
+			set_variable = {
+				global.PUS_GERbalance_28 = 0
+			}
+			set_variable = {
+				global.PUS_GERbalance_Thrall = 0
+			}
+			set_variable = {
+				global.PUS_GERbalance_8 = 0
+			}
+			set_variable = {
+				global.PUS_GERbalance_1041 = 0
+			}
+			set_variable = {
+				global.PUS_GERbalance_60 = 110
+			}
+			set_variable = {
+				global.PUS_GERbalance_65 = 120
+			}
+			set_variable = {
+				global.PUS_GERbalance_1023 = 120
+			}
+			set_variable = {
+			    global.PUS_GERbalance_MKS = 180
+			}
+			set_variable = {
+				global.PUS_GERbalance_SCH = 160
+			}
+
+			set_variable = {
+			    global.PUS_GERbalance_BWK = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_ANH = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_1046 = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_Brandenburg = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_WestPrussia = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_EastPrussia = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_Silesia = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_Gdynia = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_762 = 300
+			}
+			set_variable = {
+			    global.PUS_GERbalance_69 = 150
+			}
+
+			set_variable = {
+			    global.PUS_GERbalance_BHM = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_74 = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_72 = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_972 = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_AUS = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_976 = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_SLV = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_MarinaDistrict = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_Tyrol = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_848 = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_850 = 0
+			}
+			set_variable = {
+			    global.PUS_GERbalance_975 = 0
+			}
+
+			#AUS
+			set_variable = {
+			    global.AUS_GERbalance_978 = 90
+			}
+			set_variable = {
+				global.AUS_GERbalance_50 = 130
+			}
+			set_variable = {
+				global.AUS_GERbalance_52 = 170
+			}
+			set_variable = {
+				global.AUS_GERbalance_53 = 170
+			}
+			set_variable = {
+				global.AUS_GERbalance_54 = 120
+			}
+			set_variable = {
+				global.AUS_GERbalance_56 = 40
+			}
+			set_variable = {
+				global.AUS_GERbalance_57 = 40
+			}
+			set_variable = {
+				global.AUS_GERbalance_59 = 40
+			}
+			set_variable = {
+				global.AUS_GERbalance_HES = 60
+			}
+			set_variable = {
+				global.AUS_GERbalance_1043 = 20
+			}
+			set_variable = {
+				global.AUS_GERbalance_LAY = 10
+			}
+			set_variable = {
+				global.AUS_GERbalance_989 = 10
+			}
+			set_variable = {
+				global.AUS_GERbalance_28 = 0
+			}
+			set_variable = {
+				global.AUS_GERbalance_Thrall = 0
+			}
+			set_variable = {
+				global.AUS_GERbalance_8 = 0
+			}
+			set_variable = {
+				global.AUS_GERbalance_1041 = 0
+			}
+			set_variable = {
+				global.AUS_GERbalance_60 = 110
+			}
+			set_variable = {
+				global.AUS_GERbalance_65 = 120
+			}
+			set_variable = {
+				global.AUS_GERbalance_1023 = 80
+			}
+			set_variable = {
+			    global.AUS_GERbalance_MKS = 60
+			}
+			set_variable = {
+				global.AUS_GERbalance_SCH = 140
+			}
+
+			set_variable = {
+			    global.AUS_GERbalance_BWK = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_ANH = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_1046 = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_Brandenburg = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_WestPrussia = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_EastPrussia = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_Silesia = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_Gdynia = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_762 = 0
+			}
+			set_variable = {
+			    global.AUS_GERbalance_69 = 250
+			}
+
+			set_variable = {
+			    global.AUS_GERbalance_BHM = 250
+			}
+			set_variable = {
+			    global.AUS_GERbalance_74 = 250
+			}
+			set_variable = {
+			    global.AUS_GERbalance_72 = 250
+			}
+			set_variable = {
+			    global.AUS_GERbalance_972 = 300
+			}
+			set_variable = {
+			    global.AUS_GERbalance_AUS = 300
+			}
+			set_variable = {
+			    global.AUS_GERbalance_976 = 300
+			}
+			set_variable = {
+			    global.AUS_GERbalance_SLV = 300
+			}
+			set_variable = {
+			    global.AUS_GERbalance_MarinaDistrict = 100
+			}
+			set_variable = {
+			    global.AUS_GERbalance_Tyrol = 300
+			}
+			set_variable = {
+			    global.AUS_GERbalance_848 = 300
+			}
+			set_variable = {
+			    global.AUS_GERbalance_850 = 100
+			}
+			set_variable = {
+			    global.AUS_GERbalance_975 = 100
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			#阿尔萨斯
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_28 > global.PUS_GERbalance_28
+					}
+					check_variable = {
+						global.FRA_GERbalance_28 > global.AUS_GERbalance_28
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_28 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_28 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_28 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_28 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_28 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_28 > global.FRA_GERbalance_28
+					}
+					check_variable = {
+						global.PUS_GERbalance_28 > global.AUS_GERbalance_28
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_28 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_28 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_28 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_28 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_28 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_28 > global.FRA_GERbalance_28
+					}
+					check_variable = {
+						global.AUS_GERbalance_28 > global.PUS_GERbalance_28
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_28 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_28 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_28 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_28 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_28 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_28 = 11
+				 }
+			}
+#卢森堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_8 > global.PUS_GERbalance_8
+					}
+					check_variable = {
+						global.FRA_GERbalance_8 > global.AUS_GERbalance_8
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_8 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_8 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_8 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_8 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_8 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_8 > global.FRA_GERbalance_8
+					}
+					check_variable = {
+						global.PUS_GERbalance_8 > global.AUS_GERbalance_8
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_8 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_8 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_8 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_8 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_8 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_8 > global.FRA_GERbalance_8
+					}
+					check_variable = {
+						global.AUS_GERbalance_8 > global.PUS_GERbalance_8
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_8 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_8 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_8 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_8 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_8 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_8 = 11
+				 }
+			}
+			#马尔梅迪
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_1041 > global.PUS_GERbalance_1041
+					}
+					check_variable = {
+						global.FRA_GERbalance_1041 > global.AUS_GERbalance_1041
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_1041 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1041 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_1041 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1041 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1041 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_1041 > global.FRA_GERbalance_1041
+					}
+					check_variable = {
+						global.PUS_GERbalance_1041 > global.AUS_GERbalance_1041
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_1041 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1041 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_1041 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1041 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1041 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_1041 > global.FRA_GERbalance_1041
+					}
+					check_variable = {
+						global.AUS_GERbalance_1041 > global.PUS_GERbalance_1041
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_1041 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1041 = 1041
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_1041 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1041 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1041 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_1041 = 11
+				 }
+			}
+			#萨尔地区
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_Thrall > global.PUS_GERbalance_Thrall
+					}
+					check_variable = {
+						global.FRA_GERbalance_Thrall > global.AUS_GERbalance_Thrall
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_Thrall = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Thrall = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_Thrall > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Thrall = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Thrall = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_Thrall > global.FRA_GERbalance_Thrall
+					}
+					check_variable = {
+						global.PUS_GERbalance_Thrall > global.AUS_GERbalance_Thrall
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_Thrall = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Thrall = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_Thrall > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Thrall = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Thrall = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_Thrall > global.FRA_GERbalance_Thrall
+					}
+					check_variable = {
+						global.AUS_GERbalance_Thrall > global.PUS_GERbalance_Thrall
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_Thrall = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Thrall = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_Thrall > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Thrall = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Thrall = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_Thrall = 11
+				 }
+			}
+			#莱茵兰
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_LAY > global.PUS_GERbalance_LAY
+					}
+					check_variable = {
+						global.FRA_GERbalance_LAY > global.AUS_GERbalance_LAY
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_LAY = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_LAY = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_LAY > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_LAY = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_LAY = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_LAY > global.FRA_GERbalance_LAY
+					}
+					check_variable = {
+						global.PUS_GERbalance_LAY > global.AUS_GERbalance_LAY
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_LAY = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_LAY = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_LAY > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_LAY = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_LAY = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_LAY > global.FRA_GERbalance_LAY
+					}
+					check_variable = {
+						global.AUS_GERbalance_LAY > global.PUS_GERbalance_LAY
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_LAY = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_LAY = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_LAY > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_LAY = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_LAY = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_LAY = 11
+				 }
+			}
+			#美因茨
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_1043 > global.PUS_GERbalance_1043
+					}
+					check_variable = {
+						global.FRA_GERbalance_1043 > global.AUS_GERbalance_1043
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_1043 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1043 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_1043 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1043 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1043 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_1043 > global.FRA_GERbalance_1043
+					}
+					check_variable = {
+						global.PUS_GERbalance_1043 > global.AUS_GERbalance_1043
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_1043 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1043 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_1043 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1043 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1043 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_1043 > global.FRA_GERbalance_1043
+					}
+					check_variable = {
+						global.AUS_GERbalance_1043 > global.PUS_GERbalance_1043
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_1043 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1043 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_1043 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1043 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1043 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_1043 = 11
+				 }
+			}
+			#巴登
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_978 > global.PUS_GERbalance_978
+					}
+					check_variable = {
+						global.FRA_GERbalance_978 > global.AUS_GERbalance_978
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_978 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_978 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_978 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_978 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_978 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_978 > global.FRA_GERbalance_978
+					}
+					check_variable = {
+						global.PUS_GERbalance_978 > global.AUS_GERbalance_978
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_978 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_978 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_978 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_978 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_978 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_978 > global.FRA_GERbalance_978
+					}
+					check_variable = {
+						global.AUS_GERbalance_978 > global.PUS_GERbalance_978
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_978 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_978 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_978 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_978 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_978 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_978 = 11
+				 }
+			}
+			#黑森
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_HES > global.PUS_GERbalance_HES
+					}
+					check_variable = {
+						global.FRA_GERbalance_HES > global.AUS_GERbalance_HES
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_HES = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_HES = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_HES > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_HES = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_HES = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_HES > global.FRA_GERbalance_HES
+					}
+					check_variable = {
+						global.PUS_GERbalance_HES > global.AUS_GERbalance_HES
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_HES = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_HES = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_HES > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_HES = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_HES = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_HES > global.FRA_GERbalance_HES
+					}
+					check_variable = {
+						global.AUS_GERbalance_HES > global.PUS_GERbalance_HES
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_HES = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_HES = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_HES > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_HES = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_HES = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_HES = 11
+				 }
+			}
+			#符腾堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_50 > global.PUS_GERbalance_50
+					}
+					check_variable = {
+						global.FRA_GERbalance_50 > global.AUS_GERbalance_50
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_50 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_50 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_50 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_50 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_50 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_50 > global.FRA_GERbalance_50
+					}
+					check_variable = {
+						global.PUS_GERbalance_50 > global.AUS_GERbalance_50
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_50 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_50 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_50 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_50 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_50 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_50 > global.FRA_GERbalance_50
+					}
+					check_variable = {
+						global.AUS_GERbalance_50 > global.PUS_GERbalance_50
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_50 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_50 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_50 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_50 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_50 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_50 = 11
+				 }
+			}
+			#纽伦堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_54 > global.PUS_GERbalance_54
+					}
+					check_variable = {
+						global.FRA_GERbalance_54 > global.AUS_GERbalance_54
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_54 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_54 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_54 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_54 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_54 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_54 > global.FRA_GERbalance_54
+					}
+					check_variable = {
+						global.PUS_GERbalance_54 > global.AUS_GERbalance_54
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_54 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_54 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_54 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_54 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_54 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_54 > global.FRA_GERbalance_54
+					}
+					check_variable = {
+						global.AUS_GERbalance_54 > global.PUS_GERbalance_54
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_54 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_54 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_54 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_54 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_54 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_54 = 11
+				 }
+			}
+			#南威斯特伐利亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_989 > global.PUS_GERbalance_989
+					}
+					check_variable = {
+						global.FRA_GERbalance_989 > global.AUS_GERbalance_989
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_989 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_989 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_989 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_989 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_989 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_989 > global.FRA_GERbalance_989
+					}
+					check_variable = {
+						global.PUS_GERbalance_989 > global.AUS_GERbalance_989
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_989 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_989 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_989 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_989 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_989 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_989 > global.FRA_GERbalance_989
+					}
+					check_variable = {
+						global.AUS_GERbalance_989 > global.PUS_GERbalance_989
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_989 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_989 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_989 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_989 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_989 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_989 = 11
+				 }
+			}
+			#北威斯特伐利亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_57 > global.PUS_GERbalance_57
+					}
+					check_variable = {
+						global.FRA_GERbalance_57 > global.AUS_GERbalance_57
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_57 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_57 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_57 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_57 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_57 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_57 > global.FRA_GERbalance_57
+					}
+					check_variable = {
+						global.PUS_GERbalance_57 > global.AUS_GERbalance_57
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_57 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_57 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_57 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_57 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_57 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_57 > global.FRA_GERbalance_57
+					}
+					check_variable = {
+						global.AUS_GERbalance_57 > global.PUS_GERbalance_57
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_57 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_57 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_57 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_57 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_57 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_57 = 11
+				 }
+			}
+			#不伦瑞克
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_BWK > global.PUS_GERbalance_BWK
+					}
+					check_variable = {
+						global.FRA_GERbalance_BWK > global.AUS_GERbalance_BWK
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_BWK = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_BWK = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_BWK > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_BWK = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_BWK = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_BWK > global.FRA_GERbalance_BWK
+					}
+					check_variable = {
+						global.PUS_GERbalance_BWK > global.AUS_GERbalance_BWK
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_BWK = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_BWK = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_BWK > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_BWK = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_BWK = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_BWK > global.FRA_GERbalance_BWK
+					}
+					check_variable = {
+						global.AUS_GERbalance_BWK > global.PUS_GERbalance_BWK
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_BWK = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_BWK = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_BWK > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_BWK = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_BWK = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_BWK = 11
+				 }
+			}
+			#图林根
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_60 > global.PUS_GERbalance_60
+					}
+					check_variable = {
+						global.FRA_GERbalance_60 > global.AUS_GERbalance_60
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_60 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_60 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_60 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_60 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_60 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_60 > global.FRA_GERbalance_60
+					}
+					check_variable = {
+						global.PUS_GERbalance_60 > global.AUS_GERbalance_60
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_60 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_60 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_60 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_60 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_60 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_60 > global.FRA_GERbalance_60
+					}
+					check_variable = {
+						global.AUS_GERbalance_60 > global.PUS_GERbalance_60
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_60 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_60 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_60 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_60 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_60 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_60 = 11
+				 }
+			}
+			#萨克森
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_65 > global.PUS_GERbalance_65
+					}
+					check_variable = {
+						global.FRA_GERbalance_65 > global.AUS_GERbalance_65
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_65 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_65 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_65 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_65 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_65 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_65 > global.FRA_GERbalance_65
+					}
+					check_variable = {
+						global.PUS_GERbalance_65 > global.AUS_GERbalance_65
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_65 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_65 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_65 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_65 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_65 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_65 > global.FRA_GERbalance_65
+					}
+					check_variable = {
+						global.AUS_GERbalance_65 > global.PUS_GERbalance_65
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_65 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_65 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_65 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_65 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_65 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_65 = 11
+				 }
+			}
+			#苏台德
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_69 > global.PUS_GERbalance_69
+					}
+					check_variable = {
+						global.FRA_GERbalance_69 > global.AUS_GERbalance_69
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_69 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_69 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_69 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_69 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_69 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_69 > global.FRA_GERbalance_69
+					}
+					check_variable = {
+						global.PUS_GERbalance_69 > global.AUS_GERbalance_69
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_69 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_69 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_69 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_69 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_69 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_69 > global.FRA_GERbalance_69
+					}
+					check_variable = {
+						global.AUS_GERbalance_69 > global.PUS_GERbalance_69
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_69 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_69 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_69 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_69 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_69 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_69 = 11
+				 }
+			}
+			#下巴伐利亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_53 > global.PUS_GERbalance_53
+					}
+					check_variable = {
+						global.FRA_GERbalance_53 > global.AUS_GERbalance_53
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_53 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_53 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_53 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_53 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_53 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_53 > global.FRA_GERbalance_53
+					}
+					check_variable = {
+						global.PUS_GERbalance_53 > global.AUS_GERbalance_53
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_53 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_53 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_53 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_53 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_53 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_53 > global.FRA_GERbalance_53
+					}
+					check_variable = {
+						global.AUS_GERbalance_53 > global.PUS_GERbalance_53
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_53 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_53 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_53 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_53 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_53 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_53 = 11
+				 }
+			}
+			#上巴伐利亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_52 > global.PUS_GERbalance_52
+					}
+					check_variable = {
+						global.FRA_GERbalance_52 > global.AUS_GERbalance_52
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_52 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_52 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_52 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_52 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_52 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_52 > global.FRA_GERbalance_52
+					}
+					check_variable = {
+						global.PUS_GERbalance_52 > global.AUS_GERbalance_52
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_52 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_52 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_52 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_52 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_52 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_52 > global.FRA_GERbalance_52
+					}
+					check_variable = {
+						global.AUS_GERbalance_52 > global.PUS_GERbalance_52
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_52 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_52 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_52 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_52 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_52 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_52 = 11
+				 }
+			}
+			#埃姆斯
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_56 > global.PUS_GERbalance_56
+					}
+					check_variable = {
+						global.FRA_GERbalance_56 > global.AUS_GERbalance_56
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_56 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_56 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_56 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_56 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_56 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_56 > global.FRA_GERbalance_56
+					}
+					check_variable = {
+						global.PUS_GERbalance_56 > global.AUS_GERbalance_56
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_56 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_56 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_56 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_56 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_56 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_56 > global.FRA_GERbalance_56
+					}
+					check_variable = {
+						global.AUS_GERbalance_56 > global.PUS_GERbalance_56
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_56 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_56 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_56 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_56 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_56 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_56 = 11
+				 }
+			}
+			#奥尔登堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_1023 > global.PUS_GERbalance_1023
+					}
+					check_variable = {
+						global.FRA_GERbalance_1023 > global.AUS_GERbalance_1023
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_1023 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1023 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_1023 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1023 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1023 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_1023 > global.FRA_GERbalance_1023
+					}
+					check_variable = {
+						global.PUS_GERbalance_1023 > global.AUS_GERbalance_1023
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_1023 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1023 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_1023 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1023 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1023 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_1023 > global.FRA_GERbalance_1023
+					}
+					check_variable = {
+						global.AUS_GERbalance_1023 > global.PUS_GERbalance_1023
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_1023 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1023 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_1023 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1023 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1023 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_1023 = 11
+				 }
+			}
+			#汉诺威
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_59 > global.PUS_GERbalance_59
+					}
+					check_variable = {
+						global.FRA_GERbalance_59 > global.AUS_GERbalance_59
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_59 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_59 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_59 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_59 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_59 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_59 > global.FRA_GERbalance_59
+					}
+					check_variable = {
+						global.PUS_GERbalance_59 > global.AUS_GERbalance_59
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_59 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_59 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_59 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_59 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_59 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_59 > global.FRA_GERbalance_59
+					}
+					check_variable = {
+						global.AUS_GERbalance_59 > global.PUS_GERbalance_59
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_59 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_59 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_59 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_59 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_59 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_59 = 11
+				 }
+			}
+			#石勒苏益格-荷尔施坦因
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_SCH > global.PUS_GERbalance_SCH
+					}
+					check_variable = {
+						global.FRA_GERbalance_SCH > global.AUS_GERbalance_SCH
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_SCH = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_SCH = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_SCH > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_SCH = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_SCH = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_SCH > global.FRA_GERbalance_SCH
+					}
+					check_variable = {
+						global.PUS_GERbalance_SCH > global.AUS_GERbalance_SCH
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_SCH = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_SCH = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_SCH > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_SCH = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_SCH = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_SCH > global.FRA_GERbalance_SCH
+					}
+					check_variable = {
+						global.AUS_GERbalance_SCH > global.PUS_GERbalance_SCH
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_SCH = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_SCH = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_SCH > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_SCH = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_SCH = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_SCH = 11
+				 }
+			}
+			#梅克伦堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_MKS > global.PUS_GERbalance_MKS
+					}
+					check_variable = {
+						global.FRA_GERbalance_MKS > global.AUS_GERbalance_MKS
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_MKS = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_MKS = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_MKS > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_MKS = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_MKS = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_MKS > global.FRA_GERbalance_MKS
+					}
+					check_variable = {
+						global.PUS_GERbalance_MKS > global.AUS_GERbalance_MKS
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_MKS = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_MKS = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_MKS > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_MKS = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_MKS = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_MKS > global.FRA_GERbalance_MKS
+					}
+					check_variable = {
+						global.AUS_GERbalance_MKS > global.PUS_GERbalance_MKS
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_MKS = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_MKS = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_MKS > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_MKS = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_MKS = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_MKS = 11
+				 }
+			}
+			#马格德堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_1046 > global.PUS_GERbalance_1046
+					}
+					check_variable = {
+						global.FRA_GERbalance_1046 > global.AUS_GERbalance_1046
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_1046 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1046 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_1046 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1046 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1046 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_1046 > global.FRA_GERbalance_1046
+					}
+					check_variable = {
+						global.PUS_GERbalance_1046 > global.AUS_GERbalance_1046
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_1046 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1046 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_1046 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1046 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1046 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_1046 > global.FRA_GERbalance_1046
+					}
+					check_variable = {
+						global.AUS_GERbalance_1046 > global.PUS_GERbalance_1046
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_1046 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_1046 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_1046 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_1046 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_1046 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_1046 = 11
+				 }
+			}
+			#安哈尔特
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_ANH > global.PUS_GERbalance_ANH
+					}
+					check_variable = {
+						global.FRA_GERbalance_ANH > global.AUS_GERbalance_ANH
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_ANH = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_ANH = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_ANH > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_ANH = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_ANH = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_ANH > global.FRA_GERbalance_ANH
+					}
+					check_variable = {
+						global.PUS_GERbalance_ANH > global.AUS_GERbalance_ANH
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_ANH = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_ANH = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_ANH > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_ANH = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_ANH = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_ANH > global.FRA_GERbalance_ANH
+					}
+					check_variable = {
+						global.AUS_GERbalance_ANH > global.PUS_GERbalance_ANH
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_ANH = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_ANH = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_ANH > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_ANH = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_ANH = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_ANH = 11
+				 }
+			}
+			#勃兰登堡
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_Brandenburg > global.PUS_GERbalance_Brandenburg
+					}
+					check_variable = {
+						global.FRA_GERbalance_Brandenburg > global.AUS_GERbalance_Brandenburg
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_Brandenburg = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Brandenburg = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_Brandenburg > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Brandenburg = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Brandenburg = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_Brandenburg > global.FRA_GERbalance_Brandenburg
+					}
+					check_variable = {
+						global.PUS_GERbalance_Brandenburg > global.AUS_GERbalance_Brandenburg
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_Brandenburg = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Brandenburg = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_Brandenburg > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Brandenburg = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Brandenburg = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_Brandenburg > global.FRA_GERbalance_Brandenburg
+					}
+					check_variable = {
+						global.AUS_GERbalance_Brandenburg > global.PUS_GERbalance_Brandenburg
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_Brandenburg = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Brandenburg = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_Brandenburg > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Brandenburg = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Brandenburg = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_Brandenburg = 11
+				 }
+			}
+			#西普鲁士
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_WestPrussia > global.PUS_GERbalance_WestPrussia
+					}
+					check_variable = {
+						global.FRA_GERbalance_WestPrussia > global.AUS_GERbalance_WestPrussia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_WestPrussia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_WestPrussia = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_WestPrussia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_WestPrussia = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_WestPrussia = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_WestPrussia > global.FRA_GERbalance_WestPrussia
+					}
+					check_variable = {
+						global.PUS_GERbalance_WestPrussia > global.AUS_GERbalance_WestPrussia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_WestPrussia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_WestPrussia = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_WestPrussia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_WestPrussia = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_WestPrussia = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_WestPrussia > global.FRA_GERbalance_WestPrussia
+					}
+					check_variable = {
+						global.AUS_GERbalance_WestPrussia > global.PUS_GERbalance_WestPrussia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_WestPrussia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_WestPrussia = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_WestPrussia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_WestPrussia = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_WestPrussia = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_WestPrussia = 11
+				 }
+			}
+			#东普鲁士
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_EastPrussia > global.PUS_GERbalance_EastPrussia
+					}
+					check_variable = {
+						global.FRA_GERbalance_EastPrussia > global.AUS_GERbalance_EastPrussia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_EastPrussia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_EastPrussia = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_EastPrussia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_EastPrussia = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_EastPrussia = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_EastPrussia > global.FRA_GERbalance_EastPrussia
+					}
+					check_variable = {
+						global.PUS_GERbalance_EastPrussia > global.AUS_GERbalance_EastPrussia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_EastPrussia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_EastPrussia = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_EastPrussia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_EastPrussia = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_EastPrussia = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_EastPrussia > global.FRA_GERbalance_EastPrussia
+					}
+					check_variable = {
+						global.AUS_GERbalance_EastPrussia > global.PUS_GERbalance_EastPrussia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_EastPrussia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_EastPrussia = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_EastPrussia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_EastPrussia = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_EastPrussia = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_EastPrussia = 11
+				 }
+			}
+			#西里西亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_Silesia > global.PUS_GERbalance_Silesia
+					}
+					check_variable = {
+						global.FRA_GERbalance_Silesia > global.AUS_GERbalance_Silesia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_Silesia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Silesia = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_Silesia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Silesia = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Silesia = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_Silesia > global.FRA_GERbalance_Silesia
+					}
+					check_variable = {
+						global.PUS_GERbalance_Silesia > global.AUS_GERbalance_Silesia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_Silesia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Silesia = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_Silesia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Silesia = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Silesia = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_Silesia > global.FRA_GERbalance_Silesia
+					}
+					check_variable = {
+						global.AUS_GERbalance_Silesia > global.PUS_GERbalance_Silesia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_Silesia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Silesia = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_Silesia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Silesia = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Silesia = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_Silesia = 11
+				 }
+			}
+			#格丁尼亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_Gdynia > global.PUS_GERbalance_Gdynia
+					}
+					check_variable = {
+						global.FRA_GERbalance_Gdynia > global.AUS_GERbalance_Gdynia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_Gdynia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Gdynia = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_Gdynia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Gdynia = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Gdynia = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_Gdynia > global.FRA_GERbalance_Gdynia
+					}
+					check_variable = {
+						global.PUS_GERbalance_Gdynia > global.AUS_GERbalance_Gdynia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_Gdynia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Gdynia = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_Gdynia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Gdynia = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Gdynia = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_Gdynia > global.FRA_GERbalance_Gdynia
+					}
+					check_variable = {
+						global.AUS_GERbalance_Gdynia > global.PUS_GERbalance_Gdynia
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_Gdynia = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Gdynia = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_Gdynia > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Gdynia = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Gdynia = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_Gdynia = 11
+				 }
+			}
+			#卡托维兹
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_762 > global.PUS_GERbalance_762
+					}
+					check_variable = {
+						global.FRA_GERbalance_762 > global.AUS_GERbalance_762
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_762 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_762 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_762 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_762 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_762 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_762 > global.FRA_GERbalance_762
+					}
+					check_variable = {
+						global.PUS_GERbalance_762 > global.AUS_GERbalance_762
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_762 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_762 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_762 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_762 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_762 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_762 > global.FRA_GERbalance_762
+					}
+					check_variable = {
+						global.AUS_GERbalance_762 > global.PUS_GERbalance_762
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_762 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_762 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_762 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_762 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_762 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_762 = 11
+				 }
+			}
+			
+			#东苏台德
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_74 > global.PUS_GERbalance_74
+					}
+					check_variable = {
+						global.FRA_GERbalance_74 > global.AUS_GERbalance_74
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_74 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_74 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_74 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_74 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_74 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_74 > global.FRA_GERbalance_74
+					}
+					check_variable = {
+						global.PUS_GERbalance_74 > global.AUS_GERbalance_74
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_74 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_74 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_74 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_74 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_74 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_74 > global.FRA_GERbalance_74
+					}
+					check_variable = {
+						global.AUS_GERbalance_74 > global.PUS_GERbalance_74
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_74 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_74 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_74 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_74 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_74 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_74 = 11
+				 }
+			}
+			#扎奥尔杰
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_72 > global.PUS_GERbalance_72
+					}
+					check_variable = {
+						global.FRA_GERbalance_72 > global.AUS_GERbalance_72
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_72 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_72 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_72 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_72 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_72 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_72 > global.FRA_GERbalance_72
+					}
+					check_variable = {
+						global.PUS_GERbalance_72 > global.AUS_GERbalance_72
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_72 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_72 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_72 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_72 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_72 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_72 > global.FRA_GERbalance_72
+					}
+					check_variable = {
+						global.AUS_GERbalance_72 > global.PUS_GERbalance_72
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_72 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_72 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_72 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_72 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_72 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_72 = 11
+				 }
+			}
+			#南苏台德
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_972 > global.PUS_GERbalance_972
+					}
+					check_variable = {
+						global.FRA_GERbalance_972 > global.AUS_GERbalance_972
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_972 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_972 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_972 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_972 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_972 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_972 > global.FRA_GERbalance_972
+					}
+					check_variable = {
+						global.PUS_GERbalance_972 > global.AUS_GERbalance_972
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_972 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_972 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_972 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_972 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_972 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_972 > global.FRA_GERbalance_972
+					}
+					check_variable = {
+						global.AUS_GERbalance_972 > global.PUS_GERbalance_972
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_972 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_972 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_972 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_972 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_972 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_972 = 11
+				 }
+			}
+			#波西米亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_BHM > global.PUS_GERbalance_BHM
+					}
+					check_variable = {
+						global.FRA_GERbalance_BHM > global.AUS_GERbalance_BHM
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_BHM = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_BHM = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_BHM > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_BHM = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_BHM = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_BHM > global.FRA_GERbalance_BHM
+					}
+					check_variable = {
+						global.PUS_GERbalance_BHM > global.AUS_GERbalance_BHM
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_BHM = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_BHM = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_BHM > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_BHM = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_BHM = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_BHM > global.FRA_GERbalance_BHM
+					}
+					check_variable = {
+						global.AUS_GERbalance_BHM > global.PUS_GERbalance_BHM
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_BHM = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_BHM = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_BHM > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_BHM = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_BHM = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_BHM = 11
+				 }
+			}
+			#奥地利
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_AUS > global.PUS_GERbalance_AUS
+					}
+					check_variable = {
+						global.FRA_GERbalance_AUS > global.AUS_GERbalance_AUS
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_AUS = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_AUS = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_AUS > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_AUS = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_AUS = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_AUS > global.FRA_GERbalance_AUS
+					}
+					check_variable = {
+						global.PUS_GERbalance_AUS > global.AUS_GERbalance_AUS
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_AUS = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_AUS = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_AUS > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_AUS = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_AUS = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_AUS > global.FRA_GERbalance_AUS
+					}
+					check_variable = {
+						global.AUS_GERbalance_AUS > global.PUS_GERbalance_AUS
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_AUS = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_AUS = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_AUS > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_AUS = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_AUS = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_AUS = 11
+				 }
+			}
+			#福拉尔贝格
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_848 > global.PUS_GERbalance_848
+					}
+					check_variable = {
+						global.FRA_GERbalance_848 > global.AUS_GERbalance_848
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_848 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_848 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_848 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_848 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_848 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_848 > global.FRA_GERbalance_848
+					}
+					check_variable = {
+						global.PUS_GERbalance_848 > global.AUS_GERbalance_848
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_848 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_848 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_848 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_848 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_848 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_848 > global.FRA_GERbalance_848
+					}
+					check_variable = {
+						global.AUS_GERbalance_848 > global.PUS_GERbalance_848
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_848 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_848 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_848 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_848 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_848 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_848 = 11
+				 }
+			}
+			#南蒂罗尔
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_850 > global.PUS_GERbalance_850
+					}
+					check_variable = {
+						global.FRA_GERbalance_850 > global.AUS_GERbalance_850
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_850 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_850 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_850 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_850 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_850 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_850 > global.FRA_GERbalance_850
+					}
+					check_variable = {
+						global.PUS_GERbalance_850 > global.AUS_GERbalance_850
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_850 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_850 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_850 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_850 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_850 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_850 > global.FRA_GERbalance_850
+					}
+					check_variable = {
+						global.AUS_GERbalance_850 > global.PUS_GERbalance_850
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_850 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_850 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_850 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_850 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_850 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_850 = 11
+				 }
+			}
+			#布尔根兰
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_975 > global.PUS_GERbalance_975
+					}
+					check_variable = {
+						global.FRA_GERbalance_975 > global.AUS_GERbalance_975
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_975 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_975 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_975 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_975 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_975 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_975 > global.FRA_GERbalance_975
+					}
+					check_variable = {
+						global.PUS_GERbalance_975 > global.AUS_GERbalance_975
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_975 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_975 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_975 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_975 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_975 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_975 > global.FRA_GERbalance_975
+					}
+					check_variable = {
+						global.AUS_GERbalance_975 > global.PUS_GERbalance_975
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_975 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_975 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_975 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_975 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_975 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_975 = 11
+				 }
+			}
+			#滨海区
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_MarinaDistrict > global.PUS_GERbalance_MarinaDistrict
+					}
+					check_variable = {
+						global.FRA_GERbalance_MarinaDistrict > global.AUS_GERbalance_MarinaDistrict
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_MarinaDistrict = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_MarinaDistrict = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_MarinaDistrict > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_MarinaDistrict = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_MarinaDistrict = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_MarinaDistrict > global.FRA_GERbalance_MarinaDistrict
+					}
+					check_variable = {
+						global.PUS_GERbalance_MarinaDistrict > global.AUS_GERbalance_MarinaDistrict
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_MarinaDistrict = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_MarinaDistrict = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_MarinaDistrict > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_MarinaDistrict = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_MarinaDistrict = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_MarinaDistrict > global.FRA_GERbalance_MarinaDistrict
+					}
+					check_variable = {
+						global.AUS_GERbalance_MarinaDistrict > global.PUS_GERbalance_MarinaDistrict
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_MarinaDistrict = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_MarinaDistrict = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_MarinaDistrict > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_MarinaDistrict = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_MarinaDistrict = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_MarinaDistrict = 11
+				 }
+			}
+			#蒂罗尔
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_Tyrol > global.PUS_GERbalance_Tyrol
+					}
+					check_variable = {
+						global.FRA_GERbalance_Tyrol > global.AUS_GERbalance_Tyrol
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_Tyrol = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Tyrol = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_Tyrol > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Tyrol = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Tyrol = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_Tyrol > global.FRA_GERbalance_Tyrol
+					}
+					check_variable = {
+						global.PUS_GERbalance_Tyrol > global.AUS_GERbalance_Tyrol
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_Tyrol = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Tyrol = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_Tyrol > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Tyrol = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Tyrol = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_Tyrol > global.FRA_GERbalance_Tyrol
+					}
+					check_variable = {
+						global.AUS_GERbalance_Tyrol > global.PUS_GERbalance_Tyrol
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_Tyrol = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_Tyrol = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_Tyrol > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_Tyrol = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_Tyrol = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_Tyrol = 11
+				 }
+			}
+			#斯洛文尼亚
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_SLV > global.PUS_GERbalance_SLV
+					}
+					check_variable = {
+						global.FRA_GERbalance_SLV > global.AUS_GERbalance_SLV
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_SLV = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_SLV = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_SLV > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_SLV = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_SLV = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_SLV > global.FRA_GERbalance_SLV
+					}
+					check_variable = {
+						global.PUS_GERbalance_SLV > global.AUS_GERbalance_SLV
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_SLV = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_SLV = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_SLV > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_SLV = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_SLV = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_SLV > global.FRA_GERbalance_SLV
+					}
+					check_variable = {
+						global.AUS_GERbalance_SLV > global.PUS_GERbalance_SLV
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_SLV = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_SLV = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_SLV > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_SLV = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_SLV = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_SLV = 11
+				 }
+			}
+			#施泰尔马克-克恩滕
+			IF = {
+				limit = {
+					check_variable = {
+						global.FRA_GERbalance_976 > global.PUS_GERbalance_976
+					}
+					check_variable = {
+						global.FRA_GERbalance_976 > global.AUS_GERbalance_976
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.FRA_GERbalance_976 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_976 = 2
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.FRA_GERbalance_976 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_976 = 1
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_976 = 3
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.PUS_GERbalance_976 > global.FRA_GERbalance_976
+					}
+					check_variable = {
+						global.PUS_GERbalance_976 > global.AUS_GERbalance_976
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.PUS_GERbalance_976 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_976 = 5
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.PUS_GERbalance_976 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_976 = 4
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_976 = 6
+					 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						global.AUS_GERbalance_976 > global.FRA_GERbalance_976
+					}
+					check_variable = {
+						global.AUS_GERbalance_976 > global.PUS_GERbalance_976
+					}
+				}
+				IF = {
+					limit = {
+						check_variable = {
+							global.AUS_GERbalance_976 = 300
+						}
+					}
+					set_variable = {
+						global.Balance_variable_976 = 8
+					}
+				}
+				else_if = {
+					limit = { 
+						check_variable = {
+							global.AUS_GERbalance_976 > 249
+						}
+					 }
+					 set_variable = {
+						global.Balance_variable_976 = 7
+					 }
+				}
+				else = {
+					set_variable = {
+						global.Balance_variable_976 = 9
+					 }
+				}
+			}
+			else = {
+				set_variable = {
+					global.Balance_variable_976 = 11
+				 }
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			IF = {
+				limit = {
+					country_exists = DEN
+					NOT = {
+						DEN = {
+							is_subject = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						OR = {
+							SCH = {
+								is_subject_of = DEN
+							}
+							HLS = {
+								is_subject_of = DEN
+							}
+						}
+					}
+					set_variable = {
+						global.Intruders_DEN = 1
+					}
+				}
+				else = {
+					set_variable = {
+						global.Intruders_DEN = 2
+					}
+				}
+			}
+			else = {
+				set_variable = {
+					global.Intruders_DEN = 3
+				}
+			}
+			IF = {
+				limit = {
+					country_exists = FRA
+					NOT = {
+						FRA = {
+							is_subject = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						OR = {
+							LAY = {
+								is_subject_of = FRA
+							}
+						}
+					}
+					set_variable = {
+						global.Intruders_FRA = 1
+					}
+				}
+				else = {
+					set_variable = {
+						global.Intruders_FRA = 2
+					}
+				}
+			}
+			else = {
+				set_variable = {
+					global.Intruders_FRA = 3
+				}
+			}
+		}	
+	}
+}

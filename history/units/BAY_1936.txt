@@ -1,0 +1,200 @@
+﻿division_template = {
+	name = "Infanterie Division"
+	division_names_group = GER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		recon = { x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Kavallerie Division"
+	division_names_group = GER_MNT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }   # Pioneer Bn
+	}
+}
+
+division_template = {
+	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
+	division_names_group = GER_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0}
+	}
+}
+
+units = {
+	##### Österreichisches Bundesheer #####
+	# I Korps
+	division= {	
+		name = "Berittene Polizei Division"
+		location = 692  # Vienna
+		division_template = "Schnelle Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "1. Division"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 692  # Vienna
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 9515  # Vienna
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11544 # St Poelten
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+
+	# II Korps
+	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 3705 # Linz
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 692  # Graz
+		division_template = "Kavallerie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 9515  # Innsbruck
+		division_template = "Kavallerie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11544  # Salzburg
+		division_template = "Kavallerie Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		location = 3705  # Vienna
+		division_template = "Kavallerie Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+
+	division= {	
+		name = "9. Brigade"				
+		location = 708  
+		division_template = "Infanterie Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+
+	}
+}
+
+air_wings = { 
+    52 = { 
+        small_plane_airframe_1  = { 
+            owner = "BAY" 
+            amount =100
+			version_name = "BF-108"
+        }
+
+		small_plane_cas_airframe_1 = {
+			owner = "BAY"
+			amount = 100
+			version_name = "BF-108-G"
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BAY"
+		}
+		requested_factories = 1
+		progress = 0.54
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BAY"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}

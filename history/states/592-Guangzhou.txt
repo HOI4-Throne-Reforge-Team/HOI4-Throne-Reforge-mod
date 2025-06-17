@@ -1,0 +1,46 @@
+state={
+	id=592
+	name="STATE_592"
+	manpower = 15410610
+	state_category = city
+	resources={
+		tungsten=8 # was: 10
+		chromium = 3 # was: 4
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = YUE
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			air_base = 3
+			1047 = {
+				naval_base = 5
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			1047 40
+		}
+		victory_points = {
+			7152 1
+		}
+		victory_points={
+			7108 2
+		}
+		
+
+	}
+
+	provinces={
+		1047 7108 1202 12095 11941 7152
+	}
+
+	local_supplies=1.0 
+}
+

@@ -1,0 +1,121 @@
+SPR_historical_plan = {
+	name = "Spanish historical plan"
+	desc = "Historical behavior for Nationalist Spain"
+
+	allowed = {
+		original_tag = SPR
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SPR_ai_behavior 
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SPR_AI_RANDOM_NATIONALIST_HISTORICAL
+			has_game_rule = {
+				rule = SPR_ai_behavior 
+				option = NATIONALIST_HISTORICAL
+			}
+		}
+	}
+	abort = {
+		OR = {
+			tag = SPD
+			tag = SPC
+			OR = {
+				has_war_with = ENG
+				has_war_with = GER
+			}
+		}
+		
+	}
+
+	ai_national_focuses = {
+		SPR_throne_of_spain
+		SPR_new_king_jong
+		SPR_here_is_destiny
+		SPR_must_have_god
+		SPR_unveiled
+		SPR_sit_in_the_throne
+		SPR_past_glory
+		SPR_industrial_renaissance
+		SPR_improve_efficiency
+		SPR_cutting_benefits
+		SPR_embrace_traditionalism
+		SPR_king_of_pioneer
+		SPR_centralization_of_military_power
+		SPR_strangling_the_red_menace
+		SPR_foundation
+		SPR_in_power
+		SPR_royal_priority
+		SPR_compromise_with_the_bourgeoisie
+		SPR_constitutional_monarchy
+		SPR_people_livelihood
+		SPR_arms_expansion
+		SPR_northern_industrial_zone
+		SPR_urban_industrial_center
+		SPR_national_infrastructure
+		SPR_carlos_only_in_spain
+		SPR_war_in_spain
+		SPR_iberia
+		SPR_portugal
+		SPR_once_one
+		SPR_spain_portuguese_union
+		SPR_gibraltar
+		SPR_iberian_union
+		SPR_america
+		SPR_six_viceroyalties
+		SPR_cuban_base
+		SPR_spain_mexican_War
+		SPR_mesoamerica_returns
+		SPR_new_granada
+		SPR_la_plata
+		SPR_caribbean_king
+		SPR_brazil
+		SPR_treaty_of_havana
+		SPR_north-africa
+		SPR_morocco
+		SPR_make_spain_great_again
+		SPR_connect_france
+		SPR_latin_union_idea
+		SPR_break
+		SPR_real_bonaparte
+		SPR_north_america
+		SPR_invasion_paris
+		SPR_far_eastern_expansion
+		SPR_north_african_advance
+		SPR_orthodoxy_war
+		SPR_connect_italy
+		SPR_planning_coup
+		SPR_wipe_out_red_bandits
+		SPR_coalition_rule_italy
+		SPR_make_latin_union
+		SPR_sun_never_sets_empire
+	}
+
+	focus_factors = {
+		SPA_the_iberian_pact = 0
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+

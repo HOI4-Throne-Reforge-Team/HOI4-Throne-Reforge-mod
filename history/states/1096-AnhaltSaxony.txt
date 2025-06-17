@@ -1,0 +1,32 @@
+state={
+	id=1096
+	name="STATE_1096"
+	manpower = 4265029
+	buildings_max_level_factor = 1
+
+	state_category = town
+
+
+	history={
+		owner = PUS
+		victory_points = {
+			11545 1
+		}
+				buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+        victory_points = { 425 3 }
+		
+		add_core_of = PUS
+		
+	}
+
+	provinces={
+		11545 6582 425
+	}
+
+	local_supplies=2.0 
+}

@@ -1,0 +1,286 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Great_Germania_Map"
+		textureFile = "gfx/interface/decisions/GERBalance/Great_Germania_Map.dds"
+	}
+	spriteType = {
+		name = "GFX_Great_Germania_Map_under"
+		textureFile = "gfx/interface/decisions/GERBalance/Great_Germania_Map_under.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Base_border"
+		textureFile = "gfx/interface/decisions/GERBalance/GER_Base_border.dds"
+	}
+	spriteType = {
+		name = "GFX_Balance_form"
+		textureFile = "gfx/interface/decisions/GERBalance/GER_Balance_form.dds"
+	}
+	spriteType = {
+		name = "GFX_Alsace_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Alsace.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Luxembourg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Luxembourg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Thrall_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Thrall.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Malmedy_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Malmedy.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Rhine_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Rhine.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Mainz_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Mainz.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Baden_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Baden.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Hesse_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Hesse.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Nuremberg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Nuremberg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Wurttemberg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Wurttemberg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SouthernWestphalia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_SouthernWestphalia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NorthWestphalia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_NorthWestphalia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Brunswick_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Brunswick.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Thuringia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Thuringia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Saxony_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Saxony.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Sudetenland_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Sudetenland.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_LowerBavaria_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_LowerBavaria.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_UpperBavaria_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_UpperBavaria.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Ames_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Ames.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Oldenburg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Oldenburg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Hanover_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Hanover.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SchleswigHorstein_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_SchleswigHorstein.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Mecklenburg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Mecklenburg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Magdeburg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Magdeburg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Anhalt_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Anhalt.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Brandenburg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Brandenburg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_WestPrussia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_WestPrussia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Silesia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Silesia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Katowice_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Katowice.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Gdynia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Gdynia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_EastPrussia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_EastPrussia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Bohemia_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Bohemia.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_EastSudetenland_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_EastSudetenland.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Zaorje_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_Zaorje.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SouthSudetenland_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_SouthSudetenland.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_loweraustria_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_loweraustria.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_styria_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_styria.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_burgenland_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_burgenland.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_slovenija_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_slovenija.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_lowertyrol_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_lowertyrol.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_trieste_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_trieste.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_tyrol_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_tyrol.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_vorarlberg_button"
+		textureFile = "gfx/interface/decisions/GERBalance/GERland_vorarlberg.dds"
+		noOfFrames = 12
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_Intruders_DEN"
+		textureFile = "gfx/interface/decisions/GERBalance/Intruders_DEN.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_Intruders_FRA"
+		textureFile = "gfx/interface/decisions/GERBalance/Intruders_FRA.dds"
+		noOfFrames = 3
+	}
+}

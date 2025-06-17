@@ -1,0 +1,35 @@
+state = {
+	id = 1128
+	name = "STATE_1128" # EASTCape
+	manpower = 837178
+
+	state_category = town
+
+	history = {
+
+		owner = SAF
+		add_core_of = SAF
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			4696 = {
+				naval_base = 2
+			}
+		}
+
+		victory_points = {
+			4696 2
+		}
+		victory_points = {
+			10697 1
+		}
+		
+	}
+
+	provinces = {
+		4696 12547 4822 10697 12419
+	}
+
+	local_supplies = 0.0 
+}

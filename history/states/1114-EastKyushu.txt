@@ -1,0 +1,24 @@
+state={
+	id=1114
+	name="STATE_1114"#东九州
+	manpower = 800000
+	
+	state_category = rural
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = JAP
+		victory_points = {
+			1020 3
+		}
+	}
+
+	provinces={
+	10092 7178 1020
+	}
+
+	local_supplies=1.0 
+}

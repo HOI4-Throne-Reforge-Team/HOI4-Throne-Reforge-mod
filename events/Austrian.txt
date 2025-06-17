@@ -1,0 +1,181 @@
+
+add_namespace = focus_AUS
+add_namespace = event_AUS
+add_namespace = AUS
+
+
+country_event = {  #帝国现状
+	id = focus_AUS.1
+	title = focus_AUS.1.t
+	desc = focus_AUS.1.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.1.a1
+		
+	}
+}
+
+country_event = {  #摩拉维亚人的抵抗
+	id = focus_AUS.2
+	title = focus_AUS.2.t
+	desc = focus_AUS.2.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.2.a1
+		add_stability = -0.02
+	}
+}
+
+country_event = {  #布拉格大示威
+	id = focus_AUS.3
+	title = focus_AUS.3.t
+	desc = focus_AUS.3.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.3.a1
+		add_stability = -0.05
+	}
+}
+
+country_event = {  #西斯拉夫极端民族主义袭击奥地利官员
+	id = focus_AUS.4
+	title = focus_AUS.4.t
+	desc = focus_AUS.4.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.4.a1
+		add_political_power = -50
+		add_stability = -0.07
+	}
+}
+
+country_event = {  #布拉格之窗
+	id = focus_AUS.5
+	title = focus_AUS.5.t
+	desc = focus_AUS.5.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.5.a1
+		unlock_decision_tooltip = AUS_chaotic_situation
+		load_focus_tree = austrian_focus_internal_affairs
+		complete_national_focus = {
+			focus = AUS_Prager_Fenstersturz
+			use_side_message = yes
+		}
+	}
+}
+
+country_event = {  #斯拉夫人推翻了王国
+	id = focus_AUS.6
+	title = focus_AUS.6.t
+	desc = focus_AUS.6.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.6.a1
+		add_stability = -0.03
+		end_puppet = BHM
+		BHM = {
+			leave_faction = yes
+		}
+	}
+}
+
+country_event = {  #古老帝国之新皇
+	id = focus_AUS.7
+	title = focus_AUS.7.t
+	desc = focus_AUS.7.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.7.a1
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 25
+		swap_ideas = {
+			remove_idea = AUS_franz_ferdinand_die
+			add_idea = AUS_franz_ferdinand_die_2
+		}
+	}
+}
+
+country_event = {  #腐败与混乱的政府
+	id = focus_AUS.8
+	title = focus_AUS.8.t
+	desc = focus_AUS.8.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.8.a1
+		add_political_power = 5
+	}
+}
+
+country_event = {  #孤立与专横的经济
+	id = focus_AUS.9
+	title = focus_AUS.9.t
+	desc = focus_AUS.9.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.9.a1
+		add_stability = 0.01
+	}
+}
+
+country_event = {  #封建与保守的军队
+	id = focus_AUS.10
+	title = focus_AUS.10.t
+	desc = focus_AUS.10.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.10.a1
+		add_war_support = 0.01
+	}
+}
+
+country_event = {  #改革方向
+	id = focus_AUS.11
+	title = focus_AUS.11.t
+	desc = focus_AUS.11.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.11.a1 #铲除帝国的杂草
+		unlock_national_focus = AUS_political_reform
+	}
+	option = {
+		name = focus_AUS.11.a2 #新的经济体系
+		unlock_national_focus = AUS_economic_reform
+	}
+	option = {
+		name = focus_AUS.11.a3 #敌人就在我们四周
+		unlock_national_focus = AUS_military_reform
+		
+	}
+}
+
+
+country_event = {  #市民不满
+	id = focus_AUS.12
+	title = focus_AUS.12.t
+	desc = focus_AUS.12.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.12.a1 
+		add_political_power = -50
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+country_event = {  #烟消云散
+	id = event_AUS.1
+	title = event_AUS.1.t
+	desc = event_AUS.1.d
+	is_triggered_only = yes
+	option = {
+		name = event_AUS.1.a1
+		load_focus_tree = { 
+			tree = austrian_focus_empire
+		}
+	}
+}
+
+
+

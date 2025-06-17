@@ -1,0 +1,26 @@
+
+state = {
+	id = 1074
+	name = "STATE_1074"
+	manpower = 3849104
+	
+	state_category =rural
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = WCG
+		add_core_of = WCG
+		add_core_of = CHI
+
+	}
+
+	provinces = {
+		556 1933 12882 7911 531 7397
+	}
+
+	local_supplies = 0.0 
+}

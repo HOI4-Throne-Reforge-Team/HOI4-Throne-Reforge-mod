@@ -1,0 +1,30 @@
+
+state={
+	id=1125
+	name="STATE_1125" # Transvaal
+	manpower = 180363
+	
+	state_category = rural
+	
+	resources={
+
+	}
+
+	history={
+		owner = BOR
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+		}
+		victory_points = {
+			10668 3
+		}
+		add_core_of = BOR
+	}
+
+	provinces={
+		10668
+	}
+
+	local_supplies=0.0 
+}

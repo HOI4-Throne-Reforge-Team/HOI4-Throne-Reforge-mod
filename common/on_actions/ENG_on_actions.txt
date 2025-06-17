@@ -1,0 +1,19 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		ENG = {
+			release = IRE
+			annex_country = {
+				target = IRE
+				transfer_troops = yes
+			}
+			every_state = {
+				limit = { is_core_of = IRE }
+				add_resistance = 20
+				add_compliance = 10
+			}
+			119 = { add_compliance = 40 }
+			}
+		}
+	}
+}

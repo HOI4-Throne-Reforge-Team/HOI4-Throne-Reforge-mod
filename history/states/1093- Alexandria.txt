@@ -1,0 +1,23 @@
+state={
+	id=1093
+	name="STATE_1093"
+
+	manpower = 160000
+	state_category = rural
+	history={
+		owner = ENG
+		add_core_of = EGY
+        	buildings={
+			infrastructure = 1
+			arms_factory = 0
+
+		}
+
+
+	}
+	provinces={
+		
+		12049 4073
+	}
+	local_supplies=4.0 
+}

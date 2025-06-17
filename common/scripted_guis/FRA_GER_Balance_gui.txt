@@ -1,0 +1,155 @@
+scripted_gui = {
+	German_Balance_decision_categories_ui = {
+		context_type = decision_category
+		window_name = "German_Balance_decision_categories_ui"
+		visible = {
+			always = yes
+		}
+		effects = {
+			GERland_Alsace_button_click = {
+
+			}
+		}
+		properties = {
+			GERland_Alsace_button = {
+				frame = global.Balance_variable_28
+			}
+			GERland_Luxembourg_button = {
+				frame = global.Balance_variable_8
+			}
+			GERland_Malmedy_button = {
+				frame = global.Balance_variable_1041
+			}
+			GERland_Mainz_button = {
+				frame = global.Balance_variable_1043
+			}
+			GERland_Thrall_button = {
+				frame = global.Balance_variable_Thrall
+			}
+			GERland_Rhine_button = {
+				frame = global.Balance_variable_LAY
+			}
+			GERland_Baden_button = {
+				frame = global.Balance_variable_978
+			}
+			GERland_Hesse_button = {
+				frame = global.Balance_variable_HES
+			}
+			GERland_Nuremberg_button = {
+				frame = global.Balance_variable_54
+			}
+			GERland_Wurttemberg_button = {
+				frame = global.Balance_variable_50
+			}
+			GERland_SouthernWestphalia_button = {
+				frame = global.Balance_variable_989
+			}
+			GERland_NorthWestphalia_button = {
+				frame = global.Balance_variable_57
+			}
+			GERland_Brunswick_button = {
+				frame = global.Balance_variable_BWK
+			}
+			GERland_Thuringia_button = {
+				frame = global.Balance_variable_60
+			}
+			GERland_Saxony_button = {
+				frame = global.Balance_variable_65
+			}
+			GERland_Sudetenland_button = {
+				frame = global.Balance_variable_69
+			}
+			GERland_LowerBavaria_button = {
+				frame = global.Balance_variable_53
+			}
+			GERland_UpperBavaria_button = {
+				frame = global.Balance_variable_52
+			}
+			GERland_Ames_button = {
+				frame = global.Balance_variable_56
+			}
+			GERland_Oldenburg_button = {
+				frame = global.Balance_variable_1023
+			}
+			GERland_Hanover_button = {
+				frame = global.Balance_variable_59
+			}
+			GERland_SchleswigHorstein_button = {
+				frame = global.Balance_variable_SCH
+			}
+			GERland_Mecklenburg_button = {
+				frame = global.Balance_variable_MKS
+			}
+			GERland_Magdeburg_button = {
+				frame = global.Balance_variable_1046
+			}
+			GERland_Anhalt_button = {
+				frame = global.Balance_variable_ANH
+			}
+			GERland_Brandenburg_button = {
+				frame = global.Balance_variable_Brandenburg
+			}
+			GERland_WestPrussia_button = {
+				frame = global.Balance_variable_WestPrussia
+			}
+			GERland_Silesia_button = {
+				frame = global.Balance_variable_Silesia
+			}
+			GERland_Katowice_button = {
+				frame = global.Balance_variable_762
+			}
+			GERland_Gdynia_button = {
+				frame = global.Balance_variable_Gdynia
+			}
+			GERland_EastPrussia_button = {
+				frame = global.Balance_variable_EastPrussia
+			}
+			GERland_Bohemia_button = {
+				frame = global.Balance_variable_BHM
+			}
+			GERland_EastSudetenland_button = {
+				frame = global.Balance_variable_74
+			}
+			GERland_Zaorje_button = {
+				frame = global.Balance_variable_72
+			}
+			GERland_SouthSudetenland_button = {
+				frame = global.Balance_variable_972
+			}
+			GERland_loweraustria_button = {
+				frame = global.Balance_variable_AUS
+			}
+			GERland_burgenland_button = {
+				frame = global.Balance_variable_975
+			}
+			GERland_styria_button = {
+				frame = global.Balance_variable_976
+			}
+			GERland_slovenija_button = {
+				frame = global.Balance_variable_SLV
+			}
+			GERland_tyrol_button = {
+				frame = global.Balance_variable_Tyrol
+			}
+			GERland_lowertyrol_button = {
+				frame = global.Balance_variable_850
+			}
+			GERland_trieste_button = {
+				frame = global.Balance_variable_MarinaDistrict
+			}
+			GERland_vorarlberg_button = {
+				frame = global.Balance_variable_848
+			}
+
+			Intruders_DEN = {
+				frame = global.Intruders_DEN
+			}
+			Intruders_FRA = {
+				frame = global.Intruders_FRA
+			}
+		}
+
+
+	}
+
+}

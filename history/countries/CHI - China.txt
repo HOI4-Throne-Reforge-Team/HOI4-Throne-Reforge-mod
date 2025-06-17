@@ -1,0 +1,76 @@
+﻿capital = 613 # Nanjing
+
+recruit_character = CHI_song_jiaoren
+recruit_character = CHI_huang_xing
+
+set_stability = 0.18
+set_war_support = 0.23
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SIC
+		autonomous_state = autonomy_integrated_puppet
+	}
+
+	else = {
+		puppet = SIC
+	}
+}
+
+create_faction = Nankinggoverment
+add_to_faction = NCG
+add_to_faction = SHX
+add_to_faction = FTJ
+add_to_faction = GXC
+add_to_faction = GUI
+add_to_faction = YUN
+add_to_faction = XIK
+add_to_faction = WCG
+add_to_faction = SIK
+add_to_faction = XSM
+add_to_faction = GSJ
+add_to_faction = NXJ
+add_to_faction = GSM
+add_to_faction = TIB
+add_to_faction = SIC
+give_military_access = SIC
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	basic_train = 1
+}
+
+set_convoys = 342
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	china_local_separatism
+	china_failed_land_reform
+	china_Backward_Army
+	china_three_principles_of_people
+}
+
+set_popularities = {
+	democratic = 64
+	neutrality = 21
+	fascism = 3
+	communism = 12
+}
+
+
+

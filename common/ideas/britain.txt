@@ -1,0 +1,139 @@
+ideas = {
+
+	country = {
+
+		ENG_king_edward = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.001
+				stability_factor = 0.05
+				war_support_factor = 0.05
+
+			}
+			
+
+		}
+
+		ENG_king_edward_fascism = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			picture = king_edward
+			
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				has_government = fascism
+			}
+
+
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.5
+			}
+		}
+
+
+		stiff_upper_lip = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 1
+				stability_weekly = 0.001
+			}
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		
+		ENG_the_war_to_end_all_wars = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			removal_cost = -1
+						
+			modifier = {
+				conscription_factor = -0.30
+				CONSUMER_GOODS_FACTOR = 0.15
+				war_support_factor = -0.1
+				TRAINING_TIME_ARMY_FACTOR = 0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = 0.2
+			}
+		}
+
+		ENG_IRE_problem = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			picture = ENG_IRE_problem
+			
+			removal_cost = -1
+			
+			available = {
+				113 = { is_controlled_by = ENG }
+			}
+			
+			allowed_civil_war = {
+				
+			}
+
+
+			modifier = {
+				stability_factor = -0.15
+				INDUSTRY_REPAIR_FACTOR = -0.2
+				resistance_target = 0.1
+				compliance_gain = -0.01
+				required_garrison_factor = 0.1
+				resistance_growth = 0.1
+				non_core_manpower = -0.01
+			}
+		}
+		
+		
+	}
+}

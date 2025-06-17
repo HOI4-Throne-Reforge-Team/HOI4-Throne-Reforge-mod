@@ -1,0 +1,33 @@
+state = {
+	id = 900
+	name = "STATE_900"
+	resources = {
+		rubber = 1.000
+	}
+	manpower = 1163674
+	state_category = pastoral 
+
+	history = {
+
+		owner = FWA
+
+		add_core_of = NGA
+		add_core_of = BIA
+
+		victory_points = {
+			8034 2 # Enugu
+		} 
+
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces = {
+		1992 4889 7978 8034 10831 
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

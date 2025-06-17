@@ -1,0 +1,34 @@
+
+state = {
+	id = 1056
+	name = "STATE_1056"
+	manpower = 12185105
+	
+	state_category =large_city
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 3 #was: 7
+			industrial_complex = 1
+			air_base = 2
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = JIS
+		victory_points = {
+			10076 8
+		}
+		victory_points={ 13394 25 }
+		victory_points={ 13395 5 }
+		victory_points={ 1089 3 }
+		victory_points = {13142 3}
+	}
+
+	provinces = {
+		13395 13394 7120 13142 10076 1089 4091
+	}
+
+	local_supplies = 0.0 
+}

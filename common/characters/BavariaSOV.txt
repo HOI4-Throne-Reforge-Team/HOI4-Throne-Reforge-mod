@@ -1,0 +1,301 @@
+characters = {
+	#领导人
+	BA1_Eugen_Levine = {#欧根·莱维内
+		name = BAY_Eugen_Levine
+		portraits = {
+			civilian = {
+				large = BAY_Eugen_Levine
+			}
+		}
+		country_leader = {
+			ideology = totalist_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BA1_Rosa_Luxemburg = {#罗莎·卢森堡
+		name = BAY_Rosa_Luxemburg
+		portraits = {
+			civilian = {
+				large = BAY_Rosa_Luxemburg
+			}
+		}
+		country_leader = {
+			ideology = syndicalist_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BA1_Gustav_Landauer = {#古斯塔夫·兰道尔
+		name = BAY_Gustav_Landauer
+		portraits = {
+			civilian = {
+				large = BAY_Gustav_Landauer
+			}
+		}
+		country_leader = {
+			ideology = anarchism_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+    #政治顾问
+	BA1_Tovia_Axelrod = {#托维亚·阿克塞尔罗德
+		name = BAY_Tovia_Axelrod
+		portraits = {
+			civilian = {
+				small = BAY_Tovia_Axelrod
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Tovia_Axelrod
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					ideological_crusader 
+					communist_journalist 
+				}
+			}
+	
+	}
+
+	BA1_Erich_Muhsam = {#埃里希·米萨姆
+		name = BAY_Erich_Muhsam
+		portraits = {
+			civilian = {
+				small = BAY_Erich_Muhsam
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Erich_Muhsam
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					socialist_novelist  
+					anarchist
+				}
+			}
+	
+	}
+
+	BA1_Therese_Grondl = {#特蕾莎·格罗尔德
+		name = BAY_Therese_Grondl
+		portraits = {
+			civilian = {
+				small = BAY_Therese_Grondl
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Therese_Grondl
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					red_suffragette  
+					syndicalist_revolutionary
+				}
+			}
+	
+	}
+
+	BA1_Arnold_Wadler = {#阿诺德·瓦格纳
+		name = BAY_Arnold_Wadler
+		portraits = {
+			civilian = {
+				small = BAY_Arnold_Wadler
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Arnold_Wadler
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					captain_of_industry  
+					economic_organizer
+				}
+			}
+	}
+
+	BA1_Josef_Sontheimer = {#约瑟夫·索尔农
+		name = BAY_Josef_Sontheimer
+		portraits = {
+			civilian = {
+				small = BAY_Josef_Sontheimer
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Josef_Sontheimer
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					prince_of_terror  
+					communism_jurisconsult
+				}
+			}
+	}
+
+	BA1_Hans_Junk = {#汉斯·容克
+		name = BAY_Hans_Junk
+		portraits = {
+			civilian = {
+				large = BAY_Hans_Junk
+				small = BAY_Hans_Junk_small
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Hans_Junk
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					political_commissar 
+					goods_blender
+				}
+			}
+
+			corps_commander = {
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+	}
+
+	BA1_Rudolf_Steinauer = {#鲁道夫·施泰因豪尔
+		name = BAY_Rudolf_Steinauer
+		portraits = {
+			civilian = {
+				large = BAY_Rudolf_Steinauer
+				small = BAY_Rudolf_Steinauer_small
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Rudolf_Steinauer
+				allowed  = {
+					original_tag  = BA1 
+				}
+				traits  = {
+					popular_figurehead
+					connected_citizen
+				}
+			}
+	}
+
+    #科学家
+	
+    #理论家
+	
+
+    #部长/将领
+	BA1_Max_Levien = {#马克斯·列文
+		name = BAY_Max_Levien
+		portraits = {
+			civilian = {
+				large = BAY_Max_Levien
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = Max_Levien
+			ledger = army
+			allowed = {
+				original_tag = BA1
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+		corps_commander = {
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+	}
+
+	BA1_Rudolf_egelhofer = {#鲁道夫·埃格尔霍夫
+		name = BAY_rudolf_egelhofer
+		portraits = {
+			civilian = {
+				large = BAY_rudolf_egelhofer
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = rudolf_egelhofer
+			ledger = army
+			allowed = {
+				original_tag = BA1
+			}
+			traits = {
+				army_chief_defensive_2 
+			}
+			cost = 100
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BAV_rudolf_egelhofer_hog
+			traits = { 
+				army_chief_defensive_2 
+			}
+			cost = 100
+		}
+		corps_commander = {
+				traits = {  organizer infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+	}
+}

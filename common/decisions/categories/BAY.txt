@@ -1,0 +1,20 @@
+BAY_modern_decision_category = {#现代化
+	icon = GFX_decision_category_BAY_modern
+	picture = GFX_decision_cat_picture_BAY_modern
+	allowed = {
+		original_tag = BAY
+	}
+	visible = {
+		has_completed_focus = BAY_Modernization_continues
+	}
+	available = {
+		has_completed_focus = BAY_Modernization_continues
+	}
+	priority = {
+		base = 3
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+}

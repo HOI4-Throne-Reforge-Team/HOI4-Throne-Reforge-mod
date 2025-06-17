@@ -1,0 +1,29 @@
+
+state = {
+	id = 1087
+	name = "STATE_1087"
+	manpower = 410191
+	
+	state_category =pastoral
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = NXJ
+		add_core_of = NXJ
+		add_core_of = CHI
+		victory_points = {
+			12750 1
+		}
+
+	}
+
+	provinces = {
+		12750 8055 7511 7803 10899
+	}
+
+	local_supplies = 0.0 
+}

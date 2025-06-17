@@ -1,0 +1,27 @@
+
+state = {
+	id = 1028
+	name = "STATE_1028"
+	manpower = 1564321
+	
+	state_category = rural
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = YUN
+		add_core_of = CHI
+		add_core_of =YUN
+
+
+	}
+
+	provinces = {
+		4501 1114 1653 1196 1172
+	}
+
+	local_supplies = 0.0 
+}

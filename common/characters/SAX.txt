@@ -1,0 +1,16 @@
+characters={
+	SAX_August_Winnig={
+		name=SAX_Frederick_Augustus_III
+		portraits={
+			civilian = {
+				large = "gfx/leaders/PUS/Portrait_Frederick_Augustus_III.png"
+			}
+		}
+		country_leader={
+			ideology=authoritariandemocracy
+			traits={ }
+			expire="1976.10.1"
+			id=-1
+		}
+	}
+}

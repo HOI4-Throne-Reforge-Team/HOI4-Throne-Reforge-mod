@@ -1,0 +1,630 @@
+ideas = {
+
+	country = {
+		FRA_Camille_Chautemp_1 = {#卡米耶·肖当内阁
+			removal_cost = -1
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no 
+			}
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+		FRA_Camille_Chautemp_2 = {#卡米耶·肖当内阁
+			removal_cost = -1
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no 
+			}
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		FRA_Camille_Chautemp_3 = {#卡米耶·肖当内阁
+			removal_cost = -1
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no 
+			}
+			modifier = {
+				political_power_factor = -0.3
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_infrastructure_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+
+		FRA_French_Army = {#法兰西陆军
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = no 
+			}
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = 0.5
+				war_support_factor = 0.25
+				combat_width_factor = 1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = -0.1
+				conscription_factor = -0.25
+				land_doctrine_cost_factor = 1
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = -0.1
+				planning_speed = +0.2
+				max_planning = -0.2
+				land_reinforce_rate = -0.05
+				coordination_bonus = -0.05
+				experience_loss_factor = -0.2
+				breakthrough_factor = 0.05
+			}
+		}
+		FRA_scandal_1 = {#斯塔维斯基丑闻
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_factor = -0.25
+			}
+		}
+		FRA_scandal_2 = {#斯塔维斯基丑闻
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				political_power_factor = -0.75
+			}
+		}
+		FRA_Usury_imperialism = {#高利贷帝国主义
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			available = {
+			}
+
+			allowed_civil_war = {
+				always = no 
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = +0.1
+				consumer_goods_factor = -0.25
+				trade_laws_cost_factor  = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		#经济崩溃
+		FRA_E_B_1 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				consumer_goods_expected_value = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+
+		}
+		FRA_E_B_2 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.2
+				consumer_goods_expected_value = 0.25
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+
+		}
+		FRA_E_B_3 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.3
+				consumer_goods_expected_value = 0.4
+				political_power_gain = -0.2
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_buildings_factor = -0.3
+			}
+
+		}
+		FRA_E_B_4 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.4
+				consumer_goods_expected_value = 0.5
+				political_power_gain = -0.4
+				production_factory_max_efficiency_factor = -0.4
+				production_speed_buildings_factor = -0.45
+			}
+
+		}
+		FRA_E_B_5 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.5
+				consumer_goods_expected_value = 0.6
+				political_power_gain = -0.6
+				production_factory_max_efficiency_factor = -0.5
+				production_speed_buildings_factor = -0.6
+			}
+
+		}
+		FRA_E_B_6 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.35
+				production_factory_efficiency_gain_factor = -0.6
+				consumer_goods_expected_value = 0.7
+				political_power_gain = -0.8
+				production_factory_max_efficiency_factor = -0.6
+				production_speed_buildings_factor = -0.75
+			}
+
+		}
+		FRA_E_B_7 = {
+			allowed = {
+				always = yes
+			}
+			picture = GFX_idea_FRA_E_B
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = -0.4
+				production_factory_efficiency_gain_factor = -0.7
+				consumer_goods_expected_value = 0.8
+				political_power_gain = -1
+				production_factory_max_efficiency_factor = -0.7
+				production_speed_buildings_factor = -0.9
+			}
+
+		}
+		#经济崩溃
+		
+	}
+	
+	
+	tank_manufacturer = {
+
+		designer = yes
+	
+		# TECHNOLOGY
+		renault_fra = {
+		
+			picture = renault
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+	
+		FRA_AMX = {
+		
+			picture = generic_tank_manufacturer_2
+
+			available = {
+				has_completed_focus = FRA_army_reform
+			}
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { fast_tank_manufacturer }
+		}
+		FRA_hotchkiss = {
+		
+			picture = generic_tank_manufacturer_3
+
+			available = {
+				has_completed_focus = FRA_infantry_tanks
+			}
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { infantry_tank_manufacturer }
+		}
+
+		FRA_APX = {
+			picture = FRA_atelier_puteaux
+			
+
+			available = {
+				
+			}
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { medium_tank_manufacturer }
+		}
+		FRA_panhard = {
+			
+
+			available = {
+				
+			}
+
+						
+			allowed = {
+				original_tag = FRA
+				has_dlc = "La Resistance"
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { armored_car_manufacturer }
+		}
+	}
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		somua = {
+		
+			allowed = {
+				original_tag = FRA
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+		}
+		
+		mas = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+		}
+	
+		schneider = {
+						
+			allowed = {
+				original_tag = FRA
+			}		
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		morane_saulnier = {
+			
+			allowed = {
+				original_tag = FRA
+			}
+			
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		
+		bloch = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		
+		amiot = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		
+		levasseur = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				air_equipment = 0.1
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+		SNCAN = {
+			picture = FRA_sncan		
+			allowed = {
+				original_tag = FRA
+			}
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCAN_formed }	
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+		}
+		SNCAO = {
+			picture = FRA_sncao			
+			allowed = {
+				original_tag = FRA
+			}
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCAO_formed }	
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+		}
+		SNCASE = {
+			picture = FRA_sncase		
+			allowed = {
+				original_tag = FRA
+			}
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCASE_formed }	
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { light_aircraft_manufacturer }
+		}
+		SNCASO = {
+			picture = FRA_sncaso		
+			allowed = {
+				original_tag = FRA
+			}
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCASO_formed }	
+			research_bonus = {
+				air_equipment = 0.2
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+		}
+		SNCAC = {
+			picture = FRA_sncac			
+			allowed = {
+				original_tag = FRA
+			}
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCAC_formed }	
+			research_bonus = {
+				air_equipment = 0.3
+			}
+			
+			traits = { aircraft_manufacturer }
+		}
+		
+	}
+	naval_manufacturer = {
+
+		designer = yes
+		
+		fcm = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { mediterranean_naval_manufacturer }
+		}
+		aeb = {
+			picture = FRA_aeb		
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+		acl = {
+			picture = FRA_acl	
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+		acf = {
+			picture = FRA_acf			
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+	}
+	
+	industrial_concern = {	
+		
+		famh = {
+						
+			allowed = {
+				original_tag = FRA
+			}
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+		}
+	}
+}

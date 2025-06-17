@@ -1,0 +1,35 @@
+state = {
+	id = 980
+	name = "STATE_980"
+	manpower = 238130
+	resources={
+		steel=23
+	}
+	
+	state_category = rural
+
+	history = {
+
+		owner = FRA
+		add_core_of = BEL
+		add_core_of = FRA
+
+		victory_points = {
+			9418 1 # Arlons
+		}
+
+		buildings = {
+			infrastructure = 1
+
+			# Gileppe Dam
+			
+		}
+		
+	}
+
+	provinces = {
+	 6537 9418 9444 11407 
+	}
+
+	local_supplies = 14.0 
+}

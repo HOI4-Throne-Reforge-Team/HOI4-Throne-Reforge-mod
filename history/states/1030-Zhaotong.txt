@@ -1,0 +1,27 @@
+
+state = {
+	id = 1030
+	name = "STATE_1030"
+	manpower = 158764
+	
+	state_category = pastoral
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = YUN
+		add_core_of = CHI
+		add_core_of =YUN
+
+
+	}
+
+	provinces = {
+		10819 5072 12841
+	}
+
+	local_supplies = 0.0 
+}

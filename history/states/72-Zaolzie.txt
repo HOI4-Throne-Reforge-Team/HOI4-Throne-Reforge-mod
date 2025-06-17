@@ -1,0 +1,22 @@
+state={
+	id=72
+	name="STATE_72"
+	manpower = 152000
+	
+	state_category = rural
+	
+	history={
+		owner = BHM
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = BHM
+
+	}
+
+	provinces={
+		9551 9567 
+	}
+
+	local_supplies=1.0 
+}

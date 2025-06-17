@@ -1,0 +1,100 @@
+﻿capital = 53
+
+recruit_character = BA2_Franz_Ritter_von_Epp
+recruit_character = BA2_Julius_Streicher
+recruit_character = BA2_ferdinand_schorner
+recruit_character = BA2_alfred_jod
+recruit_character = BA2_wilhelm_list
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	tech_military_police = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	aa_lmg = 1
+	aa_cannon_1 = 1
+	engines_1 = 1
+	early_bombs = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	basic_small_airframe = 1
+	photo_reconnaisance = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	fuel_refining = 1
+	
+}
+set_oob = BAY_1936
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.75
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1932.2.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	communism = 0
+	syndicalist = 0
+	anarchism = 0
+	social_democrat = 0
+	democratic = 0
+	social_conservative = 12
+	neutrality = 8
+	paternal_autocrat = 6
+	fascism = 37
+	populism = 37
+}
+
+add_ideas = {
+	Bavaria_civil_war
+}
+
+create_equipment_variant = {
+	name = "BF-108"
+	type = small_plane_airframe_1    
+	parent_version = 0
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+        fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	icon = "GFX_fighter_equipment_1"
+	obsolete = no 
+}
+
+create_equipment_variant = {
+	name = "BF-108-G"
+	type = small_plane_cas_airframe_1   
+	parent_version = 0
+	modules = {
+		fixed_main_weapon_slot = small_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = recon_camera
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	icon = "GFX_fighter_equipment_1"
+	obsolete = no 
+}
+
+
+

@@ -1,0 +1,29 @@
+state={
+	id=1112
+	name="STATE_1112"
+	manpower = 1875400
+	
+	state_category = town
+
+	history={
+		owner = FTJ
+		add_core_of =FTJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = CHI
+		victory_points = {
+			9803 1
+		}
+		victory_points = {
+			6981 5
+		}
+	}
+
+	provinces={
+	927 3929 11823 861 800 9841 11781 6905 9803 9866 3888 9759 6868 945 9848 3970 3839 6860 6910 3949 6981
+	}
+
+	local_supplies=1.0 
+}

@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ debug_decisions: "调试/作弊决议"
+ debug_show_decisions: "显示调试决议"
+ debug_hide_decisions: "隐藏调试决议"
+ #普鲁士
+ PUS_ANNEX_ALL_GERMANY_STATES_AND_ADD_CORES: "一键统一大德意志"
+ debug_PUS_BIG_GER: "§Y普鲁士§!吞并全德意志地区\n§Y普鲁士§!获得全德意志地区核心\n整编德意志地区全部国家的所有部队到§Y普鲁士§!\n成立德意志国家"
+ PUS_Change_ideologie_communist: "将普鲁士的意识形态改为共产主义"
+ PUS_Change_ideologie_syndicalist: "将普鲁士的意识形态改为工团主义"
+ PUS_Change_ideologie_social_democrat: "将普鲁士的意识形态改为社会民主主义"
+ PUS_Change_ideologie_democratic: "将普鲁士的意识形态改为社会自由主义"
+ PUS_Change_ideologie_social_conservative: "将普鲁士的意识形态改为社会保守主义"
+ PUS_Change_ideologie_neutrality: "将普鲁士的意识形态改为威权民主主义"
+ PUS_Change_ideologie_paternal_autocrat: "将普鲁士的意识形态改为家长独裁"
+ PUS_Change_ideologie_populism: "将普鲁士的意识形态改为民粹主义"
+ PUS_Change_ideologie_fascism: "将普鲁士的意识形态改为法西斯主义"

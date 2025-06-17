@@ -1,0 +1,32 @@
+IF = {
+				limit = {
+					country_exists = FRA
+					NOT = {
+						FRA = {
+							is_subject = yes
+						}
+					}
+				}
+				IF = {
+					limit = {
+						OR = {
+							LAY = {
+								is_subject_of = FRA
+							}
+						}
+					}
+					set_variable = {
+						global.Intruders_FRA = 1
+					}
+				}
+				else = {
+					set_variable = {
+						global.Intruders_FRA = 2
+					}
+				}
+			}
+			else = {
+				set_variable = {
+					global.Intruders_FRA = 3
+				}
+			}

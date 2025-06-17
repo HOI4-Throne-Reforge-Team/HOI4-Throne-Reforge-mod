@@ -1,0 +1,1355 @@
+Prussian_parliamentary_elections = {
+	#打击对手
+	PUS_Election_Strike_opponents_0_PDP = {
+		visible = {
+			has_completed_focus = PUS_Fight_anti_democratic_forces
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_SPP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+			NOT = {
+				has_completed_focus = PUS_PDP_elections
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		cost = 15
+		days_remove = 20
+		days_re_enable = 5
+		modifier = {
+			democratic_drift = -0.3
+			social_democrat_drift = 0.15
+			social_conservative_drift = 0.15
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Strike_opponents_0_SPP = {
+		visible = {
+			has_completed_focus = PUS_Fight_anti_democratic_forces
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+			NOT = {
+				has_completed_focus = PUS_SPP_elections
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		cost = 15
+		days_remove = 20
+		days_re_enable = 5
+		modifier = {
+			social_democrat_drift = -0.3
+			democratic_drift = 0.15
+			social_conservative_drift = 0.15
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Strike_opponents_0_PVP = {
+		visible = {
+			has_completed_focus = PUS_Fight_anti_democratic_forces
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_SPP_elections
+			}
+			NOT = {
+				has_completed_focus = PUS_PVP_elections
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		cost = 15
+		days_remove = 20
+		days_re_enable = 5
+		modifier = {
+			social_conservative_drift = -0.3
+			democratic_drift = 0.15
+			social_democrat_drift = 0.15
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Strike_opponents_1_PDP = {
+		visible = {
+			has_completed_focus = PUS_Fight_anti_democratic_forces
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+			OR = {
+				has_completed_focus = PUS_SPP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+			NOT = {
+				has_completed_focus = PUS_PDP_elections
+			}
+		}
+		cost = 10
+		days_remove = 25
+		days_re_enable = 0
+		modifier = {
+			democratic_drift = -0.5
+			social_democrat_drift = 0.25
+			social_conservative_drift = 0.25
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Strike_opponents_1_SPP = {
+		visible = {
+			has_completed_focus = PUS_Fight_anti_democratic_forces
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+			NOT = {
+				has_completed_focus = PUS_SPP_elections
+			}
+		}
+		cost = 10
+		days_remove = 25
+		days_re_enable = 0
+		modifier = {
+			social_democrat_drift = -0.5
+			democratic_drift = 0.25
+			social_conservative_drift = 0.25
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Strike_opponents_1_PVP = {
+		visible = {
+			has_completed_focus = PUS_Fight_anti_democratic_forces
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+			OR = {
+				has_completed_focus = PUS_SPP_elections
+				has_completed_focus = PUS_PDP_elections
+			}
+			NOT = {
+				has_completed_focus = PUS_PVP_elections
+			}
+		}
+		cost = 10
+		days_remove = 25
+		days_re_enable = 0
+		modifier = {
+			social_conservative_drift = -0.5
+			democratic_drift = 0.25
+			social_democrat_drift = 0.25
+		}
+		cancel_if_not_visible = yes
+	}
+
+	#宣传攻势
+	PUS_Election_Propaganda_offensive_0_PDP = {
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			has_completed_focus = PUS_Prepare_for_propaganda_offensive
+			has_completed_focus = PUS_PDP_elections
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		cost = 15
+		days_remove = 20
+		days_re_enable = 5
+		modifier = {
+			democratic_drift = 0.2
+			social_conservative_drift = -0.1
+			social_democrat_drift = -0.1
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Propaganda_offensive_0_SPP = {
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			has_completed_focus = PUS_Prepare_for_propaganda_offensive
+			has_completed_focus = PUS_SPP_elections
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		cost = 15
+		days_remove = 20
+		days_re_enable = 5
+		modifier = {
+			social_democrat_drift = 0.2
+			democratic_drift = -0.1
+			social_conservative_drift = -0.1
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Propaganda_offensive_0_PVP = {
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			has_completed_focus = PUS_Prepare_for_propaganda_offensive
+			has_completed_focus = PUS_PVP_elections
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		cost = 15
+		days_remove = 20
+		days_re_enable = 5
+		modifier = {
+			social_conservative_drift = 0.2
+			democratic_drift = -0.1
+			social_democrat_drift = -0.1
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Propaganda_offensive_1_PDP = {
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			has_completed_focus = PUS_Prepare_for_propaganda_offensive
+			has_completed_focus = PUS_PDP_elections
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		cost = 12
+		days_remove = 25
+		days_re_enable = 0
+		modifier = {
+			democratic_drift = 0.3
+			social_conservative_drift = -0.15
+			social_democrat_drift = -0.15
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Propaganda_offensive_1_SPP = {
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			has_completed_focus = PUS_Prepare_for_propaganda_offensive
+			has_completed_focus = PUS_PDP_elections
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		cost = 12
+		days_remove = 25
+		days_re_enable = 0
+		modifier = {
+			social_democrat_drift = 0.3
+			social_conservative_drift = -0.15
+			democratic_drift = -0.15
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_Propaganda_offensive_1_PVP = {
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			has_completed_focus = PUS_Prepare_for_propaganda_offensive
+			has_completed_focus = PUS_PDP_elections
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		cost = 12
+		days_remove = 25
+		days_re_enable = 0
+		modifier = {
+			social_conservative_drift = 0.3
+			democratic_drift = -0.15
+			social_democrat_drift = -0.15
+		}
+		cancel_if_not_visible = yes
+	}
+
+	#鼓励投票
+	PUS_Election_PDP_Voting_encouraged_0 = {
+		visible = {
+			has_completed_focus = PUS_PDP_Campaign_strategy
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 13
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PDP_Voting_encouraged_1 = {
+		visible = {
+			has_completed_focus = PUS_PDP_Campaign_strategy
+			has_global_flag = PUS_elections_are_taking_place
+				has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 25
+		days_remove = 9
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.04
+			}
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_SPP_Voting_encouraged_0 = {
+		visible = {
+			has_completed_focus = PUS_SPP_Campaign_strategy
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 13
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_SPP_Voting_encouraged_1 = {
+		visible = {
+			has_completed_focus = PUS_SPP_Campaign_strategy
+			has_global_flag = PUS_elections_are_taking_place
+				has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 25
+		days_remove = 9
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.04
+			}
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PVP_Voting_encouraged_0 = {
+		visible = {
+			has_completed_focus = PUS_PVP_Campaign_strategy
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 13
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.03
+			}
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PVP_Voting_encouraged_1 = {
+		visible = {
+			has_completed_focus = PUS_PVP_Campaign_strategy
+			has_global_flag = PUS_elections_are_taking_place
+				has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 25
+		days_remove = 9
+		days_re_enable = 0
+		complete_effect = {
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.04
+			}
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+
+	#防御对手
+		#民主党
+	PUS_Election_PDP_defense_PVP_0 = {
+		visible = {
+			has_completed_focus = PUS_PDP_Campaign_strategy_one
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 35
+		days_remove = 15
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PVP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PDP_defense_PVP_1 = {
+		visible = {
+			has_completed_focus = PUS_PDP_Campaign_strategy_one
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PVP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.01
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PDP_defense_SPP_0 = {
+		visible = {
+			has_completed_focus = PUS_PDP_Campaign_strategy_two
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 35
+		days_remove = 15
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_SPP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PDP_defense_SPP_1 = {
+		visible = {
+			has_completed_focus = PUS_PDP_Campaign_strategy_two
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_SPP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.01
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+		#社民党
+	PUS_Election_SPP_defense_PDP_0 = {
+		visible = {
+			has_completed_focus = PUS_SPP_Campaign_strategy_one
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 35
+		days_remove = 15
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PDP
+				days = 12
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_SPP_defense_PDP_1 = {
+		visible = {
+			has_completed_focus = PUS_SPP_Campaign_strategy_one
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PDP
+				days = 12
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.01
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_SPP_defense_PVP_0 = {
+		visible = {
+			has_completed_focus = PUS_SPP_Campaign_strategy_two
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 35
+		days_remove = 15
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PVP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_SPP_defense_PVP_1 = {
+		visible = {
+			has_completed_focus = PUS_SPP_Campaign_strategy_two
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PVP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+		#人民党
+	PUS_Election_PVP_defense_SPP_0 = {
+		visible = {
+			has_completed_focus = PUS_PVP_Campaign_strategy_one
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 35
+		days_remove = 15
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_SPP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.02
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PVP_defense_SPP_1 = {
+		visible = {
+			has_completed_focus = PUS_PVP_Campaign_strategy_one
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_SPP
+				days = 12
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PVP_defense_PDP_0 = {
+		visible = {
+			has_completed_focus = PUS_PVP_Campaign_strategy_two
+			has_global_flag = PUS_elections_are_taking_place
+			NOT = {
+				has_global_flag = PUS_has_already_prepare_for_election
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 35
+		days_remove = 15
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PDP
+				days = 12
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.03
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+	PUS_Election_PVP_defense_PDP_1 = {
+		visible = {
+			has_completed_focus = PUS_PVP_Campaign_strategy_two
+			has_global_flag = PUS_elections_are_taking_place
+			has_global_flag = PUS_has_already_prepare_for_election
+		}
+		available = {
+			NOT = {
+				has_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cost = 30
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			PUS = {
+				set_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AI_PUS_Election_PDP
+				days = 12
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.06
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.01
+			}
+			PUS = {
+				clr_country_flag = PUS_Campaign_tactics_are_underway
+			}
+		}
+		cancel_if_not_visible = yes
+	}
+
+	#与中央党合作
+	Cooperate_with_the_Z_Party = {
+		available = {
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_PVP_elections
+				has_completed_focus = PUS_SPP_elections
+			}
+		}
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		cost = 5
+		days_remove = 0
+		fire_only_once = yes
+		complete_effect = {
+			country_event = { id = focus_PUS.1 days = 1 }
+		}
+	}
+	#AI读条
+	AI_PUS_Election_PDP = {
+		activation = {
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_SPP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+		}
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_SPP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		days_mission_timeout = 15
+		days_re_enable = 0
+		is_good = no
+		timeout_effect = {
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_AI_PDP = 1
+					}
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.03
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_PDP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_PDP
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						global.PUS_Election_AI_PDP = 2
+					}
+				}
+				IF = {
+					limit = {
+						has_completed_focus = PUS_PVP_elections
+					}
+					add_political_power = -20
+				}
+				else = {
+					add_days_mission_timeout = {
+						mission = AI_PUS_Election_PVP
+						days = 12
+					}
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.02
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_PDP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_PDP
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						global.PUS_Election_AI_PDP = 3
+					}
+				}
+				IF = {
+					limit = {
+						has_completed_focus = PUS_SPP_elections
+					}
+					add_political_power = -20
+				}
+				else = {
+					add_days_mission_timeout = {
+						mission = AI_PUS_Election_SPP
+						days = 12
+					}
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.02
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_PDP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_PDP
+			}
+			else = {
+
+			}
+		}
+	}
+
+	AI_PUS_Election_SPP = {
+		activation = {
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+		}
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_PVP_elections
+			}
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		days_mission_timeout = 15
+		days_re_enable = 0
+		is_good = no
+		modifier = {
+			social_democrat_drift = 0.1
+		}
+		timeout_effect = {
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_AI_SPP = 1
+					}
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.03
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_SPP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_SPP
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						global.PUS_Election_AI_SPP = 2
+					}
+				}
+				IF = {
+					limit = {
+						has_completed_focus = PUS_PDP_elections
+					}
+					add_political_power = -20
+				}
+				else = {
+					add_days_mission_timeout = {
+						mission = AI_PUS_Election_PDP
+						days = 12
+					}
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.02
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_SPP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_SPP
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						global.PUS_Election_AI_SPP = 3
+					}
+				}
+				IF = {
+					limit = {
+						has_completed_focus = PUS_PVP_elections
+					}
+					add_political_power = -20
+				}
+				else = {
+					add_days_mission_timeout = {
+						mission = AI_PUS_Election_PVP
+						days = 12
+					}
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.02
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_SPP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_SPP
+			}
+			else = {
+
+			}
+		}
+	}
+
+	AI_PUS_Election_PVP = {
+		activation = {
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_SPP_elections
+			}
+		}
+		visible = {
+			has_global_flag = PUS_elections_are_taking_place
+			OR = {
+				has_completed_focus = PUS_PDP_elections
+				has_completed_focus = PUS_SPP_elections
+			}
+		}
+		available = {
+			always = no
+		}
+		cancel_if_not_visible = yes
+		days_mission_timeout = 15
+		days_re_enable = 0
+		is_good = no
+		modifier = {
+			social_conservative_drift = 0.1
+		}
+		timeout_effect = {
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_AI_PVP = 1
+					}
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.03
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_PVP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_PVP
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						global.PUS_Election_AI_PVP = 2
+					}
+				}
+				IF = {
+					limit = {
+						has_completed_focus = PUS_SPP_elections
+					}
+					add_political_power = -20
+				}
+				else = {
+					add_days_mission_timeout = {
+						mission = AI_PUS_Election_SPP
+						days = 12
+					}
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.02
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_PVP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_PVP
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						global.PUS_Election_AI_PVP = 3
+					}
+				}
+				IF = {
+					limit = {
+						has_completed_focus = PUS_PDP_elections
+					}
+					add_political_power = -20
+				}
+				else = {
+					add_days_mission_timeout = {
+						mission = AI_PUS_Election_PDP
+						days = 12
+					}
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.02
+				}
+				set_variable_to_random = {
+					var = global.PUS_Election_AI_PVP
+					min = 1
+					max = 3
+					integer = yes
+				}
+				activate_mission = AI_PUS_Election_PVP
+			}
+			else = {
+
+			}
+		}
+	}
+}

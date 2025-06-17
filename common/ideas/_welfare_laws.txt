@@ -1,0 +1,56 @@
+ideas = {
+	welfare_laws = {
+		law = yes
+		use_list_view = yes
+		picture = GFX_idea_no_social_security_measures
+		no_social_security_measures = {#无保障
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+				conscription_factor = -0.03
+				political_power_gain = 0.5
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		symbolic_social_security_measures = {#象征救济
+		removal_cost = -1
+		picture = GFX_idea_symbolic_social_security_measures
+		modifier = {
+			stability_factor = 0.05
+			consumer_goods_factor = 0.02
+			conscription_factor = 0.03
+			political_power_cost = 0.5
+			}
+			cancel_if_invalid = no
+			default = yes
+		}
+		basical_social_security_measures = {#基本社保
+		removal_cost = -1
+		picture = GFX_idea_basical_social_security_measures
+		modifier = {
+			stability_factor = 0.08
+			consumer_goods_factor = 0.05
+			conscription_factor = 0.05
+			political_power_cost = 0.8
+			weekly_manpower = 500
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		comprehensive_social_security_measures = {#全面补助
+		removal_cost = -1
+		picture = GFX_idea_comprehensive_social_security_measures
+		modifier = {
+			stability_factor = 0.12
+			consumer_goods_factor = 0.1
+			conscription_factor = 0.08
+			political_power_cost = 1.2
+			weekly_manpower = 800
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+	}
+}

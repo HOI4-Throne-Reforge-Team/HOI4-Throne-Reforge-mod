@@ -1,0 +1,33 @@
+
+state = {
+	id = 1032
+	name = "STATE_1032"
+	manpower = 16548100
+	
+	state_category = town
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 1 #was: 7
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of =HNJ
+		victory_points={
+			7159 10
+		}
+		victory_points={
+			13379 5
+		}
+
+
+	}
+
+	provinces = {
+		12350 1448 9982 11918 7159 7502 10377 4125 12378 13379 13380 13378
+	}
+
+	local_supplies = 0.0 
+}

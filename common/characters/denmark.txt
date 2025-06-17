@@ -1,0 +1,30 @@
+characters={
+	DEN_Christian_ten={
+		name=DEN_Christian_ten
+		portraits={
+			civilian={
+				large=Christian_ten
+			}
+		}
+		country_leader={
+			ideology=democratic_subtype
+			traits={ revolutionaryhero }
+			expire="1976.10.1"
+			id=-1
+		}
+	}
+	NOR_Haakon_VII={
+		name=NOR_Haakon_VII
+		portraits={
+			civilian={
+				large=Haakon_VII
+			}
+		}
+		country_leader={
+			ideology=democratic_subtype
+			traits={ revolutionaryhero }
+			expire="1976.10.1"
+			id=-1
+		}
+	}
+}

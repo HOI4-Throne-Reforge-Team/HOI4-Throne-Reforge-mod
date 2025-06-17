@@ -1,0 +1,267 @@
+﻿l_simp_chinese:
+general_rearmament: "重整军备"
+general_rearmament_desc: "已经忽视军事，把自己的主权拱手交给邻国掌控太久了。如今欧陆动荡不安，这样做不会再管用了！我们必须再次加强我国军事力量并确保自主掌控命运。"
+
+Attach_importance_to_defense: "重视防御"
+Attach_importance_to_defense_desc: "在如今的时代，最好的手段就是加强防御。如果外面有威胁，那就让他们来进攻，这样我们就能在自己的地盘里消灭他们。"
+
+Attach_importance_to_offense: "重视进攻"
+Attach_importance_to_offense_desc: "我们不能眼睁睁地看着敌人逼近我们的边境。而且我们也不能在战争中抛弃盟友，让他们自生自灭。整备我们的军队！"
+
+Attach_importance_to_the_Army: "重视陆军"
+Attach_importance_to_the_Army_desc: "尽管空战与海战技术不断发展，地面战斗仍是未来战争的关键。如若我们做好准备，就可避免再次陷入堑壕战的地狱。"
+
+Attach_importance_to_the_Air_Force: "重视空军"
+Attach_importance_to_the_Air_Force_desc: "空军技术是所有军事技术中发展最快的。任何一个现代化国家都应该掌握先进的航空技术。"
+
+Attach_importance_to_the_navy: "重视海军"
+Attach_importance_to_the_navy_desc: "我们首要目标是扩建我们的海军。所以应该将所有资源投入到新船坞建设和水面舰艇的研究中。"
+
+Tank_Specialization: "坦克专业化"
+Tank_Specialization_desc: "应用我们从步兵机械化过程中获得的经验以改进我们的装甲车辆。"
+
+Tank_Specialization_2: "坦克专业化Ⅱ"
+Tank_Specialization_2_desc: "应用我们从步兵机械化过程中获得的经验以改进我们的装甲车辆。"
+
+Develop_amphibious_tanks: "发展两栖坦克"
+Develop_amphibious_tanks_desc: "应用我们从步兵机械化过程中获得的经验以改进我们的装甲车辆。"
+
+Attach_importance_to_motorization: "重视摩托化"
+Attach_importance_to_motorization_desc: "机动与防护对于步兵接战的安全性来说至关重要，专注于发展摩托化技术能使我们能够迅速采取行动。"
+
+Attach_importance_to_mechanization: "重视机械化"
+Attach_importance_to_mechanization_desc: "重新思考摩托化步兵的可能性，当前我们可以生产更多类型的步兵载具。"
+
+Specialization_in_Army_Equipment: "陆军装备专精Ⅰ"
+Specialization_in_Army_Equipment_desc: "陆军装备日新月异，我们将致力于为战士们研发出最好的装备。"
+
+Specialization_in_Army_Equipment_2: "陆军装备专精Ⅱ"
+Specialization_in_Army_Equipment_2_desc: "我们必须继续努力，来让我军步兵和支援部队拥有站在时代前沿的装备。"
+
+Specialization_in_Army_Equipment_3: "陆军装备专精Ⅲ"
+Specialization_in_Army_Equipment_3_desc: "我们应该自主研制达到世界领先水平的步兵武器，而不是购买或仿制外国货。"
+
+Focus_on_fighter_aircraft: "专注战斗机"
+Focus_on_fighter_aircraft_desc: "在第一次世界大战中，空战越来越频繁，所以如果我们能在战斗机的研发中取得优势，那么在未来的空军战场中也就能取得更大的优势。"
+
+Precision_Bomber: "专注轰炸机"
+Precision_Bomber_desc: "当后人谈及此时战争的恐怖之处时，一定会提到那些从天而降的炸弹。而我们则应尽最大的努力使这些故事是由我们的敌人来讲述的。"
+
+Attach_importance_to_the_Air_Force_2: "重视空军Ⅱ"
+Attach_importance_to_the_Air_Force_2_desc: "航空学说的进一步发展可以帮助我们的空军与其他部队配合。"
+
+Attach_importance_to_CAS: "重视近距支援机"
+Attach_importance_to_CAS_desc: "现代化战争不仅需要地面的支援，还需要空中支援。"
+
+Attach_importance_to_naval_bombers: "重视海军轰炸机"
+Attach_importance_to_naval_bombers_desc: "新时代海战的一部分发生在水下，而另一部分则发生在空中。"
+
+Study_rocket_technology: "火箭技术研究"
+Study_rocket_technology_desc: "火箭与喷气式引擎技术所提供的高移动速度能够被运用在载人以及无人运输工具上。应用这些技术将打敌人一个措手不及。"
+
+Mobile_Fleet: "机动舰队"
+Mobile_Fleet_desc: "重新设计海战以诠释潜艇技术的进步，这将使我们更有效地打击敌人的护航舰队。"
+
+The_Grand_Fleet: "大舰队"
+The_Grand_Fleet_desc: "我们的海军学说理论将被调整，我们将更为重视大战舰，并注重兼顾护航舰队的安全，这会助益我们研发相关任务所需的舰船。"
+
+Submarine_tactics: "潜艇战术"
+Submarine_tactics_desc: "潜艇是自鱼雷艇发明以来海军装备最惊人的发展。我们不仅要注重反潜，还要利用它袭扰敌舰。"
+
+Wolf_Tactics: "海狼战术"
+Wolf_Tactics_desc: "德国人研发了可怕而高效的潜艇，并研究了对应”狼群”战术，我们应该向他们学习。"
+
+Tactical_maneuvers_of_a_cruiser: "重视巡洋舰"
+Tactical_maneuvers_of_a_cruiser_desc: "在研发出更先进的战列舰之前，暂以排水量较小的巡洋舰替代之。"
+
+Guardship_destroyer: "重视驱逐舰"
+Guardship_destroyer_desc: "研究潜艇的设计和战术时，我们也学会了如何应对这些战术。而驱逐舰将成为其中关键。"
+
+Attach_importance_to_the_main_battle_ships: "重视主力舰"
+Attach_importance_to_the_main_battle_ships_desc: "拥有最多战列舰的国家才能统领海洋。战列舰与航空母舰分别代表了新旧两种海军主力。"
+
+Ultimate_tactics: "终极战术"
+Ultimate_tactics_desc: "单独使用步兵或高科技坦克并不能让我们赢得战争。我们必须努力改善自己的战术和战略能力。让合适的人来做这项工作，可以使我们真正变成一支军队。"
+
+Attach_importance_to_infrastructure_construction: "基础设施建设"
+Attach_importance_to_infrastructure_construction_desc: "没有合格基础设施建设的国家无法推进先进的项目或工程。"
+
+Attach_importance_to_industry: "重视工业Ⅰ"
+Attach_importance_to_industry_desc: "全世界工业化如火如荼，[ROOT.GetName]若要成为全球舞台上的一个主要参与方，就必须不能落于人后。投资重工业不仅能创造大把就业机会并刺激经济发展，还能为未来的挑战提供必要的资源。"
+
+Attach_importance_to_industry_2: "重视工业Ⅱ"
+Attach_importance_to_industry_2_desc: "凭借钢铁般的意志和不懈的工作热情，我们必能带领人民再一次完成巨大的工业进步。"
+
+Attach_importance_to_industry_3: "重视工业Ⅲ"
+Attach_importance_to_industry_3_desc: "持续工业化是促进我国繁荣与安全的关键。因此，我们必须利用新技术的力量并在全[ROOT.GetName]进一步推进工业化。"
+
+Attach_importance_to_industry_4: "重视工业Ⅳ"
+Attach_importance_to_industry_4_desc: "我们的技术劳动成果的用途超出了战场应用。其中许多可以用来提高我们行业的效率。通过一些投资，我们可以利用我们新发现的知识开始大规模的工业现代化计划。"
+
+The_major_infrastructure_construction_plan: "大基建计划"
+The_major_infrastructure_construction_plan_desc: "继续基础设施的扩建可以满足高科技秘密工程的运输和通讯需求。"
+
+Carry_large_scale_construction_projects: "大兴土木工程"
+Carry_large_scale_construction_projects_desc: "我们的基础设施网络的扩建显著提升了我们的建设能力。"
+
+Resource_exploration: "资源勘探"
+Resource_exploration_desc: "我们收到了在[ROOT.GetName]附近采矿中发掘的样本，当地可能存在高铬纯度的铬铁矿。我们必须再当地开展新的采矿作业，以此确保为军工产业提供可靠稳定的铬供应。"
+
+Expand_the_exploration_scope: "扩大勘探"
+Expand_the_exploration_scope_desc: "我们投资了现代采矿工具，扩大了矿山基础设施，这为强大的采矿业奠定了基础。增产回应了国防需要，使我国进一步为冲突做好了准备。"
+
+Mining_vein_development: "钻探矿脉"
+Mining_vein_development_desc: "在[ROOT.GetName]附近发现了丰富的石油和铝矿藏。我们的专家认为这些矿藏蕴含可推动我国经济发展和军工快速扩张的大量潜能。他们建议尽快在马科拉矿脉启动建设工作，确立珍贵矿物的稳定来源。"
+
+Improve_sanitation_and_housing_conditions: "改善卫生和住房条件"
+Improve_sanitation_and_housing_conditions_desc: "太多人居住在拥挤不堪的贫民窟中，这根本称不上是人能住的环境。我们需要搞好整个地区的卫生工作，确保每个人都有机会获得卫生而实用的住房。"
+
+Urbanization: "城市化"
+Urbanization_desc: "工业化和城市化实为一体之两翼。城市里的岗位越多，来自乡村的人口迁移也就越多。我们如果要避免城市落得拥挤不堪的贫民窟的下场，就需要投资扩建基础设施，为即将到来的人口增长做好准备。"
+
+Scientific_research_breakthrough: "科学研究突破"
+Scientific_research_breakthrough_desc: "我国工业不断扩张，各行各业不断进步，这使得我们能够同时进行更多科研项目。"
+
+Scientific_research_breakthrough_2: "科学研究突破Ⅱ"
+Scientific_research_breakthrough_2_desc: "我国的快速工业化让我们在科研上有了新的突破。"
+
+Technology_Sharing: "科技共享"
+Technology_Sharing_desc: "通过与盟友共享研发的技术，我们的整个阵营可以在战时更有效地进行科研。"
+
+Develop_industry: "发展工业"
+Develop_industry_desc: "强大的国家需要有目标的、有远见的强大经济体系。通过采取计划经济模式，我们可以高效分配资源，优先发展工业，确保所有公民的公平发展。"
+
+Develop_civilian_industries: "发展民用工业Ⅰ"
+Develop_civilian_industries_desc: "将我们政策的效力集中用在民用工业建设上以获得跳跃式发展。"
+
+Develop_civilian_industries_2: "发展民用工业Ⅱ"
+Develop_civilian_industries_2_desc: "即使战争的阴云逐渐笼罩着整个世界，我们也不能忽视民用工业的生产能力。"
+
+Develop_civilian_industries_3: "发展民用工业Ⅲ"
+Develop_civilian_industries_3_desc: "当我们的工厂继续扩建之后，我们就能加快贸易物资的生产，并加大工业建设力度。"
+
+Develop_military_industry: "发展军用工业Ⅰ"
+Develop_military_industry_desc: "如果你能生产拖拉机，你就能生产坦克！我们决不允许军事生产能力拖后腿。"
+
+Develop_military_industry_2: "发展军用工业Ⅱ"
+Develop_military_industry_2_desc: "用民用工厂生产军械是低效的。我们应该专注于军事工业的建设。"
+
+Develop_military_industry_3: "发展军用工业Ⅲ"
+Develop_military_industry_3_desc: "继续努力扩建军用工厂可以帮我们满足新装备的需求。"
+
+Develop_nuclear_energy: "重视核研究"
+Develop_nuclear_energy_desc: "我们即将获得一项足以改变世界的技术，我们不能让其他国家点燃可能在某天毁灭地球的火种。"
+
+Study_nuclear_weapons: "秘密武器"
+Study_nuclear_weapons_desc: "虽然集中所有资源生产坦克飞机充满了诱惑力，但赢得战争的秘密却在那些新的科技领域之中：电子、火箭和核武器。"
+
+Attach_importance_to_politics: "重视政治"
+Attach_importance_to_politics_desc: "要想改变世界，就得先改变我们的国家。应当把加强我们的政治地位视作首要任务。"
+
+Nationalism: "民族主义"
+Nationalism_desc: "我们的国家是独一无二的，我们在政治上的成就也不可能发生在任何其他地方。我们必须要不惜代价为之奋斗。"
+
+Communism: "共产主义"
+Communism_desc: "意识形态没有国界。其他国家也许可以称自己为主权国家，但我们的信念是远远高于这种主张的。"
+
+Neutralism: "中立主义"
+Neutralism_desc: "当别人认为在全球性冲突中选择站队需要勇气与智慧时，我们却明白拒绝站队需要更多的勇气与智慧。"
+
+Recruitment_Plan: "征兵计划"
+Recruitment_Plan_desc: "随着全球局势日渐紧张，是时候扩大征兵计划来应对任何形式的外国威胁。"
+
+Initiate_war_mobilization: "开始战争动员"
+Initiate_war_mobilization_desc: "无论我们是否愿意，战争都将来临。因此，我们最好提前做好准备。"
+
+War_mobilization: "战时动员"
+War_mobilization_desc: "战争已经临门。为了保护我等之自由，必须动员社会的方方面面。每个男人、女人和孩子都必须知道自己的责任和义务。如此必有代价，但我国一切工业产能都必须用于支持丹麦人民的重整军备和安居乐业。"
+
+Fascist_system: "法西斯体系"
+Fascist_system_desc: "由于国民议会受到军方的影响，我们现在可以建立一个基于实力、荣誉和对[ROOT.GetName]忠诚的政权。"
+
+Seeking_protection_from_Germany: "寻求德国的保护"
+Seeking_protection_from_Germany_desc: "国际联盟在维护国际法方面完全失败了。我们必须承认，武装力量的实力是国际关系的唯一决定因素。因此，为了我们国家的生存，我们必须寻求[GER.GetNameDef]等更强大邻国的援助。"
+
+Flatter_Germany: "向德国献媚"
+Flatter_Germany_desc: "成为德国的傀儡，德国会给予我们技术许可作为犒赏，但代价则是他们将成为我国的控制者。"
+
+Be_of_ethnic_autonomy_status: "民族自治"
+Be_of_ethnic_autonomy_status_desc: "我们在德国的沉重压迫下喘不过气，如果我们想要拥有未来，我们就必须得到更多工业自主权。"
+
+Expansion_plan: "扩张计划"
+Expansion_plan_desc: "为了让[ROOT.GetNameDef]厚积薄发，我们必须扩张到我们的自然边界，统一所有理应属于我们的领土！"
+
+The_territory_under_the_sun: "阳光下的地盘"
+The_territory_under_the_sun_desc: "让所有人知道，[ROOT.GetNameDef]再次宣示其在阳光下占据一席之地的权利！我们的人民将不再在列强的阴影下受辱！"
+
+War_fever: "战争狂热"
+War_fever_desc: "为了取得全面胜利，我们必须动员全社会，把全面战争带到敌人家门口。"
+
+political_correctness: "政治正确"
+political_correctness_desc: "那些持有轻微异议或反对观点的人似乎总是认为有人搞了一个大阴谋迫害他们。这似乎是一个好主意。"
+
+Internationalism: "国际主义"
+Internationalism_desc: "我们坚定地相信，意识形态不分国界，我们也不为国界所拘束。"
+
+Young_Red_Army: "青年红军"
+Young_Red_Army_desc: "为弥补现役部队中的人力短缺，我们必须向国家的青年组织成员提供基础军事训练课程，教导他们正确地使用武器并熟悉军事战术。如此一来，一旦形势需要，他们便可及时补充现役部队。"
+
+Contact_the_Soviet_Union: "联系苏联"
+Contact_the_Soviet_Union_desc: "苏维埃联盟一直走在工人革命和抵抗法西斯主义的前段。为了自身的发展，我们有必要寻找并联系当今世界上最大的社会主义国家了。"
+
+Cooperate_with_the_Soviet_Union: "与苏联合作"
+Cooperate_with_the_Soviet_Union_desc: "苏维埃联盟为其他追随他们社会主义制度的国家铺平了道路。这将有利于我们与苏联同志展开合作，为了我们共同寻求的目标。"
+
+Join_the_Communist_International: "加入共产国际"
+Join_the_Communist_International_desc: "共产国际是真正为世界无产阶级革命而战的保护伞。如果我们想打败资本主义和法西斯主义，这就是最好也是唯一的途径。"
+
+The_construction_of_communism: "共产主义建设"
+The_construction_of_communism_desc: "我们不是为现在的这一代大人们建设社会主义，而是为了孩子们这一代以及他们的下一代。我们必须教导他们如何在我们已经取得成就的基础上继续前进，这样他们才能够完成我们开辟的事业。"
+
+Ideological_indoctrination: "意识形态灌输"
+Ideological_indoctrination_desc: "既然我们的意识形态是基于真理的，那么我们也可以将它当做真理来进行教育。媒体和教育系统必须要反映这一点。"
+
+Political_reform: "政治改革"
+Political_reform_desc: "改革政治体制将促进国家复兴和内部稳定。"
+
+Defend_the_motherland: "保卫祖国"
+Defend_the_motherland_desc: "我们的野心远远超出了我们目前的边界，但即便如此，我们也必须绝对确保没有人能威胁到我们的领土。"
+
+Our_path: "我们的路"
+Our_path_desc: "是时候将我们的雄心昭示天下了，成为地方强权，而后傲立于世界诸国之列。"
+
+Maintain_deterrence: "保持威慑"
+Maintain_deterrence_desc: "在被孤立的情况下我们很难从战争中获益。幸运的是，我们明白最好的防御就是让所有人不会敢于侵犯我们的威慑。"
+
+Seeking_refuge_with_the_Allies: "寻求同盟国的庇护"
+Seeking_refuge_with_the_Allies_desc: "虽然我们可以做好一切准备，但我们周围有更大更强的邻国——我们无法真正确定他们的意图。因此，在其他地方寻求保护以确保我们的独立是一个明智之举。"
+
+Precautionary_plan: "自卫计划"
+Precautionary_plan_desc: "我们可能错判了局势的危险程度。单凭我们自身的实力将无法阻挡强敌，亦不能盲目依赖我们相邻的盟友可以当永远的缓冲区。我们必须填补时间的空缺，重整[ROOT.GetName]，准备自卫"
+
+Preparatory_mobilization_plan: "预备动员计划"
+Preparatory_mobilization_plan_desc: "现在应准备预备军力以防战争。我军将征召民兵到正规部队负责本土防卫，并让他们准备好在必要时征战海外。"
+
+Limited_interference: "有限干涉"
+Limited_interference_desc: "这会使我们获得非凡的侵略性从而使我们卷入全面战争，但经过最近的调查，许多人民表示愿意支持对外冲突。"
+
+Strengthen_oneself: "强化自身"
+Strengthen_oneself_desc: "优柔寡断的下场就是成为列强手中的玩物。我们必须加强自身武装力量，削弱敌人的力量，有了武力保证才有真正的安全。"
+
+Why_do_we_fight: "我们为何而战"
+Why_do_we_fight_desc: "这个世界开始变得越来越危险了。我们的人民必须意识到那些利欲熏心的独裁者们所犯下的暴行。是时候让我们的人民团结于我们的事业之下，让他们准备好为我们的自由而战了。"
+
+Border_Defense_Plan: "边境防御计划"
+Border_Defense_Plan_desc: "如果让敌人侵入我们的边境，[ROOT.GetNameDef]就离亡国不远了。我们的边境无比神圣，我们的国家不能失去任何一寸土地。因此我们必须强化边境防御并做好保卫边境的准备。"
+
+Build_a_border_defense_line: "构筑边境防御线"
+Build_a_border_defense_line_desc: "自从我们努力筹集资金来加强边境防御以来，我们不断收到公众的报告，称他们开始感到更安全，特别是关于欧洲日益严重的大动荡。望这些防御工事能够阻止未来任何可能计划占领[ROOT.GetNameDef]的人。"
+
+emergency_defense: "紧急防卫"
+emergency_defense_desc: "敌军已经践踏了我们引以为豪祖国的领土，[ROOT.GetName]人民必将奋勇反击，把入侵者赶出去！"
+
+Establish_an_intelligence_agency: "建立情报机构"
+Establish_an_intelligence_agency_desc: "我们的情报机构一方面能阻止外国间谍在我国暗中搞破坏，另一方面也能在国际斗争中助我国一臂之力。"
+
+Upgrade_the_intelligence_department: "升级情报部门"
+Upgrade_the_intelligence_department_desc: "通过扩大我们的情报部门，我们将渗透到意大利社会的方方面面，让共产主义者、犯罪分子和其他害群之马无处遁形并被绳之以法，使意大利更加长治久安。"

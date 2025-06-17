@@ -1,0 +1,198 @@
+focus_tree = {  #开局国策
+	id = austrian_focus_state
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+			has_dlc = "La Resistance"
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2500 }
+	
+	focus = {  #艰难前行的帝国
+		id = AUS_the_empire_is_struggle
+		icon = GFX_focus_AUS_the_empire_is_struggle
+		x = 5
+		y = 1
+		cost = 1
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 10
+			country_event = { id = focus_AUS.1 days = 1 }
+		}
+	}
+	focus = {  #继续推进波西米亚继承事务
+		id = AUS_bohemian_succession_affairs
+		icon = GFX_focus_AUS_bohemian_succession_affairs
+		x = 5
+		y = 2
+		cost = 1
+		available = {
+		}
+		prerequisite = {
+			focus = AUS_the_empire_is_struggle
+		}
+		completion_reward = {
+			add_political_power = -5
+			add_stability = -0.02
+		}
+	}
+	focus = {  #接管地方政府部门
+		id = AUS_snatch_government_departments
+		icon = GFX_focus_AUS_snatch_government_departments
+		x = 5
+		y = 3
+		cost = 10
+		available = {
+		}
+		prerequisite = {
+			focus = AUS_bohemian_succession_affairs
+		}
+		select_effect = { 
+			country_event = { id = focus_AUS.2 days = 7 } 
+			country_event = { id = focus_AUS.3 days = 14 } 
+			country_event = { id = focus_AUS.4 days = 21 } 
+			country_event = { id = focus_AUS.5 days = 35 } 
+		}
+		completion_reward = {
+			annex_country = {
+				target = BHM
+			}
+		}
+	}
+}
+
+focus_tree = {   #内政国策树
+	id = austrian_focus_internal_affairs
+	country = { 
+		factor = 0
+		
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2500 }
+    focus = {  #布拉格之窗
+		id = AUS_Prager_Fenstersturz
+		icon = GFX_focus_AUS_Prager_Fenstersturz
+		cost = 1
+		x = 5
+		y = 3
+		completion_reward = { 
+			add_stability = -0.15
+		}
+	}
+	focus = {  #事态紧急
+		id = AUS_Emergency
+		icon = GFX_focus_AUS_Emergency
+		cost = 1
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = AUS_Prager_Fenstersturz
+		}
+		completion_reward = { 
+			add_political_power = 150
+			unlock_decision_tooltip = AUS_strong_bohemia_government
+			unlock_decision_tooltip = AUS_fucking_stop
+			unlock_decision_tooltip = AUS_financial_allocation
+		}
+	}
+	focus = {  #帝国政府的内部混乱
+		id = AUS_internal_chaos_in_government
+		icon = GFX_focus_AUS_internal_chaos_in_government
+		cost = 1
+		x = 3
+		y = 5
+		prerequisite = {
+			focus = AUS_Emergency
+		}
+		completion_reward = { 
+			add_political_power = -5
+			unlock_decision_tooltip = AUS_remove_insects
+		}
+	}
+	focus = {  #表面功夫
+		id = AUS_sodom_apple
+		icon = GFX_focus_AUS_sodom_apple
+		cost = 1
+		x = 5
+		y = 5
+		prerequisite = {
+			focus = AUS_Emergency
+		}
+		completion_reward = { 
+			add_political_power = -10
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = AUS_chaotic_situation
+				days = 14
+			}
+		}
+	}
+	focus = {  #「波希米亚」计划
+		id = AUS_plan_of_bohemia
+		icon = GFX_focus_AUS_plan_of_bohemia
+		cost = 1
+		x = 7
+		y = 5
+		prerequisite = {
+			focus = AUS_Emergency
+		}
+		completion_reward = { 
+			add_political_power = -10
+			unlock_decision_tooltip = AUS_ultranationalist_of_bohemia
+		}
+	}
+	focus = {  #波希米亞王冠領地
+		id = AUS_bohemian_crown
+		icon = GFX_focus_AUS_bohemian_crown
+		cost = 1
+		x = 5
+		y = 6
+		prerequisite = {
+			focus = AUS_plan_of_bohemia
+		}
+		prerequisite = {
+			focus = AUS_sodom_apple
+		}
+		prerequisite = {
+			focus = AUS_internal_chaos_in_government
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+			add_days_mission_timeout = {
+				mission = AUS_chaotic_situation
+				days = 7
+			}
+		}
+	}
+	focus = {  #稳定重归帝国
+		id = AUS_stability_back_to_austrian
+		icon = GFX_focus_AUS_stability_back_to_austrian
+		cost = 2
+		x = 5
+		y = 7
+		available = {
+			has_idea = AUS_chaotic_government_2
+			has_idea = AUS_bohemian_ultranationalism_2
+		}
+		prerequisite = {
+			focus = AUS_bohemian_crown
+		}
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = AUS_shattered_empire
+				add_idea = AUS_shattered_empire_2
+			}
+		}
+	}
+}

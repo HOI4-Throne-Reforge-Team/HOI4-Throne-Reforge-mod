@@ -1,0 +1,33 @@
+
+state={
+	id=534
+	name="STATE_534" # 会津
+	manpower = 1933000
+	
+	state_category = city
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		add_core_of = AIZ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			1117 5
+		}
+		victory_points = {
+			1113 10
+		}
+
+
+	}
+
+	provinces={
+		9952 1117 11930 11989 4122 11908 4000 1113
+	}
+
+	local_supplies=0.0 
+}

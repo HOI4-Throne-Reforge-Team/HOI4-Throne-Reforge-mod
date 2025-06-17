@@ -1,0 +1,36 @@
+scripted_gui = {
+	AUS_economic_gui = {
+		context_type = decision_category
+		window_name = AUS_economic
+		dirty = aus.real_gdp
+		dirty = aus.nominal_gdp
+		dirty = aus.price_level
+		dirty = aus.base_price_level
+		dirty = aus.CPI
+		dirty = aus.GDP_deflator
+		dirty = aus.direct_taxes
+		dirty = aus.indirect_taxes
+		dirty = aus.government_reserves
+		dirty = aus.government_income
+		dirty = aus.government_spending
+		dirty = aus.total_private_investment
+		dirty = aus.private_consumption_expenditure
+		dirty = aus.net_exports
+		dirty = aus.unemployment_rate
+		dirty = aus.available_land
+		dirty = aus.AD
+		dirty = aus.SRAS
+		dirty = aus.LRAS
+		dirty = aus.specific_tax
+		dirty = aus.specific_allowance
+		dirty = aus.nominal_interest_rate
+		dirty = aus.minimum_reserves
+		dirty = aus.required_reserve_ratio
+		dirty = aus.total_bank_loans
+		dirty = aus.social_loan_demand
+		dirty = aus.liquid_cash
+		dirty = aus.money_supply
+		dirty = aus.money_demand
+		dirty = aus.market_efficiency
+	}
+}

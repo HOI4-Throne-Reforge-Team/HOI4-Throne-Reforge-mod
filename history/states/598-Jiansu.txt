@@ -1,0 +1,34 @@
+
+state={
+	id=598
+	name="STATE_598"
+	
+	state_category = town
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = JIS
+		buildings = {
+			infrastructure = 1
+			1029={
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+
+		}
+		victory_points={ 7025 25 }
+		victory_points={ 1029 3 }
+		victory_points={ 12055 1 }
+
+	}
+
+	provinces={
+		7025 12055 9956 7200 1029 1076 1121 4082 4031
+	}
+	manpower=23669300
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,28 @@
+state=
+{
+	id=597
+	name="STATE_597"
+	manpower = 18704910
+	state_category = large_town
+	
+	
+	history=
+	{
+		owner = NCG
+		add_core_of = CHI
+		add_core_of = NCG
+		victory_points = {
+			1069 20
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+	}
+	provinces={
+		1069 12045 7189 1084 10102 4089 12093 4071
+	}
+
+	local_supplies=4.0 
+}

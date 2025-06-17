@@ -1,0 +1,344 @@
+﻿l_simp_chinese:
+
+SPR_war_in_spain: "西班牙的征服"
+SPR_war_in_spain_desc: ""
+
+SPR_america: "美洲-黄金之国"
+SPR_america_desc: ""
+
+SPR_cuban_base: "古巴基地"
+SPR_cuban_base_desc: ""
+
+SPR_spain_mexican_War: "第二次西墨战争"
+SPR_spain_mexican_War_desc: ""
+
+SPR_mesoamerica_returns: "中美洲回归"
+SPR_mesoamerica_returns_desc: ""
+
+SPR_new_granada: "从新格拉纳达......"
+SPR_new_granada_desc: ""
+
+SPR_la_plata: "......到拉普拉塔"
+SPR_la_plata_desc: ""
+
+SPR_caribbean_king: "加勒比之王"
+SPR_caribbean_king_desc: ""
+
+SPR_brazil: "葡巴帝国"
+SPR_brazil_desc: ""
+
+SPR_treaty_of_havana: "哈瓦那条约"
+SPR_treaty_of_havana_desc: ""
+
+SPR_six_viceroyalties: "六大总督辖区"
+SPR_six_viceroyalties_desc: ""
+
+SPR_iberia: "伊比利亚-荣光之地"
+SPR_iberia_desc: ""
+
+SPR_portugal: "葡萄牙的王位"
+SPR_portugal_desc: ""
+
+SPR_war_preparations: "战争准备"
+SPR_war_preparations_desc: ""
+
+SPR_once_one: "曾为一体"
+SPR_once_one_desc: ""
+
+SPR_spain_portuguese_union: "西葡联合"
+SPR_spain_portuguese_union_desc: "" 
+
+SPR_gibraltar: "夺回直布罗陀"
+SPR_gibraltar_desc: ""
+
+SPR_iberian_union: "伊比利亚联邦"
+SPR_iberian_union_desc: ""
+
+SPR_far_east: "远东-华贵之乡"
+SPR_far_east_desc: ""
+
+SPR_philippine_base: "菲律宾基地"
+SPR_philippine_base_desc: ""
+
+SPR_macau_base: "澳门基地"
+SPR_macau_base_desc: ""
+
+SPR_black_ship_beturns: "黑船再臨"
+SPR_black_ship_beturns_desc: ""
+
+SPR_china: "进入中国"
+SPR_china_desc: ""
+
+SPR_guangdong: "进攻广东"
+SPR_guangdong_desc: ""
+
+SPR_yunnan_guizhou: "西征云贵"
+SPR_yunnan_guizhou_desc: ""
+
+SPR_on_plateau: "高原之上"
+SPR_on_plateau_desc: ""
+
+SPR_taiwan: "登陆台湾"
+SPR_taiwan_desc: ""
+
+SPR_climb_southeast: "登上东南"
+SPR_climb_southeast_desc: ""
+
+SPR_treaty_with_beiyang: "与北洋的条约"
+SPR_treaty_with_beiyang_desc: ""
+
+SPR_final_blow: "最后一击"
+SPR_final_blow_desc: ""
+
+SPR_grassland: "进军草原"
+SPR_grassland_desc: ""
+
+SPR_new_ming: "新明朝"
+SPR_new_ming_desc: ""
+
+SPR_chine_spain: "西班牙的中国"
+SPR_chine_spain_desc: ""
+
+SPR_north-africa: "北非-基督之敌"
+SPR_north-africa_desc: ""
+
+SPR_new_ming: "新明朝"
+SPR_new_ming_desc: ""
+
+SPR_morocco: "在摩洛哥的机会"
+SPR_morocco_desc: ""
+
+SPR_make_spain_great_again: "西班牙帝国的伟大复兴"
+SPR_make_spain_great_again_desc: ""
+
+SPR_connect_italy: "对意关系"
+SPR_connect_italy_desc: ""
+
+SPR_wipe_out_red_bandits: "消灭赤匪"
+SPR_wipe_out_red_bandits_desc: ""
+
+SPR_planning_coup: "策划政变"
+SPR_planning_coup_desc: ""
+
+SPR_coalition_rule_italy: "联合统治"
+SPR_coalition_rule_italy_desc: ""
+
+SPR_connect_france: "对法关系"
+SPR_connect_france_desc: ""
+
+SPR_eternal_alliance: "永远的联盟"
+SPR_eternal_alliance_desc: ""
+
+SPR_coalition_rule_france: "联合统治"
+SPR_coalition_rule_france_desc: ""
+
+SPR_latin_union_idea: "拉丁联盟构想"
+SPR_latin_union_idea_desc: ""
+
+SPR_make_latin_union: "成立拉丁联盟"
+SPR_make_latin_union_desc: ""
+
+SPR_bonaparte_power: "更强大的波拿巴"
+SPR_bonaparte_power_desc: ""
+
+SPR_break: "决裂"
+SPR_break_desc: ""
+
+SPR_real_bonaparte: "真正的波拿巴"
+SPR_real_bonaparte_desc: ""
+
+SPR_north_america: "美洲北进"
+SPR_north_america_desc: ""
+
+SPR_invasion_paris: "攻入巴黎"
+SPR_invasion_paris_desc: ""
+
+SPR_far_eastern_expansion: "远东扩张"
+SPR_far_eastern_expansion_desc: ""
+
+SPR_north_african_advance: "北非突进"
+SPR_north_african_advance_desc: ""
+
+SPR_orthodoxy_war: "正统之战"
+SPR_orthodoxy_war_desc: ""
+
+SPR_sun_never_sets_empire: "日不落帝国"
+SPR_sun_never_sets_empire_desc: ""
+
+SPR_latin_union_idea: "拉丁联盟构想"
+SPR_latin_union_idea_desc: ""
+
+SPR_make_latin_union: "成立拉丁联盟"
+SPR_make_latin_union_desc: ""
+
+SPR_connect_austria: "对奥关系"
+SPR_connect_austria_desc: ""
+
+SPR_family_union: "家族联合"
+SPR_family_union_desc: ""
+
+SPR_attack_austria: "进攻奥地利"
+SPR_attack_austria_desc: ""
+
+SPR_clean_up_red_remnants: "清理红色余孽"
+SPR_clean_up_red_remnants_desc: ""
+
+SPR_throne_of_spain: "西班牙的王座"
+SPR_throne_of_spain_desc: ""
+
+SPR_ancient_carlos_connections: "卡洛斯王朝"
+SPR_ancient_carlos_connections_desc: ""
+
+SPR_inheriting_the_rule_of_bonaparte: "波拿巴家族"
+SPR_inheriting_the_rule_of_bonaparte_desc: ""
+
+SPR_the_real_habsburg_family: "哈布斯堡家族"
+SPR_the_real_habsburg_family_desc: ""
+
+SPR_past_glory: "日不落的往日辉煌"
+SPR_past_glory_desc: ""
+
+SPR_industrial_renaissance: "工业复兴"
+SPR_industrial_renaissance_desc: ""
+
+SPR_arms_expansion: "军备扩张"
+SPR_arms_expansion_desc: ""
+
+SPR_improve_efficiency: "提升效率"
+SPR_improve_efficiency_desc: ""
+
+SPR_people_livelihood: "人民生计"
+SPR_people_livelihood_desc: ""
+
+SPR_northern_industrial_zone: "北方工业区"
+SPR_northern_industrial_zone_desc: ""
+
+SPR_cutting_benefits: "缩减福利"
+SPR_cutting_benefits_desc: ""
+
+SPR_urban_industrial_center: "城市工业中心"
+SPR_urban_industrial_center_desc: ""
+
+SPR_portuguese_military_industry: "葡萄牙军事产业"
+SPR_portuguese_military_industry_desc: ""
+
+SPR_national_infrastructure: "全国基建"
+SPR_national_infrastructure_desc: ""
+
+SPR_the_wealth_of_portugal: "葡萄牙的财富"
+SPR_the_wealth_of_portugal_desc: ""
+
+SPR_spain_industrial_miracle: "西班牙工业奇迹"
+SPR_spain_industrial_miracle_desc: ""
+
+SPR_legacy_of_the_golden_continent: "黄金大陆的遗产"
+SPR_legacy_of_the_golden_continent_desc: ""
+
+SPR_the_heritage_of_america: "美洲的遗产"
+SPR_the_heritage_of_america_desc: ""
+
+SPR_the_heritage_of_africa: "非洲的遗产"
+SPR_the_heritage_of_africa_desc: ""
+
+SPR_the_heritage_of_far_east: "远东的遗产"
+SPR_the_heritage_of_far_east_desc: ""
+
+SPR_holy_roman_territory: "神圣罗马领土"
+SPR_holy_roman_territory_desc: ""
+
+SPR_new_king_jong: "新王登基"
+SPR_new_king_jong_desc: ""
+
+SPR_here_is_destiny: "天命在此"
+SPR_here_is_destiny_desc: ""
+
+SPR_must_have_god: "必有天意"
+SPR_must_have_god_desc: ""
+
+SPR_unveiled: "不得悖逆"
+SPR_unveiled_desc: ""
+
+SPR_sit_in_the_throne: "坐稳皇位"
+SPR_sit_in_the_throne_desc: ""
+
+SPR_king_of_pioneer: "歌颂先王"
+SPR_king_of_pioneer_desc: ""
+
+SPR_foundation: "立国之本"
+SPR_foundation_desc: ""
+
+SPR_embrace_traditionalism: "拥抱传统主义"
+SPR_embrace_traditionalism_desc: ""
+
+SPR_royal_priority: "皇室优先"
+SPR_royal_priority_desc: ""
+
+SPR_compromise_with_the_bourgeoisie: "对资产阶级的妥协"
+SPR_compromise_with_the_bourgeoisie_desc: ""
+
+SPR_constitutional_monarchy: "西班牙的君主立宪"
+SPR_constitutional_monarchy_desc: ""
+
+SPR_centralization_of_military_power: "军权集中"
+SPR_centralization_of_military_power_desc: ""
+
+SPR_strangling_the_red_menace: "绞杀赤色威胁"
+SPR_strangling_the_red_menace_desc: ""
+
+SPR_in_power: "大权在握"
+SPR_in_power_desc: ""
+
+SPR_carlos_only_in_spain: "卡洛斯，西班牙唯一的王朝"
+SPR_carlos_only_in_spain_desc: ""
+
+SPR_way_to_conquer: "在征服之路上"
+SPR_way_to_conquer_desc: ""
+
+SPR_following_our_emperor: "追随我们的皇帝"
+SPR_following_our_emperor_desc: ""
+
+SPR_defeating_the_unfaithful: "击破不忠之人"
+SPR_defeating_the_unfaithful_desc: ""
+
+SPR_achievement: "志成，竟成"
+SPR_achievement_desc: ""
+
+SPR_army_first: "军队优先"
+SPR_army_first_desc: ""
+
+SPR_crushing_resistance: "粉碎反抗"
+SPR_crushing_resistance_desc: ""
+
+SPR_common_goals: "共同目标"
+SPR_common_goals_desc: ""
+
+SPR_army_dictatorship: "军事独裁"
+SPR_army_dictatorship_desc: ""
+
+SPR_long_live_bonaparte: "波拿巴万岁！"
+SPR_long_live_bonaparte_desc: ""
+
+SPR_modern_royal_family: "现代化的皇室"
+SPR_modern_royal_family_desc: ""
+
+SPR_modernization_of_people_livelihood_reform: "现代化民生改革"
+SPR_modernization_of_people_livelihood_reform_desc: ""
+
+SPR_family_ties_from_the_past: "往日的家族纽帶"
+SPR_family_ties_from_the_past_desc: ""
+
+SPR_habsburg_influence: "哈布斯堡的影响力"
+SPR_habsburg_influence_desc: ""
+
+SPR_appeasing_conservatives: "安抚保守派"
+SPR_appeasing_conservatives_desc: ""
+
+SPR_reconciliation_with_the_people: "与民众和解"
+SPR_reconciliation_with_the_people_desc: ""
+
+SPR_drafting_new_constitution: "制定新宪法"
+SPR_drafting_new_constitution_desc: ""
+
+SPR_the_people_with_habsburg: "人民的哈布斯堡"
+SPR_the_people_with_habsburg_desc: ""
+

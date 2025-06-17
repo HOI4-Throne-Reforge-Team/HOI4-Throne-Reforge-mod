@@ -1,0 +1,135 @@
+characters = {
+	#领导人
+	BA2_Franz_Ritter_von_Epp = {#弗朗茨·里特·冯·埃普
+		name = GER_franz_ritter_von_epp
+		portraits = {
+			civilian = {
+				large = GER_franz_ritter_von_epp
+			}
+		}
+		country_leader = {
+			ideology = populism_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token =Franz_ritter_von_epp
+			allowed = {
+				original_tag = BA2
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander = {
+			traits = { militias_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	BA2_Julius_Streicher = {#尤利乌斯·施特莱歇尔
+		name = BAY_Julius_Streicher
+		portraits = {
+			civilian = {
+				large = BAY_Julius_Streicher
+			}
+		}
+		country_leader = {
+			ideology = fascist
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+    #政治顾问
+
+    #科学家
+	
+    #理论家
+	
+    #部长/将领
+	
+	BA2_ferdinand_schorner = {#费迪南德·舍尔纳
+		name = BAY_ferdinand_schorner
+		portraits = {
+			army = {
+				large = Ferdinand_schorner
+				small = GFX_idea_BAY_ferdinand_schorner
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ferdinand_schorner
+			ledger = army
+			allowed = {
+				original_tag = BA2
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	BA2_alfred_jodl = {#阿尔弗雷德·约德尔
+		name = GER_alfred_jodl
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_alfred_jodl
+				small = GFX_portrait_GER_alfred_jodl_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	BA2_wilhelm_list = {#威廉·利斯特
+		name = GER_wilhelm_list
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+}

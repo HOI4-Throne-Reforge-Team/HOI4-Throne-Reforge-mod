@@ -1,0 +1,30 @@
+state = {
+	id = 283
+	name = "STATE_283"
+	resources = {
+		tungsten = 1.000
+	}
+
+	history = {
+		owner = GSJ
+		add_core_of = GSJ
+		add_core_of = CHI
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			2022 15#Was in 12732, but is now here
+		}
+
+	}
+
+	provinces = {
+		2022 6638 1630 12797 4313 11448 4888
+	}
+	manpower = 3705400
+	buildings_max_level_factor = 1.000
+	state_category = town
+	local_supplies = 0.0 
+}

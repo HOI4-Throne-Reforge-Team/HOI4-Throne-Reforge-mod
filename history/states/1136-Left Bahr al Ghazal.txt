@@ -1,0 +1,20 @@
+state={
+	id=1136
+	name = "STATE_1136" # Bahr al Ghazal
+	state_category = pastoral
+	history = {
+		owner = FCA
+		add_core_of = SUD
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces = {
+		10764
+	}
+	manpower = 150000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

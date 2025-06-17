@@ -1,0 +1,102 @@
+ideas = {
+	religion_laws = {#宗教法案
+		law = yes
+		use_list_view = yes
+		Religion_reigns_supreme = {#宗教至上
+			available = {
+				always = no
+			}
+			picture = GFX_idea_Religion_reigns_supreme
+			removal_cost = -1
+			level = 4
+			modifier = {
+				stability_factor = -0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.2
+				war_support_factor = 0.1
+				attrition = 0.1
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.05
+				consumer_goods_expected_value = -0.1
+				opinion_gain_monthly_factor = -0.1
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+		Separation_of_church_and_state = {#政教分离
+			available = {
+				always = no
+			}
+			picture = GFX_idea_Separation_of_church_and_state
+			removal_cost = -1
+			level = 3
+			modifier = {
+				political_power_factor = 0.12
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
+				industrial_concern_cost_factor = -0.1
+				stability_factor = -0.02
+			}
+			default = yes
+			cancel_if_invalid = no
+		}
+		Freedom_of_belief = {#信仰自由
+			available = {
+				always = no
+			}
+			picture = GFX_idea_Freedom_of_belief
+			removal_cost = -1
+			level = 2
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = -0.02
+				research_speed_factor = 0.8
+				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.2
+				compliance_growth = 0.1
+				compliance_starting_value = 0.1
+				required_garrison_factor = -0.05
+				resistance_growth = -0.2
+				resistance_decay = 0.3
+				opinion_gain_monthly_factor = 0.2
+				production_speed_industrial_complex_factor = 0.3
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+		State_atheism = {#无神论
+			available = {
+				always = no
+			}
+			picture = GFX_idea_State_atheism
+			removal_cost = -1
+			level = 1
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = 0.15
+				political_power_factor = -0.10
+				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = 0.1
+				compliance_growth = -0.1
+				compliance_starting_value = -0.1
+				required_garrison_factor = 0.05
+				opinion_gain_monthly_factor = -0.1
+				theorist_cost_factor = -0.1
+				army_chief_cost_factor = -0.1
+				navy_chief_cost_factor = -0.1
+				air_chief_cost_factor = -0.1
+				drift_defence_factor = 0.2
+				subversive_activites_upkeep = 0.5
+				production_speed_arms_factory_factor = 0.2
+			}
+			default = no
+			cancel_if_invalid = no
+		}
+	}
+}

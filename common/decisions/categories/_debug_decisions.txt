@@ -1,0 +1,10 @@
+debug_decisions = {
+	icon = X
+	available = {
+		is_debug = yes
+	}
+	cancel_trigger = {
+		is_debug = no
+	}
+	priority = 99999
+}

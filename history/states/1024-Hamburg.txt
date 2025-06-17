@@ -1,0 +1,32 @@
+state={
+	id=1024
+	name="STATE_1024"
+	manpower = 365029
+	buildings_max_level_factor = 1
+
+	state_category = city
+
+
+	history={
+		owner = HAM
+		victory_points = {
+			9347 20
+		}
+				buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = HAM
+		
+		}
+
+
+
+	provinces={
+		9347 
+	}
+
+	local_supplies=4.0 
+}

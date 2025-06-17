@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ #现代化
+ BAY_modern_decision_category: "现代化"
+ BAY_modern_decision_category_desc: "运用吸纳外资、政策支持、政府投资等方式，为巴伐利亚的现代化以添砖加瓦。"
+ BAY_build_road_decision_1: "基础设施建设"
+ BAY_build_factory_decision_2: "投资工业"
+ BAY_build_army_factory_decision_3: "军工建设"
+ BAY_build_army_decision_4: "军事设施建设"
+ BAY_build_oil_decision_5: "投资化工产业"
+ BAY_build_farm_decision_6: "投资农业"
+ BAY_research_decision_7: "科技项目投资"
+
+ #其他本地化
+ BAY_revolution: "将在根据地内部署4个§O赤卫队"
+
+

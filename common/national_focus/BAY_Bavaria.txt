@@ -1,0 +1,345 @@
+focus_tree = {
+	id = BAY_Bavaria
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+	default = no
+	focus = { #平稳航行
+		id = BAY_Smooth_sailing
+		icon = GFX_focus_BAY_Smooth_sailing
+		cost = 4.00
+		x = 8
+		y = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			always = yes
+		}
+		select_effect = {
+		
+		}
+
+		completion_reward = { 
+			add_political_power = 150
+			country_event = {id=BAY.focus.1 days=1}
+	    }
+    }
+
+	focus = { #大选季
+		id = BAY_election_season 
+		icon = GFX_focus_BAY_election_season
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_Smooth_sailing
+		}
+		x = 8
+		y = 1
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+				add_timed_idea = { 
+					idea = Bavaria_election_season
+					days = 369
+				}
+            }
+			completion_reward = {
+				country_event = {id=BAY.focus.2 days=1}
+        }
+
+	}
+	focus = { #制定竞选方略
+		id = BAY_campaign_strategy
+		icon = GFX_focus_BAY_campaign_strategy
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_election_season
+		}
+		x = 6
+		y = 2
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				add_political_power = 150
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.3 days=1}
+				}
+        }
+
+	}
+	focus = { #竞选活动
+		id = BAY_campaign_campaign
+		icon = GFX_focus_BAY_campaign_campaign
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_campaign_strategy
+		}
+		x = 6
+		y = 3
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				add_political_power = 150
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.4 days=1}
+				}
+        }
+
+	}
+	focus = { #建造投票站
+		id = BAY_bulid_polling
+		icon = GFX_focus_BAY_bulid_polling
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_campaign_campaign
+		}
+		x = 6
+		y = 4
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+				
+            }
+			completion_reward = {
+				add_political_power = 150
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.5 days=1}
+				}
+        }
+
+	}
+	focus = { #继续现代化
+		id = BAY_Modernization_continues
+		icon = GFX_focus_BAY_Modernization_continues
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_election_season
+		}
+		x = 8
+		y = 2
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+             add_political_power = 150
+			}
+	}
+
+	focus = { #王国高速公路
+		id = BAY_plan_of_high_way
+		icon = GFX_focus_BAY_plan_of_high_way
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_Modernization_continues
+		}
+		x = 8
+		y = 3
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.6 days=1}
+				}
+			}
+	}
+
+	focus = { #四年计划
+		id = BAY_Plan_of_four
+		icon = GFX_focus_BAY_Plan_of_four
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_plan_of_high_way
+		}
+		x = 8
+		y = 4
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_South_Germany_industy_of_star
+						add_idea = Bavaria_South_Germany_industy_of_star_2
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.7 days=1}
+				}
+			}
+    }
+	focus = { #国防改革计划
+		id = BAY_defence_reform
+		icon = GFX_focus_BAY_defence_reform
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_election_season
+		}
+		x = 10
+		y = 2
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_Bayerische_Armee
+						add_idea = Bavaria_Bayerische_Armee_2
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.8 days=1}
+				}
+        }
+	}
+	focus = { #军队训练计划
+		id = BAY_Plan_of_training
+		icon = GFX_focus_BAY_Plan_of_training
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_defence_reform
+		}
+		x = 10
+		y = 3
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_Bayerische_Armee_2
+						add_idea = Bavaria_Bayerische_Armee_3
+					}
+				}
+        } 
+	}
+	focus = { #加强日常巡逻
+		id = BAY_Intensify_patrols
+		icon = GFX_focus_BAY_Intensify_patrols
+		cost = 5.00
+		prerequisite = {
+			focus = BAY_Plan_of_training
+		}
+		x = 10
+		y = 4
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				if = {
+					limit = {
+						has_global_flag = USPD		
+					}
+					country_event = {id=BAY.focus.9 days=1}
+				}
+        }
+	}
+	focus = { #骰已掷下
+		id = BAY_dice_rolled
+		icon = GFX_focus_BAY_dice_rolled
+		cost = 2.00
+		prerequisite = {
+			focus = BAY_Intensify_patrols
+		}
+		prerequisite = {
+			focus = BAY_Plan_of_four
+		}
+		prerequisite = {
+			focus = BAY_bulid_polling
+		}
+		x = 8
+		y = 5
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				country_event = {id=BAY.focus.10 days=1}
+        }
+	}
+}

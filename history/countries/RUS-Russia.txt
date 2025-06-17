@@ -1,0 +1,69 @@
+capital = 195
+
+set_oob = "RUS_1936"
+
+recruit_character = RUS_mikhail_II
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+
+	naval_bomber1 = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	fuel_refining = 1
+}
+set_research_slots = 4
+set_convoys = 60
+set_stability = 0.35
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	democratic = 45
+	fascism = 5
+	communism = 15
+	neutrality =35
+}
+set_autonomy = {
+	target = BLT
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = CCS
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = MON
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = FIN
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = POL
+	autonomous_state = autonomy_puppet
+}
+create_faction = RUS_Empire
+add_to_faction = BLT
+add_to_faction = CCS
+add_to_faction = MON
+add_to_faction = FIN
+add_to_faction = POL

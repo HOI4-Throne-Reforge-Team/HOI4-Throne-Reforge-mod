@@ -1,0 +1,22 @@
+state = {
+	id = 883
+	name = "STATE_883"
+	manpower = 311402
+	state_category = rural
+
+	history = {
+		owner = FES
+		add_core_of = SUD
+		add_core_of = FES
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		2003 2088 13416
+	}
+	
+	buildings_max_level_factor = 1.000
+	local_supplies = 0.000
+}

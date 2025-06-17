@@ -1,0 +1,38 @@
+state={
+	id=1097
+	name="STATE_1097" # Dalmatia
+	manpower = 1431700 #TODO_Manu: Check if pop need to go down after Fiume split
+
+	state_category = town
+
+
+	history={
+		owner = CRO
+		victory_points = { #Dubrovnik
+			3601 3 
+		}
+		victory_points = { #Split
+			591 1
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 1
+			3601 = {
+				naval_base = 3
+			}
+			591 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = YUG
+		#add_claim_by = ITA #added by focus
+		add_core_of = CRO
+	}
+
+	provinces={
+	 6611 13252 3601 591
+	}
+
+	local_supplies=4.0 
+}

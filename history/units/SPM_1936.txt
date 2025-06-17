@@ -1,0 +1,215 @@
+﻿division_template = {
+	name = "1"		# Same for "Active" and "Reserve" Infantry Divisions
+	division_names_group = ITA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }  
+	}
+}
+division_template = {
+	name = "2"  	# Cavalry Division
+	division_names_group = ITA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }      	# Actually, 2x bicycle cav bns
+		engineer = { x = 0 y = 1 }   
+	}
+}
+division_template = {
+	name = "3"  		# Motorized Cavalry Brigade
+	division_names_group = ITA_MOT_01
+										# Note: motorized cavalry. Most sources have them truck-equipped.
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "4"			# Colonial militia, lower experience, equipment
+	division_names_group = ITA_GAR_01 	#TODO make separate namelist for colonial divisions
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+
+### OOB ###
+units = {
+	##### L'Armée Belge #####
+	# I Corps d'Armée
+	division= {	# "4ème 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9603  # Hoeselt
+		division_template = "1"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+
+	# II Corps d'Armée
+	division= {	# "6ème 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 6891  # Leuven
+		division_template = "1"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+
+	# III Corps d'Armée
+	division= {	# "2ème 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11570  # Liege
+		division_template = "1"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "3ème 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 6788  # Liege
+		division_template = "1"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+
+	# IV Corps d'Armée
+	division= {	# "5ème 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 776  #Brussels
+		division_template = "1"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+
+	# Corps d'Cavalerie
+	division= {	# "1ère 1"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6780  # Liege
+		division_template = "1"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+	division= {	# "2ème 2"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11891  # Leuven
+		division_template = "2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+	division= {	
+		name = "Brigade de 3"
+		location = 6780  # Leuven
+		division_template = "3"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+
+	}
+
+	# Groupement K
+	division= {	# "1ère Division de Chasseurs Ardennais"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 101
+		}
+		location = 6780  # St Hubert
+		division_template = "1"		# elite bicycle infantry
+		start_experience_factor = 0.3
+	}
+	division= {	# "1ère 2"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 6788  # St Hubert
+		division_template = "2"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+
+	}
+
+
+	### Belgian Congo ###
+	division= {	
+		name = "Force Publique du Congo Belge"
+		location = 9741  # Leopoldville
+		division_template = "4"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "BEL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 2
+		progress = 0.52
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 1
+		progress = 0.85
+		efficiency = 100
+	}
+}

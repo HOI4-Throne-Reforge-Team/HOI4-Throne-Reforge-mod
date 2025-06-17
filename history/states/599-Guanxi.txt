@@ -1,0 +1,35 @@
+state= {
+	id=599
+	name="STATE_599"
+	manpower = 3451000
+	state_category = town
+	resources={
+		tungsten=15 # was: 20
+		chromium = 3 # was: 4
+	}
+
+	history= {
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		victory_points = { 
+			10404 15
+		}
+		victory_points={
+			7128 3
+		}
+
+
+	}
+	provinces={
+		12407 10404 1023 7168 7128 7210 10121 4152 7095 10039
+	}
+
+	local_supplies=0.0 
+}

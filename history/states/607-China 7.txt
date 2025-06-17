@@ -1,0 +1,40 @@
+
+state={
+	id=607
+	name="STATE_607"
+	manpower=19749160
+	
+	state_category = town
+
+
+	history={
+		owner = NCG
+		add_core_of = CHI
+		add_core_of = NCG
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			9958 10
+		}
+		victory_points = {
+			7656 15
+		}
+		victory_points = {
+			7085 3
+		}
+		victory_points = {
+			7540 1
+		}
+		victory_points = {
+			10364 5
+		}
+
+	}
+
+	provinces={
+		10098 7085 7656 9958 4066 10364 7126 7540 13402
+	}
+	local_supplies=3.0 
+}

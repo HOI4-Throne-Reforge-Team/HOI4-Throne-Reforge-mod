@@ -1,0 +1,101 @@
+﻿l_simp_chinese:
+#开局国策
+ BAY_Smooth_sailing: "平稳航行"
+ BAY_Smooth_sailing_desc: "欧陆局势瞬息万变，巴伐利亚仍屹立于德意志之上，我们将继续平稳航行，直至永恒"
+
+ BAY_election_season: "大选季"
+ BAY_election_season_desc: "每隔四年，巴伐利亚的人民们纷纷前往投票站，运用他们的权力以决定未来王国的发展，在这一年内，王国需要做好充足准备应对大选"
+
+ BAY_campaign_strategy: "制定竞选方略"
+ BAY_campaign_strategy_desc: "这次大选即便是普通的换届选举，但我们仍需要确立好选举方略，以应对大选期间的各种挑战"
+
+ BAY_campaign_campaign: "竞选活动"
+ BAY_campaign_campaign_desc: "确定好方略后，我们将在王国各地进行各种竞选活动，争取人民的信任"
+
+ BAY_bulid_polling: "建造投票站"
+ BAY_bulid_polling_desc: "在全国各地建立投票站，以便让民众更便利地进行投票"
+
+ BAY_Modernization_continues: "继续现代化"
+ BAY_Modernization_continues_desc: "工业化，或者说现代化，是巴伐利亚王国内一条基本国策。通过现代化进程，我们才得以创造出如今的成就。大选期间，我们仍不会停下现代化的脚步，并为了王国的繁荣昌盛而前进。"
+
+ BAY_plan_of_high_way: "王国高速公路"
+ BAY_plan_of_high_way_desc: "王国高速公路计划，旨在修建一条从纽伦堡到慕尼黑为干线，其余地区增设支线的一条横贯王国南北的高速公路网络。待建成后，前往王国各地的时间将大幅度缩短。王国高速公路，将王国紧紧团结在一起。"
+
+ BAY_Plan_of_four: "四年计划"
+ BAY_Plan_of_four_desc: "四年计划，全称巴伐利亚四年计划。是巴伐利亚在20世纪初期所提出的长期经济发展计划。同时，为了平衡各党派需求，王国以四年计划作为各届内阁用以进行经济发展的平台。"
+
+ BAY_defence_reform: "国防改革计划"
+ BAY_defence_reform_desc: "巴伐利亚陆军虽在很长一段时间内，都做到了保家卫国的重任，但我们的军队发展也逐渐跟不上现代军队的脚步，对此，我们必须开展国防改革计划，以精锐之师应对未来的各项情况"
+
+ BAY_Plan_of_training: "军队训练计划"
+ BAY_Plan_of_training_desc: "国防改革计划刚起步，最需要的便是先制定好军队的训练计划，做好训练方能适应下一步的改革计划"
+
+ BAY_Intensify_patrols: "加强日常巡逻"
+ BAY_Intensify_patrols_desc: "大选季期间，肯定会存在扰乱社会秩序的有组织犯罪行为，我们的部队应和警察合作，加派治安巡逻人手，以应对突发事件。"
+
+ BAY_dice_rolled: "骰已掷下"
+ BAY_dice_rolled_desc: "大选已经来到了最终投票及计票时间，这几天的结果将决定我们未来的发展方向"
+
+#内战（左线）
+ BA1_revolution_start: "革命之始"
+ BA1_revolution_start_desc: "内战已经打响。我们必须先集结部队，巩固好我们的根据地"
+
+ BA1_Stay_the_course: "自力更生"
+ BA1_Stay_the_course_desc: "虽然我们并非欧陆第一个社会主义政权，但在四面环敌的情况下，共产国际也不能为我们提供什么帮助。因此，我们需要自力更生，以保证革命的胜利"
+
+ BA1_Contact_International: "呼吁国际"
+ BA1_Contact_International_desc: "我们的斗争并非仅限于巴伐利亚的，而是属于欧洲甚至全球性阶级斗争的一个节点。我们将呼吁世界各国的无产阶级同志们，纷纷投入到我们的革命"
+
+ BA1_call_people: "唤醒大众"
+ BA1_call_people_desc: "前线的战士正在奋战，而后方也不能闲着。我们将深入到农场、工厂、街道里，为广大人民群众唤醒他们的主人翁意识，让他们为了自己的未来而战。"
+
+ BA1_Dispatch_Political_Commissioner: "派遣政委"
+ BA1_Dispatch_Political_Commissioner_desc: "一支革命的部队，必须确保有坚定的思想。政委会向军中传播共产主义理念，并整肃军纪，打造一支人民之师。"
+
+ BA1_revolution_army: "国际纵队"
+ BA1_revolution_army_desc: "来自全球各地的无产者们通过各种手段纷纷来到了巴伐利亚。他们之中不止在战场上打击敌人的生力军，还有专业的军事指挥团队提供战术支持，国际纵队的精神永垂不朽！"
+
+ BA1_liberate_factor: "解放工人"
+ BA1_liberate_factor_desc: ""
+
+ BA1_build_Soldiers_Council: "建立士兵委员会"
+ BA1_build_Soldiers_Council_desc: ""
+
+ BA1_Loot_the_armory: "搜刮军械库"
+ BA1_Loot_the_armory_desc: ""
+
+ BA1_Securing_the_shipping: "确保运输线"
+ BA1_Securing_the_shipping_desc: ""
+
+ BA1_call_Italy: "联系意大利"
+ BA1_call_Italy_desc: ""
+
+ BA1_Penetrate_the_rear: "渗透后方"
+ BA1_Penetrate_the_rear_desc: ""
+
+ BA1_Decentralised_production: "分散生产"
+ BA1_Decentralised_production_desc: ""
+
+ BA1_end_fascism: "终结法西斯"
+ BA1_end_fascism_desc: ""
+
+ BA1_attack_Munich: "南下慕尼黑"
+ BA1_attack_Munich_desc: ""
+
+ BA1_Volunteer_Air_Corps: "志愿航空队"
+ BA1_Volunteer_Air_Corps_desc: ""
+
+ BA1_tank_suppot: "坦克技术支援"
+ BA1_tank_suppot_desc: ""
+
+ BA1_people_power: "人民之伟力"
+ BA1_people_power_desc: ""
+
+ BA1_end_attack: "最终攻势"
+ BA1_end_attack_desc: ""
+
+ BA1_long_live_international: "国际主义万岁"
+ BA1_long_live_international_desc: ""
+
+ BA1_lighthouse_rebuild: "重建灯塔"
+ BA1_lighthouse_rebuild_desc: ""

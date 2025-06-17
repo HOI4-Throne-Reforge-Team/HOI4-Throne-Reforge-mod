@@ -1,0 +1,7 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "SPR_Alfonso_XIII"
+		texturefile = "gfx/leaders/SPR/Alfonso_XIII.png"
+	}
+}

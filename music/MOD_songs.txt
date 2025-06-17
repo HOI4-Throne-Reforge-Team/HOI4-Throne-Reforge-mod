@@ -1,0 +1,13 @@
+
+
+music_station = "TR_music"
+
+music = {
+	song = "maintheme"
+	
+	chance = {
+		modifier = {
+			factor = 1
+		}		
+	}	
+}

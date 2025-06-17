@@ -1,0 +1,29 @@
+
+state = {
+	id = 1086
+	name = "STATE_1086"
+	manpower = 354130
+	
+	state_category =wasteland
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = NXJ
+		add_core_of = NXJ
+		add_core_of = CHI
+		victory_points = {
+			4783 1
+		}
+
+	}
+
+	provinces = {
+		4783 10770 8102 7727 5031
+	}
+
+	local_supplies = 0.0 
+}

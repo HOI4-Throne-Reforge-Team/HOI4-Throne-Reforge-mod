@@ -1,0 +1,66 @@
+﻿capital = 195
+
+set_oob = "SOV_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	gwtank = 1
+	basic_light_tank = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	transport = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_light = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	mtg_transport = 1
+	basic_battery = 1
+	basic_torpedo = 1
+}
+
+set_research_slots = 3
+set_convoys = 60
+set_stability = 0.35
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	anarchism = 3
+	syndicalist = 2
+	communism = 95
+}
+create_faction = SOV
+add_to_faction = BLT
+add_to_faction = CCS
+add_to_faction = MON
+add_to_faction = FIN
+add_to_faction = POL

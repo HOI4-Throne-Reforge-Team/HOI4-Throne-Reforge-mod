@@ -1,0 +1,47 @@
+leader_traits = {
+    
+  Minister_of_National_Education = {
+    random = no
+    research_speed_factor = 0.1
+    consumer_goods_factor = 0.05
+  }
+
+  Agricultural_Expert = {
+    random = no
+    production_factory_max_efficiency_factor = -0.05
+    production_speed_industrial_complex_factor = 0.075
+    local_resources_factor = 0.1
+  }
+
+  PTT_Minister = {
+    random = no
+    local_building_slots_factor = 0.1
+    industrial_capacity_factory = 0.05
+    consumer_goods_factor = 0.1
+  }
+
+  Sports_Minister   = {
+    consumer_goods_factor = 0.1
+    production_speed_infrastructure_factor = 0.1
+    production_factory_max_efficiency_factor = 0.1
+  } 
+
+  Great_scientists = {
+    research_speed_factor = 0.1
+    specialization_nuclear_speed_factor = 0.25
+  }
+
+  Economic_reformer = {
+    production_speed_buildings_factor = 0.1
+    economy_cost_factor = 0.25
+  }
+
+  richest_person = {
+    production_speed_buildings_factor = 0.1
+  }
+
+  Extraordinary_lawyers = {
+    political_power_factor = 0.1
+    stability_factor = 0.05
+  }
+}

@@ -1,0 +1,320 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#自动完成PUS1936大选
+			PUS = {
+				news_event = { id = PUS.0 days = 366 }
+			}
+			#自动结束PUS1936大选
+			PUS = {
+				country_event = { id = focus_PUS.0 days = 536 }
+			}
+		}
+	}
+	on_daily_PUS = {
+		effect = {
+			#自动检测极端派系压制状态
+			IF = {
+				limit = {
+					has_global_flag = PUS_has_already_strike_extremists
+					NOT = {
+						has_country_flag = PUS_elections_special_suppressed
+					}
+				}
+				PUS = {
+					set_party_name = {
+						ideology = fascism
+						long_name = PUS_fascism_was_suppressed_long
+						name = was_suppressed
+					}
+					set_party_name = {
+						ideology = populism
+						long_name = PUS_populism_was_suppressed_long
+						name = was_suppressed
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = PUS_paternal_autocrat_was_suppressed_long
+						name = was_suppressed
+					}
+					set_party_name = {
+						ideology = anarchism
+						long_name = PUS_anarchism_was_suppressed_long
+						name = was_suppressed
+					}
+					set_party_name = {
+						ideology = syndicalist
+						long_name = PUS_syndicalist_was_suppressed_long
+						name = was_suppressed
+					}
+					set_party_name = {
+						ideology = communism
+						long_name = PUS_communism_was_suppressed_long
+						name = was_suppressed
+					}
+				}
+				PUS = {
+					set_country_flag = PUS_elections_special_suppressed
+					add_to_array = {
+						array = PUS_elections_suppressed_party_popularity
+						value = party_popularity@fascism
+					}
+					add_to_array = {
+						array = PUS_elections_suppressed_party_popularity
+						value = party_popularity@populism
+					}
+					add_to_array = {
+						array = PUS_elections_suppressed_party_popularity
+						value = party_popularity@paternal_autocrat
+					}
+					add_to_array = {
+						array = PUS_elections_suppressed_party_popularity
+						value = party_popularity@anarchism
+					}
+					add_to_array = {
+						array = PUS_elections_suppressed_party_popularity
+						value = party_popularity@syndicalist
+					}
+					add_to_array = {
+						array = PUS_elections_suppressed_party_popularity
+						value = party_popularity@communism
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = PUS_has_already_strike_extremists
+					has_country_flag = PUS_elections_special_suppressed
+				}
+				PUS = {
+					IF = {
+						limit = {
+							check_variable = {
+								party_popularity@fascism > 0
+							}	
+						}
+						add_popularity = {
+							ideology = fascism
+							popularity = -1
+						}
+					}
+					else = {
+						
+					}
+					IF = {
+						limit = {
+							check_variable = {
+								party_popularity@populism > 0
+							}	
+						}
+						add_popularity = {
+							ideology = populism
+							popularity = -1
+						}
+					}
+					else = {
+						
+					}
+					IF = {
+						limit = {
+							check_variable = {
+								party_popularity@paternal_autocrat > 0
+							}	
+						}
+						add_popularity = {
+							ideology = paternal_autocrat
+							popularity = -1
+						}
+					}
+					else = {
+						
+					}
+					IF = {
+						limit = {
+							check_variable = {
+								party_popularity@anarchism > 0
+							}	
+						}
+						add_popularity = {
+							ideology = anarchism
+							popularity = -1
+						}
+					}
+					else = {
+						
+					}
+					IF = {
+						limit = {
+							check_variable = {
+								party_popularity@syndicalist > 0
+							}	
+						}
+						add_popularity = {
+							ideology = syndicalist
+							popularity = -1
+						}
+					}
+					else = {
+						
+					}
+					IF = {
+						limit = {
+							check_variable = {
+								party_popularity@communism > 0
+							}	
+						}
+						add_popularity = {
+							ideology = communism
+							popularity = -1
+						}
+					}
+					else = {
+						
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_flag = PUS_has_already_strike_extremists
+					}
+					has_country_flag = PUS_elections_special_suppressed
+				}
+				PUS = {
+					set_party_name = {
+						ideology = fascism
+						long_name = PUS_fascism_party_long
+						name = PUS_fascism_party
+					}
+					set_party_name = {
+						ideology = populism
+						long_name = PUS_populism_party_long
+						name = PUS_populism_party
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = PUS_paternal_autocrat_party_long
+						name = PUS_paternal_autocrat_party
+					}
+					set_party_name = {
+						ideology = anarchism
+						long_name = PUS_anarchism_party_long
+						name = PUS_anarchism_party
+					}
+					set_party_name = {
+						ideology = syndicalist
+						long_name = PUS_syndicalist_party_long
+						name = PUS_syndicalist_party
+					}
+					set_party_name = {
+						ideology = communism
+						long_name = PUS_communism_party_long
+						name = PUS_communism_party
+					}
+				}
+				PUS = {
+					clr_country_flag = PUS_elections_special_suppressed
+					add_popularity = {
+						ideology = fascism
+						popularity = PUS_elections_suppressed_party_popularity^1
+					}
+					add_popularity = {
+						ideology = populism
+						popularity = PUS_elections_suppressed_party_popularity^2
+					}
+					add_popularity = {
+						ideology = paternal_autocrat
+						popularity = PUS_elections_suppressed_party_popularity^3
+					}
+					add_popularity = {
+						ideology = anarchism
+						popularity = PUS_elections_suppressed_party_popularity^4
+					}
+					add_popularity = {
+						ideology = syndicalist
+						popularity = PUS_elections_suppressed_party_popularity^5
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = PUS_elections_suppressed_party_popularity^6
+					}
+				}
+			}
+			else = {
+
+			}
+		}
+	}
+	on_daily_PUS = {
+		effect = {
+			#议会GUI控制
+			IF = {
+				limit = {
+					has_global_flag = PUS_elections_are_taking_place
+				}
+				set_variable = {
+					global.PUS_Election_all_party = party_popularity@democratic
+				}
+				add_to_variable = {
+					global.PUS_Election_all_party = party_popularity@social_democrat
+				}
+				add_to_variable = {
+					global.PUS_Election_all_party = party_popularity@social_conservative
+				}
+				add_to_variable = {
+					global.PUS_Election_all_party = party_popularity@neutrality
+				}
+				set_variable = {
+					global.PUS_Election_PDP_popularity = party_popularity@democratic
+				}
+				divide_variable = {
+					global.PUS_Election_PDP_popularity = global.PUS_Election_all_party
+				}
+				set_variable = {
+					global.PUS_Election_SPP_popularity = party_popularity@social_democrat
+				}
+				divide_variable = {
+					global.PUS_Election_SPP_popularity = global.PUS_Election_all_party
+				}
+				set_variable = {
+					global.PUS_Election_PVP_popularity = party_popularity@social_conservative
+				}
+				divide_variable = {
+					global.PUS_Election_PVP_popularity = global.PUS_Election_all_party
+				}
+				set_variable = {
+					global.PUS_Election_Z_popularity = party_popularity@neutrality
+				}
+				divide_variable = {
+					global.PUS_Election_Z_popularity = global.PUS_Election_all_party
+				}
+			}
+		}
+	}
+	on_new_term_election = {
+		
+	}
+	on_startup = {
+		#议会选举三党AI初始随机数
+		effect = {
+			set_variable_to_random = {
+				var = global.PUS_Election_AI_PDP
+				min = 1
+				max = 3
+				integer = yes
+			}
+			set_variable_to_random = {
+				var = global.PUS_Election_AI_SPP
+				min = 1
+				max = 3
+				integer = yes
+			}
+			set_variable_to_random = {
+				var = global.PUS_Election_AI_PVP
+				min = 1
+				max = 3
+				integer = yes
+			}
+		}
+	}
+}

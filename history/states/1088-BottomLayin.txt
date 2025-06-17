@@ -1,0 +1,36 @@
+state={
+	id=1088
+	name="STATE_1088"
+	manpower = 1165029
+	buildings_max_level_factor = 1
+
+	state_category = city 
+	resources={
+		steel=13 #was 21 #was 35 was 59 # was: 100
+		aluminium=7 # was: 24
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			3558 5 
+		}
+				buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 3
+			air_base = 0
+
+		}
+        add_core_of = PUS
+		
+		}
+
+
+
+	provinces={
+		3558 563 11547
+	}
+
+	local_supplies=3.0 
+}

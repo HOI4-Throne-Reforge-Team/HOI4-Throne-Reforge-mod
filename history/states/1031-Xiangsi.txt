@@ -1,0 +1,29 @@
+
+state = {
+	id = 1031
+	name = "STATE_1031"
+	manpower = 6454810
+	
+	state_category = pastoral
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of =HNJ
+
+		victory_points={
+			13381 2
+		}
+	}
+
+	provinces = {
+		7665 12017 10335 12310 12053 4480 13382 13381
+	}
+
+	local_supplies = 0.0 
+}

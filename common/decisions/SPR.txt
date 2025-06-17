@@ -1,0 +1,1283 @@
+SPR_Viceroyalty = {
+	SPR_Viceroyalty_CUB = {     #帝国哈瓦那直辖区
+
+	fire_only_once = no
+
+		available = {
+			CUB= {
+				OR = {
+					exists = no
+					is_subject_of = SPR
+				}
+			}
+			has_completed_focus = SPR_america
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			
+			any_state = {
+				is_core_of = CUB
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			CUB = {
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				transfer_state = 315
+				set_cosmetic_tag = CUB_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+				}
+				set_autonomy = { 
+					target = CUB
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+
+
+	SPR_Viceroyalty_new_spain = {     #新西班牙
+
+	fire_only_once = no
+
+		available = {
+
+				MEX = {
+					OR = {
+						exists = no
+						is_subject_of = SPR
+					}
+				}
+			has_completed_focus = SPR_six_viceroyalties
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			owns_state = 313
+			owns_state = 312
+			owns_state = 314
+			owns_state = 317
+			owns_state = 316
+			any_state = {
+				is_core_of = MEX
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			MEX = {
+				transfer_state = 474
+				transfer_state = 475
+				transfer_state = 477
+				transfer_state = 476
+				transfer_state = 478
+				transfer_state = 479
+				transfer_state = 480
+				transfer_state = 481
+				transfer_state = 482
+				transfer_state = 483
+				transfer_state = 484
+				transfer_state = 485
+				transfer_state = 277
+				add_state_core = 378
+				add_state_core = 379
+				add_state_core = 380
+				add_state_core = 377
+				add_state_core = 376
+				add_state_core = 375
+				add_state_core = 313
+				transfer_state = 313
+				add_state_core = 312
+				transfer_state = 312
+				add_state_core = 314
+				transfer_state = 314
+				add_state_core = 311
+				add_state_core = 317
+				transfer_state = 317
+				add_state_core = 316
+				transfer_state = 316
+				set_cosmetic_tag = MEX_SPR
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+				}
+				set_autonomy = { 
+					target = MEX 
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+
+SPR_Viceroyalty_new_america = {     #新亚美利加
+
+fire_only_once = no
+
+	available = {
+		USA = {
+			OR = {
+				exists = no
+				is_subject_of = SPR
+			}
+		}
+		has_completed_focus = SPR_six_viceroyalties
+		OR = {
+			NOT = { has_government = communism }
+			NOT = { has_government = syndicalist }
+			NOT = { has_government = anarchism }
+		}
+		any_state = {
+			is_core_of = USA
+			OWNER = {
+				tag = SPR
+			}
+		}
+		
+		#controls_state = no
+	}
+
+	cost = 0
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			has_idea = SPR_spain_expansionism
+			add = 1
+		}
+	}
+
+	complete_effect = {
+		USA = {
+			add_state_core = 739
+			add_state_core = 473
+			add_state_core = 740
+			add_state_core = 471
+			add_state_core = 864
+			add_state_core = 472
+			add_state_core = 683
+			add_state_core = 470
+			add_state_core = 865
+			add_state_core = 276
+			add_state_core = 469
+			add_state_core = 467
+			add_state_core = 867
+			add_state_core = 866
+			add_state_core = 682
+			add_state_core = 862
+			add_state_core = 468
+			add_state_core = 465
+			add_state_core = 454
+			add_state_core = 863
+			add_state_core = 466
+			add_state_core = 861
+			add_state_core = 860
+			add_state_core = 332
+			add_state_core = 331
+			add_state_core = 730
+			add_state_core = 463
+
+			transfer_state = 357
+			transfer_state = 358
+			transfer_state = 360
+			transfer_state = 361
+			transfer_state = 359
+			transfer_state = 816
+			transfer_state = 362
+			transfer_state = 363
+			transfer_state = 364
+			transfer_state = 365
+			transfer_state = 366
+			transfer_state = 367
+			transfer_state = 368
+			transfer_state = 369
+			transfer_state = 370
+			transfer_state = 261
+			transfer_state = 396
+			transfer_state = 371
+			transfer_state = 371
+			transfer_state = 373
+			transfer_state = 374
+			transfer_state = 381
+			transfer_state = 382
+			transfer_state = 383
+			transfer_state = 384
+			transfer_state = 395
+			transfer_state = 392
+			transfer_state = 391
+			transfer_state = 393
+			transfer_state = 394
+			transfer_state = 389
+			transfer_state = 390
+			transfer_state = 385
+			transfer_state = 386
+			transfer_state = 387
+			transfer_state = 388
+			transfer_state = 372
+			set_cosmetic_tag = USA_SPR
+			set_politics = {
+				ruling_party = neutrality 
+				last_election = "1935.12.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			#create_country_leader = {
+			#	name = "Josef Terboven"
+			#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+			#	ideology = nazism
+			#	traits = {
+			#	}
+			#}
+			}
+			set_autonomy = { 
+				target = USA
+				autonomy_state = autonomy_viceroyalty
+		}
+	}
+}
+
+SPR_Viceroyalty_new_granada = {     #新格拉纳达
+
+fire_only_once = no
+
+available = {
+	COL = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	VEN = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	
+	has_completed_focus = SPR_six_viceroyalties
+	OR = {
+		NOT = { has_government = communism }
+		NOT = { has_government = syndicalist }
+		NOT = { has_government = anarchism }
+	}
+	owns_state = 304
+	owns_state = 489
+	owns_state = 307
+	owns_state = 488
+	owns_state = 305
+	owns_state = 490
+	owns_state = 491
+	any_state = {
+		is_core_of = COL
+		OWNER = {
+			tag = SPR
+		}
+	}
+	#controls_state = no
+}
+
+cost = 0
+ai_will_do = {
+	factor = 0
+	modifier = {
+		has_idea = SPR_spain_expansionism
+		add = 1
+	}
+}
+
+complete_effect = {
+	
+	COL = {
+		transfer_state = 493
+		transfer_state = 306
+		transfer_state = 486
+		add_state_core = 304
+		transfer_state = 304
+		add_state_core = 489
+		transfer_state = 489
+		add_state_core = 307
+		transfer_state = 307
+		add_state_core = 695
+		add_state_core = 488
+		transfer_state = 488
+		add_state_core = 305
+		transfer_state = 305
+		add_state_core = 490
+		transfer_state = 490
+		add_state_core = 491
+		transfer_state = 491
+		add_state_core = 691
+		set_cosmetic_tag = COL_SPR
+		set_politics = {
+			ruling_party = neutrality 
+			last_election = "1935.12.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		#create_country_leader = {
+		#	name = "Josef Terboven"
+		#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+		#	ideology = nazism
+		#	traits = {
+		#	}
+		#}
+		}
+		set_autonomy = { 
+			target = COL
+			autonomy_state = autonomy_viceroyalty
+		}
+	}
+}
+
+SPR_Viceroyalty_peru = {     #秘鲁总督辖区
+
+fire_only_once = no
+
+available = {
+	ECU = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	PRU = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	BOL = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	has_completed_focus = SPR_six_viceroyalties
+	OR = {
+		NOT = { has_government = communism }
+		NOT = { has_government = syndicalist }
+		NOT = { has_government = anarchism }
+	}
+	owns_state = 302
+	owns_state = 487
+	owns_state = 951
+	owns_state = 940
+	any_state = {
+		is_core_of = PRU
+		OWNER = {
+			tag = SPR
+		}
+	}
+	#controls_state = no
+}
+
+cost = 0
+ai_will_do = {
+	factor = 0
+	modifier = {
+		has_idea = SPR_spain_expansionism
+		add = 1
+	}
+}
+
+complete_effect = {
+	
+	PRU = {
+		add_state_core = 302
+		transfer_state = 302
+		add_state_core = 487
+		transfer_state = 487
+		add_state_core = 951
+		transfer_state = 951
+		add_state_core = 940
+		transfer_state = 940
+		transfer_state = 492
+		transfer_state = 494
+		transfer_state = 303
+		transfer_state = 947
+		set_cosmetic_tag = PRU_SPR
+		set_politics = {
+			ruling_party = neutrality 
+			last_election = "1935.12.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		#create_country_leader = {
+		#	name = "Josef Terboven"
+		#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+		#	ideology = nazism
+		#	traits = {
+		#	}
+		#}
+		}
+		set_autonomy = { 
+			target = PRU
+			autonomy_state = autonomy_viceroyalty
+		}
+	}
+}
+
+SPR_Viceroyalty_la_plata = {     #拉普拉塔
+
+fire_only_once = no
+
+available = {
+	ARG = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	CHL = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	PAR = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	has_completed_focus = SPR_six_viceroyalties
+	OR = {
+		NOT = { has_government = communism }
+		NOT = { has_government = syndicalist }
+		NOT = { has_government = anarchism }
+	}
+	owns_state = 506
+	owns_state = 952
+	owns_state = 279
+	owns_state = 950
+	owns_state = 949
+	owns_state = 507
+	owns_state = 946
+	owns_state = 945
+	owns_state = 300
+	owns_state = 502
+	owns_state = 503
+	owns_state = 944
+	owns_state = 504
+	owns_state = 688
+	owns_state = 301
+	any_state = {
+		is_core_of = ARG
+		OWNER = {
+			tag = SPR
+		}
+	}
+	#controls_state = no
+}
+
+cost = 0
+ai_will_do = {
+	factor = 0
+	modifier = {
+		has_idea = SPR_spain_expansionism
+		add = 1
+	}
+}
+
+complete_effect = {
+	
+	ARG = {
+		add_state_core = 506
+		transfer_state = 506
+		add_state_core = 952
+		transfer_state = 952
+		add_state_core = 279
+		transfer_state = 279
+		add_state_core = 950
+		transfer_state = 950
+		add_state_core = 949
+		transfer_state = 949
+		add_state_core = 507
+		transfer_state = 507
+		add_state_core = 946
+		transfer_state = 946
+		add_state_core = 845
+		transfer_state = 945
+		add_state_core = 300
+		transfer_state = 300
+		add_state_core = 502
+		transfer_state = 502
+		add_state_core = 503
+		transfer_state = 503
+		add_state_core = 944
+		transfer_state = 944
+		add_state_core = 504
+		transfer_state = 504
+		add_state_core = 688
+		transfer_state = 688
+		add_state_core = 301
+		transfer_state = 301
+
+		transfer_state = 953
+		transfer_state = 954
+		transfer_state = 955
+		transfer_state = 512
+		transfer_state = 511
+		transfer_state = 958
+		transfer_state = 278
+		transfer_state = 510
+		transfer_state = 956
+		transfer_state = 960
+		transfer_state = 509
+		transfer_state = 957
+		transfer_state = 959
+		transfer_state = 508
+		set_cosmetic_tag = ARG_SPR
+		set_politics = {
+			ruling_party = neutrality 
+			last_election = "1935.12.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		#create_country_leader = {
+		#	name = "Josef Terboven"
+		#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+		#	ideology = nazism
+		#	traits = {
+		#	}
+		#}
+		}
+		set_autonomy = { 
+			target = ARG
+			autonomy_state = autonomy_viceroyalty
+		}
+	}
+}
+
+SPR_Viceroyalty_brazil = {     #巴西总督辖区
+
+fire_only_once = no
+
+available = {
+	BRA = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	URG = {
+		OR = {
+			exists = no
+			is_subject_of = SPR
+		}
+	}
+	has_completed_focus = SPR_six_viceroyalties
+	OR = {
+		NOT = { has_government = communism }
+		NOT = { has_government = syndicalist }
+		NOT = { has_government = anarchism }
+	}
+	any_state = {
+		is_core_of = BRA
+		OWNER = {
+			tag = SPR
+		}
+	}
+	#controls_state = no
+}
+
+cost = 0
+ai_will_do = {
+	factor = 0
+	modifier = {
+		has_idea = SPR_spain_expansionism
+		add = 1
+	}
+}
+
+complete_effect = {
+	
+	BRA = {
+		add_state_core = 687
+		add_state_core = 309
+		add_state_core = 310
+		transfer_state = 969
+		transfer_state = 967
+		transfer_state = 961
+		transfer_state = 495
+		transfer_state = 962
+		transfer_state = 964
+		transfer_state = 963
+		transfer_state = 942
+		transfer_state = 965
+		transfer_state = 280
+		transfer_state = 966
+		transfer_state = 938
+		transfer_state = 968
+		transfer_state = 939
+		transfer_state = 497
+		transfer_state = 937
+		transfer_state = 935
+		transfer_state = 936
+		transfer_state = 499
+		transfer_state = 496
+		transfer_state = 943
+		transfer_state = 505
+		transfer_state = 500
+		transfer_state = 501
+		transfer_state = 941
+		transfer_state = 498
+		set_cosmetic_tag = BRA_SPR
+		set_politics = {
+			ruling_party = neutrality 
+			last_election = "1935.12.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		#create_country_leader = {
+		#	name = "Josef Terboven"
+		#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+		#	ideology = nazism
+		#	traits = {
+		#	}
+		#}
+		}
+		set_autonomy = { 
+			target = BRA
+			autonomy_state = autonomy_viceroyalty
+		}
+	}
+}
+
+}
+
+
+
+###############################################################################################
+SPR_Viceroyalty_2 = {
+	SPR_Viceroyalty_MOR = {     #帝国非洲直辖区
+
+	fire_only_once = no
+
+		available = {
+			has_completed_focus = SPR_north-africa
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			owns_state = 699
+			any_state = {
+				is_core_of = MOR
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			MOR = {
+				transfer_state = 783
+				transfer_state = 290
+				transfer_state = 461
+				transfer_state = 462
+				transfer_state = 699
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = MOR_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+				}
+				set_autonomy = { 
+					target = MOR
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+
+	SPR_Viceroyalty_ALG = {     #北非总督辖区
+
+	fire_only_once = no
+
+		available = {
+			has_completed_focus = SPR_make_spain_great_again
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			owns_state = 458
+			owns_state = 665
+			owns_state = 661
+			owns_state = 448
+			owns_state = 988
+			any_state = {
+				is_core_of = ALG
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			ALG = {
+				transfer_state = 988
+				add_state_core = 988
+				transfer_state = 998
+				add_state_core = 998
+				transfer_state = 661
+				add_state_core = 661
+				transfer_state = 448
+				add_state_core = 448
+				transfer_state = 665
+				add_state_core = 665
+				transfer_state = 458
+				add_state_core = 458
+				transfer_state = 513
+				transfer_state = 459
+				transfer_state = 460
+				transfer_state = 514
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = ALG_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+				}
+				set_autonomy = { 
+					target = ALG
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+
+	SPR_Viceroyalty_MLI = {     #西非总督辖区
+
+	fire_only_once = no
+
+		available = {
+			has_completed_focus = SPR_make_spain_great_again
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			owns_state = 775
+			owns_state = 515
+			owns_state = 786
+			owns_state = 773
+			owns_state = 774
+			owns_state = 781
+			owns_state = 778
+			owns_state = 776
+			owns_state = 777
+			owns_state = 780
+			owns_state = 557
+			owns_state = 272
+			owns_state = 296
+			owns_state = 779
+			owns_state = 660
+			any_state = {
+				is_core_of = MLI
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			MLI = {
+				transfer_state = 660
+				add_state_core = 660
+				transfer_state = 515
+				add_state_core = 515
+				transfer_state = 775
+				add_state_core = 775
+				transfer_state = 779
+				add_state_core = 779
+				transfer_state = 786
+				add_state_core = 786
+				add_state_core = 773
+				transfer_state = 773
+				add_state_core = 774
+				transfer_state = 774
+				add_state_core = 781
+				transfer_state = 781
+				add_state_core = 778
+				transfer_state = 778
+				add_state_core = 776
+				transfer_state = 776
+				add_state_core = 777
+				transfer_state = 777
+				add_state_core = 780
+				transfer_state = 780
+				add_state_core = 557
+				transfer_state = 557
+				add_state_core = 272
+				transfer_state = 272
+				add_state_core = 296
+				transfer_state = 296
+				transfer_state = 898
+				transfer_state = 782
+				transfer_state = 556
+				transfer_state = 899
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = MLI_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}t
+				}
+				set_autonomy = { 
+					target = MLI
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+
+	SPR_Viceroyalty_COG = {     #中非总督辖区
+
+	fire_only_once = no
+
+		available = {
+			has_completed_focus = SPR_make_spain_great_again
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			owns_state = 892
+			owns_state = 891
+			owns_state = 796
+			owns_state = 539
+			owns_state = 297
+			owns_state = 772
+			owns_state = 889
+			owns_state = 540
+			any_state = {
+				is_core_of = COG
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			COG = {
+				transfer_state = 540
+				add_state_core = 540
+				transfer_state = 889
+				add_state_core = 889
+				transfer_state = 892
+				add_state_core = 892
+				transfer_state = 891
+				add_state_core = 891
+				transfer_state = 796
+				add_state_core = 796
+				transfer_state = 539
+				add_state_core = 539
+				transfer_state = 297
+				add_state_core = 297
+				add_state_core = 772
+				transfer_state = 772
+
+				transfer_state = 538
+				transfer_state = 295
+				transfer_state = 888
+				transfer_state = 890
+				transfer_state = 718
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = COG_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}t
+				}
+				set_autonomy = { 
+					target = COG
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+
+	SPR_Viceroyalty_TZN = {     #东非总督辖区
+
+	fire_only_once = no
+
+		available = {
+			has_completed_focus = SPR_make_spain_great_again
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			owns_state = 768
+			owns_state = 769
+			owns_state = 844
+			owns_state = 903
+			owns_state = 905
+			owns_state = 548
+			owns_state = 904
+			owns_state = 547
+			owns_state = 897
+			owns_state = 896
+			owns_state = 544
+			owns_state = 708
+			owns_state = 543
+			owns_state = 706
+			any_state = {
+				is_core_of = TZN
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			TZN = {
+				transfer_state = 768
+				add_state_core = 768
+				transfer_state = 769
+				add_state_core = 769
+				transfer_state = 844
+				add_state_core = 844
+				transfer_state = 903
+				add_state_core = 903
+				transfer_state = 905
+				add_state_core = 905
+				transfer_state = 548
+				add_state_core = 548
+				transfer_state = 904
+				add_state_core = 904
+				transfer_state = 547
+				add_state_core = 547
+				transfer_state = 897
+				add_state_core = 897
+				transfer_state = 896
+				add_state_core = 896
+				transfer_state = 544
+				add_state_core = 544
+				transfer_state = 708
+				add_state_core = 708
+				transfer_state = 543
+				add_state_core = 543
+				transfer_state = 706
+				add_state_core = 706
+				transfer_state = 546
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TZN_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}t
+				}
+				set_autonomy = { 
+					target = TZN
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+}
+
+
+###########################################################################
+SPR_Viceroyalty_3 = {
+	SPR_Viceroyalty_PHI = {     #菲律宾总督辖区
+
+	fire_only_once = no
+
+		available = {
+			has_completed_focus = SPR_far_east
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			any_state = {
+				is_core_of = PHI
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			PHI = {
+				transfer_state = 627
+				transfer_state = 626
+				transfer_state = 628
+				transfer_state = 625
+				transfer_state = 624
+				transfer_state = 327
+				transfer_state = 623
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = PHI_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+				}
+				set_autonomy = { 
+					target = PHI
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+}
+
+#####################################################################################
+
+SPR_Viceroyalty_4 = {
+	SPR_Viceroyalty_AUS = {     #帝国哈布斯堡总督辖区
+
+	fire_only_once = no
+
+		available = {
+			AUS = {
+				OR = {
+					exists = no
+					is_subject_of = SPR
+				}
+			}
+			OR = {
+				has_completed_focus = SPR_attack_austria
+				has_country_flag = austria
+			}
+			OR = {
+				NOT = { has_government = communism }
+				NOT = { has_government = syndicalist }
+				NOT = { has_government = anarchism }
+			}
+			any_state = {
+				is_core_of = AUS
+				OWNER = {
+					tag = SPR
+				}
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_idea = SPR_spain_expansionism
+				add = 1
+			}
+		}
+
+		complete_effect = {
+			
+			AUS = {
+				transfer_state = 848
+				transfer_state = 153
+				transfer_state = 152
+				transfer_state = 4
+				transfer_state = 102
+				transfer_state = 853
+				transfer_state = 39
+				every_state = {
+					limit = {
+						is_core_of = AUS
+					}
+					add_core_of = AUS
+				}
+				every_state = {
+					limit = {
+						is_core_of = BHM
+					}
+					add_core_of = AUS
+				}
+				every_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					add_core_of = AUS
+				}
+				set_politics = {
+					ruling_party = neutrality 
+					last_election = "1935.12.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+				set_cosmetic_tag = AUS_SPR
+				#create_country_leader = {
+				#	name = "Josef Terboven"
+				#	desc = "POLITICS_JOSEF_TERBOVEN_DESC"
+				#	ideology = nazism
+				#	traits = {
+				#	}
+				#}
+				}
+				set_autonomy = { 
+					target = AUS
+					autonomy_state = autonomy_viceroyalty
+				}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "FRA_Camille_Chautemps"
+		textureFile = "gfx/leaders/FRA/FRA_Camille_Chautemps.png"
+	}
+}

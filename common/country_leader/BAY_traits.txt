@@ -1,0 +1,29 @@
+leader_traits = {
+  communist_journalist = {
+    random = no
+    communism_drift=0.05
+    political_power_factor=0.05
+  }
+
+  anarchist = {
+    random = no
+    anarchism_drift = 0.01
+  }
+
+  syndicalist_revolutionary = {
+    random = no
+    syndicalist_drift = 0.01
+  }
+
+  communism_jurisconsult = {
+    random = no
+    drift_defence_factor = 0.2
+    communism_drift = 0.03
+  }
+
+  goods_blender = {
+    random = no
+    consumer_goods_factor=-0.05
+    communism_drift = 0.01
+  }
+}

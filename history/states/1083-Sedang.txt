@@ -1,0 +1,28 @@
+state={
+	id=1083
+	name="STATE_1083"
+	resources = {
+		steel = 15 
+	}
+	manpower = 70800
+	
+	state_category = town
+
+	history={
+		owner = FRA
+
+		victory_points = {
+			3560 1
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = FRA
+	}
+
+	provinces={
+		3560 5291
+	}
+
+	local_supplies=0.0 
+}

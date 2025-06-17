@@ -1,0 +1,23 @@
+state={
+	id=1094
+	name="STATE_1094"
+	state_category = wasteland
+	impassable = yes
+	manpower = 21300
+	history={
+		owner = FRA
+		add_core_of = LBA
+        	buildings={
+			infrastructure = 0
+	
+
+		}
+
+
+	}
+	provinces={
+		
+		10884 4962 12082  5004  12022  1994
+	}
+	local_supplies=4.0 
+}

@@ -1,0 +1,26 @@
+state={
+	id=1110
+	name="STATE_1110"
+	manpower = 1843621
+	
+	state_category = rural
+
+	history={
+		owner = FTJ
+		add_core_of =FTJ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = CHI
+		victory_points = {
+			10463 2
+		}
+	}
+
+	provinces={
+	11906 6811 810 3843 3815 1571 7670 12355 5427 6863 9798 10519 10463 9623 12342 12443 12500 7569 10215 4551 10521
+	}
+
+	local_supplies=1.0 
+}

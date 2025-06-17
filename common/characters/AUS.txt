@@ -1,0 +1,104 @@
+characters={
+	# Unit Leaders
+	AUS_karl_I = {
+		name = AUS_karl_I
+		portraits = {
+			civilian = {
+				large = Karl_I
+			}
+		}
+		country_leader = {
+			ideology = classicalbonapartism
+			desc = AUS_desc_Karl_I
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	AUS_karl_I_2= {
+		name = AUS_karl_I_2
+		portraits = {
+			civilian = {
+				large = Karl_I
+			}
+		}
+		country_leader = {
+			ideology = social_democrat_subtype
+			desc = AUS_desc_Karl_I
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	AUS_karl_I_3 = {
+		name = AUS_karl_I_3
+		portraits = {
+			civilian = {
+				large = Karl_I
+			}
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			desc = AUS_desc_Karl_I
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	AUS_karl_I_4 = {
+		name = AUS_karl_I_4
+		portraits = {
+			civilian = {
+				large = Karl_I
+			}
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			desc = AUS_desc_Karl_I
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	AUS_karl_I_5 = {
+		name = AUS_karl_I_5
+		portraits = {
+			civilian = {
+				large = Karl_I
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			desc = AUS_desc_Karl_I
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	AUS_adolf_hitler = {
+		name = AUS_adolf_hitler
+		portraits = {
+			civilian = {
+				large = Adolf_hitler
+			}
+		}
+		country_leader = {
+			ideology = nationlist
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+}

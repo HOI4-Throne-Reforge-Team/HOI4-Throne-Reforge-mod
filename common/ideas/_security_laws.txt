@@ -1,0 +1,62 @@
+ideas = {
+	security_laws = {
+		law = yes
+		use_list_view = yes
+		no_countrykeeping_measures = {#无内务机构
+			removal_cost = -1
+			picture = GFX_idea_no_countrykeeping_measures
+			modifier = {
+				drift_defence_factor = -0.1
+				stability_factor = -0.03
+				resistance_growth = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.3
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		
+		secret_police = {#秘密警察
+			removal_cost = -1
+			picture = GFX_idea_secret_police
+			modifier = {
+				drift_defence_factor = 0.1
+				stability_factor = 0.03
+				resistance_growth = -0.05
+				war_support_factor = 0.03
+				enemy_spy_negative_status_factor = 1
+				political_power_gain = 0.15
+			}
+			cancel_if_invalid = no
+			default = yes
+		}
+		reverse_osmosis = {#反渗透法
+		removal_cost = -1
+		picture = GFX_idea_reverse_osmosis
+		modifier = {
+			drift_defence_factor = 0.2
+			stability_factor = 0.05
+			resistance_growth = -0.1
+			war_support_factor = 0.05
+			enemy_spy_negative_status_factor = 2
+			political_power_gain = -0.1
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		comprehensive_information_monitoring = {#全面监查
+		removal_cost = -1
+		picture = GFX_idea_comprehensive_information_monitoring
+		modifier = {
+			drift_defence_factor = 0.3
+			stability_factor = -0.05
+			resistance_growth = -0.2
+			war_support_factor = 0.1
+			enemy_spy_negative_status_factor = 3
+			political_power_gain = -0.15
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+	}
+}

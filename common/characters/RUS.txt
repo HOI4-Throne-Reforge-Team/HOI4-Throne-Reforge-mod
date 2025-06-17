@@ -1,0 +1,19 @@
+characters={
+	# Unit Leaders
+	RUS_mikhail_II = {   #米哈伊尔二世
+		name = RUS_mikhail_II
+		portraits = {
+			civilian = {
+				large = Mikhail_II
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+}

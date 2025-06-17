@@ -1,0 +1,53 @@
+#################
+#### GERMANY ####
+#################
+
+SPR_Viceroyalty = {
+
+	allowed = {
+		original_tag = SPR
+	}
+
+	visible = {
+		has_completed_focus = SPR_america
+	}
+	priority = 100
+}
+
+SPR_Viceroyalty_2 = {
+
+	allowed = {
+		original_tag = SPR
+	}
+
+	visible = {
+		has_completed_focus = SPR_north-africa
+	}
+	priority = 90
+}
+SPR_Viceroyalty_3 = {
+
+	allowed = {
+		original_tag = SPR
+	}
+
+	visible = {
+		has_completed_focus = SPR_far_east
+	}
+	priority = 95
+}
+
+SPR_Viceroyalty_4 = {
+
+	allowed = {
+		original_tag = SPR
+	}
+
+	visible = {
+		or = {
+			has_completed_focus = SPR_attack_austria
+			has_country_flag = austria
+		}
+	}
+	priority = 105
+}

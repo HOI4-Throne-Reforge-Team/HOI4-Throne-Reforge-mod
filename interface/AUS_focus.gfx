@@ -1,0 +1,46 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_focus_AUS_the_empire_is_struggle"
+		texturefile = "gfx/focus/AUS/AUS_the_empire_is_struggle.png"
+	}
+    spriteType = {
+		name = "GFX_focus_AUS_bohemian_succession_affairs"
+		texturefile = "gfx/focus/AUS/AUS_bohemian_succession_affairs.png"
+	}
+    spriteType = {
+		name = "GFX_focus_AUS_snatch_government_departments"
+		texturefile = "gfx/focus/AUS/AUS_snatch_government_departments.png"
+	}
+    spriteType = {
+		name = "GFX_focus_AUS_the_empire_is_struggle"
+		texturefile = "gfx/focus/AUS/AUS_the_empire_is_struggle.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_Emergency"
+		texturefile = "gfx/focus/AUS/AUS_Emergency.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_internal_chaos_in_government"
+		texturefile = "gfx/focus/AUS/AUS_internal_chaos_in_government.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_sodom_apple"
+		texturefile = "gfx/focus/AUS/AUS_sodom_apple.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_plan_of_bohemia"
+		texturefile = "gfx/focus/AUS/AUS_plan_of_bohemia.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_bohemian_crown"
+		texturefile = "gfx/focus/AUS/AUS_bohemian_crown.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_stability_back_to_austrian"
+		texturefile = "gfx/focus/AUS/AUS_stability_back_to_austrian.png"
+	}
+	spriteType = {
+		name = "GFX_focus_AUS_Prager_Fenstersturz"
+		texturefile = "gfx/ideas/AUS/AUS_Prager_Fenstersturz.png"
+	}
+}

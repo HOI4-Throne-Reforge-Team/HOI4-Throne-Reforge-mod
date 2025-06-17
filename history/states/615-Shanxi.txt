@@ -1,0 +1,28 @@
+state=
+{
+	id=615
+	name="STATE_615"
+	manpower = 6747504
+	
+	state_category = large_town
+	
+	history=
+	{
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+		victory_points = {
+			12344 15
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		12344 12078 1203 4469 1519 4538 4174 10367 10421 1180
+	}
+
+	local_supplies=0.0 
+}

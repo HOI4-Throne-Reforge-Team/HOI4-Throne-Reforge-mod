@@ -1,0 +1,321 @@
+characters={
+	PUS_Walter_Ulbricht = {
+		name = PUS_Walter_Ulbricht
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = communist
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Wilhelm_Pieck = {
+		name = PUS_Wilhelm_Pieck
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = radical_socialism
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Kurt_Schumacher = {
+		name = PUS_Kurt_Schumacher
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = reform_socialism
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Erich_Koch_Weser = {
+		name = PUS_Erich_Koch_Weser
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Ernst_Scholz = {
+		name = PUS_Ernst_Scholz
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Heinrich_Bruning = {
+		name = PUS_Heinrich_Bruning
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = centrism
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Rudolf_Hess = {
+		name = PUS_Rudolf_Hess
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = traditionalism
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Rudolf_Hess2 = {
+		name = PUS_Rudolf_Hess2
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nationlist
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Alfred_Rosenberg= {
+		name = PUS_Alfred_Rosenberg
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = fascist
+			traits = {
+				
+			}
+		}
+	}
+	PUS_Adolf_Hitler = {
+		name = PUS_Adolf_Hitler
+		portraits = {
+			civilian = {
+				large = ""
+			}
+		}
+		country_leader = {
+			ideology = nazi
+			traits = {
+				
+			}
+		}
+	}
+	PUS_August_Winnig={
+		name=PUS_August_Winnig
+		portraits={
+			civilian = {
+				large = "gfx/leaders/PUS/Portrait_August_Winnig.png"
+			}
+		}
+		advisor ={
+			slot = political_advisor
+			idea_token = PUS_August_Winnig
+			traits={ }
+			can_be_fired = yes
+		}
+	}
+	PUS_Hans_Vogel={
+		name=PUS_Hans_Vogel
+		portraits={
+			civilian = {
+				large = "gfx/leaders/PUS/Portrait_Hans_Vogel.png"
+			}
+		}
+		advisor ={
+			slot = political_advisor
+			idea_token = PUS_Hans_Vogel
+			traits={ }
+			can_be_fired = yes
+		}
+	}
+	PUS_Georg_Ledebour={
+		name=PUS_Georg_Ledebour
+		portraits={
+			civilian = {
+				large = "gfx/leaders/PUS/PUS_Georg_Ledebour.png"
+			}
+		}
+		advisor ={
+			slot = political_advisor
+			idea_token = PUS_Georg_Ledebour
+			traits={ }
+			can_be_fired = yes
+		}
+	}
+	PUS_Heinrich_Class={
+		name=PUS_Heinrich_Class
+		portraits={
+			civilian = {
+				large = "gfx/leaders/PUS/Portrait_Heinrich_Class.png"
+			}
+		}
+		advisor ={
+			slot = political_advisor
+			idea_token = PUS_Heinrich_Class
+			traits={ }
+			can_be_fired = yes
+		}
+	}
+	PUS_Erwin_Rommel = {
+		name = PUS_Erwin_Rommel
+		portraits = {
+			army = {
+				large = ""
+				small = ""
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			traits = {
+				logistics_wizard
+				desert_fox
+			}
+		}
+	}
+	PUS_Walter_Model = {
+		name = PUS_Walter_Model
+		portraits = {
+			army = {
+				large = ""
+				small = ""
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				panzer_leader
+				armor_officer
+			}
+		}
+	}
+	PUS_Heinz_Guderian = {
+		name = PUS_Heinz_Guderian
+		portraits = {
+			army = {
+				large = ""
+				small = ""
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			traits = {
+				disgruntled
+				offensive_doctrine
+				panzer_expert
+				fast_planner
+				panzer_leader
+			}
+		}
+	}
+	PUS_Hermann_Balck = {
+		name = PUS_Hermann_Balck
+		portraits = {
+			army = {
+				large = ""
+				small = ""
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			traits = {
+				infantry_expert
+			}
+		}
+	}
+	PUS_Felix_Steiner = {
+		name = PUS_Felix_Steiner
+		portraits = {
+			army = {
+				large = ""
+				small = ""
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				infantry_expert
+			}
+		}
+	}
+	PUS_Erich_von_Lewinski = {
+		name = PUS_Erich_von_Lewinski
+		portraits = {
+			army = {
+				large = ""
+				small = ""
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+			traits = {
+				thorough_planner
+				brilliant_strategist
+				politically_connected
+				expert_improviser
+			}
+		}
+	}
+}

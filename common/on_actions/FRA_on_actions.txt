@@ -1,0 +1,42 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			FRA = {
+				country_event = { id=Start_FRA.1.00 days = 1}
+			}
+			FRA = {
+                news_event = { id = The_Stavisky_Trial.1 days = 330 }
+			}
+			FRA = {
+                news_event = { id = The_Stavisky_Trial.5 days = 372 }
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			FRA = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+			PUS = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+			ENG = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+			RUS = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+			AUS = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+			USA = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+			CHI = {
+				news_event = { id = FRA.1 days = 357 }
+			}
+		}
+	}
+	
+
+}

@@ -1,0 +1,40 @@
+﻿capital = 37
+
+
+recruit_character = DEN_Christian_ten
+
+if = {
+	limit = { has_dlc = "Arms Against Tyranny" }
+	set_country_flag = DEN_danish_election_flag
+}
+
+
+oob = "DEN_1936"
+
+set_autonomy = {
+	target = HLS
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.4
+}
+set_autonomy = {
+	target = SCH
+	autonomous_state = autonomy_integrated_puppet
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+}
+set_popularities = {
+	democratic = 80
+	fascism = 2
+	communism = 12
+	neutrality = 6
+}
+add_ideas = {
+	DEN_Christian_ten_idea
+}
+create_faction = DenUnion
+add_to_faction = DEN
+add_to_faction = SCH
+add_to_faction = HLS
+add_to_faction = NOR

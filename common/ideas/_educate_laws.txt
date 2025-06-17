@@ -1,0 +1,81 @@
+ideas = {
+
+	educate_laws = {#教育法案
+
+		law = yes
+		use_list_view = yes
+
+		no_guarantee_of_education = {#无教育保障
+			cost = 50
+			picture = GFX_idea_no_guarantee_of_education
+			removal_cost = -1
+			level = 5
+			modifier = {
+				consumer_goods_factor = -0.2
+				theorist_cost_factor = 0.5
+				research_speed_factor = -0.2
+				political_power_cost = -0.5
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		basic_guarantee_of_education = {#基础教育保障
+			cost = 100
+			picture = GFX_idea_basic_guarantee_of_education
+			removal_cost = -1
+			level = 4
+			modifier = {
+			consumer_goods_factor = -0.1
+			theorist_cost_factor = 0.3
+			research_speed_factor = -0.1
+			political_power_cost = -0.2
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		primary_guarantee_of_education = {#初等教育保障
+			cost = 150
+			picture = GFX_idea_primary_guarantee_of_education
+			removal_cost = -1
+			level = 3
+			modifier = {
+			consumer_goods_factor = -0.05
+			theorist_cost_factor = 0.1
+			research_speed_factor = -0.05
+			political_power_cost = -0.1
+			}
+			cancel_if_invalid = no
+			default = yes
+		}
+		secondary_guarantee_of_education = {#中等教育保障
+			cost = 150
+			picture = GFX_idea_secondary_guarantee_of_education
+			removal_cost = -1
+			level = 2
+			modifier = {
+			consumer_goods_factor = 0.05
+			theorist_cost_factor = -0.1
+			research_speed_factor = 0.05
+			political_power_cost = 0.2
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+		higher_guarantee_of_education = {#高等教育保障
+			cost = 200
+			picture = GFX_idea_higher_guarantee_of_education
+			removal_cost = -1
+			level = 1
+			modifier = {
+			consumer_goods_factor = 0.15
+			theorist_cost_factor = -0.3
+			research_speed_factor = 0.15
+			political_power_cost = 0.5
+			}
+			cancel_if_invalid = no
+			default = no
+		}
+	}
+
+
+}

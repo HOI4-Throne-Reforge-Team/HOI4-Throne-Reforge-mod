@@ -1,0 +1,19 @@
+characters={
+	# Unit Leaders
+	SPR_Alfonso_XIII = {
+		name = SPR_Alfonso_XIII
+		portraits = {
+			civilian = {
+				large = SPR_Alfonso_XIII
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocrat
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+}

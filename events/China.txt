@@ -1,0 +1,250 @@
+
+add_namespace = chinas
+
+country_event = {
+	id = chinas.1
+	title = chinas.1.t
+	desc = chinas.1.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.1.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 15
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = chinas.2
+	title = chinas.2.t
+	desc = chinas.2.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.2.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.3
+	title = chinas.3.t
+	desc = chinas.3.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.3.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.4
+	title = chinas.4.t
+	desc = chinas.4.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.4.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.5
+	title = chinas.5.t
+	desc = chinas.5.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.5.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.6
+	title = chinas.6.t
+	desc = chinas.6.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.6.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.7
+	title = chinas.7.t
+	desc = chinas.7.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.7.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.8
+	title = chinas.8.t
+	desc = chinas.8.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.8.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.9
+	title = chinas.9.t
+	desc = chinas.9.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.9.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+country_event = {
+	id = chinas.10
+	title = chinas.10.t
+	desc = chinas.10.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.10.a
+		ai_chance = {
+			base = 100
+		}
+		country_event = {id =chinas.11 days=7}
+	}
+}
+country_event = {
+	id = chinas.11
+	title = chinas.11.t
+	desc = chinas.11.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.11.a
+		ai_chance = {
+			base = 100
+		}
+		country_event = {id =chinas.12 days=14}
+	}
+}
+country_event = {
+	id = chinas.12
+	title = chinas.12.t
+	desc = chinas.12.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.12.a
+		ai_chance = {
+			base = 100
+		}
+		retire_character = CHI_song_jiaoren
+		add_country_leader_role = {
+			character = CHI_huang_xing
+			promote_leader = yes
+			country_leader = {
+				ideology = democratic_subtype
+			}
+		}
+		country_event = {id =chinas.13 days=7}
+		
+	}
+}
+country_event = {
+	id = chinas.13
+	title = chinas.13.t
+	desc = chinas.13.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.13.a
+		ai_chance = {
+			base = 100
+		}
+		600 = {
+			add_core_of = RMT
+		}
+		620 = {
+			add_core_of = LMT
+		}
+		CHI = {
+			release = RMT
+			release = LMT
+			release = YUE
+		}
+		RMT = {
+			transfer_state  = 600
+			transfer_state = 1047
+			transfer_state = 1048
+			transfer_state = 1049
+		}
+		LMT = {
+			transfer_state = 620
+			transfer_state = 1059
+			transfer_state = 1060
+			transfer_state = 1061
+			transfer_state = 602
+			transfer_state = 1032
+			transfer_state = 750
+			transfer_state = 1031
+
+		}
+		CHI = {
+			remove_from_faction = NCG
+			remove_from_faction = SHX
+			remove_from_faction = FTJ
+			remove_from_faction = GXC
+			remove_from_faction = GUI
+			remove_from_faction = YUN
+			remove_from_faction = XIK
+			remove_from_faction = WCG
+			remove_from_faction = XSM
+			remove_from_faction = GSJ
+			remove_from_faction = NXJ
+			remove_from_faction = GSM
+			remove_from_faction = TIB
+		}
+		RMT = {
+			set_capital = {
+				state = 600
+			}
+		}
+		LMT = {
+			set_capital = {
+				state = 620
+			}
+		}
+		YUE = {
+			set_capital = {
+				state = 592
+			}
+		}
+		country_event = {id =chinas.14 days=1}
+	}
+}
+country_event = {
+	id = chinas.14
+	title = chinas.14.t
+	desc = chinas.14.d
+	is_triggered_only = yes
+	option = {
+		name = chinas.14.a
+		ai_chance = {
+			base = 100
+		}
+		CHI = {
+			release = SHH
+		}
+	}
+}
+
+

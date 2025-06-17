@@ -1,0 +1,194 @@
+capital= 4
+
+recruit_character = AUS_karl_I
+recruit_character = AUS_karl_I_2
+recruit_character = AUS_karl_I_3
+recruit_character = AUS_karl_I_4
+recruit_character = AUS_karl_I_5
+recruit_character = AUS_adolf_hitler
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+
+	naval_bomber1 = 1
+	mobile_warfare = 1
+	trade_interdiction = 1
+	formation_flying = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	fuel_refining = 1
+	
+}
+set_oob = AUS_1936
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.75
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	social_democrat = 20
+	populism = 10
+	social_conservative = 25
+	paternal_autocrat = 10
+	democratic = 15
+	syndicalist = 5
+	neutrality = 15
+}
+
+add_ideas = {
+	AUS_shattered_empire
+	AUS_bohemian_ultranationalism
+	AUS_rebellious_youth
+	AUS_ancient_economic_system
+	AUS_chaotic_government
+	AUS_backward_army
+	AUS_failed_navy
+	AUS_failed_air
+	AUS_franz_ferdinand_die
+}
+
+create_faction = Habsburg
+add_to_faction = AUS
+add_to_faction = BHM
+add_to_faction = GAS
+set_autonomy = {
+	target = BHM
+	autonomous_state = autonomy_integrated_puppet
+}
+
+set_variable = {  #实质GDP 
+	var = aus.real_gdp
+	value = 200
+}
+set_variable = {  #名义GDP 
+	var = aus.nominal_gdp
+	value = 432
+}
+set_variable = {  #物价水平 
+	var = aus.price_level
+	value = 216
+}
+set_variable = {  #基年物价水平 
+	var = aus.base_price_level
+	value = 100
+}
+set_variable = {  #CPI指数 
+	var = aus.CPI
+	value = 145
+}
+set_variable = {  #GDP平减指数
+	var = aus.GDP_deflator
+	value = 170
+}
+set_variable = {  #直接税税收入
+	var = aus.direct_taxes
+	value = 50
+}
+set_variable = {  #间接税税收入
+	var = aus.indirect_taxes
+	value = 9.12
+}
+set_variable = {  #政府储备
+	var = aus.government_reserves
+	value = 93.2
+}
+set_variable = {  #政府收入
+	var = aus.government_income
+	value = 61.2
+}
+set_variable = {  #政府支出
+	var = aus.government_spending
+	value = 100.23
+}
+set_variable = {  #私人投资总额
+	var = aus.total_private_investment
+	value = 5.429
+}
+set_variable = {  #私人消费支出
+	var = aus.private_consumption_expenditure
+	value = 4.9875
+}
+set_variable = {  #净出口
+	var = aus.net_exports
+	value = -0.4395
+}
+set_variable = {  #失业率
+	var = aus.unemployment_rate
+	value = 13
+}
+set_variable = {  #可用土地资源
+	var = aus.available_land
+	value = 83
+}
+set_variable = {  #社会总需求改变
+	var = aus.AD
+	value = 0
+}
+set_variable = {  #社会短期总供应改变
+	var = aus.SRAS
+	value = 0
+}
+set_variable = {  #社会长期总供应改变
+	var = aus.LRAS
+	value = 0
+}
+set_variable = {  #从量税
+	var = aus.specific_tax
+	value = 0
+}
+set_variable = {  #从量津贴
+	var = aus.specific_allowance
+	value = 0
+}
+set_variable = {  #名义利率
+	var = aus.nominal_interest_rate
+	value = 12
+}
+set_variable = {  #银行储备比率加权平均数
+	var = aus.minimum_reserves
+	value = 75
+}
+set_variable = {  #法定储备比率
+	var = aus.required_reserve_ratio
+	value = 30
+}
+set_variable = {  #银行贷款总额
+	var = aus.total_bank_loans
+	value = 2
+}
+set_variable = {  #社会贷款需求
+	var = aus.social_loan_demand
+	value = 1.23
+}
+set_variable = {  #流动现金
+	var = aus.liquid_cash
+	value = 2
+}
+set_variable = {  #货币供应
+	var = aus.money_supply
+	value = 14
+}
+set_variable = {  #货币需求改变
+	var = aus.money_demand
+	value = 0
+}
+set_variable = {  #市场效率
+	var = aus.market_efficiency
+	value = 68
+}

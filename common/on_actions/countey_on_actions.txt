@@ -1,0 +1,30 @@
+on_actions = {
+	on_daily_SPM = {
+		effect = {
+			if = {
+				limit ={  NOT ={ is_puppet_of = FRA } }
+				drop_cosmetic_tag = yes
+			}
+		}
+	} 
+}
+on_actions = {
+	on_daily_MDV = {
+		effect = {
+			if = {
+				limit ={  NOT ={ is_puppet_of = HUN } }
+				drop_cosmetic_tag = yes
+			}
+		}
+	} 
+}
+on_actions = {
+	on_daily_ROM = {
+		effect = {
+			if = {
+				limit ={  NOT ={ is_puppet_of = HUN } }
+				drop_cosmetic_tag = yes
+			}
+		}
+	} 
+}

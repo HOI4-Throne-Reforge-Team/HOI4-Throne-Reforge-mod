@@ -1,0 +1,50 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_focus_FRA_first_shot_fired"
+		texturefile = "gfx/focus/FRA/FRA_first_shot_fired.png"
+	}
+    spriteType = {
+		name = "GFX_focus_FRA_Solemn_statement"
+		texturefile = "gfx/focus/FRA/FRA_Solemn_statement.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_No_longer_deceived"
+		texturefile = "gfx/focus/FRA/FRA_No_longer_deceived.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Seek_asylum_in_the_Senate"
+		texturefile = "gfx/focus/FRA/FRA_Seek_asylum_in_the_Senate.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Makeover"
+		texturefile = "gfx/focus/FRA/FRA_Makeover.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_No_Scammers_cabinet"
+		texturefile = "gfx/focus/FRA/FRA_No_Scammers_cabinet.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Joint_conspiracy"
+		texturefile = "gfx/focus/FRA/FRA_Joint_conspiracy.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Center-left_coalition"
+		texturefile = "gfx/focus/FRA/FRA_Center-left_coalition.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Shut_up"
+		texturefile = "gfx/focus/FRA/FRA_Shut_up.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Do_a_big_vote"
+		texturefile = "gfx/focus/FRA/FRA_Do_a_big_vote.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Great_Judgment"
+		texturefile = "gfx/focus/FRA/FRA_Great_Judgment.png"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Add_fuel_to_the_flames"
+		texturefile = "gfx/focus/FRA/FRA_Add_fuel_to_the_flames.png"
+	}
+}

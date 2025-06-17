@@ -1,0 +1,24 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	SPR_eternal_alliance = {
+		value = 100
+		months = 48
+	}	
+	SPR_break = {
+		value = -100
+		months = 48
+	}	
+	SPR_democratic = {
+		value = 50
+		months = 48
+	}
+}

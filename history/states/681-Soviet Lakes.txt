@@ -1,0 +1,34 @@
+state = {
+	id = 681
+	name = "STATE_681" # WESTCape
+	manpower = 837178
+
+	state_category = large_town
+
+	history = {
+
+		owner = SAF
+		add_core_of = SAF
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			air_base = 1
+			12589 = {
+				naval_base = 4
+				dam = 1 
+			}
+		}
+
+		victory_points = {
+			12589 10 # Cape Town
+		}
+		
+	}
+
+	provinces = {
+		4528 10415 10442 12589 12692
+	}
+
+	local_supplies = 0.0 
+}

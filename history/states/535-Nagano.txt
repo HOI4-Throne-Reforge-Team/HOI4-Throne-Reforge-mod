@@ -1,0 +1,41 @@
+
+state={
+	id=535
+	name="STATE_535" #甲信越骏
+	manpower = 2981000
+	state_category = town
+	
+	resources={
+		steel=17 
+		tungsten=4
+	}
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+		
+			industrial_complex = 1
+			infrastructure = 3
+			dockyard = 1
+
+		}
+		
+		victory_points = {
+			7087 3
+		}
+		victory_points = {
+			12007 1
+		}
+		victory_points = {
+			10100 5
+		}
+
+	}
+
+	provinces={
+		12007 10128 10015 10100 4069 12072 12097 7087
+	}
+
+	local_supplies=0.0 
+}

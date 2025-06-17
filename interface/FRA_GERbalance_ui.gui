@@ -1,0 +1,454 @@
+guitypes = {
+    containerWindowType = {
+        name = "German_Balance_decision_categories_ui"
+        position = {
+            x = 0
+            y = 0
+        }
+        size = {
+            width = 500
+            height = 730
+        }
+        orientation = CENTER_UP
+        origo = center
+        background = {
+            name = "bg"
+            spriteType = ""
+            position = {
+                x= 0
+                y= 0
+            }
+            size = {
+                width = 100%
+                height =100%
+            }
+            orientation = center
+            
+        }
+        containerWindowType = {
+            name = "Germany_balance_map"
+            position = {
+                x = 0
+                y = 30
+            }
+            iconType = {
+                name = "GER_map_under"
+                spriteType = "GFX_Great_Germania_Map_under"
+                position = {
+                    x = 0
+                    y = 0
+                }
+                size = {
+                    width = 500
+                    height = 500
+                }
+            }
+    
+            buttonType = {
+                name = "GERland_Alsace_button"
+                spriteType = "GFX_Alsace_button"
+                position = {
+                    x = 19
+                    y = 289
+                }
+            }
+            buttonType = {
+                name = "GERland_Luxembourg_button"
+                spriteType = "GFX_Luxembourg_button"
+                position = {
+                    x = 17
+                    y = 265
+                }
+            }
+            buttonType = {
+                name = "GERland_Thrall_button"
+                spriteType = "GFX_Thrall_button"
+                position = {
+                    x = 30
+                    y = 262
+                }
+            }
+            buttonType = {
+                name = "GERland_Malmedy_button"
+                spriteType = "GFX_Malmedy_button"
+                position = {
+                    x = 20
+                    y = 243
+                }
+            }
+            buttonType = {
+                name = "GERland_Rhine_button"
+                spriteType = "GFX_Rhine_button"
+                position = {
+                    x = 27
+                    y = 204
+                }
+            }
+            buttonType = {
+                name = "GERland_Mainz_button"
+                spriteType = "GFX_Mainz_button"
+                position = {
+                    x = 77
+                    y = 270
+                }
+            }
+            buttonType = {
+                name = "GERland_Baden_button"
+                spriteType = "GFX_Baden_button"
+                position = {
+                    x = 66
+                    y = 283
+                }
+            }
+            buttonType = {
+                name = "GERland_Hesse_button"
+                spriteType = "GFX_Hesse_button"
+                position = {
+                    x = 72
+                    y = 213
+                }
+            }
+            buttonType = {
+                name = "GERland_Nuremberg_button"
+                spriteType = "GFX_Nuremberg_button"
+                position = {
+                    x = 112
+                    y = 241
+                }
+            }
+            buttonType = {
+                name = "GERland_Wurttemberg_button"
+                spriteType = "GFX_Wurttemberg_button"
+                position = {
+                    x = 91
+                    y = 291
+                }
+            }
+            buttonType = {
+                name = "GERland_SouthernWestphalia_button"
+                spriteType = "GFX_SouthernWestphalia_button"
+                position = {
+                    x = 45
+                    y = 213
+                }
+            }
+            buttonType = {
+                name = "GERland_NorthWestphalia_button"
+                spriteType = "GFX_NorthWestphalia_button"
+                position = {
+                    x = 33
+                    y = 180
+                }
+            }
+            buttonType = {
+                name = "GERland_Brunswick_button"
+                spriteType = "GFX_Brunswick_button"
+                position = {
+                    x = 123
+                    y = 179
+                }
+            }
+            buttonType = {
+                name = "GERland_Thuringia_button"
+                spriteType = "GFX_Thuringia_button"
+                position = {
+                    x = 144
+                    y = 222
+                }
+            }
+            buttonType = {
+                name = "GERland_Saxony_button"
+                spriteType = "GFX_Saxony_button"
+                position = {
+                    x = 192
+                    y = 212
+                }
+            }
+            buttonType = {
+                name = "GERland_Sudetenland_button"
+                spriteType = "GFX_Sudetenland_button"
+                position = {
+                    x = 198
+                    y = 225
+                }
+            }
+            buttonType = {
+                name = "GERland_LowerBavaria_button"
+                spriteType = "GFX_LowerBavaria_button"
+                position = {
+                    x = 174
+                    y = 263
+                }
+            }
+            buttonType = {
+                name = "GERland_UpperBavaria_button"
+                spriteType = "GFX_UpperBavaria_button"
+                position = {
+                    x = 137
+                    y = 304
+                }
+            }
+            buttonType = {
+                name = "GERland_Ames_button"
+                spriteType = "GFX_Ames_button"
+                position = {
+                    x = 48
+                    y = 136
+                }
+            }
+            buttonType = {
+                name = "GERland_Oldenburg_button"
+                spriteType = "GFX_Oldenburg_button"
+                position = {
+                    x = 75
+                    y = 136
+                }
+            }
+            buttonType = {
+                name = "GERland_Hanover_button"
+                spriteType = "GFX_Hanover_button"
+                position = {
+                    x = 97
+                    y = 130
+                }
+            }
+            buttonType = {
+                name = "GERland_SchleswigHorstein_button"
+                spriteType = "GFX_SchleswigHorstein_button"
+                position = {
+                    x = 91
+                    y = 66
+                }
+            }
+            buttonType = {
+                name = "GERland_Mecklenburg_button"
+                spriteType = "GFX_Mecklenburg_button"
+                position = {
+                    x = 157
+                    y = 114
+                }
+            }
+            buttonType = {
+                name = "GERland_Magdeburg_button"
+                spriteType = "GFX_Magdeburg_button"
+                position = {
+                    x = 162
+                    y = 160
+                }
+            }
+            buttonType = {
+                name = "GERland_Anhalt_button"
+                spriteType = "GFX_Anhalt_button"
+                position = {
+                    x = 162
+                    y = 194
+                }
+            }
+            buttonType = {
+                name = "GERland_Brandenburg_button"
+                spriteType = "GFX_Brandenburg_button"
+                position = {
+                    x = 188
+                    y = 94
+                }
+            }
+            buttonType = {
+                name = "GERland_WestPrussia_button"
+                spriteType = "GFX_WestPrussia_button"
+                position = {
+                    x = 296
+                    y = 136
+                }
+            }
+            buttonType = {
+                name = "GERland_Silesia_button"
+                spriteType = "GFX_Silesia_button"
+                position = {
+                    x = 277
+                    y = 192
+                }
+            }
+            buttonType = {
+                name = "GERland_Katowice_button"
+                spriteType = "GFX_Katowice_button"
+                position = {
+                    x = 373
+                    y = 236
+                }
+            }
+            buttonType = {
+                name = "GERland_Gdynia_button"
+                spriteType = "GFX_Gdynia_button"
+                position = {
+                    x = 343
+                    y = 95
+                }
+            }
+            buttonType = {
+                name = "GERland_EastPrussia_button"
+                spriteType = "GFX_EastPrussia_button"
+                position = {
+                    x = 383
+                    y = 56
+                }
+            }
+            buttonType = {
+                name = "GERland_Bohemia_button"
+                spriteType = "GFX_Bohemia_button"
+                position = {
+                    x = 221
+                    y = 240
+                }
+            }
+            buttonType = {
+                name = "GERland_EastSudetenland_button"
+                spriteType = "GFX_EastSudetenland_button"
+                position = {
+                    x = 318
+                    y = 248
+                }
+            }
+            buttonType = {
+                name = "GERland_Zaorje_button"
+                spriteType = "GFX_Zaorje_button"
+                position = {
+                    x = 370
+                    y = 267
+                }
+            }
+            buttonType = {
+                name = "GERland_SouthSudetenland_button"
+                spriteType = "GFX_SouthSudetenland_button"
+                position = {
+                    x = 248
+                    y = 292
+                }
+            }
+            buttonType = {
+                name = "GERland_loweraustria_button"
+                spriteType = "GFX_loweraustria_button"
+                position = {
+                    x = 218
+                    y = 304
+                }
+            }
+            buttonType = {
+                name = "GERland_styria_button"
+                spriteType = "GFX_styria_button"
+                position = {
+                    x = 235 
+                    y = 345
+                }
+            }
+            buttonType = {
+                name = "GERland_burgenland_button"
+                spriteType = "GFX_burgenland_button"
+                position = {
+                    x = 311 
+                    y = 335
+                }
+            }
+            buttonType = {
+                name = "GERland_slovenija_button"
+                spriteType = "GFX_slovenija_button"
+                position = {
+                    x = 246 
+                    y = 393
+                }
+            }
+            buttonType = {
+                name = "GERland_lowertyrol_button"
+                spriteType = "GFX_lowertyrol_button"
+                position = {
+                    x = 151 
+                    y = 401
+                }
+            }
+            buttonType = {
+                name = "GERland_trieste_button"
+                spriteType = "GFX_trieste_button"
+                position = {
+                    x = 232 
+                    y = 399
+                }
+            }
+            buttonType = {
+                name = "GERland_tyrol_button"
+                spriteType = "GFX_tyrol_button"
+                position = {
+                    x = 148
+                    y = 354
+                }
+            }
+            buttonType = {
+                name = "GERland_vorarlberg_button"
+                spriteType = "GFX_vorarlberg_button"
+                position = {
+                    x = 121
+                    y = 359
+                }
+            }
+    
+            iconType = {
+                name = "GER_Map"
+                spriteType = "GFX_Great_Germania_Map"
+                position = {
+                    X = 0
+                    y = 0
+                }
+                size = {
+                    width = 500
+                    height = 500
+                }
+                alwaystransparent = yes
+            }
+            #装饰
+            iconType = {
+                name = "GER_Base_border"
+                spriteType = "GFX_GER_Base_border"
+                position = {
+                    x = 0
+                    y = -30
+                }
+                size = {
+                    width = 500
+                    height = 600
+                }
+                alwaystransparent = yes
+            }
+            iconType = {
+                name = "Intruders_DEN"
+                spriteType = "GFX_Intruders_DEN"
+                position = {
+                    x = 0
+                    y = -30
+                }
+                size = {
+                    width = 435
+                    height = 197
+                }
+                alwaystransparent = yes
+            }
+            iconType = {
+                name = "Intruders_FRA"
+                spriteType = "GFX_Intruders_FRA"
+                position = {
+                    x = 0
+                    y = 210
+                }
+                size = {
+                    width = 159
+                    height = 360
+                }
+                alwaystransparent = yes
+            }
+            #显示框
+            
+        }
+        
+        
+    }
+
+
+
+}

@@ -1,0 +1,47 @@
+
+capital = 620
+
+recruit_character = SHH_chen_qimei
+
+set_stability = 0.75
+set_war_support = 0.60
+
+set_technology = {
+	infantry_weapons = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	basic_train = 1
+}
+
+set_convoys = 10
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	china_failed_land_reform
+	china_Backward_Army
+	china_three_principles_of_people
+}
+
+set_popularities = {
+	neutrality = 5
+	paternal_autocrat = 1
+	populism = 3
+	fascism = 1
+	communism = 2
+	syndicalist = 2
+	anarchism = 1
+	social_democrat = 5
+	democratic = 15
+	social_conservative = 65
+}
+
+
+

@@ -1,0 +1,29 @@
+
+state = {
+	id = 1054
+	name = "STATE_1054"
+	manpower = 2975001
+	
+	state_category = rural
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = ZHJ
+		victory_points = {
+			12059 2
+		}
+		victory_points={ 9944 1 }
+	}
+
+	provinces = {
+		12059 1195 11920 9944 7174 10086 13392
+	}
+
+	local_supplies = 0.0 
+}

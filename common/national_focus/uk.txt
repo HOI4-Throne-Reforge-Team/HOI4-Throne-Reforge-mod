@@ -1,0 +1,138 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = british_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = ENG
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 0 y = 2500 }
+
+	focus = {
+		id = ENG_foucs_a_new_year
+		available = {
+				has_government = democratic
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_eng_a_new_year
+		x = 10
+		y = 0
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+##稳定不列颠本岛
+	focus = {
+		id = ENG_foucs_build_british
+		x = -6
+		y = 1
+		relative_position_id = ENG_foucs_a_new_year
+		prerequisite = { focus = ENG_foucs_a_new_year }
+		available = {
+				has_government = democratic
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_british
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_finish_ireland
+		x = -3
+		y = 1
+		relative_position_id = ENG_foucs_build_british
+		prerequisite = { focus = ENG_foucs_build_british }
+		available = {
+			113 = {
+				is_controlled_by = ENG
+			}
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_finish_ireland
+		cost = 14.3
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			custom_effect_tooltip = ENG_Ireland_friend
+			every_state = {
+				limit = { is_core_of = IRE }
+				add_core_of = ENG
+			}
+			add_political_power = 150
+			add_command_power = 25
+			army_experience = 25
+			add_stability = -0.05
+			add_war_support = 0.15
+			remove_ideas = ENG_IRE_problem
+		}
+	}
+
+#巩固英联邦
+	focus = {
+		id = ENG_foucs_build_empire
+		x = 6
+		y = 1
+		relative_position_id = ENG_foucs_a_new_year
+		prerequisite = { focus = ENG_foucs_a_new_year }
+		available = {
+				has_government = democratic
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	
+}

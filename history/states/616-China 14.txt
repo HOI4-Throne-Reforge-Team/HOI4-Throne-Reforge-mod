@@ -1,0 +1,29 @@
+state = {
+	id = 616
+	name = "STATE_616"
+
+	history = {
+
+		owner = NXJ
+		add_core_of = NXJ
+		add_core_of = CHI
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			8127 10 #Yinchuan
+		}
+
+	}
+
+	provinces = {
+		8127 10724 3742 8081 1985
+	}
+	manpower = 2077600
+	buildings_max_level_factor = 1.000
+	state_category = town
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		
+		DEN_Christian_ten_idea = {
+			allowed = {
+				original_tag = DEN
+			}
+			allowed_civil_war = {
+				always = no 
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = +0.2
+			}
+
+		}
+    }
+}

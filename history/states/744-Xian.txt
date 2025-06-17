@@ -1,0 +1,27 @@
+state={
+	id=744
+	name="STATE_744"
+	provinces={
+		5007 12156 10733 2006 1976 7301 12713 5092
+	}
+
+	history={
+		owner = WCG
+		add_core_of = WCG
+		add_core_of = CHI
+		victory_points = {
+			7301 30
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			10733 1
+		}
+
+	}
+	manpower=12849490
+	state_category = city
+
+	local_supplies=0.0 
+}

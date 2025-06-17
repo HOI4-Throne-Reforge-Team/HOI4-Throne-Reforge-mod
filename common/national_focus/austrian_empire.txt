@@ -1,0 +1,856 @@
+focus_tree = {   #奥地利帝国国策树
+	id = austrian_focus_empire
+	country = { 
+		factor = 0
+		
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 2500 }
+	focus = {  #皇帝的演讲
+		id = AUS_speech_by_emperor
+		icon = GFX_classic_album_art
+		x = 15
+		y = 1
+		cost = 2
+		completion_reward = {
+			country_event = { id = focus_AUS.7 days = 1 } 
+			unlock_decision_tooltip = AUS_nation_of_bohemia
+		}
+	}
+	focus = {  #从內寻求力量……
+		id = AUS_strength_form_within
+		icon = GFX_classic_album_art
+		x = 15
+		y = 2
+		cost = 5
+		prerequisite = {
+			focus = AUS_speech_by_emperor
+		}
+		select_effect = { 
+			country_event = { id = focus_AUS.8 days = 7 } 
+			country_event = { id = focus_AUS.9 days = 14 } 
+			country_event = { id = focus_AUS.10 days = 21 } 
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_shattered_empire_2
+				add_idea = AUS_shattered_empire_3
+			}
+		}
+	}
+	focus = {  #必须立即改革！
+		id = AUS_require_of_reform
+		icon = GFX_classic_album_art
+		x = 15
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = AUS_strength_form_within
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = { id = focus_AUS.11 days = 1 } 
+		}
+	}
+
+	#########################政治改革##############################
+	focus = {  #政治改革
+		id = AUS_political_reform
+		icon = GFX_classic_album_art
+		x = 5
+		y = 1
+		cost = 35
+		available = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+	######################经济改革##########################
+	focus = {  #经济改革
+		id = AUS_economic_reform
+		icon = GFX_classic_album_art
+		x = 25
+		y = 1
+		cost = 35
+		available = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+	#国控市场经济
+	focus = {  #重整经济部门
+		id = AUS_restructuring_department_of_economic
+		icon = GFX_classic_album_art
+		x = 22
+		y = 2
+		cost = 4.3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_economic_reform
+		}
+		completion_reward = {
+			add_ideas = AUS_productivity_development_board
+		}
+	}
+	focus = {  #统一银行储备比率
+		id = AUS_uniform_reserve_ratio
+		icon = GFX_classic_album_art
+		x = 24
+		y = 3
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_restructuring_department_of_economic
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = AUS_bank_statutory_reserve_ratio
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+		}
+	}
+	focus = {  #颁发生产津贴
+		id = AUS_granting_childbirth_allowance
+		icon = GFX_classic_album_art
+		x = 22
+		y = 3
+		cost = 3
+		available = {
+			has_political_power > 49
+		}
+		prerequisite = {
+			focus = AUS_restructuring_department_of_economic
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_ideas = AUS_government_production_subsidies
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+		}
+	}
+	focus = {  #拨款发展建築业
+		id = AUS_development_of_industry
+		icon = GFX_classic_album_art
+		x = 20
+		y = 3
+		cost = 3
+		available = {
+			has_political_power > 49
+		}
+		prerequisite = {
+			focus = AUS_restructuring_department_of_economic
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = AUS_development_of_industry
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+		}
+	}
+	focus = {  #向军工企业低价出售土地
+		id = AUS_selling_land_to_military
+		icon = GFX_classic_album_art
+		x = 21
+		y = 4
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_development_of_industry
+		}
+		prerequisite = {
+			focus = AUS_granting_childbirth_allowance
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = AUS_military_enterprises_economies_of_scale
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+		}
+	}
+	focus = {  #实施进口关税
+		id = AUS_tariff_of_import
+		icon = GFX_classic_album_art
+		x = 23
+		y = 4
+		cost = 2
+		available = {
+		
+		}
+		prerequisite = {
+			focus = AUS_uniform_reserve_ratio
+		}
+		prerequisite = {
+			focus = AUS_granting_childbirth_allowance
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = AUS_international_trade_tariffs
+			FRA = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = AUS_tariff_import
+				}
+			}
+			SOV = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = AUS_tariff_import
+				}
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = AUS
+					modifier = AUS_tariff_import
+				}
+			}
+		}
+	}
+	focus = {  #设立价格限制
+		id = AUS_setting_price_limits
+		icon = GFX_classic_album_art
+		x = 24
+		y = 5
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_tariff_of_import
+		}
+		prerequisite = {
+			focus = AUS_uniform_reserve_ratio
+		}
+		completion_reward = {
+			add_ideas = AUS_market_price_limit
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+		}
+	}
+	focus = {  #增加薪俸税累进程度
+		id = AUS_increase_progressivity_of_salaries_tax
+		icon = GFX_classic_album_art
+		x = 22
+		y = 5
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_tariff_of_import
+			focus = AUS_selling_land_to_military
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = AUS_austrian_tax_reform_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_austrian_tax_reform_2
+					add_idea = AUS_austrian_tax_reform_3
+				}
+			}
+			else = {
+				add_ideas = AUS_austrian_tax_reform
+			}
+			if = {
+				limit = { 
+					has_stability < 0.5
+				}
+				country_event = { id = focus_AUS.12 days = 1 } 
+			}
+			else = {
+				add_stability = -0.05
+			}
+		}
+	}
+	focus = {  #提高利得税免税额
+		id = AUS_increase_profits_tax_allowance
+		icon = GFX_classic_album_art
+		x = 20
+		y = 5
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_selling_land_to_military
+		}
+		prerequisite = {
+			focus = AUS_development_of_industry
+		}
+		completion_reward = {
+			add_stability = 0.05
+			if = {
+				limit = {
+					has_idea = AUS_austrian_tax_reform
+				}
+				swap_ideas = {
+					remove_idea = AUS_austrian_tax_reform
+					add_idea = AUS_austrian_tax_reform_3
+				}
+			}
+			else = {
+				add_ideas = AUS_austrian_tax_reform_2
+			}
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+			
+		}
+	}
+	focus = {  #具有初步成效的经济改革
+		id = AUS_economic_reform_result
+		icon = GFX_classic_album_art
+		x = 22
+		y = 6
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_increase_profits_tax_allowance
+		}
+		prerequisite = {
+			focus = AUS_increase_progressivity_of_salaries_tax
+		}
+		prerequisite = {
+			focus = AUS_setting_price_limits
+		}
+		completion_reward = {
+			add_political_power = 25
+			remove_ideas = AUS_productivity_development_board
+			remove_ideas = AUS_bank_statutory_reserve_ratio
+			remove_ideas = AUS_government_production_subsidies
+			remove_ideas = AUS_military_enterprises_economies_of_scale
+			remove_ideas = AUS_international_trade_tariffs
+			remove_ideas = AUS_austrian_tax_reform_3
+			remove_ideas = AUS_market_price_limit
+			add_ideas = AUS_government_intervention_in_economy
+			add_ideas = AUS_government_intervention
+			if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system
+					add_idea = AUS_ancient_economic_system_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = AUS_ancient_economic_system_2
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_2
+					add_idea = AUS_ancient_economic_system_3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_3
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_3
+					add_idea = AUS_ancient_economic_system_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_4
+				}
+				swap_ideas = {
+					remove_idea = AUS_ancient_economic_system_4
+					add_idea = AUS_ancient_economic_system_5
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = AUS_ancient_economic_system_5
+				}
+				remove_ideas = AUS_ancient_economic_system_5
+			}
+			else = {
+				
+			}
+		}
+	}
+	focus = {  #开发资源
+		id = AUS_development_resources
+		icon = GFX_classic_album_art
+		x = 20
+		y = 7
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_economic_reform_result
+		}
+		
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 50
+				state = 4
+			}
+			swap_ideas = {
+				remove_idea = AUS_government_intervention_in_economy
+				add_idea = AUS_government_intervention_in_economy_2
+			}
+			custom_effect_tooltip = AUS_development_resources_tt
+			unlock_decision_tooltip = SPR_Viceroyalty_CUB
+		}
+	}
+	focus = {  #帝国科学院
+		id = AUS_academy_of_sciences
+		icon = GFX_classic_album_art
+		x = 24
+		y = 7
+		cost = 3
+		available = {
+			
+		}
+		prerequisite = {
+			focus = AUS_economic_reform_result
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = AUS_academy_sciences
+		}
+	}
+	focus = {  #投资工厂
+		id = AUS_invest_in_factory
+		icon = GFX_classic_album_art
+		x = 23
+		y = 8
+		cost = 3
+		available = {
+			has_political_power > 99
+		}
+		prerequisite = {
+			focus = AUS_economic_reform_result
+		}
+		
+		completion_reward = {
+			add_political_power = -100
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}	
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit  = { 
+					is_core_of = AUS
+				} 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {  #工业革新
+		id = AUS_industrial_innovation
+		icon = GFX_classic_album_art
+		x = 21
+		y = 8
+		cost = 5
+		available = {
+
+		}
+		prerequisite = {
+			focus = AUS_economic_reform_result
+		}
+		
+		completion_reward = {
+			add_ideas = AUS_imperial_artillery_factory
+			if = {
+				limit = {
+					has_idea = AUS_backward_army
+				}
+				swap_ideas = {
+					remove_idea = AUS_backward_army
+					add_idea = AUS_backward_army_industry
+				}
+			}
+			else = {
+
+			}
+		}
+	}
+	focus = {  #崭新的帝国经济
+		id = AUS_new_imperial_economy
+		icon = GFX_classic_album_art
+		x = 22
+		y = 7
+		cost = 7
+		available = {
+			has_completed_focus = AUS_industrial_innovation
+			has_completed_focus = AUS_invest_in_factory
+			has_completed_focus = AUS_academy_of_sciences
+			has_completed_focus = AUS_development_resources
+		}
+		prerequisite = {
+			focus = AUS_economic_reform_result
+		}
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AUS_government_intervention_in_economy_2
+				add_idea = AUS_danube_lights
+			}
+		}
+	}
+	######################军事改革##########################
+	focus = {  #军事改革
+		id = AUS_military_reform
+		icon = GFX_classic_album_art
+		x = 15
+		y = 5
+		cost = 35
+		available = {
+			always = no
+		}
+		completion_reward = {
+			
+		}
+	}
+}

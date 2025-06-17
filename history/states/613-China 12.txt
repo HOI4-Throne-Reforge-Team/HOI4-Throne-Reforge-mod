@@ -1,0 +1,36 @@
+
+state={
+	id=613
+	name="STATE_613" # Shanghai
+	manpower = 19704601
+	
+	state_category = large_city
+	
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = JIS
+		buildings = {
+			infrastructure = 4 #was: 5
+			industrial_complex = 2
+			air_base = 6
+			arms_factory = 1
+			11913={
+				bunker = 4
+			}
+		}
+		victory_points = {
+			11913 40 
+		}
+		victory_points={
+			11982 8
+		}
+
+	}
+
+	provinces={
+		11913 996 11982 1146 4148
+	}
+
+	local_supplies=0.0 
+}

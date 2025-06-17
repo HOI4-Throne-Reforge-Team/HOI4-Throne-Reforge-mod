@@ -1,0 +1,7 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_decision_cat_picture_BAY_modern"
+		texturefile = "gfx/interface/decisions/BAYmodern/decision_cat_picture_BAY_modern.png"
+	}
+}

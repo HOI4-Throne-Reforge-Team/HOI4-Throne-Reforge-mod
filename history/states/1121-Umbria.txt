@@ -1,0 +1,33 @@
+state = {
+	id = 1121
+	name = "STATE_1121"
+	resources={
+		steel = 9
+	}
+	manpower = 2979335
+	
+	state_category = city
+
+	history = {
+		owner = ITA
+		victory_points = {
+			3885 1 
+		}
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 1
+			925 = {
+				naval_base = 4
+			}
+
+		}
+		add_core_of = ITA
+		add_core_of = PAP
+	}
+
+	provinces = {
+		 3885 6926 9794
+	}
+
+	local_supplies = 0.0 
+}

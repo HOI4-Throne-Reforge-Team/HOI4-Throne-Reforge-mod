@@ -1,0 +1,29 @@
+state={
+	id=603
+	name="STATE_603"
+
+	history={
+		owner = GUI
+		add_core_of = CHI
+		add_core_of = GUI
+		buildings = {
+			infrastructure = 0
+
+
+
+		}
+		victory_points = {
+			4504 10
+		}
+
+	}
+
+	provinces={
+		1474 1884 4192 4504 4532 7521 7549 7577 8095 10616
+	}
+	manpower=7543200
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=3.0 
+}

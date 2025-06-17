@@ -1,0 +1,466 @@
+focus_tree = {
+	id = prussia_focus_1935
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PUS
+		}
+	 }
+	 initial_show_position = {
+		x = 0
+	}
+	continuous_focus_position = { x = 2500 y = 1500 }
+	default = no
+	focus = {#最后任期
+		id = PUS_Final_term
+		icon = GFX_PUS_Final_term
+		cost = 1
+		x = 7
+		y = 1
+		available = {
+			always = yes
+		}
+		completion_reward = { 
+			country_event = {id=focus_PUS_introduce.00 days = 1}
+			add_stability = 0.01
+		}
+	}
+	focus = {#访问瑞典
+		id = PUS_Visit_Sweden
+		icon = GFX_PUS_Visit_Sweden
+		cost = 5
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = PUS_Final_term
+		}
+		completion_reward = { 
+			SWE = {
+				country_event = {id = trade_with_SWE.00 days = 1}
+			}
+		}
+	}
+	focus = {#敦促工业建设
+		id = PUS_Urging_industrial_construction
+		icon = GFX_PUS_Urging_industrial_construction
+		cost = 10
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = PUS_Visit_Sweden
+		}
+		completion_reward = { 
+			add_ideas = PUS_Industrial_construction_investment
+		}
+	}
+	focus = {#审视国内政局
+		id = PUS_Review_domestic_political_situation
+		icon = GFX_PUS_Review_domestic_political_situation
+		cost = 10
+		x = 7
+		y = 4
+		prerequisite = {
+			focus = PUS_Urging_industrial_construction
+		}
+		completion_reward = { 
+			unlock_decision_category_tooltip = Prussian_parliamentary_elections
+			add_political_power = 20
+		}
+	}
+	focus = {#筹备大选资金
+		id = PUS_Preparing_funds_for_election
+		icon = GFX_PUS_Preparing_funds_for_election
+		cost = 15
+		x = 5
+		y = 5
+		available = {
+			NOT = {
+				has_global_flag = PUS_elections_are_taking_place
+				has_completed_focus = PUS_1936_Election
+			}
+		}
+		prerequisite = {
+			focus = PUS_Review_domestic_political_situation
+		}
+		completion_reward = { 
+			set_global_flag = PUS_has_already_prepare_for_election
+			custom_effect_tooltip = PUS_Preparing_funds
+			add_political_power = 50
+		}
+	}
+	focus = {#打击反民主势力
+		id = PUS_Fight_anti_democratic_forces
+		icon = GFX_PUS_Fight_anti_democratic_forces
+		cost = 5
+		x = 7
+		y = 5
+		available = {
+			NOT = {
+				has_global_flag = PUS_elections_are_taking_place
+				has_completed_focus = PUS_1936_Election
+			}
+		}
+		prerequisite = {
+			focus = PUS_Review_domestic_political_situation
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_Strike_opponents_0_PDP
+			unlock_decision_tooltip = PUS_Election_Strike_opponents_0_SPP
+			unlock_decision_tooltip = PUS_Election_Strike_opponents_0_PVP
+			custom_effect_tooltip = PUS_Strike_opponents
+			hidden_effect = {
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = syndicalist
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = anarchism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = paternal_autocrat
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = populism
+					popularity = -0.1
+				}
+				set_global_flag = PUS_has_already_strike_extremists
+			}
+		}
+	}
+	focus = {#准备宣传攻势
+		id = PUS_Prepare_for_propaganda_offensive
+		icon = GFX_PUS_Prepare_for_propaganda_offensive
+		cost = 5
+		x = 9
+		y = 5
+		available = {
+			NOT = {
+				has_global_flag = PUS_elections_are_taking_place
+				has_completed_focus = PUS_1936_Election
+			}
+		}
+		prerequisite = {
+			focus = PUS_Review_domestic_political_situation
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_Propaganda_offensive_0_PDP
+			unlock_decision_tooltip = PUS_Election_Propaganda_offensive_0_SPP
+			unlock_decision_tooltip = PUS_Election_Propaganda_offensive_0_PVP
+			add_stability = -0.05
+		}
+	}
+	focus = {#1936年大选
+		id = PUS_1936_Election
+		icon = GFX_PUS_1936_Election
+		cost = 52
+		x = 7
+		y = 6
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PUS_Prepare_for_propaganda_offensive
+			focus = PUS_Fight_anti_democratic_forces
+			focus = PUS_Preparing_funds_for_election
+		}
+		completion_reward = { 
+			custom_effect_tooltip = TIME_OUT_AUTO_PASS
+			set_global_flag = PUS_elections_are_taking_place
+		}
+	}
+	focus = {#社民党竞选
+		id = PUS_SPP_elections
+		icon = GFX_PUS_SPP_Election
+		cost = 1
+		x = 7
+		y = 7
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		mutually_exclusive = {
+			focus = PUS_PDP_elections
+			focus = PUS_PVP_elections
+		}
+		prerequisite = {
+			focus = PUS_1936_Election
+		}
+		completion_reward = { 
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.15
+			}
+			add_ideas = Election_PDP_action
+			add_ideas = Election_PVP_action
+		}
+	}
+	focus = {#社民党竞选策略
+		id = PUS_SPP_Campaign_strategy
+		icon = GFX_PUS_SPP_Campaign_strategy
+		cost = 4
+		x = 7
+		y = 8
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_SPP_elections
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_SPP_Voting_encouraged_0
+		}
+	}
+	focus = {#社民党竞选策略1
+		id = PUS_SPP_Campaign_strategy_one
+		icon = GFX_PUS_SPP_Campaign_strategy_1
+		cost = 4
+		x = 6
+		y = 9
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_SPP_Campaign_strategy
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_SPP_defense_PDP_0
+		}
+	}
+	focus = {#社民党竞选策略2
+		id = PUS_SPP_Campaign_strategy_two
+		icon = GFX_PUS_SPP_Campaign_strategy_2
+		cost = 4
+		x = 8
+		y = 9
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_SPP_Campaign_strategy
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_SPP_defense_PVP_0
+		}
+	}
+	focus = {#民主党竞选
+		id = PUS_PDP_elections
+		icon = GFX_PUS_PDP_Election
+		cost = 1
+		x = 3
+		y = 7
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		mutually_exclusive = {
+			focus = PUS_PVP_elections
+			focus = PUS_SPP_elections
+		}
+		prerequisite = {
+			focus = PUS_1936_Election
+		}
+		completion_reward = { 
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.13
+			}
+			add_ideas = Election_SPP_action
+			add_ideas = Election_PVP_action
+		}
+	}
+	focus = {#民主党竞选策略
+		id = PUS_PDP_Campaign_strategy
+		icon = GFX_PUS_PDP_Campaign_strategy
+		cost = 4
+		x = 3
+		y = 8
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_PDP_elections
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_PDP_Voting_encouraged_0
+		}
+	}
+	focus = {#民主党竞选策略1
+		id = PUS_PDP_Campaign_strategy_one
+		icon = GFX_PUS_PDP_Campaign_strategy_1
+		cost = 4
+		x = 2
+		y = 9
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_PDP_Campaign_strategy
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_PDP_defense_PVP_0
+		}
+	}
+	focus = {#民主党竞选策略2
+		id = PUS_PDP_Campaign_strategy_two
+		icon = GFX_PUS_PDP_Campaign_strategy_2
+		cost = 4
+		x = 4
+		y = 9
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_PDP_Campaign_strategy
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_PDP_defense_SPP_0
+		}
+	}
+	focus = {#人民党竞选
+		id = PUS_PVP_elections
+		icon = GFX_PUS_PVP_Election
+		cost = 1
+		x = 11
+		y = 7
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		mutually_exclusive = {
+			focus = PUS_PDP_elections
+			focus = PUS_SPP_elections
+		}
+		prerequisite = {
+			focus = PUS_1936_Election
+		}
+		completion_reward = { 
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			add_ideas = Election_PDP_action
+			add_ideas = Election_SPP_action
+		}
+	}
+	focus = {#人民党竞选策略
+		id = PUS_PVP_Campaign_strategy
+		icon = GFX_PUS_PVP_Campaign_strategy
+		cost = 4
+		x = 11
+		y = 8
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_PVP_elections
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_PVP_Voting_encouraged_0
+		}
+	}
+	focus = {#人民党竞选策略1
+		id = PUS_PVP_Campaign_strategy_one
+		icon = GFX_PUS_PVP_Campaign_strategy_1
+		cost = 4
+		x = 10
+		y = 9
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_PVP_Campaign_strategy
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_PVP_defense_SPP_0
+		}
+	}
+	focus = {#人民党竞选策略2
+		id = PUS_PVP_Campaign_strategy_two
+		icon = GFX_PUS_PVP_Campaign_strategy_2
+		cost = 4
+		x = 12
+		y = 9
+		available = {
+			has_global_flag = PUS_elections_are_taking_place
+		}
+		prerequisite = {
+			focus = PUS_PVP_Campaign_strategy
+		}
+		completion_reward = { 
+			unlock_decision_tooltip = PUS_Election_PVP_defense_PDP_0
+		}
+	}
+	focus = {#揭晓时刻
+		id = PUS_The_moment_of_reveal
+		icon = GFX_PUS_The_moment_of_reveal
+		cost = 28
+		x = 7
+		y = 10
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = PUS_PVP_Campaign_strategy_two
+			focus = PUS_PVP_Campaign_strategy_one
+			focus = PUS_PDP_Campaign_strategy_two
+			focus = PUS_PDP_Campaign_strategy_one
+			focus = PUS_SPP_Campaign_strategy_two
+			focus = PUS_SPP_Campaign_strategy_one
+		}
+		completion_reward = { 
+			custom_effect_tooltip = TIME_OUT_AUTO_PASS
+			clr_global_flag = PUS_elections_are_taking_place
+			IF = {
+				limit = {
+					has_global_flag = PUS_has_already_prepare_for_election
+				}
+				clr_global_flag = PUS_has_already_prepare_for_election
+			}
+			IF = {
+				limit = {
+					has_global_flag = PUS_has_already_strike_extremists
+				}
+				clr_global_flag = PUS_has_already_strike_extremists
+			}
+		}
+	}
+	focus = {#突如其来的经济危机
+		id = PUS_Sudden_economic_crisis
+		icon = GFX_PUS_Sudden_economic_crisis
+		cost = 5
+		x = 16
+		y = 1
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { }
+	}
+}

@@ -1,0 +1,37 @@
+
+state = {
+	id = 1052
+	name = "STATE_1052"
+	manpower = 6849040
+	
+	state_category = large_town
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 1 #was: 7
+			dockyard = 1
+			9974 = {
+				naval_base = 3
+				coastal_bunker = 3
+				bunker = 1
+			}
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = ZHJ
+		victory_points = {
+			9974 5
+		}
+		victory_points={ 1096 2 }
+		victory_points={ 10058 1 }
+		victory_points={ 1168 5 }
+	}
+
+	provinces = {
+		1168 10058 9974 7058 1096 7146 13389 13390
+	}
+
+	local_supplies = 0.0 
+}

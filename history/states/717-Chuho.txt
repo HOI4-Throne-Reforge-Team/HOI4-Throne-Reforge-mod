@@ -1,0 +1,31 @@
+state={
+	id=717
+	name="STATE_717"
+	
+	state_category = pastoral
+
+	history={
+		owner = FTJ
+		add_core_of =FTJ
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			9766 2
+		}
+		victory_points = {
+			944 1
+		}
+
+	}
+
+	provinces={
+		12482 10376 10503 9897 3944 6806 783 973 9766 3791 11893 6964 944 3947
+	}
+	manpower=1875100
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}

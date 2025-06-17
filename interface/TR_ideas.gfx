@@ -1,0 +1,73 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_comprehensive_social_security_measures" #全面补助
+		texturefile = "gfx/ideas/law/idea_comprehensive_social_security_measures.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_basical_social_security_measures" #基本社保
+		texturefile = "gfx/ideas/law/idea_basical_social_security_measures.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_symbolic_social_security_measures" #象征救济
+		texturefile = "gfx/ideas/law/idea_symbolic_social_security_measures.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_social_security_measures" #无保障
+		texturefile = "gfx/ideas/law/idea_no_social_security_measures.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_no_guarantee_of_education" #无教育保障
+		texturefile = "gfx/ideas/law/idea_no_guarantee_of_education.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_basic_guarantee_of_education" #基础教育保障
+		texturefile = "gfx/ideas/law/idea_basic_guarantee_of_education.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_primary_guarantee_of_education" #初等教育保障
+		texturefile = "gfx/ideas/law/idea_primary_guarantee_of_education.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_secondary_guarantee_of_education" #中等教育保障
+		texturefile = "gfx/ideas/law/idea_secondary_guarantee_of_education.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_higher_guarantee_of_education" #高等教育保障
+		texturefile = "gfx/ideas/law/idea_higher_guarantee_of_education.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Religion_reigns_supreme" #宗教至上
+		texturefile = "gfx/ideas/law/idea_Religion_reigns_supreme.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_Separation_of_church_and_state" #政教分离
+		texturefile = "gfx/ideas/law/idea_Separation_of_church_and_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Freedom_of_belief" #信仰自由
+		texturefile = "gfx/ideas/law/idea_Freedom_of_belief.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_State_atheism" #无神论
+		texturefile = "gfx/ideas/law/idea_State_atheism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_comprehensive_information_monitoring" #全面监查
+		texturefile = "gfx/ideas/law/idea_comprehensive_information_monitoring.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_reverse_osmosis" #反渗透法
+		texturefile = "gfx/ideas/law/idea_reverse_osmosis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_secret_police" #秘密警察
+		texturefile = "gfx/ideas/law/idea_secret_police.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_countrykeeping_measures" #无内务机构
+		texturefile = "gfx/ideas/law/idea_no_countrykeeping_measures.dds"
+	}
+}

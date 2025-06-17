@@ -1,0 +1,53 @@
+#################
+#### GERMANY ####
+#################
+
+AUS_stabilizing_the_situation = {  #稳定局势
+    priority = 50
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		has_completed_focus = AUS_Prager_Fenstersturz
+	}
+	available = {
+		has_completed_focus = AUS_Prager_Fenstersturz
+	}
+}
+
+AUS_building_nation_recognize = {   #建立地方民族认同
+    priority = 60
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		has_completed_focus = AUS_speech_by_emperor
+	}
+	available = {
+		has_completed_focus = AUS_speech_by_emperor
+	}
+}
+
+AUS_development_resources_of_state = {  #开发资源
+	priority = 20
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		has_completed_focus = AUS_development_resources
+	}
+	available = {
+		has_completed_focus = AUS_development_resources
+	}
+}
+AUS_economic = {  #
+	priority = 100
+	allowed = {
+		original_tag = AUS
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	scripted_gui = AUS_economic_gui
+}

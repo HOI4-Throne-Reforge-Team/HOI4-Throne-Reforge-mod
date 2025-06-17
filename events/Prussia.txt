@@ -1,0 +1,462 @@
+add_namespace = focus_PUS
+add_namespace = focus_PUS_introduce
+add_namespace = PUS
+add_namespace = trade_with_SWE
+
+#普鲁士共和国介绍
+country_event = {
+	id = focus_PUS_introduce.00
+	title = focus_PUS_introduce.00.t
+	desc = focus_PUS_introduce.00.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS_introduce.00.a
+		country_event = { id = focus_PUS_introduce.01 }#共和国往事
+	}
+	option = {
+		name = focus_PUS_introduce.00.b
+		country_event = { id = focus_PUS_introduce.02 }#经济状况
+	}
+	option = {
+		name = focus_PUS_introduce.00.c
+		country_event = { id = focus_PUS_introduce.03 }#势力范围
+	}
+	option = {
+		name = focus_PUS_introduce.00.d
+	}
+}
+country_event = {
+	id = focus_PUS_introduce.01
+	title = focus_PUS_introduce.01.t
+	desc = focus_PUS_introduce.01.d
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS_introduce.00.b
+		country_event = { id = focus_PUS_introduce.02 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.c
+		country_event = { id = focus_PUS_introduce.03 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.d
+	}
+	option = {
+		name = focus_PUS_introduce.00.e
+		country_event = { id = focus_PUS_introduce.00 }
+	}
+
+}
+country_event = {
+	id = focus_PUS_introduce.02
+	title = focus_PUS_introduce.02.t
+	desc = focus_PUS_introduce.02.d
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS_introduce.00.a
+		country_event = { id = focus_PUS_introduce.01 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.c
+		country_event = { id = focus_PUS_introduce.03 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.e
+		country_event = { id = focus_PUS_introduce.00 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.d
+	}
+}
+country_event = {
+	id = focus_PUS_introduce.03
+	title = focus_PUS_introduce.03.t
+	desc = focus_PUS_introduce.03.d
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS_introduce.00.a
+		country_event = { id = focus_PUS_introduce.01 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.b
+		country_event = { id = focus_PUS_introduce.02 }
+	}
+	option = {
+		name =  focus_PUS_introduce.00.e
+		country_event = { id = focus_PUS_introduce.00 }
+	}
+	option = {
+		name = focus_PUS_introduce.00.d
+	}
+}
+
+#访问瑞典事件链
+country_event = {
+	id = trade_with_SWE.00
+	title = trade_with_SWE.00.t
+	desc = trade_with_SWE.00.d
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = SWE
+	}
+	option = {
+		name = trade_with_SWE.00.a
+	}
+	option = {
+		name = trade_with_SWE.00.b
+	}
+	option = {
+		name = trade_with_SWE.00.c
+	}
+}
+
+#大选开始了
+news_event = {
+	id = PUS.0
+	title = PUS.0.t
+	desc = PUS.0.d
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = PUS.0.a
+		trigger = {
+			tag = PUS
+		}
+		add_political_power = 50
+		PUS = {
+			complete_national_focus = PUS_1936_Election
+		}
+	}
+	option = {
+		name = PUS.0.b
+		trigger = {
+			NOT = {
+				tag = PUS
+				tag = FRA
+			}
+		}
+	}
+	option = {
+		name = PUS.0.c
+		trigger = {
+			tag = FRA
+		}
+	}
+}
+#选票统计
+country_event = {
+	id = focus_PUS.0
+	title = focus_PUS.0.t
+	desc = focus_PUS.0.d
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = focus_PUS.0.a
+		trigger = {
+			tag = PUS
+		}
+		#民主党是否获胜
+		IF = {
+			limit = {
+				check_variable = {
+					party_popularity@democratic > party_popularity@social_democrat
+				}
+				check_variable = {
+					party_popularity@democratic > party_popularity@social_conservative
+				}
+				check_variable = {
+					party_popularity@democratic > party_popularity@neutrality
+				}
+			}
+			set_country_flag = Election_Winmer_PDP
+			#是否属于少数派政府
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_PDP_popularity < 0.5
+					}
+				}
+				set_country_flag = Election_minority_government
+			}
+		}
+		#社民党是否获胜
+		else_if = {
+			limit = {
+				check_variable = {
+					party_popularity@social_democrat > party_popularity@democratic
+				}
+				check_variable = {
+					party_popularity@social_democrat > party_popularity@social_conservative
+				}
+				check_variable = {
+					party_popularity@social_democrat > party_popularity@neutrality
+				}
+			}
+			set_country_flag = Election_Winmer_SPP
+			#是否属于少数派政府
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_SPP_popularity < 0.5
+					}
+				}
+				set_country_flag = Election_minority_government
+			}
+		}
+		#人民党是否获胜
+		else_if = {
+			limit = {
+				check_variable = {
+					party_popularity@social_conservative > party_popularity@democratic
+				}
+				check_variable = {
+					party_popularity@social_conservative > party_popularity@social_democrat
+				}
+				check_variable = {
+					party_popularity@social_conservative > party_popularity@neutrality
+				}
+			}
+			set_country_flag = Election_Winmer_PVP
+			#是否属于少数派政府
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_PVP_popularity < 0.5
+					}
+				}
+				set_country_flag = Election_minority_government
+			}
+		}
+		#中央党是否获胜
+		else_if = {
+			limit = {
+				check_variable = {
+					party_popularity@neutrality > party_popularity@democratic
+				}
+				check_variable = {
+					party_popularity@neutrality > party_popularity@social_democrat
+				}
+				check_variable = {
+					party_popularity@neutrality > party_popularity@social_conservative
+				}
+			}
+			set_country_flag = Election_Winmer_Z
+			#是否属于少数派政府
+			IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_PVP_popularity < 0.5
+					}
+				}
+				set_country_flag = Election_minority_government
+			}
+		}
+		else = {
+
+		}
+		PUS = {
+			news_event = { id = PUS.1 days = 2}
+		}
+	}
+}
+
+#与中央党合作
+country_event = {
+	id = focus_PUS.1
+	title = focus_PUS.1.t
+	desc = focus_PUS.1.t
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS.1.a
+		PUS = {
+			IF = {
+				limit = {
+					has_completed_focus = PUS_SPP_elections
+				}
+				add_political_power = 30
+				add_popularity = {
+					ideology = social_democrat
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.01
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PUS_PDP_elections
+				}
+				add_political_power = 30
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.01
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = PUS_PVP_elections
+				}
+				add_political_power = 30
+				add_popularity = {
+					ideology = social_conservative
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.01
+				}
+			}
+			set_country_flag = Has_Cooperate_with_the_Z_Party
+		}
+	}
+	option = {
+		name = focus_PUS.1.b
+		add_political_power = -10
+	}
+}
+#大选结束了
+news_event = {
+	id = PUS.1
+	title = PUS.1.t
+	desc = PUS.1.d
+	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
+	trigger = {
+		date > 1936.6.15
+	}
+	option = {
+		name = PUS.1.a
+		trigger = {
+			tag = PUS
+		}
+		PUS = {
+			complete_national_focus = PUS_The_moment_of_reveal
+			IF = {#民主党获胜
+				limit = {
+					has_country_flag = Election_Winmer_PDP
+				}
+				PUS = {
+					clr_country_flag = Election_Winmer_PDP
+					set_politics = {
+						ruling_party = democratic
+						last_election = "1936.6.18"
+						election_frequency = 36
+						elections_allowed = yes
+					}
+				}
+				IF = {
+					limit = {
+						has_country_flag = Election_minority_government
+					}
+					clr_country_flag = Election_minority_government
+					add_ideas = Minority_government
+					add_stability = -0.05
+				}
+			}
+			else_if = {#社民党获胜
+				limit = {
+					has_country_flag = Election_Winmer_SPP
+				}
+				PUS = {
+					clr_country_flag = Election_Winmer_SPP
+					set_politics = {
+						ruling_party = social_democrat
+						last_election = "1936.6.18"
+						election_frequency = 36
+						elections_allowed = yes
+					}
+				}
+				IF = {
+					limit = {
+						has_country_flag = Election_minority_government
+					}
+					clr_country_flag = Election_minority_government
+					add_ideas = Minority_government
+					add_stability = -0.05
+				}
+			}
+			else_if = {#人民党获胜
+				limit = {
+					has_country_flag = Election_Winmer_PVP
+				}
+				PUS = {
+					clr_country_flag = Election_Winmer_PVP
+					set_politics = {
+						ruling_party = social_conservative
+						last_election = "1936.6.18"
+						election_frequency = 36
+						elections_allowed = yes
+					}
+				}
+				IF = {
+					limit = {
+						has_country_flag = Election_minority_government
+					}
+					clr_country_flag = Election_minority_government
+					add_ideas = Minority_government
+					add_stability = -0.05
+				}
+			}
+			else_if = {#中央党获胜
+				limit = {
+					has_country_flag = Election_Winmer_Z
+				}
+				PUS = {
+					clr_country_flag = Election_Winmer_Z
+					set_politics = {
+						ruling_party = neutrality
+						last_election = "1936.6.18"
+						election_frequency = 36
+						elections_allowed = yes
+					}
+				}
+				IF = {
+					limit = {
+						has_country_flag = Election_minority_government
+					}
+					clr_country_flag = Election_minority_government
+					add_ideas = Minority_government
+					add_stability = -0.05
+				}
+			}
+			else = {
+				
+			}
+		}
+	}
+}

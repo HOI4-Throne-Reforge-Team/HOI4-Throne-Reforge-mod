@@ -1,0 +1,375 @@
+ideas = {
+	country = {
+		Bavaria_haven_of_freedom = { #自由避风港
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				stability_factor=-0.15
+				drift_defence_factor=-0.25
+				recruitable_population_factor=0.05
+				research_speed_factor=0.05
+			}
+			#picture = 
+		}
+		Bavaria_South_Germany_industy_of_star = { #南德工业之星
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				production_factory_efficiency_gain_factor=0.10
+				line_change_production_efficiency_factor=0.05
+				production_factory_max_efficiency_factor=0.10
+				industry_free_repair_factor=0.1
+				industrial_capacity_factory=0.05
+			}
+			#picture = 
+		}
+		Bavaria_South_Germany_industy_of_star_2 = { #南德工业之星
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				production_factory_efficiency_gain_factor=0.10
+				line_change_production_efficiency_factor=0.05
+				production_factory_max_efficiency_factor=0.10
+				industry_free_repair_factor=0.20
+				industrial_capacity_factory=0.10
+				PRODUCTION_SPEED_BUILDINGS_FACTOR = 0.1
+			}
+			#picture = 
+		}
+		Bavaria_center_storm = { #风暴中心
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				communism_drift=0.01
+				syndicalist_drift=0.01
+				fascism_drift=0.01
+				populism_drift=0.01
+				consumer_goods_factor=0.15
+			}
+			#picture = 
+		}
+		Bavaria_Bayerische_Armee = { #巴伐利亚陆军
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				training_time_army_factor=-0.20
+				army_org_factor=-0.10
+				unit_upkeep_attrition_factor=-0.10
+				army_attack_factor=-0.10
+				army_defence_factor=0.10
+				dig_in_speed_factor=0.1
+				coordination_bonus=-0.1
+				command_power_gain=0.1
+
+			}
+			#picture = 
+		}
+		Bavaria_Bayerische_Armee_2 = { #巴伐利亚陆军
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				training_time_army_factor=-0.10
+				army_org_factor=-0.20
+				unit_upkeep_attrition_factor=0.20
+				army_attack_factor=-0.20
+				army_defence_factor=-0.10
+				dig_in_speed_factor=-0.05
+				coordination_bonus=-0.20
+				command_power_gain=-0.05
+				ATTRITION_FOR_CONTROLLER=0.1
+				ARMY_INTEL_TO_OTHERS=+20
+				LAND_DOCTRINE_COST_FACTOR=0.2
+				ASSIGN_ARMY_LEADER_CP_COST=5
+			}
+			#picture = 
+		}
+		Bavaria_Bayerische_Armee_3 = { #巴伐利亚陆军
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		cancel = { 
+				has_civil_war = yes
+			}
+		#available = {}
+		#cancel = {}
+		modifier = {
+			training_time_army_factor=-0.25
+			army_org_factor=-0.20
+				unit_upkeep_attrition_factor=0.20
+				army_attack_factor=-0.20
+				army_defence_factor=-0.10
+				dig_in_speed_factor=-0.05
+				coordination_bonus=-0.20
+				command_power_gain=-0.05
+				ATTRITION_FOR_CONTROLLER=0.1
+				ARMY_INTEL_TO_OTHERS=+20
+				LAND_DOCTRINE_COST_FACTOR=0.2
+				ASSIGN_ARMY_LEADER_CP_COST=5
+		}
+		#picture = 
+	}
+		Bavaria_Bayerische_Luftwaffe = { #巴伐利亚空军
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			cancel = { 
+				has_civil_war = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				air_accidents=-0.15
+				experience_gain_air_factor=-0.2
+				air_training_xp_gain_factor=-0.2
+				air_untrained_pilots_penalty_factor=-0.15
+				air_mission_efficiency=-0.15
+
+			}
+			#picture = 
+		}
+
+		Bavaria_election_season = { #大选季
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			#available = {}
+			#cancel = {}
+			modifier = {
+				stability_factor = -0.05
+				drift_defence_factor = -0.05
+				political_power_factor = 0.1
+
+			}
+			#picture = 
+		}
+
+		Bavaria_civil_war ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			forced_surrender_limit = 1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.25
+			army_speed_factor_for_controller = 0.25
+		}
+		}
+		Bavaria_civil_war_left_1 ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			forced_surrender_limit = 1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.25
+			army_speed_factor_for_controller = 0.25
+			army_org_factor = 0.25
+			max_planning = 0.25
+			license_infantry_eq_cost_factor = -0.2
+		}
+		}
+
+		Bavaria_civil_war_left_2 ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			forced_surrender_limit = 1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.25
+			army_speed_factor_for_controller = 0.25
+			weekly_manpower = 1000
+			consumer_goods_factor = -0.1
+			equipment_capture = 0.2
+		}
+		}
+
+		Bavaria_civil_war_left_3 ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			forced_surrender_limit = 1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.25
+			army_speed_factor_for_controller = 0.25
+			weekly_manpower = 1000
+			consumer_goods_factor = -0.1
+			equipment_capture = 0.2
+			army_org_factor = 0.25
+		}
+		}
+
+		Bavaria_civil_war_left_4 ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			forced_surrender_limit = 1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.25
+			army_speed_factor_for_controller = 0.25
+			army_org_factor = 0.25
+			max_planning = 0.25
+			license_infantry_eq_cost_factor = -0.2
+			weekly_manpower = 1000
+		}
+		}
+
+		Bavaria_civil_war_left_5 ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			forced_surrender_limit = 1
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.25
+			army_speed_factor_for_controller = 0.25
+			army_org_factor = 0.25
+			max_planning = 0.25
+			license_infantry_eq_cost_factor = -0.2
+			weekly_manpower = 1000
+			army_attack_factor = 0.1
+			command_power_gain_mult = 0.5
+		}
+		}
+
+		Bavaria_reconstruction ={#重建
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			stability_factor = -0.3
+			party_popularity_stability_factor = -0.25
+			drift_defence_factor = -0.25
+			production_speed_buildings_factor = -0.2
+			industry_free_repair_factor = 0.4
+			conscription_factor = -0.2
+			production_factory_efficiency_gain_factor = -0.35
+			production_factory_max_efficiency_factor = -0.35
+			industrial_capacity_factory = -0.2
+			social_conservative_drift = 0.02
+			neutrality_drift = 0.02
+			paternal_autocrat_drift = 0.02
+			fascism_drift = 0.01
+			populism_drift = 0.01
+		}
+		}
+	}
+	
+#工业企业
+	industrial_concern = {
+		Wacker_Chemie = {
+
+			picture = BAY_Wacker_chemie
+			
+			allowed = {
+				original_tag = BAY
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+
+			traits = { refinery_concern }
+			
+		}
+
+		siemens = {
+
+			picture = BAY_siemens
+			
+			allowed = {
+				original_tag = BAY
+			}
+
+			cost = 150
+			
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
+
+		Bayerische_Staatsbahn = {
+
+			picture = BAY_Bayerische_Staatsbahn
+			
+			allowed = {
+				original_tag = BAY
+			}
+
+			
+			cost = 150
+
+			research_bonus = {
+				train_tech = 0.15
+			}
+			
+			traits = { railway_company }
+		}
+
+	}
+}

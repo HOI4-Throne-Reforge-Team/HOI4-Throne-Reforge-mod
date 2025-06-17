@@ -1,0 +1,130 @@
+on_actions = {
+	on_civil_war_end ={
+		effect = {
+			if = {
+				limit = {
+					tag = BA1
+				} 
+			BAY = {
+				change_tag_from = BA1
+			}
+			BAY = {
+				annex_country = {
+					target = BA1
+					transfer_troops = yes
+				}
+			}
+			BAY = {
+				set_politics = {
+					ruling_party = syndicalist
+	                last_election = "1936.2.1"
+	                election_frequency = 48
+	                elections_allowed = yes
+				}
+			}
+			BAY ={
+				set_popularities = {
+					communism = 40
+	                syndicalist = 40
+	                anarchism = 3
+	                social_democrat = 10
+	                democratic = 0
+	                social_conservative = 2
+	                neutrality = 5
+	                paternal_autocrat = 0
+	                fascism = 0
+	                populism = 0
+				}
+			}
+			BAY = {
+				add_ideas = {
+					Bavaria_South_Germany_industy_of_star_2
+					Bavaria_Bayerische_Armee_3
+					Bavaria_Bayerische_Luftwaffe
+					Bavaria_reconstruction
+				}
+			}
+			BAY = {
+				remove_ideas = {
+					Bavaria_civil_war
+				}
+			}
+			BAY = {
+				retire_character = BAY_Rupprecht_I
+				retire_character = BAY_Rupprecht_I_1
+				retire_character = BAY_Rupprecht_I_2
+				retire_character = BAY_Rupprecht_I_3
+				retire_character = BAY_Rupprecht_I_4
+				retire_character = BAY_Franz_Ritter_von_Epp
+				retire_character = BAY_Julius_Streicher
+				retire_character = BAY_wilhelm_ritter_von_leeb
+                retire_character = BAY_albert_kesselring
+                retire_character = BAY_ferdinand_schorner
+                retire_character = BAY_ritter_von_greim
+                retire_character = BAY_alfred_jod
+                retire_character = BAY_wilhelm_list
+                retire_character = BAY_wolfram_von_richthofen
+                retire_character = BAY_otto_von_Lossow
+			}
+			BAY = {
+                recruit_character = BAY_Rudolf_egelhofer
+			}
+		    }
+		}
+	}
+}
+
+on_actions = {
+	on_civil_war_end ={
+		effect = {
+			if = {
+				limit = {
+					tag = BA2
+				} 
+			BAY = {
+				change_tag_from = BA2
+			}
+			BAY = {
+				annex_country = {
+					target = BA2
+					transfer_troops = yes
+				}
+			}
+			BAY = {
+				set_politics = {
+					ruling_party = fascism
+	                last_election = "1936.2.1"
+	                election_frequency = 48
+	                elections_allowed = no
+				}
+			}
+			BAY ={
+				set_popularities = {
+					communism = 0
+	                syndicalist = 0
+	                anarchism = 0
+	                social_democrat = 1
+	                democratic = 14
+	                social_conservative = 2
+	                neutrality = 13
+	                paternal_autocrat = 2
+	                fascism = 36
+	                populism = 32
+				}
+			}
+			BAY = {
+				add_ideas = {
+					Bavaria_South_Germany_industy_of_star_2
+					Bavaria_Bayerische_Armee_3
+					Bavaria_Bayerische_Luftwaffe
+				}
+			}
+			BAY = {
+				remove_ideas = {
+					Bavaria_civil_war
+				}
+			}
+		    }
+		}
+	}
+}

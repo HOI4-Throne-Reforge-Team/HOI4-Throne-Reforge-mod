@@ -1,0 +1,36 @@
+state={
+	id=714
+	name="STATE_714"
+
+	history={
+		owner = FTJ
+		add_core_of =FTJ
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			4506 5
+		}
+		victory_points = {
+			7832 1
+		}
+		victory_points = {
+			1545 1
+		}
+		victory_points = {
+			7526 1
+		}
+
+	}
+
+	provinces={
+		10541 1545 1588 1645 1693 1732 1847 4506 4592 4649 4809 7526 7582 7613 7767 7832 7848 7873 7897 10368 10379 10675 10698 12485 12548 12618 
+	}
+	manpower=3694191
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,398 @@
+guitypes = {
+    containerWindowType = {
+        name = "AUS_economic"
+        position = { x = 540 y = 600 }
+        Orientation = center
+        size = { width = 400 height= 600 }
+        instantTextBoxType = {
+            name = "real_gdp"
+            position = {
+                x = 0
+                y = 0
+            }
+            font = "hoi_16mbs"
+            text = "AUS_real_gdp"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "nominal_gdp"
+            position = {
+                x = 0
+                y = 15
+            }
+            font = "hoi_16mbs"
+            text = "AUS_nominal_gdp"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "price_level"
+            position = {
+                x = 0
+                y = 30
+            }
+            font = "hoi_16mbs"
+            text = "AUS_price_level"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "base_price_level"
+            position = {
+                x = 0
+                y = 45
+            }
+            font = "hoi_16mbs"
+            text = "AUS_base_price_level"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "CPI"
+            position = {
+                x = 0
+                y = 60
+            }
+            font = "hoi_16mbs"
+            text = "AUS_CPI"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "GDP_deflator"
+            position = {
+                x = 0
+                y = 75
+            }
+            font = "hoi_16mbs"
+            text = "AUS_GDP_deflator"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "direct_taxes"
+            position = {
+                x = 0
+                y = 90
+            }
+            font = "hoi_16mbs"
+            text = "AUS_direct_taxes"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "indirect_taxes"
+            position = {
+                x = 0
+                y = 105
+            }
+            font = "hoi_16mbs"
+            text = "AUS_indirect_taxes"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "government_reserves"
+            position = {
+                x = 0
+                y = 120
+            }
+            font = "hoi_16mbs"
+            text = "AUS_government_reserves"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "government_income"
+            position = {
+                x = 0
+                y = 135
+            }
+            font = "hoi_16mbs"
+            text = "AUS_government_income"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "government_spending"
+            position = {
+                x = 0
+                y = 150
+            }
+            font = "hoi_16mbs"
+            text = "AUS_government_spending"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "total_private_investment"
+            position = {
+                x = 0
+                y = 165
+            }
+            font = "hoi_16mbs"
+            text = "AUS_total_private_investment"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "private_consumption_expenditure"
+            position = {
+                x = 0
+                y = 180
+            }
+            font = "hoi_16mbs"
+            text = "AUS_private_consumption_expenditure"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "net_exports"
+            position = {
+                x = 0
+                y = 195
+            }
+            font = "hoi_16mbs"
+            text = "AUS_net_exports"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "unemployment_rate"
+            position = {
+                x = 0
+                y = 210
+            }
+            font = "hoi_16mbs"
+            text = "AUS_unemployment_rate"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "available_land"
+            position = {
+                x = 0
+                y = 225
+            }
+            font = "hoi_16mbs"
+            text = "AUS_available_land"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "AD"
+            position = {
+                x = 0
+                y = 240
+            }
+            font = "hoi_16mbs"
+            text = "AUS_AD"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "SRAS"
+            position = {
+                x = 0
+                y = 255
+            }
+            font = "hoi_16mbs"
+            text = "AUS_SRAS"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "LRAS"
+            position = {
+                x = 0
+                y = 270
+            }
+            font = "hoi_16mbs"
+            text = "AUS_LRAS"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "specific_tax"
+            position = {
+                x = 0
+                y = 285
+            }
+            font = "hoi_16mbs"
+            text = "AUS_specific_tax"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "specific_allowance"
+            position = {
+                x = 0
+                y = 300
+            }
+            font = "hoi_16mbs"
+            text = "AUS_specific_allowance"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "nominal_interest_rate"
+            position = {
+                x = 0
+                y = 315
+            }
+            font = "hoi_16mbs"
+            text = "AUS_nominal_interest_rate"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "minimum_reserves"
+            position = {
+                x = 0
+                y = 330
+            }
+            font = "hoi_16mbs"
+            text = "AUS_minimum_reserves"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "required_reserve_ratio"
+            position = {
+                x = 0
+                y = 345
+            }
+            font = "hoi_16mbs"
+            text = "AUS_required_reserve_ratio"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "total_bank_loans"
+            position = {
+                x = 0
+                y = 360
+            }
+            font = "hoi_16mbs"
+            text = "AUS_total_bank_loans"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "social_loan_demand"
+            position = {
+                x = 0
+                y = 375
+            }
+            font = "hoi_16mbs"
+            text = "AUS_social_loan_demand"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "liquid_cash"
+            position = {
+                x = 0
+                y = 390
+            }
+            font = "hoi_16mbs"
+            text = "AUS_liquid_cash"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "money_supply"
+            position = {
+                x = 0
+                y = 405
+            }
+            font = "hoi_16mbs"
+            text = "AUS_money_supply"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "money_demand"
+            position = {
+                x = 0
+                y = 420
+            }
+            font = "hoi_16mbs"
+            text = "AUS_money_demand"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "market_efficiency"
+            position = {
+                x = 0
+                y = 435
+            }
+            font = "hoi_16mbs"
+            text = "AUS_market_efficiency"
+            format = left
+            maxWidth = 350
+			maxHeight = 250 
+            alwaystransparent = yes
+        }
+    }
+}

@@ -1,0 +1,25 @@
+state={
+	id=1119
+	name="STATE_1119"#奥羽
+	manpower = 732000
+	
+	state_category = rural
+
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = JAP
+		victory_points = {
+			6994 5
+		}
+	}
+
+	provinces={
+	6873 6994 9859 9865 3848 11847 1063 12056 9807 6870 1165
+	}
+
+	local_supplies=1.0 
+}

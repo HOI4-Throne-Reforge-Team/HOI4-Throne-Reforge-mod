@@ -1,0 +1,31 @@
+state={
+	id=1021
+	name="STATE_1021"
+	manpower = 1065029
+	buildings_max_level_factor = 1
+
+	state_category = megalopolis
+
+
+	history={
+		owner = HES
+		victory_points = {
+			589 5 
+		}
+			buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = HES
+		
+		}
+
+
+
+	provinces={
+		 589 3574 6549
+	}
+
+	local_supplies=3.0 
+}

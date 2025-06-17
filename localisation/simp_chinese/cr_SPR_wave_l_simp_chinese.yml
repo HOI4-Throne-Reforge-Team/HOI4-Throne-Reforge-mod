@@ -1,0 +1,43 @@
+﻿l_simp_chinese:
+
+SPR_wave_artillery_esperanza: "埃斯佩兰萨公司"
+
+SPR_wave_light_tank_organization: "西班牙-瑞士汽车公司"
+
+SPR_wave_medium_tank_organization: "铁路建设和辅助公司"
+
+SPR_wave_infantry_equipment_organization: "阿斯特拉-翁塞塔公司"
+SPR_wave_infantry_equipment_manufacturer: "步兵装备制造商"
+SPR_wave_mio_equipment_1: "步兵装备"
+SPR_wave_mio_equipment_2: "支援装备"
+SPR_wave_mio_trait_equipment_lightweight: "轻质材料"
+SPR_wave_mio_trait_equipmen_full_auto: "全自动步枪"
+SPR_wave_mio_trait_equipment_mobile_gun_platform: "西班牙步盾"
+SPR_wave_mio_trait_equipment_anti_tank_research: "反坦克研究"
+SPR_wave_mio_trait_equipment_production_improvement: "生产改进"
+SPR_wave_mio_equipment_mass_production: "大规模生产"
+SPR_wave_mio_equipment_premium_production: "高标准生产"
+
+SPR_wave_motorized_mechanized_organization: "F.S.阿巴达尔公司"
+
+SPR_wave_small_plane_organization: "航空建设公司"
+SPR_small_plane_organization: "小型飞机制造商"
+
+SPR_wave_medium_plane_organization: "航空工业公司"
+SPR_medium_plane_organization: "中型飞机制造商"
+SPR_wave_mio_trait_advanced_fuel_consumption: "改进油箱"
+generic_mio_trait_bigger_engines: "大号引擎"
+generic_mio_trait_fuel_injection_engines: "燃油喷射发动机"
+SPR_wave_mio_trait_radar_enhancement: "改进雷达"
+SPR_generic_mio_trait_adaptable_build: "适应性构型"
+SPR_wave_mio_air_mass_production: "大规模生产"
+
+SPR_wave_ship_organization: "西班牙海军建设公司"
+SPR_wave_ship_manufacturer: "主力舰及航母制造商"
+generic_mio_trait_advanced_fitting_works: "先进装配作业"
+SPR_wave_mio_trait_anti-torpedo_research: "反鱼雷研究"
+SPR_wave_mio_trait_carrier_specialization: "日不落的海上机场"
+SPR_wave_mio_trait_artillery_specialization: "日不落的无敌舰炮"
+
+SPR_wave_ship_hull_organization: "尤斯卡杜纳造船厂"
+SPR_generic_mio_initial_trait_black_sea_fleet_designer: "西班牙潜艇制造商"

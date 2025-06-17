@@ -1,0 +1,26 @@
+
+state = {
+	id = 1070
+	name = "STATE_1070"
+	manpower = 4974410
+	
+	state_category =town
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 1 #was: 7
+		}
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+
+	}
+
+	provinces = {
+		1034 1531 4634 7571 1575
+	}
+
+	local_supplies = 0.0 
+}

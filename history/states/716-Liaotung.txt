@@ -1,0 +1,46 @@
+state={
+	id=716
+	name="STATE_716"
+	resources={
+		steel=27.000
+	}
+
+	history={
+		owner = FTJ
+		add_core_of =FTJ
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 5
+			964 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			11771 15
+		}
+		victory_points = {
+			11764 5
+		}
+		victory_points = {
+			11815 1
+		}
+		victory_points = {
+			9835 10
+		}
+
+	}
+
+	provinces={
+		6837 11886 836 892 964 987 3783 3849 3895 6804 6918 6951 9781 9788 9835 9854 9885 11764 11771 11808 11815 
+	}
+	manpower=10264620
+	buildings_max_level_factor=1.000
+	state_category=city
+
+	local_supplies=0.0 
+}

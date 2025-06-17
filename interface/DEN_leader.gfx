@@ -1,0 +1,11 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "Christian_ten"
+		texturefile = "gfx/leaders/DEN/Christian_ten.dds"
+	}
+	spriteType = {
+		name = "Haakon_VII"
+		texturefile = "gfx/leaders/DEN/Haakon_VII.dds"
+	}
+}

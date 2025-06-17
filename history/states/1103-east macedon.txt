@@ -1,0 +1,33 @@
+state={
+	id=1103
+	name="STATE_1103"
+
+	history={
+		owner = BUL
+		victory_points = {
+			6886 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+			11818 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+
+	provinces={
+	6886
+	}
+	manpower=1155700
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}

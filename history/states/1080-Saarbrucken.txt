@@ -1,0 +1,30 @@
+state={
+	id=1080
+	name="STATE_1080"
+	manpower = 727739
+	resources={
+		steel=34 #was 21 #was 35 was 59 # was: 100
+		aluminium=7 # was: 24
+	}
+	
+	state_category = city
+
+	history={
+		owner = FRA
+		victory_points = { 11531 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+
+		}
+		add_core_of = PUS
+	}
+
+	provinces={
+		 11531 9575
+	}
+	
+	
+
+	local_supplies=0.0 
+}

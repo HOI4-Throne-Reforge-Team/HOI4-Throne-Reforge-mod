@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		#工业建设投入
+		PUS_Industrial_construction_investment = {
+			removal_cost = 200
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		#少数派政府
+		Minority_government = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.1
+			}
+		}
+		#民主党竞选活动
+		Election_PDP_action = {
+			cancel = {
+				NOT = {
+					has_global_flag = PUS_elections_are_taking_place
+				}
+			}
+			modifier = {
+				democratic_drift = 0.12
+			}
+		}
+		#社民党竞选活动
+		Election_SPP_action = {
+			cancel = {
+				NOT = {
+					has_global_flag = PUS_elections_are_taking_place
+				}
+			}
+			modifier = {
+				social_democrat_drift = 0.12
+			}
+		}
+		#人民党竞选活动
+		Election_PVP_action = {
+			cancel = {
+				NOT = {
+					has_global_flag = PUS_elections_are_taking_place
+				}
+			}
+			modifier = {
+				social_conservative_drift = 0.12
+			}
+		}
+	}
+}

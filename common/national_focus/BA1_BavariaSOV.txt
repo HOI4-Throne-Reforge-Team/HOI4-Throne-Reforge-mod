@@ -1,0 +1,380 @@
+focus_tree = {
+	id = BAY_SOV_civil
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BA1
+		}
+	}
+	default = no
+	focus = {#革命之始
+		id = BA1_revolution_start
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 11
+		y = 2
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			custom_effect_tooltip = BAY_revolution
+			BA1 = {
+			    for_loop_effect ={
+					start = 0
+					end = 4
+					add = 1
+                    capital_scope = {
+					  create_unit = {
+						  division = "name = \"赤卫队\" division_template = \"Infanterie Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+						  owner = BA1
+					    }
+				    }
+				}
+				division_template = {
+	             name = "Infanterie Division"
+	             regiments = {
+		           infantry = { x = 0 y = 0 }
+		           infantry = { x = 0 y = 1 }
+		           infantry = { x = 0 y = 2 }
+		           infantry = { x = 0 y = 3 }
+		           infantry = { x = 1 y = 0 }
+		           infantry = { x = 1 y = 1 }
+		           infantry = { x = 1 y = 2 }
+		           artillery_brigade = { x = 2 y = 0 }
+		           artillery_brigade = { x = 2 y = 1 }
+	             }
+	             support = {
+		          engineer = { x = 0 y = 0 }   
+		          recon = { x = 0 y = 1}
+	             }
+                }
+			}
+        }
+	}
+	focus = {#自力更生
+		id = BA1_Stay_the_course
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 9
+		y = 3
+		prerequisite = {
+			focus = BA1_revolution_start
+		}
+		mutually_exclusive = {
+        	focus = BA1_Contact_International
+		}
+		ai_will_do = {
+					factor = 50
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			add_political_power = 150
+			effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war
+						add_idea = Bavaria_civil_war_left_2
+					}
+				}
+		}
+	}
+	focus = {#呼吁国际
+		id = BA1_Contact_International
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 13
+		y = 3
+		prerequisite = {
+			focus = BA1_revolution_start
+		}
+		mutually_exclusive = {
+        	focus = BA1_Stay_the_course
+		}
+		ai_will_do = {
+					factor = 50
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			add_political_power = 150
+			effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war
+						add_idea = Bavaria_civil_war_left_1
+					}
+				}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = 2000
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount = 500
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment 
+				amount = 100
+				producer = ITA
+			}
+		}
+		
+	}
+	focus = {#唤醒大众
+		id = BA1_call_people
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 11
+		y = 4
+		prerequisite = {
+			focus = BA1_revolution_start
+		}
+		prerequisite = {
+			focus = BA1_Contact_International
+			focus = BA1_Stay_the_course
+		}
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+	    completion_reward = {
+			add_stability = 0.15
+			add_war_support = 0.20
+		}
+	}
+	focus = {#派遣政委
+		id = BA1_Dispatch_Political_Commissioner
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 8
+		y = 4
+		prerequisite = {
+			focus = BA1_Stay_the_course
+		}
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			add_stability = 0.1
+			effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war_left_2
+						add_idea = Bavaria_civil_war_left_3
+					}
+				}
+		}
+	}
+	focus = {#国际纵队
+		id = BA1_revolution_army
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 14
+		y = 4
+		prerequisite = {
+			focus = BA1_Contact_International
+		}
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			add_command_power = 100
+			effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war_left_1
+						add_idea = Bavaria_civil_war_left_4
+					}
+				}
+		}
+	}
+	focus = {#建立士兵委员会
+		id = BA1_build_Soldiers_Council
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 9
+		y = 5
+		prerequisite = {
+			focus = BA1_liberate_farmer
+		}
+		prerequisite = {
+			focus = BA1_Dispatch_Political_Commissioner
+		}
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			add_command_power = 100
+			army_experience = 50
+		}
+
+	}
+	focus = {#搜刮军械库
+		id = BA1_Loot_the_armory
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 11
+		y = 5
+		prerequisite = {
+			focus = BA1_call_people
+		}
+		ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = 3000
+				producer = BAY
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount = 500
+				producer = BAY
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment 
+				amount = 50
+				producer = BAY
+			}
+		}
+	}
+	focus = {#确保运输线
+		id = BA1_Securing_the_shipping
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 11
+		y = 6
+		prerequisite = {
+			focus = BA1_Loot_the_armory
+		}
+		prerequisite = {
+			focus = BA1_call_people
+		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = BAY
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 100
+				producer = BAY
+			}
+		}
+	}
+	focus = {#联系意大利
+		id = BA1_call_Italy
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 13
+		y = 5
+		prerequisite = {
+			focus = BA1_revolution_army
+		}
+		prerequisite = {
+			focus = BA1_liberate_factor
+		}
+		completion_reward = {
+			ITA = {
+				country_event = {id=BAY.focus.17 days=3}
+			}
+		}
+	}
+	focus = {#渗透后方
+		id = BA1_Penetrate_the_rear
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 9
+		y = 6
+		prerequisite = {
+			focus = BA1_build_Soldiers_Council
+		}
+	}
+	focus = {#志愿航空队
+		id = BA1_Volunteer_Air_Corps
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 13
+		y = 6
+		prerequisite = {
+			focus = BA1_call_Italy
+		}
+	}
+	focus = {#人民之伟力
+		id = BA1_people_power
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = BA1_Penetrate_the_rear
+		}
+		prerequisite = {
+			focus = BA1_Securing_the_shipping
+		}
+    }
+	focus = {#国际主义万岁
+		id = BA1_long_live_international
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 12
+		y = 7
+		prerequisite = {
+			focus = BA1_Volunteer_Air_Corps
+		}
+		prerequisite = {
+			focus = BA1_Securing_the_shipping
+		}
+	}
+	focus = {#最终攻势
+		id = BA1_end_attack
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 11
+		y = 8
+		prerequisite = {
+			focus = BA1_people_power
+			focus = BA1_long_live_international
+		}
+	}
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

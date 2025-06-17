@@ -1,0 +1,826 @@
+add_namespace = BAY
+add_namespace = BAY.focus
+add_namespace = BAY.news
+#巴伐利亚国策事件
+country_event = {#风暴中的巴伐利亚
+	id =BAY.focus.1
+	title = BAY.focus.1.t
+	desc = BAY.focus.1.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.1.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {#大选开始
+	id =BAY.focus.2
+	title = BAY.focus.2.t
+	desc = BAY.focus.2.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.2.a
+		set_global_flag = USPD
+		set_variable = {
+			var = BAYelection
+			value = 0 
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.2.b
+		set_variable = {
+			var = BAYelection
+			value = 0 
+		}
+	}
+	option = {
+		name = BAY.focus.2.c
+		set_variable = {
+			var = BAYelection
+			value = 0 
+		}
+	}
+	option = {
+		name = BAY.focus.2.d
+		set_variable = {
+			var = BAYelection
+			value = 0 
+		}
+	}
+}
+
+country_event = {#竞选方略
+	id =BAY.focus.3
+	title = BAY.focus.3.t
+	desc = BAY.focus.3.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.3.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.3.b 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.3.c
+	}
+}
+
+country_event = {#竞选活动
+	id =BAY.focus.4
+	title = BAY.focus.4.t
+	desc = BAY.focus.4.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.4.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.4.b 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = -0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.4.c
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+	}
+}
+
+country_event = {#在投票站附近
+	id =BAY.focus.5
+	title = BAY.focus.5.t
+	desc = BAY.focus.5.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.5.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.5.b 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.5.c
+	}
+}
+country_event = {#高速公路建设
+	id =BAY.focus.6
+	title = BAY.focus.6.t
+	desc = BAY.focus.6.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.6.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.6.b 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.6.c
+	}
+}
+country_event = {#四年计划的蓝图
+	id =BAY.focus.7
+	title = BAY.focus.7.t
+	desc = BAY.focus.7.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.7.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.7.b 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.7.c
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.02
+		}
+	}
+}
+country_event = {#国防改革计划
+	id =BAY.focus.8
+	title = BAY.focus.8.t
+	desc = BAY.focus.8.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.8.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.8.b 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.8.c
+		
+	}
+}
+
+country_event = {#治安良好
+	id =BAY.focus.9
+	title = BAY.focus.9.t
+	desc = BAY.focus.9.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.9.a
+		add_stability = -0.10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.01
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.01
+		}
+		add_to_variable = {
+			var = BAYelection
+			value = 20
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = BAY.focus.9.b 
+		add_to_variable = {
+			var = BAYelection
+			value = 10
+		}
+	}
+	option = {
+		name = BAY.focus.9.c
+		add_stability = 0.10
+		add_to_variable = {
+			var = BAYelection
+			value = -20
+		}
+		
+	}
+}
+
+country_event = {#大选结果
+	id =BAY.focus.10
+	title = BAY.focus.10.t
+	desc = BAY.focus.10.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.10.a
+		if = {
+			limit ={
+				check_variable = {
+					var = BAYelection
+					vaule = 80
+					compare = greater_than_or_equals 
+				}
+			}
+		}
+		else = {
+			country_event = {id=BAY.focus.11 days=1}
+		}
+		
+	}
+}
+
+country_event = {#人民之胜？
+	id =BAY.focus.11
+	title = BAY.focus.11.t
+	desc = BAY.focus.11.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.11.a
+		set_politics = {
+			ruling_party = social_democrat
+	        last_election = "1936.2.1"
+	        election_frequency = 48
+	        elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		news_event = {id=BAY.news.1 days=1}
+		if = {
+			limit ={
+				check_variable = {
+					var = BAYelection
+					vaule = 80
+					compare = greater_than_or_equals 
+				}
+			}
+		}
+		else = {
+			country_event = {id=BAY.focus.12 days=3}
+		}
+		
+	}
+}
+
+
+country_event = {#就职典礼
+	id =BAY.focus.12
+	title = BAY.focus.12.t
+	desc = BAY.focus.12.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.12.a
+		add_stability = -0.10
+		if = {
+			limit ={
+				check_variable = {
+					var = BAYelection
+					vaule = 80
+					compare = greater_than_or_equals 
+				}
+			}
+		}
+		else = {
+			country_event = {id=BAY.focus.13 days=1}
+		}
+	}
+}
+
+country_event = {#政变！
+	id =BAY.focus.13
+	title = BAY.focus.13.t
+	desc = BAY.focus.13.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.13.a
+		add_stability = -0.10
+		set_politics = {
+			ruling_party = communism
+	        last_election = "1936.2.1"
+	        election_frequency = 48
+	        elections_allowed = yes
+		}
+		country_event = {id=BAY.focus.14 days=1}
+	}
+}
+
+country_event = {#极右翼联盟起义
+	id =BAY.focus.14
+	title = BAY.focus.14.t
+	desc = BAY.focus.14.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.14.a
+		add_stability = -0.10
+		53 = {
+			set_demilitarized_zone = yes
+		}
+		country_event = {id=BAY.focus.15 days=1}
+	}
+}
+
+country_event = {#鲁普雷希特反政变
+	id =BAY.focus.15
+	title = BAY.focus.15.t
+	desc = BAY.focus.15.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	option = {
+		name = BAY.focus.15.a
+		add_stability = -0.10
+		54 = {
+			set_demilitarized_zone = yes
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+	        last_election = "1936.2.1"
+	        election_frequency = 48
+	        elections_allowed = no
+		}
+		hidden_effect = {
+			set_popularities = {
+				communism = 0
+	            syndicalist = 0
+	            anarchism = 0
+	            social_democrat = 0
+	            democratic = 5
+	            social_conservative = 14
+	            neutrality = 36
+	            paternal_autocrat = 45
+	            fascism = 0
+	            populism = 0
+			}
+		}
+		country_event = {id=BAY.focus.16 days=1}
+	}
+}
+
+country_event = {#内战！
+	id =BAY.focus.16
+	title = BAY.focus.16.t
+	desc = BAY.focus.16.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+	immediate = {
+		hidden_effect ={
+
+		}
+		hidden_effect = {
+			news_event = {id=BAY.news.2 days=3}
+		}
+
+		hidden_effect = {
+		BA1 = {
+                transfer_state = 54
+            }
+		BA1 = {
+                add_state_core = 54
+            }		
+		54 = {
+        add_core_of = BA1
+        }
+		53 = {
+        add_core_of = BA1
+        }
+		52 = {
+        add_core_of = BA1
+        }
+		transfer_units_fraction ={
+			target = BA1
+	        army_ratio = 0.33
+	        navy_ratio = 0.33
+	        air_ratio = 0.33
+		}
+	}
+
+	hidden_effect = {
+		BA2 = {
+                transfer_state = 53
+            }
+		BA2 = {
+                add_state_core = 53
+            }		
+		54 = {
+        add_core_of = BA2
+        }
+		53 = {
+        add_core_of = BA2
+        }
+		52 = {
+        add_core_of = BA2
+        }
+		transfer_units_fraction ={
+			target = BA2
+	        army_ratio = 0.33
+	        navy_ratio = 0.33
+	        air_ratio = 0.33
+		}
+	}
+
+	hidden_effect = {
+			BA1 = {
+			declare_war_on = {
+        target = BAY
+        type = civil_war
+		}
+		}
+		BA1 = {
+		declare_war_on = {
+        target = BA2
+        type = civil_war
+		}
+		}
+		add_civil_war_target = BAY
+		add_civil_war_target = BA2
+	}
+
+	hidden_effect = {
+			BA2 = {
+			declare_war_on = {
+        target = BAY
+        type = civil_war
+		}
+		}
+		BA2 = {
+		declare_war_on = {
+        target = BA1
+        type = civil_war
+		}
+		}
+		add_civil_war_target = BAY
+		add_civil_war_target = BA1
+	}
+
+	hidden_effect = {
+			BAY = {
+			declare_war_on = {
+        target = BA1
+        type = civil_war
+		}
+		}
+		BAY = {
+		declare_war_on = {
+        target = BA2
+        type = civil_war
+		}
+		}
+		add_civil_war_target = BA1
+		add_civil_war_target = BA2
+
+		add_ideas = {
+			Bavaria_civil_war
+		}
+	}
+	}
+	option = {
+		name = BAY.focus.16.a
+		BA1 = {
+			change_tag_from = BAY
+		}
+		hidden_effect = {
+			BA1 ={
+				for_loop_effect ={
+					start = 0
+					end = 8
+					add = 1
+                    capital_scope = {
+					  create_unit = {
+						  division = "name = \"赤卫队\" division_template = \"Infanterie Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+						  owner = BA1
+					    }
+				    }
+				}
+				division_template = {
+	             name = "Infanterie Division"
+	             regiments = {
+		           infantry = { x = 0 y = 0 }
+		           infantry = { x = 0 y = 1 }
+		           infantry = { x = 0 y = 2 }
+		           infantry = { x = 0 y = 3 }
+		           infantry = { x = 1 y = 0 }
+		           infantry = { x = 1 y = 1 }
+		           infantry = { x = 1 y = 2 }
+		           artillery_brigade = { x = 2 y = 0 }
+		           artillery_brigade = { x = 2 y = 1 }
+	             }
+	             support = {
+		          engineer = { x = 0 y = 0 }   
+		          recon = { x = 0 y = 1}
+	             }
+                }
+			}
+		}
+	}
+	option = {
+		name = BAY.focus.16.b
+		BA2 = {
+			change_tag_from = BAY
+		}
+
+	}
+	option = {
+		name = BAY.focus.16.c
+	}
+}
+
+country_event = {#巴伐利亚的同志们正在寻求帮助
+	id =BAY.focus.17
+	title = BAY.focus.17.t
+	desc = BAY.focus.17.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = ITA
+	}
+	option = {
+		name = BAY.focus.17.a
+		BA1 = {
+			effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war_left_4
+						add_idea = Bavaria_civil_war_left_5
+					}
+				}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = 2000
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount = 500
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment 
+				amount = 100
+				producer = ITA
+			}
+		}
+	}
+	option = {
+		name = BAY.focus.17.b
+		effect_tooltip = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war_left_4
+						add_idea = Bavaria_civil_war_left_5
+					}
+				}
+	}
+	option = {
+		name = BAY.focus.17.c
+	}
+}
+
+#巴伐利亚风味事件(非国策触发)
+
+#巴伐利亚新闻
+news_event = {#1936年巴伐利亚大选结束
+	id = BAY.news.1
+	title = BAY.news.1.t
+	desc = BAY.news.1.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+    major = yes
+
+	option = {
+		name = BAY.news.1.a
+	}
+}
+news_event = {#巴伐利亚内战
+	id = BAY.news.2
+	title = BAY.news.2.t
+	desc = BAY.news.2.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = BAY
+	}
+    major = yes
+
+	option = {
+		name = BAY.news.2.a
+	}
+}

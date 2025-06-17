@@ -1,0 +1,31 @@
+
+state = {
+	id = 1025
+	name = "STATE_1025"
+	manpower = 3202401
+	
+	state_category = rural
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 1 #was: 7
+		}
+		owner = FRC
+		add_core_of = CHI
+		add_core_of = YUE
+		victory_points={
+			1018 5
+		}
+		victory_points={
+			10004 1
+		}
+	}
+
+	provinces = {
+		1018 11926 10004 4023
+	}
+
+	local_supplies = 0.0 
+}

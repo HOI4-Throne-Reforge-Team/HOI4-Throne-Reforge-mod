@@ -1,0 +1,244 @@
+focus_tree = {
+	id = china_song_focus_1935
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	initial_show_position = {
+		x = 0
+	}
+	continuous_focus_position = { x = 2500 y = 1500 }
+
+	focus = {
+		id = CHI_term_of_song
+		icon = GFX_focus_CHI_term_of_song
+		cost = 1
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			always = yes
+		}
+		select_effect = {
+			
+		}
+		completion_reward = { 
+			country_event = {id =chinas.1 days=1}
+		}
+	}
+	focus = {
+		id = CHI_stabilize_government
+		icon = GFX_focus_CHI_stabilize_government
+		cost = 1
+		x = 12
+		y = 1
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_term_of_song
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_term_of_song
+		}
+		completion_reward = { 
+			country_event = {id =chinas.2 days=1}
+		}
+	}
+
+	focus = {
+		id = CHI_stabilize_local
+		icon = GFX_focus_CHI_stabilize_local
+		cost = 1
+		x = 10
+		y = 2
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_stabilize_government
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_stabilize_government
+		}
+		completion_reward = { 
+			country_event = {id =chinas.3 days=1}
+		}
+	}
+	focus = {
+		id = CHI_responsible_cabinet
+		icon = GFX_focus_CHI_responsible_cabinet
+		cost = 1
+		x = 14
+		y = 2
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_stabilize_government
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_stabilize_government
+		}
+		completion_reward = { 
+			country_event = {id =chinas.4 days=1}
+		}
+	}
+	focus = {
+		id = CHI_appointment_officials
+		icon = GFX_focus_CHI_appointment_officials
+		cost = 1
+		x = 13
+		y = 3
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_responsible_cabinet
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_responsible_cabinet
+		}
+		completion_reward = { 
+			country_event = {id =chinas.5 days=1}
+		}
+	}
+	focus = {
+		id = CHI_struggle_within
+		icon = GFX_focus_CHI_struggle_within
+		cost = 1
+		x = 15
+		y = 3
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_responsible_cabinet
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_responsible_cabinet
+		}
+		completion_reward = { 
+			country_event = {id =chinas.6 days=1}
+		}
+	}
+	focus = {
+		id = CHI_integrity_and_harmony
+		icon = GFX_focus_CHI_integrity_and_harmony
+		cost = 1
+		x = 14
+		y = 4
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_struggle_within
+			has_completed_focus = CHI_appointment_officials
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_struggle_within
+			focus = CHI_appointment_officials
+		}
+		completion_reward = { 
+			country_event = {id =chinas.7 days=1}
+		}
+	}
+	focus = {
+		id = CHI_appointment_chengqian
+		icon = GFX_focus_CHI_appointment_chengqian
+		cost = 1
+		x = 10
+		y = 3
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus =CHI_stabilize_local
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_stabilize_local
+		}
+		completion_reward = { 
+			country_event = {id =chinas.8 days=1}
+		}
+	}
+	focus = {
+		id = CHI_appointment_dengkeng
+		icon = GFX_focus_CHI_appointment_dengkeng
+		cost = 1
+		x = 10
+		y = 4
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus =CHI_appointment_chengqian
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_appointment_chengqian
+		}
+		completion_reward = { 
+			country_event = {id =chinas.9 days=1}
+		}
+	}
+	focus = {
+		id = CHI_get_army
+		icon = GFX_focus_CHI_get_army
+		cost = 1
+		x = 12
+		y = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_completed_focus = CHI_integrity_and_harmony
+			has_completed_focus = CHI_appointment_dengkeng
+		}
+		select_effect = {
+			
+		}
+		prerequisite = {
+			focus = CHI_integrity_and_harmony
+			focus = CHI_appointment_dengkeng
+		}
+		completion_reward = { 
+			country_event = {id =chinas.10 days=1}
+			
+		}
+	}
+
+
+	
+	default = no
+}

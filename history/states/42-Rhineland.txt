@@ -1,0 +1,35 @@
+
+state={
+	id=42
+	name="STATE_42"
+	manpower = 2827739
+	resources={
+		steel=3 #was 21 #was 35 was 59 # was: 100
+	}
+	
+	state_category = city
+
+	history={
+		owner = LAY
+		victory_points = { 11494 3 }
+		#victory_points = { 3423 3 }
+		#victory_points = { 9575 3 }
+		
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = PUS
+		
+		add_core_of = LAY
+	}
+
+	provinces={
+		 3423 11470 11494 
+	}
+	
+	
+
+	local_supplies=0.0 
+}

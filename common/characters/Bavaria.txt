@@ -1,0 +1,634 @@
+characters = {
+	#领导人
+	BAY_Rupprecht_I = {#鲁普雷希特一世
+		name = BAY_Rupprecht_I
+		portraits = {
+			civilian = {
+				large = Rupprecht_I
+				small = BAY_Rupprecht_I_small
+			}
+		}
+		country_leader = {
+			ideology = neutrality_subtype
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+		advisor={
+			slot = high_command 
+			idea_token = BAY_Rupprecht_I
+			allowed = {
+				original_tag = BAY
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			}
+		field_marshal = {
+			traits = {infantry_officer}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	BAY_Rupprecht_I_1 = {#鲁普雷希特一世
+		name = BAY_Rupprecht_I
+		portraits = {
+			civilian = {
+				large = Rupprecht_I
+			}
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BAY_Rupprecht_I_2 = {#鲁普雷希特一世
+		name = BAY_Rupprecht_I
+		portraits = {
+			civilian = {
+				large = Rupprecht_I
+			}
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BAY_Rupprecht_I_3 = {#鲁普雷希特一世
+		name = BAY_Rupprecht_I
+		portraits = {
+			civilian = {
+				large = Rupprecht_I
+			}
+		}
+		country_leader = {
+			ideology = social_democrat_subtype
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+
+	}
+
+	BAY_Rupprecht_I_4 = {#鲁普雷希特一世
+		name = BAY_Rupprecht_I
+		portraits = {
+			civilian = {
+				large = Rupprecht_I
+			}
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BAY_Eugen_Levine = {#欧根·莱维内
+		name = BAY_Eugen_Levine
+		portraits = {
+			civilian = {
+				large = BAY_Eugen_Levine
+			}
+		}
+		country_leader = {
+			ideology = totalist_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BAY_Rosa_Luxemburg = {#罗莎·卢森堡
+		name = BAY_Rosa_Luxemburg
+		portraits = {
+			civilian = {
+				large = BAY_Rosa_Luxemburg
+			}
+		}
+		country_leader = {
+			ideology = syndicalist_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BAY_Gustav_Landauer = {#古斯塔夫·兰道尔
+		name = BAY_Gustav_Landauer
+		portraits = {
+			civilian = {
+				large = BAY_Gustav_Landauer
+			}
+		}
+		country_leader = {
+			ideology = anarchism_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	BAY_Franz_Ritter_von_Epp = {#弗朗茨·里特·冯·埃普
+		name = GER_franz_ritter_von_epp
+		portraits = {
+			civilian = {
+				large = GER_franz_ritter_von_epp
+			}
+		}
+		country_leader = {
+			ideology = populism_subtype
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+
+		advisor={
+			slot = army_chief
+			idea_token =Franz_ritter_von_epp
+			allowed = {
+				original_tag = BAY
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		corps_commander = {
+			traits = { militias_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	BAY_Julius_Streicher = {#尤利乌斯·施特莱歇尔
+		name = BAY_Julius_Streicher
+		portraits = {
+			civilian = {
+				large = BAY_Julius_Streicher
+			}
+		}
+		country_leader = {
+			ideology = fascist
+			traits = {
+					
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+    #政治顾问
+	BAY_Tovia_Axelrod = {#托维亚·阿克塞尔罗德
+		name = BAY_Tovia_Axelrod
+		portraits = {
+			civilian = {
+				small = BAY_Tovia_Axelrod
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Tovia_Axelrod
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					ideological_crusader 
+					communist_journalist 
+				}
+			}
+	
+	}
+
+	BAY_Erich_Muhsam = {#埃里希·米萨姆
+		name = BAY_Erich_Muhsam
+		portraits = {
+			civilian = {
+				small = BAY_Erich_Muhsam
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Erich_Muhsam
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					socialist_novelist  
+					anarchist
+				}
+			}
+	
+	}
+
+	BAY_Therese_Grondl = {#特蕾莎·格罗尔德
+		name = BAY_Therese_Grondl
+		portraits = {
+			civilian = {
+				small = BAY_Therese_Grondl
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Therese_Grondl
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					red_suffragette  
+					syndicalist_revolutionary
+				}
+			}
+	
+	}
+
+	BAY_Arnold_Wadler = {#阿诺德·瓦格纳
+		name = BAY_Arnold_Wadler
+		portraits = {
+			civilian = {
+				small = BAY_Arnold_Wadler
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Arnold_Wadler
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					captain_of_industry  
+					economic_organizer
+				}
+			}
+	}
+
+	BAY_Josef_Sontheimer = {#约瑟夫·索尔农
+		name = BAY_Josef_Sontheimer
+		portraits = {
+			civilian = {
+				small = BAY_Josef_Sontheimer
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Josef_Sontheimer
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					prince_of_terror  
+					communism_jurisconsult
+				}
+			}
+	}
+
+	BAY_Hans_Junk = {#汉斯·容克
+		name = BAY_Hans_Junk
+		portraits = {
+			civilian = {
+				large = BAY_Hans_Junk
+				small = BAY_Hans_Junk_small
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Hans_Junk
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					political_commissar 
+					goods_blender
+				}
+			}
+
+			corps_commander = {
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+	}
+
+	BAY_Rudolf_Steinauer = {#鲁道夫·施泰因豪尔
+		name = BAY_Rudolf_Steinauer
+		portraits = {
+			civilian = {
+				large = BAY_Rudolf_Steinauer
+				small = BAY_Rudolf_Steinauer_small
+			}
+		}		
+			expire = "1965.11.15"
+			id = -1
+			advisor={
+				cost=150
+				slot = political_advisor 
+				idea_token = BAY_Rudolf_Steinauer
+				allowed  = {
+					original_tag  = BAY 
+				}
+				traits  = {
+					popular_figurehead
+					connected_citizen
+				}
+			}
+	}
+
+    #科学家
+	BAY_heisenberg = {#韦恩赫尔·海森堡
+		name = BAY_heisenberg
+		portraits = {
+			army = {
+				large = GFX_portrait_BAY_werner_heisenberg
+				small = GFX_idea_BAY_heisenberg
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+	}
+    #理论家
+	BAY_wilhelm_ritter_von_leeb = {#威廉·里特·冯·里布
+		name = GER_wilhelm_ritter_von_leeb
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_ritter_von_leeb
+				small = GFX_portrait_GER_wilhelm_ritter_von_leeb_small
+			}
+		}
+
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+
+        advisor = {
+			cost = 100 
+			slot = theorist 
+			idea_token = boris_shaposhnikov 
+			ledger = army 
+			allowed = {
+				original_tag = BAY 
+			}
+			traits = {
+				superior_firepower_expert
+			}
+		}
+	}
+
+	BAY_wolfram_von_richthofen = {#W·冯·里希特霍芬
+		name = GER_wolfram_von_richthofen
+		portraits = {
+			army = {
+				small = GFX_idea_wolfram_von_richthofen
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = theorist
+			idea_token = wolfram_von_richthofen
+			ledger = air
+			allowed = {
+				original_tag = BAY
+			}
+			traits = {
+				close_air_support_proponent
+			}
+		}
+	}
+
+    #部长/将领
+	BAY_albert_kesselring = {#阿尔贝特·凯塞林
+		name = GER_albert_kesselring
+		portraits = {
+			army = {
+				small = GFX_idea_albert_kesselring
+			}
+			army = {
+				large = GFX_portrait_GER_albert_kesselring
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = albert_kesselrin
+			allowed = {
+				original_tag = BAY
+			}
+			traits = {
+				air_close_air_support_3
+			}
+		}
+			cost = 100
+		corps_commander = {
+			traits = { inflexible_strategist trait_cautious }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	BAY_ferdinand_schorner = {#费迪南德·舍尔纳
+		name = BAY_ferdinand_schorner
+		portraits = {
+			army = {
+				large = Ferdinand_schorner
+				small = GFX_idea_BAY_ferdinand_schorner
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ferdinand_schorner
+			ledger = army
+			allowed = {
+				original_tag = BAY
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	BAY_ritter_von_greim = {#里特尔·冯·格莱姆
+		name = GER_ritter_von_greim
+		portraits = {
+			army = {
+				small = GFX_idea_ritter_von_greim
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ritter_von_greim
+			allowed = {
+				original_tag = BAY
+			}
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+		}
+	}
+
+	BAY_alfred_jodl = {#阿尔弗雷德·约德尔
+		name = GER_alfred_jodl
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_alfred_jodl
+				small = GFX_portrait_GER_alfred_jodl_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	BAY_wilhelm_list = {#威廉·利斯特
+		name = GER_wilhelm_list
+		portraits = {
+			army = {
+				large = GFX_portrait_GER_wilhelm_list
+				small = GFX_portrait_GER_wilhelm_list_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	BAY_otto_von_Lossow = {#奥托·冯·洛索
+		name = BAY_otto_von_Lossow
+		portraits = {
+			army = {
+				large = GFX_portrait_BAY_otto_von_Lossow
+				small = GFX_portrait_BAY_otto_von_Lossow_small
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	BAY_Max_Levien = {#马克斯·列文
+		name = BAY_Max_Levien
+		portraits = {
+			civilian = {
+				large = BAY_Max_Levien
+			}
+		}
+		corps_commander = {
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 3
+			}
+	}
+
+	BAY_Rudolf_egelhofer = {#鲁道夫·埃格尔霍夫
+		name = BAY_rudolf_egelhofer
+		portraits = {
+			civilian = {
+				large = BAY_rudolf_egelhofer
+			}
+		}
+		corps_commander = {
+				traits = {  organizer infantry_officer }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+			}
+	}
+}

@@ -1,0 +1,78 @@
+spriteTypes = {
+	spriteType = {
+		name = Song_Jiaoren
+		textureFile = "gfx/leaders/CHI/Song Jiaoren.dds"
+	}
+	spriteType = {
+		name = Li_Zongren
+		textureFile = "gfx/leaders/CHI/Li Zongren.dds"
+	}
+	spriteType = {
+		name = Tang_Jiyao
+		textureFile = "gfx/leaders/CHI/Tang Jiyao.dds"
+	}
+	spriteType = {
+		name = Xiong_Kewu
+		textureFile = "gfx/leaders/CHI/Xiong Kewu.png"
+	}
+	spriteType = {
+		name = Yan_Xishan
+		textureFile = "gfx/leaders/CHI/Yan Xishan.png"
+	}
+	spriteType = {
+		name = Long_Yun
+		textureFile = "gfx/leaders/CHI/Long Yun.png"
+	}
+	spriteType = {
+		name = Yang_Zanxv
+		textureFile = "gfx/leaders/CHI/Yang Zanxv.png"
+	}
+	spriteType = {
+		name = Ma_Buqing
+		textureFile = "gfx/leaders/CHI/Ma Buqing.png"
+	}
+	spriteType = {
+		name = Men_Zhizhong
+		textureFile = "gfx/leaders/CHI/Men Zhizhong.png"
+	}
+	spriteType = {
+		name = Zhang_Guangjian
+		textureFile = "gfx/leaders/CHI/Zhang Guangjian.png"
+	}
+	spriteType = {
+		name = Zhang_Xueliang
+		textureFile = "gfx/leaders/CHI/Zhang Xueliang.png"
+	}
+	spriteType = {
+		name = Danzeng_Jiacuo
+		textureFile = "gfx/leaders/CHI/Danzeng Jiacuo.png"
+	}
+	spriteType = {
+		name = Feng_Yuxiang
+		textureFile = "gfx/leaders/CHI/Feng Yuxiang.png"
+	}
+	spriteType = {
+		name = Cao_Kun
+		textureFile = "gfx/leaders/CHI/Cao Kun.png"
+	}
+	spriteType = {
+		name = Yang_Shukan
+		textureFile = "gfx/leaders/CHI/Yang Shukan.png"
+	}
+	spriteType = {
+		name = Ma_Tingxiang
+		textureFile = "gfx/leaders/CHI/Ma Tingxiang.png"
+	}
+	spriteType = {
+		name = Hu_Hanmin
+		textureFile = "gfx/leaders/CHI/Hu Hanmin.png"
+	}
+	spriteType = {
+		name = Lin_Sen
+		textureFile = "gfx/leaders/CHI/Lin Sen.png"
+	}
+	spriteType = {
+		name = Huang_Xing
+		textureFile = "gfx/leaders/CHI/Huang Xing.png"
+	}
+}

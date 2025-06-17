@@ -1,0 +1,32 @@
+state={
+	id=1023
+	name="STATE_1023"
+	manpower = 1006221
+	
+	
+	state_category = town
+
+	history={
+			victory_points = {
+			241 5 
+		}
+		owner = OLD
+		buildings = {
+			fuel_silo = 1
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 0
+
+		}
+		add_core_of = OLD
+		
+		
+	}
+
+	provinces={
+		241 336 309 247
+	}
+
+	local_supplies=3.0 
+}

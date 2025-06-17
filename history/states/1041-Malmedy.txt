@@ -1,0 +1,30 @@
+state=
+{
+	id=1041
+	name="STATE_1041"
+	
+	state_category = town
+	
+	manpower = 184748
+	resources={
+		steel=5 # was: 8
+	}
+
+	history=
+	{
+		owner = FRA
+		buildings = {
+			infrastructure = 1
+			3488 = { dam = 1 }
+
+		}
+		victory_points = { 3488 2 }
+		add_core_of = LUX
+		add_core_of = FRA
+	}
+
+	provinces=
+	{ 3488 	}
+
+	local_supplies=0.0 
+}

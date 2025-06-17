@@ -1,0 +1,36 @@
+state=
+{
+	id=596
+	name="STATE_596"
+	manpower = 8740991
+	state_category = city
+	history=
+	{
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = ZHJ
+		
+		victory_points = { 
+			7191 20
+		}
+		victory_points={ 13391 2 }
+		victory_points={ 4042 3 }
+		
+		
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			7191 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+			}
+		}
+
+	}
+	provinces={
+		7191 4042 10101 10014 11991 13391
+	}
+
+	local_supplies=0.0 
+}

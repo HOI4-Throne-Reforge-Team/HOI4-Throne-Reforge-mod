@@ -1,0 +1,457 @@
+characters = {
+	#政治顾问
+	FRA_Anatole_de_Monzie = {#阿托纳尔·德·蒙齐
+		name = FRA_Anatole_de_Monzie
+		portraits = {
+			civilian = {
+				small = GFX_Anatole_de_Monzie
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Anatole_de_Monzie
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				Minister_of_National_Education
+			}
+		}
+	}
+
+	FRA_Georges_Monnet = {#乔治·莫内
+		name = FRA_Georges_Monnet
+		portraits = {
+			civilian = {
+				small = GFX_Georges_Monnet
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Georges_Monnet
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				Agricultural_Expert
+			}
+		}
+	}
+
+	FRA_Jean_baptiste_lebas = {#让·巴蒂莱斯·莱巴斯
+		name = FRA_Jean_baptiste_lebas
+		portraits = {
+			civilian = {
+				small = GFX_Jean_baptiste_lebas
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Jean_baptiste_lebas
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				PTT_Minister
+			}
+		}
+	}
+
+	FRA_Leo_lagrange = {#莱奥·拉格朗日
+		name = FRA_Leo_lagrange
+		portraits = {
+			civilian = {
+				small = GFX_Leo_lagrange
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Leo_lagrange
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				Sports_Minister
+			}
+		}
+	}
+
+	FRA_THE_Curie = {#居里夫妇
+		name = FRA_THE_Curie
+		portraits = {
+			civilian = {
+				small = GFX_THE_Curie
+			}
+		}
+		advisor = {
+			cost = 200
+			slot = political_advisor
+			idea_token = FRA_THE_Curie
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				Great_scientists
+			}
+		}
+	}
+
+	FRA_Paul_Reynaud = {#保罗·雷诺
+		name = FRA_Paul_Reynaud
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Paul_Reynaud
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Paul_Reynaud
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				silent_workhorse
+			}
+		}
+	}
+
+	FRA_Vincent_Auriol = {#樊尚·奥里奥尔
+		name = FRA_Vincent_Auriol
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Vincent_Auriol
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Vincent_Auriol
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				Economic_reformer
+			}
+		}
+	}
+
+	FRA_Benoit_Frachon = {#伯努利·弗拉商
+		name = FRA_Benoit_Frachon
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Benoit_Frachon
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Benoit_Frachon
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				connected_citizen
+			}
+		}
+	}
+
+	FRA_Francois_Coty = {#弗朗索瓦·科蒂
+		name = FRA_Francois_Coty
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Francois_Coty
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Francois_Coty
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				richest_person
+			}
+		}
+	}
+
+	FRA_de_la_rocque = {#弗朗索瓦·德·拉·罗克
+		name = FRA_de_la_rocque
+		portraits = {
+			civilian = {
+				small = GFX_FRA_de_la_rocque
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_de_la_rocque
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				adventurous_daredevil
+			}
+		}
+	}
+
+	FRA_Henri_Roy = {#亨利·罗伊
+		name = FRA_Henri_Roy
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Henri_Roy
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Henri_Roy
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				quartermaster_general
+			}
+		}
+	}
+
+	FRA_Philippe_Henriot = {#菲利普·亨里奥特
+		name = FRA_Philippe_Henriot
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Philippe_Henriot
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Philippe_Henriot
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				propaganda_expert
+			}
+		}
+	}
+
+	FRA_Ernest_Mercier = {#欧内斯特·梅西耶
+		name = FRA_Ernest_Mercier
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Ernest_Mercier
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token = FRA_Ernest_Mercier
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				captain_of_industry
+			}
+		}
+	}
+
+	FRA_Edouard_Michelin = {#爱德华·米其林
+		name = FRA_Edouard_Michelin
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Edouard_Michelin
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token =FRA_Edouard_Michelin
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				war_industrialist
+			}
+		}
+	}
+
+
+	FRA_Philippe_Leclerc = {#菲利普·勒克莱尔
+		name = FRA_Philippe_Leclerc
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Philippe_Leclerc
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token =FRA_Philippe_Leclerc
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				fortification_engineer
+			}
+		}
+	}
+
+	FRA_Rene_Bousquet = {#勒内·布斯凯
+		name = FRA_Rene_Bousquet
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Rene_Bousquet
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token =FRA_Rene_Bousquet
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				prince_of_terror
+			}
+		}
+	}
+
+	FRA_Marcel_Heraud = {#马塞尔·埃罗
+		name = FRA_Marcel_Heraud
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Marcel_Heraud
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token =FRA_Marcel_Heraud
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				Extraordinary_lawyers
+			}
+		}
+	}
+
+	FRA_Raoul_Dautry = {#拉乌尔·道特里
+		name = FRA_Raoul_Dautry
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Raoul_Dautry
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token =FRA_Raoul_Dautry
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				armaments_organizer
+			}
+		}
+	}
+
+	FRA_Yves_Bouthillier = {#伊夫·布特希利尔
+		name = FRA_Yves_Bouthillier
+		portraits = {
+			civilian = {
+				small = GFX_FRA_Yves_Bouthillier
+			}
+		}
+		advisor = {
+			cost = 150
+			slot = political_advisor
+			idea_token =FRA_Yves_Bouthillier
+			allowed  = {
+					original_tag  = FRA 
+				}
+			traits = { 
+				economist
+			}
+		}
+	}
+
+	FRA_Camille_Chautemps = {#卡米耶·肖当
+		name = FRA_Camille_Chautemps
+		portraits = {
+			civilian = {
+				large = FRA_Camille_Chautemps
+				small = FRA_Camille_Chautemps_small
+			}
+		}
+		country_leader = {
+			ideology = democratic_subtype
+			desc = FRA_desc_Camille_Chautemps
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+
+	FRA_Edouard_Daladier = {#爱德华·达拉第
+		name = FRA_Edouard_Daladier
+		portraits = {
+			civilian = {
+				large = GFX_FRA_Edouard_Daladier
+				small = GFX_FRA_Edouard_Daladier_small
+			}
+		}
+		country_leader = {
+			ideology = classicalbonapartism
+			desc = FRA_desc_Edouard_Daladier
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	FRA_Louis_Marin = {#路易·马林
+		name = FRA_Louis_Marin
+		portraits = {
+			civilian = {
+				large = GFX_FRA_Louis_Marin
+				small = GFX_FRA_Louis_Marin_small
+			}
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			desc = FRA_desc_Louis_Marin
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+	FRA_Louis_Marin = {#夏尔·莫拉斯
+		name = FRA_Charles_Maurras
+		portraits = {
+			civilian = {
+				large = FRA_Charles_Maurras
+				small = FRA_Charles_Maurras_small
+			}
+		}
+		country_leader = {
+			ideology = chinesewarlord
+			desc = FRA_desc_Charles_Maurras
+			traits = {
+				
+			}
+			expire = "1965.11.15"
+			id = -1
+		}
+	}
+}

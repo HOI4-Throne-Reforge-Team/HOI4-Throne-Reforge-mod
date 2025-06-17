@@ -1,0 +1,37 @@
+
+state={
+	id=528
+	name="STATE_528"
+	manpower = 490000
+	state_category = large_city
+	resources={
+		chromium=2
+	}
+
+	history={
+		owner = FRC
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 1
+			air_base = 2
+			dockyard = 1
+			arms_factory = 1
+			industrial_complex = 3
+			9950 = {
+				naval_base = 6
+
+			}
+
+		}
+		victory_points = {
+			9950 20
+		}
+
+	}
+
+	provinces={
+		9950
+	}
+
+	local_supplies=1.0 
+}

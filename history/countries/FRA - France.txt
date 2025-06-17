@@ -1,0 +1,164 @@
+﻿capital= 16
+
+recruit_character = FRA_THE_Curie
+recruit_character = FRA_Leo_lagrange
+recruit_character = FRA_Jean_baptiste_lebas
+recruit_character = FRA_Georges_Monnet
+recruit_character = FRA_Anatole_de_Monzie
+recruit_character = FRA_Paul_Reynaud
+recruit_character = FRA_Vincent_Auriol
+recruit_character = FRA_Benoit_Frachon
+recruit_character = FRA_Francois_Coty
+recruit_character = FRA_de_la_rocque
+recruit_character = FRA_Henri_Roy
+recruit_character = FRA_Philippe_Henriot
+recruit_character = FRA_Ernest_Mercier
+recruit_character = FRA_Edouard_Michelin
+recruit_character = FRA_Rene_Bousquet
+recruit_character = FRA_Philippe_Leclerc
+recruit_character = FRA_Marcel_Heraud
+recruit_character = FRA_Raoul_Dautry
+recruit_character = FRA_Yves_Bouthillier
+recruit_character = FRA_Camille_Chautemps
+recruit_character = FRA_Edouard_Daladier
+
+set_technology = {
+	aa_lmg = 1
+	aa_cannon_1 = 1
+	engines_1 = 1
+	engines_2 = 1
+	early_bombs = 1
+	aircraft_construction = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	air_torpedoe_1 = 1
+	bba_early_transport_plane = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+	basic_fortification_tech = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	camelry = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
+	early_ship_hull_carrier = 1
+	basic_battery = 1
+	basic_heavy_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
+	basic_heavy_armor_scheme = 1
+	basic_cruiser_armor_scheme = 1
+	mtg_transport = 1
+	basic_dp_light_battery = 1
+	armored_car1 = 1
+
+}
+
+set_oob = "FRA_1936"
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.30
+set_war_support = 0
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+
+
+set_popularities = {
+	communism = 4
+	syndicalist = 2
+	anarchism = 5
+	social_democrat = 16
+	democratic = 23
+	social_conservative = 19
+	neutrality = 17
+	paternal_autocrat = 10
+	fascism = 1
+	populism = 3
+}
+
+add_ideas = {
+	FRA_Camille_Chautemp_1
+	FRA_French_Army
+	FRA_Usury_imperialism
+}
+create_faction = FraUnion
+add_to_faction = FRA
+add_to_faction = SPM
+add_to_faction = LAY
+add_to_faction = SPR
+add_to_faction = FWA
+add_to_faction = FCA
+add_to_faction = COG
+add_to_faction = FES
+add_to_faction = MAD
+add_to_faction = FRC
+
+set_autonomy = {
+	target = SPM
+	autonomous_state = autonomy_puppet
+}
+set_autonomy = {
+	target = LAY
+	autonomous_state = autonomy_integrated_puppet
+}
+set_autonomy = {
+	target = COG
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = FWA
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = FES
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = FCA
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = MAD
+	autonomy_state = autonomy_colony
+}
+set_autonomy = {
+	target = FRC
+	autonomy_state = autonomy_dominion
+}
+set_autonomy = {
+	target = MOR
+	autonomy_state = autonomy_colony
+}

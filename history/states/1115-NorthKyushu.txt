@@ -1,0 +1,33 @@
+state={
+	id=1115
+	name="STATE_1115"#北九州
+	manpower = 4400000
+	
+	state_category = town
+	resources={
+		chromium=14
+	}
+
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			industrial_complex = 1
+		}
+		add_core_of = JAP
+		victory_points = {
+			1025 5
+		}
+		victory_points = {
+			4164 1
+		}
+	}
+
+	provinces={
+	10011 1158 7110 1025 4164 10020 4027 11925 12006
+	}
+
+	local_supplies=1.0 
+}

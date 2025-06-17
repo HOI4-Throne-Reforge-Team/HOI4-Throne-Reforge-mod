@@ -1,0 +1,42 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_focus_CHI_term_of_song"
+		texturefile = "gfx/focus/CHI/CHI_term_of_song.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_CHI_stabilize_government"
+		texturefile = "gfx/focus/CHI/CHI_stabilize_government.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_CHI_stabilize_local"
+		texturefile = "gfx/focus/CHI/CHI_stabilize_local.dds"
+	}
+    spriteType = {
+		name = "GFX_focus_CHI_responsible_cabinet"
+		texturefile = "gfx/focus/CHI/CHI_responsible_cabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CHI_appointment_officials"
+		texturefile = "gfx/focus/CHI/CHI_appointment_officials.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CHI_struggle_within"
+		texturefile = "gfx/focus/CHI/CHI_struggle_within.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CHI_integrity_and_harmony"
+		texturefile = "gfx/focus/CHI/CHI_integrity_and_harmony.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CHI_appointment_chengqian"
+		texturefile = "gfx/focus/CHI/CHI_appointment_chengqian.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CHI_appointment_dengkeng"
+		texturefile = "gfx/focus/CHI/CHI_appointment_dengkeng.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_CHI_get_army"
+		texturefile = "gfx/focus/CHI/CHI_get_army.dds"
+	}
+}

@@ -1,0 +1,24 @@
+
+state={
+	id=614
+	name="STATE_614" # Hebei
+	manpower = 7975401
+	
+	state_category = large_town
+
+	history={
+		owner = NCG
+		add_core_of = CHI
+		add_core_of = NCG
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		4190 7109 4032 4093 7000 10053 4208 6828 12026
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,33 @@
+state={
+	id=1101
+    name="STATE_1101"
+	manpower = 63947
+	resources={
+
+	}
+	
+	state_category = town
+
+	history= {
+		owner = TUR
+		victory_points = {
+			3786 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+		add_core_of = TUR
+
+
+	}
+	provinces=
+	{
+        3786 947 785 13404}
+
+	local_supplies=0.0 
+}

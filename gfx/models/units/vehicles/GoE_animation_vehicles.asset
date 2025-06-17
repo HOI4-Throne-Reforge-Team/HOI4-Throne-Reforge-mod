@@ -1,0 +1,128 @@
+##########################
+# Persia #
+##########################
+
+animation = {
+	name = "PER_armored_car_0_attack_animation"
+	file = "PER_armored_car_0_attack.anim"
+}
+
+animation = {
+	name = "PER_armored_car_0_idle_animation"
+	file = "PER_armored_car_0_idle.anim"
+}
+
+animation = {
+	name = "PER_armored_car_0_move_animation"
+	file = "PER_armored_car_0_move.anim"
+}
+
+
+animation = {
+	name = "PER_armored_car_2_attack_animation"
+	file = "PER_armored_car_2_attack.anim"
+}
+
+animation = {
+	name = "PER_armored_car_2_idle_animation"
+	file = "PER_armored_car_2_idle.anim"
+}
+
+animation = {
+	name = "PER_armored_car_2_move_animation"
+	file = "PER_armored_car_2_move.anim"
+}
+
+##########################
+# Afganistan #
+##########################
+
+
+##########################
+# Iraq #
+##########################
+
+### Armored Cars ----------------------------------------------------------------------------------------------------------
+
+#Vickers Crossley
+animation = {
+	name = "IRQ_armored_car_0_attack_animation"
+	file = "IRQ_armored_car_0_attack.anim"
+}
+
+animation = {
+	name = "IRQ_armored_car_0_idle_animation"
+	file = "IRQ_armored_car_0_idle.anim"
+}
+
+animation = {
+	name = "IRQ_armored_car_0_move_animation"
+	file = "IRQ_armored_car_0_move.anim"
+}
+
+
+animation = {
+	name = "IRQ_armored_car_2_attack_animation"
+	file = "IRQ_armored_car_2_attack.anim"
+}
+
+animation = {
+	name = "IRQ_armored_car_2_idle_animation"
+	file = "IRQ_armored_car_2_idle.anim"
+}
+
+animation = {
+	name = "IRQ_armored_car_2_move_animation"
+	file = "IRQ_armored_car_2_move.anim"
+}
+
+### Motorized -------------------------------------------------------------------------------------------------------------
+
+
+### Mechanized ------------------------------------------------------------------------------------------------------------
+
+##########################
+# Raj #
+##########################
+
+### Armored Cars ----------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "RAJ_armored_car_0_attack_animation"
+	file = "RAJ_armored_car_0_attack.anim"
+}
+
+animation = {
+	name = "RAJ_armored_car_0_idle_animation"
+	file = "RAJ_armored_car_0_idle.anim"
+}
+
+animation = {
+	name = "RAJ_armored_car_0_moving_animation"
+	file = "RAJ_armored_car_0_moving.anim"
+}
+
+animation = {
+	name = "RAJ_armored_car_2_attack_animation"
+	file = "RAJ_armored_car_2_attack.anim"
+}
+
+animation = {
+	name = "RAJ_armored_car_2_idle_animation"
+	file = "RAJ_armored_car_2_idle.anim"
+}
+
+animation = {
+	name = "RAJ_armored_car_2_moving_animation"
+	file = "RAJ_armored_car_2_moving.anim"
+}
+
+animation = {
+	name = "RAJ_armored_car_2_training_animation"
+	file = "RAJ_armored_car_2_training.anim"
+}
+
+### Motorized -------------------------------------------------------------------------------------------------------------
+
+
+### Mechanized ------------------------------------------------------------------------------------------------------------

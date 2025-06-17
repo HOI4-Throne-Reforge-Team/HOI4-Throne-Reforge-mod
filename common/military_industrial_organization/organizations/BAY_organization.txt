@@ -1,0 +1,59 @@
+
+
+BAY_man_organization = { #曼恩
+	name = BAY_man_organization
+	include = generic_medium_tank_organization
+	icon = GFX_idea_BAY_MAN
+	
+	allowed = {	
+		OR = {
+			original_tag = BAY 
+		}
+	}
+	
+	available = {
+		
+	}
+
+}
+
+BAY_BMW_organization = { #宝马
+	name =  BAY_BMW_organization
+	include = generic_motorized_mechanized_organization 
+	icon = GFX_idea_BAY_BMW
+	allowed = { 
+		original_TAG = BAY
+	}
+	available = { 
+		
+	}
+}
+
+BAY_messerschmitt_organization = { #梅塞施密特
+    name = BAY_messerschmitt_organization
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_BAY_messerschmitt
+	
+	allowed = {	
+			original_tag = BAY
+		}
+
+	available = {
+
+	}
+}
+
+BAY_AKA_organization = { #奥格斯堡兵工厂
+    name = BAY_AKA_organization
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_BAY_AKA
+	
+	allowed = {	
+			original_tag = BAY
+		}
+
+	available = {
+
+	}
+
+}

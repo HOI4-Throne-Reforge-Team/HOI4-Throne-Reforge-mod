@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_idea_FRA_E_B"
+		texturefile = "gfx/ideas/FRA/FRA_E_B.dds"
+	}
+}

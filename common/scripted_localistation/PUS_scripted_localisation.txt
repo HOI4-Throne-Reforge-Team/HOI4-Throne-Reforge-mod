@@ -1,0 +1,82 @@
+#议会三党AI动态本地化
+defined_text = {#民主党
+	name = PUS_AI_PDP
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_PDP = 1
+			}
+		}
+		localization_key = PUS_Election_PDP_Voting_encouraged_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_PDP = 2
+			}
+		}
+		localization_key =  PUS_Election_PDP_defense_PVP_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_PDP = 3
+			}
+		}
+		localization_key =  PUS_Election_PDP_defense_SPP_0
+	}
+}
+defined_text = {#社民党
+	name = PUS_AI_SPP
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_SPP = 1
+			}
+		}
+		localization_key = PUS_Election_SPP_Voting_encouraged_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_SPP = 2
+			}
+		}
+		localization_key =  PUS_Election_SPP_defense_PDP_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_SPP = 3
+			}
+		}
+		localization_key =  PUS_Election_SPP_defense_PVP_0
+	}
+}
+defined_text = {#人民党
+	name = PUS_AI_PVP
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_PVP = 1
+			}
+		}
+		localization_key = PUS_Election_PVP_Voting_encouraged_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_PVP = 2
+			}
+		}
+		localization_key =  PUS_Election_PVP_defense_SPP_0
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				global.PUS_Election_AI_PVP = 3
+			}
+		}
+		localization_key =  PUS_Election_PVP_defense_PDP_0
+	}
+}

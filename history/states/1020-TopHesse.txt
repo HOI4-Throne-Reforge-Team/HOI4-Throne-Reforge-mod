@@ -1,0 +1,36 @@
+state={
+	id=1020
+	name="STATE_1020"
+	manpower = 2265029
+	buildings_max_level_factor = 1
+
+	state_category = megalopolis
+
+
+	history={
+		owner = DHE
+		victory_points = {
+			9524 5 
+		}
+		victory_points = {
+			564 3 
+		}
+			buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 0
+
+		}
+		add_core_of = DHE
+		
+		}
+
+
+
+	provinces={
+		11445 9524 564 3397
+	}
+
+	local_supplies=3.0 
+}

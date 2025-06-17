@@ -1,0 +1,54 @@
+
+state={
+	id=1046
+	name="STATE_1046"
+	resources={
+		steel = 21
+	}
+	manpower = 1265029
+	buildings_max_level_factor = 1
+
+	state_category = city
+
+
+	history={
+		owner = PUS
+
+		victory_points = {
+			3522 5 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			anti_air_building = 2
+			air_base = 1
+
+			6521 = {
+                landmark_berlin_reichstag = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
+
+		}
+		add_core_of = PUS
+		
+
+		1939.1.1 = {
+			buildings = {
+				air_base = 10
+				anti_air_building = 5
+				arms_factory = 10
+				industrial_complex = 7
+			}
+		}
+	}
+
+	provinces={
+	 3522 6487 11359 11468
+	}
+
+	local_supplies=0.0 
+}

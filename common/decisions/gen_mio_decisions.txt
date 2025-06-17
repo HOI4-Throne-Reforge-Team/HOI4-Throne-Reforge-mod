@@ -1,0 +1,36 @@
+gen_zhizaoshang = {
+    GER_benz = {
+	    icon = generic_merge_plant_tank
+		available = {
+            has_completed_focus = Seeking_protection_from_Germany
+		}
+        visible = {
+            has_completed_focus = Seeking_protection_from_Germany
+		}
+
+		fire_only_once = yes
+		days_remove = 14
+        cost = 25
+
+		remove_effect = {
+			set_country_flag = gen_GER_benz
+		}
+    }
+    SOV_okmo = {
+		icon = generic_merge_plant_tank
+		available = {
+            has_completed_focus = Contact_the_Soviet_Union
+		}
+        visible = {
+            has_completed_focus = Contact_the_Soviet_Union
+		}
+
+		fire_only_once = yes
+		days_remove = 14
+        cost = 25
+
+		remove_effect = {
+			set_country_flag = gen_SOV_okmo
+		}
+    }
+}

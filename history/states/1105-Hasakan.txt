@@ -1,0 +1,29 @@
+state={
+	id=1105
+	name="STATE_1105"
+	manpower = 81781
+	
+	state_category = town
+
+	history={
+		owner = KUR
+		victory_points = {
+			1549 15
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			11746 = {
+				naval_base = 3
+			}
+		}
+	
+		add_claim_by = SYR
+		add_core_of = KUR
+	}
+
+	provinces={
+	1549
+	}
+}

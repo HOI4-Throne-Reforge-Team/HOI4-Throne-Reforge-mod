@@ -1,0 +1,685 @@
+﻿
+add_namespace = focus_SPR
+add_namespace = SPR
+
+
+country_event = {
+	id = SPR.1
+	title = SPR.1.t
+	desc = SPR.1.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.1.a1
+		add_war_support = 0.1
+		118 = {
+			transfer_state_to = SPR
+			add_core_of = SPR
+		}
+		ai_chance = {
+			base = 30
+		}
+	}
+}
+
+country_event = {
+	id = SPR.2
+	title = SPR.2.t
+	desc = SPR.2.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.2.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 0.7
+				}
+			}
+			modifier = {
+				factor = 40
+				any_other_country = {
+					is_major = no
+					is_in_faction_with = POR
+				}
+			}
+		}
+		SPR = {
+			annex_country = { 
+				target = POR 
+				transfer_troops = yes
+			}
+			POR = {
+				every_unit_leader = {
+					set_nationality = SPR
+				}
+			}
+		}
+		POR = {
+			transfer_navy = {
+				target = SPR
+			}
+			remove_state_core = 180
+			remove_state_core = 181
+			remove_state_core = 112
+			remove_state_core = 795
+			remove_state_core = 179
+			remove_state_core = 697
+			remove_state_core = 698
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = SPR.2.a2
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio > 0.7
+				}
+			}
+			modifier = {
+				factor = 50
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = POR
+				}
+			}
+		}
+		SPR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = POR
+				expire = 0
+				generator = { 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SPR.3
+	title = SPR.3.t
+	desc = SPR.3.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.3.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 0.7
+				}
+			}
+			modifier = {
+				factor = 100
+				strength_ratio = {
+					tag = SPR
+					ratio < 2
+				}
+			}
+			modifier = {
+				factor = 40
+				any_other_country = {
+					is_major = no
+					is_in_faction_with = BRA
+				}
+			}
+		}
+		SPR = {
+			annex_country = { 
+				target = BRA
+				transfer_troops = yes
+			}
+			BRA = {
+				every_unit_leader = {
+					set_nationality = SPR
+				}
+			}
+		}
+		BRA = {
+			transfer_navy = {
+				target = SPR
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = SPR.3.a2
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio > 0.7
+				}
+			}
+			
+			modifier = {
+				factor = 50
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = BRA
+				}
+			}
+		}
+		SPR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = BRA
+				expire = 0
+				generator = { 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SPR.4
+	title = SPR.4.t
+	desc = SPR.4.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.4.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio > 0.7
+				}
+			}
+		}
+		SPR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				expire = 0
+				generator = { 2 }
+			}
+		}
+		FRA = {
+			declare_war_on = {
+				target = USA
+				type = take_state_focus
+			}
+		}
+		}
+
+	option = {
+		name = SPR.4.a2
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 0.7
+				}
+			}
+		}
+		SPR = {
+			leave_faction = yes
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				expire = 0
+				generator = { 2 }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = SPR.5
+	title = SPR.5.t
+	desc = SPR.5.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.5.a1
+		If = {
+			limit = { 
+				SPR = {
+					has_completed_focus = carlos
+				}
+			}
+			start_civil_war = { 
+				ideology = paternal_autocrat
+				size = 0.6
+				capital = 115
+				states = { 
+					115
+				} 
+				keep_political_leader = yes 
+				keep_political_party_members = yes 
+			}
+		}
+		If = {
+			limit = { 
+				SPR = {
+					has_completed_focus = bonaparte
+				}
+			}
+			start_civil_war = { 
+				ideology = populism
+				size = 0.6
+				capital = 115
+				states = { 
+					115
+				} 
+				keep_political_leader = yes 
+				keep_political_party_members = yes 
+			}
+		}
+		If = {
+			limit = { 
+				SPR = {
+					has_completed_focus = habsburg_aus
+				}
+			}
+			start_civil_war = { 
+				ideology = social_conservative
+				size = 0.6
+				capital = 115
+				states = { 
+					115
+				} 
+				keep_political_leader = yes 
+				keep_political_party_members = yes 
+			}
+		}
+		FROM = {
+			add_ideas = SPR_spain_support
+			set_autonomy = { 
+				target = FROM
+				autonomy_state = latin_union
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SPR.6
+	title = SPR.6.t
+	desc = SPR.6.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.6.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 0.7
+				}
+			}
+		}
+		SPR = {
+			annex_country = { 
+				target = ITA
+				transfer_troops = yes
+			}
+			ITA = {
+				every_unit_leader = {
+					set_nationality = SPR
+				}
+			}
+		}
+		ITA = {
+			transfer_navy = {
+				target = SPR
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = SPR.6.a2
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio > 0.7
+				}
+			}
+			modifier = {
+				factor = 50
+				any_other_country = {
+					is_major = yes
+					is_in_faction_with = ITA
+				}
+			}
+		}
+		SPR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ITA
+				expire = 0
+				generator = { 2 }
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = SPR.7
+	title = SPR.7.t
+	desc = SPR.7.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.7.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 1.5
+				}
+			}
+		}
+		SPR = {
+			annex_country = { 
+				target = FRA
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = LAY
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = SPM
+				transfer_troops = yes
+			}
+			FRA = {
+				every_unit_leader = {
+					set_nationality = SPR
+				}
+			}
+		}
+		FRA = {
+			transfer_navy = {
+				target = SPR
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = SPR.7.a2
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio > 0.7
+				}
+			}
+		}
+		SPR = {
+			leave_faction = yes
+			create_wargoal = {
+				type = take_state_focus
+				target = FRA
+				expire = 0
+				generator = { 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SPR.8
+	title = SPR.8.t
+	desc = SPR.8.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.8.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 0.7
+				}
+			}
+		}
+		SPR = {
+			annex_country = { 
+				target = AUS
+				transfer_troops = yes
+			}
+			annex_country = { 
+				target = BHM
+				transfer_troops = yes
+			}
+			every_state = {
+				limit = {
+					is_core_of = AUS
+				}
+				add_core_of = SPR
+			}
+			every_state = {
+				limit = {
+					is_core_of = BHM
+				}
+				add_core_of = SPR
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = SPR
+			}
+		}
+		AUS = {
+			transfer_navy = {
+				target = SPR
+			}
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = {
+		name = SPR.8.a2
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio > 0.7
+				}
+			}
+		}
+		SPR = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AUS
+				expire = 0
+				generator = { 2 }
+			}
+			set_country_flag = austria
+			unlock_decision_tooltip = SPR_Viceroyalty_AUS
+		}
+	}
+}
+
+country_event = {
+	id = SPR.9
+	title = SPR.9.t
+	desc = SPR.9.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.9.a1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 0.7
+				}
+			}
+			modifier = {
+				factor = 60
+				ROOT = {
+					has_government = SPR
+				}
+			}
+		}
+		SPR = {
+			create_faction = latin_union
+			set_faction_leader = yes
+			set_autonomy = { 
+				target = ROOT
+				autonomy_state = latin_union
+			}
+		}
+		
+	}
+
+	option = {
+		name = SPR.9.a2
+		SPR = {
+			create_faction = latin_union
+		}
+	}
+
+}
+
+country_event = {
+	id = SPR.10
+	title = SPR.10.t
+	desc = SPR.10.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.10.a1 #num_of_factories > 10
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 20
+				strength_ratio = {
+					tag = SPR
+					ratio < 1.5
+				}
+			}
+			modifier = {
+				factor = 20
+				SPR = {
+					num_of_factories > 125
+				}
+			}
+		}
+		SPR = {
+			annex_country = {
+				target = ROOT
+			}
+			every_state = {
+				limit = {
+					is_core_of = ROOT
+				}
+				add_core_of = SPR
+			}
+		}
+	}
+
+	option = {
+		name = SPR.10.a2
+		ai_chance = {
+		factor = 30
+		modifier = {
+			factor = 20
+			strength_ratio = {
+				tag = SPR
+				ratio > 0.5
+			}
+		}
+		modifier = {
+			factor = 20
+			SPR = {
+				num_of_factories < 85
+			}
+		}
+	}
+	ROOT = {
+		leave_faction = yes
+	}
+}
+}
+
+
+
+country_event = {
+	id = SPR.11
+	title = SPR.11.t
+	desc = SPR.11.d
+	is_triggered_only = yes
+	option = {
+		name = SPR.11.a1
+		ai_chance = {
+			factor = 33
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = SPR_carlos_dynasty
+			name = SPR_carlos_dynasty 
+		}
+		set_country_flag = carlos
+		unlock_national_focus = SPR_ancient_carlos_connections
+	}
+	option = {
+		name = SPR.11.a2
+		ai_chance = {
+			factor = 33
+		}
+		set_party_name = {
+			ideology = 	populism 
+			long_name = SPR_bonaparte
+			name = SPR_bonaparte
+		}
+		set_politics = {
+			ruling_party = populism 
+			last_election = "1935.12.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_country_flag = bonaparte
+		unlock_national_focus = SPR_inheriting_the_rule_of_bonaparte
+	}
+	option = {
+		name = SPR.11.a3
+		ai_chance = {
+			factor = 33
+		}
+		set_party_name = {
+			ideology = social_conservative 
+			long_name = SPR_habsburg
+			name = SPR_habsburg
+		}
+		set_politics = {
+			ruling_party = social_conservative 
+			last_election = "1935.12.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_country_flag = habsburg_aus
+		unlock_national_focus = SPR_the_real_habsburg_family
+	}
+}

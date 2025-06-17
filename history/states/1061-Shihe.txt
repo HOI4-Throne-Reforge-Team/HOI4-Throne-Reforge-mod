@@ -1,0 +1,26 @@
+
+state = {
+	id = 1061
+	name = "STATE_1061"
+	manpower = 1841610
+	
+	state_category =pastoral
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = HBJ
+
+	}
+
+	provinces = {
+		5030 12414
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,539 @@
+﻿####### Division Templates #######
+division_template = { 
+	name = "步兵师" 
+	division_names_group = ITA_INF_01 
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = { 
+	name = "阿尔卑斯山地部队" 
+	division_names_group = ITA_MNT_01 
+
+	regiments = { 
+		mountaineers = { x = 0 y = 0 }												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+
+	priority = 2 
+}
+
+division_template = { 
+	name = "骑兵团" 
+	division_names_group = ITA_CAV_01 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+#############################
+###### ASCARI INFANTRY ######
+#############################
+
+### GENERIC ASCARI TEMPLATES ### (Eritrean Model)
+### LIBYAN ASCARI TEMPLATES ###
+
+
+### ERITREAN ASCARI TEMPLATES ###
+### SOMALI ASCARI TEMPLATES ###
+###################
+#### IRREGULARS ###
+###################
+
+### GENERIC IRREGULAR TEMPLATES ### (Eritrean Model)
+division_template = {
+	name = "骑兵大队"		
+	division_names_group = ITA_CAV_05
+	override_model = ITA_cavalry_alt_3_entity
+	template_counter = 5
+	is_locked = yes
+	# Note: Represents irregular cavalry from the colonies (daskalian, dubats and other "bands")
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		#cavalry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+####### OOB #######
+units = {
+	##### Commando Superiore Metropolitana #####
+	### Gruppo d'Armata Ovest ###
+	## 1a Armata ##
+	# II Corpo d'Armata #
+	
+	division = { # "4a 阿尔卑斯"阿尔卑斯山地部队" 'Cuneense'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 607 
+		division_template = "阿尔卑斯山地部队" 
+		start_experience_factor = 0.3 
+	}
+
+	# III Corpo d'Armata #
+	division = { # "3a 步兵师 'Ravenna'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3780 
+		division_template = "步兵师"	# 'Semi-Mountain' (less trained & equipped than Alpina)
+		start_experience_factor = 0.3 
+	}
+	division = { # "6a 步兵师 'Cuneo'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		} 
+		location = 3780 
+		division_template = "步兵师"	# 'Semi-Mountain' (less trained & equipped than Alpina)
+		start_experience_factor = 0.3 
+	}
+
+	# Subordinate to Army
+	division = { # "1° Reggimento 'Nizza Cavalleria'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 6973 
+		division_template = "骑兵团" 
+		start_experience_factor = 0.05 
+		start_equipment_factor = 0.7 
+	}
+	
+	## 4a Armata ##
+	# Corpo d'Armata Alpina #
+	division = { # "1a 阿尔卑斯"阿尔卑斯山地部队" 'Taurinense'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 11584 
+		division_template = "阿尔卑斯山地部队" 
+		start_experience_factor = 0.3 
+	}
+
+	# I Corpo d'Armata #
+	division = { # "11a 步兵师 'Brennero'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		} 
+		location = 6606 
+		division_template = "步兵师"	# 'Semi-Mountain' (less trained & equipped than Alpina)
+		start_experience_factor = 0.3 
+	}
+	division = { # "2a 阿尔卑斯"阿尔卑斯山地部队" 'Tridentina'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		} 
+		location = 6606 
+		division_template = "阿尔卑斯山地部队" 
+		start_experience_factor = 0.3 
+	}
+
+	# IV Corpo d'Armata #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}#  "23a 步兵师 'Ferrara'" 
+		location = 6661 
+		division_template = "步兵师"	# 'Semi-Mountain' (less trained & equipped than Alpina)
+		start_experience_factor = 0.3 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}#  "7a 步兵师 'Lupi di Toscana'" 
+		location = 6661 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+	}
+
+	### Gruppo d'Armata Est ###
+	## 2a Armata ##
+	# V Corpo d'Armata #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}#  "9a Divisione Autotrasportabile 'Pasubio'" 
+		location = 628 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	}
+
+	# VI Corpo d'Armata #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}#  "8a Divisione Motorizzata 'Po'" 
+		location = 628 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}#  "3a 阿尔卑斯"阿尔卑斯山地部队" 'Julia'" 
+		location = 628 
+		division_template = "阿尔卑斯山地部队" 
+		start_experience_factor = 0.3 
+	}
+
+	# Subordinate to Army
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}#  "2° Reggimento 'Piemonte Cavalleria'" 
+		location = 9613 
+		division_template = "骑兵团" 
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	}
+
+	### Gruppo d'Armata Sud ###
+	# VII Corpo d'Armata #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}#  "20a 步兵师 'Friuli'" 
+		location = 4159 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}#  "25a 步兵师 'Bologna'" 
+		location = 10074 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	}
+
+	##### Commando Superiore Africa #####
+	# Subordinate to Theater #
+	division = { # 
+		name = "7a Divisione CC.NN. 'Cirene'" 
+		location = 11837
+		division_template = "骑兵大队"	# CC.NN. militia, lower training and equipment 
+		start_equipment_factor = 0.2
+	}
+	### Armata dell'Africa Orientale Italiana ###
+	# I Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}#  "30a 步兵师 'Sabauda'" 
+		location = 11846 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}#  "26a 步兵师 'Assietta'" 
+		location = 11833 
+		division_template = "步兵师"	
+		start_experience_factor = 0.3 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}#  "5a 阿尔卑斯"阿尔卑斯山地部队" 'Pusteria'" 
+		location = 11587 
+		division_template = "阿尔卑斯山地部队" 
+		start_experience_factor = 0.3 
+	}
+	division = { # 
+		name = "4a Divisione CC.NN. '3 Gennaio'" 
+		location = 11587 
+		division_template = "阿尔卑斯山地部队"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	# II Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}#  "19a 步兵师 'Venezia'" 
+		location = 11751 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}#  "24a 步兵师 'Pinerolo'" 
+		location = 11751 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+	}
+	# III Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}#  "27a Divisione Autotrasportabile 'Brescia'" 
+		location = 12751 
+		division_template = "步兵师"	
+		start_experience_factor = 0.3 
+	}
+	# IV Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}#  "5a 步兵师 'Cosseria'" 
+		location = 11584
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+	}
+	division = { # 
+		name = "2a Divisione CC.NN. '28 Ottobre'" 
+		location = 3773 
+		division_template = "步兵师"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+	division = { # 
+		name = "5a Divisione CC.NN. '1 Febbraio'" 
+		location = 883 
+		division_template = "步兵师"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+	# Corpo d'Armata Libico #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}#  "29a 步兵师 'Piemonte'" 
+		location = 819 
+		division_template = "步兵师"	
+		start_experience_factor = 0.2 
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}#  "1a Divisione Fanteria Coloniale Libica" 
+		location = 6790 
+		division_template = "骑兵团" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+	division = {
+		name = "Divisione F. Coloniale Arabo-Somala"
+		#division_name = {
+		#	is_name_ordered = yes
+		#	name_order = 101
+		#}#  "101a Divisione Fanteria Coloniale Somala" 
+		location = 6656 
+		division_template = "骑兵大队" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+	division = { # 
+		name = "6a Divisione CC.NN. 'Tevere'" 
+		location = 925 
+		division_template = "步兵师"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.15
+	}
+
+	############################
+	##### IRREGULAR TROOPS #####
+	############################
+
+	#LIBYAN IRREGULAR TROOPS
+	division = { #Libyan Irregulars
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 782 
+		division_template = "骑兵团"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	division = { #Libyan Spahi
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 11833 
+		division_template = "步兵师"
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+
+	#ERITREAN IRREGULAR TROOPS
+	division = { #Daskalian Irregular Bands (Eritrean Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 6831 
+		division_template = "步兵师"
+		start_experience_factor = 0.05 
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	division = { #Massaua Irregulars Band (Eritrean Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 11998 
+		division_template = "步兵师"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	#SOMALI IRREGULAR TROOPS
+	division = { #Somali Dubat Cavalry
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 9584 
+		division_template = "步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
+	}
+
+	division = { #Somlia Dubats (Somali Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 11568
+		division_template = "步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+
+	division = { #Somlia Dubats (Somali Irregular Infantry)
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} 
+		location = 11568 
+		division_template = "步兵师"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
+	}
+}
+
+
+
+
+
+
+####### Starting Production Queue #######
+instant_effect = { 
+	if = { 
+		limit = { is_tutorial = no } 
+
+		##### Equipments #####
+		add_equipment_production = { 
+			equipment = { 
+				type = infantry_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 4 
+			progress = 0.1 
+			efficiency = 50 
+			industrial_manufacturer = mio:ITA_beretta_organization
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = support_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.3 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_brescia_arsenal_organization
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = light_tank_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.4 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_fiat_organization
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = motorized_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.4 
+			efficiency = 50
+			industrial_manufacturer = mio:ITA_lancia_organization
+		} 
+	}
+} 

@@ -1,0 +1,331 @@
+add_namespace = focus_FRA
+add_namespace = focus_FRA_introduce
+add_namespace = FRA
+add_namespace = The_Stavisky_Trial
+add_namespace = Start_FRA
+
+country_event = {  #法兰西第二帝国
+	id = Start_FRA.1
+	title = Start_FRA.1.t
+	desc = Start_FRA.1.d
+	is_triggered_only = yes
+	option = {
+		name = Start_FRA.1.a
+		
+	}
+}
+
+
+country_event = {  #枫丹白露的对话
+	id = focus_FRA.1
+	title = focus_FRA.1.t
+	desc = focus_FRA.1.d
+	is_triggered_only = yes
+	option = {
+		name = focus_FRA.1.a
+		
+	}
+}
+
+country_event = {  #卡米耶·肖当
+	id = focus_FRA.2
+	title = focus_FRA.2.t
+	desc = focus_FRA.2.d
+	is_triggered_only = yes
+	option = {
+		name = focus_FRA.2.a
+		
+	}
+}
+
+
+country_event = {  #左翼激进分子对法案不满
+	id = focus_FRA.3
+	title = focus_FRA.3.t
+	desc = focus_FRA.3.d
+	is_triggered_only = yes
+	option = {
+		name = focus_FRA.3.a
+		add_stability = -0.02
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = populism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+	}
+	option = {
+		name = focus_FRA.3.b
+		add_political_power = -15
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+		add_popularity = {
+				ideology = anarchism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+	}
+}
+
+
+country_event = {  #天主教会对法案不满
+	id = focus_FRA.4
+	title = focus_FRA.4.t
+	desc = focus_FRA.4.d
+	is_triggered_only = yes
+	option = {
+		name = focus_FRA.4.a
+		add_stability = -0.02
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = populism
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = anarchism
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.01
+			}
+	}
+	option = {
+		name = focus_FRA.4.b
+		add_political_power = -15
+
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = social_conservative
+				popularity = 0.01
+			}
+	}
+}
+
+country_event = {  #银行家联合对政府施压
+	id = focus_FRA.5
+	title = focus_FRA.5.t
+	desc = focus_FRA.5.d
+	is_triggered_only = yes
+	
+	option = {
+		name = focus_FRA.5.a
+		add_stability = -0.02
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = anarchism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+	}
+	option = {
+		name = focus_FRA.5.b
+		add_political_power = -15
+		add_popularity = {
+				ideology = populism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_conservative
+				popularity = 0.04
+			}
+	}
+}
+
+country_event = {  #右翼分子对法案不满
+	id = focus_FRA.6
+	title = focus_FRA.6.t
+	desc = focus_FRA.6.d
+	is_triggered_only = yes
+	option = {
+		name = focus_FRA.6.a
+		add_stability = -0.02
+		
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.01
+			}
+		add_popularity = {
+				ideology = populism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = neutrality
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = social_conservative
+				popularity = 0.02
+			}
+	}
+	option = {
+		name = focus_FRA.6.b
+		add_political_power = -15
+		
+		add_popularity = {
+				ideology = social_democrat
+				popularity = 0.03
+			}
+		add_popularity = {
+				ideology = anarchism
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = syndicalist
+				popularity = 0.02
+			}
+		add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+	}
+}
+
+country_event = {  #斯塔维斯基丑闻！
+	id = The_Stavisky_Trial.1
+	title = The_Stavisky_Trial.1.t
+	desc = The_Stavisky_Trial.1.d
+	is_triggered_only = yes
+	option = {
+		name = The_Stavisky_Trial.1.a
+			add_ideas = FRA_scandal_1
+			load_focus_tree = french_focus_2
+			add_popularity = {
+				ideology = 	democratic 
+				popularity = -0.1
+			}
+		add_stability = -0.2
+	}
+}
+
+country_event = {  #政府的公告
+	id = The_Stavisky_Trial.2
+	title = The_Stavisky_Trial.2.t
+	desc = The_Stavisky_Trial.2.d
+	is_triggered_only = yes
+	option = {
+		name = The_Stavisky_Trial.2.a
+		add_popularity = {
+				ideology = 	democratic 
+				popularity = 0.02
+			}
+		add_stability = 0.02
+	}
+}
+
+country_event = {  #肖当辞职
+	id = The_Stavisky_Trial.3
+	title = The_Stavisky_Trial.3.t
+	desc = The_Stavisky_Trial.3.d
+	is_triggered_only = yes
+	option = {
+		name = The_Stavisky_Trial.3.a
+		retire_character = FRA_Camille_Chautemps
+		remove_ideas = {
+			FRA_Camille_Chautemp_1
+			FRA_Camille_Chautemp_2 
+			FRA_Camille_Chautemp_3
+		}
+	}
+}
+
+country_event = {  #在参议院
+	id = The_Stavisky_Trial.4
+	title = The_Stavisky_Trial.4.t
+	desc = The_Stavisky_Trial.4.d
+	is_triggered_only = yes
+	option = {
+		name = The_Stavisky_Trial.4.a
+		
+	}
+}
+
+country_event = {  #舆论扩大
+	id = The_Stavisky_Trial.5
+	title = The_Stavisky_Trial.5.t
+	desc = The_Stavisky_Trial.5.d
+	is_triggered_only = yes
+	option = {
+		name = The_Stavisky_Trial.5.a
+		
+			add_popularity = {
+				ideology = 	democratic 
+				popularity = -0.05
+			}
+			swap_ideas = {
+				remove_idea = FRA_scandal_1
+				add_idea = FRA_scandal_2
+			}
+		add_stability = -0.1
+	}
+}
+
+country_event = {  #黑色圣诞节
+	id = FRA.1
+	title = FRA.1.t
+	desc = FRA.1.d
+	is_triggered_only = yes
+	option = {
+		name = FRA.1.a
+		add_ideas = FRA_E_B_5
+	}
+}

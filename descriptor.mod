@@ -1,0 +1,17 @@
+version="1"
+tags={
+	"Balance"
+}
+replace_path="common/decisions"
+replace_path="common/on_actions"
+replace_path="common/units"
+replace_path="events"
+replace_path="history/units"
+replace_path="history/states"
+replace_path="history/countries"
+replace_path="map"
+replace_path="map/strategicregions"
+replace_path="gfx/loadingscreens"
+name="Throne Reforge Beta Version"
+supported_version="1.16.8"
+remote_file_id="3489559287"

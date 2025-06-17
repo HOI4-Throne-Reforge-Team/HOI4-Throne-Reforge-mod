@@ -1,0 +1,109 @@
+add_namespace = denmark
+add_namespace = norway
+add_namespace = sweden
+add_namespace = iceland
+
+country_event = {
+	id = denmark.1
+	title = denmark.1.t
+	desc = denmark.1.d
+	is_triggered_only = yes
+	option = {
+		name = denmark.1.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 15
+		add_stability = 0.02
+	}
+}
+country_event = {
+	id = denmark.2
+	title = denmark.2.t
+	desc = denmark.2.d
+	is_triggered_only = yes
+	option = {
+		name = denmark.2.a
+		ai_chance = {
+			base = 100
+		}
+
+	}
+}	
+country_event = {
+	id = norway.1
+	title = norway.1.t
+	desc = norway.1.d
+	is_triggered_only = yes
+	option = {
+		name = norway.1.a  #接受合并
+		ai_chance = {
+			base = 100	
+		}	
+		DEN = {
+			puppet = NOR
+		}
+	}
+	option = {
+		name = norway.1.b  #objection!
+		ai_chance = {
+			base = 0
+		}
+		leave_faction = yes	
+		declare_war_on = {
+            target = DEN
+        }
+	}
+}
+country_event = {
+	id = sweden.1
+	title = sweden.1.t
+	desc = sweden.1.d
+	is_triggered_only = yes
+	option = {
+		name = sweden.1.a  #接受合并
+		ai_chance = {
+			base = 50
+		}	
+		DEN = {
+			puppet = SWE
+		}
+	}
+	option = {
+		name = sweden.1.b  #objection!
+		ai_chance = {
+			base = 100
+		}
+		leave_faction = yes	
+		declare_war_on = {
+            target = DEN
+        }
+	}
+}
+country_event = {
+	id = iceland.1
+	title = iceland.1.t
+	desc = iceland.1.d
+	is_triggered_only = yes
+	option = {
+		name = iceland.1.a  #接受合并
+		ai_chance = {
+			base = 100
+		}	
+		DEN = {
+			puppet = ice
+		}
+	}
+	option = {
+		name = iceland.1.b  #objection!
+		ai_chance = {
+			base = 0
+		}
+		declare_war_on = {
+            target = DEN
+        }
+	}
+}
+
+
+

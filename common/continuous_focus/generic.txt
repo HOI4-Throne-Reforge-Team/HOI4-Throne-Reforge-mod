@@ -1,0 +1,6 @@
+continuous_focus_palette = {
+	id = generic_focus
+	default = no
+
+	position = { x = 10000 y = 10000 }
+}

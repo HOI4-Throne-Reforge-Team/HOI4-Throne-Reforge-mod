@@ -1,0 +1,33 @@
+state={
+	id=622
+	name="STATE_622"
+	resources={
+		steel=3.000
+		tungsten=3.000
+	}
+
+	history={
+		owner = WCG
+		add_core_of = WCG
+		add_core_of = CHI
+		victory_points = {
+			8049 5
+		}
+		victory_points = {
+			7659 10
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		 8049 7208 1458 12356 10880 7314 7659
+	}
+	manpower=7006200
+	state_category=rural
+
+	local_supplies=0.0 
+}

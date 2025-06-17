@@ -1,0 +1,32 @@
+
+state = {
+	id = 1072
+	name = "STATE_1072"
+	manpower = 6494951
+	
+	state_category =rural
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = WCG
+		add_core_of = WCG
+		add_core_of = CHI
+		victory_points = {
+			4256 5
+		}
+		victory_points = {
+			7418 1
+		}
+
+	}
+
+	provinces = {
+		7418 4167 4256 4295 10257 7406
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,190 @@
+##########################
+# Persia #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "PER_light_armor_attack_animation"
+	file = "PER_light_armor_attack.anim"
+}
+
+animation = {
+	name = "PER_light_armor_idle_animation"
+	file = "PER_light_armor_idle.anim"
+}
+
+animation = {
+	name = "PER_light_armor_moving_animation"
+	file = "PER_light_armor_moving.anim"
+}
+
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "PER_medium_armor_attack_animation"
+	file = "PER_medium_armor_attack.anim"
+}
+
+animation = {
+	name = "PER_medium_armor_idle_animation"
+	file = "PER_medium_armor_idle.anim"
+}
+
+animation = {
+	name = "PER_medium_armor_moving_animation"
+	file = "PER_medium_armor_moving.anim"
+}
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
+
+##########################
+# Afganistan #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "AFG_light_armor_0_attack_animation"
+	file = "AFG_light_armor_0_attack.anim"
+}
+
+animation = {
+	name = "AFG_light_armor_0_idle_animation"
+	file = "AFG_light_armor_0_idle.anim"
+}
+
+animation = {
+	name = "AFG_light_armor_0_moving_animation"
+	file = "AFG_light_armor_0_moving.anim"
+}
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "AFG_modern_armor_attack_animation"
+	file = "AFG_modern_armor_attack.anim"
+}
+
+animation = {
+	name = "AFG_modern_armor_idle_animation"
+	file = "AFG_modern_armor_idle.anim"
+}
+
+animation = {
+	name = "AFG_modern_armor_moving_animation"
+	file = "AFG_modern_armor_moving.anim"
+}
+
+##########################
+# Iraq #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "IRQ_light_armor_attack_animation"
+	file = "IRQ_light_armor_attack.anim"
+}
+
+animation = {
+	name = "IRQ_light_armor_idle_animation"
+	file = "IRQ_light_armor_idle.anim"
+}
+
+animation = {
+	name = "IRQ_light_armor_moving_animation"
+	file = "IRQ_light_armor_moving.anim"
+}
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "IRQ_medium_armor_attack_animation"
+	file = "IRQ_medium_armor_attack.anim"
+}
+
+animation = {
+	name = "IRQ_medium_armor_idle_animation"
+	file = "IRQ_medium_armor_idle.anim"
+}
+
+animation = {
+	name = "IRQ_medium_armor_moving_animation"
+	file = "IRQ_medium_armor_moving.anim"
+}
+
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------
+
+##########################
+# Raj #
+##########################
+
+### Light ------------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "RAJ_light_armor_attack_animation"
+	file = "RAJ_light_armor_attack.anim"
+}
+
+animation = {
+	name = "RAJ_light_armor_idle_animation"
+	file = "RAJ_light_armor_idle.anim"
+}
+
+animation = {
+	name = "RAJ_light_armor_moving_animation"
+	file = "RAJ_light_armor_moving.anim"
+}
+
+
+### Medium -----------------------------------------------------------------------------------------------------------------
+
+### Heavy ------------------------------------------------------------------------------------------------------------------
+
+### Super Heavy ------------------------------------------------------------------------------------------------------------
+
+animation = {
+	name = "RAJ_super_heavy_armor_attack_animation"
+	file = "RAJ_super_heavy_armor_attack.anim"
+}
+
+animation = {
+	name = "RAJ_super_heavy_armor_idle_animation"
+	file = "RAJ_super_heavy_armor_idle.anim"
+}
+
+animation = {
+	name = "RAJ_super_heavy_armor_moving_animation"
+	file = "RAJ_super_heavy_armor_moving.anim"
+}
+
+
+### Modern -----------------------------------------------------------------------------------------------------------------

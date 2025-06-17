@@ -1,0 +1,741 @@
+ideas = {
+	country = {
+		SPR_spain_expansionism = { #西班牙扩张主义 
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				offence = 0.025
+				defence = 0.025
+				recon_factor = 0.1
+				naval_invasion_prep_speed = 0.25
+				naval_invasion_capacity = 10
+				naval_invasion_penalty = -0.5
+				war_support_factor = 0.2
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension_against = -0.25
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_victors_of_the_spain_usa_war = { #西美战争的胜利者
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				offence = -0.20
+				defence = 0.15
+				war_support_factor = 0.2
+				command_power_gain = 0.15
+				land_doctrine_cost_factor = 0.5
+			}
+			research_bonus = { 
+				air_equipment = -0.25
+				armor = -0.25
+				infantry_weapons = -0.25
+				artillery = -0.25
+			}
+			#picture = 
+		}
+		SPR_red_threat = { #红色威胁
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				communism_drift = 0.05
+				syndicalist_drift = 0.05
+				anarchism_drift = 0.05
+				stability_factor = -0.25
+				production_speed_industrial_complex_factor = -0.15
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				resistance_target = 0.5
+			}
+			
+			#picture = 
+		}
+		SPR_french_aid = { #法国援助
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				consumer_goods_factor = -0.2
+				political_power_factor = -0.2
+			}
+			#picture = 
+		}
+		SPR_fleet_reconstruction_underway = { #舰队重建进行时
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				industrial_capacity_dockyard = -0.1
+				naval_damage_factor = -0.15
+				naval_defense_factor = -0.15
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = 0.25
+					instant = yes
+				}
+			}
+			#picture = 
+		}
+	}
+
+
+
+	country = {
+		SPR_spain_renaissance = { #西班牙的伟大复兴
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				political_power_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				consumer_goods_factor = -0.15
+				research_speed_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_spain_support = { #西班牙的支持
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				offence = 0.15
+				defence = 0.15
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.15
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_stronger_bonaparte = { #更强大的波拿巴
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				offence = 0.25
+				defence = 0.25
+				army_org_factor = 0.25
+				army_org_regain = 0.25
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_bonaparte_orthodoxy = { #波拿巴正统
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			
+			#picture = 
+		}
+		SPR_bonaparte_orthodoxy_1 = { #美洲北进
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				army_breakthrough_against_major_factor = 0.1
+				army_breakthrough_against_minor_factor = 0.1
+			}
+			
+			#picture = 
+		}
+		SPR_bonaparte_orthodoxy_2 = { #攻入巴黎
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				army_org = 5
+				army_morale = 5
+			}
+			
+			#picture = 
+		}
+		SPR_bonaparte_orthodoxy_3 = { #远东扩张
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				naval_invasion_prep_speed = 0.35
+				naval_invasion_penalty = -0.35
+			}
+			
+			#picture = 
+		}
+		SPR_bonaparte_orthodoxy_4 = { #北非突进
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				acclimatization_hot_climate_gain_factor = 0.5
+				army_speed_factor = 0.1
+			}
+			
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_speed_up_production_1 = { #加快生产
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+			#picture = 
+		}
+		SPR_speed_up_production_2 = { #加快生产
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_forced_plunder = { #强制掠夺
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor = 0.15
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_industrial_power = { #工业强国
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				global_building_slots_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_second_spain_american_war = { #第二次西美战争
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_king_position = {   #王位更替1
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				consumer_goods_factor = 0.45
+				political_power_factor = -0.5
+				political_advisor_cost_factor = 1
+			}
+		}
+		SPR_king_position_2 = {   #王位更替2
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.4
+				consumer_goods_factor = 0.36
+				political_power_factor = -0.4
+				political_advisor_cost_factor = 0.8
+			}
+		}
+		SPR_king_position_3 = {   #王位更替3
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+			modifier = {
+				stability_factor =  -0.3
+				war_support_factor = -0.3
+				consumer_goods_factor = 0.27
+				political_power_factor = -0.3
+				political_advisor_cost_factor = 0.6
+			}
+			
+		}
+		SPR_king_position_4 = {   #王位更替4
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.18
+				political_power_factor = -0.2
+				political_advisor_cost_factor = 0.4
+			}
+		}
+		SPR_king_position_5 = {   #王位更替5
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.09
+				political_power_factor = -0.1
+				political_advisor_cost_factor = 0.2
+			}
+		}
+	}
+
+	country = {
+		SPR_new_king_rule = { #新王之治
+
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.15
+				political_power_factor = 0.25
+			}
+			
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_afangso_thirteen = { #阿方索十三世
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.1
+			}
+			
+			#picture = 
+		}
+		SPR_napoleon_I = { #拿破仑一世
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				offence = 0.075
+				defence = 0.075
+				command_power_gain = 0.15
+				production_speed_arms_factory_factor = 0.05
+			}
+			
+			#picture = 
+		}
+		SPR_flangzzethev_I = { #费朗茨 约瑟夫一世
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				stability_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+			
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_traditionalism = {  #传统主义1
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				paternal_autocrat_drift = 0.05
+				offence = -0.05
+			}
+			
+			#picture = 
+		}
+
+	
+		SPR_traditionalism_3 = {  #“君主立宪”
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				army_armor_attack_factor = -0.05
+				motorized_attack_factor = -0.05
+				mechanized_attack_factor = -0.05
+				paternal_autocrat_drift = 0.05
+				democratic_acceptance = 50
+				stability_factor = 0.05
+			}
+			
+			#picture = 
+		}
+
+		SPR_royal = {  #皇室优先
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+			
+			#picture = 
+		}
+	}
+
+	country = {
+		SPR_military_power = {  #军权
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+				land_doctrine_cost_factor = -0.1
+			}
+		}
+		SPR_military_power_1 = {  #中央集权
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				army_org_factor = 0.1
+				army_org_regain = 0.1
+				land_doctrine_cost_factor = -0.1
+				consumer_goods_factor = -0.1
+				paternal_autocrat_drift = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SPR_juan_carlos_I = {  #胡安 卡洛斯一世
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.025
+				production_speed_buildings_factor = 0.025
+			}
+		}
+	}
+
+	country = {
+		SPR_violent_repression = {  #暴力镇压
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.25
+				communism_drift = -0.05
+				syndicalist_drift = -0.05
+				anarchism_drift = -0.05
+			}
+		}
+	}
+
+	country = {
+		SPR_carlist_legitimism = {  #卡洛斯正统主义
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				communism_drift = -0.05
+				syndicalist_drift = -0.05
+				anarchism_drift = -0.05
+				populism_drift = -0.05
+				fascism_drift = -0.05
+				paternal_autocrat_drift = 0.1
+				democratic_acceptance = 50
+				stability_factor = 0.15
+				defence = 0.2
+				army_org_factor = 0.15
+				army_org_regain = 0.15
+				land_doctrine_cost_factor = -0.1
+				air_doctrine_cost_factor = -0.1
+				naval_doctrine_cost_factor = -0.1
+				production_speed_buildings_factor = 0.25
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+}

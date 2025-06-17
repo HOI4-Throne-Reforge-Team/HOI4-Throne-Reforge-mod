@@ -1,0 +1,26 @@
+
+state = {
+	id = 1063
+	name = "STATE_1063"
+	manpower = 18757601
+	
+	state_category =large_town
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = NCG
+		add_core_of = CHI
+		add_core_of = NCG
+
+	}
+
+	provinces = {
+		4037 10043 12015 4181 1124 7055 1154
+	}
+
+	local_supplies = 0.0 
+}

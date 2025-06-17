@@ -1,0 +1,33 @@
+state={
+	id=1100
+    name="STATE_1100"
+	manpower = 163947
+	resources={
+
+	}
+	
+	state_category = town
+
+	history= {
+		owner = ISC
+		victory_points = {
+			11811 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+		add_core_of = TUR
+
+
+	}
+	provinces=
+	{
+        11811 3851 13412	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,32 @@
+state={
+	id=620
+	name="STATE_620"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = HBJ
+		buildings = {
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 3
+
+		}
+		victory_points = {
+			4619 40
+		}
+		victory_points={ 9959 2 }
+
+
+
+	}
+
+	provinces={
+		4619 1036 12467 7167 9959 7637 10462 4631
+	}
+	manpower=21749010
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=2.0 
+}

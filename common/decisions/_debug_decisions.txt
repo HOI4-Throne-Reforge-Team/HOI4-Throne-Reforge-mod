@@ -1,0 +1,444 @@
+debug_decisions = {
+	debug_show_decisions = {
+		priority = 100
+		allowed = {
+			always = yes
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			NOT = { has_global_flag = show_debug_decisions_flag }
+		}
+		complete_effect = {
+			set_global_flag = show_debug_decisions_flag
+		}
+	}
+ 
+	debug_hide_decisions = {
+		priority = -1
+		allowed = {
+			always = yes 
+		}
+
+		visible = {
+			is_ai = no
+			is_debug = yes
+			has_global_flag = show_debug_decisions_flag
+		}
+		complete_effect = {
+			clr_global_flag = show_debug_decisions_flag
+		}
+	}
+
+	PUS_ANNEX_ALL_GERMANY_STATES_AND_ADD_CORES = {
+		cost = 0
+		days_remove = 0
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		available = {
+			NOT = {
+				has_global_flag = The_German_state_already_existed
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = debug_PUS_BIG_GER
+			hidden_effect = {
+				HNV = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				WEI = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				OLD = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				NAS = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				AUS = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				BHM = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				SAX = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				BAD = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				WUT = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				SCH = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				HLS = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				HES = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+				BAY = {
+					transfer_units_fraction = {
+						target = PUS
+						army_ratio = 1
+						air_ratio = 1
+						navy_ratio = 1
+					}
+				}
+			
+			PUS = {
+				transfer_state = 60
+				transfer_state = 1080
+				transfer_state = 1081
+				transfer_state = 1084
+				transfer_state = 1088
+				transfer_state = 1041
+				transfer_state = 978
+				transfer_state = 8
+				transfer_state = 42
+				transfer_state = 50
+				transfer_state = 51
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 54
+				transfer_state = 55
+				transfer_state = 56
+				transfer_state = 57
+				transfer_state = 58
+				transfer_state = 59
+				transfer_state = 61
+				transfer_state = 62
+				transfer_state = 63
+				transfer_state = 64
+				transfer_state = 65
+				transfer_state = 66
+				transfer_state = 67
+				transfer_state = 68
+				transfer_state = 1043
+				transfer_state = 1017
+				transfer_state = 1018
+				transfer_state = 1019
+				transfer_state = 1020
+				transfer_state = 1021
+				transfer_state = 1022
+				transfer_state = 1023
+				transfer_state = 1024
+				transfer_state = 1096
+				transfer_state = 1098
+				transfer_state = 1046
+				transfer_state = 1109
+				transfer_state = 1095
+				transfer_state = 909
+				transfer_state = 912
+				transfer_state = 86
+				transfer_state = 85
+				transfer_state = 762
+				transfer_state = 763
+				transfer_state = 188
+				transfer_state = 807
+				transfer_state = 5
+				transfer_state = 69
+				transfer_state = 9
+				transfer_state = 972
+				transfer_state = 72
+				transfer_state = 74
+				transfer_state = 75
+				transfer_state = 4
+				transfer_state = 976
+				transfer_state = 152
+				transfer_state = 153
+				transfer_state = 853
+				transfer_state = 848
+				transfer_state = 102
+				transfer_state = 39
+				transfer_state = 28
+				transfer_state = 736
+				transfer_state = 852
+				transfer_state = 850
+				transfer_state = 975
+			}
+			PUS = {
+				add_state_core = 60 
+				add_state_core = 1080
+				add_state_core = 1081
+				add_state_core = 1084
+				add_state_core = 1088
+				add_state_core = 1041
+				add_state_core = 978
+				add_state_core = 8
+				add_state_core = 42
+				add_state_core = 50
+				add_state_core = 51
+				add_state_core = 52
+				add_state_core = 53
+				add_state_core = 54
+				add_state_core = 55
+				add_state_core = 56
+				add_state_core = 57
+				add_state_core = 58
+				add_state_core = 59
+				add_state_core = 61
+				add_state_core = 62
+				add_state_core = 63
+				add_state_core = 64
+				add_state_core = 65
+				add_state_core = 66
+				add_state_core = 67
+				add_state_core = 68
+				add_state_core = 1043
+				add_state_core = 1017
+				add_state_core = 1018
+				add_state_core = 1019
+				add_state_core = 1020
+				add_state_core = 1021
+				add_state_core = 1022
+				add_state_core = 1023
+				add_state_core = 1024
+				add_state_core = 1096
+				add_state_core = 1098
+				add_state_core = 1046
+				add_state_core = 1109
+				add_state_core = 1095
+				add_state_core = 909
+				add_state_core = 912
+				add_state_core = 86
+				add_state_core = 85
+				add_state_core = 762
+				add_state_core = 763
+				add_state_core = 188
+				add_state_core = 807
+				add_state_core = 5
+				add_state_core = 69
+				add_state_core = 9
+				add_state_core = 972
+				add_state_core = 74
+				add_state_core = 75
+				add_state_core = 4
+				add_state_core = 976
+				add_state_core = 152
+				add_state_core = 153
+				add_state_core = 853
+				add_state_core = 848
+				add_state_core = 102
+				add_state_core = 39
+				add_state_core = 28
+				add_state_core = 736
+				add_state_core = 852
+			}
+			1095 = {
+				set_demilitarized_zone = no
+			}
+			51 = {
+				set_demilitarized_zone = no
+			}
+			42 = {
+				set_demilitarized_zone = no
+			}
+			PUS = {
+				set_cosmetic_tag = PUS_BIG_GER
+				set_global_flag = The_German_state_already_existed
+			}
+		}
+		}
+	}
+	PUS_Change_ideologie_communist = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = communism
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_syndicalist = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = syndicalist
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_social_democrat = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = social_democrat
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_democratic = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = democratic
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_social_conservative = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = social_conservative
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_neutrality = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_paternal_autocrat = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = paternal_autocrat
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_populism = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = populism
+				}
+			}
+		}
+	}
+	PUS_Change_ideologie_fascism = {
+		visible = {
+			tag = PUS
+			has_global_flag = show_debug_decisions_flag
+		}
+		cost = 0
+		days_remove = 0
+		remove_effect = {
+			PUS = {
+				set_politics = {
+					ruling_party = fascism
+				}
+			}
+		}
+	}
+}

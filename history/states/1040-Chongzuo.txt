@@ -1,0 +1,28 @@
+
+state = {
+	id = 1040
+	name = "STATE_1040"
+	manpower = 241054
+	
+	state_category = rural
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 1 #was: 7
+		}
+		owner = FRC
+		add_core_of = CHI
+		add_core_of = GXC
+		victory_points={
+			4121 3
+		}
+	}
+
+	provinces = {
+		4177 1469 4121 4656
+	}
+
+	local_supplies = 0.0 
+}

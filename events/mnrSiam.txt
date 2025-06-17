@@ -1,0 +1,393 @@
+﻿###########################
+# Siam Events
+###########################
+
+add_namespace = mnrSiam
+
+# Ask for French claims needed for formable
+country_event = {
+	id = mnrSiam.1
+	title = mnrSiam.1.t
+	desc = mnrSiam.1.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.1.a
+		ai_chance = {
+			factor = 90
+			modifier = { # Increase it if in faction
+				add = 2.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 5
+			}
+		}
+		SIA = { transfer_state = 670 }
+		SIA = { transfer_state = 741 }
+	}
+	option = {
+		name = mnrSiam.1.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Demand claims needed for formable
+country_event = {
+	id = mnrSiam.2
+	title = mnrSiam.2.t
+	desc = mnrSiam.2.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.2.a
+		ai_chance = {
+			factor = 90
+			modifier = { # Increase it if in faction
+				add = 5.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 25
+			}
+		}
+		SIA = { transfer_state = 670 }
+		SIA = { transfer_state = 741 }
+	}
+	option = {
+		name = mnrSiam.2.b
+		ai_chance = {
+			factor = 10
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 670 }
+			}
+		}
+	}
+}
+
+# Demand vietnam
+country_event = {
+	id = mnrSiam.3
+	title = mnrSiam.3.t
+	desc = mnrSiam.3.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.3.a
+		ai_chance = {
+			factor = 70
+			modifier = { # Increase it if in faction
+				add = 5.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 35
+			}
+		}
+		SIA = { transfer_state = 286 }
+		SIA = { transfer_state = 671 }
+	}
+	option = {
+		name = mnrSiam.3.b
+		ai_chance = {
+			factor = 30
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 286 }
+			}
+		}
+	}
+}
+
+# Demand Singapore
+country_event = {
+	id = mnrSiam.4
+	title = mnrSiam.4.t
+	desc = mnrSiam.4.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.4.a
+		ai_chance = {
+			factor = 70
+			modifier = { # Increase it if in faction
+				add = 5.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 35
+			}
+		}
+		SIA = { transfer_state = 336 }
+	}
+	option = {
+		name = mnrSiam.4.b
+		ai_chance = {
+			factor = 30
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 336 }
+			}
+		}
+	}
+}
+
+# Demand Burma
+country_event = {
+	id = mnrSiam.5
+	title = mnrSiam.5.t
+	desc = mnrSiam.5.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.5.a
+		ai_chance = {
+			factor = 50
+			modifier = { # Increase it if in faction
+				add = 5.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 35
+			}
+		}
+		SIA = { transfer_state = 288 }
+		SIA = { transfer_state = 640 }
+	}
+	option = {
+		name = mnrSiam.5.b
+		ai_chance = {
+			factor = 50
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 288 }
+			}
+		}
+	}
+}
+
+# Demand Yunan
+country_event = {
+	id = mnrSiam.6
+	title = mnrSiam.6.t
+	desc = mnrSiam.6.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.6.a
+		ai_chance = {
+			factor = 50
+			modifier = { # Increase it if in faction
+				add = 5.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 35
+			}
+		}
+		SIA = { transfer_state = 325 }
+		SIA = { transfer_state = 747 }
+	}
+	option = {
+		name = mnrSiam.6.b
+		ai_chance = {
+			factor = 50
+		}
+		SIA = {
+			create_wargoal = {
+				type = take_state_focus
+				target = ROOT
+				generator = { 325 }
+			}
+		}
+	}
+}
+
+# event to cause the revolting nation to declare independence
+country_event = {
+	id = mnrSiam.7
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		OVERLORD = {
+			country_event = {
+				id = mnrpuppet.2
+				days = 3
+			}
+		}
+	}
+}
+
+# Ask to purchase vietnam
+country_event = {
+	id = mnrSiam.8
+	title = mnrSiam.8.t
+	desc = mnrSiam.8.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.8.a
+		ai_chance = {
+			factor = 90
+			modifier = { # Increase it if in faction
+				add = 2.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 5
+			}
+		}
+		SIA = { transfer_state = 286 }
+		SIA = { transfer_state = 671 }
+		286 = {
+			owner = {
+				add_political_power = 100
+			}
+		}
+	}
+	option = {
+		name = mnrSiam.8.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Ask to purchase Singapore
+country_event = {
+	id = mnrSiam.9
+	title = mnrSiam.9.t
+	desc = mnrSiam.9.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = mnrSiam.9.a
+		ai_chance = {
+			factor = 90
+			modifier = { # Increase it if in faction
+				add = 2.0
+				SIA = {
+					is_in_faction = yes
+				}
+			}
+			modifier = { # Increase it if in faction with us
+				ROOT = {
+					is_in_faction_with = SIA
+				}
+				add = 10
+			}
+			modifier = { # Increase it if we are at war
+				has_war = yes
+				add = 5
+			}
+		}
+		SIA = { transfer_state = 336 }
+		336 = {
+			owner = {
+				add_political_power = 100
+			}
+		}
+	}
+	option = {
+		name = mnrSiam.9.b
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

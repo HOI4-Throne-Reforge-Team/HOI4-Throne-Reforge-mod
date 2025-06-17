@@ -1,0 +1,27 @@
+state={
+	id=1117
+	name="STATE_1117"#近畿
+	manpower = 6423000
+	
+	state_category = city
+
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = JAP
+		victory_points = {
+			11960 20
+		}
+	}
+
+	provinces={
+	9985 12031 1136 11960 1067 4142
+	}
+
+	local_supplies=1.0 
+}

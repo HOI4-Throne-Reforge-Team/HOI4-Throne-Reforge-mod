@@ -1,0 +1,671 @@
+ideas = {
+	country = {
+		Attach_importance_to_defense = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.1
+				dig_in_speed_factor = 0.1
+	            max_dig_in = 5
+			}
+		}
+
+		Attach_importance_to_offense = {
+			picture = generic_war_preparation
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				max_planning = 0.05
+				planning_speed = 0.1
+			}
+		}
+
+		wolf_tactics = {
+			picture = FIN_lone_wolf
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				naval_speed_factor = 0.05
+				navy_max_range_factor = 0.1
+				spotting_chance = 0.1
+			}
+		}
+
+		ultimate_tactics = {
+			picture = CZE_planning_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = -0.1
+				experience_gain_army_unit_factor = 0.15
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+			}
+		}
+
+		develop_industry = {
+			picture = SOV_third_five_year_plan
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+
+		develop_civilian_industries = {
+			picture = SOV_third_five_year_plan_civilian
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cencel = {
+				has_idea = develop_military_industry
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+
+		develop_military_industry = {
+			picture = SOV_third_five_year_plan_military
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cencel = {
+				has_idea = develop_civilian_industries
+			}
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+
+	    study_nuclear_weapons = {
+			picture = generic_research_bonus
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			cencel = {
+				has_idea = develop_civilian_industries
+			}
+
+			modifier = {
+				special_project_speed_factor = 0.15
+			}
+		}
+
+		ai_nationalism = {
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+				democratic_drift = -0.05 
+				communism_drift = -0.05 
+				neutrality_drift = -0.05
+			}
+		}
+
+		ai_communism = {
+			picture = generic_infantry_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = -0.05
+				democratic_drift = -0.05 
+				communism_drift = 0.05 
+				neutrality_drift = -0.05
+			}
+		}
+
+		recruitment_plan = {
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.03
+				mobilization_speed = 0.1
+			}
+		}
+
+		initiate_war_mobilization = {
+			picture = generic_intel_bonus
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				military_leader_cost_factor = -0.50
+				training_time_army_factor = -0.15
+			}
+		}
+
+		war_mobilization = {
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		fascist_system = {
+			picture = generic_manpower_bonus
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				subversive_activites_upkeep = -0.25
+				justify_war_goal_time = -0.15
+				surrender_limit = 0.1
+			}
+		}
+
+		be_of_ethnic_autonomy_status = {
+			picture = generic_victors_of_ww1
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				autonomy_gain = 0.5
+			}
+		}
+
+		expansion_plan = {
+			picture = HUN_secret_rearmament
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = 0.005
+				max_command_power = 50
+				command_power_gain_mult = 0.1
+			}
+		}
+
+		the_territory_under_the_sun = {
+			picture = SPR_masters_of_our_own_fate
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+	            army_core_defence_factor = 0.05
+				army_attack_factor = 0.05
+	            army_defence_factor = 0.05
+			}
+		}
+
+		war_fever = {
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offensive_war_stability_factor = 0.2
+				war_stability_factor = 0.2
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				army_breakthorugh_against_major_factor = 0.1
+			}
+		}
+
+		internationalism = {
+			picture = trotskyite_plot_purged
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army_factor = 0.1
+				experience_gain_air_factor = 0.1
+				send_volunteer_size = 2
+				air_volunteer_cap = 2
+			}
+		}
+
+		young_red_army = {
+			picture = ARG_women_in_industry
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+				conscription = 0.03
+			}
+		}
+
+		ideological_indoctrination = {
+			picture = generic_pp_unity_bonus
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.005
+				weekly_manpower = 500
+			}
+		}
+
+		political_reform = {
+			picture = ARG_women_in_industry
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				line_change_production_efficiency_factor = 0.2
+			}
+		}
+
+		defend_the_motherland = {
+			picture = ARG_women_in_industry
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				no_supply_grace = 48
+				resistance_growth_on_our_occupied_states = 0.07
+	            compliance_growth_on_our_occupied_states = -0.07
+				army_core_attack_factor = 0.1
+	            army_core_defence_factor = 0.1
+			}
+		}
+
+		our_path = {
+			picture = SOV_soviet_railways
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				compliance_growth = 0.08
+				resistance_growth = -0.08
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+				army_breakthrough_against_major_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		maintain_deterrence = {
+			picture = generic_production_bonus			
+			
+			allowed = {
+				or = {
+				    has_government = neutrality
+					has_government = democratic
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1			
+	
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_coastal_bunker_factor = 0.2
+				production_speed_anti_air_building_factor = 0.2
+			}
+		}
+
+		precautionary_plan = {
+			picture = EST_democratic_opposition
+			
+			allowed = {
+				or = {
+				    has_government = neutrality
+					has_government = democratic
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_laws_cost_factor = -0.2
+	            trade_laws_cost_factor  = -0.2
+	            economy_cost_factor = -0.2
+				political_advisor_cost_factor = -0.2
+			}
+		}
+
+		preparatory_mobilization_plan = {
+			picture = generic_exploit_mines
+			
+			allowed = {
+				or = {
+				    has_government = neutrality
+					has_government = democratic
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.15
+	            mobilization_speed = 0.25
+			}
+		}
+
+		why_do_we_fight = {
+			picture = generic_purge
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				combat_width_factor = -0.1
+				stability_factor = 0.1
+	            war_support_factor = 0.1
+				operative_slot = 1
+			}
+		}
+
+		strengthen_oneself = {
+			picture = FRA_national_mobilization_focus
+			
+			allowed = {
+				or = {
+				    has_government = neutrality
+					has_government = democratic
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+	            army_morale_factor = 0.15
+				navy_fuel_consumption_factor = -0.2
+	            army_fuel_consumption_factor = -0.2
+	            air_fuel_consumption_factor = -0.2
+			}
+		}
+
+		contact_the_Soviet_Union = {
+			picture = POL_ideology_drift_defence
+			
+			allowed = {
+				has_government = communism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				lend_lease_tension_limit = -0.5
+				communism_drift = 0.01
+				opinion_gain_monthly_same_ideology_factor = 0.25
+				enemy_justify_war_goal_time = 0.25
+			}
+		}
+
+		seeking_protection_from_Germany = {
+			picture = POL_ideology_drift_defence
+			
+			allowed = {
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				min_export = -0.5
+				enemy_justify_war_goal_time = 0.25
+				faction_trade_opinion_factor = 0.5
+			}
+		}
+
+		upgrade_the_intelligence_department = {
+			picture = FIN_maan_turva
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				enemy_operative_capture_chance_factor = 0.15 # 敌方特工被捕几率 0.15
+				enemy_operative_detection_chance = 0.15 # 敌方特工被发现几率补正 0.15
+				enemy_operative_detection_chance_factor = 0.15 # 敌方特工被发现几率系数 0.15
+			}
+		}
+	}
+}

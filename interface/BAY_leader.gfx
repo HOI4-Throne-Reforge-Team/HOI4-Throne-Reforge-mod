@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = Ferdinand_schorner
+		texturefile = "gfx/leaders/BAY/ferdinand_schorner.png"
+	}
+	spriteType = {
+		name = Rupprecht_I
+		texturefile = "gfx/leaders/BAY/rupprecht_I.png"
+	}
+}

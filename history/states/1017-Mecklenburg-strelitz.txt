@@ -1,0 +1,29 @@
+state={
+	id=1017
+	name="STATE_1017"
+	manpower = 806221
+	
+	
+	state_category = town
+
+	history={
+		victory_points = {
+			3258 1
+		}
+		owner = MKS
+		buildings = {
+			infrastructure = 3
+			fuel_silo = 1
+			industrial_complex = 1
+		}
+		add_core_of = MKT
+		
+		add_core_of = PUS
+	}
+
+	provinces={
+		3258  9320
+	}
+
+	local_supplies=3.0 
+}

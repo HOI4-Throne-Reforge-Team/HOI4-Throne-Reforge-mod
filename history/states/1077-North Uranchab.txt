@@ -1,0 +1,27 @@
+
+state = {
+	id = 1077
+	name = "STATE_1077"
+	manpower = 39901
+	
+	state_category =wasteland
+	
+
+	history = {
+
+		buildings = {
+			infrastructure = 0 #was: 7
+		}
+		owner = MON
+		add_core_of = MON
+		add_core_of = CHI
+		add_core_of = WCG
+
+	}
+
+	provinces = {
+		12539 1853 1723
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,390 @@
+AUS_stabilizing_the_situation = {  #稳定局势
+	AUS_chaotic_situation = {  #混乱局势
+		priority = 20
+		icon = generic_ignite_civil_war
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		cancel_trigger = {
+			has_completed_focus = AUS_stability_back_to_austrian
+		}
+		allowed = {
+			
+		}
+		days_mission_timeout = 21
+		fire_only_once = yes
+		activation = {
+			has_completed_focus = AUS_Prager_Fenstersturz
+		}
+		visible = {
+			
+		}
+		
+		cancel_if_not_visible = yes
+		is_good = yes
+		cancel_effect = {
+			add_stability = 0.1
+			add_political_power = 50
+			annex_country = {
+				target = BHM
+			}
+			country_event = event_AUS.1
+		}
+		timeout_effect = {
+			country_event = focus_AUS.6
+		}
+	}
+	AUS_strong_bohemia_government = {   #加强波西米亚政府机构安保
+		priority = 19
+		icon = generic_ignite_civil_war
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = AUS_Emergency
+			if = {
+				limit = {
+					has_completed_focus = AUS_stability_back_to_austrian
+				}
+				always = no
+			}
+		}
+		cost = 25
+		fire_only_once = no
+		days_remove = 14
+		days_re_enable = 7
+		cancel_if_not_visible = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AUS_chaotic_situation
+				days = 14
+			}
+		}
+	}
+	AUS_fucking_stop = {   #都他妈给我停下！
+		priority = 18
+		icon = generic_ignite_civil_war
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = AUS_Emergency
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 7
+		cancel_if_not_visible = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = AUS_chaotic_situation
+				days = 28
+			}
+			add_stability = -0.15
+			9 = {
+				add_manpower = -500
+			}
+		}
+	}
+	AUS_financial_allocation = {   #财政拨款
+		priority = 17
+		icon = generic_ignite_civil_war
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = AUS_Emergency
+		}
+		cost = 0
+		fire_only_once = yes
+		days_remove = 7
+		cancel_if_not_visible = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_political_power = 100
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+		}
+	}
+	AUS_remove_insects = {   #清除虫豸
+		priority = 16
+		icon = generic_ignite_civil_war
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = AUS_internal_chaos_in_government
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 21
+		cancel_if_not_visible = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = AUS_chaotic_government
+				add_idea = AUS_chaotic_government_2
+			}
+		}
+	}
+	AUS_ultranationalist_of_bohemia = {   #扫荡帝国境内的波西米亚极端民族主义者
+		priority = 15
+		icon = generic_ignite_civil_war
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = AUS_plan_of_bohemia
+		}
+		cost = 15
+		fire_only_once = yes
+		days_remove = 21
+		cancel_if_not_visible = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = AUS_bohemian_ultranationalism
+				add_idea = AUS_bohemian_ultranationalism_2
+			}
+		}
+	}
+}
+
+AUS_building_nation_recognize = {  #建立地方民族认同
+	AUS_nation_of_bohemia = {  #建立波希米亞民族认同
+		priority = 30
+		allowed = {
+			
+		}
+		available = {
+			has_completed_focus = AUS_speech_by_emperor
+			any_state = {
+				is_core_of = BHM
+				OWNER = {
+					tag = AUS
+				}
+			}
+		}
+		cost = 100
+		fire_only_once = yes
+		days_remove = 35
+		cancel_if_not_visible = yes
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			AUS = {
+				add_state_core = 6
+				add_state_core = 69
+				add_state_core = 972
+				add_state_core = 75
+				add_state_core = 74
+				add_state_core = 72
+			}
+		}
+	}
+}
+AUS_development_resources_of_state = {  #开发资源
+	AUS_development_resources_of_152 = {  #开采上奥地利铬资源
+		priority = 50
+		icon = chromium
+		ai_will_do = {
+			base = 10
+		}
+		allowed = {
+			original_tag = AUS
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 152
+			}
+		}
+		available = {
+			has_completed_focus = AUS_development_resources
+			has_full_control_of_state = 152
+		}
+		visible = {
+			NOT = { has_country_flag = AUS_152_chromium_flag } 
+			has_full_control_of_state = 152
+		}
+		cancel_if_not_visible = yes
+		days_remove = 200
+		cost = 25
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			152 = { 
+				add_resource = {
+					type = chromium
+					amount = 30
+				}
+			}
+			set_country_flag = AUS_152_chromium_flag
+		}
+	}
+	AUS_development_resources_of_976 = {   #开采施泰尔马克-克恩滕钢资源
+		priority = 40
+		icon = steel
+		ai_will_do = {
+			base = 10
+		}
+		allowed = {
+			original_tag = AUS
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 976
+			}
+		}
+		available = {
+			has_completed_focus = AUS_development_resources
+			has_full_control_of_state = 976
+		}
+		visible = {
+			NOT = { has_country_flag = AUS_976_chromium_flag } 
+			has_full_control_of_state = 976
+		}
+		cancel_if_not_visible = yes
+		days_remove = 200
+		cost = 25
+		modifier = {
+			civilian_factory_use = 7
+		}
+		remove_effect = {
+			976 = { 
+				add_resource = {
+					type = steel
+					amount = 45
+				}
+			}
+			set_country_flag = AUS_976_chromium_flag
+		}
+	}
+	AUS_development_resources_of_848 = {  #开采福拉尔贝格钨资源
+		priority = 30
+		icon = tungsten
+		ai_will_do = {
+			base = 10
+		}
+		allowed = {
+			original_tag = AUS
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 848
+			}
+		}
+		available = {
+			has_completed_focus = AUS_development_resources
+			has_full_control_of_state = 848
+		}
+		visible = {
+			NOT = { has_country_flag = AUS_848_chromium_flag } 
+			has_full_control_of_state = 848
+		}
+		cancel_if_not_visible = yes
+		days_remove = 200
+		cost = 25
+		modifier = {
+			civilian_factory_use = 6
+		}
+		remove_effect = {
+			848 = { 
+				add_resource = {
+					type = tungsten
+					amount = 40
+				}
+			}
+			set_country_flag = AUS_848_chromium_flag
+		}
+	}
+	AUS_development_resources_of_153 = {  #开采蒂罗尔铝资源
+		priority = 20
+		icon = aluminium
+		ai_will_do = {
+			base = 10
+		}
+		allowed = {
+			original_tag = AUS
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 153
+			}
+		}
+		available = {
+			has_completed_focus = AUS_development_resources
+			has_full_control_of_state = 153
+		}
+		visible = {
+			NOT = { has_country_flag = AUS_153_chromium_flag }
+			has_full_control_of_state = 153
+		}
+		cancel_if_not_visible = yes
+		days_remove = 200
+		cost = 25
+		modifier = {
+			civilian_factory_use = 8
+		}
+		remove_effect = {
+			153 = { 
+				add_resource = {
+					type = aluminium
+					amount = 60
+				}
+			}
+			set_country_flag = AUS_153_chromium_flag
+		}
+	}
+}
+AUS_economic = {
+	AUS_development_resource = {  #
+		priority = 20
+		icon = aluminium
+		ai_will_do = {
+			base = 10
+		}
+		allowed = {
+			original_tag = AUS
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 153
+			}
+		}
+		available = {
+			has_full_control_of_state = 153
+		}
+		visible = {
+			has_full_control_of_state = 153
+		}
+		cancel_if_not_visible = yes
+		days_remove = 10
+		cost = 0
+		modifier = {
+			
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = aus.real_gdp
+				value = 0.1
+			}
+		}
+	}
+}

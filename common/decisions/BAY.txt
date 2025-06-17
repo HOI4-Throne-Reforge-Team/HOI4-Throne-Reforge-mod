@@ -1,0 +1,151 @@
+BAY_modern_decision_category = {
+	BAY_build_road_decision_1 = {
+		icon = BAY_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			production_speed_infrastructure_factor = 0.20
+			production_speed_rail_way_factor = 0.20
+			production_speed_supply_node_factor = 0.20
+		}
+	}
+
+	BAY_build_factory_decision_2 = {
+		icon = BAY_decision
+		fire_only_once = no
+		research_bonus = {
+			industry  = 0.15
+		}
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			production_speed_industrial_complex_factor = 0.2
+			conversion_cost_mil_to_civ_factor = -0.15
+		}
+	}
+
+	BAY_build_army_factory_decision_3 = {
+		icon = BAY_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			production_speed_arms_factory_factor = 0.20
+			conversion_cost_civ_to_mil_factor = -0.15
+			military_industrial_organization_funds_gain = 0.2
+		}
+	}
+
+	BAY_build_army_decision_4 = {
+		icon = BAY_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			production_speed_air_base_factor = 0.20
+			production_speed_anti_air_building_factor = 0.20
+			production_speed_radar_station_factor = 0.20
+
+		}
+	}
+
+	BAY_build_oil_decision_5 = {
+		icon = BAY_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			production_speed_fuel_silo_factor = 0.20
+			production_speed_synthetic_refinery_factor = 0.20
+			PRODUCTION_OIL_FACTOR = 0.15
+			
+		}
+	}
+
+	BAY_build_farm_decision_6 = {
+		icon = BAY_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			LOCAL_SUPPLIES = 0.2
+			CONSUMER_GOODS_FACTOR = -0.05
+			monthly_population = 0.05
+		}
+	}
+
+	BAY_research_decision_7 = {
+		icon = BAY_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		
+		allowed = {
+			original_tag = BAY
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		modifier = {
+			RESEARCH_SPEED_FACTOR = 0.05
+			RESEARCH_SPEED_FACTOR_DESC = 0.05
+		}
+	}
+}

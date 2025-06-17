@@ -1,0 +1,61 @@
+﻿l_simp_chinese:
+
+autonomy_viceroyalty: "总督辖区"
+
+
+SPR_Viceroyalty_3: "遥远古国、樱花之地"
+
+SPR_Viceroyalty_PHI: "建立菲律宾总督辖区"
+PHI_SPR: "菲律宾总督辖区"
+
+#####################################################3
+
+SPR_Viceroyalty_tt: "现在，我们将打造属于我们的美洲"
+SPR_Viceroyalty: "新大陆、新秩序"
+
+SPR_Viceroyalty_CUB: "建立哈瓦那直辖区"
+CUB_SPR: "帝国哈瓦那直辖区"
+
+SPR_Viceroyalty_new_spain: "建立新西班牙"
+MEX_SPR: "新西班牙"
+
+SPR_Viceroyalty_new_america: "建立新亚美利加"
+USA_SPR: "新亚美利加"
+
+SPR_Viceroyalty_new_granada: "建立新格拉纳达"
+COL_SPR: "新格拉纳达"
+
+SPR_Viceroyalty_peru: "建立秘鲁总督辖区"
+PRU_SPR: "秘鲁总督辖区"
+
+SPR_Viceroyalty_la_plata: "建立拉普拉塔"
+ARG_SPR: "拉普拉塔"
+
+SPR_Viceroyalty_brazil: "建立巴西总督辖区"
+BRA_SPR: "巴西总督辖区"
+
+###########################################################
+
+SPR_Viceroyalty_2_tt: "我们将打造一个属于西班牙的非洲"
+SPR_Viceroyalty_2: "旧大陆、旧秩序"
+
+SPR_Viceroyalty_MOR: "建立帝国非洲直辖区"
+MOR_SPR: "帝国非洲直辖区"
+
+SPR_Viceroyalty_ALG: "建立北非总督辖区"
+ALG_SPR: "北非总督辖区"
+
+SPR_Viceroyalty_MLI: "建立西非总督辖区"
+MLI_SPR: "西非总督辖区"
+
+SPR_Viceroyalty_COG: "建立中非总督辖区"
+COG_SPR: "中非总督辖区"
+
+SPR_Viceroyalty_TZN: "建立东非总督辖区"
+TZN_SPR: "东非总督辖区"
+
+############################################################################
+SPR_Viceroyalty_4: "西班牙的土地"
+
+SPR_Viceroyalty_AUS: "建立哈布斯堡总督辖区"
+AUS_SPR: "帝国哈布斯堡总督辖区"

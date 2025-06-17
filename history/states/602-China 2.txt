@@ -1,0 +1,38 @@
+state={
+	id=602
+	name="STATE_602"
+	resources={
+		tungsten=6.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = HNJ
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 4
+			arms_factory = 2
+		}
+
+		victory_points = {
+			7097 30
+		}
+		victory_points={
+			12483 1
+		}
+		victory_points={
+			9999 3
+		}
+
+	}
+
+	provinces={
+		9999 13140 7097 1640 13143 12483 10517 13376 13377 13383
+	}
+	manpower=6754132
+	buildings_max_level_factor=1.000
+	state_category=large_city
+
+	local_supplies=0.0 
+}

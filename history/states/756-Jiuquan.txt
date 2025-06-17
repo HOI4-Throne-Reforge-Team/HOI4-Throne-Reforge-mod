@@ -1,0 +1,22 @@
+state={
+	id=756
+	name="STATE_756"
+	provinces={
+		1778 12820 7971 12596 5076 2028 5100 12327 5057 12776 12732
+	}
+	manpower=641610
+	state_category = rural
+	history={
+		owner = GSM
+		add_core_of = GSM
+		add_core_of = GSJ
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 0
+
+		}
+
+	}
+
+	local_supplies=0.0 
+}

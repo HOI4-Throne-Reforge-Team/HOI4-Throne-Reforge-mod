@@ -1,0 +1,65 @@
+﻿l_simp_chinese:
+
+ DEN_Christian_ten_idea: "克里斯蒂安十世"
+ DEN_Christian_ten_idea_desc: "克里斯蒂安十世,丹麦和冰岛的国王"
+
+
+ DEN_Christian_ten: "克里斯蒂安十世"
+ NOR_Haakon_VII: "哈康七世"
+
+ DenUnion: "丹麦皇家联盟"
+
+
+ denmark.1.t: "丹麦的过去"
+ denmark.1.d: "  我们是丹麦，中世纪的北欧之魂。从维京时代的滚滚波涛中崛起，我们的先祖驾驭长船，探索未知，贸易与战火交织，铸就了我们的传奇。哈拉尔·蓝牙王以智慧与力量统一了我们的土地，将基督的十字架带入这片寒冷的海岸，让我们从部落走向王国。瓦尔德马二世的时代，我们的旗帜飘扬在波罗的海，疆域扩张，荣耀加身——那是属于丹麦的黄金岁月。然而，黑死病的阴影曾笼罩我们的村庄，内乱动摇了我们的根基。1397年，我们与瑞典、挪威结成卡尔马联盟，试图在北欧的寒风中携手前行，尽管裂痕已无法挽回,丹麦仍将屹立在世界中!。"
+ denmark.1.a: "父国万岁!"
+
+ denmark.2.t: "卡尔马联盟"
+ denmark.2.d: " 卡尔马联盟,我们的父国曾经的疆域,北欧的霸主,如今,我们需要一个机会,来重建她!"
+ denmark.2.a: "万岁!"
+
+
+
+ norway.1.t: "丹麦要求统一"
+ norway.1.d: "今早,克里斯蒂安十世向奥斯陆发来了一封信件,其中提到丹麦与挪威自古以来就是密不可分的一体,要求挪威政府加入丹麦,由丹麦全权治理挪威"
+ norway.1.a: "说的有道理"
+ norway.1.b: "谁信你他妈的鬼话"
+
+
+
+
+ DEN_READY_TO_FIGHT: "展望过去"
+ DEN_READY_TO_FIGHT_desc: "展望过去"
+ DEN_Kalmarunionen_dream: "卡尔马联盟之梦"
+ DEN_Kalmarunionen_dream_desc: "卡尔马联盟之梦"
+ DEN_denmark: "稳定国内"
+ DEN_denmark_desc: "稳定国内"
+ DEN_denmark_king_is_fvv: "减弱国王权力"
+ DEN_denmark_king_is_fvv_desc: "减弱国王权力"
+ DEN_denmark_king_is__super_fvv: "议会做主"
+ DEN_denmark_king_is__super_fvv_desc: "议会做主"
+ DEN_I_love_denmark: "君主立宪!"
+ DEN_I_love_denmark_desc: "君主立宪!"
+
+
+ DEN_russian_LLL: "在芬兰北部挑起争端"
+ DEN_I_love_u_fra: "交好法国"
+ DEN_buy_gun_FRA: "购买法国枪械"
+ DEN_I_love_u_PRU: "联系普鲁士"
+ DEN_buy_gun_pru: "与普鲁士建立军事合作"
+ DEN_I_love_u_USA: "与美国签订贸易协定"
+ DEN_I_love_u_world: "建立友好关系"
+ DEN_guoji_ganshe: "国际干涉"
+
+ DEN_chongzheng_junbei: "重整军备"
+ DEN_zaici_beizhan: "应对瑞典威胁"
+ DEN_gonggu_bingdao: "巩固冰岛"
+ DEN_xilian_nuowei: "系联挪威"
+ DEN_wending_gelinglan: "稳定格陵兰"
+ DEN_gonggu_bentu_junbei: "加强本土防御"
+ DEN_lieyan_beiou: "北欧的烈焰燃起"
+
+ DEN_bentu_fangyu: "专注防御"
+ DEN_zhudong_jingong: "主动进攻"
+ DEN_plan_b: "B计划"
+ DEN_plan_a: "A计划"

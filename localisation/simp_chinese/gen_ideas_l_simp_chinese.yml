@@ -1,0 +1,73 @@
+﻿l_simp_chinese:
+Attach_importance_to_defense: "重视防御"
+
+Attach_importance_to_offense: "重视进攻"
+
+wolf_tactics: "海狼战术"
+
+ultimate_tactics: "终极战术"
+
+develop_industry: "发展工业"
+
+develop_civilian_industries: "民用工业专业化"
+
+develop_military_industry: "军用工业专业化"
+
+study_nuclear_weapons: "秘密武器"
+
+ai_nationalism: "民族主义"
+
+ai_communism: "共产主义"
+
+recruitment_plan: "征兵项目"
+
+initiate_war_mobilization: "战争动员"
+
+war_mobilization: "战时动员"
+
+fascist_system: "法西斯体制"
+
+be_of_ethnic_autonomy_status: "民族自治"
+
+expansion_plan: "扩张野心"
+
+the_territory_under_the_sun: "我们阳光下的地盘"
+
+war_fever: "战争狂热"
+
+internationalism: "国际主义"
+
+young_red_army: "青年红军"
+
+ideological_indoctrination: "意识形态灌输"
+
+political_reform: "政治改革"
+
+defend_the_motherland: "保卫祖国"
+
+our_path: "我们的路"
+
+maintain_deterrence: "保持威慑"
+
+precautionary_plan: "自我防卫"
+
+preparatory_mobilization_plan: "预备动员"
+
+why_do_we_fight: "为何而战"
+
+strengthen_oneself: "强化自身"
+
+upgrade_the_intelligence_department: "情报部门升级"
+
+contact_the_Soviet_Union: "联系苏联"
+
+seeking_protection_from_Germany: "寻求德国的保护"
+
+gen_zhizaoshang: "外国制造商国有化"
+GER_benz_decision_tt: "解锁决议：§Y外国制造商国有化§!，可以引进奔驰制造商作为坦克制造商§!"
+SOV_okmo_decision_tt: "解锁决议：§Y外国制造商国有化§!，可以引进okmo制造商作为坦克制造商§!"
+
+GER_benz: "引进奔驰制造商"
+SOV_okmo: "引进okmo制造商"
+gen_GER_benz: "解锁奔驰制造商"
+gen_SOV_okmo: "解锁okmo制造商"

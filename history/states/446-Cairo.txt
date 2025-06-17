@@ -1,0 +1,41 @@
+state = {
+	id = 446
+	name = "STATE_446" # Suez
+	manpower = 131732
+	state_category = wasteland
+
+	history = {
+
+		owner = ENG
+		add_core_of = EGY
+
+		buildings = {
+			infrastructure = 3
+			
+			1155 = {
+				naval_base = 2
+			}
+			9947 = {
+				naval_base = 1
+			}
+
+		}
+		
+		victory_points = {
+			1155 5 
+		}
+		
+		victory_points = {
+			9947 3 
+		}
+
+	}
+
+	provinces = {
+		1155 9947 
+	}
+
+	buildings_max_level_factor = 1.000
+	
+	local_supplies = 0.000
+}

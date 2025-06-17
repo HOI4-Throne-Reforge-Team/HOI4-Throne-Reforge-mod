@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = Mikhail_II
+		textureFile = "gfx/leaders/RUS/RUS_Mikhail_II.png"
+	}
+}
