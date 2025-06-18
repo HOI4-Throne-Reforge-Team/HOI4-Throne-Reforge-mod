@@ -1,5 +1,17 @@
 ﻿capital = 46
-
+set_cosmetic_tag = HUROM
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.12.20"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 60
+	fascism = 18
+	communism = 2
+	neutrality = 20
+}
 if = {
 	limit = {
 		NOT = {
@@ -345,19 +357,7 @@ set_convoys = 10
 		}
 	}
 }
-set_cosmetic_tag = HUROM
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1933.12.20"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 60
-	fascism = 18
-	communism = 2
-	neutrality = 20
-}
+
 
 1939.1.1 = {
 	set_politics = {
