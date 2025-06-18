@@ -324,7 +324,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_first_shot_fired
 		cost = 0
 		x = 16
-		y = 31
+		y = 1
 		bypass = {}
 		completion_reward = {}
 	}
@@ -334,7 +334,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Solemn_statement
 		cost = 3
 		x = 12
-		y = 32
+		y = 2
 		prerequisite = {
 			focus = FRA_first_shot_fired
 		}
@@ -355,7 +355,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_No_longer_deceived
 		cost = 3
 		x = 20
-		y = 32
+		y = 2
 		prerequisite = {
 			focus = FRA_first_shot_fired
 		}
@@ -411,7 +411,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Seek_asylum_in_the_Senate
 		cost = 3
 		x = 10
-		y = 33
+		y = 3
 		prerequisite = {
 			focus = FRA_Solemn_statement
 		}
@@ -428,7 +428,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Makeover
 		cost = 3
 		x = 14
-		y = 33
+		y = 3
 		prerequisite = {
 			focus = FRA_Solemn_statement
 		}
@@ -444,7 +444,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_No_Scammers_cabinet
 		cost = 3
 		x = 18
-		y = 33
+		y = 3
 		prerequisite = {
 			focus = FRA_No_longer_deceived
 		}
@@ -460,7 +460,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Joint_conspiracy
 		cost = 3
 		x = 22
-		y = 33
+		y = 3
 		prerequisite = {
 			focus = FRA_No_longer_deceived
 		}
@@ -472,7 +472,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Center-left_coalition
 		cost = 3
 		x = 10
-		y = 34
+		y = 4
 		prerequisite = {
 			focus = FRA_Seek_asylum_in_the_Senate
 		}
@@ -487,7 +487,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Shut_up
 		cost = 3
 		x = 14
-		y = 34
+		y = 4
 		prerequisite = {
 			focus = FRA_Makeover
 		}
@@ -500,7 +500,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Add_fuel_to_the_flames
 		cost = 3
 		x = 18
-		y = 34
+		y = 4
 		prerequisite = {
 			focus = FRA_No_Scammers_cabinet
 		}
@@ -514,7 +514,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Do_a_big_vote
 		cost = 5
 		x = 22
-		y = 34
+		y = 4
 		prerequisite = {
 			focus = FRA_Joint_conspiracy
 		}
@@ -526,7 +526,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 16
-		y = 35
+		y = 5
 		prerequisite = {
 			focus = FRA_Center-left_coalition
 			focus = FRA_Shut_up
@@ -538,666 +538,45 @@ focus_tree = {
 		}
 			
 	}
-}
-
-
-
-	focus_tree = {
-	id = french_focus_3
-
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			tag = FRA
-		}
-	}
-	continuous_focus_position = { x = 4000 y = 4000 }
-
-
+	#陆军国策树
 	focus = {
-		id = FRA_Adjust_monetary_policy
+		id = FRA_Army_focus
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 14
-		y = 3
-		prerequisite = {
-			focus = FRA_Economic_Commission
-		}
-		completion_reward = { 
-			add_political_power = 50
+		x = 32
+		y = 1
+		completion_reward = {
+			
 		}
 	}
 	focus = {
-		id = FRA_French_Frist
+		id = FRA_Army_focus_1
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 1
-		y = 4
+		x = 32
+		y = 2
 		prerequisite = {
-			focus = FRA_Material_planning
+			focus = FRA_Army_focus
 		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = FRA_Coordinate_materials
-				add_idea = FRA_Coordinate_materials_2
-			}
+		completion_reward = {
+			
 		}
 	}
-	focus = {
-		id = FRA_Pit_your_teammates
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 1
-		y = 5
-		prerequisite = {
-			focus = FRA_French_Frist
-		}
-		completion_reward = { 
-			add_ideas = FRA_Rhineland_Aid
-			LAY = {
-				add_ideas = FRA_Aid_to_France
-			}
-		}
-	}
-	focus = {
-		id = FRA_Pit_your_teammates_2
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 1
-		y = 6
-		prerequisite = {
-			focus = FRA_Pit_your_teammates
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Harm_your_brother
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 4
-		prerequisite = {
-			focus = FRA_Material_planning
-		}
-		completion_reward = { 
-
-		}
-	}
-	focus = {
-		id = FRA_Beirut-Marseille_silk_weaving
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 3
-		y = 5
-		prerequisite = {
-			focus = FRA_Harm_your_brother
-		}
-		completion_reward = { 
-			21 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			553 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_Tunisian_agriculture
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 7
-		y = 5
-		prerequisite = {
-			focus = FRA_Harm_your_brother
-		}
-		completion_reward = { 
-			458 = {
-				add_compliance = -0.1
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_Mediterranean_Triangular_trade
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 6
-		prerequisite = {
-			focus = FRA_Beirut-Marseille_silk_weaving
-		}
-		prerequisite = {
-			focus = FRA_Tunisian_agriculture
-		}
-		completion_reward = { 
-			458 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			21 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			553 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_Cash_for_work
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 10
-		y = 4
-		prerequisite = {
-			focus = FRA_Industrial_relief
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = FRA_Industrial_Relief
-				add_idea = FRA_Industrial_Relief_2 
-			}
-		}
-	}
-	focus = {
-		id = FRA_Optimize_Paris
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 9
-		y = 5
-		prerequisite = {
-			focus = FRA_Cash_for_work
-		}
-		completion_reward = { 
-			16 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			1044 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			15 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			1045 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			27 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			18 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			785 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_Improving_South
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 11
-		y = 5
-		prerequisite = {
-			focus = FRA_Cash_for_work
-		}
-		completion_reward = { 
-			735 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			32 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			20 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			21 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			851 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			22 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			26 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			1079 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			31 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			806 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			19 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			25 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			33 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			23 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {
-		id = FRA_Large_infrastructure
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 10
-		y = 6
-		prerequisite = {
-			focus = FRA_Optimize_Paris
-		}
-		prerequisite = {
-			focus = FRA_Improving_South
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = FRA_Industrial_Relief_2
-				add_idea = FRA_Industrial_Relief_3 
-			}
-		}
-	}
-	focus = {
-		id = FRA_franc_depreciated
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 14
-		y = 4
-		prerequisite = {
-			focus = FRA_Adjust_monetary_policy
-		}
-		completion_reward = { 
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 730
-			}
-		}
-	}
-	focus = {
-		id = FRA_State_guarantees
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 14
-		y = 5
-		prerequisite = {
-			focus = FRA_franc_depreciated
-		}
-		completion_reward = { 
-			add_political_power = -100
-		}
-	}
-	focus = {
-		id = FRA_Nationalization_of_finance
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 14
-		y = 6
-		prerequisite = {
-			focus = FRA_State_guarantees
-		}
-		completion_reward = { 
-			16 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = FRA_Napoleonic_legacy
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 9
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Saint-Cyr_College
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 11
-		prerequisite = {
-			focus = FRA_Napoleonic_legacy
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_All-terrain_operations
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 12
-		prerequisite = {
-			focus = FRA_Saint-Cyr_College
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Make_most_it
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 13
-		prerequisite = {
-			focus = FRA_All-terrain_operations
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Logistics_system
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 5
-		y = 14
-		prerequisite = {
-			focus = FRA_Make_most_it
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Continuing_tradition
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 2
-		y = 10
-		prerequisite = {
-			focus = FRA_Napoleonic_legacy
-		}
-		mutually_exclusive = {
-			focus = FRA_Modern_tactics
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Expansion_production
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 1
-		y = 11
-		prerequisite = {
-			focus = FRA_Continuing_tradition
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Train_cannons
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 1
-		y = 12
-		prerequisite = {
-			focus = FRA_Expansion_production
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Fire_coverage
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 1
-		y = 13
-		prerequisite = {
-			focus = FRA_Train_cannons
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Proud_riders
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 3
-		y = 11
-		prerequisite = {
-			focus = FRA_Continuing_tradition
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Guards
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 3
-		y = 12
-		prerequisite = {
-			focus = FRA_Proud_riders
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Stormtroopers
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 3
-		y = 13
-		prerequisite = {
-			focus = FRA_Guards
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Modern_tactics
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 8
-		y = 10
-		prerequisite = {
-			focus = FRA_Napoleonic_legacy
-		}
-		mutually_exclusive = {
-			focus = FRA_Continuing_tradition
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Iron_War_Horse
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 7
-		y = 11
-		prerequisite = {
-			focus = FRA_Modern_tactics
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Tank_production
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 7
-		y = 12
-		prerequisite = {
-			focus = FRA_Iron_War_Horse
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_motorization
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 9
-		y = 11
-		prerequisite = {
-			focus = FRA_Modern_tactics
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_War_funding
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 9
-		y = 12
-		prerequisite = {
-			focus = FRA_motorization
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Advanced_Tank_Research
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 8
-		y = 13
-		prerequisite = {
-			focus = FRA_Tank_production
-			focus = FRA_War_funding
-		}
-		
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Coordinated_operations
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 8
-		y = 14
-		prerequisite = {
-			focus = FRA_Advanced_Tank_Research
-		}
-		
-		completion_reward = { }
-	}
+	#海军国策树
 	focus = {
 		id = FRA_ocean_focus
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 19
-		y = 9
+		x = 59
+		y = 1
 		completion_reward = { }
 	}
 	focus = {
 		id = FRA_Expansion_shipyard
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 12
-		y = 10
+		x = 52
+		y = 2
 		prerequisite = {
 			focus = FRA_ocean_focus
 		}
@@ -1207,8 +586,8 @@ focus_tree = {
 		id = FRA_Dominate_Celtic_Sea
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 11
-		y = 11
+		x = 51
+		y = 3
 		prerequisite = {
 			focus = FRA_Expansion_shipyard
 		}
@@ -1218,8 +597,8 @@ focus_tree = {
 		id = FRA_Consolidation_Mediterranean
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 13
-		y = 11
+		x = 53
+		y = 3
 		prerequisite = {
 			focus = FRA_Expansion_shipyard
 		}
@@ -1229,8 +608,8 @@ focus_tree = {
 		id = FRA_Colonial_Navy
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 12
-		y = 12
+		x = 52
+		y = 4
 		prerequisite = {
 			focus = FRA_Dominate_Celtic_Sea
 			focus = FRA_Consolidation_Mediterranean
@@ -1241,8 +620,8 @@ focus_tree = {
 		id = FRA_New_School
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 16
-		y = 10
+		x = 56
+		y = 2
 		prerequisite = {
 			focus = FRA_ocean_focus
 		}
@@ -1255,8 +634,8 @@ focus_tree = {
 		id = FRA_Silent_Hunter
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 15
-		y = 11
+		x = 55
+		y = 3
 		prerequisite = {
 			focus = FRA_New_School
 		}
@@ -1266,8 +645,8 @@ focus_tree = {
 		id = FRA_Cruising_and_expellation
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 17
-		y = 11
+		x = 57
+		y = 3
 		prerequisite = {
 			focus = FRA_New_School
 		}
@@ -1277,8 +656,8 @@ focus_tree = {
 		id = FRA_Mine_improvements
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 16
-		y = 12
+		x = 56
+		y = 4
 		prerequisite = {
 			focus = FRA_Silent_Hunter
 			focus = FRA_Cruising_and_expellation
@@ -1289,8 +668,8 @@ focus_tree = {
 		id = FRA_Unrestricted_submarine_warfare
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 16
-		y = 13
+		x = 56
+		y = 5
 		prerequisite = {
 			focus = FRA_Mine_improvements
 		}
@@ -1300,8 +679,8 @@ focus_tree = {
 		id = FRA_Cannon_giants
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 22
-		y = 10
+		x = 62
+		y = 2
 		prerequisite = {
 			focus = FRA_ocean_focus
 		}
@@ -1314,8 +693,8 @@ focus_tree = {
 		id = FRA_Naval_aviation
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 21
-		y = 11
+		x = 61
+		y = 3
 		prerequisite = {
 			focus = FRA_Cannon_giants
 		}
@@ -1325,8 +704,8 @@ focus_tree = {
 		id = FRA_Ships_and_guns
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 23
-		y = 11
+		x = 63
+		y = 3
 		prerequisite = {
 			focus = FRA_Cannon_giants
 		}
@@ -1336,8 +715,8 @@ focus_tree = {
 		id = FRA_Give_tit_for_tat
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 22
-		y = 12
+		x = 62
+		y = 4
 		prerequisite = {
 			focus = FRA_Naval_aviation
 			focus = FRA_Ships_and_guns
@@ -1348,8 +727,8 @@ focus_tree = {
 		id = FRA_legacy_of_Battle_Celtic
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 22
-		y = 13
+		x = 62
+		y = 5
 		prerequisite = {
 			focus = FRA_Give_tit_for_tat
 		}
@@ -1359,8 +738,8 @@ focus_tree = {
 		id = FRA_Snow_shame_Trafalgar
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 19
-		y = 14
+		x = 59
+		y = 6
 		prerequisite = {
 			focus = FRA_Unrestricted_submarine_warfare
 			focus = FRA_legacy_of_Battle_Celtic
@@ -1371,8 +750,8 @@ focus_tree = {
 		id = FRA_Landing_drills
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 26
-		y = 10
+		x = 66
+		y = 2
 		prerequisite = {
 			focus = FRA_ocean_focus
 		}
@@ -1382,796 +761,14 @@ focus_tree = {
 		id = FRA_Marine_warfare
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 26
-		y = 11
+		x = 66
+		y = 3
 		prerequisite = {
 			focus = FRA_Landing_drills
 		}
 		completion_reward = { }
 	}
-	focus = {
-		id = FRA_Air_combat_fortresses
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 9
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Ground_Support_Force
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 28
-		y = 10
-		prerequisite = {
-			focus = FRA_Air_combat_fortresses
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Air_Force_Staff
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 10
-		prerequisite = {
-			focus = FRA_Air_combat_fortresses
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Expansion_of_the_airport
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 32
-		y = 10
-		prerequisite = {
-			focus = FRA_Air_combat_fortresses
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Invest_airlines
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 11
-		prerequisite = {
-			focus = FRA_Air_Force_Staff
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Stay_professional
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 29
-		y = 12
-		prerequisite = {
-			focus = FRA_Invest_airlines
-		}
-		mutually_exclusive = {
-			focus = FRA_Increase_production
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Increase_production
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 31
-		y = 12
-		prerequisite = {
-			focus = FRA_Invest_airlines
-		}
-		mutually_exclusive = {
-			focus = FRA_Stay_professional
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Revolutionary_bomber
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 28
-		y = 13
-		prerequisite = {
-			focus = FRA_Stay_professional
-			focus = FRA_Increase_production
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Multi-purpose_aircraft
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 13
-		prerequisite = {
-			focus = FRA_Stay_professional
-			focus = FRA_Increase_production
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Revolutionizing_fighter
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 32
-		y = 13
-		prerequisite = {
-			focus = FRA_Stay_professional
-			focus = FRA_Increase_production
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Air_supremacy
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 14
-		prerequisite = {
-			focus = FRA_Revolutionary_bomber
-			focus = FRA_Multi-purpose_aircraft
-			focus = FRA_Revolutionizing_fighter
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_commotion_spread
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 22
-		y = 0
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Martial_law_in_Paris
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 18
-		y = 1
-		prerequisite = {
-			focus = FRA_commotion_spread
-		}
-		completion_reward = { 
-			if = {
-				limit = {
-					has_intelligence_agency = no
-				}
-				create_intelligence_agency = yes
-			}
-			else = {
-				add_ideas = FRA_Close_monitoring
-			}
-			
-		}
-	}
-	focus = {
-		id = FRA_Close_surveillance
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 26
-		y = 1
-		prerequisite = {
-			focus = FRA_commotion_spread
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Suppression_of_marches
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 22
-		y = 2
-		prerequisite = {
-			focus = FRA_Martial_law_in_Paris
-		}
-		prerequisite = {
-			focus = FRA_Close_surveillance
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Commitment_to_people
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 19
-		y = 3
-		prerequisite = {
-			focus = FRA_Suppression_of_marches
-		}
-		mutually_exclusive = {
-			focus = FRA_Extraordinary_measures
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Democratic_compromise
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 18
-		y = 4
-		prerequisite = {
-			focus = FRA_Commitment_to_people
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Concession_unions
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 20
-		y = 4
-		prerequisite = {
-			focus = FRA_Commitment_to_people
-		}
-		completion_reward = { 
-			add_ideas = FRA_Compromise_with_the_unions
-		}
-	}
-	focus = {
-		id = FRA_Class_reconciliation
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 19
-		y = 5
-		prerequisite = {
-			focus = FRA_Democratic_compromise
-		}
-		prerequisite = {
-			focus = FRA_Concession_unions
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = FRA_Compromise_with_the_unions
-				add_idea = FRA_Compromise_with_the_unions_2
-			}
-		}
-	}
-	focus = {
-		id = FRA_Overcome_the_difficulties_together
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 19
-		y = 6
-		prerequisite = {
-			focus = FRA_Class_reconciliation
-		}
-		completion_reward = { 
-			swap_ideas = {
-				remove_idea = FRA_Compromise_with_the_unions_2
-				add_idea = FRA_Compromise_with_the_unions_3
-			}
-		}
-	}
-	focus = {
-		id = FRA_Extraordinary_measures
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 25
-		y = 3
-		prerequisite = {
-			focus = FRA_Suppression_of_marches
-		}
-		mutually_exclusive = {
-			focus = FRA_Commitment_to_people
-		}
-		completion_reward = { 
-			add_political_power = 50
-		}
-	}
-	focus = {
-		id = FRA_Bloody
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 24
-		y = 4
-		prerequisite = {
-			focus = FRA_Extraordinary_measures
-		}
-		completion_reward = { 
-			16 = {
-				add_manpower = -5000
-			}
-		}
-	}
-	focus = {
-		id = FRA_Shoot_at_the_rebels
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 26
-		y = 4
-		prerequisite = {
-			focus = FRA_Extraordinary_measures
-		}
-		completion_reward = { 
-			add_stability = 0.02
-		}
-	}
-	focus = {
-		id = FRA_Friend_or_foe
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 25
-		y = 5
-		prerequisite = {
-			focus = FRA_Bloody
-		}
-		prerequisite = {
-			focus = FRA_Shoot_at_the_rebels
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Return_to_tranquility
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 25
-		y = 6
-		prerequisite = {
-			focus = FRA_Friend_or_foe
-		}
-		completion_reward = { 
-			add_political_power = 150
-		}
-	}
-	focus = {
-		id = FRA_The_tradition_continues
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 40
-		y = 0
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Power_projection
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 43
-		y = 1
-		prerequisite = {
-			focus = FRA_The_tradition_continues
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Lisbon_gambling
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 47
-		y = 1
-		prerequisite = {
-			focus = FRA_The_tradition_continues
-		}
-		mutually_exclusive = {
-			focus = FRA_De-escalate_the_situation
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_De-escalate_the_situation
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 49
-		y = 1
-		prerequisite = {
-			focus = FRA_The_tradition_continues
-		}
-		mutually_exclusive = {
-			focus = FRA_Lisbon_gambling
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Grab_the_Apennines
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 47
-		y = 2
-		prerequisite = {
-			focus = FRA_Lisbon_gambling
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Anti-communist_pact
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 49
-		y = 2
-		prerequisite = {
-			focus = FRA_De-escalate_the_situation
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Make_sure_the_Netherlands
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 48
-		y = 3
-		prerequisite = {
-			focus = FRA_Grab_the_Apennines
-			focus = FRA_Anti-communist_pact
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Restructuring_of_Belgium
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 52
-		y = 1
-		prerequisite = {
-			focus = FRA_The_tradition_continues
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_The_Rhineland_Question
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 52
-		y = 2
-		prerequisite = {
-			focus = FRA_Restructuring_of_Belgium
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Eating_away_the_Germany
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 51
-		y = 3
-		prerequisite = {
-			focus = FRA_The_Rhineland_Question
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Charge_on_the_Po_Plain
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 53
-		y = 3
-		prerequisite = {
-			focus = FRA_The_Rhineland_Question
-		}
-		completion_reward = {
-			
-		 }
-	}
-	focus = {
-		id = FRA_The_final_blow_to_Europe
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 52
-		y = 4
-		prerequisite = {
-			focus = FRA_Eating_away_the_Germany
-		}
-		prerequisite = {
-			focus = FRA_Charge_on_the_Po_Plain
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Unite_patriotic_youth
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 42
-		y = 2
-		prerequisite = {
-			focus = FRA_Power_projection
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_War_propaganda
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 44
-		y = 2
-		prerequisite = {
-			focus = FRA_Power_projection
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Issued_conscription_order
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 43
-		y = 3
-		prerequisite = {
-			focus = FRA_Unite_patriotic_youth
-		}
-		prerequisite = {
-			focus = FRA_War_propaganda
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_The_Emperor_war
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 43
-		y = 4
-		prerequisite = {
-			focus = FRA_Unite_patriotic_youth
-		}
-		prerequisite = {
-			focus = FRA_Issued_conscription_order
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Revision_of_the_Napoleonic_Code
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 35
-		y = 1
-		prerequisite = {
-			focus = FRA_The_tradition_continues
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Economic_decentralization
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 2
-		prerequisite = {
-			focus = FRA_Revision_of_the_Napoleonic_Code
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Supporting_small_enterprises
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 29
-		y = 3
-		prerequisite = {
-			focus = FRA_Economic_decentralization
-		}
-		mutually_exclusive = {
-			focus = FRA_Controlling_the_economy
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Controlling_the_economy
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 32
-		y = 3
-		prerequisite = {
-			focus = FRA_Economic_decentralization
-		}
-		mutually_exclusive = {
-			focus = FRA_Supporting_small_enterprises
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Handicraft_protection
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 28
-		y = 4
-		prerequisite = {
-			focus = FRA_Supporting_small_enterprises
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Agricultural_protection
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 30
-		y = 4
-		prerequisite = {
-			focus = FRA_Supporting_small_enterprises
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_No_more_unemployed
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 29
-		y = 5
-		prerequisite = {
-			focus = FRA_Handicraft_protection
-			focus = FRA_Agricultural_protection
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Leading_enterprises
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 32
-		y = 4
-		prerequisite = {
-			focus = FRA_Controlling_the_economy
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Nationalization_of_key_industries
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 32
-		y = 5
-		prerequisite = {
-			focus = FRA_Leading_enterprises
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Humanism
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 36
-		y = 2
-		prerequisite = {
-			focus = FRA_Revision_of_the_Napoleonic_Code
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_The_Martinium_Accord
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 34
-		y = 3
-		prerequisite = {
-			focus = FRA_Humanism
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Promote_social_protection
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 34
-		y = 4
-		prerequisite = {
-			focus = FRA_The_Martinium_Accord
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Eradicate_slums
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 34
-		y = 5
-		prerequisite = {
-			focus = FRA_Promote_social_protection
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Expand_citizenship
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 36
-		y = 3
-		prerequisite = {
-			focus = FRA_Humanism
-		}
-		mutually_exclusive = {
-			focus = FRA_Ethnic_segregation
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Cultural_inclusion
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 36
-		y = 4
-		prerequisite = {
-			focus = FRA_Expand_citizenship
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Bloom-Violet_proposal
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 36
-		y = 5
-		prerequisite = {
-			focus = FRA_Cultural_inclusion
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Encourage_immigration
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 36
-		y = 6
-		prerequisite = {
-			focus = FRA_Bloom-Violet_proposal
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Ethnic_segregation
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 38
-		y = 3
-		prerequisite = {
-			focus = FRA_Humanism
-		}
-		mutually_exclusive = {
-			focus = FRA_Expand_citizenship
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Cultural_exclusion
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 38
-		y = 4
-		prerequisite = {
-			focus = FRA_Ethnic_segregation
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Strengthen_assimilation_policies
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 38
-		y = 5
-		prerequisite = {
-			focus = FRA_Cultural_exclusion
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_France_is_unbreakable
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 38
-		y = 6
-		prerequisite = {
-			focus = FRA_Strengthen_assimilation_policies
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_Women_Affirmative_Action
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 40
-		y = 2
-		prerequisite = {
-			focus = FRA_Revision_of_the_Napoleonic_Code
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = FRA_new_family_outlook
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 40
-		y = 3
-		prerequisite = {
-			focus = FRA_Women_Affirmative_Action
-		}
-		completion_reward = { }
-	}
-	}
+}
+
+
+
