@@ -53,6 +53,17 @@ set_autonomy = {
 	target = MON
 	autonomous_state = autonomy_puppet
 }
+MON = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		neutrality = 100
+	}
+}
 set_autonomy = {
 	target = FIN
 	autonomous_state = autonomy_puppet
