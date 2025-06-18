@@ -2,7 +2,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			FRA = {
-				country_event = { id=Start_FRA.1.00 days = 1}
+				country_event = { id = Start_FRA.1 days = 1}
 			}
 			FRA = {
                 news_event = { id = The_Stavisky_Trial.1 days = 330 }
