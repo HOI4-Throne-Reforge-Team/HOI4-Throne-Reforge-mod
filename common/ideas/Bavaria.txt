@@ -194,7 +194,6 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			forced_surrender_limit = 1
 			army_core_attack_factor = 0.25
 			army_core_defence_factor = 0.25
 			supply_combat_penalties_on_core_factor = -0.25
@@ -207,7 +206,6 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			forced_surrender_limit = 1
 			army_core_attack_factor = 0.25
 			army_core_defence_factor = 0.25
 			supply_combat_penalties_on_core_factor = -0.25
@@ -224,7 +222,6 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			forced_surrender_limit = 1
 			army_core_attack_factor = 0.25
 			army_core_defence_factor = 0.25
 			supply_combat_penalties_on_core_factor = -0.25
@@ -241,7 +238,6 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			forced_surrender_limit = 1
 			army_core_attack_factor = 0.25
 			army_core_defence_factor = 0.25
 			supply_combat_penalties_on_core_factor = -0.25
@@ -259,7 +255,6 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			forced_surrender_limit = 1
 			army_core_attack_factor = 0.25
 			army_core_defence_factor = 0.25
 			supply_combat_penalties_on_core_factor = -0.25
@@ -277,7 +272,6 @@ ideas = {
 		}
 		removal_cost = -1
 		modifier = {
-			forced_surrender_limit = 1
 			army_core_attack_factor = 0.25
 			army_core_defence_factor = 0.25
 			supply_combat_penalties_on_core_factor = -0.25
@@ -290,6 +284,39 @@ ideas = {
 			command_power_gain_mult = 0.5
 		}
 		}
+
+		Bavaria_civil_war_left_6 ={#巴伐利亚内战
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			army_core_attack_factor = 0.25
+			army_core_defence_factor = 0.25
+			supply_combat_penalties_on_core_factor = -0.40
+			army_speed_factor_for_controller = 0.35
+			weekly_manpower = 1500
+			consumer_goods_factor = -0.15
+			equipment_capture = 0.4
+			army_org_factor = 0.25
+		}
+		}
+
+		Bavaria_end_attack ={#最终攻势
+		allowed = {
+			always = yes
+		}
+		removal_cost = -1
+		modifier = {
+			army_core_attack_factor = 0.2
+			army_org = 0.2
+			attrition_for_controller = -0.25
+			coordination_bonus = 0.2
+			army_speed_factor_for_controller = 0.2
+		}
+
+		}
+
 
 		Bavaria_reconstruction ={#重建
 		allowed = {

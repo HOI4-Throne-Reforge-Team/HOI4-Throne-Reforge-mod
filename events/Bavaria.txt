@@ -581,9 +581,6 @@ country_event = {#内战！
 		tag = BAY
 	}
 	immediate = {
-		hidden_effect ={
-
-		}
 		hidden_effect = {
 			news_event = {id=BAY.news.2 days=3}
 		}
@@ -634,6 +631,10 @@ country_event = {#内战！
 	        navy_ratio = 0.33
 	        air_ratio = 0.33
 		}
+	}
+
+	hidden_effect = {
+		set_global_flag = BAY_civil_war_flag
 	}
 
 	hidden_effect = {
@@ -689,45 +690,15 @@ country_event = {#内战！
 		add_ideas = {
 			Bavaria_civil_war
 		}
+		BAY = {
+			load_focus_tree = BAY_Bavaria_civil_war
+		}
 	}
 	}
 	option = {
 		name = BAY.focus.16.a
 		BA1 = {
 			change_tag_from = BAY
-		}
-		hidden_effect = {
-			BA1 ={
-				for_loop_effect ={
-					start = 0
-					end = 8
-					add = 1
-                    capital_scope = {
-					  create_unit = {
-						  division = "name = \"赤卫队\" division_template = \"Infanterie Division\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
-						  owner = BA1
-					    }
-				    }
-				}
-				division_template = {
-	             name = "Infanterie Division"
-	             regiments = {
-		           infantry = { x = 0 y = 0 }
-		           infantry = { x = 0 y = 1 }
-		           infantry = { x = 0 y = 2 }
-		           infantry = { x = 0 y = 3 }
-		           infantry = { x = 1 y = 0 }
-		           infantry = { x = 1 y = 1 }
-		           infantry = { x = 1 y = 2 }
-		           artillery_brigade = { x = 2 y = 0 }
-		           artillery_brigade = { x = 2 y = 1 }
-	             }
-	             support = {
-		          engineer = { x = 0 y = 0 }   
-		          recon = { x = 0 y = 1}
-	             }
-                }
-			}
 		}
 	}
 	option = {
@@ -754,12 +725,10 @@ country_event = {#巴伐利亚的同志们正在寻求帮助
 	option = {
 		name = BAY.focus.17.a
 		BA1 = {
-			effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_civil_war_left_4
 						add_idea = Bavaria_civil_war_left_5
 					}
-				}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment 
 				amount = 2000
@@ -779,15 +748,42 @@ country_event = {#巴伐利亚的同志们正在寻求帮助
 	}
 	option = {
 		name = BAY.focus.17.b
-		effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_civil_war_left_4
 						add_idea = Bavaria_civil_war_left_5
 					}
-				}
 	}
 	option = {
 		name = BAY.focus.17.c
+	}
+}
+
+country_event = {#巴伐利亚的同志们正在寻求进一步地帮助
+	id =BAY.focus.18
+	title = BAY.focus.18.t
+	desc = BAY.focus.18.i
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = ITA
+	}
+	option = {
+		name = BAY.focus.18.a
+		BA1 = {
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 50
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = small_plane_cas_airframe
+				amount = 50
+				producer = ITA
+			}
+		}
+	}
+	option = {
+		name = BAY.focus.18.b
 	}
 }
 

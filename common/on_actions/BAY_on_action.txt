@@ -1,4 +1,4 @@
-on_actions = {
+on_actions = {#内战胜利（左）
 	on_civil_war_end ={
 		effect = {
 			if = {
@@ -13,6 +13,9 @@ on_actions = {
 					target = BA1
 					transfer_troops = yes
 				}
+			}
+			BAY = {
+				clr_global_flag = BAY_civil_war_flag
 			}
 			BAY = {
 				set_politics = {
@@ -47,6 +50,13 @@ on_actions = {
 			BAY = {
 				remove_ideas = {
 					Bavaria_civil_war
+					Bavaria_civil_war_left_1
+					Bavaria_civil_war_left_2
+					Bavaria_civil_war_left_3
+					Bavaria_civil_war_left_4
+					Bavaria_civil_war_left_5
+					Bavaria_civil_war_left_6
+					Bavaria_end_attack
 				}
 			}
 			BAY = {
@@ -69,12 +79,15 @@ on_actions = {
 			BAY = {
                 recruit_character = BAY_Rudolf_egelhofer
 			}
+			BAY = {
+				load_focus_tree = BAY_Bavaria_left
+			}
 		    }
 		}
 	}
 }
 
-on_actions = {
+on_actions = {#内战胜利（右）
 	on_civil_war_end ={
 		effect = {
 			if = {
@@ -89,6 +102,9 @@ on_actions = {
 					target = BA2
 					transfer_troops = yes
 				}
+			}
+			BAY = {
+				clr_global_flag = BAY_civil_war_flag
 			}
 			BAY = {
 				set_politics = {
@@ -124,7 +140,74 @@ on_actions = {
 					Bavaria_civil_war
 				}
 			}
+			BAY = {
+				load_focus_tree = BAY_Bavaria_right
+			}
 		    }
 		}
+	}
+}
+
+on_actions = {#王国胜利
+	on_civil_war_end ={
+		effect = {
+			if = {
+				limit = {
+					tag = BAY
+				} 
+			BAY = {
+				clr_global_flag = BAY_civil_war_flag
+			}
+			BAY = {
+				add_ideas = {
+					Bavaria_South_Germany_industy_of_star_2
+					Bavaria_Bayerische_Armee_3
+					Bavaria_Bayerische_Luftwaffe
+				}
+			}
+			BAY = {
+				remove_ideas = {
+					Bavaria_civil_war
+				}
+			}
+			BAY = {
+				load_focus_tree = BAY_Bavaria_center
+			}
+		    }
+		}
+	}
+}
+
+on_actions = {#内战框架（右翼战败）
+	on_capitulation = {
+		effect = {
+		if = {
+			limit = {
+					FROM = {
+						OR = {
+							original_tag = BAY
+							original_tag = BA1
+						}
+						OR = {
+							BA1 = {exists = no}
+							BAY = {exists = no}
+						}
+					}
+					ROOT = {
+						original_tag = BA2
+					}
+
+			}
+			every_country = {
+				white_peace = BA2
+			}
+			FROM = {
+				annex_country = {
+					target = ROOT
+				}
+
+			}
+		}
+	}
 	}
 }

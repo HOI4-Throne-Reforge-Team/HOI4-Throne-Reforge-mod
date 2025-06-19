@@ -213,12 +213,10 @@ focus_tree = {
 
             }
 			completion_reward = {
-				effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_South_Germany_industy_of_star
 						add_idea = Bavaria_South_Germany_industy_of_star_2
 					}
-				}
 				if = {
 					limit = {
 						has_global_flag = USPD		
@@ -341,5 +339,49 @@ focus_tree = {
 			completion_reward = {
 				country_event = {id=BAY.focus.10 days=1}
         }
+	}
+}
+
+focus_tree = {
+	id = BAY_Bavaria_civil_war
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+}
+
+focus_tree = {
+	id = BAY_Bavaria_left
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+}
+
+focus_tree = {
+	id = BAY_Bavaria_right
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+}
+
+focus_tree = {
+	id = BAY_Bavaria_center
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
 	}
 }

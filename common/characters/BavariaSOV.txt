@@ -289,7 +289,7 @@ characters = {
 			}
 			cost = 100
 		}
-		corps_commander = {
+		field_marshal = {
 				traits = {  organizer infantry_officer }
 				skill = 3
 				attack_skill = 2

@@ -55,47 +55,30 @@
  BA1_revolution_army: "国际纵队"
  BA1_revolution_army_desc: "来自全球各地的无产者们通过各种手段纷纷来到了巴伐利亚。他们之中不止在战场上打击敌人的生力军，还有专业的军事指挥团队提供战术支持，国际纵队的精神永垂不朽！"
 
- BA1_liberate_factor: "解放工人"
- BA1_liberate_factor_desc: ""
-
  BA1_build_Soldiers_Council: "建立士兵委员会"
- BA1_build_Soldiers_Council_desc: ""
+ BA1_build_Soldiers_Council_desc: "随着根据地的进一步巩固，我们可以着手建立士兵委员会了，但这只是一个开始，士兵委员会能真正发挥作用仍需一段时间。"
 
  BA1_Loot_the_armory: "搜刮军械库"
- BA1_Loot_the_armory_desc: ""
+ BA1_Loot_the_armory_desc: "由于内战的突发性，我们可以在根据地内寻找旧王国时期的军械库，利用这些武器以武装我们的士兵"
 
  BA1_Securing_the_shipping: "确保运输线"
- BA1_Securing_the_shipping_desc: ""
+ BA1_Securing_the_shipping_desc: "后勤乃重中之重，因此我们得想方设法保证运输线的稳定"
 
  BA1_call_Italy: "联系意大利"
- BA1_call_Italy_desc: ""
+ BA1_call_Italy_desc: "意大利是共产国际的主席国，是欧洲革命的灯塔。我们应该联系他们，争取他们的援助"
 
  BA1_Penetrate_the_rear: "渗透后方"
- BA1_Penetrate_the_rear_desc: ""
-
- BA1_Decentralised_production: "分散生产"
- BA1_Decentralised_production_desc: ""
-
- BA1_end_fascism: "终结法西斯"
- BA1_end_fascism_desc: ""
-
- BA1_attack_Munich: "南下慕尼黑"
- BA1_attack_Munich_desc: ""
+ BA1_Penetrate_the_rear_desc: "早在内战开始前，我们有一部分共产党员便留在各地以待日后联系。现在，通过他们发展的关系网与我们的游击队里应外合，将对反动派给予一次严厉的打击"
 
  BA1_Volunteer_Air_Corps: "志愿航空队"
- BA1_Volunteer_Air_Corps_desc: ""
-
- BA1_tank_suppot: "坦克技术支援"
- BA1_tank_suppot_desc: ""
+ BA1_Volunteer_Air_Corps_desc: "巴伐利亚因为其特殊的经济特性，拥有着一支实力强劲的空军。我们应该寻求意大利的帮助，请求他们派遣一支志愿航空队以对抗"
 
  BA1_people_power: "人民之伟力"
- BA1_people_power_desc: ""
+ BA1_people_power_desc: "只有人民才是我们革命的动力，人民之力将夺取革命的胜利"
 
  BA1_end_attack: "最终攻势"
- BA1_end_attack_desc: ""
+ BA1_end_attack_desc: "反动派们只剩下一口气了，我们应乘胜追击，结束内战"
 
  BA1_long_live_international: "国际主义万岁"
- BA1_long_live_international_desc: ""
+ BA1_long_live_international_desc: "在国际纵队和共产国际的支援下，我们的部队高歌猛进，保持这个势头继续前进"
 
- BA1_lighthouse_rebuild: "重建灯塔"
- BA1_lighthouse_rebuild_desc: ""

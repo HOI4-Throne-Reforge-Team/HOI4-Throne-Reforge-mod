@@ -75,12 +75,10 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_political_power = 150
-			effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_civil_war
 						add_idea = Bavaria_civil_war_left_2
 					}
-				}
 		}
 	}
 	focus = {#呼吁国际
@@ -103,12 +101,10 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_political_power = 150
-			effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_civil_war
 						add_idea = Bavaria_civil_war_left_1
 					}
-				}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment 
 				amount = 2000
@@ -168,12 +164,10 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_stability = 0.1
-			effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_civil_war_left_2
 						add_idea = Bavaria_civil_war_left_3
 					}
-				}
 		}
 	}
 	focus = {#国际纵队
@@ -193,12 +187,10 @@ focus_tree = {
 				}
 		completion_reward = {
 			add_command_power = 100
-			effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_civil_war_left_1
 						add_idea = Bavaria_civil_war_left_4
 					}
-				}
 		}
 	}
 	focus = {#建立士兵委员会
@@ -301,6 +293,12 @@ focus_tree = {
 		prerequisite = {
 			focus = BA1_liberate_factor
 		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
 		completion_reward = {
 			ITA = {
 				country_event = {id=BAY.focus.17 days=3}
@@ -316,6 +314,29 @@ focus_tree = {
 		prerequisite = {
 			focus = BA1_build_Soldiers_Council
 		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
+		completion_reward = {
+			custom_effect_tooltip = BAY_revolution_2
+			damage_units = {
+				region = 7
+				limit = {
+					tag = BAY
+				}
+				damage = 0.3
+			}
+			damage_units = {
+				region = 7
+				limit = {
+					tag = BA2
+				}
+				damage = 0.3
+			}
+		}
 	}
 	focus = {#志愿航空队
 		id = BA1_Volunteer_Air_Corps
@@ -325,6 +346,17 @@ focus_tree = {
 		y = 6
 		prerequisite = {
 			focus = BA1_call_Italy
+		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
+		completion_reward = {
+			ITA = {
+				country_event = {id=BAY.focus.18 days=3}
+			}
 		}
 	}
 	focus = {#人民之伟力
@@ -339,6 +371,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BA1_Securing_the_shipping
 		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
+		completion_reward = {
+					swap_ideas = {
+						remove_idea = Bavaria_civil_war_left_3
+						add_idea = Bavaria_civil_war_left_6
+					}
+		}
     }
 	focus = {#国际主义万岁
 		id = BA1_long_live_international
@@ -352,6 +396,39 @@ focus_tree = {
 		prerequisite = {
 			focus = BA1_Securing_the_shipping
 		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = 2000
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount = 500
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment 
+				amount = 100
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 100
+				producer = ITA
+			}
+		}
 	}
 	focus = {#最终攻势
 		id = BA1_end_attack
@@ -362,6 +439,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BA1_people_power
 			focus = BA1_long_live_international
+		}
+		ai_will_do = {
+					factor = 100
+				}
+				available = {
+					always = yes
+				}
+		completion_reward = {
+			add_timed_idea = { 
+					idea = Bavaria_end_attack
+					days = 90
+				}
 		}
 	}
 }

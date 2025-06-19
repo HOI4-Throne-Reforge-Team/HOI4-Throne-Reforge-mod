@@ -12,5 +12,10 @@
 
  #其他本地化
  BAY_revolution: "将在根据地内部署4个§O赤卫队"
+ BAY_revolution_2: "将在敌后发动进攻，歼灭一部分敌军"
+ #国策树名字
+ BAY_Bavaria_civil_war: "巴伐利亚内战"
+ BAY_Bavaria_left : "巴伐利亚（极左翼）"
+ BAY_Bavaria_right: "巴伐利亚（极右翼）"
 
 
