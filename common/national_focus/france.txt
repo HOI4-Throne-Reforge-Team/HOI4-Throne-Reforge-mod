@@ -538,8 +538,320 @@ focus_tree = {
 		}
 			
 	}
+	focus = {#总理选举
+		id = FRA_Election_of_Premier
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 6
+		prerequisite = {
+			focus = FRA_Great_Judgment
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+###############################################肖当###################################
+	focus = {#肖当得以幸存
+		id = FRA_Chautemps_win
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = FRA_Election_of_Premier
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #法国没有赎罪卷
+		id = FRA_No_indulgences
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 8
+		prerequisite = {
+			focus = FRA_Chautemps_win
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #向土地进军
+		id = FRA_march_land
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #保护本地农业
+		id = FRA_Supporting_local_farmers
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_land
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #法朗自由贸易区
+		id = FRA_Franc_free_trade_area
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 12
+		prerequisite = {
+			focus = FRA_Supporting_local_farmers
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #向货币进军
+		id = FRA_march_currency
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #法郎贬值
+		id = FRA_Devaluatio_franc
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_currency
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #告别金本位
+		id = FRA_leave_the_gold_standard
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 12
+		prerequisite = {
+			focus = FRA_Devaluatio_franc
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+
+	focus = {  #向银行进军
+		id = FRA_march_bank
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #关上大门
+		id = FRA_Shut_door
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 10
+		prerequisite = {
+			focus = FRA_march_bank
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #审查银行信用
+		id = FRA_Review_bank_credit
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 11
+		prerequisite = {
+			focus = FRA_Shut_door
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #监管股市交易
+		id = FRA_Overseeing_stock_market
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 12
+		prerequisite = {
+			focus = FRA_Review_bank_credit
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #向公共工程进军
+		id = FRA_march_public
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+
+		}
+		
+	}
+
+	focus = {  #铁路国有化
+		id = FRA_Nationalization_railways
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_public
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #兴修水利
+		id = FRA_Develop_Hydraulic_engineering
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 12
+		prerequisite = {
+			focus = FRA_Nationalization_railways
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #向大企业进军
+		id = FRA_march_enterprises
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #投资代替税收
+		id = FRA_Investment_replace_tax
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_enterprises
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #来自政府的订单
+		id = FRA_government_orders
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 12
+		prerequisite = {
+			focus = FRA_Investment_replace_tax
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #情况有所好转
+		id = FRA_Anything_become_better
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 13
+		prerequisite = {
+			focus = FRA_Franc_free_trade_area
+		}
+		prerequisite = {
+			focus = FRA_leave_the_gold_standard
+		}
+		prerequisite = {
+			focus = FRA_Overseeing_stock_market
+		}
+		prerequisite = {
+			focus = FRA_Develop_Hydraulic_engineering
+		}
+		prerequisite = {
+			focus = FRA_government_orders
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
 	#陆军国策树
-	focus = {
+	focus = {     #军备重整
 		id = FRA_Army_focus
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -549,7 +861,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #改革总参谋部
 		id = FRA_Reform_of_the_General_Staff
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -562,7 +874,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #新生代军官
 		id = FRA_A_new_generation_of_commanders
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -575,7 +887,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #扩建军事学院
 		id = FRA_Expansion_of_the_Military_Academy
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -588,7 +900,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #帝国近卫军
 		id = FRA_Imperial_Guard
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -601,7 +913,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #有序战争
 		id = FRA_Orderly_war
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -614,20 +926,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
-		id = FRA_Orderly_war
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 22
-		y = 3
-		prerequisite = {
-			focus = FRA_Reform_of_the_General_Staff
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
+	focus = { #全民动员
 		id = FRA_Mobilization_of_the_whole_people
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -640,7 +939,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #确保情报优势
 		id = FRA_Ensure_intelligence_superiority
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -653,7 +952,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #先辈的荣耀
 		id = FRA_Glory_to_our_ancestors
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -669,7 +968,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #战场上的皇后
 		id = FRA_The_queen_of_the_battlefield
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -682,7 +981,8 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+
+	focus = {   #伟大的人们
 		id = FRA_Great_people
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -695,20 +995,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
-		id = FRA_Great_people
-		icon = GFX_goal_generic_improve_relations
-		cost = 5
-		x = 23
-		y = 6
-		prerequisite = {
-			focus = FRA_Glory_to_our_ancestors
-		}
-		completion_reward = {
-			
-		}
-	}
-	focus = {
+	focus = {  #集中突破
 		id = FRA_Concentrated_breakthroughs
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -721,7 +1008,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #钢铁之躯
 		id = FRA_A_body_of_steel
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -734,7 +1021,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #精确火控
 		id = FRA_Precise_fire_control
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -747,7 +1034,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #未来之子
 		id = FRA_Children_of_the_Future
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -763,7 +1050,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #空地一体化战争
 		id = FRA_Air-ground_integration
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -779,7 +1066,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #生产线上的战争
 		id = FRA_War_on_the_production_line
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -792,7 +1079,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {    #资源向军事领域倾斜
 		id = FRA_Military_resources_take_precedence
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -805,7 +1092,7 @@ focus_tree = {
 			
 		}
 	}
-		focus = {
+		focus = {  #加大军事工业投资
 		id = FRA_Increase_investment_in_the_military_industry
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -818,7 +1105,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {  #完善军工网络
 		id = FRA_Improve_the_military-industrial_network
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -834,7 +1121,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #质量优先
 		id = FRA_Quality_first
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -850,7 +1137,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
+	focus = {   #流水线生产
 		id = FRA_Quantity_over_quality
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -867,7 +1154,7 @@ focus_tree = {
 		}
 	}
 	#空军国策
-	focus = {
+	focus = {  #统一空军标准
 		id = FRA_Air_focus
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -875,7 +1162,7 @@ focus_tree = {
 		y = 1
 		completion_reward = { }
 	}
-	focus = {
+	focus = {  #独立兵种
 		id = FRA_Independent_Units
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -889,7 +1176,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #加大军事贸易
 		id = FRA_Increase_the_trade_in_fighter_planes
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -900,7 +1187,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {  #蓝天中的英雄
 		id = FRA_Heroes-in_the_blue_sky
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -911,7 +1198,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #全面革新
 		id = FRA_Completely_renovated
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -925,7 +1212,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #围绕陆地
 		id = FRA_Army_urisdiction
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -939,7 +1226,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #新一代战斗机研发
 		id = FRA_Development_of_new_generation_of_fighters
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -950,7 +1237,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #基地建设
 		id = FRA_Base_construction
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -961,7 +1248,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #协同打击
 		id = FRA_Coordinated_strikes
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -976,7 +1263,7 @@ focus_tree = {
 		completion_reward = { }
 	}
 	#海军国策树
-	focus = {
+	focus = {   #统治海洋
 		id = FRA_ocean_focus
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -984,7 +1271,7 @@ focus_tree = {
 		y = 1
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #圹建船坞
 		id = FRA_Expansion_shipyard
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -995,7 +1282,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #争夺凯尔特海控制权
 		id = FRA_Dominate_Celtic_Sea
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1006,7 +1293,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #巩固地中海
 		id = FRA_Consolidation_Mediterranean
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1017,7 +1304,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {    #殖民者海军基地
 		id = FRA_Colonial_Navy
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1028,8 +1315,8 @@ focus_tree = {
 			focus = FRA_Consolidation_Mediterranean
 		}
 		completion_reward = { }
-	}
-	focus = {
+	} 
+	focus = {    #新学派
 		id = FRA_New_School
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1043,7 +1330,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {    #水下的猎人
 		id = FRA_Silent_Hunter
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1054,7 +1341,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #水上的猎枪
 		id = FRA_Cruising_and_expellation
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1065,7 +1352,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #改进水雷布设
 		id = FRA_Mine_improvements
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1077,7 +1364,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #无限制潜艇战
 		id = FRA_Unrestricted_submarine_warfare
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1088,7 +1375,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #主力战舰派
 		id = FRA_Cannon_giants
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1102,7 +1389,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {  #扩编海军航空部队
 		id = FRA_Naval_aviation
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1113,7 +1400,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #坚船利炮
 		id = FRA_Ships_and_guns
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1124,7 +1411,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {  #针锋相对
 		id = FRA_Give_tit_for_tat
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1136,7 +1423,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #凯尔特海战的遗产
 		id = FRA_legacy_of_Battle_Celtic
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1147,7 +1434,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #雪耻特拉法尔加
 		id = FRA_Snow_shame_Trafalgar
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1159,7 +1446,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {   #海上入侵演习
 		id = FRA_Landing_drills
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
@@ -1170,7 +1457,7 @@ focus_tree = {
 		}
 		completion_reward = { }
 	}
-	focus = {
+	focus = {    #海军陸战队
 		id = FRA_Marine_warfare
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
