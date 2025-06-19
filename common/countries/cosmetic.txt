@@ -1,3 +1,7 @@
+SPR_PHI = {
+	color = rgb { 254 206 66 }
+	color_ui = rgb{ 242 205 94 }
+}
 PUS_BIG_GER = {
 	color = rgb { 89 85 85 }
 	color_ui = { 66 62 60 }
