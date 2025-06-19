@@ -323,7 +323,7 @@ focus_tree = {
 		id = FRA_first_shot_fired
 		icon = GFX_focus_FRA_first_shot_fired
 		cost = 0
-		x = 16
+		x = 11
 		y = 1
 		bypass = {}
 		completion_reward = {}
@@ -333,7 +333,7 @@ focus_tree = {
 		id = FRA_Solemn_statement
 		icon = GFX_focus_FRA_Solemn_statement
 		cost = 3
-		x = 12
+		x = 7
 		y = 2
 		prerequisite = {
 			focus = FRA_first_shot_fired
@@ -354,7 +354,7 @@ focus_tree = {
 		id = FRA_No_longer_deceived
 		icon = GFX_focus_FRA_No_longer_deceived
 		cost = 3
-		x = 20
+		x = 15
 		y = 2
 		prerequisite = {
 			focus = FRA_first_shot_fired
@@ -410,7 +410,7 @@ focus_tree = {
 		id = FRA_Seek_asylum_in_the_Senate
 		icon = GFX_focus_FRA_Seek_asylum_in_the_Senate
 		cost = 3
-		x = 10
+		x = 5
 		y = 3
 		prerequisite = {
 			focus = FRA_Solemn_statement
@@ -427,7 +427,7 @@ focus_tree = {
 		id = FRA_Makeover
 		icon = GFX_focus_FRA_Makeover
 		cost = 3
-		x = 14
+		x = 9
 		y = 3
 		prerequisite = {
 			focus = FRA_Solemn_statement
@@ -443,7 +443,7 @@ focus_tree = {
 		id = FRA_No_Scammers_cabinet
 		icon = GFX_focus_FRA_No_Scammers_cabinet
 		cost = 3
-		x = 18
+		x = 13
 		y = 3
 		prerequisite = {
 			focus = FRA_No_longer_deceived
@@ -459,7 +459,7 @@ focus_tree = {
 		id = FRA_Joint_conspiracy
 		icon = GFX_focus_FRA_Joint_conspiracy
 		cost = 3
-		x = 22
+		x = 17
 		y = 3
 		prerequisite = {
 			focus = FRA_No_longer_deceived
@@ -471,7 +471,7 @@ focus_tree = {
 		id = FRA_Center-left_coalition
 		icon = GFX_focus_FRA_Center-left_coalition
 		cost = 3
-		x = 10
+		x = 5
 		y = 4
 		prerequisite = {
 			focus = FRA_Seek_asylum_in_the_Senate
@@ -486,7 +486,7 @@ focus_tree = {
 		id = FRA_Shut_up
 		icon = GFX_focus_FRA_Shut_up
 		cost = 3
-		x = 14
+		x = 9
 		y = 4
 		prerequisite = {
 			focus = FRA_Makeover
@@ -499,7 +499,7 @@ focus_tree = {
 		id = FRA_Add_fuel_to_the_flames
 		icon = GFX_focus_FRA_Add_fuel_to_the_flames
 		cost = 3
-		x = 18
+		x = 13
 		y = 4
 		prerequisite = {
 			focus = FRA_No_Scammers_cabinet
@@ -513,7 +513,7 @@ focus_tree = {
 		id = FRA_Do_a_big_vote
 		icon = GFX_focus_FRA_Do_a_big_vote
 		cost = 5
-		x = 22
+		x = 17
 		y = 4
 		prerequisite = {
 			focus = FRA_Joint_conspiracy
@@ -525,7 +525,7 @@ focus_tree = {
 		id = FRA_Great_Judgment
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 16
+		x = 11
 		y = 5
 		prerequisite = {
 			focus = FRA_Center-left_coalition
@@ -543,14 +543,244 @@ focus_tree = {
 		id = FRA_Army_focus
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
-		x = 32
+		x = 29
 		y = 1
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = FRA_Army_focus_1
+		id = FRA_Reform_of_the_General_Staff
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 25
+		y = 2
+		prerequisite = {
+			focus = FRA_Army_focus
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_new_generation_of_commanders
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 25
+		y = 3
+		prerequisite = {
+			focus = FRA_Reform_of_the_General_Staff
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Expansion_of_the_Military_Academy
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 25
+		y = 4
+		prerequisite = {
+			focus = FRA_A_new_generation_of_commanders
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Imperial_Guard
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 25
+		y = 5
+		prerequisite = {
+			focus = FRA_Expansion_of_the_Military_Academy
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Orderly_war
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 22
+		y = 3
+		prerequisite = {
+			focus = FRA_Reform_of_the_General_Staff
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Orderly_war
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 22
+		y = 3
+		prerequisite = {
+			focus = FRA_Reform_of_the_General_Staff
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Mobilization_of_the_whole_people
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 21
+		y = 4
+		prerequisite = {
+			focus = FRA_Orderly_war
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Ensure_intelligence_superiority
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 23
+		y = 4
+		prerequisite = {
+			focus = FRA_Orderly_war
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Glory_to_our_ancestors
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 22
+		y = 5
+		prerequisite = {
+			focus = FRA_Ensure_intelligence_superiority
+		}
+		prerequisite = {
+			focus = FRA_Mobilization_of_the_whole_people
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_The_queen_of_the_battlefield
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 21
+		y = 6
+		prerequisite = {
+			focus = FRA_Glory_to_our_ancestors
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Great_people
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 23
+		y = 6
+		prerequisite = {
+			focus = FRA_Glory_to_our_ancestors
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Great_people
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 23
+		y = 6
+		prerequisite = {
+			focus = FRA_Glory_to_our_ancestors
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Concentrated_breakthroughs
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 28
+		y = 3
+		prerequisite = {
+			focus = FRA_Reform_of_the_General_Staff
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_A_body_of_steel
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 27
+		y = 4
+		prerequisite = {
+			focus = FRA_Concentrated_breakthroughs
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Precise_fire_control
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 29
+		y = 4
+		prerequisite = {
+			focus = FRA_Concentrated_breakthroughs
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Children_of_the_Future
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 28
+		y = 5
+		prerequisite = {
+			focus = FRA_Precise_fire_control
+		}
+		prerequisite = {
+			focus = FRA_A_body_of_steel
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Air-ground_integration
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 28
+		y = 6
+		prerequisite = {
+			focus = FRA_Precise_fire_control
+		}
+		prerequisite = {
+			focus = FRA_Children_of_the_Future
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_War_on_the_production_line
 		icon = GFX_goal_generic_improve_relations
 		cost = 5
 		x = 32
@@ -561,6 +791,189 @@ focus_tree = {
 		completion_reward = {
 			
 		}
+	}
+	focus = {
+		id = FRA_Military_resources_take_precedence
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 31
+		y = 3
+		prerequisite = {
+			focus = FRA_War_on_the_production_line
+		}
+		completion_reward = {
+			
+		}
+	}
+		focus = {
+		id = FRA_Increase_investment_in_the_military_industry
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 33
+		y = 3
+		prerequisite = {
+			focus = FRA_War_on_the_production_line
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Improve_the_military-industrial_network
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 32
+		y = 4
+		prerequisite = {
+			focus = FRA_Increase_investment_in_the_military_industry
+		}
+		prerequisite = {
+			focus = FRA_Military_resources_take_precedence
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Quality_first
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 31
+		y = 5
+		prerequisite = {
+			focus = FRA_Improve_the_military-industrial_network
+		}
+		mutually_exclusive = {
+			focus = FRA_Quantity_over_quality
+		}
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = FRA_Quantity_over_quality
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 33
+		y = 5
+		prerequisite = {
+			focus = FRA_Improve_the_military-industrial_network
+		}
+		mutually_exclusive = {
+			focus = FRA_Quality_first
+		}
+		completion_reward = {
+			
+		}
+	}
+	#空军国策
+	focus = {
+		id = FRA_Air_focus
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 42
+		y = 1
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Independent_Units
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 40
+		y = 2
+		prerequisite = {
+			focus = FRA_Air_focus
+		}
+		mutually_exclusive = {
+			focus = FRA_Army_urisdiction
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Increase_the_trade_in_fighter_planes
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 39
+		y = 3
+		prerequisite = {
+			focus = FRA_Independent_Units
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Heroes-in_the_blue_sky
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 41
+		y = 3
+		prerequisite = {
+			focus = FRA_Independent_Units
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Completely_renovated
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 40
+		y = 4
+		prerequisite = {
+			focus = FRA_Heroes-in_the_blue_sky
+		}
+		prerequisite = {
+			focus = FRA_Increase_the_trade_in_fighter_planes
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Army_urisdiction
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 44
+		y = 2
+		prerequisite = {
+			focus = FRA_Air_focus
+		}
+		mutually_exclusive = {
+			focus = FRA_Independent_Units
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Development_of_new_generation_of_fighters
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 43
+		y = 3
+		prerequisite = {
+			focus = FRA_Army_urisdiction
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Base_construction
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 45
+		y = 3
+		prerequisite = {
+			focus = FRA_Army_urisdiction
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = FRA_Coordinated_strikes
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 44
+		y = 4
+		prerequisite = {
+			focus = FRA_Development_of_new_generation_of_fighters
+		}
+		prerequisite = {
+			focus = FRA_Base_construction
+		}
+		completion_reward = { }
 	}
 	#海军国策树
 	focus = {
