@@ -11,7 +11,7 @@ state= {
 	}
 
 	history= {
-		owner = SPR
+		owner = PHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
