@@ -3,4 +3,16 @@ spriteTypes = {
 		name = "GFX_idea_FRA_E_B"
 		texturefile = "gfx/interface/ideas/FRA/FRA_E_B.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_FRA_stavisky_aftermath"
+		texturefile = "gfx/interface/ideas/FRA/FRA_stavisky_aftermath.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_usury_imperialism"
+		texturefile = "gfx/interface/ideas/FRA/FRA_usury_imperialism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_victory"
+		texturefile = "gfx/interface/ideas/FRA/FRA_victory.dds"
+	}
 }
