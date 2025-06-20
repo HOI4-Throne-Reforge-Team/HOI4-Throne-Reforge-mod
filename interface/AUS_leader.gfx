@@ -1,22 +1,22 @@
 spriteTypes = {
 	spriteType = {
 		name = Engelbert_dollfuss
-		textureFile = "gfx/leaders/AUS/AUS_Engelbert_dollfuss.png"
+		textureFile = "gfx/leaders/AUS/AUS_Engelbert_dollfuss.dds"
 	}
 	spriteType = {
 		name = Karl_renner
-		textureFile = "gfx/leaders/AUS/AUS_Karl_renner.png"
+		textureFile = "gfx/leaders/AUS/AUS_Karl_renner.dds"
 	}
 	spriteType = {
 		name = Karl_I
-		textureFile = "gfx/leaders/AUS/AUS_Karl_I.png"
+		textureFile = "gfx/leaders/AUS/AUS_Karl_I.dds"
 	}
 	spriteType = {
 		name = Adolf_hitler
-		textureFile = "gfx/leaders/AUS/AUS_Adolf_hitler.png"
+		textureFile = "gfx/leaders/AUS/AUS_Adolf_hitler.dds"
 	}
 	spriteType = {
 		name = Otto_powell
-		textureFile = "gfx/leaders/AUS/AUS_Otto_powell.png"
+		textureFile = "gfx/leaders/AUS/AUS_Otto_powell.dds"
 	}
 }
