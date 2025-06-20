@@ -1,46 +1,46 @@
 spriteTypes = {
     spriteType = {
 		name = "GFX_focus_AUS_the_empire_is_struggle"
-		texturefile = "gfx/focus/AUS/AUS_the_empire_is_struggle.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_the_empire_is_struggle.dds"
 	}
     spriteType = {
 		name = "GFX_focus_AUS_bohemian_succession_affairs"
-		texturefile = "gfx/focus/AUS/AUS_bohemian_succession_affairs.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_bohemian_succession_affairs.dds"
 	}
     spriteType = {
 		name = "GFX_focus_AUS_snatch_government_departments"
-		texturefile = "gfx/focus/AUS/AUS_snatch_government_departments.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_snatch_government_departments.dds"
 	}
     spriteType = {
 		name = "GFX_focus_AUS_the_empire_is_struggle"
-		texturefile = "gfx/focus/AUS/AUS_the_empire_is_struggle.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_the_empire_is_struggle.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_Emergency"
-		texturefile = "gfx/focus/AUS/AUS_Emergency.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_Emergency.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_internal_chaos_in_government"
-		texturefile = "gfx/focus/AUS/AUS_internal_chaos_in_government.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_internal_chaos_in_government.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_sodom_apple"
-		texturefile = "gfx/focus/AUS/AUS_sodom_apple.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_sodom_apple.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_plan_of_bohemia"
-		texturefile = "gfx/focus/AUS/AUS_plan_of_bohemia.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_plan_of_bohemia.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_bohemian_crown"
-		texturefile = "gfx/focus/AUS/AUS_bohemian_crown.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_bohemian_crown.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_stability_back_to_austrian"
-		texturefile = "gfx/focus/AUS/AUS_stability_back_to_austrian.png"
+		texturefile = "gfx/interface/goals/AUS/AUS_stability_back_to_austrian.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_AUS_Prager_Fenstersturz"
-		texturefile = "gfx/ideas/AUS/AUS_Prager_Fenstersturz.png"
+		texturefile = "gfx/ideas/AUS/AUS_Prager_Fenstersturz.dds"
 	}
 }
