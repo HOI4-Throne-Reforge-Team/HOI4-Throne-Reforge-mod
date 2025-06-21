@@ -553,303 +553,6 @@ focus_tree = {
 		
 	}
 
-###############################################肖当###################################
-	focus = {#肖当得以幸存
-		id = FRA_Chautemps_win
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 7
-		prerequisite = {
-			focus = FRA_Election_of_Premier
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-	focus = {  #法国没有赎罪卷
-		id = FRA_No_indulgences
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 8
-		prerequisite = {
-			focus = FRA_Chautemps_win
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #向土地进军
-		id = FRA_march_land
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 6
-		y = 9
-		prerequisite = {
-			focus = FRA_No_indulgences
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #保护本地农业
-		id = FRA_Supporting_local_farmers
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 6
-		y = 10.5
-		prerequisite = {
-			focus = FRA_march_land
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #法朗自由贸易区
-		id = FRA_Franc_free_trade_area
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 6
-		y = 12
-		prerequisite = {
-			focus = FRA_Supporting_local_farmers
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-	focus = {  #向货币进军
-		id = FRA_march_currency
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 8
-		y = 9
-		prerequisite = {
-			focus = FRA_No_indulgences
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #法郎贬值
-		id = FRA_Devaluatio_franc
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 8
-		y = 10.5
-		prerequisite = {
-			focus = FRA_march_currency
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #告别金本位
-		id = FRA_leave_the_gold_standard
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 8
-		y = 12
-		prerequisite = {
-			focus = FRA_Devaluatio_franc
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-
-	focus = {  #向银行进军
-		id = FRA_march_bank
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 9
-		prerequisite = {
-			focus = FRA_No_indulgences
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #关上大门
-		id = FRA_Shut_door
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 10
-		prerequisite = {
-			focus = FRA_march_bank
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #审查银行信用
-		id = FRA_Review_bank_credit
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 11
-		prerequisite = {
-			focus = FRA_Shut_door
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #监管股市交易
-		id = FRA_Overseeing_stock_market
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 12
-		prerequisite = {
-			focus = FRA_Review_bank_credit
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #向公共工程进军
-		id = FRA_march_public
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 12
-		y = 9
-		prerequisite = {
-			focus = FRA_No_indulgences
-		}
-		completion_reward = { 
-
-		}
-		
-	}
-
-	focus = {  #铁路国有化
-		id = FRA_Nationalization_railways
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 12
-		y = 10.5
-		prerequisite = {
-			focus = FRA_march_public
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #兴修水利
-		id = FRA_Develop_Hydraulic_engineering
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 12
-		y = 12
-		prerequisite = {
-			focus = FRA_Nationalization_railways
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #向大企业进军
-		id = FRA_march_enterprises
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 14
-		y = 9
-		prerequisite = {
-			focus = FRA_No_indulgences
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #投资代替税收
-		id = FRA_Investment_replace_tax
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 14
-		y = 10.5
-		prerequisite = {
-			focus = FRA_march_enterprises
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #来自政府的订单
-		id = FRA_government_orders
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 14
-		y = 12
-		prerequisite = {
-			focus = FRA_Investment_replace_tax
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
-	focus = {  #情况有所好转
-		id = FRA_Anything_become_better
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 13
-		prerequisite = {
-			focus = FRA_Franc_free_trade_area
-		}
-		prerequisite = {
-			focus = FRA_leave_the_gold_standard
-		}
-		prerequisite = {
-			focus = FRA_Overseeing_stock_market
-		}
-		prerequisite = {
-			focus = FRA_Develop_Hydraulic_engineering
-		}
-		prerequisite = {
-			focus = FRA_government_orders
-		}
-		completion_reward = { 
-			
-		}
-		
-	}
-
 	#陆军国策树
 	focus = {     #军备重整
 		id = FRA_Army_focus
@@ -1470,5 +1173,589 @@ focus_tree = {
 	}
 }
 
+###############################################肖当###################################
+focus_tree = {
+	id = french_focus_2_1
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	continuous_focus_position = { x = 4000 y = 4000 }
+
+	focus = {#肖当得以幸存
+		id = FRA_Chautemps_win
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = FRA_Election_of_Premier
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #法国没有赎罪卷
+		id = FRA_No_indulgences
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 8
+		prerequisite = {
+			focus = FRA_Chautemps_win
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #向土地进军
+		id = FRA_march_land
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #保护本地农业
+		id = FRA_Supporting_local_farmers
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_land
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #法朗自由贸易区
+		id = FRA_Franc_free_trade_area
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 12
+		prerequisite = {
+			focus = FRA_Supporting_local_farmers
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #向货币进军
+		id = FRA_march_currency
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #法郎贬值
+		id = FRA_Devaluatio_franc
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_currency
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #告别金本位
+		id = FRA_leave_the_gold_standard
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 12
+		prerequisite = {
+			focus = FRA_Devaluatio_franc
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+
+	focus = {  #向银行进军
+		id = FRA_march_bank
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #关上大门
+		id = FRA_Shut_door
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 10
+		prerequisite = {
+			focus = FRA_march_bank
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #审查银行信用
+		id = FRA_Review_bank_credit
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 11
+		prerequisite = {
+			focus = FRA_Shut_door
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #监管股市交易
+		id = FRA_Overseeing_stock_market
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 12
+		prerequisite = {
+			focus = FRA_Review_bank_credit
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #向公共工程进军
+		id = FRA_march_public
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+
+		}
+		
+	}
+
+	focus = {  #铁路国有化
+		id = FRA_Nationalization_railways
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_public
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #兴修水利
+		id = FRA_Develop_Hydraulic_engineering
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 12
+		prerequisite = {
+			focus = FRA_Nationalization_railways
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #向大企业进军
+		id = FRA_march_enterprises
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 9
+		prerequisite = {
+			focus = FRA_No_indulgences
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #投资代替税收
+		id = FRA_Investment_replace_tax
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 10.5
+		prerequisite = {
+			focus = FRA_march_enterprises
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #来自政府的订单
+		id = FRA_government_orders
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 12
+		prerequisite = {
+			focus = FRA_Investment_replace_tax
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #情况有所好转
+		id = FRA_Anything_become_better
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 13
+		prerequisite = {
+			focus = FRA_Franc_free_trade_area
+		}
+		prerequisite = {
+			focus = FRA_leave_the_gold_standard
+		}
+		prerequisite = {
+			focus = FRA_Overseeing_stock_market
+		}
+		prerequisite = {
+			focus = FRA_Develop_Hydraulic_engineering
+		}
+		prerequisite = {
+			focus = FRA_government_orders
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+}
+###############################################莱昂·布鲁姆###################################
+focus_tree = {
+	id = french_focus_2_2
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	continuous_focus_position = { x = 4000 y = 4000 }
+    focus = {#莱昂·布鲁姆内阁
+		id = FRA_Blum_win
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = FRA_Election_of_Premier
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #最美好的前途
+		id = FRA_wonderful_future
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 8
+		prerequisite = {
+			focus = FRA_Blum_win
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #放弃金本位制
+		id = FRA_forgive_gold
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 7
+		y = 9
+		prerequisite = {
+			focus = FRA_wonderful_future
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {#设立外汇平准基金
+		id = FRA_set_FESF
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 7
+		y = 10
+		prerequisite = {
+			focus = FRA_forgive_gold
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {#遏制投机性外逃
+		id = FRA_Prevent_escape
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 11
+		prerequisite = {
+			focus = FRA_set_FESF
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {#对必需品限价
+		id = FRA_Essentials_limit
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 11
+		prerequisite = {
+			focus = FRA_set_FESF
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #改革法兰西银行
+		id = FRA_reform_bank
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 6
+		y = 12
+		prerequisite = {
+			focus = FRA_Prevent_escape
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #战略行业国有化
+		id = FRA_Nationalization_of_industries
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 8
+		y = 12
+		prerequisite = {
+			focus = FRA_Essentials_limit
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #战胜萧条
+		id = FRA_over_Depression
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 7
+		y = 13
+		prerequisite = {
+			focus = FRA_reform_bank
+		}
+		prerequisite = {
+			focus = FRA_Nationalization_of_industries
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #《马蒂尼翁协议》
+		id = FRA_Accords_de_Matignon
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 13
+		y = 9
+		prerequisite = {
+			focus = FRA_wonderful_future
+		}
+		completion_reward = { 
+
+		}
+		
+	}
+
+	focus = {  #农业工人保护
+		id = FRA_protect_farmer
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 10
+		prerequisite = {
+			focus = FRA_Accords_de_Matignon
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #青年就业计划
+		id = FRA_plan_teenager_work
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 10
+		prerequisite = {
+			focus = FRA_Accords_de_Matignon
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #完善基础设施建设
+		id = FRA_Improve_base_building
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 12
+		y = 11
+		prerequisite = {
+			focus = FRA_protect_farmer
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #推动大众文化
+		id = FRA_promote_pop_culture
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 14
+		y = 11
+		prerequisite = {
+			focus = FRA_plan_teenager_work
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #缓和社会矛盾
+		id = FRA_Ease_social_conflicts
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 13
+		y = 12
+		prerequisite = {
+			focus = FRA_Improve_base_building
+		}
+		prerequisite = {
+			focus = FRA_promote_pop_culture
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #总工会的拥护
+		id = FRA_acftu_support
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 13
+		y = 13
+		prerequisite = {
+			focus = FRA_Ease_social_conflicts
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+
+	focus = {  #迈向明日
+		id = FRA_see_you_tomorrow
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 10
+		y = 14
+		prerequisite = {
+			focus = FRA_over_Depression
+		}
+		prerequisite = {
+			focus = FRA_acftu_support
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+}
 
 
