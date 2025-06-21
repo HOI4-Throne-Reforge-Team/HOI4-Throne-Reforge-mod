@@ -1,10 +1,10 @@
 spriteTypes = {
 	spriteType = {
 		name = Ferdinand_schorner
-		texturefile = "gfx/leaders/BAY/ferdinand_schorner.png"
+		texturefile = "gfx/leaders/BAY/ferdinand_schorner.dds"
 	}
 	spriteType = {
 		name = Rupprecht_I
-		texturefile = "gfx/leaders/BAY/rupprecht_I.png"
+		texturefile = "gfx/leaders/BAY/rupprecht_I.dds"
 	}
 }

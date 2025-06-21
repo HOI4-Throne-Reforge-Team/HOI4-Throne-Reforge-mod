@@ -1,0 +1,76 @@
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_tubang_icon
+		textureFile = "gfx/interface/autonomy/autonomy_tubang.dds"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_jiamengguo_icon
+		textureFile = "gfx/interface/autonomy/autonomy_jiamengguo.dds"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_CHI_zongduxiaqu_icon
+		textureFile = "gfx/interface/autonomy/autonomy_CHI_zongduxiaqu.dds"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_BRITISH_wangguan_icon
+		textureFile = "gfx/interface/autonomy/autonomy_BRITISH_wangguan.dds"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_ENG_baohuguo_icon
+		textureFile = "gfx/interface/autonomy/autonomy_USA_baohuguo.dds"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_ENG_baohuguo_icon
+		textureFile = "gfx/interface/autonomy/autonomy_ENG_baohuguo.dds"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_wangguan_icon
+		textureFile = "gfx/interface/autonomy/autonomy_wangguan.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_a_new_year
+		textureFile = "gfx/interface/goals/ENG/ENG_a_new_year.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_british
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_british.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_empire
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_empire.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_finish_ireland
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_finish_ireland.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_IRE_problem
+		textureFile = "gfx/interface/ideas/ENG/idea_ENG_IRE_problem.dds"
+		legacy_lazy_load = no
+	}
+}
+

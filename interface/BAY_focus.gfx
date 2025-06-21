@@ -1,50 +1,50 @@
 spriteTypes = {
     spriteType = {
 		name = "GFX_focus_BAY_Smooth_sailing"
-		texturefile = "gfx/focus/BAY/BAY_Smooth_sailing.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_Smooth_sailing.dds"
 	}
     spriteType = {
 		name = "GFX_focus_BAY_election_season"
-		texturefile = "gfx/focus/BAY/BAY_election_season.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_election_season.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_campaign_strategy"
-		texturefile = "gfx/focus/BAY/BAY_campaign_strategy.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_campaign_strategy.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_campaign_campaign"
-		texturefile = "gfx/focus/BAY/BAY_campaign_campaign.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_campaign_campaign.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_bulid_polling"
-		texturefile = "gfx/focus/BAY/BAY_bulid_polling.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_bulid_polling.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_Modernization_continues"
-		texturefile = "gfx/focus/BAY/BAY_Modernization_continues.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_Modernization_continues.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_plan_of_high_way"
-		texturefile = "gfx/focus/BAY/BAY_plan_of_high_way.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_plan_of_high_way.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_Plan_of_four"
-		texturefile = "gfx/focus/BAY/BAY_Plan_of_four.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_Plan_of_four.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_defence_reform"
-		texturefile = "gfx/focus/BAY/BAY_defence_reform.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_defence_reform.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_Plan_of_training"
-		texturefile = "gfx/focus/BAY/BAY_Plan_of_training.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_Plan_of_training.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_Intensify_patrols"
-		texturefile = "gfx/focus/BAY/BAY_Intensify_patrols.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_Intensify_patrols.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_BAY_dice_rolled"
-		texturefile = "gfx/focus/BAY/BAY_dice_rolled.dds"
+		texturefile = "gfx/interface/goals/BAY/BAY_dice_rolled.dds"
 	}
 }

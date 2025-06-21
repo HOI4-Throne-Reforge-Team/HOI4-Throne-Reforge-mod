@@ -1,26 +1,26 @@
 spriteTypes = {
    spriteType = {
 		name = "GFX_idea_AUS_backward_army"
-		texturefile = "gfx/ideas/AUS/AUS_backward_army.dds"
+		texturefile = "gfx/interface/ideas/AUS/AUS_backward_army.dds"
 	}
   spriteType = {
 		name = "GFX_idea_AUS_failed_navy"
-		texturefile = "gfx/ideas/AUS/AUS_failed_navy.dds"
+		texturefile = "gfx/interface/ideas/AUS/AUS_failed_navy.dds"
 	}
   spriteType = {
 		name = "GFX_idea_AUS_failed_air"
-		texturefile = "gfx/ideas/AUS/AUS_failed_air.dds"
+		texturefile = "gfx/interface/ideas/AUS/AUS_failed_air.dds"
 	}
   spriteType = {
 		name = "GFX_idea_AUS_bohemian_ultranationalism"
-		texturefile = "gfx/ideas/AUS/AUS_bohemian_ultranationalism.dds"
+		texturefile = "gfx/interface/ideas/AUS/AUS_bohemian_ultranationalism.dds"
 	}
   spriteType = {
 		name = "GFX_idea_AUS_ancient_economic_system"
-		texturefile = "gfx/ideas/AUS/AUS_ancient_economic_system.dds"
+		texturefile = "gfx/interface/ideas/AUS/AUS_ancient_economic_system.dds"
 	}
   spriteType = {
 		name = "GFX_idea_AUS_rebellious_youth"
-		texturefile = "gfx/ideas/AUS/AUS_rebellious_youth.dds"
+		texturefile = "gfx/interface/ideas/AUS/AUS_rebellious_youth.dds"
 	} 
 }

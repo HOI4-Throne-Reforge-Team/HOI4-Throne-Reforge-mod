@@ -1,50 +1,50 @@
 spriteTypes = {
     spriteType = {
 		name = "GFX_focus_FRA_first_shot_fired"
-		texturefile = "gfx/focus/FRA/FRA_first_shot_fired.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_first_shot_fired.dds"
 	}
     spriteType = {
 		name = "GFX_focus_FRA_Solemn_statement"
-		texturefile = "gfx/focus/FRA/FRA_Solemn_statement.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Solemn_statement.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_No_longer_deceived"
-		texturefile = "gfx/focus/FRA/FRA_No_longer_deceived.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_No_longer_deceived.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Seek_asylum_in_the_Senate"
-		texturefile = "gfx/focus/FRA/FRA_Seek_asylum_in_the_Senate.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Seek_asylum_in_the_Senate.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Makeover"
-		texturefile = "gfx/focus/FRA/FRA_Makeover.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Makeover.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_No_Scammers_cabinet"
-		texturefile = "gfx/focus/FRA/FRA_No_Scammers_cabinet.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_No_Scammers_cabinet.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Joint_conspiracy"
-		texturefile = "gfx/focus/FRA/FRA_Joint_conspiracy.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Joint_conspiracy.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Center-left_coalition"
-		texturefile = "gfx/focus/FRA/FRA_Center-left_coalition.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Center-left_coalition.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Shut_up"
-		texturefile = "gfx/focus/FRA/FRA_Shut_up.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Shut_up.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Do_a_big_vote"
-		texturefile = "gfx/focus/FRA/FRA_Do_a_big_vote.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Do_a_big_vote.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Great_Judgment"
-		texturefile = "gfx/focus/FRA/FRA_Great_Judgment.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Great_Judgment.dds"
 	}
 	spriteType = {
 		name = "GFX_focus_FRA_Add_fuel_to_the_flames"
-		texturefile = "gfx/focus/FRA/FRA_Add_fuel_to_the_flames.png"
+		texturefile = "gfx/interface/goals/FRA/FRA_Add_fuel_to_the_flames.dds"
 	}
 }
