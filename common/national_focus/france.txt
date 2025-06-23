@@ -18,7 +18,7 @@ focus_tree = {
 	default = no
 	focus = { #枫丹白露
 		id = FRA_fontainebleau
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_fontainebleau
 		cost = 4
 		x = 6
 		y = 0
@@ -36,7 +36,7 @@ focus_tree = {
 
 	focus = {#卡米耶·肖当内阁
 		id = FRA_Camille_Chautemp_cabinet
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Camille_Chautemp_cabinet
 		cost = 4
 		x = 6
 		y = 1
@@ -55,7 +55,7 @@ focus_tree = {
 
 	focus = {#我们对皇帝负责
 		id = FRA_responsible_to_emperor
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_responsible_to_emperor
 		cost = 5
 		x = 4 
 		y = 2
@@ -70,7 +70,7 @@ focus_tree = {
 
 	focus = {#我们对议会负责
 		id = FRA_responsible_to_parliament
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_responsible_to_parliament
 		cost = 5
 		x = 8
 		y = 2
@@ -85,7 +85,7 @@ focus_tree = {
 
 	focus = {#为稳定秩序的努力
 		id = FRA_Efforts_to_stabilize_order
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Efforts_to_stabilize_order
 		cost = 5
 		x = 2
 		y = 3
@@ -121,7 +121,7 @@ focus_tree = {
 
 	focus = {#为自由平等的愿望
 		id = FRA_Aspirations_for_freedom_and_equality
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Aspirations_for_freedom_and_equality
 		cost = 5
 		x = 10
 		y = 3
@@ -138,7 +138,7 @@ focus_tree = {
 
 	focus = {#并没有什么不好
 		id = FRA_nothing_wrong_with_that
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_nothing_wrong_with_that
 		cost = 5
 		x = 2
 		y = 4
@@ -160,7 +160,7 @@ focus_tree = {
 	
 	focus = {#延长义务教育年龄
 		id = FRA_Extension_of_the_age_of_compulsory_education
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Extension_of_the_age_of_compulsory_education
 		cost = 5
 		x = 6
 		y = 4
@@ -177,7 +177,7 @@ focus_tree = {
 
 	focus = {#不应该有所退让
 		id = FRA_should_be_no_concessions
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_should_be_no_concessions
 		cost = 5
 		x = 10
 		y = 4
@@ -194,7 +194,7 @@ focus_tree = {
 
 	focus = {#更谈不上什么背叛
 		id = FRA_Let_alone_any_betrayal
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Let_alone_any_betrayal
 		cost = 5
 		x = 2
 		y = 5
@@ -208,7 +208,7 @@ focus_tree = {
 
 	focus = {#低息贷款计划
 		id = FRA_Low_interest_loan_programs
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Low_interest_loan_programs
 		cost = 5
 		x = 6
 		y = 5
@@ -225,7 +225,7 @@ focus_tree = {
 
 	focus = {#哪怕前途黯淡
 		id = FRA_Even_if_the_future_is_bleak
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Even_if_the_future_is_bleak
 		cost = 5
 		x = 10
 		y = 5
@@ -241,7 +241,7 @@ focus_tree = {
 
 	focus = {#最伟大的妥协
 		id = FRA_greatest_compromise
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_greatest_compromise
 		cost = 5
 		x = 4
 		y = 6
@@ -262,7 +262,7 @@ focus_tree = {
 
 	focus = {#最脆弱的理想
 		id = FRA_most_fragile_ideals
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_most_fragile_ideals
 		cost = 5
 		x = 8
 		y = 6
@@ -283,7 +283,7 @@ focus_tree = {
 
 	focus = {#完美无瑕
 		id = FRA_perfect
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_perfect
 		cost = 5
 		x = 6
 		y = 7

@@ -47,4 +47,65 @@ spriteTypes = {
 		name = "GFX_focus_FRA_Add_fuel_to_the_flames"
 		texturefile = "gfx/interface/goals/FRA/FRA_Add_fuel_to_the_flames.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_FRA_first_shot_fired"
+		texturefile = "gfx/interface/goals/FRA/FRA_first_shot_fired.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_fontainebleau"
+		texturefile = "gfx/interface/goals/FRA/FRA_fontainebleau.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Camille_Chautemp_cabinet"
+		texturefile = "gfx/interface/goals/FRA/FRA_Camille_Chautemp_cabinet.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_responsible_to_emperor"
+		texturefile = "gfx/interface/goals/FRA/FRA_responsible_to_emperor.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Efforts_to_stabilize_order"
+		texturefile = "gfx/interface/goals/FRA/FRA_Efforts_to_stabilize_order.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Aspirations_for_freedom_and_equality"
+		texturefile = "gfx/interface/goals/FRA/FRA_Aspirations_for_freedom_and_equality.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_nothing_wrong_with_that"
+		texturefile = "gfx/interface/goals/FRA/FRA_nothing_wrong_with_that.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Extension_of_the_age_of_compulsory_education"
+		texturefile = "gfx/interface/goals/FRA/FRA_Extension_of_the_age_of_compulsory_education.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_should_be_no_concessions"
+		texturefile = "gfx/interface/goals/FRA/FRA_should_be_no_concessions.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Let_alone_any_betrayal"
+		texturefile = "gfx/interface/goals/FRA/FRA_Let_alone_any_betrayal.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Low_interest_loan_programs"
+		texturefile = "gfx/interface/goals/FRA/FRA_Low_interest_loan_programs.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Even_if_the_future_is_bleak"
+		texturefile = "gfx/interface/goals/FRA/FRA_Even_if_the_future_is_bleak.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_greatest_compromise"
+		texturefile = "gfx/interface/goals/FRA/FRA_greatest_compromise.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_most_fragile_ideals"
+		texturefile = "gfx/interface/goals/FRA/FRA_most_fragile_ideals.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_perfect"
+		texturefile = "gfx/interface/goals/FRA/FRA_perfect.dds"
+	}
+	
 }

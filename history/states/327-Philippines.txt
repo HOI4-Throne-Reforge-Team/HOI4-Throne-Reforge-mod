@@ -1,5 +1,4 @@
-state=
-{
+state = {
 	id=327
 	name="STATE_327" # Luzon
 	resources={
@@ -9,8 +8,7 @@ state=
 	manpower = 3548684
 	
 	state_category = town
-	history=
-	{
+	history = {
 		owner = PHI
 		buildings = {
 			infrastructure = 3 #was: 5

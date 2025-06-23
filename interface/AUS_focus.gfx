@@ -11,10 +11,6 @@ spriteTypes = {
 		name = "GFX_focus_AUS_snatch_government_departments"
 		texturefile = "gfx/interface/goals/AUS/AUS_snatch_government_departments.dds"
 	}
-    spriteType = {
-		name = "GFX_focus_AUS_the_empire_is_struggle"
-		texturefile = "gfx/interface/goals/AUS/AUS_the_empire_is_struggle.dds"
-	}
 	spriteType = {
 		name = "GFX_focus_AUS_Emergency"
 		texturefile = "gfx/interface/goals/AUS/AUS_Emergency.dds"
