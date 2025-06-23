@@ -99,7 +99,7 @@ focus_tree = {
 
 	focus = {#强制仲裁法案
 		id = FRA_Mandatory_Arbitration_Act
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_focus_FRA_Mandatory_Arbitration_Act
 		cost = 5
 		x = 6
 		y = 3

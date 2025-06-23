@@ -107,5 +107,13 @@ spriteTypes = {
 		name = "GFX_focus_FRA_perfect"
 		texturefile = "gfx/interface/goals/FRA/FRA_perfect.dds"
 	}
+	spriteType = {
+		name = "GFX_focus_FRA_responsible_to_parliament"
+		texturefile = "gfx/interface/goals/FRA/FRA_responsible_to_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_focus_FRA_Mandatory_Arbitration_Act"
+		texturefile = "gfx/interface/goals/FRA/FRA_Mandatory_Arbitration_Act.dds"
+	}
 	
 }
