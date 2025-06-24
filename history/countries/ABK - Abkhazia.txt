@@ -99,6 +99,6 @@ set_popularities = {
 }
 
 
-recruit_character = ABK_kirilli_bechvaya
+#recruit_character = ABK_kirilli_bechvaya
 
 

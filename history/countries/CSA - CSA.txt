@@ -75,123 +75,23 @@ if = {
 	}
 }
 
-recruit_character = CSA_georges_vereecken
-recruit_character = CSA_raoul_overstraeten
-recruit_character = CSA_rene_lagrou
-recruit_character = CSA_paul_van_zeeland
-recruit_character = CSA_victor_van_strydonck_de_burkel
-recruit_character = CSA_fritz_conrad
-recruit_character = CSA_fritz_lob
-recruit_character = CSA_georges_deffontaine
-recruit_character = CSA_victor_strydonck_burkel
-recruit_character = CSA_charles_bastin
-recruit_character = CSA_paul-henri_spaak
-recruit_character = CSA_gaston_eyskens
-recruit_character = CSA_leon_degrelle
-recruit_character = CSA_jules_iserentant
-recruit_character = CSA_jules_pire
-recruit_character = CSA_oscar_michiels
-recruit_character = CSA_yvan_gerard
-
-
-1939.1.1 = {
-
-	add_political_power = 1199
-	add_command_power = 100
-	
-	#adding ministers
-	add_ideas = {
-		army_ordnance_department
-		general_electric
-		USA_prepare_intervention
-
-		#laws
-		isolation
-		volunteer_only
-
-		new_deal
-	}
-
-	#focuses
-	
-	oob = "USA_1939"
-	set_technology = {
-		basic_light_tank = 1
-		interwar_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		marines = 1
-		improved_submarine = 1
-		basic_destroyer = 1
-		basic_heavy_cruiser = 1
-		basic_battlecruiser = 1
-
-		#doctrines
-		#Air
-		air_superiority = 1
-		infrastructure_destruction = 1
-		naval_strike_tactics = 1
-
-		sup_delay = 1
-		submarine_operations_bs = 1
-		carrier_primacy = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		improved_oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-		dispersed_industry3 = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "By Blood Alone" }
-		}
-		set_technology = {
-			fighter1 = 1
-			cv_fighter1 = 1
-			heavy_fighter1 = 1
-			tactical_bomber1 = 1
-			CAS2 = 1
-			strategic_bomber1 = 1
-		}
-		create_equipment_variant = {
-			name = "Martin M166"
-			type = tac_bomber_equipment_0
-			upgrades = {
-				plane_tac_bomb_upgrade = 2
-				plane_range_upgrade = 1
-				plane_engine_upgrade = 2
-				plane_reliability_upgrade = 3
-			}
-		}
-	}
-}
-
-
-
+#recruit_character = CSA_georges_vereecken
+#recruit_character = CSA_raoul_overstraeten
+#recruit_character = CSA_rene_lagrou
+#recruit_character = CSA_paul_van_zeeland
+#recruit_character = CSA_victor_van_strydonck_de_burkel
+#recruit_character = CSA_fritz_conrad
+#recruit_character = CSA_fritz_lob
+#recruit_character = CSA_georges_deffontaine
+#recruit_character = CSA_victor_strydonck_burkel
+#recruit_character = CSA_charles_bastin
+#recruit_character = CSA_paul-henri_spaak
+#recruit_character = CSA_gaston_eyskens
+#recruit_character = CSA_leon_degrelle
+#recruit_character = CSA_jules_iserentant
+#recruit_character = CSA_jules_pire
+#recruit_character = CSA_oscar_michiels
+#recruit_character = CSA_yvan_gerard
 
 set_convoys = 100
 
@@ -214,32 +114,6 @@ add_ideas = {
 	free_trade
 	home_of_the_free
 }
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.11.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 99
-		communism = 1
-	}
-}
-
-create_country_leader = {
-	name = "William Dudley Pelley"
-	desc = "POLITICS_WILLIAM_DUDLEY_PELLEY_DESC"
-	picture = GFX_portrait_William_Dudley_Pelley
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-
 
 ### Ship Variants ###
 

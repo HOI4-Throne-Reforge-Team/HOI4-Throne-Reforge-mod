@@ -68,7 +68,7 @@ set_popularities = {
 	fascism = 0
 }
 
-recruit_character = BIA_akenzua_ii
+#recruit_character = BIA_akenzua_ii
 
 
 

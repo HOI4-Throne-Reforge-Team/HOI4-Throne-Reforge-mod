@@ -1,7 +1,5 @@
 ﻿capital = 206 #Minsk
 
-oob = "BLR_1936"
-
 set_research_slots = 3
 
 # Starting tech
@@ -95,9 +93,9 @@ set_popularities = {
 	fascism = 5
 }
 
-recruit_character = BLR_adam_stankievic
-recruit_character = BLR_panteleimon_ponomarenko
-recruit_character = BLR_radislau_astrouski
+#recruit_character = BLR_adam_stankievic
+#recruit_character = BLR_panteleimon_ponomarenko
+#recruit_character = BLR_radislau_astrouski
 
 
 

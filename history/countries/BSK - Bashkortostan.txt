@@ -97,6 +97,6 @@ set_popularities = {
 }
 
 
-recruit_character = BSK_yakov_bykin
+#recruit_character = BSK_yakov_bykin
 
 

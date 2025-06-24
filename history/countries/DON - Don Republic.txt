@@ -78,4 +78,4 @@ set_popularities = {
 	fascism = 20
 }
 
-recruit_character = DON_vladimir_sidorin
+#recruit_character = DON_vladimir_sidorin

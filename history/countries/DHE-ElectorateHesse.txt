@@ -43,7 +43,6 @@ if ={
 		is_puppet_of = FRA
 	}
 	set_cosmetic_tag = FRDHE
-autonomous_state = autonomy_puppet
 }
 
 add_ideas = {
