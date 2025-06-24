@@ -5,6 +5,7 @@ tags={
 replace_path="common/decisions"
 replace_path="common/on_actions"
 replace_path="common/units"
+replace_path="common/characters"
 replace_path="events"
 replace_path="history/units"
 replace_path="history/states"
