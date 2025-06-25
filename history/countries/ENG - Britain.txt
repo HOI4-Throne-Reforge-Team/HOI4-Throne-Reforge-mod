@@ -234,6 +234,9 @@ if = {
 				set_autonomy = { target = EGY autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
 				set_autonomy = { target = MAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
 				set_autonomy = { target = BRM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = OMA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = JOR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = PAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
 				set_autonomy = { target = RAJ autonomy_state = autonomy_wangguan freedom_level = 0.50  }
 
 	else = {
