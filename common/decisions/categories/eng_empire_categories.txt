@@ -1,0 +1,7 @@
+eng_empire = {
+	icon = generic_political_actions
+	priority = 114514
+	visible = {
+		tag = ENG
+	}
+}

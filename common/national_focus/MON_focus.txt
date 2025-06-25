@@ -1,0 +1,157 @@
+focus_tree = {
+	id = MON_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MON
+		}
+	}
+	default = no
+	focus = {
+		id = MON_foucs_storming
+		available = {
+			has_government = democratic
+		}
+		icon = GFX_eng_a_new_year
+		cost = 2
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = MON_focus_10
+		available = {
+			has_government = democratic
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 10
+		y = 7
+	}
+	focus = {
+		id = Mon_focus_white_army
+		available = {
+			has_government = democratic
+		}
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = MON_foucs_storming
+		}
+		relative_position_id = MON_foucs_storming
+	}
+	focus = {
+		id = MON_focus_balck_ramy
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = MON_foucs_storming
+		}
+		relative_position_id = MON_foucs_storming
+	}
+	focus = {
+		id = MON_foucs_red_army
+		icon = GFX_ENG_foucs_build_british
+		cost = 2
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = MON_foucs_storming
+		}
+		relative_position_id = MON_foucs_storming
+	}
+	focus = {
+		id = MON_focus_4
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 10
+		y = 2
+		prerequisite = {
+			focus = MON_foucs_red_army
+		}
+		prerequisite = {
+			focus = MON_focus_balck_ramy
+		}
+		prerequisite = {
+			focus = Mon_focus_white_army
+		}
+	}
+	focus = {
+		id = MON_focus_6
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = MON_focus_4
+		}
+		relative_position_id = MON_focus_4
+	}
+	focus = {
+		id = MON_focus_5
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = MON_focus_4
+		}
+	}
+	focus = {
+		id = MON_focus_7
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = MON_focus_5
+		}
+		prerequisite = {
+			focus = MON_focus_6
+		}
+	}
+	focus = {
+		id = MON_focus_11
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 10
+		y = 8
+		prerequisite = {
+			focus = MON_focus_10
+		}
+	}
+	focus = {
+		id = MON_focus_8
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 5
+		prerequisite = {
+			focus = MON_focus_7
+		}
+	}
+	focus = {
+		id = MON_focus_9
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = MON_focus_7
+		}
+	}
+	focus = {
+		id = MON_focus_12
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 10
+		y = 9
+		prerequisite = {
+			focus = MON_focus_11
+		}
+	}
+}

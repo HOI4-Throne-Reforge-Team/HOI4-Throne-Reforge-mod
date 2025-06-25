@@ -29,33 +29,13 @@ ideas = {
 			
 			modifier = {
 				stability_weekly = 0.001
+				war_support_weekly = 0.001
 				stability_factor = 0.05
 				war_support_factor = 0.05
 
 			}
 			
 
-		}
-
-		ENG_king_edward_fascism = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-
-			picture = king_edward
-			
-			removal_cost = -1
-			
-			allowed_civil_war = {
-				has_government = fascism
-			}
-
-
-			modifier = {
-				stability_factor = 0.05
-				drift_defence_factor = 0.5
-			}
 		}
 
 
@@ -91,16 +71,20 @@ ideas = {
 					has_government = fascism
 				}
 			}
+
+			available = {
+				has_war_support < 0.75
+			}
 			
 			removal_cost = -1
 						
 			modifier = {
 				conscription_factor = -0.30
-				CONSUMER_GOODS_FACTOR = 0.15
-				war_support_factor = -0.1
+				CONSUMER_GOODS_FACTOR = 0.35
+				war_support_factor = -0.2
 				TRAINING_TIME_ARMY_FACTOR = 0.2
-				production_speed_arms_factory_factor = -0.2
-				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = -0.3
+				production_speed_industrial_complex_factor = 0.3
 			}
 		}
 
@@ -133,6 +117,267 @@ ideas = {
 				non_core_manpower = -0.01
 			}
 		}
+
+		ENG_perfect_british = {
+			
+			allowed = {
+				original_tag = ENG
+			}
+
+			picture = ENG_perfect_british
+			
+			removal_cost = -1
+			
+			available = {
+				126 = { is_controlled_by = ENG }
+			}
+			
+			allowed_civil_war = {
+				
+			}
+
+
+			modifier = {
+				stability_factor = 0.15
+				INDUSTRY_REPAIR_FACTOR = 0.2
+production_speed_synthetic_refinery_factor = 0.1
+conversion_cost_civ_to_mil_factor = -0.5
+production_factory_max_efficiency_factor = 0.1
+production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+line_change_production_efficiency_factor = 0.1
+industrial_capacity_factory = 0.1
+industrial_capacity_dockyard = 0.1
+research_speed_factor = 0.10
+ammunition_factor = 0.1
+				ammunition_capacity_factor = 0.1
+			}
+		}
+
+		raj_tubang_idea = {
+	
+			picture = yingguozhujun
+			
+			allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+						always = yes
+					}
+					 available = { 
+							is_in_faction_with = ENG
+					 }
+					cancel = { 
+					}
+					modifier = {
+						CIC_TO_OVERLORD_FACTOR = 0.75
+						MIC_TO_OVERLORD_FACTOR = 0.75
+						AUTONOMY_MANPOWER_SHARE = 0.2
+						ANNEX_COST_FACTOR = 1
+						neutrality_drift = 0.1
+					}
+					removal_cost = -1
+			}
+
+			ENG_subject_0 = {
+	
+				picture = ENG_subject_0
+				
+				allowed = {
+							always = no
+						}
+						allowed_civil_war = {
+							always = yes
+						}
+						 available = { 
+								is_in_faction_with = ENG
+						 }
+						cancel = { 
+						}
+						modifier = {
+							CIC_TO_OVERLORD_FACTOR = -0.75
+							MIC_TO_OVERLORD_FACTOR = -0.75
+						}
+						removal_cost = -1
+				}
+
+			ENG_subject_1 = {
+	
+				picture = ENG_subject_1
+				
+				allowed = {
+							always = no
+						}
+						allowed_civil_war = {
+							always = yes
+						}
+						 available = { 
+								is_in_faction_with = ENG
+						 }
+						cancel = { 
+						}
+						modifier = {
+							CIC_TO_OVERLORD_FACTOR = 0.05
+							MIC_TO_OVERLORD_FACTOR = 0.05
+						}
+						removal_cost = -1
+				}
+			ENG_subject_2 = {
+	
+				picture = ENG_subject_2
+				
+				allowed = {
+							always = no
+						}
+						allowed_civil_war = {
+							always = yes
+						}
+						 available = { 
+								is_in_faction_with = ENG
+						 }
+						cancel = { 
+						}
+						modifier = {
+							CIC_TO_OVERLORD_FACTOR = 0.25
+							MIC_TO_OVERLORD_FACTOR = 0.25
+						}
+						removal_cost = -1
+				}
+
+				ENG_subject_3 = {
+	
+					picture = ENG_subject_3
+					
+					allowed = {
+								always = no
+							}
+							allowed_civil_war = {
+								always = yes
+							}
+							 available = { 
+									is_in_faction_with = ENG
+							 }
+							cancel = { 
+							}
+							modifier = {
+								CIC_TO_OVERLORD_FACTOR = 0.75
+								MIC_TO_OVERLORD_FACTOR = 0.75
+							}
+							removal_cost = -1
+					}
+
+					ENG_guodukuozhang = {
+	
+						picture = ENG_guodukuozhang
+						
+						allowed = {
+									always = no
+								}
+								allowed_civil_war = {
+									always = yes
+								}
+								 available = { 
+										is_subject = no
+								 }
+								cancel = { 
+								}
+								modifier = {
+									consumer_goods_factor = 0.2
+		                            civilian_factory_use = 10
+									political_power_gain = -0.75
+									offensive_war_stability_factor = -0.25
+		                            defensive_war_stability_factor = -0.25
+								}
+								removal_cost = -1
+						}
+
+					ENG_Commonwealth = {
+					picture = ENG_Commonwealth
+					
+					allowed = {
+								always = no
+							}
+							allowed_civil_war = {
+								always = yes
+							}
+							 available = { 
+									NOT = { has_war_with = ENG }
+							 }
+							cancel = { 
+							}
+							targeted_modifier = {
+					tag = ENG
+				                
+				                
+				                trade_cost_for_target_factor = -0.15
+			}
+							modifier = {
+								CONSUMER_GOODS_FACTOR = -0.05
+								TRADE_OPINION_FACTOR = 0.25
+								FACTION_TRADE_OPINION_FACTOR = 0.25
+								political_power_factor = 0.1
+research_speed_factor = 0.05
+drift_defence_factor = 0.5
+trade_opinion_factor = 0.5
+opinion_gain_monthly_factor = 0.5
+production_speed_buildings_factor = 0.05
+license_purchase_cost = -0.25#生产许可购买花费
+		license_production_speed = 0.25#许可装备生产速度
+							}
+							removal_cost = -1
+					}
+
+					ENG_Royal_Navy_modifier = {
+	
+				picture = stiff_upper_lip
+				
+				allowed = {
+							always = no
+						}
+						allowed_civil_war = {
+							always = yes
+						}
+						 available = { 
+								is_subject = no
+						 }
+						cancel = { 
+						}
+						modifier = {
+							refit_ic_cost = 0.15
+		refit_speed = 0.15
+		repair_speed_factor = 0.15
+		navy_org = 5
+		navy_org_factor = 0.15
+		naval_strike_attack_factor = 0.15
+		navy_submarine_attack_factor = 0.15
+		navy_capital_ship_attack_factor = 0.15
+		navy_screen_attack_factor = 0.15
+		navy_screen_defence_factor = 0.15
+		naval_morale_factor = 0.15
+		naval_speed_factor = 0.15
+		navy_max_range_factor = 0.15
+		naval_has_potf_in_combat_attack = 0.15
+		naval_strike_agility_factor = 0.15
+		screening_efficiency = 0.15
+		naval_coordination = 0.15
+		naval_detection = 0.15
+		spotting_chance = 0.15
+		convoy_raiding_efficiency_factor = 0.15
+		strike_force_movement_org_loss = -0.15
+		amphibious_invasion = 0.15
+		naval_invasion_capacity = 30
+		invasion_preparation = -0.15
+		naval_critical_score_chance_factor = 0.15
+		sub_retreat_speed = 0.15
+		naval_invasion_prep_speed = 0.15
+		sortie_efficiency = 0.15
+		positioning = 0.15
+		spotting_chance = 0.15
+		navy_anti_air_attack_factor = 0.15
+						}
+						removal_cost = -1
+				}
+		
 		
 		
 	}

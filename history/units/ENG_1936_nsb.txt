@@ -258,7 +258,7 @@ units = {
 	#Sudan
 	division= {	
 		name = "Sudan Defense Force"
-		location = 12806
+		location = 12725
 		division_template = "Colonial Garrison"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
 		start_experience_factor = 0.2
@@ -313,7 +313,7 @@ units = {
 	#Gibraltar
 	division= {	
 		name = "Gibraltar Defense Force"
-		location = 7193
+		location = 9947
 		division_template = "Colonial Garrison"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.15
