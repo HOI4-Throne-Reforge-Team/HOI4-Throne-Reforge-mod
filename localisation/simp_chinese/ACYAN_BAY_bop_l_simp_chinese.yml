@@ -1,0 +1,24 @@
+﻿l_simp_chinese:
+#巴伐利亚左翼权力平衡
+ BAY_left_power_balance: "联盟内部斗争"
+ perfect_balance: "完美的平衡？"
+ perfect_balance_dese: ""
+
+
+#斯巴达克同盟
+ BAY_Spartakusbund: "斯巴达克同盟"
+ BAY_Spartakusbund_desc: "斯巴达克同盟"
+ BAY_Spartakusbund_low: "斯巴达克微弱优势"
+ BAY_Spartakusbund_middle: "斯巴达克如日中天"
+ BAY_Spartakusbund_high: "斯巴达克大权在握"
+ BAY_Spartakusbund_control: "人民对党的全面控制"
+ 
+
+#布尔什维克
+ BAY_bolshevik: "布尔什维克"
+ BAY_bolshevik_desc: "布尔什维克"
+ BAY_bolshevik_low: "布尔什维克微弱优势"
+ BAY_bolshevik_middle: "布尔什维克如日中天"
+ BAY_bolshevik_high: "布尔什维克大权在握"
+ BAY_bolshevik_control : "党的全面控制"
+ 
