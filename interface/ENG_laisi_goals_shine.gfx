@@ -2,10 +2,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_eng_a_new_year_shine"
-		texturefile = "gfx/interface/goals/eng_a_new_year.png"
+		texturefile = "gfx/interface/goals/ENG/eng_a_new_year.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/eng_a_new_year.png"
+			animationmaskfile = "gfx/interface/goals/ENG/eng_a_new_year.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -17,7 +17,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/eng_a_new_year.png"
+			animationmaskfile = "gfx/interface/goals/ENG/eng_a_new_year.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -33,10 +33,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_british_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_british.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_british.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_british.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_british.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -48,7 +48,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_british.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_british.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -64,10 +64,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_empire_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_empire.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_empire.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_empire.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_empire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -79,7 +79,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_empire.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_empire.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -95,10 +95,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_finish_ireland_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_finish_ireland.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_finish_ireland.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_finish_ireland.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_finish_ireland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -110,7 +110,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_finish_ireland.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_finish_ireland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -126,10 +126,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_london_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_london.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_london.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_london.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_london.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -141,7 +141,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_london.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_london.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -157,10 +157,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_england_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_england.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_england.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_england.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_england.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -172,7 +172,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_england.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_england.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -188,10 +188,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_ireland_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_ireland.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_ireland.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_ireland.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_ireland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -203,7 +203,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_ireland.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_ireland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -219,10 +219,10 @@ spriteTypes = {
 	
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_scotland_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_scotland.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_scotland.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_scotland.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_scotland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -234,7 +234,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_scotland.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_scotland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -250,10 +250,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_Edinburgh_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_Edinburgh.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_Edinburgh.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_Edinburgh.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_Edinburgh.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -265,7 +265,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_Edinburgh.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_Edinburgh.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -281,10 +281,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_perfect_british_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_perfect_british.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_perfect_british.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_perfect_british.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_perfect_british.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -296,7 +296,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_perfect_british.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_perfect_british.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -312,10 +312,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_india_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_india.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_india.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_india.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_india.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -327,7 +327,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_india.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_india.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -343,10 +343,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_CAN_AST_NZL_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_CAN_AST_NZL.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_CAN_AST_NZL.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_CAN_AST_NZL.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_CAN_AST_NZL.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -358,7 +358,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_CAN_AST_NZL.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_CAN_AST_NZL.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -373,10 +373,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_ENG_foucs_build_SAF_EGY_shine"
-		texturefile = "gfx/interface/goals/ENG_foucs_build_SAF_EGY.png"
+		texturefile = "gfx/interface/goals/ENG/ENG_foucs_build_SAF_EGY.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_SAF_EGY.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_SAF_EGY.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -388,7 +388,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/ENG_foucs_build_SAF_EGY.png"
+			animationmaskfile = "gfx/interface/goals/ENG/ENG_foucs_build_SAF_EGY.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
