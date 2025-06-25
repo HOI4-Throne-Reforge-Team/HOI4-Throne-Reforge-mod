@@ -32,7 +32,7 @@ eng_empire = {
 
 		fire_only_once = no
 		days_remove = 10
-        cost = 25
+        cost = 10
 
 		remove_effect = {
 			every_state = {
@@ -160,7 +160,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		remove_effect = {
 			set_global_flag = ENG_completed_RAJ_railway
 			build_railway = {
 				level = 1
@@ -247,7 +247,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		remove_effect = {
 			set_global_flag = ENG_completed_RAJ_education
 			RAJ = { remove_ideas = RAJ_marginalized_muslim_community }
 			add_manpower = 100000
@@ -280,7 +280,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		   remove_effect = {
 			set_global_flag = ENG_completed_RAJ_food
 			RAJ = { remove_ideas = RAJ_risk_of_famine }
 			add_manpower = 100000
@@ -313,7 +313,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		   remove_effect = {
 			set_global_flag = ENG_completed_RAJ_countryside
 			add_offsite_building = { type = industrial_complex level = 5 }
 			RAJ = { 
@@ -351,7 +351,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		   remove_effect = {
 			set_global_flag = ENG_completed_economic_commonwealth
 			RAJ = { 
 				remove_dynamic_modifier = { modifier = RAJ_agrarian_society } 
@@ -402,7 +402,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		remove_effect = {
 			set_global_flag = ENG_completed_economic_commonwealth
 			every_country = {
 				limit = {
@@ -451,7 +451,7 @@ eng_empire = {
 			civilian_factory_use = 5
 	   	}
 
-		complete_effect = {
+		remove_effect = {
 			set_global_flag = ENG_completed_EGY_suyishi_jiagu
 			add_building_construction = {
 				type = bunker
@@ -519,7 +519,7 @@ eng_empire = {
 			civilian_factory_use = 10
 	   	}
 
-		complete_effect = {
+		remove_effect = {
 			set_global_flag = ENG_completed_SAF_kaipu_gangkou
 			add_building_construction = {
 				type = naval_base
