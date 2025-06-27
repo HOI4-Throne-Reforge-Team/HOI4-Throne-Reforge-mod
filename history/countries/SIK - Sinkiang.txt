@@ -1,6 +1,6 @@
 ﻿capital = 617
 
-recruit_character =SIK_yang_zanxv
+# recruit_character =SIK_yang_zanxv
 
 set_stability = 1
 set_war_support = 1

@@ -38,34 +38,34 @@ if = {
 
 set_research_slots = 3
 
-recruit_character = YUG_prince_paul
-recruit_character = YUG_milan_stojadinovic
-recruit_character = YUG_milan_grol
-recruit_character = YUG_josip_broz_tito
-recruit_character = YUG_vladimir_Cukavac
-recruit_character = YUG_ivan_gosnjak
-recruit_character = YUG_danilo_kalafatovic
-recruit_character = YUG_milutin_nedic
-recruit_character = YUG_petar_kosic
-recruit_character = YUG_josef_depre
-recruit_character = YUG_marijan_polic
-recruit_character = YUG_borivoje_mirkovic
-recruit_character = YUG_dusan_simovic
-recruit_character = YUG_draza_mihailovic
-recruit_character = YUG_mihajlo_lukic
-recruit_character = YUG_bogoljub_ilic
-recruit_character = YUG_petar_vukcevic
-recruit_character = YUG_ljubomir_maric
-recruit_character = YUG_arso_jovanovic
-recruit_character = YUG_slobodan_jovanovic
-recruit_character = YUG_milovan_djilas
-recruit_character = YUG_milan_nedic
-recruit_character = YUG_ivan_ribar
-recruit_character = YUG_dimitrije_ljotic
-recruit_character = YUG_ivo_lola_ribar
-recruit_character = YUG_peter_ii
-recruit_character = SOV_vasily_flug
-recruit_character = SOV_boris_shteifon
+# recruit_character = YUG_prince_paul
+# recruit_character = YUG_milan_stojadinovic
+# recruit_character = YUG_milan_grol
+# recruit_character = YUG_josip_broz_tito
+# recruit_character = YUG_vladimir_Cukavac
+# recruit_character = YUG_ivan_gosnjak
+# recruit_character = YUG_danilo_kalafatovic
+# recruit_character = YUG_milutin_nedic
+# recruit_character = YUG_petar_kosic
+# recruit_character = YUG_josef_depre
+# recruit_character = YUG_marijan_polic
+# recruit_character = YUG_borivoje_mirkovic
+# recruit_character = YUG_dusan_simovic
+# recruit_character = YUG_draza_mihailovic
+# recruit_character = YUG_mihajlo_lukic
+# recruit_character = YUG_bogoljub_ilic
+# recruit_character = YUG_petar_vukcevic
+# recruit_character = YUG_ljubomir_maric
+# recruit_character = YUG_arso_jovanovic
+# recruit_character = YUG_slobodan_jovanovic
+# recruit_character = YUG_milovan_djilas
+# recruit_character = YUG_milan_nedic
+# recruit_character = YUG_ivan_ribar
+# recruit_character = YUG_dimitrije_ljotic
+# recruit_character = YUG_ivo_lola_ribar
+# recruit_character = YUG_peter_ii
+# recruit_character = SOV_vasily_flug
+# recruit_character = SOV_boris_shteifon
 
 
 if = {
@@ -172,145 +172,7 @@ if = {
 	}
 }
 
-1939.1.1 = {
 
-	add_ideas = {
-		limited_conscription
-	}
-
-	if = {
-		limit = {
-			has_dlc = "Death or Dishonor"
-		}
-		add_ideas = {
-			YUG_idea_foreign_capital
-			YUG_idea_expanded_mining_industry
-			YUG_license_production
-			YUG_idea_orthodox_church_support
-		}
-	}	
-
-	add_political_power = 1198
-	add_command_power = 100
-	
-	if = {
-		limit = {
-			has_dlc = "Death or Dishonor"
-		}
-		complete_national_focus = YUG_western_focus
-		complete_national_focus = YUG_industrialization_program
-		complete_national_focus = YUG_friendship_treaty_with_italy
-		complete_national_focus = YUG_attract_axis_capital
-		complete_national_focus = YUG_expand_the_mining_industry
-		complete_national_focus = YUG_develop_civilian_industry
-		complete_national_focus = YUG_evolution
-		complete_national_focus = YUG_army_modernization
-		complete_national_focus = YUG_mountain_brigades
-		complete_national_focus = YUG_modernize_the_air_force
-		complete_national_focus = YUG_purchase_foreign
-		complete_national_focus = YUG_license_production 
-		complete_national_focus = YUG_fighter_license 
-		complete_national_focus = YUG_establish_the_banovina_of_croatia
-		complete_national_focus = YUG_ban_slovene_fascism_parties
-		complete_national_focus = YUG_concessions_for_macedonians
-		complete_national_focus = YUG_small_arms 
-		complete_national_focus = YUG_domestic_artillery_production
-		complete_national_focus = YUG_expand_the_serbian_shipyards
-
-		unlock_national_focus = YUG_rare_minerals_exploitation
-	}
-	
-	if = {
-		limit = {
-			NOT = { has_dlc = "Death or Dishonor" }
-		}
-		#generic focuses
-		complete_national_focus = army_effort
-		complete_national_focus = equipment_effort
-		complete_national_focus = motorization_effort
-		complete_national_focus = aviation_effort
-		complete_national_focus = naval_effort
-		complete_national_focus = flexible_navy
-		complete_national_focus = industrial_effort
-		complete_national_focus = construction_effort
-		complete_national_focus = production_effort
-	}
-	if = {
-		limit = { NOT = { has_dlc = "No Step Back" } }
-		set_oob = "YUG_1939"
-	}
-	if = {
-		limit = { has_dlc = "No Step Back" } 
-		set_oob = "YUG_1939_nsb"
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "YUG_1939_naval_mtg"
-		else = {
-			set_naval_oob = "YUG_1939_naval_legacy"
-		}
-	}
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_air_oob = "YUG_1939_air_bba"
-			set_technology = {
-				engines_2 = 1
-			}
-		else = {
-			set_air_oob = "YUG_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-				early_bomber = 1
-				tactical_bomber1 = 1
-				CAS1 = 1
-				naval_bomber1 = 1
-			}
-		}
-	}
-
-	set_technology = {
-		interwar_artillery = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		air_superiority = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-		sup_delay = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		construction1 = 1
-		concentrated_industry = 1
-	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_destroyer = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			basic_light_battery = 1
-		}
-	}
-}
 
 set_convoys = 10
 
@@ -327,20 +189,7 @@ set_popularities = {
 	neutrality = 60
 }
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1938.12.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = { # Will get +7 from Italian focus: Potential Allies in the Balkans
-		democratic = 10
-		fascism = 20
-		communism = 10
-		neutrality = 60
-	}
-}
+
 
 set_stability = 0.6
 
@@ -439,44 +288,3 @@ if = {
 }
 
 # 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		create_equipment_variant = {
-			name = "Ikarus IK-3" #
-			type = small_plane_airframe_1
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
-				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
-			}
-		}
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Destroyers #
-		create_equipment_variant = {
-			name = "Beograd Class"	
-			type = ship_hull_light_2
-			name_group = YUG_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_mine_layer_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-	}
-}

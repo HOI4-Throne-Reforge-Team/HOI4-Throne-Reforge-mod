@@ -1,6 +1,6 @@
 ﻿capital = 105 # Montenegro
 
-oob = "MNT_1936"
+# oob = "MNT_1936"
 
 set_research_slots = 3
 
@@ -85,9 +85,9 @@ set_popularities = {
 	communism = 34
 }
 
-recruit_character = MNT_kristo_popovic
-recruit_character = MNT_blazo_jovanovic
-recruit_character = MNT_blazo_dukanovic
+# recruit_character = MNT_kristo_popovic
+# recruit_character = MNT_blazo_jovanovic
+# recruit_character = MNT_blazo_dukanovic
 
 
 

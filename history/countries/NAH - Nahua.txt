@@ -42,12 +42,12 @@ IF = {
 	}
 }
 
-IF = {
-	limit = {
-		has_dlc = "Trial of Allegiance"
-	}
-	recruit_character = NAH_nahua_council
-}
+# IF = {
+# 	limit = {
+# 		has_dlc = "Trial of Allegiance"
+# 	}
+# 	recruit_character = NAH_nahua_council
+# }
 
 set_politics = {
 	ruling_party = neutrality

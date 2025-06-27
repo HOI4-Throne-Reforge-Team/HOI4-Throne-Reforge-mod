@@ -1,6 +1,6 @@
 capital = 751
 
-recruit_character =XIK_xiong_kewu
+# recruit_character =XIK_xiong_kewu
 
 set_stability = 1
 set_war_support = 1

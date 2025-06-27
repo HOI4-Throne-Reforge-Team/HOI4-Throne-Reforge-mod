@@ -1,7 +1,7 @@
 
 capital = 620
 
-recruit_character = SHH_chen_qimei
+# recruit_character = SHH_chen_qimei
 
 set_stability = 0.75
 set_war_support = 0.60

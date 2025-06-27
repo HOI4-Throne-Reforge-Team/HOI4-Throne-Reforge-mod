@@ -98,8 +98,8 @@ set_popularities = {
 	neutrality = 20
 }
 
-recruit_character = YAK_pavel_pevznyak
-recruit_character = YAK_anatoly_pepelyayev
+# recruit_character = YAK_pavel_pevznyak
+# recruit_character = YAK_anatoly_pepelyayev
 
 
 

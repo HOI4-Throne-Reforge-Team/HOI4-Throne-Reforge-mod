@@ -82,7 +82,7 @@ focus_tree = {   #奥地利帝国国策树
 		}
 	}
 	#国控市场经济
-	focus = {  #重整经济部门
+	focus = {  #合并帝国经济部门
 		id = AUS_restructuring_department_of_economic
 		icon = GFX_classic_album_art
 		x = 22

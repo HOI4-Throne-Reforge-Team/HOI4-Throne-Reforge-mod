@@ -43,16 +43,16 @@ set_popularities = {
 
 add_ideas = {
 }
-create_country_leader = {
-	name = "Albrecht_Wurttemberg" 
-	desc = "Albrecht_Wurttemberg_desc"
-	picture = "gfx/leaders/Deutscher_Bund/Albrecht_Wurttemberg.png"
-	expire = "1953.3.1"
-	ideology = authoritariandemocracy #insanity
-	traits = {
+# create_country_leader = {
+# 	name = "Albrecht_Wurttemberg" 
+# 	desc = "Albrecht_Wurttemberg_desc"
+# 	picture = "gfx/leaders/Deutscher_Bund/Albrecht_Wurttemberg.png"
+# 	expire = "1953.3.1"
+# 	ideology = authoritariandemocracy #insanity
+# 	traits = {
 		
-	}
-}
+# 	}
+# }
 if ={
 	limit ={
 		is_puppet_of = FRA

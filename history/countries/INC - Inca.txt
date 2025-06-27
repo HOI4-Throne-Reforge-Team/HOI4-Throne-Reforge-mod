@@ -41,14 +41,6 @@ IF = {
 		basic_depth_charges = 1
 	}
 }
-
-IF = {
-	limit = {
-		has_dlc = "Trial of Allegiance"
-	}
-	recruit_character = INC_inca_council
-}
-
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1934.2.11"

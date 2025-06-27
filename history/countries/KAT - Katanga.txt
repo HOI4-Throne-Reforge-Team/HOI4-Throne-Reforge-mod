@@ -68,7 +68,7 @@ set_popularities = {
 	fascism = 5
 }
 
-recruit_character = KAT_moise_tshombe
+# recruit_character = KAT_moise_tshombe
 
 
 

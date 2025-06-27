@@ -47,13 +47,13 @@ if ={
 
 add_ideas = {
 }
-create_country_leader = {
-	name = "Heinrich_zu_Mecklenburg_VIII" 
-	desc = "Heinrich_zu_Mecklenburg_VIII_desc"
-	picture = "gfx/leaders/Deutscher_Bund/Heinrich_VIII.png"
-	expire = "1953.3.1"
-	ideology = authoritariandemocracy #insanity
-	traits = {
+# create_country_leader = {
+# 	name = "Heinrich_zu_Mecklenburg_VIII" 
+# 	desc = "Heinrich_zu_Mecklenburg_VIII_desc"
+# 	picture = "gfx/leaders/Deutscher_Bund/Heinrich_VIII.png"
+# 	expire = "1953.3.1"
+# 	ideology = authoritariandemocracy #insanity
+# 	traits = {
 		
-	}
-}
+# 	}
+# }

@@ -97,6 +97,6 @@ set_popularities = {
 }
 
 
-recruit_character = MEL_zinovy_zhadinov
+# recruit_character = MEL_zinovy_zhadinov
 
 

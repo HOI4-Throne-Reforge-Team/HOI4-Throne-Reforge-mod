@@ -50,9 +50,9 @@ if ={
 add_ideas = {
 }
 
-create_country_leader = {
-	name = " 康拉德.阿登纳"
-	picture = "Konrad_Adenauer.dds"
-	expire = "1970.1.1"
-	ideology = despotism
-}
+# create_country_leader = {
+# 	name = " 康拉德.阿登纳"
+# 	picture = "Konrad_Adenauer.dds"
+# 	expire = "1970.1.1"
+# 	ideology = despotism
+# }

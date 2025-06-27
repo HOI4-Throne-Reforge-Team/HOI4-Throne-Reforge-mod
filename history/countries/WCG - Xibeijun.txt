@@ -1,6 +1,6 @@
 capital = 744
 
-recruit_character = WCG_feng_yuxiang
+# recruit_character = WCG_feng_yuxiang
 
 set_stability = 1
 set_war_support = 1

@@ -111,7 +111,7 @@ set_popularities = {
 	neutrality = 60
 }
 
-recruit_character = LBV_robert_von_habsburg
+# recruit_character = LBV_robert_von_habsburg
 
 ### VARIANTS ###
 # 1936 Start #

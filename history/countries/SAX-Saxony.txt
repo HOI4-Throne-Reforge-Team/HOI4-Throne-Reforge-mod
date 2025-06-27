@@ -34,7 +34,7 @@ set_politics = {
 	elections_allowed = no
 
 }
-recruit_character = SAX_Frederick_Augustus_III
+# recruit_character = SAX_Frederick_Augustus_III
 set_popularities = {
 	democratic = 27
 	fascism = 24

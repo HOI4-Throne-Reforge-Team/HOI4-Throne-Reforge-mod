@@ -1,6 +1,6 @@
 capital = 754
 
-recruit_character = XSM_ma_buqing
+# recruit_character = XSM_ma_buqing
 
 set_stability = 1
 set_war_support = 1

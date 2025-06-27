@@ -161,7 +161,7 @@ set_popularities = {
 	communism = 5
 }
 
-recruit_character = RKB_josef_grohe
+# recruit_character = RKB_josef_grohe
 
 add_ideas = {
 	war_economy

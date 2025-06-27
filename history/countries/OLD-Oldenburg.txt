@@ -41,9 +41,9 @@ set_popularities = {
 
 add_ideas = {
 }
-create_country_leader = {
-	name = "尼库劳斯·弗里德里希·威廉"
-	picture = "Nikolaus_Friedrich_Wilhelm.dds"
-	expire = "1970.1.1"
-	ideology = despotism
-}
+# create_country_leader = {
+# 	name = "尼库劳斯·弗里德里希·威廉"
+# 	picture = "Nikolaus_Friedrich_Wilhelm.dds"
+# 	expire = "1970.1.1"
+# 	ideology = despotism
+# }

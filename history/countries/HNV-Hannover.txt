@@ -43,9 +43,9 @@ set_popularities = {
 
 add_ideas = {
 }
-create_country_leader = {
-	name = "恩斯特·奥古斯特三世"
-	picture = "Ernst_August_Christian_Georg.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-}
+# create_country_leader = {
+# 	name = "恩斯特·奥古斯特三世"
+# 	picture = "Ernst_August_Christian_Georg.dds"
+# 	expire = "1965.1.1"
+# 	ideology = despotism
+# }

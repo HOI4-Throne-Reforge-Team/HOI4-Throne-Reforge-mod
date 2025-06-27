@@ -98,8 +98,8 @@ set_popularities = {
 	neutrality = 10
 }
 
-recruit_character = KHI_nedirbay_aytakov
-recruit_character = KHI_junaid_khan
+# recruit_character = KHI_nedirbay_aytakov
+# recruit_character = KHI_junaid_khan
 
 
 

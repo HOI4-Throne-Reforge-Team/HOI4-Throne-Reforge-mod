@@ -50,13 +50,13 @@ set_popularities = {
 
 add_ideas = {
 }
-create_country_leader = {
-	name = "Friedrich_I_Waldeck_and_Pyrmont" 
-	desc = "Friedrich_I_Waldeck_and_Pyrmont_desc"
-	picture = "gfx/leaders/Deutscher_Bund/Friedrich_I_Waldeck_and_Pyrmont.png"
-	expire = "1953.3.1"
-	ideology = authoritariandemocracy #insanity
-	traits = {
+# create_country_leader = {
+# 	name = "Friedrich_I_Waldeck_and_Pyrmont" 
+# 	desc = "Friedrich_I_Waldeck_and_Pyrmont_desc"
+# 	picture = "gfx/leaders/Deutscher_Bund/Friedrich_I_Waldeck_and_Pyrmont.png"
+# 	expire = "1953.3.1"
+# 	ideology = authoritariandemocracy #insanity
+# 	traits = {
 		
-	}
-}
+# 	}
+# }

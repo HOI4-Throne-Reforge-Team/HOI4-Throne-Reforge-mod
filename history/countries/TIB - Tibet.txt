@@ -1,6 +1,6 @@
 ﻿capital = 757
 
-recruit_character = TIB_danzeng_jiacuo
+# recruit_character = TIB_danzeng_jiacuo
 
 set_politics = {
 	ruling_party = paternal_autocrat

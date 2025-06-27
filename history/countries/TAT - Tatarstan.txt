@@ -95,6 +95,6 @@ set_popularities = {
 }
 
 
-recruit_character = TAT_alexandr_alemasov
+# recruit_character = TAT_alexandr_alemasov
 
 
