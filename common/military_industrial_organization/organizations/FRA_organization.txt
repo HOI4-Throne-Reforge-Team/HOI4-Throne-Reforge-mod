@@ -1,0 +1,201 @@
+############################坦克制造商#################################
+FRA_renault_organization = {#雷诺
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_renault
+	allowed = {	
+			tag = FRA 
+		}
+
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
+
+	add_trait = { 
+		token = FRA_mio_trait_automitrailleuses
+		name = FRA_mio_trait_automitrailleuses
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+		
+		position = { x=5 y=0 }   
+		
+		limit_to_equipment_type = { medium_tank_chassis }
+		
+		equipment_bonus = {
+			maximum_speed = 0.1
+			armor_value = -0.05
+		} 
+
+	}
+
+	add_trait = {
+		token = FRA_mio_trait_b1_bis_suspension
+		name = FRA_mio_trait_b1_bis_suspension
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		special_trait_background = yes
+		
+		position = { x=1 y=1 }  
+		relative_position_id = generic_mio_trait_single_engine
+		
+		any_parent = { generic_mio_trait_single_engine generic_mio_trait_dual_engine_redundancy }
+		
+		limit_to_equipment_type = { heavy_tank_chassis }
+		
+		equipment_bonus = {
+			maximum_speed = 0.05
+			breakthrough = 0.1 
+		} 
+	}
+}
+
+FRA_hotchkiss_organization = {#哈奇开斯
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_3
+	allowed = {	
+		tag = FRA 
+	}
+	add_trait = { 
+		token = FRA_mio_trait_l_35
+		name = FRA_mio_trait_l_35
+		icon = GFX_generic_mio_department_icon_tank_general_weapons
+		any_parent = { generic_mio_enlarged_breech }
+		relative_position_id = generic_mio_enlarged_breech
+		position = { x=1 y=2 }  
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+		}  
+	}
+
+	override_trait = {
+		token = generic_mio_gunner_sight_improvements
+		position = { x=-1 y=2}
+	}
+}
+
+FRA_apx_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_FRA_atelier_puteaux
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_amx_organization = { 
+	include = generic_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_2
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+############################舰船制造商#################################
+
+FRA_fcm_organization = {#地中海冶金和造船厂
+	include = generic_escort_ship_organization
+	icon = GFX_idea_fcm
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_aeb_organization = {#布列塔尼造船厂
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_FRA_aeb
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_acl_organization = {#卢瓦尔造船厂
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_FRA_acl
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_acf_organization = {#法兰西造船厂
+	include = generic_raider_ship_organization
+	icon = GFX_idea_FRA_acf
+	allowed = {
+			tag = FRA
+	}
+}
+
+############################飞机制造商#################################
+FRA_morane_saulnier_organization = {#莫拉纳·索尼埃
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_morane_saulnier
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_bloch_organization = {#布洛克
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_bloch
+	allowed = {	
+			tag = FRA 
+	}
+}
+
+FRA_amiot_organization = {#阿米奥
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_amiot
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_levasseur_organization = {#莱维塞尔
+	include = generic_naval_aircraft_organization
+	icon = GFX_idea_levasseur
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_SNCAC_organization = {
+	name = SNCAC
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_FRA_sncac
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+############################步兵装备制造商#################################
+
+FRA_panhard_organization = {#潘哈德
+	include = generic_armored_car_organization
+	icon = GFX_idea_FRA_panhard
+	allowed = {	
+		tag = FRA 
+	}
+}
+
+FRA_somua_organization = {#索玛
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_somua
+	allowed = {	
+			tag = FRA 
+	}
+}
+
+FRA_mas_organization = {#圣艾蒂安兵工厂
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_mas
+	allowed = {	 
+			tag = FRA 
+	}
+}
+
+FRA_schneider_organization = {#施耐德
+	include = generic_artillery_organization
+	icon = GFX_idea_schneider
+	allowed = {	
+		tag = FRA 
+	}
+}

@@ -29,7 +29,7 @@ focus_tree = {
 		bypass = {
 		}
 		
-		icon = GFX_ENG_a_new_year
+		icon = GFX_eng_a_new_year
 		x = 10
 		y = 0
 		cost = 2.9
@@ -77,6 +77,10 @@ focus_tree = {
 		relative_position_id = ENG_foucs_build_british
 		prerequisite = { focus = ENG_foucs_build_british }
 		available = {
+			113 = { resistance < 20 }
+			119 = { resistance < 20 }
+			134 = { resistance < 20 }
+			135 = { resistance < 20 }
 			113 = {
 				is_controlled_by = ENG
 			}
@@ -92,6 +96,8 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
+		cancel_if_invalid = yes
+		continue_if_invalid = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			custom_effect_tooltip = ENG_Ireland_friend
@@ -105,6 +111,291 @@ focus_tree = {
 			add_stability = -0.05
 			add_war_support = 0.15
 			remove_ideas = ENG_IRE_problem
+		}
+	}
+
+	##开发爱尔兰
+	focus = {
+		id = ENG_foucs_build_ireland
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_finish_ireland
+		prerequisite = { focus = ENG_foucs_finish_ireland }
+		available = {
+				has_government = democratic
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_ireland
+		cost = 10
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_political_power = 100
+			add_manpower = 100000
+			add_war_support = 0.05
+			every_state = {
+				limit = { is_core_of = IRE }
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure #创造建筑类型
+					level = 2 #创造建造数量
+					instant_build = yes #瞬间制造
+				}
+					add_building_construction = {
+						type = industrial_complex #创造建筑类型
+						level = 2 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+					add_building_construction = {
+						type = arms_factory #创造建筑类型
+						level = 1 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_build_england
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_british
+		prerequisite = { focus = ENG_foucs_build_british }
+		available = {
+			126 = { is_controlled_by = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_england
+		cost = 10
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			every_state = {
+				limit = { 
+					is_core_of = ENG
+					NOT = {
+						is_core_of = SCO
+						is_core_of = IRE
+						is_core_of = CAN
+						is_core_of = SAF
+						is_core_of = AST
+						is_core_of = NZL
+					}
+				 }
+				 add_extra_state_shared_building_slots = 1
+				 add_building_construction = {
+					type = infrastructure #创造建筑类型
+					level = 2 #创造建造数量
+					instant_build = yes #瞬间制造
+				}
+					add_building_construction = {
+						type = industrial_complex #创造建筑类型
+						level = 1 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_build_london
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_england
+		prerequisite = { focus = ENG_foucs_build_england }
+		available = {
+			126 = { is_controlled_by = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_london
+		cost = 7.2
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			126 = {
+				add_extra_state_shared_building_slots = 9
+				 add_building_construction = {
+					type = infrastructure #创造建筑类型
+					level = 5 #创造建造数量
+					instant_build = yes #瞬间制造
+				}
+					add_building_construction = {
+						type = industrial_complex #创造建筑类型
+						level = 3 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+					add_building_construction = {
+						type = arms_factory #创造建筑类型
+						level = 3 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+					add_building_construction = {
+						type = dockyard #创造建筑类型
+						level = 3 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_build_scotland
+		x = 3
+		y = 1
+		relative_position_id = ENG_foucs_build_british
+		prerequisite = { focus = ENG_foucs_build_british }
+		available = {
+			121 = { is_controlled_by = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_scotland
+		cost = 7.2
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			every_state = {
+				limit = { 
+					is_core_of = SCO
+				 }
+				 add_extra_state_shared_building_slots = 1
+				 add_building_construction = {
+					type = infrastructure #创造建筑类型
+					level = 2 #创造建造数量
+					instant_build = yes #瞬间制造
+				}
+					add_building_construction = {
+						type = industrial_complex #创造建筑类型
+						level = 1 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+			}
+			add_resource = {
+				type = chromium #铬 #战略资源类型
+				amount = 20 #数量(正数添加 负数移除)
+				state = 136 #在哪个省份(省份ID)
+			}
+			add_resource = {
+				type = tungsten #铬 #战略资源类型
+				amount = 20 #数量(正数添加 负数移除)
+				state = 136 #在哪个省份(省份ID)
+			}
+			add_resource = {
+				type = aluminium #铬 #战略资源类型
+				amount = 20 #数量(正数添加 负数移除)
+				state = 136 #在哪个省份(省份ID)
+			}
+			add_resource = {
+				type = steel #战略资源类型
+				amount = 30 #数量(正数添加 负数移除)
+				state = 133 #在哪个省份(省份ID)
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_build_Edinburgh
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_scotland
+		prerequisite = { focus = ENG_foucs_build_scotland }
+		available = {
+			121 = { is_controlled_by = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_Edinburgh
+		cost = 5
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			121 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+				   type = infrastructure #创造建筑类型
+				   level = 5 #创造建造数量
+				   instant_build = yes #瞬间制造
+			   }
+				   add_building_construction = {
+					   type = industrial_complex #创造建筑类型
+					   level = 2 #创造建造数量
+					   instant_build = yes #瞬间制造
+				   }
+				   add_building_construction = {
+					   type = arms_factory #创造建筑类型
+					   level = 3 #创造建造数量
+					   instant_build = yes #瞬间制造
+				   }
+				   add_building_construction = {
+					   type = dockyard #创造建筑类型
+					   level = 1 #创造建造数量
+					   instant_build = yes #瞬间制造
+				   }
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_perfect_british
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_london
+		prerequisite = { focus = ENG_foucs_build_Edinburgh }
+		prerequisite = { focus = ENG_foucs_build_london }
+		prerequisite = { focus = ENG_foucs_build_ireland }
+		available = {
+			121 = { is_controlled_by = ENG }
+			126 = { is_controlled_by = ENG }
+			113 = { is_controlled_by = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_perfect_british
+		cost = 7.2
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_war_support = 0.35
+			add_ideas = ENG_perfect_british
 		}
 	}
 
@@ -134,5 +425,613 @@ focus_tree = {
 			add_war_support = 0.1
 		}
 	}
+
+	focus = {
+		id = ENG_foucs_build_india
+		x = -3
+		y = 1
+		relative_position_id = ENG_foucs_build_empire
+		prerequisite = { focus = ENG_foucs_build_empire }
+		available = {
+				RAJ = { is_subject_of = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_india
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			unlock_decision_tooltip = ENG_RAJ_railway
+			unlock_decision_tooltip = ENG_RAJ_education
+			unlock_decision_tooltip = ENG_RAJ_food
+			unlock_decision_tooltip = ENG_RAJ_countryside
+			RAJ = { 
+				add_stability = 0.2
+				add_war_support = 0.05
+			 }
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_perfect_india
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_india
+		prerequisite = { focus = ENG_foucs_build_india }
+		available = {
+			RAJ = { is_subject_of = ENG }
+			has_global_flag = ENG_completed_RAJ_railway
+			has_global_flag = ENG_completed_RAJ_education
+			has_global_flag = ENG_completed_RAJ_food
+			has_global_flag = ENG_completed_RAJ_countryside
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 7.2
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			RAJ = { set_cosmetic_tag = RAJ_UK_autonomy_dominion }
+			every_country = {
+				limit = { is_subject_of = RAJ }
+				RAJ = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			every_state = { 
+				limit = { is_owned_by = RAJ }
+				add_core_of = RAJ
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_build_CAN_AST_NZL
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_empire
+		prerequisite = { focus = ENG_foucs_build_empire }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_CAN_AST_NZL
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			unlock_decision_tooltip = ENG_economic_commonwealth
+			every_country = {
+				limit = { 
+					or = {
+						tag = CAN
+						tag = ast
+						tag = nzl
+					}
+				 }
+				 add_stability = 0.2
+				 add_war_support = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_perfect_CAN_AST_NZL
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_CAN_AST_NZL
+		prerequisite = { focus = ENG_foucs_build_CAN_AST_NZL }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+				has_global_flag = ENG_completed_economic_commonwealth
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			unlock_decision_tooltip = ENG_RAJ_railway
+			every_country = {
+				limit = {
+					or = {
+						tag = CAN
+						tag = AST
+						tag = NZL
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+				swap_ideas = {
+					remove_idea = ENG_subject_2
+					add_idea = ENG_subject_3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_build_SAF_EGY
+		x = 3
+		y = 1
+		relative_position_id = ENG_foucs_build_empire
+		prerequisite = { focus = ENG_foucs_build_empire }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_SAF_EGY
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			unlock_decision_tooltip = ENG_EGY_suyishi_jiagu
+			unlock_decision_tooltip = ENG_SAF_kaipu_gangkou
+
+			every_country = {
+				limit = { 
+					or = {
+						tag = CAN
+						tag = ast
+						tag = nzl
+					}
+				 }
+				 add_stability = 0.2
+				 add_war_support = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_perfect_SAF_EGY
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_build_SAF_EGY
+		prerequisite = { focus = ENG_foucs_build_SAF_EGY }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+				has_global_flag = ENG_completed_EGY_suyishi_jiagu
+				has_global_flag = ENG_completed_SAF_kaipu_gangkou
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			every_country = {
+				limit = { 
+					or = {
+						tag = CAN
+						tag = ast
+						tag = nzl
+					}
+				 }
+				 add_stability = 0.2
+				 add_war_support = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_rule_britiania
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_perfect_CAN_AST_NZL
+		prerequisite = { focus = ENG_foucs_perfect_india }
+		prerequisite = { focus = ENG_foucs_perfect_CAN_AST_NZL }
+		prerequisite = { focus = ENG_foucs_perfect_SAF_EGY }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			remove_ideas = ENG_guodukuozhang
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_found_empire_kaigi
+		x = 0
+		y = 5
+		relative_position_id = ENG_foucs_a_new_year
+		prerequisite = { focus = ENG_foucs_perfect_british }
+		prerequisite = { focus = ENG_foucs_rule_britiania }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			every_country = {
+				limit = { 
+					or = {
+						tag = CAN
+						tag = ast
+						tag = nzl
+					}
+				 }
+				 add_stability = 0.2
+				 add_war_support = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_all_for_one
+		x = 0
+		y = 1
+		relative_position_id = ENG_foucs_found_empire_kaigi
+		prerequisite = { focus = ENG_foucs_found_empire_kaigi }
+		available = {
+				CAN = { is_subject_of = ENG }
+				AST = { is_subject_of = ENG }
+				NZL = { is_subject_of = ENG }
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			set_cosmetic_tag = ENG_imperial_federation_unified_democratic
+			every_country = {
+				limit = { 
+					is_subject_of = ENG
+					or = {
+						tag = CAN
+						tag = AST
+						tag = NZL
+						tag = EGY
+						tag = RAJ
+						tag = BRM
+						tag = MAL
+						tag = SAF
+
+					}
+				 }
+				 ENG = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				 }
+			}
+			every_state = {
+				limit = {
+					or = {
+						is_core_of = CAN
+						is_core_of = AST
+						is_core_of = NZL
+						is_core_of = SAF
+					}
+				}
+				add_core_of = ENG
+			}
+			every_state = {
+				limit = {
+					is_controlled_by = ENG
+					is_owned_by = ENG
+					NOT = { is_core_of = ENG }
+				}
+				add_compliance = 100
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_foucs_military
+		x = 15
+		y = 0
+		relative_position_id = ENG_foucs_build_empire
+		prerequisite = { focus = ENG_foucs_a_new_year }
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 30
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
+				add_ideas = ENG_Royal_Navy_modifier 
+	}
+}
 	
+
+	focus = {
+		id = ENG_foucs_waijiao
+		x = 0
+		y = 2
+		relative_position_id = ENG_foucs_all_for_one
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+				add_war_support = 0.1
+				add_command_power = 25
+	}
+    }
+
+	focus = {
+		id = ENG_foucs_waijiao_against_FRA
+		x = -4
+		y = 1
+		relative_position_id = ENG_foucs_waijiao
+		prerequisite = { focus = ENG_foucs_waijiao }
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+				give_guarantee = HOL
+				army_experience = 25
+	}
+    }
+
+	focus = {
+		id = ENG_foucs_waijiao_against_FRA_north_germany
+		x = -4
+		y = 1
+		relative_position_id = ENG_foucs_waijiao_against_FRA
+		prerequisite = { focus = ENG_foucs_waijiao_against_FRA }
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+				give_guarantee = HNV
+				give_guarantee = OLD
+				army_experience = 25
+	}
+    }
+
+	focus = {
+		id = ENG_foucs_waijiao_against_FRA_prussia_friend
+		x = -2
+		y = 1
+		relative_position_id = ENG_foucs_waijiao_against_FRA_north_germany
+		prerequisite = { focus = ENG_foucs_waijiao_against_FRA_north_germany }
+		mutually_exclusive = { focus = ENG_foucs_waijiao_against_FRA_AUS_friend }
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			custom_effect_tooltip = ENG_PUS_friend
+				give_guarantee = PUS
+				PUS = { give_guarantee = ENG }
+				army_experience = 25
+	}
+    }
+
+	focus = {
+		id = ENG_foucs_waijiao_against_FRA_AUS_friend
+		x = 2
+		y = 1
+		relative_position_id = ENG_foucs_waijiao_against_FRA_north_germany
+		prerequisite = { focus = ENG_foucs_waijiao_against_FRA_north_germany }
+		mutually_exclusive = { focus = ENG_foucs_waijiao_against_FRA_prussia_friend }
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			custom_effect_tooltip = ENG_AUS_friend
+				give_guarantee = AUS
+				AUS = { give_guarantee = ENG }
+				army_experience = 25
+	}
+    }
+
+	focus = {
+		id = ENG_foucs_waijiao_against_RUS
+		x = 4
+		y = 1
+		relative_position_id = ENG_foucs_waijiao
+		prerequisite = { focus = ENG_foucs_waijiao }
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 2.9
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+				give_guarantee = PER
+				give_guarantee = AFG
+				navy_experience = 25
+	}
+    }
+
+	focus = {
+		id = ENG_foucs_waijiao_against_RUS_regain_iraq
+		x = 4
+		y = 1
+		relative_position_id = ENG_foucs_waijiao_against_RUS
+		prerequisite = { focus = ENG_foucs_waijiao_against_RUS }
+		will_lead_to_war_with = IRQ
+		available = {
+				is_subject = no
+			}
+		
+		bypass = {
+		}
+		
+		icon = GFX_ENG_foucs_build_empire
+		cost = 5
+		ai_will_do = {
+		base = 9999
+		}
+
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			declare_war_on = {
+				target = IRQ
+				type = annex_everything
+			}
+				navy_experience = 25
+	}
+    }
 }

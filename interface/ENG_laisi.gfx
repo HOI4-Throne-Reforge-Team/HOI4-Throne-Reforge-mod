@@ -29,7 +29,7 @@ spriteTypes = {
 }
 spriteTypes = {
 	spriteType = {
-		name = GFX_autonomy_ENG_baohuguo_icon
+		name = GFX_autonomy_USA_baohuguo_icon
 		textureFile = "gfx/interface/autonomy/autonomy_USA_baohuguo.dds"
 		legacy_lazy_load = no
 	}
@@ -48,8 +48,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = GFX_ENG_a_new_year
-		textureFile = "gfx/interface/goals/ENG/ENG_a_new_year.dds"
+		name = GFX_eng_a_new_year
+		textureFile = "gfx/interface/goals/ENG/eng_a_new_year.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -68,8 +68,93 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = GFX_ENG_foucs_build_london
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_london.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_england
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_england.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_ireland
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_ireland.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_scotland
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_scotland.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_Edinburgh
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_Edinburgh.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_perfect_british
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_perfect_british.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_india
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_india.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_CAN_AST_NZL
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_CAN_AST_NZL.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_ENG_foucs_build_SAF_EGY
+		textureFile = "gfx/interface/goals/ENG/ENG_foucs_build_SAF_EGY.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = GFX_idea_ENG_IRE_problem
 		textureFile = "gfx/interface/ideas/ENG/idea_ENG_IRE_problem.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_perfect_british
+		textureFile = "gfx/interface/ideas/ENG/idea_ENG_perfect_british.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_yingguozhujun
+		textureFile = "gfx/interface/ideas/ENG/yingguozhujun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_Commonwealth
+		textureFile = "gfx/interface/ideas/ENG/ENG_Commonwealth.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_subject_0
+		textureFile = "gfx/interface/ideas/ENG/ENG_subject_0.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_subject_1
+		textureFile = "gfx/interface/ideas/ENG/ENG_subject_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_subject_2
+		textureFile = "gfx/interface/ideas/ENG/ENG_subject_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_subject_3
+		textureFile = "gfx/interface/ideas/ENG/ENG_subject_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = GFX_idea_ENG_guodukuozhang
+		textureFile = "gfx/interface/ideas/ENG/ENG_guodukuozhang.dds"
 		legacy_lazy_load = no
 	}
 }

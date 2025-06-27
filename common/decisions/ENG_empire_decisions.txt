@@ -1,0 +1,539 @@
+eng_empire = {
+    ENG_IRE_zhenya = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			not = {
+            has_completed_focus = ENG_foucs_finish_ireland
+			}
+			has_equipment = {
+				infantry_equipment > 499
+			}
+			or = {
+				113 = { resistance > 20 }
+				119 = { resistance > 20 }
+				134 = { resistance > 20 }
+				135 = { resistance > 20 }
+			}
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+            not = {
+				has_completed_focus = ENG_foucs_finish_ireland
+				}
+				113 = { is_owned_by = ENG }
+		}
+
+		fire_only_once = no
+		days_remove = 10
+        cost = 10
+
+		remove_effect = {
+			every_state = {
+				limit = { is_core_of = IRE }
+				add_resistance = -10
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = ENG
+			}
+		}
+    }
+
+	ENG_IRE_resistance = {     
+		days_mission_timeout = 40
+
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = no
+
+		available = {                           
+			has_completed_focus = ENG_foucs_finish_ireland 
+		}
+		activation = {                
+			NOT = {
+				has_completed_focus = ENG_foucs_finish_ireland
+			}
+			113 = { is_owned_by = ENG }
+		}    
+		is_good = no
+
+		timeout_effect = {                      
+			every_state = {
+				limit = { is_core_of = IRE }
+				add_resistance = 15
+			}       
+			custom_effect_tooltip = ENG_IRE_resistance_tt
+		}       
+		complete_effect = {                    
+			add_stability = 0.05
+			add_war_support = 0.05
+			remove_ideas = ENG_IRE_problem        
+		}
+		cancel_trigger = {
+			NOT = { 113 = { is_controlled_by = ENG } }
+		}
+		cancel_effect = {
+			add_stability = -0.15
+			add_war_support = -0.15
+		}
+	}
+
+	ENG_IRE_WAR_prepare = {     
+		days_mission_timeout = 10
+
+		allowed = {
+			tag = ENG
+		}
+		fire_only_once = yes
+
+		activation = {                
+			NOT = {
+				has_completed_focus = ENG_foucs_finish_ireland
+			}
+			has_global_flag = second_ireland_war
+		}   
+
+		available = {                           
+			has_completed_focus = ENG_foucs_finish_ireland
+		}
+		     
+		complete_effect = {      
+			add_war_support = 0.05
+		}
+		cancel_trigger = {
+			has_completed_focus = ENG_foucs_finish_ireland
+		}
+		cancel_effect = {
+			add_war_support = 0.05
+		}
+  
+		is_good = yes
+
+		timeout_effect = {                      
+			ENG = { set_autonomy = { target = NIR autonomy_state = autonomy_personal_union freedom_level = 0.50  } }
+			ENG = {
+				declare_war_on = {
+					target = IRE
+					type = annex_everything
+				}
+			}
+			NIR = {
+				declare_war_on = {
+					target = IRE
+					type = annex_everything
+				}
+			}
+		}       
+	}
+
+	ENG_RAJ_railway = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			RAJ = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_india
+		}
+
+		fire_only_once = yes
+		days_remove = 180
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		remove_effect = {
+			set_global_flag = ENG_completed_RAJ_railway
+			build_railway = {
+				level = 1
+				path = { 
+					12137 5086 10794 2086
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					2086 2032 10729 12822 12005 10887 
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					2086 12868 2002 10772 10066 9084 10887 
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					2086 2054 1908 4984 10847 1980 4110 
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					2086 2054 1908 4149 12886 1103 9975 
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					4245 10077 1609 4616 10443 10389 10349 7455 
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					4245 4062 7220 1444 12035 12307 
+				}
+			}
+			build_railway = {
+				level = 1
+				path = { 
+					8011 8100 10208 4278 
+				}
+			}
+			every_state = { 
+				limit = { is_owned_by = RAJ }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				   type = infrastructure #创造建筑类型
+				   level = 1
+				   instant_build = yes #瞬间制造
+			   }
+			}
+		}
+    }
+
+	ENG_RAJ_education = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			RAJ = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_india
+		}
+
+		fire_only_once = yes
+		days_remove = 365
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		remove_effect = {
+			set_global_flag = ENG_completed_RAJ_education
+			RAJ = { remove_ideas = RAJ_marginalized_muslim_community }
+			add_manpower = 100000
+
+		}
+    }
+
+	ENG_RAJ_food = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			RAJ = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_india
+		}
+
+		fire_only_once = yes
+		days_remove = 365
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		   remove_effect = {
+			set_global_flag = ENG_completed_RAJ_food
+			RAJ = { remove_ideas = RAJ_risk_of_famine }
+			add_manpower = 100000
+
+		}
+    }
+
+	ENG_RAJ_countryside = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			RAJ = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_india
+		}
+
+		fire_only_once = yes
+		days_remove = 365
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		   remove_effect = {
+			set_global_flag = ENG_completed_RAJ_countryside
+			add_offsite_building = { type = industrial_complex level = 5 }
+			RAJ = { 
+				remove_dynamic_modifier = { modifier = RAJ_agrarian_society } 
+			}
+			add_manpower = 100000
+
+		}
+    }
+
+	ENG_economic_commonwealth = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			CAN = { is_subject_of = ENG }
+			AST = { is_subject_of = ENG }
+			NZL = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_CAN_AST_NZL
+		}
+
+		fire_only_once = yes
+		days_remove = 365
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		   remove_effect = {
+			set_global_flag = ENG_completed_economic_commonwealth
+			RAJ = { 
+				remove_dynamic_modifier = { modifier = RAJ_agrarian_society } 
+			}
+			every_country = {
+				limit = {
+					or = {
+						tag = ENG
+						tag = CAN
+						tag = AST
+						tag = NZL
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+				swap_ideas = {
+					remove_idea = ENG_subject_1
+					add_idea = ENG_subject_2
+				}
+			}
+
+		}
+    }
+
+	ENG_economic_commonwealth = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			CAN = { is_subject_of = ENG }
+			AST = { is_subject_of = ENG }
+			NZL = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_CAN_AST_NZL
+		}
+
+		fire_only_once = yes
+		days_remove = 365
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		remove_effect = {
+			set_global_flag = ENG_completed_economic_commonwealth
+			every_country = {
+				limit = {
+					or = {
+						tag = ENG
+						tag = CAN
+						tag = AST
+						tag = NZL
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+				swap_ideas = {
+					remove_idea = ENG_subject_1
+					add_idea = ENG_subject_2
+				}
+			}
+
+		}
+    }
+
+	ENG_EGY_suyishi_jiagu = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			EGY = { is_subject_of = ENG }
+			446 = { is_controlled_by = ENG }
+			447 = { is_controlled_by = ENG }
+			1093 = { is_controlled_by = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_SAF_EGY
+		}
+
+		fire_only_once = yes
+		days_remove = 90
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 5
+	   	}
+
+		remove_effect = {
+			set_global_flag = ENG_completed_EGY_suyishi_jiagu
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 4073
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 12049
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 1155
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 9947
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 4076
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = bunker
+				level = 4
+				province = 1071
+				instant_build = yes
+			}
+
+		}
+    }
+
+
+	ENG_SAF_kaipu_gangkou = {
+	    icon = generic_merge_plant_tank
+		allowed = {
+			tag = ENG
+		}
+		available = {
+			SAF = { is_subject_of = ENG }
+		}
+		ai_will_do = {
+			base = 9999
+		}
+
+
+        visible = {
+				has_completed_focus = ENG_foucs_build_SAF_EGY
+		}
+
+		fire_only_once = yes
+		days_remove = 180
+        cost = 50
+
+		modifier = {
+			civilian_factory_use = 10
+	   	}
+
+		remove_effect = {
+			set_global_flag = ENG_completed_SAF_kaipu_gangkou
+			add_building_construction = {
+				type = naval_base
+				level = 4
+				province = 12589
+				instant_build = yes
+			}
+
+		}
+    }
+	
+
+
+
+
+
+}

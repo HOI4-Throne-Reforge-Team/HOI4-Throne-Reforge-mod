@@ -1,0 +1,390 @@
+on_actions = {
+	on_startup = {
+		effect = {
+				every_state = {
+					limit = { is_core_of = ENG }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex #创造建筑类型
+						level = 1 #创造建造数量
+						instant_build = yes #瞬间制造
+					}
+				}
+			EGY = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			RAJ = {
+				release = SRL
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			ENG = { set_autonomy = { target = SRL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  } }
+			BRM = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+				set_cosmetic_tag = BRM_british_democratic
+			}
+			MAL = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+				set_cosmetic_tag = MAL_UK_democratic
+			}
+			SRL = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+				set_cosmetic_tag = UK_SRL
+				set_party_name = {
+					ideology = neutrality
+					name = "殖民政府"
+					long_name = "殖民政府"
+				}
+				create_country_leader = { 
+							   name="威廉·高伯拉瓦"
+							   picture = "gfx/leaders/GNG/UK_SRL_leader.png"
+							   ideology = neutrality_subtype
+							   desc = UK_SRL_leader_desc
+							   traits = {  }
+							}
+			}
+			create_dynamic_country = {
+				original_tag = BHU
+				save_global_event_target_as = HYD
+				set_country_flag = RAJ_tubang
+				event_target:HYD = {
+				add_state_core = 427
+				transfer_state = 427
+				set_capital = { state = 427 }
+				add_ideas = agrarion_society_generic_3
+				add_ideas = raj_tubang_idea
+				set_cosmetic_tag = RAJ_HYD
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+					communism = 0
+					neutrality = 100
+					democratic = 0
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = "王公会议"
+					long_name = "王公会议"
+				}
+				create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="米尔·奥斯曼·阿里·汗"
+				   picture = "gfx/leaders/GNG/HYD_leader.png"
+				   ideology = neutrality_subtype
+				   desc = HYD_leader_desc
+				   traits = {  }
+				}
+				}												                 
+				RAJ ={
+					set_autonomy = { target = event_target:HYD autonomy_state = autonomy_tubang freedom_level = 0.50  }
+			 } 
+				
+				}
+				create_dynamic_country = {
+					original_tag = BHU
+					save_global_event_target_as = NAISUOER
+					set_country_flag = RAJ_tubang
+					event_target:NAISUOER = {
+					add_state_core = 425
+					transfer_state = 425
+					set_capital = { state = 425 }
+					add_ideas = agrarion_society_generic_3
+					add_ideas = raj_tubang_idea
+					set_cosmetic_tag = RAJ_NAISUOER
+					set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					set_popularities = {
+						fascism = 0
+						communism = 0
+						neutrality = 100
+						democratic = 0
+					}
+					set_party_name = {
+						ideology = neutrality
+						name = "王公会议"
+						long_name = "王公会议"
+					}
+					create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="贾亚查马拉金德拉·瓦迪亚尔"
+				   picture = "gfx/leaders/GNG/maisuoer_leader.png"
+				   ideology = neutrality_subtype
+				   desc = maisuoer_leader_desc
+				   traits = {  }
+				}
+					}												                 
+						RAJ ={
+							set_autonomy = { target = event_target:NAISUOER autonomy_state = autonomy_tubang freedom_level = 0.50  }
+					 } 
+					
+					}
+
+					create_dynamic_country = {
+						original_tag = BHU
+						save_global_event_target_as = madulai
+						set_country_flag = RAJ_tubang
+						event_target:madulai = {
+						add_state_core = 982
+						transfer_state = 982
+						set_capital = { state = 982 }
+						add_ideas = agrarion_society_generic_3
+						add_ideas = raj_tubang_idea
+						set_cosmetic_tag = RAJ_madulai
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "王公会议"
+							long_name = "王公会议"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+					   name="奇西拉·蒂鲁纳尔·巴拉拉马·瓦尔马"
+					   picture = "gfx/leaders/GNG/madulai_leader.png"
+					   ideology = neutrality_subtype
+					   desc = madulai_leader_desc
+					   traits = {  }
+					}
+						}												                 
+						RAJ ={
+							set_autonomy = { target = event_target:madulai autonomy_state = autonomy_tubang freedom_level = 0.50  }
+					 } 
+						
+						}
+
+						create_dynamic_country = {
+							original_tag = BHU
+							save_global_event_target_as = lajiasitan
+							set_country_flag = RAJ_tubang
+							event_target:lajiasitan = {
+							add_state_core = 433
+							transfer_state = 433
+							add_state_core = 428
+							transfer_state = 428
+							set_capital = { state = 433 }
+							add_ideas = agrarion_society_generic_3
+							add_ideas = raj_tubang_idea
+							set_cosmetic_tag = RAJ_lajiasitan
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 0
+								communism = 0
+								neutrality = 100
+								democratic = 0
+							}
+							set_party_name = {
+								ideology = neutrality
+								name = "王公会议"
+								long_name = "王公会议"
+							}
+							create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="王公会议"
+						   picture = "gfx/leaders/GNG/RAJ_wanggong.png"
+						   ideology = neutrality_subtype
+						   traits = {  }
+						}
+							}												                 
+								RAJ ={
+									set_autonomy = { target = event_target:lajiasitan autonomy_state = autonomy_tubang freedom_level = 0.50  }
+							 } 
+							
+							}
+
+
+							create_dynamic_country = {
+								original_tag = BHU
+								save_global_event_target_as = piluzhi
+								set_country_flag = RAJ_tubang
+								event_target:piluzhi = {
+								add_state_core = 444
+								transfer_state = 444
+								add_state_core = 988
+								transfer_state = 988
+								add_state_core = 1012
+								transfer_state = 1012
+								set_capital = { state = 444 }
+								add_ideas = agrarion_society_generic_3
+								add_ideas = raj_tubang_idea
+								set_cosmetic_tag = RAJ_piluzhi
+								set_politics = {
+									ruling_party = neutrality
+									elections_allowed = no
+								}
+								set_popularities = {
+									fascism = 0
+									communism = 0
+									neutrality = 100
+									democratic = 0
+								}
+								set_party_name = {
+									ideology = neutrality
+									name = "王公会议"
+									long_name = "王公会议"
+								}
+								create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+							   name="王公会议"
+							   picture = "gfx/leaders/GNG/RAJ_wanggong.png"
+							   ideology = neutrality_subtype
+							   traits = {  }
+							}
+								}												                 
+									RAJ ={
+										set_autonomy = { target = event_target:piluzhi autonomy_state = autonomy_tubang freedom_level = 0.50  }
+								 } 
+								
+								}
+								create_dynamic_country = {
+									original_tag = BHU
+									save_global_event_target_as = keshimier
+									set_country_flag = RAJ_tubang
+									event_target:keshimier = {
+									add_state_core = 441
+									transfer_state = 441
+									add_state_core = 787
+									transfer_state = 787
+									add_state_core = 1092
+									transfer_state = 1092
+									set_capital = { state = 441 }
+									add_ideas = agrarion_society_generic_3
+									add_ideas = raj_tubang_idea
+									set_cosmetic_tag = RAJ_keshimier
+									set_politics = {
+										ruling_party = neutrality
+										elections_allowed = no
+									}
+									set_popularities = {
+										fascism = 0
+										communism = 0
+										neutrality = 100
+										democratic = 0
+									}
+									set_party_name = {
+										ideology = neutrality
+										name = "王公会议"
+										long_name = "王公会议"
+									}
+									create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+								   name="哈里·辛格爵士"
+								   picture = "gfx/leaders/GNG/keshimier_leader.png"
+								   ideology = neutrality_subtype
+								   desc = keshimier_leader_desc
+								   traits = {  }
+								}
+									}	
+								}											                 
+										RAJ ={
+											set_autonomy = { target = event_target:keshimier autonomy_state = autonomy_tubang freedom_level = 0.50  }
+									 } 
+									 every_country = {
+				limit = { 
+					is_subject_of = ENG
+					NOT = { 
+						tag = CAN
+						tag = SAF
+						tag = AST
+						tag = NZL
+					 }
+				 }
+				add_ideas = ENG_subject_2
+			}
+			every_country = {
+				limit = { 
+					is_in_faction_with = ENG
+				 }
+				add_ideas = ENG_Commonwealth
+			}
+			every_country = {
+				limit = { 
+					is_subject_of = ENG
+					or = { 
+						tag = CAN
+						tag = SAF
+						tag = AST
+						tag = NZL
+					 }
+				 }
+				add_ideas = ENG_subject_1
+			}
+			AST = { set_cosmetic_tag = AST_democratic }
+			NZL = { set_cosmetic_tag = NZL_UK }
+									
+							
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					113 = { is_controlled_by = ENG }
+					NOT = { ENG = { has_completed_focus = ENG_foucs_finish_ireland } }
+					NOT = { has_global_flag = second_ireland_war }
+					or = {
+						113 = { resistance > 80 }
+			            119 = { resistance > 80 }
+			            134 = { resistance > 80 }
+			            135 = { resistance > 80 }
+					}
+				}
+				set_global_flag = second_ireland_war
+				ENG = { country_event = britain.1 }
+			}
+		}
+	}
+}

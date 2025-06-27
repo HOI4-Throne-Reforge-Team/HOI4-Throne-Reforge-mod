@@ -82,6 +82,11 @@ on_actions = {#内战胜利（左）
 			BAY = {
 				load_focus_tree = BAY_Bavaria_left
 			}
+			BAY = {
+				set_power_balance = {
+					id = BAY_left_power_balance
+				}
+			}
 		    }
 		}
 	}
