@@ -1,0 +1,10 @@
+
+spriteTypes = {
+	spriteType = {
+		name = GFX_our_denmark
+		textureFile = "gfx/interface/goals/our_denmark.dds"
+		legacy_lazy_load = no
+	}
+}
+
+

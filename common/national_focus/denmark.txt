@@ -21,7 +21,7 @@ focus_tree = {
 
 	focus = { #做好准备
 		id = DEN_READY_TO_FIGHT
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_our_denmark
 		x = 10
 		y = 0
 		cost = 1
