@@ -3,11 +3,11 @@ on_actions = {
 		effect = {
 			#自动完成PUS1936大选
 			PUS = {
-				news_event = { id = PUS.0 days = 366 }
+				country_event = { id = focus_PUS.0  days = 210 }
 			}
 			#自动结束PUS1936大选
 			PUS = {
-				country_event = { id = focus_PUS.0 days = 536 }
+				news_event = { id = PUS.0  days = 365 }
 			}
 		}
 	}
