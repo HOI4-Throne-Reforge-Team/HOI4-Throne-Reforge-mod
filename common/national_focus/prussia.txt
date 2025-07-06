@@ -10,7 +10,7 @@ focus_tree = {
 	 initial_show_position = {
 		x = 0
 	}
-	continuous_focus_position = { x = 2500 y = 1500 }
+	continuous_focus_position = { x = 2500 y = 2500 }
 	default = no
 	focus = {#最后任期
 		id = PUS_Final_term
@@ -448,7 +448,7 @@ focus_tree = {
 		id = PUS_Sudden_economic_crisis
 		icon = GFX_PUS_Sudden_economic_crisis
 		cost = 5
-		x = 16
+		x = 35
 		y = 1
 		#allow_branch = {
 		#	OR = {
@@ -462,5 +462,961 @@ focus_tree = {
 		#	}
 		#}
 		completion_reward = { }
+	}
+	focus = {   #成立紧急金融委员会
+		id = PUS_Emergency_financial_committee_established
+		icon = GFX_PUS_Emergency_financial_committee_established
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Sudden_economic_crisis
+		}
+		x = 0
+		y = 1
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	focus = {   #物价管控
+		id = PUS_Price_control
+		icon = GFX_PUS_Price_control
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Emergency_financial_committee_established
+		}
+		mutually_exclusive = {
+			focus = PUS_Thaler_depreciation
+		}
+		x = -1
+		y = 2
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	focus = {   #塔勒贬值
+		id = PUS_Thaler_depreciation
+		icon = GFX_PUS_Thaler_depreciation
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Emergency_financial_committee_established
+		}
+		mutually_exclusive = {
+			focus = PUS_Price_control
+		}
+		x = 1
+		y = 2
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	focus = {   #发放社会救济
+		id = PUS_Distribution_social_welfare
+		icon = GFX_PUS_Distribution_social_welfare
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Price_control
+			focus = PUS_Thaler_depreciation
+		}
+		x = 0
+		y = 3
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	focus = {   #提供就业岗位
+		id = PUS_Provide_jobs
+		icon = GFX_PUS_Provide_jobs
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Distribution_social_welfare
+		}
+		x = 0
+		y = 4
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	focus = {   #鼓励群众消费
+		id = PUS_Encourage_mass_consumption
+		icon = GFX_PUS_Encourage_mass_consumption
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Provide_jobs
+		}
+		x = 0
+		y = 5
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	focus = {   #缓慢恢复
+		id = PUS_Slow_recovery
+		icon = GFX_PUS_Slow_recovery
+		cost = 5
+		relative_position_id = PUS_Sudden_economic_crisis
+		prerequisite = {
+			focus = PUS_Encourage_mass_consumption
+		}
+		x = 0
+		y = 6
+		#allow_branch = {
+		#	OR = {
+		#		has_idea = FRA_E_B_1
+		#		has_idea = FRA_E_B_2
+		#		has_idea = FRA_E_B_3
+		#		has_idea = FRA_E_B_4
+		#		has_idea = FRA_E_B_5
+		#		has_idea = FRA_E_B_6
+		#		has_idea = FRA_E_B_7
+		#	}
+		#}
+		completion_reward = { 
+		}
+	}
+	#############################################################industrial##########################################################
+	focus = {  #扩大柏林工业区
+		id = PUS_Expanding_industrial_areas
+		icon = GFX_PUS_Expanding_industrial_areas
+		cost = 5
+		x = 25
+		y = 1
+		completion_reward = { 
+		}
+	}
+	focus = {  #1936工业规划
+		id = PUS_1936_Industrial_planning
+		icon = GFX_PUS_1936_Industrial_planning
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_Expanding_industrial_areas
+		}
+		x = 0
+		y = 1
+		completion_reward = { 
+		}
+	}
+	focus = {  #但泽造船业
+		id = PUS_Danzig_shipbuilding
+		icon = GFX_PUS_Danzig_shipbuilding
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_1936_Industrial_planning
+		}
+		x = -2
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #发展中心制造业
+		id = PUS_Development_center_manufacturing
+		icon = GFX_PUS_Development_center_manufacturing
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_1936_Industrial_planning
+		}
+		x = 0
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #西里西亚老工业区
+		id = PUS_Old_industrial_area_silesia
+		icon = GFX_PUS_Old_industrial_area_silesia
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_1936_Industrial_planning
+		}
+		x = 2
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #加强海外合作
+		id = PUS_Strengthen_overseas_cooperation
+		icon = GFX_PUS_Strengthen_overseas_cooperation
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_Danzig_shipbuilding
+		}
+		x = -2
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #资助柏林大学
+		id = PUS_Supporting_uiversity_of_Berlin
+		icon = GFX_PUS_Supporting_uiversity_of_Berlin
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_Development_center_manufacturing
+		}
+		x = 0
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #翻新柏林-西里西亚铁路
+		id = PUS_Revamping_berlin-silesia_railway
+		icon = GFX_PUS_Revamping_berlin-silesia_railway
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_Old_industrial_area_silesia
+		}
+		x = 2
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #成立科学发展委员会
+		id = PUS_Science_development_committee
+		icon = GFX_PUS_Science_development_committee
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_Revamping_berlin-silesia_railway
+			focus = PUS_Supporting_uiversity_of_Berlin
+			focus = PUS_Strengthen_overseas_cooperation
+		}
+		x = 0
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #改进火车
+		id = PUS_Improved_trains
+		icon = GFX_PUS_Improved_trains
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		prerequisite = {
+			focus = PUS_Science_development_committee
+		}
+		x = 1.5
+		y = 5
+		completion_reward = { 
+		}
+	}
+	#############################################################land##########################################################
+	focus = {  #开展大规模军演
+		id = PUS_Army
+		icon = GFX_PUS_Army
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		x = 5
+		y = 0
+		completion_reward = { 
+		}
+	}
+	focus = {   #1936扩军计划
+		id = PUS_Military_expansion_plan
+		icon = GFX_PUS_Military_expansion_plan
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Army
+		}
+		x = 0
+		y = 1
+		completion_reward = { 
+		}
+	}
+	focus = {   #招募普鲁士爱国青年
+		id = PUS_Recruiting_patriotic_youth
+		icon = GFX_PUS_Recruiting_patriotic_youth
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Military_expansion_plan
+		}
+		x = -1
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {   #向俄罗斯买进装备
+		id = PUS_Buying_equipment_from_RUS
+		icon = GFX_PUS_Buying_equipment_from_RUS
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Military_expansion_plan
+		}
+		x = 1
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {   #扩张军用工业
+		id = PUS_Expanding_military_industry
+		icon = GFX_PUS_Expanding_military_industry
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Buying_equipment_from_RUS
+		}
+		prerequisite = {
+			focus = PUS_Recruiting_patriotic_youth
+		}
+		x = 0
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {   #炮兵传统
+		id = PUS_Artillery_tradition
+		icon = GFX_PUS_Artillery_tradition
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Expanding_military_industry
+		}
+		mutually_exclusive = {
+			focus = PUS_Development_armor_manufacturing
+		}
+		x = -1
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {   #重视支援连
+		id = PUS_Emphasis_support_company
+		icon = GFX_PUS_Emphasis_support_company
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Artillery_tradition
+		}
+		x = -1
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {   #发展装甲制造
+		id = PUS_Development_armor_manufacturing
+		icon = GFX_PUS_Development_armor_manufacturing
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Expanding_military_industry
+		}
+		mutually_exclusive = {
+			focus = PUS_Artillery_tradition
+		}
+		x = 1
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {   #加速坦克研究
+		id = PUS_Speed_up_tank_research
+		icon = GFX_PUS_Speed_up_tank_research
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Development_armor_manufacturing
+		}
+		x = 1
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {   #本土军工制造
+		id = PUS_Domestic_military_manufacturing
+		icon = GFX_PUS_Domestic_military_manufacturing
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Speed_up_tank_research
+			focus = PUS_Emphasis_support_company
+			focus = PUS_Improved_trains
+		}
+		x = -2
+		y = 6
+		completion_reward = { 
+		}
+	}
+	focus = {   #普鲁士突击队
+		id = PUS_Prussian_commando
+		icon = GFX_PUS_Prussian_commando
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Speed_up_tank_research
+			focus = PUS_Emphasis_support_company
+		}
+		x = 0
+		y = 6
+		completion_reward = { 
+		}
+	}
+	focus = {   #军事科研中心
+		id = PUS_Military_research_center
+		icon = GFX_PUS_Military_research_center
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Speed_up_tank_research
+			focus = PUS_Emphasis_support_company
+		}
+		x = 2
+		y = 6
+		completion_reward = { 
+		}
+	}
+	focus = {   #战争之诚
+		id = PUS_War_of_faith
+		icon = GFX_PUS_War_of_faith
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Domestic_military_manufacturing
+		}
+		prerequisite = {
+			focus = PUS_Prussian_commando
+		}
+		prerequisite = {
+			focus = PUS_Military_research_center
+		}
+		x = 0
+		y = 7
+		completion_reward = { 
+		}
+	}
+	focus = {   #特种作战
+		id = PUS_Special_operations
+		icon = GFX_PUS_Special_operations
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_War_of_faith
+		}
+		x = 0
+		y = 8
+		completion_reward = { 
+		}
+	}
+	focus = {   #崎岖地形作战
+		id = PUS_Rough_terrain_combat
+		icon = GFX_PUS_Rough_terrain_combat
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Special_operations
+		}
+		mutually_exclusive = {
+			focus = PUS_Winter_trial
+		}
+		x = -1
+		y = 9
+		completion_reward = { 
+		}
+	}
+	focus = {   #寒冬试炼
+		id = PUS_Winter_trial
+		icon = GFX_PUS_Winter_trial
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Special_operations
+		}
+		mutually_exclusive = {
+			focus = PUS_Rough_terrain_combat
+		}
+		x = 1
+		y = 9
+		completion_reward = { 
+		}
+	}
+	focus = {   #山地特战部队
+		id = PUS_Mountain_special_forces
+		icon = GFX_PUS_Mountain_special_forces
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Rough_terrain_combat
+		}
+		x = -2
+		y = 10
+		completion_reward = { 
+		}
+	}
+	focus = {   #完善物流保障体系
+		id = PUS_Improve_logistics_system
+		icon = GFX_PUS_Improve_logistics_system
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Rough_terrain_combat
+			focus = PUS_Winter_trial
+		}
+		x = 0
+		y = 10
+		completion_reward = { 
+		}
+	}
+	focus = {   #滑雪猎兵团
+		id = PUS_Ski_hunters
+		icon = GFX_PUS_Ski_hunters
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Winter_trial
+		}
+		x = 2
+		y = 10
+		completion_reward = { 
+		}
+	}
+	focus = {   #建立后勤部队
+		id = PUS_Establishing_logistics_forces
+		icon = GFX_PUS_Establishing_logistics_forces
+		cost = 5
+		relative_position_id = PUS_Army
+		prerequisite = {
+			focus = PUS_Ski_hunters
+			focus = PUS_Mountain_special_forces
+		}
+		prerequisite = {
+			focus = PUS_Improve_logistics_system
+		}
+		x = 0
+		y = 11
+		completion_reward = { 
+		}
+	}
+	##########################################################navy##########################################################
+	focus = {  #重建普鲁士海军
+		id = PUS_Rebuilding_prussian_navy
+		icon = GFX_PUS_Rebuilding_prussian_navy
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		x = -5
+		y = 0
+		completion_reward = { 
+		}
+	}
+	focus = {  #迭代船体设计
+		id = PUS_Iterative_hull_design
+		icon = GFX_PUS_Iterative_hull_design
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Rebuilding_prussian_navy
+		}
+		x = 0
+		y = 1
+		completion_reward = { 
+		}
+	}
+	focus = {  #与英国人合作
+		id = PUS_Collaboration_with_british
+		icon = GFX_PUS_Collaboration_with_british
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Iterative_hull_design
+		}
+		mutually_exclusive = {
+			focus = PUS_Independent_exploration
+		}
+		x = -1
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #独自探索
+		id = PUS_Independent_exploration
+		icon = GFX_PUS_Independent_exploration
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Iterative_hull_design
+		}
+		mutually_exclusive = {
+			focus = PUS_Collaboration_with_british
+		}
+		x = 1
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #购买英国设计
+		id = PUS_Buy_british_design
+		icon = GFX_PUS_Buy_british_design
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Collaboration_with_british
+		}
+		x = -1
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #水下幽狼
+		id = PUS_Underwater_wolf
+		icon = GFX_PUS_Underwater_wolf
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Independent_exploration
+		}
+		x = 1
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #巡洋舰发展
+		id = PUS_Cruiser_development
+		icon = GFX_PUS_Cruiser_development
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Buy_british_design
+			focus = PUS_Underwater_wolf
+		}
+		x = -2
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #扩建波罗的港口
+		id = PUS_Expanding_baltic_ports
+		icon = GFX_PUS_Expanding_baltic_ports
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Buy_british_design
+			focus = PUS_Underwater_wolf
+		}
+		x = 0
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #驱逐舰队
+		id = PUS_Destroyer_fleet
+		icon = GFX_PUS_Destroyer_fleet
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Buy_british_design
+			focus = PUS_Underwater_wolf
+		}
+		x = 2
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #航母研究
+		id = PUS_Aircraft_carrier_research
+		icon = GFX_PUS_Aircraft_carrier_research
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Destroyer_fleet
+			focus = PUS_Cruiser_development
+		}
+		prerequisite = {
+			focus = PUS_Expanding_baltic_ports
+		}
+		x = -1
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {  #岸防炮研究
+		id = PUS_Coastal_defense_artillery_research
+		icon = GFX_PUS_Coastal_defense_artillery_research
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Destroyer_fleet
+			focus = PUS_Cruiser_development
+		}
+		prerequisite = {
+			focus = PUS_Expanding_baltic_ports
+		}
+		x = 1
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {  #贸易航线保护
+		id = PUS_Trade_route_protection
+		icon = GFX_PUS_Trade_route_protection
+		cost = 5
+		relative_position_id = PUS_Rebuilding_prussian_navy
+		prerequisite = {
+			focus = PUS_Coastal_defense_artillery_research
+		}
+		prerequisite = {
+			focus = PUS_Strengthen_overseas_cooperation
+		}
+		x = 3
+		y = 6
+		completion_reward = { 
+		}
+	}
+	############################################################air##########################################################
+	focus = {  #普鲁士空军建设
+		id = PUS_Air_force_construction
+		icon = GFX_PUS_Air_force_construction
+		cost = 5
+		relative_position_id = PUS_Expanding_industrial_areas
+		x = -10
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #重视轰炸机
+		id = PUS_Focus_on_bombers
+		icon = GFX_PUS_Focus_on_bombers
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Air_force_construction
+		}
+		x = -1
+		y = 1
+		completion_reward = { 
+		}
+	}
+	focus = {  #炸弹研发
+		id = PUS_Air_bomb_development
+		icon = GFX_PUS_Air_bomb_development
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Focus_on_bombers
+		}
+		x = -1
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #战略轰炸
+		id = PUS_Strategic_bombing
+		icon = GFX_PUS_Strategic_bombing
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Air_bomb_development
+		}
+		x = -1
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #重视战斗机
+		id = PUS_Focus_on_fighter
+		icon = GFX_PUS_Rebuilding_prussian_navy
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Air_force_construction
+		}
+		x = 1
+		y = 1
+		completion_reward = { 
+		}
+	}
+	focus = {  #机枪研发
+		id = PUS_Machine_gun_development
+		icon = GFX_PUS_Machine_gun_development
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Focus_on_fighter
+		}
+		x = 1
+		y = 2
+		completion_reward = { 
+		}
+	}
+	focus = {  #近地火力支援
+		id = PUS_Close_ground_fire_support
+		icon = GFX_PUS_Close_ground_fire_support
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Machine_gun_development
+		}
+		x = 1
+		y = 3
+		completion_reward = { 
+		}
+	}
+	focus = {  #空中物流
+		id = PUS_Air_logistics
+		icon = GFX_PUS_Air_logistics
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Strategic_bombing
+		}
+		x = -2
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #航程改进
+		id = PUS_Range_improvement
+		icon = GFX_PUS_Range_improvement
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Air_logistics
+		}
+		x = -2
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {  #改进引擎
+		id = PUS_Improved_engine
+		icon = GFX_PUS_Improved_engine
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Close_ground_fire_support
+			focus = PUS_Strategic_bombing
+		}
+		x = 0
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #喷气式引擎研究
+		id = PUS_Jet_engine_research
+		icon = GFX_PUS_Jet_engine_research
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Improved_engine
+		}
+		x = 0
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {  #舰载机研究
+		id = PUS_Carrier_based_aircraft_research
+		icon = GFX_PUS_Carrier_based_aircraft_research
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Close_ground_fire_support
+		}
+		prerequisite = {
+			focus = PUS_Aircraft_carrier_research
+		}
+		x = 2
+		y = 4
+		completion_reward = { 
+		}
+	}
+	focus = {  #空载鱼雷
+		id = PUS_Empty_torpedo
+		icon = GFX_PUS_Empty_torpedo
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Carrier_based_aircraft_research
+		}
+		x = 2
+		y = 5
+		completion_reward = { 
+		}
+	}
+	focus = {  #雄鹰展翅
+		id = PUS_Eagle_spreads_wings
+		icon = GFX_PUS_Eagle_spreads_wings
+		cost = 5
+		relative_position_id = PUS_Air_force_construction
+		prerequisite = {
+			focus = PUS_Range_improvement
+		}
+		prerequisite = {
+			focus = PUS_Jet_engine_research
+		}
+		prerequisite = {
+			focus = PUS_Empty_torpedo
+		}
+		x = 0
+		y = 6
+		completion_reward = { 
+		}
 	}
 }
