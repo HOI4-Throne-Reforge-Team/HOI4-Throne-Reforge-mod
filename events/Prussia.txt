@@ -146,21 +146,27 @@ country_event = {
 		add_political_power = 150
 		PUS = {
 			complete_national_focus = PUS_1936_Election
+			complete_national_focus = PUS_SPP_elections
 		}
 	}
 	option = {
 		name = PUS.0.b
 		trigger = {
-			NOT = {
-				tag = PUS
-				tag = FRA
-			}
+			tag = PUS
+		}
+		PUS = {
+			complete_national_focus = PUS_1936_Election
+			complete_national_focus = PUS_PDP_elections
 		}
 	}
 	option = {
 		name = PUS.0.c
 		trigger = {
-			tag = FRA
+			tag = PUS
+		}
+		PUS = {
+			complete_national_focus = PUS_1936_Election
+			complete_national_focus = PUS_PVP_elections
 		}
 	}
 }
