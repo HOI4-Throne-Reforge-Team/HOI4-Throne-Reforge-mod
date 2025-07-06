@@ -41,9 +41,9 @@ ideas = {
 			modifier = {
 				syndicalist_drift = 0.02
 				communism_drift = 0.02
-				communism_acceptance = -0.2
-				syndicalist_acceptance  = -0.2
-				anarchism_acceptance = -0.2
+				communism_acceptance = -20
+				syndicalist_acceptance  = -20
+				anarchism_acceptance = -20
 				stability_factor = -0.05
 			}
 		}
