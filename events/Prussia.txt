@@ -106,7 +106,7 @@ country_event = {
 	}
 }
 
-#访问瑞典事件链
+#访问瑞典事件链（未完成
 country_event = {
 	id = trade_with_SWE.00
 	title = trade_with_SWE.00.t
@@ -128,8 +128,8 @@ country_event = {
 }
 
 #大选开始了
-news_event = {
-	id = PUS.0
+country_event = {
+	id = focus_PUS.0
 	title = PUS.0.t
 	desc = PUS.0.d
 	is_triggered_only = yes
@@ -143,7 +143,7 @@ news_event = {
 		trigger = {
 			tag = PUS
 		}
-		add_political_power = 50
+		add_political_power = 150
 		PUS = {
 			complete_national_focus = PUS_1936_Election
 		}
@@ -165,8 +165,8 @@ news_event = {
 	}
 }
 #选票统计
-country_event = {
-	id = focus_PUS.0
+news_event = {
+	id = PUS.0
 	title = focus_PUS.0.t
 	desc = focus_PUS.0.d
 	is_triggered_only = yes
