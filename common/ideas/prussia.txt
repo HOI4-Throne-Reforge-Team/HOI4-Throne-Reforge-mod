@@ -1,5 +1,63 @@
 ideas = {
 	country = {
+		#新生共和国
+		PUS_New_Republic = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.15
+				production_speed_industrial_complex_factor = 0.05
+			}
+		}
+		#短暂繁荣
+		PUS_Brief_Prosperity = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				drift_defence_factor = 0.5
+				research_speed_factor = 0.1
+			}
+		}
+		#陆军重组
+		PUS_Army_Reorganization = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				training_time_army_factor = 0.3
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		#极左翼威胁
+		PUS_Extreme_left_threat = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				syndicalist_drift = 0.02
+				communism_drift = 0.02
+				communism_acceptance = -0.2
+				syndicalist_acceptance  = -0.2
+				anarchism_acceptance = -0.2
+				stability_factor = -0.05
+			}
+		}
+		#工业原料短缺
+		PUS_shortage_of_industrial_raw_materials = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				trade_opinion_factor = 0.2
+				trade_laws_cost_factor = -0.1
+			}
+		}
 		#工业建设投入
 		PUS_Industrial_construction_investment = {
 			removal_cost = 200

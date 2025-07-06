@@ -67,4 +67,9 @@ set_popularities = {
 }
 
 add_ideas = {
+	PUS_New_Republic
+	PUS_Brief_Prosperity
+	PUS_Army_Reorganization
+	PUS_Extreme_left_threat
+	PUS_shortage_of_industrial_raw_materials
 }
