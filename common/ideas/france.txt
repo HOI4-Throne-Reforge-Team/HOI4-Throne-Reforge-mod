@@ -94,16 +94,12 @@ ideas = {
 				original_tag = FRA
 				always = no
 			}
-
 			available = {
 			}
-
 			allowed_civil_war = {
 				always = no 
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_weekly = -0.01
 				political_power_factor = -0.25
@@ -115,16 +111,12 @@ ideas = {
 				original_tag = FRA
 				always = no
 			}
-
 			available = {
 			}
-
 			allowed_civil_war = {
 				always = no 
 			}
-
 			removal_cost = -1
-			
 			modifier = {
 				stability_weekly = -0.01
 				political_power_factor = -0.75
@@ -136,14 +128,11 @@ ideas = {
 				original_tag = FRA
 				always = no
 			}
-
 			available = {
 			}
-
 			allowed_civil_war = {
 				always = no 
 			}
-
 			removal_cost = -1
 			
 			modifier = {
@@ -153,6 +142,243 @@ ideas = {
 				economy_cost_factor = 0.25
 			}
 		}
+		FRA_Louis_marin = {  #路易·马林内阁1
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = 0.05
+				political_power_factor = -0.2
+			}
+		}
+		FRA_Louis_marin_2 = {  #路易·马林内阁2s
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				political_power_factor = -0.2
+			}
+		}
+		FRA_Economic_priority = {  #法兰西经济优先
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		FRA_Differentiated_trading_system = {  #差别化贸易体系1
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				local_resources_factor = 0.1
+			}
+		}
+		FRA_Differentiated_trading_system_2 = {  #差别化贸易体系2
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_factory_start_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				local_resources_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		FRA_Differentiated_trading_system_3 = {  #充满活力的市场
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				local_resources_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		FRA_Restricted_press_freedom = {  #受限制的新闻自由
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+				stability_weekly = -0.05
+			}
+		}
+		FRA_Secret_police = {  #秘密警察
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				operative_slot = 1
+				enemy_spy_negative_status_factor = 1
+			}
+		}
+		FRA_Only_sailor = {  #唯一的水手
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		FRA_Cabinet_is_liars = {  #骗子内阁
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		FRA_Modern_agriculture = {  #现代化的农业
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_building_slots_factor = 0.2
+				production_speed_industrial_complex_factor = 0.075
+				consumer_goods_factor = 0.15
+				conscription_factor = 0.1
+				resistance_target = -0.05
+			}
+		}
+		FRA_Strong_industry = {  #强劲的工业
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.075
+				research_speed_factor = 0.05
+				local_resources_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		FRA_Prosperous_business = {  #繁荣的商业
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				fuel_gain_factor = 0.2
+				trade_opinion_factor = 0.5
+			}
+		}
+		FRA_road_progress = {  #进步之路
+			allowed = {
+				always = no
+			}
+			available = {
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.25
+				conscription_factor = 0.15
+				compliance_growth = 0.05
+				research_speed_factor = 0.08
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+			}
+		}
+
 		#经济崩溃
 		FRA_E_B_1 = {
 			allowed = {
@@ -170,7 +396,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.1
 			}
-
 		}
 		FRA_E_B_2 = {
 			allowed = {
@@ -188,7 +413,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_buildings_factor = -0.2
 			}
-
 		}
 		FRA_E_B_3 = {
 			allowed = {
@@ -207,7 +431,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.3
 				production_speed_buildings_factor = -0.3
 			}
-
 		}
 		FRA_E_B_4 = {
 			allowed = {
@@ -226,7 +449,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.4
 				production_speed_buildings_factor = -0.45
 			}
-
 		}
 		FRA_E_B_5 = {
 			allowed = {
@@ -245,7 +467,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.5
 				production_speed_buildings_factor = -0.6
 			}
-
 		}
 		FRA_E_B_6 = {
 			allowed = {
@@ -264,7 +485,6 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.6
 				production_speed_buildings_factor = -0.75
 			}
-
 		}
 		FRA_E_B_7 = {
 			allowed = {
@@ -283,17 +503,12 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.7
 				production_speed_buildings_factor = -0.9
 			}
-
 		}
 		#经济崩溃
 		
 	}
-	
-	
 	tank_manufacturer = {
-
 		designer = yes
-	
 		# TECHNOLOGY
 		renault_fra = {
 		
