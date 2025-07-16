@@ -370,45 +370,7 @@ focus_tree = {
 		x = 10
 		y = 0
 	}
-	focus = {#乡村电力化
-		id = BAY_election_countryside
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 5
-		y = 5
-	}
-	focus = {#落实八小时工作制
-		id = BAY_eight_time_work
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 13
-		y = 5
-	}
-	focus = {#东部大开发
-		id = BAY_eastern_development_plan
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 15
-		y = 5
-	}
-	focus = {
-		id = BAY_open_Fertilizer_factory
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 7
-		y = 5
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 5
-		y = 6
-		prerequisite = {
-			focus = BAY_election_countryside
-		}
-	}
-	focus = {
+	focus = {#召集德共成员
 		id = BAY_call_to_commie_action
 		icon = GFX_goal_unknown
 		cost = 1
@@ -418,7 +380,7 @@ focus_tree = {
 			focus = BAY_revolution_victory
 		}
 	}
-	focus = {
+	focus = {#接收流亡资本产业
 		id = BAY_Receiving_industry
 		icon = GFX_goal_unknown
 		cost = 1
@@ -428,146 +390,218 @@ focus_tree = {
 			focus = BAY_revolution_victory
 		}
 	}
-	focus = {
-		id = BAY_eco_reform
+	#经济（重建）
+	focus = {#开始重建
+		id = BAY_rebuild_start
 		icon = GFX_goal_unknown
 		cost = 1
 		x = 10
 		y = 2
 		prerequisite = {
-			focus = BAY_Receiving_industry
-		}
-		prerequisite = {
 			focus = BAY_call_to_commie_action
 		}
-	}
-	focus = {
-		id = BAY_farm_socialization
-		icon = GFX_goal_unknown
-		cost = 1
-		x = 4
-		y = 3
 		prerequisite = {
-			focus = BAY_eco_reform
+			focus = BAY_Receiving_industry
 		}
 	}
-	focus = {
-		id = BAY_build_Cooperative
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 2
-		y = 4
-		prerequisite = {
-			focus = BAY_farm_socialization
-		}
-	}
-	focus = {
-		id = BAY_worker_dem
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 1
-		y = 5
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 3
-		y = 5
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_rebuild_start
-		icon = GFX_goal_unknown
-		cost = 1
-		x = 10
-		y = 4
-		prerequisite = {
-			focus = BAY_eco_reform
-		}
-	}
-	focus = {
+	focus = {#没收工厂
 		id = BAY_Confiscate_factory
 		icon = GFX_goal_unknown
 		cost = 1
 		x = 9
-		y = 5
+		y = 3
 		prerequisite = {
 			focus = BAY_rebuild_start
 		}
 	}
-	focus = {
+	focus = {#扼制资本外流
 		id = BAY_Contain_outflow
 		icon = GFX_goal_unknown
 		cost = 1
 		x = 11
-		y = 5
+		y = 3
 		prerequisite = {
 			focus = BAY_rebuild_start
 		}
 	}
-	focus = {
+	focus = {#重建基础设施
+		id = BAY_fix_the_base
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 7
+		y = 3
+		prerequisite = {
+			focus = BAY_rebuild_start
+		}
+	}
+	focus = {#铲除蛀虫
 		id = BAY_Pest_control
 		icon = GFX_goal_unknown
 		cost = 1
-		x = 11
-		y = 6
+		x = 13
+		y = 3
+		prerequisite = {
+			focus = BAY_rebuild_start
+		}
+	}
+	focus = {#建立新世界
+		id = BAY_new_world
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = BAY_fix_the_base
+		}
+		prerequisite = {
+			focus = BAY_Pest_control
+		}
 		prerequisite = {
 			focus = BAY_Contain_outflow
+		}
+		prerequisite = {
 			focus = BAY_Confiscate_factory
 		}
 	}
-	focus = {
+	focus = {#经济革命
+		id = BAY_eco_reform
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 10
+		y = 5
+		prerequisite = {
+			focus = BAY_new_world
+		}
+		}
+#经济（卢森堡线）
+	focus = {#农业社会化
+		id = BAY_farm_socialization
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 5
+		y = 6
+		prerequisite = {
+			focus = BAY_eco_reform
+		}
+	}
+	focus = {#建立合作社
+		id = BAY_build_Cooperative
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 7
+		prerequisite = {
+			focus = BAY_farm_socialization
+		}
+	}
+	focus = {#乡村开发计划
+		id = BAY_countryside_build
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 7
+		y = 7
+		prerequisite = {
+			focus = BAY_farm_socialization
+		}
+	}
+	focus = {#推广工人民主
+		id = BAY_worker_dem
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 8
+		prerequisite = {
+			
+		}
+	}
+#经济（其他）(共通线)
+	focus = {#乡村电力化
+		id = BAY_election_countryside
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 8
+		prerequisite = {
+			
+		}
+	}
+	focus = {#落实八小时工作制
+		id = BAY_eight_time_work
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 19
+		y = 5
+		prerequisite = {
+			
+		}
+	}
+	focus = {#东部大开发
+		id = BAY_eastern_development_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 21
+		y = 5
+		prerequisite = {
+			
+		}
+	}
+	focus = {#建设化肥厂
+		id = BAY_open_Fertilizer_factory
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 27
+		y = 5
+		prerequisite = {
+			
+		}
+	}
+	focus = {#“共和国”高速公路
 		id = BAY_republic_fast_road
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 13
+		x = 19
 		y = 6
 		prerequisite = {
-			focus = BAY_eight_time_work
+			
 		}
 	}
-	focus = {
+	focus = {#莱茵——多瑙水利计划
 		id = BAY_Danube_Rhine_Waterway
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 13
+		x = 21
 		y = 7
 		prerequisite = {
-			focus = BAY_republic_fast_road
+			
 		}
 	}
-	focus = {
+	focus = {#纽伦堡工业区
 		id = BAY_Nuremberg_Industrial_Zone
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 15
+		x = 21
 		y = 6
 		prerequisite = {
-			focus = BAY_eastern_development_plan
+			
 		}
 	}
-	focus = {
+	focus = {#扩张慕尼黑化学产业
 		id = BAY_Munich_Chemical_Expansion
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 15
+		x = 19
 		y = 7
 		prerequisite = {
-			focus = BAY_Nuremberg_Industrial_Zone
+			
 		}
 	}
-	focus = {
+#经济（人民阵线）
+	focus = {#农业国有化
 		id = BAY_farm_national
 		icon = GFX_goal_unknown
 		cost = 1
 		x = 17
-		y = 3
+		y = 6
 		prerequisite = {
 			focus = BAY_eco_reform
 		}
@@ -575,375 +609,17 @@ focus_tree = {
 			focus = BAY_farm_socialization
 		}
 	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 17
-		y = 5
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 17
-		y = 6
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 17
-		y = 7
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 17
-		y = 8
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 18
-		y = 4
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 18
-		y = 9
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_fix_the_base
-		icon = GFX_goal_unknown
-		cost = 1
-		x = 9
-		y = 6
-		prerequisite = {
-			focus = BAY_Confiscate_factory
-			focus = BAY_Contain_outflow
-		}
-	}
-	focus = {
-		id = BAY_new_world
-		icon = GFX_goal_unknown
-		cost = 1
-		x = 10
-		y = 7
-		prerequisite = {
-			focus = BAY_Pest_control
-		}
-		prerequisite = {
-			focus = BAY_fix_the_base
-		}
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 6
-		y = 8
-		prerequisite = {
-			focus = BAY_election_countryside
-		}
-	}
-	focus = {
+	focus = {#五年计划
 		id = BAY_5_years_plan
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 14
+		x = 20
 		y = 8
 		prerequisite = {
-			focus = BAY_Munich_Chemical_Expansion
+			
 		}
 		prerequisite = {
-			focus = BAY_Danube_Rhine_Waterway
-		}
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 12
-		y = 9
-		prerequisite = {
-			focus = BAY_5_years_plan
-		}
-		prerequisite = {
-			focus = BAY_new_world
-		}
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 7
-		y = 6
-		prerequisite = {
-			focus = BAY_5_years_plan
-		}
-		prerequisite = {
-			focus = BAY_new_world
-		}
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 5
-		y = 7
-		prerequisite = {
-			focus = BAY_5_years_plan
-		}
-		prerequisite = {
-			focus = BAY_new_world
-		}
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 7
-		y = 7
-		prerequisite = {
-			focus = BAY_5_years_plan
-		}
-		prerequisite = {
-			focus = BAY_new_world
-		}
-	}
-	focus = {
-		id = BAY_build_Cooperative_Copy_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 8
-		y = 9
-		prerequisite = {
-			focus = BAY_5_years_plan
-		}
-		prerequisite = {
-			focus = BAY_new_world
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 1
-		y = 6
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 3
-		y = 6
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 1
-		y = 7
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 3
-		y = 7
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 1
-		y = 8
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 3
-		y = 8
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 2
-		y = 9
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 19
-		y = 5
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 19
-		y = 6
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 19
-		y = 7
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = BAY_worker_dem_Copy
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 19
-		y = 8
-		prerequisite = {
-			focus = BAY_build_Cooperative
-		}
-	}
-	focus = {
-		id = newfocus_51
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 5
-		y = 10
-		prerequisite = {
-			focus = BAY_worker_dem_Copy
-		}
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		mutually_exclusive = {
-			focus = newfocus_52
-		}
-	}
-	focus = {
-		id = newfocus_52
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 10
-		y = 10
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		mutually_exclusive = {
-			focus = newfocus_51
-		}
-		mutually_exclusive = {
-			focus = newfocus_52
-		}
-	}
-	focus = {
-		id = newfocus_52
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 15
-		y = 10
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		mutually_exclusive = {
-			focus = newfocus_51
-		}
-		mutually_exclusive = {
-			focus = newfocus_52
-		}
-	}
-	focus = {
-		id = newfocus_51
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 6
-		y = 4
-		prerequisite = {
-			focus = BAY_worker_dem_Copy
-		}
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		mutually_exclusive = {
-			focus = newfocus_52
-		}
-	}
-	focus = {
-		id = newfocus_52
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 14
-		y = 4
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		prerequisite = {
-			focus = BAY_build_Cooperative_Copy_Copy
-		}
-		mutually_exclusive = {
-			focus = newfocus_51
-		}
-		mutually_exclusive = {
-			focus = newfocus_52
+			
 		}
 	}
 
