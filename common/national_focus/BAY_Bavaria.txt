@@ -478,17 +478,23 @@ focus_tree = {
 		id = BAY_farm_socialization
 		icon = GFX_goal_unknown
 		cost = 1
-		x = 5
+		x = 6
 		y = 6
 		prerequisite = {
 			focus = BAY_eco_reform
+		}
+		mutually_exclusive = {
+			focus = BAY_farm_national
+		}
+		mutually_exclusive = {
+			focus = BAY_farm_reform
 		}
 	}
 	focus = {#建立合作社
 		id = BAY_build_Cooperative
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 3
+		x = 4
 		y = 7
 		prerequisite = {
 			focus = BAY_farm_socialization
@@ -498,101 +504,113 @@ focus_tree = {
 		id = BAY_countryside_build
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 7
+		x = 8
 		y = 7
 		prerequisite = {
 			focus = BAY_farm_socialization
+			focus = BAY_farm_reform
 		}
 	}
-	focus = {#推广工人民主
-		id = BAY_worker_dem
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 1
-		y = 8
-		prerequisite = {
-			
-		}
-	}
-#经济（其他）(共通线)
 	focus = {#乡村电力化
 		id = BAY_election_countryside
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 6
+		x = 7
 		y = 8
 		prerequisite = {
-			
-		}
-	}
-	focus = {#落实八小时工作制
-		id = BAY_eight_time_work
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 19
-		y = 5
-		prerequisite = {
-			
-		}
-	}
-	focus = {#东部大开发
-		id = BAY_eastern_development_plan
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 21
-		y = 5
-		prerequisite = {
-			
-		}
-	}
-	focus = {#建设化肥厂
-		id = BAY_open_Fertilizer_factory
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 27
-		y = 5
-		prerequisite = {
-			
-		}
-	}
-	focus = {#“共和国”高速公路
-		id = BAY_republic_fast_road
-		icon = GFX_goal_unknown
-		cost = 10
-		x = 19
-		y = 6
-		prerequisite = {
-			
+			focus = BAY_countryside_build
 		}
 	}
 	focus = {#莱茵——多瑙水利计划
 		id = BAY_Danube_Rhine_Waterway
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 21
-		y = 7
+		x = 7
+		y = 9
 		prerequisite = {
-			
+			focus = BAY_election_countryside
 		}
 	}
-	focus = {#纽伦堡工业区
-		id = BAY_Nuremberg_Industrial_Zone
+	focus = {#建设化肥厂
+		id = BAY_open_Fertilizer_factory
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 21
+		x = 7
+		y = 10
+		prerequisite = {
+			focus = BAY_Danube_Rhine_Waterway
+		}
+	}
+	focus = {#落实八小时工作制
+		id = BAY_eight_time_work
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 9
+		y = 8
+		prerequisite = {
+			focus = BAY_countryside_build
+		}
+	}
+
+	focus = {#推广工人民主
+		id = BAY_worker_dem
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 9
+		y = 9
+		prerequisite = {
+			focus = BAY_eight_time_work
+		}
+	}
+	focus = {#新教育计划
+		id = BAY_worker_eduction_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 9
+		y = 10
+		prerequisite = {
+			focus = BAY_worker_dem
+		}
+	}
+	focus = {#城乡均衡发展
+		id = BAY_city_countryside_devlopment
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 8
+		y = 11
+		prerequisite = {
+			focus = BAY_worker_eduction_plan
+		}
+		prerequisite = {
+			focus = BAY_open_Fertilizer_factory
+		}
+	}
+
+#经济（其他）(共通线)
+	focus = {#农业齐头并进
+		id = BAY_farm_reform
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 10
 		y = 6
 		prerequisite = {
-			
+			focus = BAY_eco_reform
 		}
 	}
-	focus = {#扩张慕尼黑化学产业
-		id = BAY_Munich_Chemical_Expansion
+	focus = {#革命的后盾
+		id = BAY_revolution_backing
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 19
-		y = 7
+		x = 10
+		y = 12
 		prerequisite = {
-			
+			focus = BAY_farm_reform
+		}
+		prerequisite = {
+			focus = BAY_city_countryside_devlopment
+		}
+		prerequisite = {
+			focus = BAY_5_years_plan
 		}
 	}
 #经济（人民阵线）
@@ -600,7 +618,7 @@ focus_tree = {
 		id = BAY_farm_national
 		icon = GFX_goal_unknown
 		cost = 1
-		x = 17
+		x = 14
 		y = 6
 		prerequisite = {
 			focus = BAY_eco_reform
@@ -608,18 +626,94 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BAY_farm_socialization
 		}
+		mutually_exclusive = {
+			focus = BAY_farm_reform
+		}
+	}
+#经济（人民阵线左）
+	focus = {#改革四年计划
+		id = BAY_reform_4_years_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 12
+		y = 7
+		prerequisite = {
+			focus = BAY_farm_reform
+			focus = BAY_farm_national
+		}
+	}
+	focus = {#“共和国”高速公路
+		id = BAY_republic_fast_road
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 11
+		y = 8
+		prerequisite = {
+			focus = BAY_reform_4_years_plan
+		}
+	}
+	focus = {#大众汽车
+		id = BAY_Volkswagen
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 11
+		y = 9
+		prerequisite = {
+			focus = BAY_republic_fast_road
+		}
+	}
+	focus = {#铁路翻新
+		id = BAY_railway_renew
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 11
+		y = 10
+		prerequisite = {
+			focus = BAY_Volkswagen
+		}
+	}
+
+	focus = {#东部大开发
+		id = BAY_eastern_development_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13
+		y = 8
+		prerequisite = {
+			focus = BAY_reform_4_years_plan
+		}
+	}
+	focus = {#纽伦堡工业区
+		id = BAY_Nuremberg_Industrial_Zone
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13
+		y = 9
+		prerequisite = {
+			focus = BAY_eastern_development_plan
+		}
+	}
+	focus = {#扩张慕尼黑化学产业
+		id = BAY_Munich_Chemical_Expansion
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 13
+		y = 10
+		prerequisite = {
+			focus = BAY_Nuremberg_Industrial_Zone
+		}
 	}
 	focus = {#五年计划
 		id = BAY_5_years_plan
 		icon = GFX_goal_unknown
 		cost = 10
-		x = 20
-		y = 8
+		x = 12
+		y = 11
 		prerequisite = {
-			
+			focus = BAY_Munich_Chemical_Expansion
 		}
 		prerequisite = {
-			
+			focus = BAY_railway_renew
 		}
 	}
 
