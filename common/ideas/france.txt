@@ -356,7 +356,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.05
 				fuel_gain_factor = 0.2
-				trade_opinion_factor = 0.5
+				resource_trade_cost_bonus_per_factory = 6
 			}
 		}
 		FRA_road_progress = {  #进步之路
