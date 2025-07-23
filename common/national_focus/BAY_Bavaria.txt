@@ -500,6 +500,95 @@ focus_tree = {
 			focus = BAY_farm_socialization
 		}
 	}
+	focus = {#土地整理
+		id = BAY_Flurbereinigung
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 8
+		prerequisite = {
+			focus = BAY_build_Cooperative
+		}
+	}
+	focus = {#农村工业化
+		id = BAY_country_industuy
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 5
+		y = 8
+		prerequisite = {
+			focus = BAY_build_Cooperative
+		}
+	}
+	focus = {#乡村文化保护
+		id = BAY_country_culture_produce
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 9
+		prerequisite = {
+			focus = BAY_Flurbereinigung
+		}
+	}
+	focus = {#生态农业理念
+		id = BAY_Ecological_agriculture_concept
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 3
+		y = 10
+		prerequisite = {
+			focus = BAY_country_culture_produce
+		}
+	}
+	focus = {#农村特色轻工业
+		id = BAY_Rural_light_industry
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 5
+		y = 9
+		prerequisite = {
+			focus = BAY_country_industuy
+		}
+	}
+	focus = {#"双元"教育计划
+		id = BAY_PR_Education_plan
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 5
+		y = 10
+		prerequisite = {
+			focus = BAY_Rural_light_industry
+		}
+	}
+	focus = {#乡村振兴
+		id = BAY_Rural_revitalization
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 11
+		prerequisite = {
+			focus = BAY_Ecological_agriculture_concept
+		}
+		prerequisite = {
+			focus = BAY_PR_Education_plan
+		}
+	}
+	focus = {#理想的基石
+		id = BAY_cornerstone_of_ideals
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 6
+		y = 12
+		prerequisite = {
+			focus = BAY_Rural_revitalization
+		}
+		prerequisite = {
+			focus = BAY_city_countryside_devlopment
+		}
+	}
+
+
+#经济（卢森堡、共通）
 	focus = {#乡村开发计划
 		id = BAY_countryside_build
 		icon = GFX_goal_unknown
@@ -624,13 +713,111 @@ focus_tree = {
 			focus = BAY_eco_reform
 		}
 		mutually_exclusive = {
-			focus = BAY_farm_socialization
-		}
-		mutually_exclusive = {
 			focus = BAY_farm_reform
 		}
+		mutually_exclusive = {
+			focus = BAY_farm_socialization
+		}
 	}
-#经济（人民阵线左）
+	focus = {#建设集体农庄
+		id = BAY_build_Collective_farm
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 16
+		y = 7
+		prerequisite = {
+			focus = BAY_farm_national
+		}
+	}
+	focus = {#继续工业化
+		id = BAY_Continue_industrialization
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 15
+		y = 8
+		prerequisite = {
+			focus = BAY_build_Collective_farm
+		}
+	}
+	focus = {#航空工业投资
+		id = BAY_Aerospace_Industry_Investment
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 15
+		y = 9
+		prerequisite = {
+			focus = BAY_Continue_industrialization
+		}
+	}
+	focus = {#建造科学城
+		id = BAY_build_Science_City
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 15
+		y = 10
+		prerequisite = {
+			focus = BAY_Aerospace_Industry_Investment
+		}
+	}
+	focus = {#保留农村集市
+		id = BAY_Preserve_market
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 17
+		y = 8
+		prerequisite = {
+			focus = BAY_build_Collective_farm
+		}
+	}
+	focus = {#新生活运动
+		id = BAY_New_Life_Movement
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 17
+		y = 9
+		prerequisite = {
+			focus = BAY_Preserve_market
+		}
+	}
+	focus = {#改造大自然
+		id = BAY_Transforming_nature
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 17
+		y = 10
+		prerequisite = {
+			focus = BAY_New_Life_Movement
+		}
+	}
+	focus = {#迈向共产主义
+		id = BAY_go_commie
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 16
+		y = 11
+		prerequisite = {
+			focus = BAY_Transforming_nature
+		}
+		prerequisite = {
+			focus = BAY_build_Science_City
+		}
+	}
+	focus = {#铸刃之熔炉
+		id = BAY_Furnace
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 14
+		y = 12
+		prerequisite = {
+			focus = BAY_go_commie
+		}
+		prerequisite = {
+			focus = BAY_5_years_plan
+		}
+	}
+
+
+#经济（人民阵线、共通）
 	focus = {#改革四年计划
 		id = BAY_reform_4_years_plan
 		icon = GFX_goal_unknown

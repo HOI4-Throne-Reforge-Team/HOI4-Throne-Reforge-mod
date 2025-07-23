@@ -137,7 +137,7 @@ BAY_Nuremberg_Industrial_Zone_desc: ""
 BAY_Munich_Chemical_Expansion: "慕尼黑化工业拓展"
 BAY_Munich_Chemical_Expansion_desc: ""
 
-BAY_farm_national: "土地国有化"
+BAY_farm_national: "农业国有化"
 BAY_farm_national_desc: ""
 
 BAY_fix_the_base: "重建基础设施"
@@ -175,3 +175,54 @@ BAY_revolution_backing_desc: ""
 
 BAY_countryside_build: "乡村开发计划"
 BAY_countryside_build_desc: ""
+
+BAY_Flurbereinigung: "土地整理"
+BAY_Flurbereinigung_desc: ""
+
+BAY_country_industuy: "农村工业化"
+BAY_country_industuy_desc: ""
+
+BAY_country_culture_produce: "乡村文化保护"
+BAY_country_culture_produce_desc: ""
+
+BAY_Ecological_agriculture_concept: "生态农业理念"
+BAY_Ecological_agriculture_concept_desc: ""
+
+BAY_Rural_light_industry: "农村特色轻工业"
+BAY_Rural_light_industry_desc: ""
+
+BAY_PR_Education_plan: "“双元”教育计划"
+BAY_PR_Education_plan_desc: ""
+
+BAY_Rural_revitalization: "乡村振兴"
+BAY_Rural_revitalization_desc: ""
+
+BAY_cornerstone_of_ideals: "理想的基石"
+BAY_cornerstone_of_ideals_desc: ""
+
+BAY_build_Collective_farm: "建设集体农庄"
+BAY_build_Collective_farm_desc: ""
+
+BAY_Continue_industrialization: "继续工业化"
+BAY_Continue_industrialization_desc: ""
+
+BAY_Aerospace_Industry_Investment: "航空工业投资"
+BAY_Aerospace_Industry_Investment_desc: ""
+
+BAY_build_Science_City: "建造科学城"
+BAY_build_Science_City_desc: ""
+
+BAY_Preserve_market: "保留农村集市"
+BAY_Preserve_market_desc: ""
+
+BAY_New_Life_Movement: "新生活运动"
+BAY_New_Life_Movement_desc: ""
+
+BAY_Transforming_nature: "改造大自然"
+BAY_Transforming_nature_desc: ""
+
+BAY_go_commie: "迈向共产主义"
+BAY_go_commie_desc: ""
+
+BAY_Furnace: "铸刃之熔炉"
+BAY_Furnace_desc: ""
