@@ -95,7 +95,7 @@ on_actions = {
 				add_state_core = 427
 				transfer_state = 427
 				set_capital = { state = 427 }
-				add_ideas = agrarion_society_generic_3
+				
 				add_ideas = raj_tubang_idea
 				set_cosmetic_tag = RAJ_HYD
 				set_politics = {
@@ -134,7 +134,7 @@ on_actions = {
 					add_state_core = 425
 					transfer_state = 425
 					set_capital = { state = 425 }
-					add_ideas = agrarion_society_generic_3
+					
 					add_ideas = raj_tubang_idea
 					set_cosmetic_tag = RAJ_NAISUOER
 					set_politics = {
@@ -174,7 +174,7 @@ on_actions = {
 						add_state_core = 982
 						transfer_state = 982
 						set_capital = { state = 982 }
-						add_ideas = agrarion_society_generic_3
+						
 						add_ideas = raj_tubang_idea
 						set_cosmetic_tag = RAJ_madulai
 						set_politics = {
@@ -216,7 +216,7 @@ on_actions = {
 							add_state_core = 428
 							transfer_state = 428
 							set_capital = { state = 433 }
-							add_ideas = agrarion_society_generic_3
+							
 							add_ideas = raj_tubang_idea
 							set_cosmetic_tag = RAJ_lajiasitan
 							set_politics = {
@@ -260,7 +260,7 @@ on_actions = {
 								add_state_core = 1012
 								transfer_state = 1012
 								set_capital = { state = 444 }
-								add_ideas = agrarion_society_generic_3
+								
 								add_ideas = raj_tubang_idea
 								set_cosmetic_tag = RAJ_piluzhi
 								set_politics = {
@@ -302,7 +302,7 @@ on_actions = {
 									add_state_core = 1092
 									transfer_state = 1092
 									set_capital = { state = 441 }
-									add_ideas = agrarion_society_generic_3
+									
 									add_ideas = raj_tubang_idea
 									set_cosmetic_tag = RAJ_keshimier
 									set_politics = {
@@ -332,6 +332,435 @@ on_actions = {
 										RAJ ={
 											set_autonomy = { target = event_target:keshimier autonomy_state = autonomy_tubang freedom_level = 0.50  }
 									 } 
+
+									 ENG = {
+										release = UGA
+														set_autonomy = { target = UGA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														UGA = {
+															set_cosmetic_tag = UGA_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = TZN
+														set_autonomy = { target = TZN autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														TZN = {
+															set_cosmetic_tag = TZN_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = KEN
+														set_autonomy = { target = KEN autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														KEN = {
+															add_state_core = 547
+									transfer_state = 547
+									add_state_core = 844
+									transfer_state = 844
+															set_cosmetic_tag = KEN_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														SAF = { release = BOT }
+														set_autonomy = { target = BOT autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														BOT = {
+															set_cosmetic_tag = BOT_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														SAF = { release = ZIM }
+														set_autonomy = { target = ZIM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														ZIM = {
+															set_cosmetic_tag = ZIM_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = ZAM
+														set_autonomy = { target = ZAM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														ZAM = {
+															set_cosmetic_tag = ZAM_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														SAF = {
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = MLW
+														set_autonomy = { target = MLW autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														MLW = {
+															set_cosmetic_tag = MLW_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = GAM
+														set_autonomy = { target = GAM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														GAM = {
+															set_cosmetic_tag = GAM_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = SUD
+														set_autonomy = { target = SUD autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														SUD = {
+															set_cosmetic_tag = SUD_UK
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														POR = {
+															release = GNB
+														set_autonomy = { target = GNB autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														GNB = {
+															set_cosmetic_tag = GNB_POR
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="殖民地总督"
+															   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = ANG
+														set_autonomy = { target = ANG autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														ANG = {
+															transfer_state = 894
+															transfer_state = 895
+															set_cosmetic_tag = ANG_POR
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="殖民地总督"
+															   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														release = MZB
+														set_autonomy = { target = MZB autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														MZB = {
+															set_cosmetic_tag = MZB_POR
+									
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="殖民地总督"
+															   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+														}
+														create_dynamic_country = {
+															original_tag = YAM
+															save_global_event_target_as = POR_dongdifen
+														}
+															event_target:POR_dongdifen = {
+															add_state_core = 721
+															transfer_state = 721
+															POR ={
+																set_autonomy = { target = event_target:POR_dongdifen autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														 } 
+									
+															set_cosmetic_tag = POR_dongdifen
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="殖民地总督"
+															   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+															}										                 
+															
+														}
+														create_dynamic_country = {
+															original_tag = CKK
+															save_global_event_target_as = UK_Newfoundland
+														}
+															event_target:UK_Newfoundland = {
+															add_state_core = 331
+															transfer_state = 331
+															add_state_core = 332
+															transfer_state = 332
+															ENG ={
+																set_autonomy = { target = event_target:UK_Newfoundland autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+														 } 
+															set_cosmetic_tag = UK_Newfoundland
+															set_politics = {
+																ruling_party = neutrality
+																elections_allowed = no
+															}
+															set_popularities = {
+																fascism = 0
+																communism = 0
+																neutrality = 100
+																democratic = 0
+															}
+															set_party_name = {
+																ideology = neutrality
+																name = "殖民政府"
+																long_name = "殖民政府"
+															}
+															create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+															   name="爱德华八世"
+															   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+															   ideology = neutrality_subtype
+															   traits = {  }
+															}
+															}	
+													}
+
 									 every_country = {
 				limit = { 
 					is_subject_of = ENG
