@@ -84,7 +84,10 @@
 
 #左线（经济）
 BAY_revolution_victory: "革命胜利？"
-BAY_revolution_victory_desc: ""
+BAY_revolution_victory_desc: "在同志们的艰苦斗争下，我们夺得了巴伐利亚的国家机器。但这并不是革命的结束，也并非革命的胜利。我们要将赤旗，插满德意志，乃至全欧洲！"
+
+BAY_call_to_commie_action: "召集德共成员"
+BAY_call_to_commie_action_desc: "我们已经拥有了德意志地区内一个庞大的根据地。我们应该召集位于德意志各地的共产主义战士们，来到巴伐利亚，并进行改组。"
 
 BAY_election_countryside: "乡村电力化"
 BAY_election_countryside_desc: ""
@@ -97,9 +100,6 @@ BAY_eight_time_work_desc: ""
 
 BAY_open_Fertilizer_factory: "建设化肥厂"
 BAY_open_Fertilizer_factory_desc: ""
-
-BAY_call_to_commie_action: "召集德共成员"
-BAY_call_to_commie_action_desc: ""
 
 BAY_Receiving_industry: "接收流亡资本产业"
 BAY_Receiving_industry_desc: ""

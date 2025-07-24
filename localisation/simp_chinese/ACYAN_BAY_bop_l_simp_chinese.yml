@@ -14,11 +14,11 @@
  BAY_Spartakusbund_control: "人民对党的全面控制"
  
 
-#布尔什维克
- BAY_bolshevik: "布尔什维克"
- BAY_bolshevik_desc: "布尔什维克"
- BAY_bolshevik_low: "布尔什维克微弱优势"
- BAY_bolshevik_middle: "布尔什维克如日中天"
- BAY_bolshevik_high: "布尔什维克大权在握"
- BAY_bolshevik_control : "党的全面控制"
+#人民阵线
+ BAY_bolshevik: "人民阵线"
+ BAY_bolshevik_desc: "人民阵线"
+ BAY_bolshevik_low: "人民阵线微弱优势"
+ BAY_bolshevik_middle: "人民阵线如日中天"
+ BAY_bolshevik_high: "人民阵线大权在握"
+ BAY_bolshevik_control: "党的全面控制"
  

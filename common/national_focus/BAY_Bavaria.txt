@@ -369,26 +369,77 @@ focus_tree = {
 		cost = 1
 		x = 10
 		y = 0
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				add_political_power = 100
+        }
 	}
 	focus = {#召集德共成员
 		id = BAY_call_to_commie_action
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 9
 		y = 1
 		prerequisite = {
 			focus = BAY_revolution_victory
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				add_political_power = 100
+				set_party_name = {
+					ideology = communism
+					long_name = BAY_KPD_B
+					name = BAY_KPD_B
+				}
+				set_party_name = {
+					ideology = syndicalist
+					long_name = BAY_KPD_S
+					name = BAY_KPD_S
+				}
+				add_power_balance_value = {
+					id = BAY_left_power_balance
+					value = 0.1
+				}
+
+        }
 	}
 	focus = {#接收流亡资本产业
 		id = BAY_Receiving_industry
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 11
 		y = 1
 		prerequisite = {
 			focus = BAY_revolution_victory
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	#经济（重建）
 	focus = {#开始重建
@@ -403,6 +454,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Receiving_industry
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#没收工厂
 		id = BAY_Confiscate_factory
@@ -413,6 +476,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_rebuild_start
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#扼制资本外流
 		id = BAY_Contain_outflow
@@ -423,6 +498,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_rebuild_start
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#重建基础设施
 		id = BAY_fix_the_base
@@ -433,6 +520,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_rebuild_start
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#铲除蛀虫
 		id = BAY_Pest_control
@@ -443,6 +542,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_rebuild_start
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#建立新世界
 		id = BAY_new_world
@@ -462,6 +573,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Confiscate_factory
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#经济革命
 		id = BAY_eco_reform
@@ -472,6 +595,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_new_world
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 		}
 #经济（卢森堡线）
 	focus = {#农业社会化
@@ -489,6 +624,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BAY_farm_reform
 		}
+			ai_will_do = {
+					factor = 30
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#建立合作社
 		id = BAY_build_Cooperative
@@ -499,6 +646,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_farm_socialization
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#土地整理
 		id = BAY_Flurbereinigung
@@ -509,6 +668,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_build_Cooperative
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#农村工业化
 		id = BAY_country_industuy
@@ -519,6 +690,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_build_Cooperative
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#乡村文化保护
 		id = BAY_country_culture_produce
@@ -529,6 +712,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Flurbereinigung
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#生态农业理念
 		id = BAY_Ecological_agriculture_concept
@@ -539,6 +734,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_country_culture_produce
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#农村特色轻工业
 		id = BAY_Rural_light_industry
@@ -549,6 +756,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_country_industuy
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#"双元"教育计划
 		id = BAY_PR_Education_plan
@@ -559,6 +778,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Rural_light_industry
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#乡村振兴
 		id = BAY_Rural_revitalization
@@ -572,6 +803,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_PR_Education_plan
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#理想的基石
 		id = BAY_cornerstone_of_ideals
@@ -585,6 +828,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_city_countryside_devlopment
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 
 
@@ -599,6 +854,18 @@ focus_tree = {
 			focus = BAY_farm_socialization
 			focus = BAY_farm_reform
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#乡村电力化
 		id = BAY_election_countryside
@@ -609,6 +876,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_countryside_build
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#莱茵——多瑙水利计划
 		id = BAY_Danube_Rhine_Waterway
@@ -619,6 +898,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_election_countryside
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#建设化肥厂
 		id = BAY_open_Fertilizer_factory
@@ -629,6 +920,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Danube_Rhine_Waterway
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#落实八小时工作制
 		id = BAY_eight_time_work
@@ -639,6 +942,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_countryside_build
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 
 	focus = {#推广工人民主
@@ -650,6 +965,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_eight_time_work
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#新教育计划
 		id = BAY_worker_eduction_plan
@@ -660,6 +987,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_worker_dem
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#城乡均衡发展
 		id = BAY_city_countryside_devlopment
@@ -673,6 +1012,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_open_Fertilizer_factory
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 
 #经济（其他）(共通线)
@@ -685,6 +1036,30 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_eco_reform
 		}
+			ai_will_do = {
+					factor = 30
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#革命的后盾
 		id = BAY_revolution_backing
@@ -701,6 +1076,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_5_years_plan
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 #经济（人民阵线）
 	focus = {#农业国有化
@@ -718,6 +1105,18 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = BAY_farm_socialization
 		}
+			ai_will_do = {
+					factor = 30
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#建设集体农庄
 		id = BAY_build_Collective_farm
@@ -728,6 +1127,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_farm_national
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#继续工业化
 		id = BAY_Continue_industrialization
@@ -738,6 +1149,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_build_Collective_farm
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#航空工业投资
 		id = BAY_Aerospace_Industry_Investment
@@ -748,6 +1171,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Continue_industrialization
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#建造科学城
 		id = BAY_build_Science_City
@@ -758,6 +1193,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Aerospace_Industry_Investment
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#保留农村集市
 		id = BAY_Preserve_market
@@ -768,6 +1215,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_build_Collective_farm
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#新生活运动
 		id = BAY_New_Life_Movement
@@ -778,6 +1237,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Preserve_market
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#改造大自然
 		id = BAY_Transforming_nature
@@ -788,6 +1259,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_New_Life_Movement
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#迈向共产主义
 		id = BAY_go_commie
@@ -801,6 +1284,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_build_Science_City
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#铸刃之熔炉
 		id = BAY_Furnace
@@ -814,6 +1309,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_5_years_plan
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 
 
@@ -828,6 +1335,18 @@ focus_tree = {
 			focus = BAY_farm_reform
 			focus = BAY_farm_national
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#“共和国”高速公路
 		id = BAY_republic_fast_road
@@ -838,6 +1357,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_reform_4_years_plan
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#大众汽车
 		id = BAY_Volkswagen
@@ -848,6 +1379,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_republic_fast_road
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#铁路翻新
 		id = BAY_railway_renew
@@ -858,6 +1401,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Volkswagen
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 
 	focus = {#东部大开发
@@ -869,6 +1424,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_reform_4_years_plan
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#纽伦堡工业区
 		id = BAY_Nuremberg_Industrial_Zone
@@ -879,6 +1446,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_eastern_development_plan
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#扩张慕尼黑化学产业
 		id = BAY_Munich_Chemical_Expansion
@@ -889,6 +1468,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_Nuremberg_Industrial_Zone
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 	focus = {#五年计划
 		id = BAY_5_years_plan
@@ -902,6 +1493,18 @@ focus_tree = {
 		prerequisite = {
 			focus = BAY_railway_renew
 		}
+			ai_will_do = {
+					factor = 100
+				}
+			available = {
+					always = yes
+				}
+			select_effect = {
+
+            }
+			completion_reward = {
+				
+        }
 	}
 
 }

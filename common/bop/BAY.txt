@@ -1,5 +1,5 @@
 BAY_left_power_balance = {
-	initial_value = -0.20 
+	initial_value = -0.2 
 	left_side = BAY_Spartakusbund
 	right_side = BAY_bolshevik
 	decision_category = BAY_left_power_balance

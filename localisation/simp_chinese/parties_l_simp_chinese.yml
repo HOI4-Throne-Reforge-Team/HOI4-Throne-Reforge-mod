@@ -1221,8 +1221,12 @@
 #BAY
  BAY_communism_party: "德共-巴伐利亚支部"
  BAY_communism_party_long: "德国共产党-巴伐利亚支部"
+ BAY_KPD_B: "德共—人民阵线"
+ BAY_KPD_B_long: "德国共产党—人民阵线"
  BAY_syndicalist_party: "德共-斯巴达克同盟"
  BAY_syndicalist_party_long: "德国共产党-斯巴达克同盟"
+ BAY_KPD_S: "德共—斯巴达克同盟"
+ BAY_KPD_S_long: "德国共产党—斯巴达克同盟"
  BAY_anarchism_party: "德国工联"
  BAY_anarchism_party_long: "德意志自由工人联合会"
  BAY_social_democrat_party: "独立社民党"
