@@ -1,0 +1,31 @@
+AUS_ecomnoic_add_tex = {
+	custom_effect_tooltip = AUS_ecomnoic_add_tex_tt
+	set_temp_variable = {
+		aus_economic_add_tex = var:stability
+	}
+	multiply_temp_variable = { 
+		var = aus_economic_add_tex
+		value = var:aus.government_income
+	}
+	multiply_temp_variable = { 
+		var = aus_economic_add_tex
+		value = 0.1
+	}
+	add_to_variable = {
+		var = aus.government_income
+		value = var:aus_economic_add_tex
+	}
+}
+AUS_economic_government_maney_add_and_subtract = {
+	set_temp_variable = {
+		var = aus_economic_government_maney
+		value = var:aus.government_income
+		}
+		subtract_from_temp_variable = {
+			aus_economic_government_maney = var:aus.government_spending
+		}
+		add_to_variable = {
+			var = aus.government_reserves 
+			value = var:aus_economic_government_maney
+		}
+}

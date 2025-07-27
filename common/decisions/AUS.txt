@@ -354,37 +354,63 @@ AUS_development_resources_of_state = {  #开发资源
 	}
 }
 AUS_economic = {
-	AUS_development_resource = {  #
-		priority = 20
-		icon = aluminium
-		ai_will_do = {
-			base = 10
-		}
+	AUS_economic_open_tex_path = {  #
+		priority = 950
 		allowed = {
 			original_tag = AUS
 		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 153
-			}
-		}
 		available = {
-			has_full_control_of_state = 153
-		}
-		visible = {
-			has_full_control_of_state = 153
-		}
-		cancel_if_not_visible = yes
-		days_remove = 10
-		cost = 0
-		modifier = {
 			
 		}
+		visible = {
+			has_country_flag = AUS_economic_game
+			NOT = { has_country_flag = AUS_economic_decisions_tex }
+		}
+		cancel_if_not_visible = no
+		cost = 0
+		complete_effect = {
+			set_country_flag = AUS_economic_decisions_tex
+		}
+	}
+	AUS_economic_shut_tex_path = {  #
+		priority = 950
+		allowed = {
+			original_tag = AUS
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = AUS_economic_game
+			has_country_flag = AUS_economic_decisions_tex
+		}
+		cancel_if_not_visible = no
+		cost = 0
+		complete_effect = {
+			clr_country_flag = AUS_economic_decisions_tex
+		}
+	}
+	AUS_economic_tex_1 = {  #
+		priority = 940
+		allowed = {
+			original_tag = AUS
+		}
+		available = {
+			has_stability > 0.2
+		}
+		visible = {
+			has_country_flag = AUS_economic_game
+			has_country_flag = AUS_economic_decisions_tex
+		}
+		cancel_if_not_visible = no
+		cost = 0
+		days_remove = 21
+		modifier = {
+			political_power_cost = 0.1
+		}
 		remove_effect = {
-			add_to_variable = {
-				var = aus.real_gdp
-				value = 0.1
-			}
+			add_stability = -0.05
+			AUS_ecomnoic_add_tex = yes
 		}
 	}
 }
