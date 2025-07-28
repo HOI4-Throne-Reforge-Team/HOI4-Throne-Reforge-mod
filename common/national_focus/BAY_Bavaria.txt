@@ -244,12 +244,10 @@ focus_tree = {
 
             }
 			completion_reward = {
-				effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_Bayerische_Armee
 						add_idea = Bavaria_Bayerische_Armee_2
 					}
-				}
 				if = {
 					limit = {
 						has_global_flag = USPD		
@@ -277,12 +275,10 @@ focus_tree = {
 
             }
 			completion_reward = {
-				effect_tooltip = {
 					swap_ideas = {
 						remove_idea = Bavaria_Bayerische_Armee_2
 						add_idea = Bavaria_Bayerische_Armee_3
 					}
-				}
         } 
 	}
 	focus = { #加强日常巡逻
@@ -438,7 +434,8 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = arms_factory level = 1 }	
         }
 	}
 	#经济（重建）
@@ -464,13 +461,17 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction
+						add_idea = Bavaria_reconstruction_1
+					}
+				add_political_power = 100
         }
 	}
 	focus = {#没收工厂
 		id = BAY_Confiscate_factory
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 9
 		y = 3
 		prerequisite = {
@@ -486,13 +487,58 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+				if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_1
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_1
+						add_idea = Bavaria_reconstruction_2
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_2
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_2
+						add_idea = Bavaria_reconstruction_3
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_3
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_3
+						add_idea = Bavaria_reconstruction_4
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_4
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_4
+						add_idea = Bavaria_reconstruction_5
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+				add_offsite_building = { type = arms_factory level = 1 }
         }
 	}
 	focus = {#扼制资本外流
 		id = BAY_Contain_outflow
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 11
 		y = 3
 		prerequisite = {
@@ -508,13 +554,58 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+				if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_1
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_1
+						add_idea = Bavaria_reconstruction_2
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_2
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_2
+						add_idea = Bavaria_reconstruction_3
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_3
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_3
+						add_idea = Bavaria_reconstruction_4
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_4
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_4
+						add_idea = Bavaria_reconstruction_5
+					}
+				}
+				add_offsite_building = { type = industrial_complex level = 1 }
+
         }
 	}
 	focus = {#重建基础设施
 		id = BAY_fix_the_base
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 7
 		y = 3
 		prerequisite = {
@@ -530,13 +621,56 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+				if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_1
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_1
+						add_idea = Bavaria_reconstruction_2
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_2
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_2
+						add_idea = Bavaria_reconstruction_3
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_3
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_3
+						add_idea = Bavaria_reconstruction_4
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_4
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_4
+						add_idea = Bavaria_reconstruction_5
+					}
+				}
         }
 	}
 	focus = {#铲除蛀虫
 		id = BAY_Pest_control
 		icon = GFX_goal_unknown
-		cost = 1
+		cost = 4
 		x = 13
 		y = 3
 		prerequisite = {
@@ -552,7 +686,51 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+				if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_1
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_1
+						add_idea = Bavaria_reconstruction_2
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_2
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_2
+						add_idea = Bavaria_reconstruction_3
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_3
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_3
+						add_idea = Bavaria_reconstruction_4
+					}
+				}
+				else_if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_4
+					}
+					}
+					swap_ideas = {
+						remove_idea = Bavaria_reconstruction_4
+						add_idea = Bavaria_reconstruction_5
+					}
+				}
+				add_stability = 0.1
         }
 	}
 	focus = {#建立新世界
@@ -583,7 +761,18 @@ focus_tree = {
 
             }
 			completion_reward = {
-				
+				if = {
+					limit = {
+						BAY = {
+						has_idea = Bavaria_reconstruction_5
+					}
+					}
+					remove_ideas = {
+						 Bavaria_reconstruction_5
+					}
+				}
+				add_stability = 0.1
+				add_war_support = 0.1
         }
 	}
 	focus = {#经济革命

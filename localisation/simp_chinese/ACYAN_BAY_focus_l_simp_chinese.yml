@@ -89,6 +89,27 @@ BAY_revolution_victory_desc: "在同志们的艰苦斗争下，我们夺得了�
 BAY_call_to_commie_action: "召集德共成员"
 BAY_call_to_commie_action_desc: "我们已经拥有了德意志地区内一个庞大的根据地。我们应该召集位于德意志各地的共产主义战士们，来到巴伐利亚，并进行改组。"
 
+BAY_Receiving_industry: "接收流亡资本产业"
+BAY_Receiving_industry_desc: "内战开始时，有一部分资本家受到消息提前撤离，留下了他们的工厂和饥寒交迫的工人们，我们需要重新接收这些工厂，为后续的重建做准备。"
+
+BAY_rebuild_start: "开始重建"
+BAY_rebuild_start_desc: "在初步稳定好局势后，我们是时候着手做好这个烂摊子了——经济危机和内战，给巴伐利亚带来的是断壁残垣。必须运用现有的资源以援助重建。"
+
+BAY_Confiscate_factory: "没收工厂"
+BAY_Confiscate_factory_desc: "万恶的资本家们骑在我们工人同志上的时代已经结束了。但毕竟我们可不是那群资本家，我们会给那些被没收工厂的老板一些选择——成为为工厂里工人的一份子，或者离开这里。"
+
+BAY_Contain_outflow: "扼制资本外流"
+BAY_Contain_outflow_desc: "骑在人民头上的统治阶级，一部分人早在赤卫队攻入慕尼黑后，早早地撤离了。而现在仍有一批人准备撤离。我们的新政府当然不干涉他们追求“自由”的步伐，但他们从人民手里抢来的财富，一分一毫都不许带出！"
+
+BAY_fix_the_base: "重建基础设施"
+BAY_fix_the_base_desc: "内战导致了国内的基础设施遭到了不同程度的损坏。我们必须对其进行修复，为后续的重建奠定基础。"
+
+BAY_Pest_control: "铲除蛀虫"
+BAY_Pest_control_desc: "尽管我们已经取得了领导权，但在巴伐利亚，极右翼的和贵族们的零星抵抗依旧存在。对于这些反革命分子，要重拳出击，不能给他们有任何复辟的机会！"
+
+BAY_new_world: "建立新世界"
+BAY_new_world_desc: "在人民的努力下，我们摆脱了经济危机，并将国家恢复至战前状态。现在，该是建设新世界的时候了。"
+
 BAY_election_countryside: "乡村电力化"
 BAY_election_countryside_desc: ""
 
@@ -101,9 +122,6 @@ BAY_eight_time_work_desc: ""
 BAY_open_Fertilizer_factory: "建设化肥厂"
 BAY_open_Fertilizer_factory_desc: ""
 
-BAY_Receiving_industry: "接收流亡资本产业"
-BAY_Receiving_industry_desc: ""
-
 BAY_eco_reform: "经济革命"
 BAY_eco_reform_desc: ""
 
@@ -115,15 +133,6 @@ BAY_build_Cooperative_desc: ""
 
 BAY_worker_dem: "推广工人民主"
 BAY_worker_dem_desc: ""
-
-BAY_rebuild_start: "开始重建"
-BAY_rebuild_start_desc: ""
-
-BAY_Confiscate_factory: "没收工厂"
-BAY_Confiscate_factory_desc: ""
-
-BAY_Contain_outflow: "扼制资本外流"
-BAY_Contain_outflow_desc: ""
 
 BAY_republic_fast_road: "“共和国”高速公路"
 BAY_republic_fast_road_desc: ""
@@ -140,17 +149,8 @@ BAY_Munich_Chemical_Expansion_desc: ""
 BAY_farm_national: "农业国有化"
 BAY_farm_national_desc: ""
 
-BAY_fix_the_base: "重建基础设施"
-BAY_fix_the_base_desc: ""
-
-BAY_new_world: "建立新世界"
-BAY_new_world_desc: ""
-
 BAY_5_years_plan: "五年计划"
 BAY_5_years_plan_desc: ""
-
-BAY_Pest_control: "铲除蛀虫"
-BAY_Pest_control_desc: ""
 
 BAY_reform_4_years_plan: "改革四年计划"
 BAY_reform_4_years_plan_desc: ""
