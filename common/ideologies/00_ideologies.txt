@@ -2,11 +2,13 @@ ideologies = {
 ###################################
 ###         红色意识形态        ###
 ###################################
-#极权
+#共产主义
 	communism = {
 		types = {
 			communist = {}
 			totalist_subtype = {} #generic
+			rosenbergism = {}
+			socialism = {}
 		}
 		color = { 119 15 0 }
 
@@ -232,6 +234,7 @@ ideologies = {
 			paternal_autocrat_subtype = {}
 			chinesewarlord = {}
 			traditionalism = {}
+			enlightened_despotism = {}
 		}
 		color = { 68 68 68 }
 
@@ -292,7 +295,7 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10
 	}
 
-#法西斯
+#军国
 	fascism = {
 		types = {
 			national_subtype = {}
