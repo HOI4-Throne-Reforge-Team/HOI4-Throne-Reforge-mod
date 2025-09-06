@@ -45,7 +45,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		always = yes
+		tag = SPR
 	}
 
 	can_take_level = {
