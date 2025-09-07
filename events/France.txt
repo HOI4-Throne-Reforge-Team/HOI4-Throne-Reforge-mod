@@ -48,41 +48,41 @@ country_event = {  #左翼激进分子对法案不满
 		name = focus_FRA.3.a
 		add_stability = -0.02
 		add_popularity = {
-				ideology = fascism
-				popularity = 0.01
-			}
+			ideology = fascism
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = populism
-				popularity = 0.02
-			}
+			ideology = populism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = neutrality
-				popularity = 0.02
-			}
+			ideology = neutrality
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = social_conservative
-				popularity = 0.02
-			}
+			ideology = social_conservative
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = focus_FRA.3.b
 		add_political_power = -15
 		add_popularity = {
-				ideology = social_democrat
-				popularity = 0.03
-			}
+			ideology = social_democrat
+			popularity = 0.03
+		}
 		add_popularity = {
-				ideology = anarchism
-				popularity = 0.02
-			}
+			ideology = anarchism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = syndicalist
-				popularity = 0.02
-			}
+			ideology = syndicalist
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = communism
-				popularity = 0.02
-			}
+			ideology = communism
+			popularity = 0.02
+		}
 	}
 }
 
@@ -96,46 +96,45 @@ country_event = {  #天主教会对法案不满
 		name = focus_FRA.4.a
 		add_stability = -0.02
 		add_popularity = {
-				ideology = fascism
-				popularity = 0.01
-			}
+			ideology = fascism
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = populism
-				popularity = 0.01
-			}
+			ideology = populism
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = syndicalist
-				popularity = 0.01
-			}
+			ideology = syndicalist
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = anarchism
-				popularity = 0.01
-			}
+			ideology = anarchism
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = communism
-				popularity = 0.01
-			}
+			ideology = communism
+			popularity = 0.01
+		}
 	}
 	option = {
 		name = focus_FRA.4.b
 		add_political_power = -15
-
 		add_popularity = {
-				ideology = neutrality
-				popularity = 0.01
+			ideology = neutrality
+			popularity = 0.01
 			}
 		add_popularity = {
-				ideology = social_democrat
-				popularity = 0.01
-			}
+			ideology = social_democrat
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = democratic
-				popularity = 0.01
-			}
+			ideology = democratic
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = social_conservative
-				popularity = 0.01
-			}
+			ideology = social_conservative
+			popularity = 0.01
+		}
 	}
 }
 
@@ -144,50 +143,49 @@ country_event = {  #银行家联合对政府施压
 	title = focus_FRA.5.t
 	desc = focus_FRA.5.d
 	is_triggered_only = yes
-	
 	option = {
 		name = focus_FRA.5.a
 		add_stability = -0.02
 		add_popularity = {
-				ideology = fascism
-				popularity = 0.02
-			}
+			ideology = fascism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = social_democrat
-				popularity = 0.02
-			}
+			ideology = social_democrat
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = anarchism
-				popularity = 0.02
-			}
+			ideology = anarchism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = syndicalist
-				popularity = 0.02
-			}
+			ideology = syndicalist
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = communism
-				popularity = 0.02
-			}
+			ideology = communism
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = focus_FRA.5.b
 		add_political_power = -15
 		add_popularity = {
-				ideology = populism
-				popularity = 0.02
-			}
+			ideology = populism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.02
-			}
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = neutrality
-				popularity = 0.02
-			}
+			ideology = neutrality
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = social_conservative
-				popularity = 0.04
-			}
+			ideology = social_conservative
+			popularity = 0.04
+		}
 	}
 }
 
@@ -201,42 +199,42 @@ country_event = {  #右翼分子对法案不满
 		add_stability = -0.02
 		
 		add_popularity = {
-				ideology = fascism
-				popularity = 0.01
-			}
+			ideology = fascism
+			popularity = 0.01
+		}
 		add_popularity = {
-				ideology = populism
-				popularity = 0.02
-			}
+			ideology = populism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = neutrality
-				popularity = 0.02
-			}
+			ideology = neutrality
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = social_conservative
-				popularity = 0.02
-			}
+			ideology = social_conservative
+			popularity = 0.02
+		}
 	}
 	option = {
 		name = focus_FRA.6.b
 		add_political_power = -15
 		
 		add_popularity = {
-				ideology = social_democrat
-				popularity = 0.03
-			}
+			ideology = social_democrat
+			popularity = 0.03
+		}
 		add_popularity = {
-				ideology = anarchism
-				popularity = 0.02
-			}
+			ideology = anarchism
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = syndicalist
-				popularity = 0.02
-			}
+			ideology = syndicalist
+			popularity = 0.02
+		}
 		add_popularity = {
-				ideology = communism
-				popularity = 0.02
-			}
+			ideology = communism
+			popularity = 0.02
+		}
 	}
 }
 
@@ -266,9 +264,9 @@ country_event = {  #政府的公告
 	option = {
 		name = The_Stavisky_Trial.2.a
 		add_popularity = {
-				ideology = 	democratic 
-				popularity = 0.02
-			}
+			ideology = 	democratic 
+			popularity = 0.02
+		}
 		add_stability = 0.02
 	}
 }
@@ -296,7 +294,6 @@ country_event = {  #在参议院
 	is_triggered_only = yes
 	option = {
 		name = The_Stavisky_Trial.4.a
-		
 	}
 }
 
@@ -307,26 +304,41 @@ news_event = {  #舆论扩大
 	is_triggered_only = yes
 	option = {
 		name = The_Stavisky_Trial.5.a
-		
-			add_popularity = {
-				ideology = 	democratic 
-				popularity = -0.05
-			}
-			swap_ideas = {
-				remove_idea = FRA_scandal_1
-				add_idea = FRA_scandal_2
-			}
+		add_popularity = {
+			ideology = 	democratic 
+			popularity = -0.05
+		}
+		swap_ideas = {
+			remove_idea = FRA_scandal_1
+			add_idea = FRA_scandal_2
+		}
 		add_stability = -0.1
 	}
 }
 
-country_event = {  #黑色圣诞节
+news_event = {  #黑色圣诞节
 	id = FRA.1
 	title = FRA.1.t
 	desc = FRA.1.d
 	is_triggered_only = yes
 	option = {
 		name = FRA.1.a
-		add_ideas = FRA_E_B_5
+		if = {
+			limit = {
+				tag = PUS
+				tag = ENG
+				tag = RUS
+				tag = AUS
+				tag = USA
+				tag = CHI
+			}
+			add_ideas = FRA_E_B_4
+		}
+		else_if = {
+			limit = { 
+				tag = FRA
+			}
+			add_ideas = FRA_E_B_5
+		}
 	}
 }

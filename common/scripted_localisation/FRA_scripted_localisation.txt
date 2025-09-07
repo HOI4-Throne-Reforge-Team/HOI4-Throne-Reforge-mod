@@ -1,0 +1,22 @@
+defined_text = {
+	name = FRAECONOMICBAD
+	text = {
+		trigger = {
+			tag = FRA
+		}
+		localization_key = econmoic_bad_fra
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_government = communism
+				has_government = syndicalist
+				has_government = anarchism
+			}
+		}
+		localization_key =  econmoic_bad_communism
+	}
+	text = {
+		localization_key =  econmoic_bad_common
+	}
+}
