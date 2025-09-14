@@ -4,7 +4,7 @@ defined_text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = econmoic_bad_fra
+		localization_key = econmoic_bad_fra>
 	}
 	text = {
 		trigger = {

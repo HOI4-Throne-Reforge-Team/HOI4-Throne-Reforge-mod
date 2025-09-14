@@ -135,9 +135,10 @@
  FRA_see_you_tomorrow: "迈向明日"
  FRA_see_you_tomorrow_desc: ""
 
- ###########################陆军国策树############################
+###########################陆军国策树############################
  FRA_Army_focus: "军备重整"
  FRA_Army_focus_desc: ""
+ threat1: "法国进行军备重整"
  FRA_Reform_of_the_General_Staff: "改革总参谋部"
  FRA_Reform_of_the_General_Staff_desc: ""
  FRA_A_new_generation_of_commanders: "新生代军官"

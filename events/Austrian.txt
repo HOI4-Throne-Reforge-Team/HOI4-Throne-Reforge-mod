@@ -4,6 +4,21 @@ add_namespace = event_AUS
 add_namespace = AUS
 
 
+country_event = {  #
+	id = focus_AUS.14514
+	title = focus_AUS.14514.t
+	desc = focus_AUS.14514.d
+	is_triggered_only = yes
+	option = {
+		name = focus_AUS.14514.a
+		add_syndicalist_to_coalition = yes
+	}
+	option = {
+		name = focus_AUS.14514.b
+		remove_syndicalist_from_coalition = yes
+	}
+}
+
 country_event = {  #帝国现状
 	id = focus_AUS.1
 	title = focus_AUS.1.t

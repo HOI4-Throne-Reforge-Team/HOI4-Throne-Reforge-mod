@@ -244,19 +244,19 @@ if = {
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	last_election = "1935.2.8"
 	elections_allowed = yes
 }
 set_popularities = {
 	democratic = 6
-	neutrality = 94
+	communism = 94
 }
 
 set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
-
+recruit_character = TUR_mustafa_kemal_ataturk
 # if = {
 # 	limit = { has_dlc = "Battle for the Bosporus" }
 # 	recruit_character = TUR_mustafa_kemal_ataturk

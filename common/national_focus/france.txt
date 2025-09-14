@@ -557,11 +557,57 @@ focus_tree = {
 	focus = {     #军备重整
 		id = FRA_Army_focus
 		icon = GFX_goal_generic_improve_relations
-		cost = 5
+		cost = 8
 		x = 29
 		y = 1
 		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_to_variable = {
+  				FRA_training_time_army_factor = -0.15
+			}
+			add_to_variable = {
+  				FRA_experience_gain_army_factor = 0.01
+			}
 			
+
+			add_named_threat = { threat = 5 name = threat1}
+			swap_ideas = {
+				remove_idea = civilian_economy
+				add_idea = low_economic_mobilisation
+			}
 		}
 	}
 	focus = {  #改革总参谋部
@@ -574,7 +620,19 @@ focus_tree = {
 			focus = FRA_Army_focus
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+    			FRA_max_planning = 0.05
+			}
+			add_to_variable = {
+   				FRA_land_doctrine_cost_factor = -0.25
+			}
+			army_experience = 35
+			add_doctrine_cost_reduction = {
+				name = FRA_test
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 		}
 	}
 	focus = {   #新生代军官
@@ -587,7 +645,13 @@ focus_tree = {
 			focus = FRA_Reform_of_the_General_Staff
 		}
 		completion_reward = {
-			
+			add_ideas = reserve_officers_spirit
+			add_to_variable = {
+   				FRA_land_doctrine_cost_factor = -0.25
+			}
+			add_to_variable = {
+  				FRA_training_time_army_factor = -0.15
+			}
 		}
 	}
 	focus = {  #扩建军事学院
@@ -600,7 +664,18 @@ focus_tree = {
 			focus = FRA_A_new_generation_of_commanders
 		}
 		completion_reward = {
-			
+			add_research_slot = 1
+			add_to_variable = {
+   				FRA_land_doctrine_cost_factor = -0.25
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			add_to_variable = {
+  				FRA_experience_gain_army_factor = 0.02
+			}
 		}
 	}
 	focus = {  #帝国近卫军
@@ -614,6 +689,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			
+
 		}
 	}
 	focus = {  #有序战争
@@ -626,7 +702,21 @@ focus_tree = {
 			focus = FRA_Reform_of_the_General_Staff
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+    			FRA_max_planning = 0.05
+			}
+			add_ideas = proper_heritage_spirit
+			add_to_variable = {
+   				FRA_combat_width_factor = -0.25
+			}
+			add_to_variable = {
+				FRA_land_reinforce_rate = 0.05
+			}
+
+			add_to_variable = {
+  				FRA_coordination_bonus = 0.05
+			}
+
 		}
 	}
 	focus = { #全民动员
@@ -639,7 +729,15 @@ focus_tree = {
 			focus = FRA_Orderly_war
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+    			FRA_conscription_factor = 0.25
+			}
+			add_to_variable = {
+    			FRA_conscription = 0.01
+			}
+			add_to_variable = {
+    			FRA_training_time_army_factor = -0.5
+			}
 		}
 	}
 	focus = {   #确保情报优势
@@ -652,7 +750,10 @@ focus_tree = {
 			focus = FRA_Orderly_war
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_Information
+			add_to_variable = {
+    			FRA_intel_from_combat_factor = 0.5
+			}
 		}
 	}
 	focus = {  #先辈的荣耀
@@ -668,7 +769,26 @@ focus_tree = {
 			focus = FRA_Mobilization_of_the_whole_people
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+   				FRA_army_attack_factor = 0.03
+			}
+
+			add_to_variable = {
+    			FRA_army_defence_factor = 0.03
+			}
+
+			add_to_variable = {
+   				 FRA_army_org_factor = 0.03
+			}
+
+			add_to_variable = {
+    			FRA_army_morale_factor = 0.03
+			}
+
+			add_to_variable = {
+   				 FRA_army_strength_factor = 0.03
+			}
+			add_war_support = 0.1
 		}
 	}
 	focus = {  #战场上的皇后
@@ -681,7 +801,18 @@ focus_tree = {
 			focus = FRA_Glory_to_our_ancestors
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+   				 FRA_army_infantry_attack_factor = 0.05
+			}
+
+			add_to_variable = {
+  				  FRA_army_infantry_defence_factor = 0.05
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -695,7 +826,12 @@ focus_tree = {
 			focus = FRA_Glory_to_our_ancestors
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+    			FRA_max_planning = 0.15
+			}
+			add_to_variable = {
+    			FRA_conscription_factor = 0.25
+			}
 		}
 	}
 	focus = {  #集中突破
@@ -708,7 +844,15 @@ focus_tree = {
 			focus = FRA_Reform_of_the_General_Staff
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+   				FRA_combat_width_factor = -0.25
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 1
+				category = support_tech
+			}
 		}
 	}
 	focus = {   #钢铁之躯
@@ -721,8 +865,62 @@ focus_tree = {
 			focus = FRA_Concentrated_breakthroughs
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = armor
+			}
+			mio:FRA_renault_organization = {
+				add_mio_funds = 2000
+			}
+			division_template = {
+				name = "Division Cuirassée" 	
+				division_names_group = FRA_ARM_01
+
+				regiments = {
+					medium_armor = { x = 0 y = 0 }		
+					heavy_armor = { x = 0 y = 1 }		
+					medium_armor = { x = 1 y = 0 }		
+					medium_armor = { x = 1 y = 1 }		
+					motorized = { x = 2 y = 0 }			
+					motorized = { x = 2 y = 1 }
+					motorized = { x = 2 y = 2 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }      		
+					artillery = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1re Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7 force_equipment_variants = { heavy_tank_chassis_0 = { creator = \"FRA\" version_name = \"Char B1\"} }"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2me Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7 force_equipment_variants = { heavy_tank_chassis_0 = { creator = \"FRA\" version_name = \"Char B1\"} }"  
+						owner = ROOT
+					}
+				}
+			}
+			else = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1re Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7"  
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2me Division Cuirassée\" division_template = \"Division Cuirassée\" start_experience_factor = 0.7"  
+						owner = ROOT
+					}
+				}
+			}
 		}
+			
 	}
 	focus = {   #精确火控
 		id = FRA_Precise_fire_control
@@ -734,7 +932,21 @@ focus_tree = {
 			focus = FRA_Concentrated_breakthroughs
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+   				 FRA_army_artillery_attack_factor = 0.1
+			}
+
+			add_to_variable = {
+			   FRA_army_artillery_defence_factor = 0.1
+			}
+			set_technology = { armored_train = 1 }
+			set_technology = { railway_gun = 1 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				ahead_reduction = 1
+				category = artillery
+			}
 		}
 	}
 	focus = {   #未来之子
@@ -750,7 +962,24 @@ focus_tree = {
 			focus = FRA_A_body_of_steel
 		}
 		completion_reward = {
-			
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 2
+				category = cat_production
+			}
+			add_to_variable = {
+   				FRA_combat_width_factor = -0.25
+			}
 		}
 	}
 	focus = {   #空地一体化战争
@@ -766,7 +995,21 @@ focus_tree = {
 			focus = FRA_Children_of_the_Future
 		}
 		completion_reward = {
-			
+			add_to_variable = {
+   				FRA_army_bonus_air_superiority_factor = 0.1
+			}
+
+			add_to_variable = {
+				FRA_enemy_army_bonus_air_superiority_factor = 0.1
+			}
+
+			add_to_variable = {
+  				FRA_air_superiority_bonus_in_combat = 0.1
+			}
+
+			add_to_variable = {
+   				FRA_cas_damage_reduction = 0.1
+			}
 		}
 	}
 	focus = {  #生产线上的战争
@@ -779,39 +1022,142 @@ focus_tree = {
 			focus = FRA_Army_focus
 		}
 		completion_reward = {
-			
+			add_ideas = FRA_War_on_the_production_line_idea
 		}
 	}
 	focus = {    #资源向军事领域倾斜
 		id = FRA_Military_resources_take_precedence
 		icon = GFX_goal_generic_improve_relations
-		cost = 5
+		cost = 8
 		x = 31
 		y = 3
 		prerequisite = {
 			focus = FRA_War_on_the_production_line
 		}
 		completion_reward = {
-			
+			if = {
+				limit = { has_idea = FRA_War_on_the_production_line_idea }
+				swap_ideas = {
+					remove_idea = FRA_War_on_the_production_line_idea
+					add_idea = FRA_War_on_the_production_line_idea2
+				}
+			}
+			else = {
+				20 = {
+				add_resource = {
+					type = Tungsten
+					amount = 42
+				}
+				}
+				26 = {
+				add_resource = {
+					type = Tungsten
+					amount = 18
+				}
+				}
+				26 = {
+				add_resource = {
+					type = oil
+					amount = 1
+				}
+				}
+			}
+			}
 		}
-	}
+	
 		focus = {  #加大军事工业投资
 		id = FRA_Increase_investment_in_the_military_industry
 		icon = GFX_goal_generic_improve_relations
-		cost = 5
+		cost = 8
 		x = 33
 		y = 3
 		prerequisite = {
 			focus = FRA_War_on_the_production_line
 		}
 		completion_reward = {
-			
+			if = {
+				limit = { has_idea = FRA_War_on_the_production_line_idea }
+				swap_ideas = {
+					remove_idea = FRA_War_on_the_production_line_idea
+					add_idea = FRA_War_on_the_production_line_idea2
+				}
+			}
+			else = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}
 		}
 	}
 	focus = {  #完善军工网络
 		id = FRA_Improve_the_military-industrial_network
 		icon = GFX_goal_generic_improve_relations
-		cost = 5
+		cost = 8
 		x = 32
 		y = 4
 		prerequisite = {
@@ -821,7 +1167,27 @@ focus_tree = {
 			focus = FRA_Military_resources_take_precedence
 		}
 		completion_reward = {
-			
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+					remove_idea = FRA_War_on_the_production_line_idea2
+					add_idea = FRA_War_on_the_production_line_idea3
+				}
 		}
 	}
 	focus = {   #质量优先
@@ -837,7 +1203,10 @@ focus_tree = {
 			focus = FRA_Quantity_over_quality
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+					remove_idea = FRA_War_on_the_production_line_idea3
+					add_idea = FRA_War_on_the_production_line_idea5
+				}
 		}
 	}
 	focus = {   #流水线生产
@@ -853,7 +1222,10 @@ focus_tree = {
 			focus = FRA_Quality_first
 		}
 		completion_reward = {
-			
+			swap_ideas = {
+					remove_idea = FRA_War_on_the_production_line_idea3
+					add_idea = FRA_War_on_the_production_line_idea4
+				}
 		}
 	}
 	#空军国策

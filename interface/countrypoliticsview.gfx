@@ -535,15 +535,24 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ideology_fascism_group"
-		texturefile = "gfx/interface/ideologies/fascism_group.dds"
-	}
-
-	spriteType = {
 		name = "GFX_ideology_classicalbonapartism"
 		texturefile = "gfx/interface/ideologies/classicalbonapartism.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_ideology_fascist"
+		texturefile = "gfx/interface/ideologies/fascist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_anarchism_subtype"
+		texturefile = "gfx/interface/ideologies/anarchism_subtype.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_enlightened_despotism"
+		texturefile = "gfx/interface/ideologies/enlightened_despotism.dds"
+	}
 
 	spriteType = {
 		name = "GFX_ideology_nazi"
