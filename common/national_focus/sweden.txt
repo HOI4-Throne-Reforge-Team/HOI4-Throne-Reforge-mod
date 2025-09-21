@@ -1,0 +1,39 @@
+focus_tree = {
+	id = sweden_focus_1
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
+
+	focus = { #占位大北欧
+		id = SWE_da_bei_ou
+		icon = GFX_our_denmark
+		x = 10
+		y = 0
+		cost = 100
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+                target = DEN
+                type = annex_everything
+            } 
+		}
+	}
+}				
