@@ -1,3 +1,4 @@
+#!gfx:interface/AUS_focus.gfx
 focus_tree = {   #奥地利帝国国策树
 	id = austrian_focus_empire
 	country = { 
