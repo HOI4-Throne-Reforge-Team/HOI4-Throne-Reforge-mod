@@ -138,7 +138,7 @@ guiTypes = {
 		iconType = {
 			name = "country_flag"
 			quadTextureSprite ="GFX_shield_medium"
-			position = { x = 34 y = 188 }
+			position = { x = 50 y = 188 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
@@ -146,7 +146,7 @@ guiTypes = {
 		buttonType = {
 			name = "country"
 			quadTextureSprite = "GFX_country_selection_entry"
-			position = { x=0 y =0 }
+			position = { x=1 y =0 }
 			clicksound = click_checkbox
 		}
 
