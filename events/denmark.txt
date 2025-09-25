@@ -1,9 +1,6 @@
 add_namespace = denmark
-add_namespace = norway
-add_namespace = sweden
-add_namespace = iceland
 
-country_event = {
+country_event = { #戒严令!
 	id = denmark.1
 	title = denmark.1.t
 	desc = denmark.1.d
@@ -13,7 +10,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		
+		load_focus_tree = denmark_focus_2
 	}
 }
 

@@ -9,53 +9,12 @@
 
  DenUnion: "丹麦皇家联盟"
 
-
- denmark.1.t: "丹麦的过去"
- denmark.1.d: "占位符"
- denmark.1.a: "父国万岁!"
-
- denmark.2.t: "卡尔马联盟"
- denmark.2.d: "占位符"
- denmark.2.a: "占位符"
-
-
-
- 
-
-
-
- DEN_READY_TO_FIGHT: "我们的丹麦!"
- DEN_READY_TO_FIGHT_desc: "占"
- DEN_Kalmarunionen_dream: "卡尔马联盟之梦"
- DEN_Kalmarunionen_dream_desc: "卡尔马联盟之梦"
- DEN_denmark: "稳定国内"
- DEN_denmark_desc: "稳定国内"
- DEN_denmark_king_is_fvv: "减弱国王权力"
- DEN_denmark_king_is_fvv_desc: "减弱国王权力"
- DEN_denmark_king_is__super_fvv: "议会做主"
- DEN_denmark_king_is__super_fvv_desc: "议会做主"
- DEN_I_love_denmark: "君主立宪!"
- DEN_I_love_denmark_desc: "君主立宪!"
-
-
- DEN_russian_LLL: "在芬兰北部挑起争端"
- DEN_I_love_u_fra: "交好法国"
- DEN_buy_gun_FRA: "购买法国枪械"
- DEN_I_love_u_PRU: "联系普鲁士"
- DEN_buy_gun_pru: "与普鲁士建立军事合作"
- DEN_I_love_u_USA: "与美国签订贸易协定"
- DEN_I_love_u_world: "建立友好关系"
- DEN_guoji_ganshe: "国际干涉"
-
- DEN_chongzheng_junbei: "重整军备"
- DEN_zaici_beizhan: "应对瑞典威胁"
- DEN_gonggu_bingdao: "巩固冰岛"
- DEN_xilian_nuowei: "系联挪威"
- DEN_wending_gelinglan: "稳定格陵兰"
- DEN_gonggu_bentu_junbei: "加强本土防御"
- DEN_lieyan_beiou: "北欧的烈焰燃起"
-
- DEN_bentu_fangyu: "专注防御"
- DEN_zhudong_jingong: "主动进攻"
- DEN_plan_b: "B计划"
- DEN_plan_a: "A计划"
+ DEN_GREENLAND: "格陵兰危机"
+ DEN_ICELAND: "分离的冰岛"
+ DEN_NORWAY: "独立的挪威"
+ DEN_SCH_HLS: "不稳的南方"
+ DEN_FLAG_DOWN: "白十字旗飘摇欲下"
+ DEN_CHAOS: "国内骚乱..."
+ DEN_STOP: "全部停下!"
+ DEN_CURFEW: "戒严令!"
+ DEN_TELEGRAM: "急电!!!"
