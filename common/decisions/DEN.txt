@@ -1,0 +1,54 @@
+DEN_DEBUG = {
+    DEN_N_EU_D = {
+
+		icon = ger_mefo_bills
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+            is_ai = no
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			add_political_power = -100
+            puppet = SWE
+            puppet = NOR
+            annex_country = {
+                target = SCH
+                transfer_troops = no
+            }
+            annex_country = {
+                target = HLS
+                transfer_troops = no
+            }
+		}
+	}
+    DEN_N_EU_W = {
+
+		icon = ger_mefo_bills
+
+		ai_will_do = {
+			base = 0
+		}
+
+		available = {
+            is_ai = no
+		}
+
+		cost = 0
+
+		fire_only_once = no
+
+
+		complete_effect = {
+			add_political_power = 100
+		}
+	}
+}

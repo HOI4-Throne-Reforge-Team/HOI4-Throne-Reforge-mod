@@ -1,0 +1,10 @@
+DEN_DEBUG = {
+	icon = ger_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+
+	allowed = {
+		original_tag = DEN
+	}
+	priority = 10
+}
