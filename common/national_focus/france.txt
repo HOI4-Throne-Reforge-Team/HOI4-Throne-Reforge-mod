@@ -325,7 +325,9 @@ focus_tree = {
 		cost = 0
 		x = 10
 		y = 1
-		bypass = {}
+		bypass = {
+			tag = FRA
+		}
 		completion_reward = {}
 	}
 
@@ -535,22 +537,9 @@ focus_tree = {
 		}
 		completion_reward = { 
 			remove_ideas = FRA_scandal_2
+			country_event = {id =The_Stavisky_Trial.6 days=1}
 		}
 			
-	}
-	focus = {#总理选举
-		id = FRA_Election_of_Premier
-		icon = GFX_focus_FRA_Great_Judgment
-		cost = 3
-		x = 10
-		y = 6
-		prerequisite = {
-			focus = FRA_Great_Judgment
-		}
-		completion_reward = { 
-			
-		}
-		
 	}
 
 	#陆军国策树
@@ -561,23 +550,7 @@ focus_tree = {
 		x = 29
 		y = 1
 		completion_reward = {
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+			custom_effect_tooltip = FRA_Army_focus_tt
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
@@ -599,7 +572,7 @@ focus_tree = {
   				FRA_training_time_army_factor = -0.15
 			}
 			add_to_variable = {
-  				FRA_experience_gain_army_factor = 0.01
+  				FRA_experience_gain_army_factor = 0.02
 			}
 			
 
@@ -620,6 +593,7 @@ focus_tree = {
 			focus = FRA_Army_focus
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Reform_of_the_General_Staff_tt
 			add_to_variable = {
     			FRA_max_planning = 0.05
 			}
@@ -645,6 +619,7 @@ focus_tree = {
 			focus = FRA_Reform_of_the_General_Staff
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_A_new_generation_of_commanders_tt
 			add_ideas = reserve_officers_spirit
 			add_to_variable = {
    				FRA_land_doctrine_cost_factor = -0.25
@@ -664,17 +639,18 @@ focus_tree = {
 			focus = FRA_A_new_generation_of_commanders
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Expansion_of_the_Military_Academy_tt
 			add_research_slot = 1
 			add_to_variable = {
    				FRA_land_doctrine_cost_factor = -0.25
 			}
 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.75
+				cost_reduction = 0.25
 				uses = 1
 				category = land_doctrine
 			}
 			add_to_variable = {
-  				FRA_experience_gain_army_factor = 0.02
+  				FRA_experience_gain_army_factor = 0.04
 			}
 		}
 	}
@@ -702,6 +678,7 @@ focus_tree = {
 			focus = FRA_Reform_of_the_General_Staff
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Orderly_war_tt
 			add_to_variable = {
     			FRA_max_planning = 0.05
 			}
@@ -729,11 +706,12 @@ focus_tree = {
 			focus = FRA_Orderly_war
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Mobilization_of_the_whole_people_tt
 			add_to_variable = {
-    			FRA_conscription_factor = 0.25
+    			FRA_conscription_factor = 0.15
 			}
 			add_to_variable = {
-    			FRA_conscription = 0.01
+    			FRA_conscription = 0.005
 			}
 			add_to_variable = {
     			FRA_training_time_army_factor = -0.5
@@ -750,6 +728,7 @@ focus_tree = {
 			focus = FRA_Orderly_war
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Ensure_intelligence_superiority_tt
 			add_ideas = FRA_Information
 			add_to_variable = {
     			FRA_intel_from_combat_factor = 0.5
@@ -769,6 +748,7 @@ focus_tree = {
 			focus = FRA_Mobilization_of_the_whole_people
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Glory_to_our_ancestors_tt
 			add_to_variable = {
    				FRA_army_attack_factor = 0.03
 			}
@@ -801,6 +781,7 @@ focus_tree = {
 			focus = FRA_Glory_to_our_ancestors
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_The_queen_of_the_battlefield_tt
 			add_to_variable = {
    				 FRA_army_infantry_attack_factor = 0.05
 			}
@@ -826,11 +807,12 @@ focus_tree = {
 			focus = FRA_Glory_to_our_ancestors
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Great_people_tt
 			add_to_variable = {
     			FRA_max_planning = 0.15
 			}
 			add_to_variable = {
-    			FRA_conscription_factor = 0.25
+    			FRA_conscription_factor = 0.15
 			}
 		}
 	}
@@ -846,6 +828,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = {
    				FRA_combat_width_factor = -0.25
+				tooltip = FRA_combat_width_factor_tt
 			}
 			add_tech_bonus = {
 				bonus = 1.0
@@ -871,6 +854,15 @@ focus_tree = {
 				category = armor
 			}
 			mio:FRA_renault_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_hotchkiss_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_apx_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_amx_organization = {
 				add_mio_funds = 2000
 			}
 			division_template = {
@@ -934,10 +926,11 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = {
    				 FRA_army_artillery_attack_factor = 0.1
+				 tooltip = FRA_army_artillery1_tt
 			}
-
 			add_to_variable = {
-			   FRA_army_artillery_defence_factor = 0.1
+				 FRA_army_artillery_defence_factor = 0.1
+				 tooltip = FRA_army_artillery2_tt
 			}
 			set_technology = { armored_train = 1 }
 			set_technology = { railway_gun = 1 }
@@ -995,6 +988,7 @@ focus_tree = {
 			focus = FRA_Children_of_the_Future
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Air-ground_integration_tt
 			add_to_variable = {
    				FRA_army_bonus_air_superiority_factor = 0.1
 			}
@@ -1035,6 +1029,7 @@ focus_tree = {
 			focus = FRA_War_on_the_production_line
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Military_resources_take_precedence_tt
 			if = {
 				limit = { has_idea = FRA_War_on_the_production_line_idea }
 				swap_ideas = {
@@ -1075,6 +1070,7 @@ focus_tree = {
 			focus = FRA_War_on_the_production_line
 		}
 		completion_reward = {
+			custom_effect_tooltip = FRA_Increase_investment_in_the_military_industry_tt
 			if = {
 				limit = { has_idea = FRA_War_on_the_production_line_idea }
 				swap_ideas = {
@@ -1129,24 +1125,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				limit = {
-					is_controlled_by = ROOT
-					is_core_of = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -1179,7 +1158,7 @@ focus_tree = {
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = industrial_complex
+					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
@@ -1235,7 +1214,38 @@ focus_tree = {
 		cost = 5
 		x = 42
 		y = 1
-		completion_reward = { }
+		completion_reward = {
+			air_experience = 55
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.25
+				uses = 1
+				category = air_doctrine
+			}
+		 }
 	}
 	focus = {  #独立兵种
 		id = FRA_Independent_Units
@@ -1249,7 +1259,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_Army_urisdiction
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = branch_independence_spirit
+			air_experience = 15
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+		 }
 	}
 	focus = {   #加大军事贸易
 		id = FRA_Increase_the_trade_in_fighter_planes
@@ -1260,7 +1278,24 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Independent_Units
 		}
-		completion_reward = { }
+		completion_reward = {
+			mio:FRA_morane_saulnier_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_bloch_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_amiot_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_levasseur_organization = {
+				add_mio_funds = 2000
+			}
+			mio:FRA_SNCAC_organization = {
+				add_mio_funds = 2000
+			}
+			add_offsite_building = { type = arms_factory level = 1 }
+		}
 	}
 	focus = {  #蓝天中的英雄
 		id = FRA_Heroes-in_the_blue_sky
@@ -1271,7 +1306,44 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Independent_Units
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_ideas = home_defence_spirit
+			add_ace = {
+				name = "Georges"
+				surname = "Guynemer"
+				callsign = "Stork"
+				type = fighter_genius
+				is_female = no
+			}
+			add_ace = {
+				name = "René"
+				surname = "Fonck"
+				callsign = "Sniper"
+				type = fighter_genius
+				is_female = no
+			}
+			add_ace = {
+				name = "Charles"
+				surname = "Nungesser"
+				callsign = "Ghost"
+				type = fighter_genius
+				is_female = no
+			}
+			add_ace = {
+				name = "Marcel"
+				surname = "Albert"
+				callsign = "Normandy"
+				type = fighter_genius
+				is_female = no
+			}
+			add_ace = {
+				name = "Marcel"
+				surname = "Albert"
+				callsign = "Normandy"
+				type = fighter_genius
+				is_female = no
+			}
+		 }
 	}
 	focus = {   #全面革新
 		id = FRA_Completely_renovated
@@ -1285,7 +1357,13 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Increase_the_trade_in_fighter_planes
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = air_equipment
+			}
+		 }
 	}
 	focus = {   #围绕陆地
 		id = FRA_Army_urisdiction
@@ -1299,7 +1377,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_Independent_Units
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = battlefield_air_interdiction_spirit
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.75
+				uses = 1
+				category = cat_battlefield_support
+			}
+		}
 	}
 	focus = {   #新一代战斗机研发
 		id = FRA_Development_of_new_generation_of_fighters
@@ -1310,7 +1395,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Army_urisdiction
 		}
-		completion_reward = { }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 2
+				category = air_equipment
+			}
+		}
 	}
 	focus = {   #基地建设
 		id = FRA_Base_construction
@@ -1321,7 +1413,22 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Army_urisdiction
 		}
-		completion_reward = { }
+		completion_reward = {
+			31 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+             	   	type = air_base
+           	    	level = 2
+        			instant_build = yes
+            }
+				add_building_construction = {
+					type = air_facility
+					level = 1
+					instant_build = yes 
+					province = 6766
+			}
+		}
+		}
 	}
 	focus = {   #协同打击
 		id = FRA_Coordinated_strikes
@@ -1335,7 +1442,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Base_construction
 		}
-		completion_reward = { }
+		completion_reward = { 
+			air_experience = 75
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
 	}
 	#海军国策树
 	focus = {   #统治海洋
@@ -1344,7 +1458,14 @@ focus_tree = {
 		cost = 5
 		x = 58
 		y = 1
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = naval_equipment
+			}
+			navy_experience = 25
+		}
 	}
 	focus = {   #圹建船坞
 		id = FRA_Expansion_shipyard
@@ -1355,7 +1476,23 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_ocean_focus
 		}
-		completion_reward = { }
+		completion_reward = { 
+			14 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                instant_build = yes
+            }
+        }	
+			15 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                instant_build = yes
+            }
+        }	}
 	}
 	focus = {   #争夺凯尔特海控制权
 		id = FRA_Dominate_Celtic_Sea
@@ -1366,7 +1503,23 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Expansion_shipyard
 		}
-		completion_reward = { }
+		completion_reward = {
+			29 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                instant_build = yes
+            }
+        } 1044 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = dockyard
+                level = 2
+                instant_build = yes
+            }
+        } navy_experience = 25
+		}
 	}
 	focus = {   #巩固地中海
 		id = FRA_Consolidation_Mediterranean
@@ -1377,7 +1530,37 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Expansion_shipyard
 		}
-		completion_reward = { }
+		completion_reward = {  
+		21 = {
+            add_extra_state_shared_building_slots = 2
+            add_building_construction = {
+                type = coastal_bunker
+                level = 2
+                instant_build = yes
+            }
+        }114 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 11773
+			}
+		}116 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 4
+				instant_build = yes
+				province = 12003
+			}
+		}553 = {
+			add_building_construction = {
+				type = coastal_bunker
+				level = 2
+				instant_build = yes
+				province = 792
+			}
+		}
+		}
 	}
 	focus = {    #殖民者海军基地
 		id = FRA_Colonial_Navy
@@ -1389,7 +1572,25 @@ focus_tree = {
 			focus = FRA_Dominate_Celtic_Sea
 			focus = FRA_Consolidation_Mediterranean
 		}
-		completion_reward = { }
+		completion_reward = { 
+			FRC = {				
+				add_stability = 0.1
+				add_war_support = 0.1
+				add_political_power = 150
+			}
+			671 = {
+					add_resource = {
+						type = steel
+						amount = 13
+					}				
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	} 
 	focus = {    #新学派
 		id = FRA_New_School
@@ -1403,7 +1604,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_Cannon_giants
 		}
-		completion_reward = { }
+		
+		completion_reward = {
+			log = "[GetLogRoot]: Focus Completed FRA_New_School"
+			add_timed_idea = {
+				idea = FRA_New_School_idea
+				days = 560
+			}
+			custom_effect_tooltip = FRA_New_School_tt
+			hidden_effect = {
+				add_temporary_research_slot = yes
+			}
+			
+		}
 	}
 	focus = {    #水下的猎人
 		id = FRA_Silent_Hunter
@@ -1414,7 +1627,15 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_New_School
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				ahead_reduction = 2
+				category = ss_tech
+			}
+			navy_experience = 50
+		}
 	}
 	focus = {   #水上的猎枪
 		id = FRA_Cruising_and_expellation
@@ -1425,7 +1646,21 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_New_School
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+			}add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
 	}
 	focus = {   #改进水雷布设
 		id = FRA_Mine_improvements
@@ -1437,7 +1672,14 @@ focus_tree = {
 			focus = FRA_Silent_Hunter
 			focus = FRA_Cruising_and_expellation
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			add_ideas = FRA_Mine_improvements_idea
+		}
 	}
 	focus = {   #无限制潜艇战
 		id = FRA_Unrestricted_submarine_warfare
@@ -1448,7 +1690,9 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Mine_improvements
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = FRA_Unrestricted_submarine_warfare_idea
+		}
 	}
 	focus = {   #主力战舰派
 		id = FRA_Cannon_giants
@@ -1462,7 +1706,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = FRA_New_School
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = naval_equipment
+			}
+			navy_experience = 50
+		}
 	}
 	focus = {  #扩编海军航空部队
 		id = FRA_Naval_aviation
@@ -1473,7 +1724,14 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Cannon_giants
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = FRA_Naval_aviation_idea
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {   #坚船利炮
 		id = FRA_Ships_and_guns
@@ -1484,7 +1742,21 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Cannon_giants
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+			}add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
+		}
 	}
 	focus = {  #针锋相对
 		id = FRA_Give_tit_for_tat
@@ -1496,7 +1768,10 @@ focus_tree = {
 			focus = FRA_Naval_aviation
 			focus = FRA_Ships_and_guns
 		}
-		completion_reward = { }
+		completion_reward = { 
+			add_ideas = FRA_navy2
+			navy_experience = 50
+		}
 	}
 	focus = {   #凯尔特海战的遗产
 		id = FRA_legacy_of_Battle_Celtic
@@ -1507,7 +1782,17 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Give_tit_for_tat
 		}
-		completion_reward = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = FRA_navy2
+				add_idea = FRA_navy3
+			}
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {   #雪耻特拉法尔加
 		id = FRA_Snow_shame_Trafalgar
@@ -1519,7 +1804,9 @@ focus_tree = {
 			focus = FRA_Unrestricted_submarine_warfare
 			focus = FRA_legacy_of_Battle_Celtic
 		}
-		completion_reward = { }
+		completion_reward = { 
+			remove_ideas = FRA_navy1
+		}
 	}
 	focus = {   #海上入侵演习
 		id = FRA_Landing_drills
@@ -1530,7 +1817,17 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_ocean_focus
 		}
-		completion_reward = { }
+		completion_reward = { 
+			army_experience = 35
+			navy_experience = 35
+			air_experience = 35
+			add_tech_bonus = {
+				category = tp_tech
+				category = marine_tech
+				uses = 2
+				bonus = 0.5
+			}
+		}
 	}
 	focus = {    #海军陸战队
 		id = FRA_Marine_warfare
@@ -1541,30 +1838,27 @@ focus_tree = {
 		prerequisite = {
 			focus = FRA_Landing_drills
 		}
-		completion_reward = { }
-	}
-}
-
-###############################################肖当###################################
-focus_tree = {
-	id = french_focus_2_1
-
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			tag = FRA
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = special_forces_doctrine
+			}
+			add_potential_special_forces_tree = yes
 		}
 	}
-	continuous_focus_position = { x = 4000 y = 4000 }
 
+
+#肖当国策树
 	focus = {#肖当得以幸存
 		id = FRA_Chautemps_win
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 7
+		y = 8
+		available = {
+			has_country_flag = Chautemps
+		}
 		prerequisite = {
 			focus = FRA_Election_of_Premier
 		}
@@ -1578,7 +1872,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 8
+		y = 9
 		prerequisite = {
 			focus = FRA_Chautemps_win
 		}
@@ -1593,7 +1887,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 6
-		y = 9
+		y = 10
 		prerequisite = {
 			focus = FRA_No_indulgences
 		}
@@ -1608,7 +1902,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 6
-		y = 10.5
+		y = 11.5
 		prerequisite = {
 			focus = FRA_march_land
 		}
@@ -1623,7 +1917,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 6
-		y = 12
+		y = 13
 		prerequisite = {
 			focus = FRA_Supporting_local_farmers
 		}
@@ -1637,7 +1931,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 8
-		y = 9
+		y = 10
 		prerequisite = {
 			focus = FRA_No_indulgences
 		}
@@ -1652,7 +1946,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 8
-		y = 10.5
+		y = 11.5
 		prerequisite = {
 			focus = FRA_march_currency
 		}
@@ -1667,7 +1961,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 8
-		y = 12
+		y = 13
 		prerequisite = {
 			focus = FRA_Devaluatio_franc
 		}
@@ -1683,7 +1977,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 9
+		y = 10
 		prerequisite = {
 			focus = FRA_No_indulgences
 		}
@@ -1698,7 +1992,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 10
+		y = 11
 		prerequisite = {
 			focus = FRA_march_bank
 		}
@@ -1713,7 +2007,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 11
+		y = 12
 		prerequisite = {
 			focus = FRA_Shut_door
 		}
@@ -1728,7 +2022,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 12
+		y = 13
 		prerequisite = {
 			focus = FRA_Review_bank_credit
 		}
@@ -1743,7 +2037,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 12
-		y = 9
+		y = 10
 		prerequisite = {
 			focus = FRA_No_indulgences
 		}
@@ -1758,7 +2052,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 12
-		y = 10.5
+		y = 11.5
 		prerequisite = {
 			focus = FRA_march_public
 		}
@@ -1773,7 +2067,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 12
-		y = 12
+		y = 13
 		prerequisite = {
 			focus = FRA_Nationalization_railways
 		}
@@ -1788,7 +2082,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 14
-		y = 9
+		y = 10
 		prerequisite = {
 			focus = FRA_No_indulgences
 		}
@@ -1803,7 +2097,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 14
-		y = 10.5
+		y = 11.5
 		prerequisite = {
 			focus = FRA_march_enterprises
 		}
@@ -1818,7 +2112,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 14
-		y = 12
+		y = 13
 		prerequisite = {
 			focus = FRA_Investment_replace_tax
 		}
@@ -1833,7 +2127,7 @@ focus_tree = {
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
 		x = 10
-		y = 13
+		y = 14
 		prerequisite = {
 			focus = FRA_Franc_free_trade_area
 		}
@@ -1854,26 +2148,17 @@ focus_tree = {
 		}
 		
 	}
-}
-###############################################莱昂·布鲁姆###################################
-focus_tree = {
-	id = french_focus_2_2
 
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			tag = FRA
-		}
-	}
-	continuous_focus_position = { x = 4000 y = 4000 }
-    focus = {#莱昂·布鲁姆内阁
+#莱昂·布鲁姆国策
+	focus = {#莱昂·布鲁姆内阁
 		id = FRA_Blum_win
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 10
-		y = 7
+		x = 22
+		y = 8
+		available = {
+			has_country_flag = Blum
+		}
 		prerequisite = {
 			focus = FRA_Election_of_Premier
 		}
@@ -1886,8 +2171,8 @@ focus_tree = {
 		id = FRA_wonderful_future
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 10
-		y = 8
+		x = 22
+		y = 9
 		prerequisite = {
 			focus = FRA_Blum_win
 		}
@@ -1900,8 +2185,8 @@ focus_tree = {
 		id = FRA_forgive_gold
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 7
-		y = 9
+		x = 20
+		y = 10
 		prerequisite = {
 			focus = FRA_wonderful_future
 		}
@@ -1915,8 +2200,8 @@ focus_tree = {
 		id = FRA_set_FESF
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 7
-		y = 10
+		x = 20
+		y = 11
 		prerequisite = {
 			focus = FRA_forgive_gold
 		}
@@ -1930,8 +2215,8 @@ focus_tree = {
 		id = FRA_Prevent_escape
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 6
-		y = 11
+		x = 19
+		y = 12
 		prerequisite = {
 			focus = FRA_set_FESF
 		}
@@ -1944,8 +2229,8 @@ focus_tree = {
 		id = FRA_Essentials_limit
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 8
-		y = 11
+		x = 21
+		y = 12
 		prerequisite = {
 			focus = FRA_set_FESF
 		}
@@ -1959,8 +2244,8 @@ focus_tree = {
 		id = FRA_reform_bank
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 6
-		y = 12
+		x = 19
+		y = 13
 		prerequisite = {
 			focus = FRA_Prevent_escape
 		}
@@ -1974,8 +2259,8 @@ focus_tree = {
 		id = FRA_Nationalization_of_industries
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 8
-		y = 12
+		x = 21
+		y = 13
 		prerequisite = {
 			focus = FRA_Essentials_limit
 		}
@@ -1989,8 +2274,8 @@ focus_tree = {
 		id = FRA_over_Depression
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 7
-		y = 13
+		x = 20
+		y = 14
 		prerequisite = {
 			focus = FRA_reform_bank
 		}
@@ -2007,8 +2292,8 @@ focus_tree = {
 		id = FRA_Accords_de_Matignon
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 13
-		y = 9
+		x = 24
+		y = 10
 		prerequisite = {
 			focus = FRA_wonderful_future
 		}
@@ -2022,8 +2307,8 @@ focus_tree = {
 		id = FRA_protect_farmer
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 12
-		y = 10
+		x = 23
+		y = 11
 		prerequisite = {
 			focus = FRA_Accords_de_Matignon
 		}
@@ -2037,8 +2322,8 @@ focus_tree = {
 		id = FRA_plan_teenager_work
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 14
-		y = 10
+		x = 25
+		y = 11
 		prerequisite = {
 			focus = FRA_Accords_de_Matignon
 		}
@@ -2052,8 +2337,8 @@ focus_tree = {
 		id = FRA_Improve_base_building
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 12
-		y = 11
+		x = 23
+		y = 12
 		prerequisite = {
 			focus = FRA_protect_farmer
 		}
@@ -2067,8 +2352,8 @@ focus_tree = {
 		id = FRA_promote_pop_culture
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 14
-		y = 11
+		x = 25
+		y = 12
 		prerequisite = {
 			focus = FRA_plan_teenager_work
 		}
@@ -2082,8 +2367,8 @@ focus_tree = {
 		id = FRA_Ease_social_conflicts
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 13
-		y = 12
+		x = 24
+		y = 13
 		prerequisite = {
 			focus = FRA_Improve_base_building
 		}
@@ -2100,8 +2385,8 @@ focus_tree = {
 		id = FRA_acftu_support
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 13
-		y = 13
+		x = 24
+		y = 14
 		prerequisite = {
 			focus = FRA_Ease_social_conflicts
 		}
@@ -2115,8 +2400,8 @@ focus_tree = {
 		id = FRA_see_you_tomorrow
 		icon = GFX_focus_FRA_Great_Judgment
 		cost = 3
-		x = 10
-		y = 14
+		x = 22
+		y = 15
 		prerequisite = {
 			focus = FRA_over_Depression
 		}

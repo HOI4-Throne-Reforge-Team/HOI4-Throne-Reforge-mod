@@ -8,7 +8,7 @@ state={
 
 
 	history={
-		owner = ITA
+		owner = CRO
 		victory_points = { #Dubrovnik
 			6889 3 
 		}
@@ -29,7 +29,6 @@ state={
 		add_core_of = YUG
 		#add_claim_by = ITA #added by focus
 		add_core_of = CRO
-		add_core_of = ITA
 	}
 
 	provinces={

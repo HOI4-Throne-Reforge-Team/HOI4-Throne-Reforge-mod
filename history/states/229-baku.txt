@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = CCS
+		owner = RUS
+		add_core_of = RUS
 		victory_points = {
 			7661 10 
 		}

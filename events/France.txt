@@ -238,7 +238,7 @@ country_event = {  #右翼分子对法案不满
 	}
 }
 
-news_event = {  #斯塔维斯基丑闻！
+country_event = {  #斯塔维斯基丑闻！
 	id = The_Stavisky_Trial.1
 	title = The_Stavisky_Trial.1.t
 	desc = The_Stavisky_Trial.1.d
@@ -297,7 +297,7 @@ country_event = {  #在参议院
 	}
 }
 
-news_event = {  #舆论扩大
+country_event = {  #舆论扩大
 	id = The_Stavisky_Trial.5
 	title = The_Stavisky_Trial.5.t
 	desc = The_Stavisky_Trial.5.d
@@ -313,6 +313,20 @@ news_event = {  #舆论扩大
 			add_idea = FRA_scandal_2
 		}
 		add_stability = -0.1
+	}
+}
+country_event = {  #在那之后
+	id = The_Stavisky_Trial.6
+	title = The_Stavisky_Trial.6.t
+	desc = The_Stavisky_Trial.6.d
+	is_triggered_only = yes
+	option = {
+		name = The_Stavisky_Trial.6.a
+		set_country_flag = Chautemps
+	}
+	option = {
+		name = The_Stavisky_Trial.6.b
+		set_country_flag = Blum
 	}
 }
 

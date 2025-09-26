@@ -1,0 +1,6 @@
+add_temporary_research_slot = {
+		add_research_slot = 1
+	}
+remove_temporary_research_slot = {
+		add_research_slot = -1
+	}

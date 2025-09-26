@@ -6,13 +6,13 @@ state={
 
 	state_category = rural
 
-	history={
-		owner = KUR
-		victory_points = {
-			12476 1 
-		}
+	history={owner = PER
+		add_core_of = PER
 		victory_points = {
 			7530 1 
+		}
+		victory_points = {
+			6935 5 
 		}
 		victory_points = {
 			10497 1 
@@ -20,23 +20,13 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			add_core_of = KUR
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			add_core_of = TUR
-			add_core_of = KUR
-		}
+		add_core_of = TUR
+		add_core_of = KUR
+		
 	}
 
 	provinces={
-		864 1463 7530 10497 11739 12318 12476
+		1463 12476 864 6935
 	}
 
 	local_supplies=0.0 

@@ -577,6 +577,128 @@ ideas = {
 				mechanized_defence_factor = 0.05
 			}
 		}
+		FRA_New_School_idea = {#新学派的火花
+			on_add = { log = "[GetLogRoot]: add idea FRA_New_School_idea" }
+			picture = generic_research_increase
+			on_remove = {
+				remove_temporary_research_slot = yes
+			}
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.6
+				naval_manufacturer_cost_factor = -0.1
+			}
+		}
+		FRA_navy1 = {#法兰西海军
+			allowed = {
+				always = yes
+			}
+			picture = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				refit_ic_cost = 0.1
+				refit_speed = -0.1
+				repair_speed_factor = 0.1
+				industrial_capacity_dockyard = -0.1
+				navy_max_range_factor = 0.1
+			}
+		}
+		FRA_navy2 = {#巨舰大炮
+			allowed = {
+				always = yes
+			}
+			picture = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				capital_ship = {
+					lg_attack = 0.05
+					hg_attack = 0.05
+					instant = yes
+				}
+			}
+			modifier = {
+				naval_strike = 0.05
+				navy_org_factor = 0.05
+			}
+		}FRA_navy3 = {#巨舰大炮
+			allowed = {
+				always = yes
+			}
+			picture = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				capital_ship = {
+					lg_attack = 0.1
+					hg_attack = 0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				naval_strike = 0.1
+				navy_org_factor = 0.1
+			}
+		}
+		FRA_Mine_improvements_idea = {#改进水雷
+			allowed = {
+				always = yes
+			}
+			picture = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_reveal_chance_factor = -0.1
+				naval_torpedo_screen_penetration_factor = 0.1
+				naval_torpedo_cooldown_factor = -0.1
+			}
+		}
+		FRA_Unrestricted_submarine_warfare_idea = {#无限制潜艇战
+			allowed = {
+				always = yes
+			}
+			picture = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.2
+					maximum_speed = 0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				navy_submarine_attack_factor = 0.05
+				navy_submarine_defence_factor = 0.05
+				convoy_raiding_efficiency_factor = 0.05
+			}
+		}
+		FRA_Naval_aviation_idea = {#扩编海军航空部队
+			allowed = {
+				always = yes
+			}
+			picture = 0
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				air_escort_efficiency = 0.05
+				air_nav_efficiency = 0.05
+			}
+		}
 	}
 	hidden_ideas = {
 		FRA_Information = {#确保情报优势

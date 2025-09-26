@@ -11,7 +11,8 @@ state={
 
 
 	history={
-		owner = IRQ
+		add_core_of = PER
+		owner = PER
 		buildings = {
 			infrastructure = 2
 		}
