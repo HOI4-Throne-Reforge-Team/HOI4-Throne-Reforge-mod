@@ -1,0 +1,191 @@
+# For minor countries where advisors are not defined
+# Generate them from a generic template
+
+# Political advisors
+every_possible_country = {
+	limit = {
+
+	}
+	generate_character = { #強攻！
+		token_base = ARMY_1
+		name = ARMY_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Army_Command1
+			idea_token = ARMY_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ARMY_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #不动如山
+		token_base = ARMY_2
+		name = ARMY_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Army_Command1
+			idea_token = ARMY_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ARMY_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = { #空中安全管制
+		token_base = AIR_1
+		name = AIR_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command1
+			idea_token = AIR_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #集中对地火力
+		token_base = AIR_2
+		name = AIR_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command1
+			idea_token = AIR_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = { #水中胶狼
+		token_base = NAVY_1
+		name = NAVY_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command1
+			idea_token = NAVY_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #大炮！大火力！
+		token_base = NAVY_2
+		name = NAVY_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command1
+			idea_token = NAVY_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #打炮大师！
+		token_base = COMMAND_1
+		name = COMMAND_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Commander
+			idea_token = COMMAND_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				COMMAND_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+}
