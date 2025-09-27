@@ -6,7 +6,7 @@ every_possible_country = {
 	limit = {
 
 	}
-	generate_character = { #強攻！
+	generate_character = { #大胆进攻
 		token_base = ARMY_1
 		name = ARMY_1
 		portraits = {
@@ -32,7 +32,7 @@ every_possible_country = {
 			}
 		}
 	}
-	generate_character = {  #不动如山
+	generate_character = {  #严防死守
 		token_base = ARMY_2
 		name = ARMY_2
 		portraits = {
@@ -57,8 +57,159 @@ every_possible_country = {
 				base = 0
 			}
 		}
+	}generate_character = { #周密计划
+		token_base = ARMY_3
+		name = ARMY_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Army_Command1
+			idea_token = ARMY_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ARMY_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}generate_character = { #运动防御
+		token_base = ARMY_4
+		name = ARMY_4
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Army_Command1
+			idea_token = ARMY_4
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				ARMY_4_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
 	}
-	generate_character = { #空中安全管制
+	generate_character = { #任务式指挥
+		token_base = system_1
+		name = system_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = system_Command1
+			idea_token = system_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				system_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}generate_character = { #垂直式指挥
+		token_base = system_2
+		name = system_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = system_Command1
+			idea_token = system_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				system_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}generate_character = { #分层协作式指挥
+		token_base = system_3
+		name = system_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = system_Command1
+			idea_token = system_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				system_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}generate_character = { #分层协作式指挥
+		token_base = system_3
+		name = system_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = system_Command1
+			idea_token = system_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				system_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = { #飞行炮兵
 		token_base = AIR_1
 		name = AIR_1
 		portraits = {
@@ -84,7 +235,7 @@ every_possible_country = {
 			}
 		}
 	}
-	generate_character = {  #集中对地火力
+	generate_character = { #注重缠斗
 		token_base = AIR_2
 		name = AIR_2
 		portraits = {
@@ -109,8 +260,161 @@ every_possible_country = {
 				base = 0
 			}
 		}
+	}generate_character = { #骇人轰炸
+		token_base = AIR_3
+		name = AIR_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command1
+			idea_token = AIR_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}generate_character = { #大规模机群
+		token_base = AIR_4
+		name = AIR_4
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command1
+			idea_token = AIR_4
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR_4_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
 	}
-	generate_character = { #水中胶狼
+	generate_character = { #精英主义
+		token_base = AIR1_1
+		name = AIR1_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command2
+			idea_token = AIR1_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR1_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #任务式轮换
+		token_base = AIR1_2
+		name = AIR1_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command2
+			idea_token = AIR1_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR1_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #整建制轮换
+		token_base = AIR1_3
+		name = AIR1_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command2
+			idea_token = AIR1_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR1_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}generate_character = {  #个人式轮换
+		token_base = AIR1_4
+		name = AIR1_4
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Air_Command2
+			idea_token = AIR1_4
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				AIR1_4_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = { #破交行动
 		token_base = NAVY_1
 		name = NAVY_1
 		portraits = {
@@ -136,7 +440,7 @@ every_possible_country = {
 			}
 		}
 	}
-	generate_character = {  #大炮！大火力！
+	generate_character = {  #综合护航
 		token_base = NAVY_2
 		name = NAVY_2
 		portraits = {
@@ -162,7 +466,163 @@ every_possible_country = {
 			}
 		}
 	}
-	generate_character = {  #打炮大师！
+	generate_character = { #舰队决战
+		token_base = NAVY_3
+		name = NAVY_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command1
+			idea_token = NAVY_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #海空特混
+		token_base = NAVY_4
+		name = NAVY_4
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command1
+			idea_token = NAVY_4
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY_4_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = { #层层阻击
+		token_base = NAVY1_1
+		name = NAVY1_1
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command2
+			idea_token = NAVY1_1
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY1_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #避实击虚
+		token_base = NAVY1_2
+		name = NAVY1_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command2
+			idea_token = NAVY1_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY1_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = { #预定决战
+		token_base = NAVY1_3
+		name = NAVY1_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command2
+			idea_token = NAVY1_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY1_3_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #海上堡垒
+		token_base = NAVY1_4
+		name = NAVY1_4
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Navy_Command2
+			idea_token = NAVY1_4
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				NAVY1_4_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #大陆军主义
 		token_base = COMMAND_1
 		name = COMMAND_1
 		portraits = {
@@ -182,6 +642,58 @@ every_possible_country = {
 			}
 			traits = {
 				COMMAND_1_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #海军优先
+		token_base = COMMAND_2
+		name = COMMAND_2
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Commander
+			idea_token = COMMAND_2
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				COMMAND_2_tt 
+			}
+			ai_will_do = {
+				base = 0
+			}
+		}
+	}
+	generate_character = {  #协调发展
+		token_base = COMMAND_3
+		name = COMMAND_3
+		portraits = {
+			
+		}
+		advisor = {
+			slot = Commander
+			idea_token = COMMAND_3
+			allowed = {
+				always = yes
+			}
+			visible = {
+				
+			}
+			available = {
+				always = yes
+			}
+			traits = {
+				COMMAND_3_tt 
 			}
 			ai_will_do = {
 				base = 0

@@ -70,11 +70,11 @@ idea_categories = {
 	
 	Command_center = {
 		character_slot = Army_Command1 
-		character_slot = Army_Command1
-		character_slot = Navy_Command1
-		character_slot = Navy_Command1
 		character_slot = Air_Command1
-		character_slot = Air_Command1
+		character_slot = Navy_Command1
+		character_slot = system_Command1
+		character_slot = Air_Command2
+		character_slot = Navy_Command2
 		character_slot = Commander
 
 		ledger = invalid
