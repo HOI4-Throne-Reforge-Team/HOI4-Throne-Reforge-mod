@@ -4,6 +4,9 @@ country_event = { #戒严令!
 	id = denmark.1
 	title = denmark.1.t
 	desc = denmark.1.d
+	trigger = {
+	   tag = DEN
+	}
 	is_triggered_only = yes
 	option = {
 		name = denmark.1.a
@@ -18,11 +21,12 @@ country_event = { #冰岛独立!
 	id = denmark.2
 	title = denmark.2.t
 	desc = denmark.2.d
-	mean_time_to_happen = {
-	    days = 2  
+	
+	trigger = {
+	   tag = DEN
 	}
-
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	option = {
 		name = denmark.2.a
@@ -37,12 +41,12 @@ country_event = { #挪威独立!
 	id = denmark.3
 	title = denmark.3.t
 	desc = denmark.3.d
-	mean_time_to_happen = {
-	    days = 2 
-	}
-
-	fire_only_once = yes
 	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	   tag = DEN
+	}
 	option = {
 		name = denmark.3.a
 		ai_chance = {
@@ -56,11 +60,11 @@ country_event = { #南方独立!
 	id = denmark.4
 	title = denmark.4.t
 	desc = denmark.4.d
-	mean_time_to_happen = {
-	    days = 2
+	trigger = {
+	   tag = DEN
 	}
-
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = {
 		name = denmark.4.a
@@ -75,6 +79,9 @@ country_event = { #格陵兰暴动!
 	id = denmark.5
 	title = denmark.5.t
 	desc = denmark.5.d
+	trigger = {
+	   tag = DEN
+	}
 	mean_time_to_happen = {
 	    days = 1  
 	}
@@ -87,6 +94,46 @@ country_event = { #格陵兰暴动!
 			base = 100
 		}
 		complete_national_focus = DEN_GREENLAND
+	}
+}
+
+country_event = { #骚乱...
+	id = denmark.6
+	title = denmark.6.t
+	desc = denmark.6.d
+	trigger = {
+	   tag = DEN
+	}
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = denmark.6.a
+		ai_chance = {
+			base = 100
+		}
+		complete_national_focus = DEN_CHAOS
+	}
+}
+
+country_event = { #白十字飘摇欲下
+	id = denmark.7
+	title = denmark.7.t
+	desc = denmark.7.d
+	trigger = {
+	   tag = DEN
+	}
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = denmark.7.a
+		ai_chance = {
+			base = 100
+		}
+		complete_national_focus = DEN_FLAG_DOWN
 	}
 }
 

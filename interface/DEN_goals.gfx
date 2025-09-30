@@ -1,8 +1,8 @@
 
 spriteTypes = {
 	spriteType = {
-		name = GFX_our_denmark
-		textureFile = "gfx/interface/goals/our_denmark.dds"
+		name = "GFX_denmark_NOT_photo"
+		textureFile = "gfx/interface/goals/DEN/NOT_PHOTO.png"
 		legacy_lazy_load = no
 	}
 }

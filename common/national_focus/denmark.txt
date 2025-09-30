@@ -21,7 +21,7 @@ focus_tree = {
     
     focus = { #格陵兰危机
 		id = DEN_GREENLAND
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 0
 		cost = 1
@@ -36,11 +36,12 @@ focus_tree = {
 		completion_reward = {
 			release = GRN
 			101 = { set_demilitarized_zone = yes }
+			country_event = {id =denmark.2 days=5}
 		}
 	}	
     focus = { #冰岛独立
 		id = DEN_ICELAND
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 3
 		y = 1
 		cost = 1
@@ -55,11 +56,12 @@ focus_tree = {
 
 		completion_reward = {
 			remove_from_faction = ICE
+			country_event = {id =denmark.3 days=5}
 		}
 	}	
     focus = { #挪威独立
 		id = DEN_NORWAY
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 1
 		cost = 1
@@ -75,11 +77,12 @@ focus_tree = {
 		completion_reward = {
 			remove_from_faction = NOR
 			110 = { set_demilitarized_zone = yes }
+			country_event = {id =denmark.4 days=5}
 		}
 	}	
     focus = { #南方失势
 		id = DEN_SCH_HLS
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 7
 		y = 1
 		cost = 1
@@ -98,11 +101,12 @@ focus_tree = {
 			end_puppet = SCH
 			end_puppet = HLS
 			912 = { set_demilitarized_zone = yes }
+			country_event = {id =denmark.7 days=5}	
 		}
 	}	
     focus = { #白十字飘摇欲下
 		id = DEN_FLAG_DOWN
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 2
 		cost = 1
@@ -122,12 +126,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			country_event = {id =denmark.6 days=5}	
 		}
 	}	
     focus = { #国内骚乱...
 		id = DEN_CHAOS
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 3
 		cost = 1
@@ -141,18 +145,17 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			add_stability = -0.2
 		}
 	}	
     focus = { #戒严!!
 		id = DEN_CURFEW
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 4
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		available = {
-			always = no
 		}
 		prerequisite = {
 			focus = DEN_CHAOS
@@ -168,7 +171,7 @@ focus_tree = {
 	id = denmark_focus_2
     focus = { #急电!!
 		id = DEN_TELEGRAM
-		icon = GFX_goal_generic_improve_relations
+		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 0
 		cost = 1

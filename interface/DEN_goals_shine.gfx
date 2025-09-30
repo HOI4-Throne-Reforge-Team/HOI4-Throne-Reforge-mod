@@ -1,11 +1,11 @@
 spriteTypes = {	
 
 	SpriteType = {
-		name = "GFX_our_denmark_shine"
-		texturefile = "gfx/interface/goals/our_denmark.dds"
+		name = "GFX_denmark_NOT_photo_shine"
+		texturefile = "gfx/interface/goals/DEN/NOT_PHOTO.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/our_denmark.dds"
+			animationmaskfile = "gfx/interface/goals/DEN/NOT_PHOTO.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -17,7 +17,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/our_denmark.dds"
+			animationmaskfile = "gfx/interface/goals/DEN/NOT_PHOTO.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
