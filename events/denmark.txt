@@ -14,5 +14,81 @@ country_event = { #戒严令!
 	}
 }
 
+country_event = { #冰岛独立!
+	id = denmark.2
+	title = denmark.2.t
+	desc = denmark.2.d
+	mean_time_to_happen = {
+	    days = 2  
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = denmark.2.a
+		ai_chance = {
+			base = 100
+		}
+		complete_national_focus = DEN_ICELAND
+	}
+}
+
+country_event = { #挪威独立!
+	id = denmark.3
+	title = denmark.3.t
+	desc = denmark.3.d
+	mean_time_to_happen = {
+	    days = 2 
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = denmark.3.a
+		ai_chance = {
+			base = 100
+		}
+		complete_national_focus = DEN_NORWAY
+	}
+}
+
+country_event = { #南方独立!
+	id = denmark.4
+	title = denmark.4.t
+	desc = denmark.4.d
+	mean_time_to_happen = {
+	    days = 2
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = denmark.4.a
+		ai_chance = {
+			base = 100
+		}
+		complete_national_focus = DEN_SCH_HLS
+	}
+}
+
+country_event = { #格陵兰暴动!
+	id = denmark.5
+	title = denmark.5.t
+	desc = denmark.5.d
+	mean_time_to_happen = {
+	    days = 1  
+	}
+
+	fire_only_once = yes
+	
+	option = {
+		name = denmark.5.a
+		ai_chance = {
+			base = 100
+		}
+		complete_national_focus = DEN_GREENLAND
+	}
+}
+
 
 

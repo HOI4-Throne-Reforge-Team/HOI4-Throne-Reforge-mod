@@ -26,68 +26,90 @@ focus_tree = {
 		y = 0
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
+
+		available = {
+			always = no
+		}
+
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			release = GRN
+			101 = { set_demilitarized_zone = yes }
 		}
 	}	
-    focus = { #分离的冰岛
+    focus = { #冰岛独立
 		id = DEN_ICELAND
 		icon = GFX_goal_generic_improve_relations
 		x = 3
 		y = 1
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = DEN_GREENLAND
 		}
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			remove_from_faction = ICE
 		}
 	}	
-    focus = { #独立的北方
+    focus = { #挪威独立
 		id = DEN_NORWAY
 		icon = GFX_goal_generic_improve_relations
 		x = 5
 		y = 1
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = DEN_GREENLAND
 		}
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			remove_from_faction = NOR
+			110 = { set_demilitarized_zone = yes }
 		}
 	}	
-    focus = { #不稳的南方
+    focus = { #南方失势
 		id = DEN_SCH_HLS
 		icon = GFX_goal_generic_improve_relations
 		x = 7
 		y = 1
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = DEN_GREENLAND
 		}
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			remove_from_faction = SCH
+			remove_from_faction = HLS
+			end_puppet = SCH
+			end_puppet = HLS
+			912 = { set_demilitarized_zone = yes }
 		}
 	}	
-    focus = { #白十字旗飘摇欲下
+    focus = { #白十字飘摇欲下
 		id = DEN_FLAG_DOWN
 		icon = GFX_goal_generic_improve_relations
 		x = 5
 		y = 2
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = DEN_SCH_HLS
 		}
@@ -110,6 +132,9 @@ focus_tree = {
 		y = 3
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = DEN_FLAG_DOWN
 		}
@@ -126,6 +151,9 @@ focus_tree = {
 		y = 4
 		cost = 1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = DEN_CHAOS
 		}
