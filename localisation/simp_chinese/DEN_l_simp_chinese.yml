@@ -2,6 +2,8 @@
 
  DEN_Christian_ten_idea: "克里斯蒂安十世"
  DEN_Christian_ten_idea_desc: "克里斯蒂安十世,丹麦和冰岛的国王"
+ DEN_JIEYAN_idea: "戒严令"
+ DEN_JIEYAN_idea_desc: "丹麦施行了宵禁与出版物审查"
 
 
  DEN_Christian_ten: "克里斯蒂安十世"
@@ -16,7 +18,20 @@
  DEN_FLAG_DOWN: "白十字飘摇欲下"
  DEN_CHAOS: "国内骚乱..."
  DEN_CURFEW: "戒严令!"
- DEN_TELEGRAM: "急电!!!"
+ DEN_WENDING_JVSHI: "稳定局势"
+ DEN_JINGCHA_XUNLUO: "警察巡逻"
+ DEN_JIXU_XIAOjIN: "继续宵禁"
+ DEN_JINGJI_GUANKONG: "经济管控"
+ DEN_CHUBANWU_SHENCHA: "出版物审查"
+ DEN_JINYAN_SHENXING: "谨言慎行"
+ DEN_GUOWANG: "拥护王权"
+ DEN_JUNDUI_QINXIN: "扶植军队亲信"
+ DEN_YIHUI: "拥护自由"
+ DEN_YIHUI_DUOSHU: "议会多数制"
+ DEN_FANGKUAN_XIANZHI: "戒严放宽"
+ DEN_FU_GONG: "复工"
+ DEN_FU_CHAN: "复产"
+ DEN_JIEYAN_JIECHU: "戒严解除"
 
  denmark.5.t: "格陵兰暴动"
  denmark.5.d: "格陵兰的独立分子袭击了政府大楼,并且宣布了格陵兰的独立,从今日起,格陵兰就将再也不是丹麦的一部分."

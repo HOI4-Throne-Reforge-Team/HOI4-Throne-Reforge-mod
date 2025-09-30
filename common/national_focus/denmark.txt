@@ -169,8 +169,27 @@ focus_tree = {
 }
 focus_tree = {
 	id = denmark_focus_2
-    focus = { #急电!!
-		id = DEN_TELEGRAM
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
+
+    focus = { #稳定局势
+		id = DEN_WENDING_JVSHI
 		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 0
@@ -183,4 +202,238 @@ focus_tree = {
 			
 		}
 	}	
+    focus = { #警察巡逻
+		id = DEN_JINGCHA_XUNLUO
+		icon = GFX_denmark_NOT_photo
+		x = 2
+		y = 1
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_WENDING_JVSHI
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #继续宵禁
+		id = DEN_JIXU_XIAOjIN
+		icon = GFX_denmark_NOT_photo
+		x = 4
+		y = 1
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_WENDING_JVSHI
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #经济管控
+		id = DEN_JINGJI_GUANKONG
+		icon = GFX_denmark_NOT_photo
+		x = 6
+		y = 1
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_WENDING_JVSHI
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #出版物审查
+		id = DEN_CHUBANWU_SHENCHA
+		icon = GFX_denmark_NOT_photo
+		x = 8
+		y = 1
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_WENDING_JVSHI
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #谨言慎行
+		id = DEN_JINYAN_SHENXING
+		icon = GFX_denmark_NOT_photo
+		x = 5
+		y = 2
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_JINGCHA_XUNLUO
+		}
+		prerequisite = {
+			focus = DEN_JIXU_XIAOjIN
+		}
+		prerequisite = {
+			focus = DEN_JINGJI_GUANKONG
+		}
+		prerequisite = {
+			focus = DEN_CHUBANWU_SHENCHA
+		}
+		
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #拥护王权
+		id = DEN_GUOWANG
+		icon = GFX_denmark_NOT_photo
+		x = 3
+		y = 3
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_JINYAN_SHENXING
+		}
+		mutually_exclusive = {
+        	focus = DEN_YIHUI
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #扶植军队亲信
+		id = DEN_JUNDUI_QINXIN
+		icon = GFX_denmark_NOT_photo
+		x = 3
+		y = 4
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_GUOWANG
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #拥护自由
+		id = DEN_YIHUI
+		icon = GFX_denmark_NOT_photo
+		x = 7
+		y = 3
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_JINYAN_SHENXING
+		}
+		mutually_exclusive = {
+        	focus = DEN_GUOWANG
+		}
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	focus = { #议会多数制
+		id = DEN_YIHUI_DUOSHU
+		icon = GFX_denmark_NOT_photo
+		x = 7
+		y = 4
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_YIHUI
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #放宽戒严
+		id = DEN_FANGKUAN_XIANZHI
+		icon = GFX_denmark_NOT_photo
+		x = 5
+		y = 5
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_YIHUI_DUOSHU
+			focus = DEN_JUNDUI_QINXIN
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #复工
+		id = DEN_FU_GONG
+		icon = GFX_denmark_NOT_photo
+		x = 3
+		y = 6
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_FANGKUAN_XIANZHI
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #复产
+		id = DEN_FU_CHAN
+		icon = GFX_denmark_NOT_photo
+		x = 7
+		y = 6
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_FANGKUAN_XIANZHI
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}	
+	focus = { #戒严解除
+		id = DEN_JIEYAN_JIECHU
+		icon = GFX_denmark_NOT_photo
+		x = 5
+		y = 7
+		cost = 1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_FU_CHAN
+		}
+		prerequisite = {
+			focus = DEN_FU_GONG
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
 }

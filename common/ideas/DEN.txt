@@ -18,3 +18,19 @@ ideas = {
 		}
     }
 }
+ideas = {
+	country = {
+		
+		DEN_JIEYAN_idea = {
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.3
+				max_surrender_limit_offset -0.5
+			}
+
+		}
+    }
+}
+
