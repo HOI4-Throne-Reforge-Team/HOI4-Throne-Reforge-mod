@@ -193,7 +193,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 0
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = no
@@ -207,7 +207,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 2
 		y = 1
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_WENDING_JVSHI
@@ -223,7 +223,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 4
 		y = 1
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_WENDING_JVSHI
@@ -239,7 +239,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 6
 		y = 1
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_WENDING_JVSHI
@@ -255,7 +255,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 8
 		y = 1
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_WENDING_JVSHI
@@ -297,7 +297,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 3
 		y = 3
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_JINYAN_SHENXING
@@ -316,7 +316,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 3
 		y = 4
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_GUOWANG
@@ -333,7 +333,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 7
 		y = 3
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_JINYAN_SHENXING
@@ -352,7 +352,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 7
 		y = 4
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_YIHUI
@@ -369,7 +369,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 5
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_YIHUI_DUOSHU
@@ -387,7 +387,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 3
 		y = 6
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_FANGKUAN_XIANZHI
@@ -404,7 +404,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 7
 		y = 6
-		cost = 1
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_FANGKUAN_XIANZHI
@@ -421,7 +421,7 @@ focus_tree = {
 		icon = GFX_denmark_NOT_photo
 		x = 5
 		y = 7
-		cost = 1
+		cost = 0.1
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {
 			focus = DEN_FU_CHAN
@@ -433,7 +433,65 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			country_event = {id =denmark.8 days=5}
+		}
+	}
+}
+focus_tree = {
+	id = denmark_focus_3
+
+    country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+
+	initial_show_position = {
+		x = 38
+		y = 0
+	}
+
+	focus = { #支离破碎的北海
+		id = DEN_POSUI_BEIHAI
+		icon = GFX_denmark_NOT_photo
+		x = 7
+		y = 1
+		cost = 0.1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		#prerequisite = {
+		
+		#}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
 			
 		}
 	}
+	focus = { #北望...
+		id = DEN_BEIWANG
+		icon = GFX_denmark_NOT_photo
+		x = 7
+		y = 3
+		cost = 0.1
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = DEN_POSUI_BEIHAI
+		}
+	
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+	}
+	
 }

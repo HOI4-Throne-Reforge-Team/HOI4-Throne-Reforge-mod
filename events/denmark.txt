@@ -138,5 +138,24 @@ country_event = { #白十字飘摇欲下
 	}
 }
 
+country_event = { #恢复常态
+	id = denmark.8
+	title = denmark.8.t
+	desc = denmark.8.d
+	trigger = {
+	   tag = DEN
+	}
+	is_triggered_only = yes
+	option = {
+		name = denmark.8.a
+		ai_chance = {
+			base = 100
+		}
+		load_focus_tree = denmark_focus_3
+		remove_ideas = DEN_JIEYAN_idea
+	}
+}
+
+
 
 

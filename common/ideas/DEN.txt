@@ -2,6 +2,7 @@ ideas = {
 	country = {
 		
 		DEN_Christian_ten_idea = {
+			picture = GFX_denmark_NOT_photo
 			allowed = {
 				original_tag = DEN
 			}
@@ -22,6 +23,7 @@ ideas = {
 	country = {
 		
 		DEN_JIEYAN_idea = {
+			picture = GFX_denmark_NOT_photo
 			allowed = {
 				always = yes
 			}
