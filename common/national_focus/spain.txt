@@ -3558,6 +3558,18 @@ focus = { #新王登基
 			remove_idea = SPR_king_position
 			add_idea = SPR_king_position_2
 		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_2
+			add_idea = SPR_king_position_3
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_3
+			add_idea = SPR_king_position_4
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_4
+			add_idea = SPR_king_position_5
+		}
 	}
 	
 }
@@ -3573,17 +3585,27 @@ focus = { #天命在此
 		focus = SPR_inheriting_the_rule_of_bonaparte
 		focus = SPR_the_real_habsburg_family
 	}
-	available = {
-		has_completed_focus = SPR_must_have_god
-	}
+	
 	ai_will_do = {
 		factor = 2
 	}
 	
 	completion_reward = {
 		swap_ideas = {
+			remove_idea = SPR_king_position
+			add_idea = SPR_king_position_2
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_2
+			add_idea = SPR_king_position_3
+		}
+		swap_ideas = {
 			remove_idea = SPR_king_position_3
 			add_idea = SPR_king_position_4
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_4
+			add_idea = SPR_king_position_5
 		}
 	}
 	
@@ -3598,16 +3620,26 @@ focus = { #必有天意
 	prerequisite = {
 		focus = SPR_new_king_jong
 	}
-	available = {
-		has_completed_focus = SPR_new_king_jong
-	}
+	
 	ai_will_do = {
 		factor = 2
 	}
 	completion_reward = {
 		swap_ideas = {
+			remove_idea = SPR_king_position
+			add_idea = SPR_king_position_2
+		}
+		swap_ideas = {
 			remove_idea = SPR_king_position_2
 			add_idea = SPR_king_position_3
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_3
+			add_idea = SPR_king_position_4
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_4
+			add_idea = SPR_king_position_5
 		}
 	}
 	
@@ -3625,10 +3657,20 @@ focus = { #不得悖逆
 	ai_will_do = {
 		factor = 2
 	}
-	available = {
-		has_completed_focus = SPR_here_is_destiny
-	}
+	
 	completion_reward = {
+		swap_ideas = {
+			remove_idea = SPR_king_position
+			add_idea = SPR_king_position_2
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_2
+			add_idea = SPR_king_position_3
+		}
+		swap_ideas = {
+			remove_idea = SPR_king_position_3
+			add_idea = SPR_king_position_4
+		}
 		swap_ideas = {
 			remove_idea = SPR_king_position_4
 			add_idea = SPR_king_position_5
@@ -3812,6 +3854,7 @@ focus = { #拥抱传统主义
 	completion_reward = {
 		add_political_power = 100
 		add_ideas = SPR_traditionalism
+		remove_ideas = SPR_french_aid
 	}
 	
 }
@@ -5269,6 +5312,205 @@ focus = {  #远东的遗产
 			}
 		}	
 	}
+	}
+}
+
+
+
+
+
+
+focus = {  #
+	id = SPR_land_1
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = 52
+	y = 0
+	available = {
+		has_completed_focus = SPR_carlos_only_in_spain
+	}
+	completion_reward = {
+		army_experience = 100
+		swap_ideas = {
+			remove_idea = SPR_victors_of_the_spain_usa_war
+			add_idea = SPR_victors_of_the_spain_usa_war_2
+		}
+	}
+}
+focus = {  #
+	id = SPR_land_2
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = 52
+	y = 1
+	prerequisite = {
+		focus = SPR_land_1
+	}
+	completion_reward = {
+		army_experience = 75
+		swap_ideas = {
+			remove_idea = SPR_victors_of_the_spain_usa_war_2
+			add_idea = SPR_victors_of_the_spain_usa_war_3
+		}
+	}
+}
+focus = {  #
+	id = SPR_land_3
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = 52
+	y = 2
+	prerequisite = {
+		focus = SPR_land_2
+	}
+	completion_reward = {
+		army_experience = 25
+		swap_ideas = {
+			remove_idea = SPR_victors_of_the_spain_usa_war_3
+			add_idea = SPR_army_reform
+		}
+	}
+}
+focus = {  #
+	id = SPR_land_4
+	icon = GFX_goal_generic_improve_relations
+	cost = 6
+	x = 52
+	y = 3
+	prerequisite = {
+		focus = SPR_land_3
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SPR_army_reform
+			add_idea = SPR_army_reform2
+		}
+	}
+}
+focus = {  #
+	id = SPR_land_5
+	icon = GFX_goal_generic_improve_relations
+	cost = 7
+	x = 52
+	y = 4
+	prerequisite = {
+		focus = SPR_land_4
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SPR_army_reform2
+			add_idea = SPR_army_reform3
+		}
+	}
+}
+focus = {  #
+	id = SPR_land_6
+	icon = GFX_goal_generic_improve_relations
+	cost = 8
+	x = 52
+	y = 5
+	prerequisite = {
+		focus = SPR_land_5
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SPR_army_reform3
+			add_idea = SPR_army_reform4
+		}
+	}
+}
+focus = {  #
+	id = SPR_land_7
+	icon = GFX_goal_generic_improve_relations
+	cost = 9
+	x = 52
+	y = 5
+	prerequisite = {
+		focus = SPR_land_6
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = SPR_army_reform4
+			add_idea = SPR_army_reform5
+		}
+	}
+}
+
+focus = {  #
+	id = SPR_navy_1
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = 34
+	y = 0
+	available = {
+		has_completed_focus = SPR_carlos_only_in_spain
+	}
+	completion_reward = {
+		navy_experience = 100
+		swap_ideas = {
+			remove_idea = SPR_fleet_reconstruction_underway
+			add_idea = SPR_fleet_reconstruction_underway2
+		}
+	}
+}
+focus = {  #
+	id = SPR_navy_2
+	icon = GFX_goal_generic_improve_relations
+	cost = 6
+	x = 34
+	y = 1
+	prerequisite = {
+		focus = SPR_navy_1
+	}
+	available = {
+		has_completed_focus = SPR_carlos_only_in_spain
+	}
+	completion_reward = {
+		navy_experience = 75
+		swap_ideas = {
+			remove_idea = SPR_fleet_reconstruction_underway2
+			add_idea = SPR_fleet_reconstruction_underway3
+		}
+	}
+}
+focus = {  #
+	id = SPR_navy_3
+	icon = GFX_goal_generic_improve_relations
+	cost = 7
+	x = 34
+	y = 2
+	prerequisite = {
+		focus = SPR_navy_2
+	}
+	available = {
+		has_completed_focus = SPR_carlos_only_in_spain
+	}
+	completion_reward = {
+		navy_experience = 50
+		swap_ideas = {
+			remove_idea = SPR_fleet_reconstruction_underway3
+			add_idea = SPR_fleet_reconstruction_underway4
+		}
+	}
+}
+focus = {  #
+	id = SPR_navy_4
+	icon = GFX_goal_generic_improve_relations
+	cost = 8
+	x = 34
+	y = 3
+	prerequisite = {
+		focus = SPR_navy_3
+	}
+	available = {
+		has_completed_focus = SPR_carlos_only_in_spain
+	}
+	completion_reward = {
+		navy_experience = 25
+		swap_ideas = {
+			remove_idea = SPR_fleet_reconstruction_underway4
+			add_idea = SPR_fleet_reconstruction_underway5
+		}
 	}
 }
 }

@@ -646,6 +646,9 @@ country_event = {
 	}
 	option = {
 		name = SPR.11.a2
+		trigger = {
+			always = no
+		}
 		ai_chance = {
 			factor = 33
 		}
@@ -665,6 +668,9 @@ country_event = {
 	}
 	option = {
 		name = SPR.11.a3
+		trigger = {
+			always = no
+		}
 		ai_chance = {
 			factor = 33
 		}

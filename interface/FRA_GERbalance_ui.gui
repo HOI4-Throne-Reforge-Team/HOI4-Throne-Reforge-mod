@@ -443,12 +443,6 @@ guitypes = {
                 alwaystransparent = yes
             }
             #显示框
-            
         }
-        
-        
     }
-
-
-
 }

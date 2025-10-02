@@ -37,8 +37,8 @@ ideas = {
 			#available = {}
 			#cancel = {}
 			modifier = {
-				offence = -0.20
-				defence = 0.15
+				army_attack_factor = -0.20
+				army_defence_factor = 0.15
 				war_support_factor = 0.2
 				command_power_gain = 0.15
 				land_doctrine_cost_factor = 0.5
@@ -48,6 +48,146 @@ ideas = {
 				armor = -0.25
 				infantry_weapons = -0.25
 				artillery = -0.25
+			}
+			#picture = 
+		}
+		SPR_victors_of_the_spain_usa_war_2 = { #西美战争的胜利者2
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = -0.135
+				army_defence_factor = 0.1
+				war_support_factor = 0.15
+				command_power_gain = 0.1
+				land_doctrine_cost_factor = 0.3
+			}
+			research_bonus = { 
+				air_equipment = -0.15
+				armor = -0.15
+				infantry_weapons = -0.15
+				artillery = -0.15
+			}
+			#picture = 
+		}
+		SPR_victors_of_the_spain_usa_war_3 = { #西美战争的胜利者3
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = 0.05
+				war_support_factor = 0.05
+				command_power_gain = 0.05
+				land_doctrine_cost_factor = 0.1
+			}
+			research_bonus = { 
+				air_equipment = -0.05
+				armor = -0.05
+				infantry_weapons = -0.05
+				artillery = -0.05
+			}
+			#picture = 
+		}
+		SPR_army_reform = { #军队改革
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = 0.01
+				army_defence_factor = 0.01
+				army_org_factor = 0.01
+				army_org_regain = 0.01
+			}
+			#picture = 
+		}
+		SPR_army_reform2 = { #军队改革
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				army_org_factor = 0.03
+				army_org_regain = 0.03
+			}
+			#picture = 
+		}
+		SPR_army_reform3 = { #军队改革
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				army_org_factor = 0.06
+				army_org_regain = 0.06
+			}
+			#picture = 
+		}
+		SPR_army_reform4 = { #军队改革
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = 0.09
+				army_defence_factor = 0.09
+				army_org_factor = 0.09
+				army_org_regain = 0.09
+			}
+			#picture = 
+		}
+		SPR_army_reform5 = { #军队改革
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.15
+				army_org_regain = 0.15
 			}
 			#picture = 
 		}
@@ -110,24 +250,180 @@ ideas = {
 				naval_defense_factor = -0.15
 			}
 			equipment_bonus = {
-				ship_hull_heavy = {
+				convoy = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				ship_hull_carrier = {
+				submarine = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				ship_hull_cruiser = {
+				screen_ship = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				ship_hull_light = {
+				capital_ship = {
 					build_cost_ic = 0.25
 					instant = yes
 				}
-				ship_hull_submarine = {
+				carrier = {
 					build_cost_ic = 0.25
+					instant = yes
+				}
+			}
+			#picture = 
+		}
+		SPR_fleet_reconstruction_underway2 = { #舰队重建进行时
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				industrial_capacity_dockyard = -0.05
+				naval_damage_factor = -0.10
+				naval_defense_factor = -0.10
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = 0.20
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = 0.20
+					instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = 0.20
+					instant = yes
+				}
+				capital_ship = {
+					build_cost_ic = 0.20
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = 0.20
+					instant = yes
+				}
+			}
+			#picture = 
+		}
+		SPR_fleet_reconstruction_underway3 = { #舰队重建进行时
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+				naval_damage_factor = -0.05
+				naval_defense_factor = -0.05
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				capital_ship = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+			#picture = 
+		}
+		SPR_fleet_reconstruction_underway4 = { #舰队重建进行时
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				naval_damage_factor = 0.1
+				naval_defense_factor = 0.1
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				capital_ship = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			#picture = 
+		}
+		SPR_fleet_reconstruction_underway5 = { #舰队重建进行时
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			#available = {}
+			#cancel = {}
+			modifier = {
+				industrial_capacity_dockyard = 0.35
+				naval_damage_factor = 0.25
+				naval_defense_factor = 0.25
+			}
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				screen_ship = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				capital_ship = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+				carrier = {
+					build_cost_ic = -0.25
 					instant = yes
 				}
 			}
