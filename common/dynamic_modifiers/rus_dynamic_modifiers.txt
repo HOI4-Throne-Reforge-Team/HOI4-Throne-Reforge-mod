@@ -1,0 +1,9 @@
+the_Imperial_Russian_Army = {
+	icon = GFX_idea_unknown
+	enable = { always = yes }
+	max_planning = RUS_max_planning
+	planning_speed = RUS_planning_speed
+	supply_consumption_factor = RUS_supply_consumption_factor
+	breakthrough_factor = RUS_breakthrough_factor
+	experience_gain_army_factor = RUS_experience_gain_army_factor
+}

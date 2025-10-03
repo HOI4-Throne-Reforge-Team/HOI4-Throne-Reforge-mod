@@ -1,0 +1,81 @@
+ideas = {
+	country = {
+		Neva_Economic_Community = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.10
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = 0.10
+			}
+		}
+		Trans_Siberian_Railway = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				local_resources_factor = 0.10
+			}
+		}
+		Alexander_Reforms = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+
+			available = {
+				always = yes
+			}
+
+			cancel = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = 0.20
+				production_speed_buildings_factor = 0.10
+			}
+		}
+    }
+}
