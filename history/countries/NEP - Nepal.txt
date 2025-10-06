@@ -24,9 +24,9 @@ oob = "NEP_1936"
 # recruit_character = NEP_w_r_parker_gill
 # recruit_character = NEP_sidney_r_planter
 
-add_ideas = {
-	NEP_royal_army
-}
+# add_ideas = {
+# 	NEP_royal_army
+# }
 
 # Starting tech
 set_technology = {

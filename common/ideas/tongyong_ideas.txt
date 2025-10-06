@@ -113,9 +113,9 @@ ideas = {
 
 			removal_cost = -1
 
-			cencel = {
-				has_idea = develop_military_industry
-			}
+			# cencel = {
+			# 	has_idea = develop_military_industry
+			# }
 
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
@@ -135,9 +135,9 @@ ideas = {
 
 			removal_cost = -1
 
-			cencel = {
-				has_idea = develop_civilian_industries
-			}
+			# cencel = {
+			# 	has_idea = develop_civilian_industries
+			# }
 
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
@@ -157,9 +157,9 @@ ideas = {
 
 			removal_cost = -1
 
-			cencel = {
-				has_idea = develop_civilian_industries
-			}
+			# cencel = {
+			# 	has_idea = develop_civilian_industries
+			# }
 
 			modifier = {
 				special_project_speed_factor = 0.15

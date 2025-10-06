@@ -6,18 +6,18 @@ set_variable = { ICE.communism_support_needed = 0.15 }
 
 set_research_slots = 2
 
-IF = {
-	limit = {
-		has_dlc = "Arms Against Tyranny"
-	}
-	add_ideas = {
-		ICE_christian_x
-		disarmed_nation
-		isolation
-	}
+# IF = {
+# 	limit = {
+# 		has_dlc = "Arms Against Tyranny"
+# 	}
+# 	add_ideas = {
+# 		ICE_christian_x
+# 		disarmed_nation
+# 		isolation
+# 	}
 	
-	set_war_support = 0.15
-}
+# 	set_war_support = 0.15
+# }
 IF = {
 	limit = {
 		NOT = { has_dlc = "Arms Against Tyranny" }

@@ -1,9 +1,9 @@
 ﻿capital = 290
 
-IF = {
-	limit = {has_dlc = "By Blood Alone"}
-	recruit_character =  RIF_abd_el_krim
-}
+# IF = {
+# 	limit = {has_dlc = "By Blood Alone"}
+# 	recruit_character =  RIF_abd_el_krim
+# }
 
 
 # Starting tech

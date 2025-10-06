@@ -14,14 +14,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 
@@ -259,14 +252,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 		picture = archetype_medium_tank_equipment
@@ -501,14 +487,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 		picture = archetype_heavy_tank_equipment
@@ -742,14 +721,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 		picture = archetype_modern_tank_equipment
@@ -927,14 +899,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 		picture = archetype_super_heavy_tank_equipment
@@ -1109,14 +1074,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 		picture = archetype_amphibious_tank_equipment
@@ -1296,14 +1254,7 @@ equipments = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				NOT = {
-					has_idea = BUL_army_restrictions_aat
-				}
-			}
-			else = {
-				NOT = {
-					has_idea = BUL_army_restrictions
-				}
+				
 			}
 		}
 		picture = archetype_super_heavy_tank_equipment

@@ -158,14 +158,14 @@ if = {
 	limit = { NOT = { has_dlc = "Together for Victory" } }
 	set_cosmetic_tag = CAN_ALY
 }
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	add_ideas = CAN_great_depression_1
-	add_ideas = CAN_conscription_crisis
-	set_cosmetic_tag = CAN_UK
+# if = {
+# 	limit = { has_dlc = "Together for Victory" }
+# 	add_ideas = CAN_great_depression_1
+# 	add_ideas = CAN_conscription_crisis
+# 	set_cosmetic_tag = CAN_UK
 
-	#add_to_tech_sharing_group = commonwealth_research
-}
+# 	#add_to_tech_sharing_group = commonwealth_research
+# }
 
 set_politics = {
 	ruling_party = democratic

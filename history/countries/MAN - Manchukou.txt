@@ -8,16 +8,16 @@ set_technology = {
 	tech_trucks = 1
 }
 
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
-	recruit_character = MAN_songgotu_zhanshan
-}
+# if = {
+# 	limit = { has_dlc = "Waking the Tiger" }
+# 	set_country_flag = MAN_northern_bandits
+# 	set_country_flag = MAN_eastern_bandits
+# 	set_country_flag = MAN_western_bandits
+# 	add_ideas = MAN_banditry
+# 	add_ideas = MAN_kwantung_veto
+# 	add_ideas = MAN_low_legitimacy_5
+# 	recruit_character = MAN_songgotu_zhanshan
+# }
 
 # recruit_character = MAN_aisin_gioro_puyi
 # recruit_character = MAN_zhang_haipeng

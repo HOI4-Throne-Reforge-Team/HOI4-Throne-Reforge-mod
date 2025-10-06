@@ -15,20 +15,20 @@ IF = {
 }
 
 
-IF = {
-	limit = {
-		has_dlc = "Trial of Allegiance"
-	}
+# IF = {
+# 	limit = {
+# 		has_dlc = "Trial of Allegiance"
+# 	}
 
 	
 
-	JUNO_set_shared_military_branch_defaults = yes
+# 	JUNO_set_shared_military_branch_defaults = yes
 
-	add_ideas = idea_URG_low_amounts_of_external_debts
-	set_war_support = 0.12
-	set_stability = 0.39
+# 	add_ideas = idea_URG_low_amounts_of_external_debts
+# 	set_war_support = 0.12
+# 	set_stability = 0.39
 
-}
+# }
 set_cosmetic_tag = URG_is_unaligned_URG_but_has_normal_URG_flag	
 
 # Starting tech

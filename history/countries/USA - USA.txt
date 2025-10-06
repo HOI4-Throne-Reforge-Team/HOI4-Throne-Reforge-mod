@@ -105,16 +105,16 @@ if = {
 
 	}
 }
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-	add_ideas = bureau_of_ordnance_spirit
-}
+# if = {
+# 	limit = {
+# 		has_dlc = "No Step Back"
+# 	}
+# 	set_technology = {
+# 		gwtank_chassis = 1
+# 		basic_light_tank_chassis = 1
+# 	}
+# 	add_ideas = bureau_of_ordnance_spirit
+# }
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -164,7 +164,7 @@ if = {
 ##Monroe Doctrine - We are trying to just remove the dlc check and see what, if any, things break. Will ask QA and BETAs to test new system both with and without ToA
 #IF = {
 #	limit = { has_dlc = "Trial of Allegiance" }
-	add_ideas = USA_monroe_doctrine_enforcer
+	# add_ideas = USA_monroe_doctrine_enforcer
 #}
 #IF = {
 #	limit = { NOT = { has_dlc = "Trial of Allegiance" }	}
@@ -206,13 +206,13 @@ set_popularities = {
 	communism = 1
 }
 
-add_ideas = {
-	undisturbed_isolation
-	great_depression
-	disarmed_nation
-	free_trade
-	home_of_the_free
-}
+# add_ideas = {
+# 	undisturbed_isolation
+# 	great_depression
+# 	disarmed_nation
+# 	free_trade
+# 	home_of_the_free
+# }
 
 
 

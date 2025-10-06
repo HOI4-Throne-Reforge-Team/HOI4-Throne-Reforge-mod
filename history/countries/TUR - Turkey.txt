@@ -158,15 +158,15 @@ if = {
 		356 = {
 			add_dynamic_modifier = { modifier = islamist_opposition }
 		}
-		add_ideas = {
-			limited_conscription
-			export_focus
-			civilian_economy
-			TUR_kemalist_army_officers_limited_power_loyal
-			TUR_sectarian_woes
-			TUR_disorganised_armed_forces
-			TUR_debt_council
-		}
+		# add_ideas = {
+		# 	limited_conscription
+		# 	export_focus
+		# 	civilian_economy
+		# 	TUR_kemalist_army_officers_limited_power_loyal
+		# 	TUR_sectarian_woes
+		# 	TUR_disorganised_armed_forces
+		# 	TUR_debt_council
+		# }
 		
 		353 = {
 			start_resistance = yes
@@ -256,7 +256,7 @@ set_popularities = {
 set_convoys = 20
 set_stability = 0.5
 set_war_support = 0.3
-recruit_character = TUR_mustafa_kemal_ataturk
+# recruit_character = TUR_mustafa_kemal_ataturk
 # if = {
 # 	limit = { has_dlc = "Battle for the Bosporus" }
 # 	recruit_character = TUR_mustafa_kemal_ataturk

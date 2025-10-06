@@ -34,11 +34,7 @@ ideas = {
 					limit = {
 						original_tag = USA
 					}
-					OR = {
-						has_war_support > 0.5
-						has_war = yes
-						has_completed_focus = USA_limited_intervention
-					}
+					
 				}
 				ELSE = {
 					OR = {
@@ -79,11 +75,7 @@ ideas = {
 					limit = {
 						original_tag = USA
 					}
-					OR = {
-						has_war_support > 0.75
-						has_war = yes
-						has_completed_focus = USA_limited_intervention
-					}
+					
 				}
 				ELSE = {
 					OR = {
@@ -130,15 +122,6 @@ ideas = {
 							has_dlc = "Gotterdammerung"
 						}
 					}
-					IF = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
-					}
-					ELSE = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
-					}
 				}
 				ELSE_IF = {
 					limit = {
@@ -151,37 +134,18 @@ ideas = {
 						}
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
-								OR = {
-									has_idea = HUN_treaty_of_triannon_aat_wuw 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff 
-								}
-							}
 							
 						}		
 					}
 					ELSE = {
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
-								OR = {
-									has_idea = HUN_treaty_of_triannon_wuw 
-									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff 
-								}
-							}
 						}
 					}
 				}
 
 				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
+					
 					has_war_support > 0.3
 					congress_high_support_trigger = yes
 				}
@@ -201,11 +165,7 @@ ideas = {
 			}
 			on_add = {
 				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
+					
 					USA_congress_large_opposition = yes
 				}
 			}
@@ -256,45 +216,18 @@ ideas = {
 							has_dlc = "Gotterdammerung"
 						}
 					}
-					IF = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						OR = {
-							has_completed_focus = HUN_secret_rearmament
-							NOT = { has_idea = HUN_treaty_of_triannon_aat }
-						}
-					}
-					ELSE = {
-						has_completed_focus = HUN_secret_rearmament
-						NOT = { has_idea = HUN_treaty_of_triannon }
-					}
+					
 				}
 				ELSE_IF = {
 					limit = {
 						original_tag = HUN
 						has_dlc = "Gotterdammerung"
 					}
-					IF = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						OR = {
-							has_completed_focus = wuw_HUN_secret_rearmament
-							NOT = { has_idea = HUN_treaty_of_triannon_aat_wuw }
-						}
-					}
-					ELSE = {
-						has_completed_focus = wuw_HUN_secret_rearmament
-						NOT = { has_idea = HUN_treaty_of_triannon_wuw }
-					}
+					
 				}
 
 				if = {
-					limit = {
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
+					
 					has_war_support > 0.5
 					congress_high_support_trigger = yes
 				}
@@ -325,16 +258,7 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_completed_focus = USA_limited_intervention
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
+			
 			ai_will_do = {
    				factor = 2
 
@@ -348,24 +272,10 @@ ideas = {
 					add = 80
 					original_tag = SOV
 					date < 1937.1.1
-					NOT = { 
-						OR = {
-							has_idea = war_economy 
-							has_idea = tot_economic_mobilisation
-						}
-					}
 				}
 				
 				modifier = {
 					original_tag = SIA
-					NOT = { 
-						OR = {
-							has_idea = war_economy 
-							has_idea = tot_economic_mobilisation
-						}
-					}
-					add = 1200 #Prep for invasion
-				}
 
 				modifier = {
 					factor = 100
@@ -373,10 +283,6 @@ ideas = {
 						original_tag = URG
 						original_tag = PAR
 					}
-					NOT = {
-						has_idea = war_economy
-					}
-					has_completed_focus = GUAY_coup_detat
 				}
    			}
 		}
@@ -409,15 +315,6 @@ ideas = {
 							has_dlc = "Gotterdammerung"
 						}
 					}
-					IF = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
-					}
-					ELSE = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
-					}
 				}
 				ELSE_IF = {
 					limit = {
@@ -430,35 +327,18 @@ ideas = {
 						}
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
-								OR = {
-									has_idea = HUN_treaty_of_triannon_aat_wuw 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff 
-								}
-							}
 							
 						}		
 					}
 					ELSE = {
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
-								OR = {
-									has_idea = HUN_treaty_of_triannon_wuw 
-									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff 
-								}
-							}
 						}
 					}
 				}
 
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.75
@@ -494,7 +374,6 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -549,7 +428,6 @@ ideas = {
 					limit = {
 						original_tag = GER
 					}
-					NOT = { has_completed_focus = GER_totaler_krieg }
 				}
 			}
 
@@ -563,64 +441,9 @@ ideas = {
 					}
 				}
 
-				IF = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Death or Dishonor"
-						NOT = {
-							has_dlc = "Gotterdammerung"
-						}
-					}
-					IF = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						NOT = { has_idea = HUN_treaty_of_triannon_aat }
-					}
-					ELSE = {
-						NOT = { has_idea = HUN_treaty_of_triannon }
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						original_tag = HUN
-						has_dlc = "Gotterdammerung"
-					}
-					IF = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						custom_trigger_tooltip = {
-							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
-								OR = {
-									has_idea = HUN_treaty_of_triannon_aat_wuw 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff 
-								}
-							}
-							
-						}		
-					}
-					ELSE = {
-						custom_trigger_tooltip = {
-							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
-								OR = {
-									has_idea = HUN_treaty_of_triannon_wuw 
-									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff 
-								}
-							}
-						}
-					}
-				}
 				
 				if = {
 					limit = {
-						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					has_war_support > 0.9
@@ -644,7 +467,6 @@ ideas = {
 				if = {
 					limit = {
 						tag = USA
-						has_completed_focus = USA_limited_intervention
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
@@ -719,11 +541,9 @@ ideas = {
 
 			visible = {
 				original_tag = GER
-				has_completed_focus = GER_totaler_krieg
 			}
 
 			available = {
-				has_completed_focus = GER_totaler_krieg
 				has_war_with_major = yes
 				has_war_support > 0.8
 				any_enemy_country = {

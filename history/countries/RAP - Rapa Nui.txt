@@ -62,20 +62,20 @@ IF = {
 }
 
 ### Recruiting Characters ###
-IF = {
-	limit = { 
-		NOT = {
-			has_dlc = "Trial of Allegiance"
-		}
-	}
-	ELSE_IF = {
-		limit = {
-			has_dlc = "Trial of Allegiance"
-		}
-		recruit_character = RAP_valentino_riroroko_tuki
-		recruit_character = RAP_juan_tepano
-	}
-}
+# IF = {
+# 	limit = { 
+# 		NOT = {
+# 			has_dlc = "Trial of Allegiance"
+# 		}
+# 	}
+# 	ELSE_IF = {
+# 		limit = {
+# 			has_dlc = "Trial of Allegiance"
+# 		}
+# 		recruit_character = RAP_valentino_riroroko_tuki
+# 		recruit_character = RAP_juan_tepano
+# 	}
+# }
 
 set_politics = {
 	ruling_party = neutrality

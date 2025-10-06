@@ -9,14 +9,6 @@ state={
 		add_core_of = RJP
 		buildings = {
 			infrastructure = 1
-			4915 = {
-                landmark_taj_mahal = {
-                    level = 1
-                    allowed = {
-                        has_dlc = "Graveyard of Empires"
-                    }
-                }
-			}
 		}
 		victory_points = {
 			1908 5

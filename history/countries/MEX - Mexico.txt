@@ -123,18 +123,18 @@ set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1
 
-IF = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = {
-		MEX_callistas
-		MEX_church_power_2
-		MEX_oil_concessions
-		MEX_politicised_army
-		MEX_cedillo_tension_2
-	}
-}
+# IF = {
+# 	limit = {
+# 		has_dlc = "Man the Guns"
+# 	}
+# 	add_ideas = {
+# 		MEX_callistas
+# 		MEX_church_power_2
+# 		MEX_oil_concessions
+# 		MEX_politicised_army
+# 		MEX_cedillo_tension_2
+# 	}
+# }
 
 
 set_politics = {

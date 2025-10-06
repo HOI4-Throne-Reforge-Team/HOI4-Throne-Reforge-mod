@@ -27,7 +27,7 @@ IF = {
 		days = 1400
 	}
 
-	add_ideas = BOL_era_of_national_regression
+	# add_ideas = BOL_era_of_national_regression
 
 	JUNO_set_shared_military_branch_defaults = yes
 }

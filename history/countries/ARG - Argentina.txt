@@ -68,11 +68,11 @@ IF = {
 	# Army modifier
 	JUNO_set_shared_military_branch_defaults = yes
 
-	add_ideas = {
-		SMB_MTG_naval_arms_race_legacy
-		ARG_infamous_decade_idea
-		ARG_roca_runciman_treaty_idea
-	}
+	# add_ideas = {
+	# 	SMB_MTG_naval_arms_race_legacy
+	# 	ARG_infamous_decade_idea
+	# 	ARG_roca_runciman_treaty_idea
+	# }
 
 	add_dynamic_modifier = {
 		modifier = ARG_political_corruption_modifier

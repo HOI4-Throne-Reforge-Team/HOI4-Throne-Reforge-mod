@@ -31,15 +31,15 @@ if = {
 
 set_research_slots = 3
 
-if = {
-	limit = { has_dlc = "Arms Against Tyranny" }
-	add_ideas = {
-#		SWE_historical_trade_with_Germany CUT
-		SWE_hungershield
-		SWE_severe_lack_of_ammunition
-		#SWE_standardized_equipment
-		SWE_gustaf_v_idea
-	}
+# if = {
+# 	limit = { has_dlc = "Arms Against Tyranny" }
+# 	add_ideas = {
+# #		SWE_historical_trade_with_Germany CUT
+# 		SWE_hungershield
+# 		SWE_severe_lack_of_ammunition
+# 		#SWE_standardized_equipment
+# 		SWE_gustaf_v_idea
+# 	}
 
 
 	add_dynamic_modifier = { modifier = SWE_folkhemmet }

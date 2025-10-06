@@ -8,20 +8,20 @@ set_research_slots = 4
 set_fuel_ratio = 1.0
 
 # Starting Ideas
-add_ideas = {
+# add_ideas = {
 
-	# Laws
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
+# 	# Laws
+# 	limited_exports
+# 	limited_conscription
+# 	partial_economic_mobilisation
 
-	# National Spirits
-	state_shintoism
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
+# 	# National Spirits
+# 	state_shintoism
+# 	JAP_zaibatsus
+# 	JAP_duplicate_research_efforts
+# 	JAP_militarism
 
-}
+# }
 
 IF = {
 	limit = { has_dlc = "Waking the Tiger" }

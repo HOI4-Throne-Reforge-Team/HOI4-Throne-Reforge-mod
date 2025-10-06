@@ -29,11 +29,11 @@ IF = {
 	set_country_flag = BRA_toa_DLC
 
 
-	add_ideas = {
-		SMB_MTG_naval_arms_race_legacy
-	}
+	# add_ideas = {
+	# 	SMB_MTG_naval_arms_race_legacy
+	# }
 
-	add_ideas = BRA_separatism_idea
+	# add_ideas = BRA_separatism_idea
 
 	every_owned_state = {
 		limit = {

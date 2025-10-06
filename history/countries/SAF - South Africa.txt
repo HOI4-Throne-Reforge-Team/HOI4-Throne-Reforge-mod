@@ -73,14 +73,14 @@ if = {
 	}
 }
 
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	add_ideas = SAF_ossewabrandwag
-	add_ideas = SAF_history_of_segregation
+# if = {
+# 	limit = { has_dlc = "Together for Victory" }
+# 	add_ideas = SAF_ossewabrandwag
+# 	add_ideas = SAF_history_of_segregation
 
-	add_to_tech_sharing_group = commonwealth_research
-	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
-}
+# 	add_to_tech_sharing_group = commonwealth_research
+# 	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+# }
 
 set_convoys = 25
 set_politics = {
@@ -93,7 +93,7 @@ set_popularities = {
 	democratic = 75
 	fascism = 20
 	communism = 5
-# }
+}
 
 # recruit_character = SAF_j_b_m_hertzog
 # recruit_character = SAF_d_f_malan

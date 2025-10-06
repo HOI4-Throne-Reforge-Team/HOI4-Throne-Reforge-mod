@@ -21,13 +21,13 @@ IF = {
 		has_dlc = "Trial of Allegiance"
 	}
 	### Set National Spirits ###
-	add_ideas = {
-		CHL_the_mapuche_conflict
-		idea_CHL_the_Hacienda_inquilinaje_system
-		idea_CHL_near_anarchic_society
-		idea_CHL_repubican_guard
-		SMB_MTG_naval_arms_race_legacy
-	}
+	# add_ideas = {
+	# 	CHL_the_mapuche_conflict
+	# 	idea_CHL_the_Hacienda_inquilinaje_system
+	# 	idea_CHL_near_anarchic_society
+	# 	idea_CHL_repubican_guard
+	# 	SMB_MTG_naval_arms_race_legacy
+	# }
 
 	### Set Base Values ###
 	set_war_support = 0.25 

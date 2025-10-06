@@ -95,13 +95,13 @@ set_popularities = {
 	communism = 1
 }
 
-add_ideas = {
-	civilian_economy
-	limited_conscription
-	free_trade
-	home_of_the_free
-	neutrality_idea
-}
+# add_ideas = {
+# 	civilian_economy
+# 	limited_conscription
+# 	free_trade
+# 	home_of_the_free
+# 	neutrality_idea
+# }
 
 
 

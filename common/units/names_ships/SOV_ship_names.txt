@@ -816,37 +816,37 @@ SOV_IMPERIAL_GOVERNORATES = {
 }
 
 ## THEME: ORTHODOX SAINTS ###
-SOV_SAINTS = {
-	name = NAME_THEME_SAINTS
+# SOV_SAINTS = {
+# 	name = NAME_THEME_SAINTS
 
-	for_countries = { SOV }
+# 	for_countries = { SOV }
 
-	can_use = {
-		has_completed_focus = SOV_the_third_rome
-	}
+# 	can_use = {
+# 		has_completed_focus = SOV_the_third_rome
+# 	}
 
-	type = ship
+# 	type = ship
 
-	unique = {
-		"Svyatoy Kirill" "Svyatoy Mefody" "Svyatoy Fotiy Veliky" "Svyatoy Boris I" "Svyatoy Naum Preslavsky" "Svyatoy Kliment Okhridsky" "Svyatoy Feodosy Kiyevsky" "Svyatoy Agapet Pechersky" 
-		"Svyatoy Vladimir Kiyevsky" "Prepodobnyy Serafim Sarovsky" "Svyatoy Antony Kiyevsky" "Svyatoy Yaropolk Izyaslav Inch" "Svyataya Yevfrosiniya Polotskaya" "Svyatoy Simeon Mirotovichi" 
-		"Svyatoy Avraam Smolensky" "Svyataya Fevroniya Muromskaya" "Svyatoy Pyotr Muromsky" "Svyatoy Savva Serbsky" "Svyatoy Ksenofont Robiksky" "Svyatoy Dmitry Nemanich" "Svyatoy Danilo II" 
-		"Svyatoy Lazar Serbsky" "Prepodobny Sergy Radonezhsky" "Svyatoy Kirill Beloozersky" "Svyatoy Andrey Ikonopisets" "Svyatoy Nil Sorsky" "Svyatoy Vasily Blazhenny" 
-		"Svyataya Iuliana Lazarevskaya" "Svyataya Sofiya Slutskaya" "Svyatoy Ioann Pskovsky" "Svyatoy Iov Pochayevsky" "Svyatoy Vasily Ostrozhsky" "Svyatoy Dmitry Rostovsky" 
-		"Svyatoy Ioann Tobolsky" "Svyataya Kseniya Peterburgskaya" "Svyatoy Pavel Taganrogsky" "Svyatoy Feofan Zatvornik" "Svyatoy Aleksis Tot" "Apostol Foma" "Svyatoy Georgy" 
-		"Svyatoy Dionisy Vattasserilsky" "Svyatoy Vasily Veliky" "Svyatoy Deklan" "Svyataya Kseniya Pravednaya" "Svyatoy Filipp iz Agiry" "Svyatoy Gerasim Iordansky" "Svyatoy Simeon Stolpnik" 
-		"Svyatoy Lev Veliky" "Svyatoy Maksim Turinsky" "Svyatoy Yevfimy Veliky" "Svyatoy Simplitsy" "Svyatoy Feliks III" "Svyatoy Patrik" "Svyataya Feodora" "Svyatoy Afan" 
-		"Svyatoy Stilian Paflagonsky" "Svyataya Zhenevyeva" "Svyataya Brigitta Kildarskaya" "Svyatoy Ioann I" "Svyatoy Feliks IV" "Svyatoy Savva Osvyashchenny" "Svyatoy Remigius Reymssky" 
-		"Svyatoy Agapit I" "Svyatoy Silverius" "Svyatoy Benedikt Nursysky" "Svyataya Skholastika" "Svyatoy Kiriak Otshelnik" "Svyatoy Zosima Palestinsky" "Svyatoy Petrok" "Svyatoy Yustinian I" 
-		"Svyatoy Dorofey iz Gazy" "Svyatoy Paulin Yorksky" "Svyatoy Devi Uelsky" "Svyatoy Grigory Tursky" "Svyatoy Kolumba" "Svyataya Dimfna" "Svyatoy Grigory I" "Svyatoy Avgustin Kenterberiysky" 
-		"Svyatoy Ioann Lestvichnik" "Svyatoy Bonifatsy IV" "Svyatoy Yevlogy Aleksandrysky" "Svyatoy Kolumban" "Svyatoy Etelbert Kentsky" "Svyatoy Adeodat I" "Svyatoy Edvin Nortumbrii" 
-		"Svyatoy Sofrony" "Svyatoy Alipy Stolpnik" "Svyatoy Osvald Nortumbrysky" "Svyatoy Birin" "Svyatoy Andrey Kritsky" "Svyatoy Eydan" "Svyatoy Osif" "Svyatoy Eligy" "Svyatoy Maksim Ispovednik" 
-		"Svyataya Eteldreda Eli" "Svyatoy Leodegar Otunsky" "Svyataya Khilda Uitbi" "Svyatoy Agafon" "Svyatoy Barbat iz Benevento" "Svyatoy Lev II" "Svyatoy Benedikt II" 
-		"Svyatoy Katbert Lindisfarnsky" "Svyatoy Isaak Ninevysky" "Svyatoy Anastasy Sinaita" "Svyatoy Kosma Mayumsky" "Svyatoy Uilfrid iz Ripona" "Svyataya Milburga Venloka" "Svyataya Odilliya" 
-		"Svyatoy Gubert" "Svyatoy Egbert Nortumbrysky" "Svyatoy Grigory II" "Prepodobnyy Beda" "Svyatoy Notkhelm Kenterberiysky" "Svyatoy Grigory III" "Svyatoy Benedikt Aniansky" 
-		"Svyatoy Ioann Damaskin" "Svyatoy Zakhary" "Svyatoy Abo Tiflissky" "Svyatoy Tarasy Konstantinopolsky" "Svyatoy Feofan Ispovednik" "Svyatoy Lev III" "Svyatoy Feodor Studit" 
-		"Svyatoy Nikifor I Konstantinopolsky" "Svyatoy Svitun iz Vinchestera" "Svyatoy Ansgar" "Svyataya Kassiya" "Svyatoy Simeon Metafrast" "Prepodobnyy Sergy Valaamsky" 
-		"Svyatoy German Valaamsky" "Svyatoy Andrey Konstantinopolsky" "Svyatoy Odo iz Klyuni" "Svyatoy Ulrikh Augsburgsky" "Svyatoy Volfgang Regensburgsky" "Svyataya Adelaida Italii" 
-		"Svyataya Paraskeva Mladshaya" "Svyatoy Volfeyus" "Svyatoy Nil Mladshy" "Svyatoy Bruno Kverfurtsky"
-	}
-}
+# 	unique = {
+# 		"Svyatoy Kirill" "Svyatoy Mefody" "Svyatoy Fotiy Veliky" "Svyatoy Boris I" "Svyatoy Naum Preslavsky" "Svyatoy Kliment Okhridsky" "Svyatoy Feodosy Kiyevsky" "Svyatoy Agapet Pechersky" 
+# 		"Svyatoy Vladimir Kiyevsky" "Prepodobnyy Serafim Sarovsky" "Svyatoy Antony Kiyevsky" "Svyatoy Yaropolk Izyaslav Inch" "Svyataya Yevfrosiniya Polotskaya" "Svyatoy Simeon Mirotovichi" 
+# 		"Svyatoy Avraam Smolensky" "Svyataya Fevroniya Muromskaya" "Svyatoy Pyotr Muromsky" "Svyatoy Savva Serbsky" "Svyatoy Ksenofont Robiksky" "Svyatoy Dmitry Nemanich" "Svyatoy Danilo II" 
+# 		"Svyatoy Lazar Serbsky" "Prepodobny Sergy Radonezhsky" "Svyatoy Kirill Beloozersky" "Svyatoy Andrey Ikonopisets" "Svyatoy Nil Sorsky" "Svyatoy Vasily Blazhenny" 
+# 		"Svyataya Iuliana Lazarevskaya" "Svyataya Sofiya Slutskaya" "Svyatoy Ioann Pskovsky" "Svyatoy Iov Pochayevsky" "Svyatoy Vasily Ostrozhsky" "Svyatoy Dmitry Rostovsky" 
+# 		"Svyatoy Ioann Tobolsky" "Svyataya Kseniya Peterburgskaya" "Svyatoy Pavel Taganrogsky" "Svyatoy Feofan Zatvornik" "Svyatoy Aleksis Tot" "Apostol Foma" "Svyatoy Georgy" 
+# 		"Svyatoy Dionisy Vattasserilsky" "Svyatoy Vasily Veliky" "Svyatoy Deklan" "Svyataya Kseniya Pravednaya" "Svyatoy Filipp iz Agiry" "Svyatoy Gerasim Iordansky" "Svyatoy Simeon Stolpnik" 
+# 		"Svyatoy Lev Veliky" "Svyatoy Maksim Turinsky" "Svyatoy Yevfimy Veliky" "Svyatoy Simplitsy" "Svyatoy Feliks III" "Svyatoy Patrik" "Svyataya Feodora" "Svyatoy Afan" 
+# 		"Svyatoy Stilian Paflagonsky" "Svyataya Zhenevyeva" "Svyataya Brigitta Kildarskaya" "Svyatoy Ioann I" "Svyatoy Feliks IV" "Svyatoy Savva Osvyashchenny" "Svyatoy Remigius Reymssky" 
+# 		"Svyatoy Agapit I" "Svyatoy Silverius" "Svyatoy Benedikt Nursysky" "Svyataya Skholastika" "Svyatoy Kiriak Otshelnik" "Svyatoy Zosima Palestinsky" "Svyatoy Petrok" "Svyatoy Yustinian I" 
+# 		"Svyatoy Dorofey iz Gazy" "Svyatoy Paulin Yorksky" "Svyatoy Devi Uelsky" "Svyatoy Grigory Tursky" "Svyatoy Kolumba" "Svyataya Dimfna" "Svyatoy Grigory I" "Svyatoy Avgustin Kenterberiysky" 
+# 		"Svyatoy Ioann Lestvichnik" "Svyatoy Bonifatsy IV" "Svyatoy Yevlogy Aleksandrysky" "Svyatoy Kolumban" "Svyatoy Etelbert Kentsky" "Svyatoy Adeodat I" "Svyatoy Edvin Nortumbrii" 
+# 		"Svyatoy Sofrony" "Svyatoy Alipy Stolpnik" "Svyatoy Osvald Nortumbrysky" "Svyatoy Birin" "Svyatoy Andrey Kritsky" "Svyatoy Eydan" "Svyatoy Osif" "Svyatoy Eligy" "Svyatoy Maksim Ispovednik" 
+# 		"Svyataya Eteldreda Eli" "Svyatoy Leodegar Otunsky" "Svyataya Khilda Uitbi" "Svyatoy Agafon" "Svyatoy Barbat iz Benevento" "Svyatoy Lev II" "Svyatoy Benedikt II" 
+# 		"Svyatoy Katbert Lindisfarnsky" "Svyatoy Isaak Ninevysky" "Svyatoy Anastasy Sinaita" "Svyatoy Kosma Mayumsky" "Svyatoy Uilfrid iz Ripona" "Svyataya Milburga Venloka" "Svyataya Odilliya" 
+# 		"Svyatoy Gubert" "Svyatoy Egbert Nortumbrysky" "Svyatoy Grigory II" "Prepodobnyy Beda" "Svyatoy Notkhelm Kenterberiysky" "Svyatoy Grigory III" "Svyatoy Benedikt Aniansky" 
+# 		"Svyatoy Ioann Damaskin" "Svyatoy Zakhary" "Svyatoy Abo Tiflissky" "Svyatoy Tarasy Konstantinopolsky" "Svyatoy Feofan Ispovednik" "Svyatoy Lev III" "Svyatoy Feodor Studit" 
+# 		"Svyatoy Nikifor I Konstantinopolsky" "Svyatoy Svitun iz Vinchestera" "Svyatoy Ansgar" "Svyataya Kassiya" "Svyatoy Simeon Metafrast" "Prepodobnyy Sergy Valaamsky" 
+# 		"Svyatoy German Valaamsky" "Svyatoy Andrey Konstantinopolsky" "Svyatoy Odo iz Klyuni" "Svyatoy Ulrikh Augsburgsky" "Svyatoy Volfgang Regensburgsky" "Svyataya Adelaida Italii" 
+# 		"Svyataya Paraskeva Mladshaya" "Svyatoy Volfeyus" "Svyatoy Nil Mladshy" "Svyatoy Bruno Kverfurtsky"
+# 	}
+# }

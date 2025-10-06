@@ -108,12 +108,12 @@ set_popularities = {
 	communism = 10
 }
 
-add_ideas = {
-	civilian_economy
-	volunteer_only
-	free_trade
-	home_of_the_free
-}
+# add_ideas = {
+# 	civilian_economy
+# 	volunteer_only
+# 	free_trade
+# 	home_of_the_free
+# }
 
 ### Ship Variants ###
 

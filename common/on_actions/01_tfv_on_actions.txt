@@ -1,40 +1,4 @@
 on_actions = {
-	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = INS
-						NOT = { has_government = fascism }
-					}
-					FROM = {
-						original_tag = INS
-						has_government = fascism
-					}
-					AST = {
-						has_completed_focus = AST_support_indonesian_uprising
-					}
-				}
-				AST = {
-					country_event = { 
-						id = tfv_australia.41 
-						hours = 12
-					}
-				}
-			}
-			if = {
-				limit = {
-					ROOT = {
-						original_tag = FRA
-						has_government = democratic
-					}
-				}
-				set_cosmetic_tag = FRA_FREE
-			}
-		}
-		
-	}
-
 	#ROOT is subject FROM is previous overlord
 	on_subject_free = {
 		effect = {
@@ -75,29 +39,7 @@ on_actions = {
 				retire_country_leader = yes
 			}
 
-			if = {
-				limit = {
-					has_idea = RAJ_marginalized_muslim_community_happy
-				}
-				RAJ = {
-					release = PAK
-				}
-			}
 
-			if = {
-				limit = {
-					original_tag = RAJ
-				}				
-				remove_ideas = {
-					RAJ_quit_india_movement
-					RAJ_marginalized_muslim_community
-					RAJ_marginalized_muslim_community_angry
-					RAJ_marginalized_muslim_community_happy
-					RAJ_princely_states
-					RAJ_princely_states_donations
-					RAJ_princely_states_donations_troops
-				}
-			}
 
 			#Achievement
 			if = {
@@ -219,18 +161,7 @@ on_actions = {
 				}
 				ROM = { set_country_flag = ROM_HUN_aligned }
 			}
-			if = {
-				limit = { 
-					AND = { 
-						OR = {
-							TAG = SOV
-							TAG = GER
-						}
-						SOV = { has_idea = SOV_molotov_ribbentrop_pact }
-						}
-					 }
-				SOV = { remove_ideas = SOV_molotov_ribbentrop_pact } #the pact is OFF if one of them is a puppet
-			}
+			
 			if = {
 				limit = { 
 					AND = { 
@@ -239,16 +170,6 @@ on_actions = {
 						}
 					 }
 				set_cosmetic_tag = USA_UK
-			}
-			if = {
-				limit = { 
-					AND = { 
-						TAG = USA
-						is_subject_of = SAF
-						SAF = { has_idea = SAF_king_edward }
-						}
-					 }
-				set_cosmetic_tag = USA_SAF_EDW
 			}
 			if = {
 				limit = { 

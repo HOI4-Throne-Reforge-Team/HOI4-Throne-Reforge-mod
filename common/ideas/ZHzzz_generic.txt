@@ -2182,7 +2182,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					#has_government = n_socialism
+					#has_government = fascism
 				}
 			}
 			traits = { wartime_propagantist }
@@ -2219,7 +2219,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					#has_government = n_socialism
+					#has_government = fascism
 					has_government = neutrality
 				}
 			}
@@ -2256,7 +2256,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2291,7 +2291,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = communism
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2363,7 +2363,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					#has_government = n_socialism
+					#has_government = fascism
 				}
 			}
 			traits = { wartime_propagantist }
@@ -2398,7 +2398,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					#has_government = n_socialism
+					#has_government = fascism
 					has_government = neutrality
 				}
 			}
@@ -2433,7 +2433,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2467,7 +2467,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = communism
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2539,7 +2539,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					#has_government = n_socialism
+					#has_government = fascism
 				}
 			}
 			traits = { wartime_propagantist }
@@ -2574,7 +2574,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					#has_government = n_socialism
+					#has_government = fascism
 					has_government = neutrality
 				}
 			}
@@ -2608,7 +2608,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2641,7 +2641,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = communism
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2711,7 +2711,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					#has_government = n_socialism
+					#has_government = fascism
 				}
 			}
 			traits = { wartime_propagantist }
@@ -2745,7 +2745,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					#has_government = n_socialism
+					#has_government = fascism
 					has_government = neutrality
 				}
 			}
@@ -2779,7 +2779,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2812,7 +2812,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = communism
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2881,7 +2881,7 @@ ideas = {
 				OR = {
 					has_government = fascism
 					has_government = communism
-					#has_government = n_socialism
+					#has_government = fascism
 				}
 			}
 			traits = { wartime_propagantist }
@@ -2915,7 +2915,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					#has_government = n_socialism
+					#has_government = fascism
 					has_government = neutrality
 				}
 			}
@@ -2949,7 +2949,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = democratic
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}
@@ -2982,7 +2982,7 @@ ideas = {
 			available = {
 				OR = {
 					has_government = communism
-					has_government = n_socialism
+					has_government = fascism
 					#has_government = neutrality
 				}
 			}

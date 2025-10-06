@@ -346,23 +346,7 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetLimitedRearmamentDesc
-	text = {
-		trigger = {
-			original_tag = ENG
-			NOT = { has_completed_focus = ENG_a_change_in_course }
-		}
-		localization_key = ENG_LIMITED_REARMAMENT_HISTORICAL
-	}
-	text = {
-		trigger = {
-			original_tag = ENG
-			has_completed_focus = ENG_a_change_in_course
-		}
-		localization_key = ENG_LIMITED_REARMAMENT_AHISTORICAL
-	}
-}
+
 
 defined_text = {
 	name = GetRoyalTankRegimentName
@@ -474,23 +458,6 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetGeneralRearmamentDesc
-	text = {
-		trigger = {
-			original_tag = ENG
-			NOT = { has_completed_focus = ENG_a_change_in_course }
-		}
-		localization_key = ENG_GENERAL_REARMAMENT_DESC_HISTORICAL
-	}
-	text = {
-		trigger = {
-			original_tag = ENG
-			has_completed_focus = ENG_a_change_in_course
-		}
-		localization_key = ENG_GENERAL_REARMAMENT_DESC_AHISTORICAL
-	}
-}
 
 defined_text = {
 	name = GetAirRearmamentDesc
@@ -633,18 +600,6 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
-	name = GetCandidatesFascism2
-	text = {
-		trigger = {
-			has_completed_focus = USA_send_lindbergh_to_germany
-		}
-		localization_key = USA_lindbergh_candidate
-	}
-	text = {
-		localization_key = ""
-	}
-}
 
 defined_text = { # Country
 	name = GetStrengthRatioBritain
@@ -919,54 +874,6 @@ defined_text = { # Country
 	}
 }
 
-defined_text = { # Country
-	name = GetFrenchCoronationCity
-	text = {
-		trigger = {
-			FRA = { has_completed_focus = FRA_the_legitimate_heir }
-		}
-		localization_key = LaR_France_Reims
-	}
-	text = {
-		trigger = {
-			FRA = { 
-				OR = {
-					has_completed_focus = FRA_proclaim_the_third_empire
-					has_completed_focus = FRA_orleanist_restoration
-				}
-			}
-		}
-		localization_key = LaR_France_Paris
-	}
-}
-
-defined_text = { # Country
-	name = GetFrenchRoyalTitle
-	text = {
-		trigger = {
-			FRA = {
-				has_completed_focus = FRA_the_legitimate_heir
-			}
-		}
-		localization_key = LaR_France_King
-	}
-	text = {
-		trigger = {
-			FRA = {
-				has_completed_focus = FRA_orleanist_restoration
-			}
-		}
-		localization_key = LaR_France_King_of_The_French
-	}
-	text = {
-		trigger = {
-			FRA = { 
-				has_completed_focus = FRA_proclaim_the_third_empire
-			}
-		}
-		localization_key = LaR_France_Emperor
-	}
-}
 
 defined_text = {
 	name = GetIberianSummitReceiverName
@@ -1091,89 +998,6 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetChurchCandidatesName
-	text = {
-		trigger = {
-			original_tag = SOV
-			NOT = {
-				has_completed_focus = SOV_dismantle_the_zemsky_sobor
-			}
-		}
-		localization_key = SOV_CHURCH_CANDIDATES_NAME_TSARIST
-	}
-	text = {
-		trigger = {
-			original_tag = SOV
-			has_completed_focus = SOV_dismantle_the_zemsky_sobor
-		}
-		localization_key = SOV_CHURCH_CANDIDATES_NAME_FASCIST
-	}
-}
-
-defined_text = {
-	name = GetChurchCandidatesDesc
-	text = {
-		trigger = {
-			original_tag = SOV
-			NOT = {
-				has_completed_focus = SOV_dismantle_the_zemsky_sobor
-			}
-		}
-		localization_key = SOV_CHURCH_CANDIDATES_DESC_TSARIST
-	}
-	text = {
-		trigger = {
-			original_tag = SOV
-			has_completed_focus = SOV_dismantle_the_zemsky_sobor
-		}
-		localization_key = SOV_CHURCH_CANDIDATES_DESC_FASCIST
-	}
-}
-
-defined_text = {
-	name = GetLonelyIslandName
-	text = {
-		trigger = {
-			original_tag = SOV
-			OR = {
-				NOT = { has_completed_focus = SOV_request_imperial_protection }
-				NOT = { is_subject_of = JAP }
-			}
-		}
-		localization_key = SOV_THE_LONELY_ISLAND_NAME_NORMAL
-	}
-	text = {
-		trigger = {
-			original_tag = SOV
-			has_completed_focus = SOV_request_imperial_protection
-			is_subject_of = JAP
-		}
-		localization_key = SOV_THE_LONELY_ISLAND_NAME_INDEPENDENCE
-	}
-}
-
-defined_text = {
-	name = GetLonelyIslandDesc
-	text = {
-		trigger = {
-			original_tag = SOV
-			OR = {
-				NOT = { has_completed_focus = SOV_request_imperial_protection }
-				NOT = { is_subject_of = JAP }
-			}
-		}
-		localization_key = SOV_THE_LONELY_ISLAND_DESC_NORMAL
-	}
-	text = {
-		trigger = {
-			original_tag = SOV
-			has_completed_focus = SOV_request_imperial_protection
-			is_subject_of = JAP
-		}
-		localization_key = SOV_THE_LONELY_ISLAND_DESC_INDEPENDENCE
-	}
-}
 
 defined_text = {
 	name = GetArticle124Desc

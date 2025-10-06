@@ -445,7 +445,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.1
-				n_socialism_drift = 0.1
+				fascism_drift = 0.1
 				neutrality_drift = 0.1
 				stability_weekly = -0.007
 			}
@@ -568,7 +568,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.3
-				n_socialism_drift = 0.15
+				fascism_drift = 0.15
 				stability_weekly = 0.003
 			}
 		}
@@ -1863,7 +1863,7 @@ ideas = {
 			
 			modifier = {
 				democratic_drift = 0.1
-				n_socialism_drift = 0.05
+				fascism_drift = 0.05
 				conscription = 0.03
 				political_power_factor = 0.05
 			}

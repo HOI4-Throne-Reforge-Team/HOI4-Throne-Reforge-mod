@@ -70,6 +70,7 @@ ideologies = {
 	anarchism = {
 		types = {
 			anarchism_subtype = {} #generic
+			anarchist_communism = {}
 		}
 		color = { 234 81 83 }
 

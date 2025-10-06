@@ -2206,7 +2206,7 @@ REBORN_path_to_freedom_category = {
 					    popularity = 0.35
 					}
 					add_popularity = {
-					    ideology = n_socialism
+					    ideology = fascism
 					    popularity = 0.15
 					}
 					complete_national_focus = GEN_political_direction
@@ -2347,7 +2347,7 @@ form_transcaucasus_category = {
 					    popularity = 0.15
 					}
 					add_popularity = {
-					    ideology = n_socialism
+					    ideology = fascism
 					    popularity = 0.05
 					}
 				}
@@ -2436,7 +2436,7 @@ form_transcaucasus_category = {
 					    popularity = 0.15
 					}
 					add_popularity = {
-					    ideology = n_socialism
+					    ideology = fascism
 					    popularity = 0.05
 					}
 				}
@@ -2525,7 +2525,7 @@ form_transcaucasus_category = {
 					    popularity = 0.15
 					}
 					add_popularity = {
-					    ideology = n_socialism
+					    ideology = fascism
 					    popularity = 0.05
 					}
 				}
@@ -2599,7 +2599,7 @@ form_transcaucasus_category = {
 				GEO = {
 					OR = {
 						democratic > 0.50
-						n_socialism > 0.50
+						fascism > 0.50
 						is_democratic_type = yes
 					}
 				}
@@ -2697,7 +2697,7 @@ form_transcaucasus_category = {
 				ARM = {
 					OR = {
 						democratic > 0.50
-						n_socialism > 0.50
+						fascism > 0.50
 						is_democratic_type = yes
 					}
 				}
@@ -2791,7 +2791,7 @@ form_transcaucasus_category = {
 				AZR = {
 					OR = {
 						democratic > 0.50
-						n_socialism > 0.50
+						fascism > 0.50
 						is_democratic_type = yes
 					}
 				}
@@ -3367,7 +3367,7 @@ REBORN_communist_uprisings_category = {
 							popularity = 0.35
 						}
 						add_popularity = {
-							ideology = n_socialism
+							ideology = fascism
 							popularity = 0.15
 						}
 						complete_national_focus = GEN_political_direction
@@ -3480,7 +3480,7 @@ REBORN_communist_uprisings_category = {
 							popularity = 0.35
 						}
 						add_popularity = {
-							ideology = n_socialism
+							ideology = fascism
 							popularity = 0.15
 						}
 						complete_national_focus = GEN_political_direction
@@ -3593,7 +3593,7 @@ REBORN_communist_uprisings_category = {
 							popularity = 0.35
 						}
 						add_popularity = {
-							ideology = n_socialism
+							ideology = fascism
 							popularity = 0.15
 						}
 						complete_national_focus = GEN_political_direction
