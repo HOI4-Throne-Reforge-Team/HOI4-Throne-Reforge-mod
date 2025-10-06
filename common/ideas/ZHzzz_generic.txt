@@ -179,7 +179,7 @@ ideas = {
 			}
 		}
 
-		internationalism = {
+		internationalism_ENG = {
 			
 			allowed = {
 				always = no
