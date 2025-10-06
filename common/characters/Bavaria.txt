@@ -4,7 +4,7 @@ characters = {
 		name = BAY_Rupprecht_I
 		portraits = {
 			civilian = {
-				large = Rupprecht_I
+				large = GFX_Rupprecht_I
 				small = BAY_Rupprecht_I_small
 			}
 		}
@@ -41,7 +41,7 @@ characters = {
 		name = BAY_Rupprecht_I
 		portraits = {
 			civilian = {
-				large = Rupprecht_I
+				large = GFX_Rupprecht_I
 			}
 		}
 		country_leader = {
@@ -58,7 +58,7 @@ characters = {
 		name = BAY_Rupprecht_I
 		portraits = {
 			civilian = {
-				large = Rupprecht_I
+				large = GFX_Rupprecht_I
 			}
 		}
 		country_leader = {
@@ -75,7 +75,7 @@ characters = {
 		name = BAY_Rupprecht_I
 		portraits = {
 			civilian = {
-				large = Rupprecht_I
+				large = GFX_Rupprecht_I
 			}
 		}
 		country_leader = {
@@ -93,7 +93,7 @@ characters = {
 		name = BAY_Rupprecht_I
 		portraits = {
 			civilian = {
-				large = Rupprecht_I
+				large = GFX_Rupprecht_I
 			}
 		}
 		country_leader = {
@@ -110,7 +110,7 @@ characters = {
 		name = BAY_Eugen_Levine
 		portraits = {
 			civilian = {
-				large = BAY_Eugen_Levine
+				large = GFX_BAY_Eugen_Levine
 			}
 		}
 		country_leader = {
@@ -222,8 +222,7 @@ characters = {
 				small = BAY_Tovia_Axelrod
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -246,8 +245,7 @@ characters = {
 				small = BAY_Erich_Muhsam
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -270,8 +268,7 @@ characters = {
 				small = BAY_Therese_Grondl
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -294,8 +291,7 @@ characters = {
 				small = BAY_Arnold_Wadler
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -317,8 +313,7 @@ characters = {
 				small = BAY_Josef_Sontheimer
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -341,8 +336,7 @@ characters = {
 				small = BAY_Hans_Junk_small
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -374,8 +368,7 @@ characters = {
 				small = BAY_Rudolf_Steinauer_small
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -473,6 +466,7 @@ characters = {
 			}
 		}
 		advisor={
+			cost = 100
 			slot = high_command
 			idea_token = albert_kesselrin
 			allowed = {
@@ -482,7 +476,7 @@ characters = {
 				air_close_air_support_3
 			}
 		}
-			cost = 100
+
 		corps_commander = {
 			traits = { inflexible_strategist trait_cautious }
 			skill = 4

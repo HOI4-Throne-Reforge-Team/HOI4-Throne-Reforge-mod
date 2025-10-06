@@ -59,8 +59,7 @@ characters = {
 				small = BAY_Tovia_Axelrod
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
+			
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -83,8 +82,6 @@ characters = {
 				small = BAY_Erich_Muhsam
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -107,8 +104,6 @@ characters = {
 				small = BAY_Therese_Grondl
 			}
 		}		
-			expire = "1965.11.15"
-			id = -1
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -130,9 +125,7 @@ characters = {
 			civilian = {
 				small = BAY_Arnold_Wadler
 			}
-		}		
-			expire = "1965.11.15"
-			id = -1
+		}
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -153,9 +146,7 @@ characters = {
 			civilian = {
 				small = BAY_Josef_Sontheimer
 			}
-		}		
-			expire = "1965.11.15"
-			id = -1
+		}
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -177,9 +168,7 @@ characters = {
 				large = BAY_Hans_Junk
 				small = BAY_Hans_Junk_small
 			}
-		}		
-			expire = "1965.11.15"
-			id = -1
+		}
 			advisor={
 				cost=150
 				slot = political_advisor 
@@ -210,9 +199,7 @@ characters = {
 				large = BAY_Rudolf_Steinauer
 				small = BAY_Rudolf_Steinauer_small
 			}
-		}		
-			expire = "1965.11.15"
-			id = -1
+		}
 			advisor={
 				cost=150
 				slot = political_advisor 

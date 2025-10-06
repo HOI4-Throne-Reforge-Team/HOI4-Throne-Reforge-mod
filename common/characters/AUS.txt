@@ -4,7 +4,7 @@ characters={
 		name = AUS_karl_I
 		portraits = {
 			civilian = {
-				large = Karl_I
+				large = GFX_Karl_I
 			}
 		}
 		country_leader = {
@@ -21,7 +21,7 @@ characters={
 		name = AUS_karl_I_2
 		portraits = {
 			civilian = {
-				large = Karl_I
+				large = GFX_Karl_I
 			}
 		}
 		country_leader = {
@@ -38,7 +38,7 @@ characters={
 		name = AUS_karl_I_3
 		portraits = {
 			civilian = {
-				large = Karl_I
+				large = GFX_Karl_I
 			}
 		}
 		country_leader = {
@@ -55,7 +55,7 @@ characters={
 		name = AUS_karl_I_4
 		portraits = {
 			civilian = {
-				large = Karl_I
+				large = GFX_Karl_I
 			}
 		}
 		country_leader = {
@@ -72,7 +72,7 @@ characters={
 		name = AUS_karl_I_5
 		portraits = {
 			civilian = {
-				large = Karl_I
+				large = GFX_Karl_I
 			}
 		}
 		country_leader = {
@@ -89,7 +89,7 @@ characters={
 		name = AUS_adolf_hitler
 		portraits = {
 			civilian = {
-				large = Adolf_hitler
+				large = GFX_Adolf_hitler
 			}
 		}
 		country_leader = {
