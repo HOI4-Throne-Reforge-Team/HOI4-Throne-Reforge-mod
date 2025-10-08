@@ -327,6 +327,9 @@ country_event = {  #在那之后
 	option = {
 		name = The_Stavisky_Trial.6.b
 		set_country_flag = Blum
+	}option = {
+		name = The_Stavisky_Trial.6.c
+		set_country_flag = Louis
 	}
 }
 

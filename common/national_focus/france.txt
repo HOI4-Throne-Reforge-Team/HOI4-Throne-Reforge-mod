@@ -326,7 +326,7 @@ focus_tree = {
 		x = 10
 		y = 1
 		bypass = {
-			tag = FRA
+			has_idea = FRA_scandal_1
 		}
 		completion_reward = {}
 	}
@@ -536,7 +536,13 @@ focus_tree = {
 			focus = FRA_Do_a_big_vote
 		}
 		completion_reward = { 
-			remove_ideas = FRA_scandal_2
+			if = {
+				limit = { has_idea = FRA_scandal_2 }
+				remove_ideas = FRA_scandal_2
+			}
+			else = {
+				remove_ideas = FRA_scandal_1
+			}
 			country_event = {id =The_Stavisky_Trial.6 days=1}
 		}
 			
@@ -1860,10 +1866,10 @@ focus_tree = {
 			has_country_flag = Chautemps
 		}
 		prerequisite = {
-			focus = FRA_Election_of_Premier
 		}
 		completion_reward = { 
-			
+			add_ideas = FRA_Cabinet_is_liars
+			add_political_power = 100
 		}
 		
 	}
@@ -1877,7 +1883,7 @@ focus_tree = {
 			focus = FRA_Chautemps_win
 		}
 		completion_reward = { 
-			
+			add_political_power = 50
 		}
 		
 	}
@@ -1892,7 +1898,7 @@ focus_tree = {
 			focus = FRA_No_indulgences
 		}
 		completion_reward = { 
-			
+			add_political_power = 75
 		}
 		
 	}
@@ -1922,7 +1928,49 @@ focus_tree = {
 			focus = FRA_Supporting_local_farmers
 		}
 		completion_reward = { 
-			
+			if = {
+				limit = { has_idea = FRA_E_B_1 }
+					remove_ideas = FRA_E_B_1
+			}
+			else_if = {
+				limit = { has_idea = FRA_E_B_2 }
+				swap_ideas = {
+					remove_idea = FRA_E_B_2
+					add_idea = FRA_E_B_1
+				}
+			}
+			else_if = {
+				limit = { has_idea = FRA_E_B_3 }
+				swap_ideas = {
+					remove_idea = FRA_E_B_3
+					add_idea = FRA_E_B_2
+				}
+			}else_if = {
+				limit = { has_idea = FRA_E_B_4 }
+				swap_ideas = {
+					remove_idea = FRA_E_B_4
+					add_idea = FRA_E_B_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = FRA_E_B_5 }
+				swap_ideas = {
+					remove_idea = FRA_E_B_5
+					add_idea = FRA_E_B_4
+				}
+			}else_if = {
+				limit = { has_idea = FRA_E_B_6 }
+				swap_ideas = {
+					remove_idea = FRA_E_B_6
+					add_idea = FRA_E_B_5
+				}
+			}else_if = {
+				limit = { has_idea = FRA_E_B_7 }
+				swap_ideas = {
+					remove_idea = FRA_E_B_7
+					add_idea = FRA_E_B_6
+				}
+			}
 		}
 		
 	}
@@ -1936,7 +1984,7 @@ focus_tree = {
 			focus = FRA_No_indulgences
 		}
 		completion_reward = { 
-			
+			add_political_power = 75
 		}
 		
 	}
@@ -2160,7 +2208,6 @@ focus_tree = {
 			has_country_flag = Blum
 		}
 		prerequisite = {
-			focus = FRA_Election_of_Premier
 		}
 		completion_reward = { 
 			
@@ -2413,6 +2460,294 @@ focus_tree = {
 		}
 		
 	}
+
+	focus = {#路易·马林内阁
+		id = FRA_Louis_Marin_win
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 34
+		y = 8
+		available = {
+			has_country_flag = Louis
+		}
+		prerequisite = {
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #在暴风雨中航行
+		id = FRA_Sailing_in_storm
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 34
+		y = 9
+		prerequisite = {
+			focus = FRA_Louis_Marin_win
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #法兰西经济优先
+		id = FRA_Economic_priority
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 30
+		y = 10
+		prerequisite = {
+			focus = FRA_Sailing_in_storm
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #推动工业卡特尔联盟
+		id = FRA_cartel
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 28
+		y = 11
+		prerequisite = {
+			focus = FRA_Economic_priority
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #差别化关税
+		id = FRA_Differentiated_tariffs
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 32
+		y = 11
+		prerequisite = {
+			focus = FRA_Economic_priority
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #技术共享
+		id = FRA_Technology_Sharing
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 27
+		y = 12
+		prerequisite = {
+			focus = FRA_cartel
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #从银行到工厂
+		id = FRA_bank_to_factory
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 29
+		y = 12
+		prerequisite = {
+			focus = FRA_cartel
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #产业补贴
+		id = FRA_Industrial_subsidies
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 31
+		y = 12
+		prerequisite = {
+			focus = FRA_Differentiated_tariffs
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #税收减免
+		id = FRA_Tax_reduction_or_exemption
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 33
+		y = 12
+		prerequisite = {
+			focus = FRA_Differentiated_tariffs
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #重新充满活力的市场
+		id = FRA_Revitalized_market
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 30
+		y = 13
+		prerequisite = {
+			focus = FRA_Technology_Sharing
+		}
+		prerequisite = {
+			focus = FRA_bank_to_factory
+		}
+		prerequisite = {
+			focus = FRA_Industrial_subsidies
+		}
+		prerequisite = {
+			focus = FRA_Tax_reduction_or_exemption
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #重建政府公信力
+		id = FRA_government_credibility
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 38
+		y = 10
+		prerequisite = {
+			focus = FRA_Sailing_in_storm
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #限制新闻自由
+		id = FRA_Restrict_press_freedom
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 37
+		y = 11
+		prerequisite = {
+			focus = FRA_government_credibility
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #动用秘密警察
+		id = FRA_Use_secret_police
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 39
+		y = 11
+		prerequisite = {
+			focus = FRA_government_credibility
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #政府为银行做出担保
+		id = FRA_Guarantee_Bank
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 36
+		y = 12
+		prerequisite = {
+			focus = FRA_Restrict_press_freedom
+		}
+		completion_reward = { 
+			
+		}
+		
+	}
+	focus = {  #分化左翼联盟
+		id = FRA_Differentiated_Leftist
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 38
+		y = 12
+		prerequisite = {
+			focus = FRA_Restrict_press_freedom
+		}
+		prerequisite = {
+			focus = FRA_Use_secret_police
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {  #扩大《恶棍法》
+		id = FRA_Villain_Law
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 40
+		y = 12
+		prerequisite = {
+			focus = FRA_Use_secret_police
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {  #废除《结社法》
+		id = FRA_Abolish_Association_Law
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 37
+		y = 13
+		prerequisite = {
+			focus = FRA_Differentiated_Leftist
+		}
+		prerequisite = {
+			focus = FRA_Guarantee_Bank
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {  #忠实的工会才是好工会
+		id = FRA_loyal_union_good_union
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 39
+		y = 13
+		prerequisite = {
+			focus = FRA_Differentiated_Leftist
+		}
+		prerequisite = {
+			focus = FRA_Villain_Law
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {  #唯一的水手
+		id = FRA_The_Only_Sailor
+		icon = GFX_focus_FRA_Great_Judgment
+		cost = 3
+		x = 34
+		y = 14
+		prerequisite = {
+			focus = FRA_Revitalized_market
+		}
+		prerequisite = {
+			focus = FRA_loyal_union_good_union
+			focus = FRA_Abolish_Association_Law
+		}
+		completion_reward = { 
+			
+		}
+	}
+
+
 }
 
 
