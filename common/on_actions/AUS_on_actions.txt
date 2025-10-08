@@ -26,4 +26,19 @@ on_actions = {
 			}
 		}
 	}
+	on_war = {
+		effect = {
+			if = {
+				limit = { 
+					AUS = {
+						has_war = yes
+						has_idea = AUS_backward_army
+					}
+				}
+				AUS = {
+					country_event = { id = AUS.14514 }
+				}
+			}
+		}
+	}
 }

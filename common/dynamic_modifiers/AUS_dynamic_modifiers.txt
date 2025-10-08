@@ -1,0 +1,10 @@
+AUS_war_shit = {
+	enable = { always = yes }
+	enemy_army_speed_factor = -0.5
+	enemy_local_supplies = -0.3
+	enemy_attrition = 0.35
+	enemy_truck_attrition_factor = 0.2
+	max_dig_in = 30
+	max_dig_in_factor = 0.3
+	terrain_penalty_reduction = -0.7
+}

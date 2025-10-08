@@ -4,18 +4,25 @@ add_namespace = event_AUS
 add_namespace = AUS
 
 
-country_event = {  #
-	id = focus_AUS.14514
-	title = focus_AUS.14514.t
-	desc = focus_AUS.14514.d
+country_event = {  #eat shit  :D
+	id = AUS.14514
+	title = AUS.14514.t
+	desc = AUS.14514.d
 	is_triggered_only = yes
 	option = {
-		name = focus_AUS.14514.a
-		add_syndicalist_to_coalition = yes
-	}
-	option = {
-		name = focus_AUS.14514.b
-		remove_syndicalist_from_coalition = yes
+		name = AUS.14514.a
+		AUS = {
+			every_controlled_state = {
+				if = {
+					limit = { 
+						is_core_of = AUS
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = AUS_war_shit
+				}
+			}
+		}
 	}
 }
 

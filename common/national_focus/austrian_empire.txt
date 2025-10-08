@@ -803,15 +803,7 @@ focus_tree = {   #奥地利帝国国策树
 		
 		completion_reward = {
 			add_ideas = AUS_imperial_artillery_factory
-			if = {
-				limit = {
-					has_idea = AUS_backward_army
-				}
-				swap_ideas = {
-					remove_idea = AUS_backward_army
-					add_idea = AUS_backward_army_industry
-				}
-			}
+			
 			else = {
 
 			}
