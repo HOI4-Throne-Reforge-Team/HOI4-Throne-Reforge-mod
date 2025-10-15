@@ -88,8 +88,8 @@ WAP ={
 	color_ui = rgb { 0 205 102 }
 }
 HNV ={
-    color = rgb { 255 255 0 }
-	color_ui = rgb { 255 255 0 }
+    color = rgb { 210 166 56 }
+	color_ui = rgb { 208 183 118 }
 }
 OLD ={
     color =rgb{205 155 155}

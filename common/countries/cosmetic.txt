@@ -39,12 +39,12 @@ FRSPM = {
 	color_ui = rgb { 0 146 70 }
 }
 HUMDV = {
-	color = rgb { 30 30 123 }
-	color_ui = rgb { 30 30 123 }
+	color = rgb { 211 78 49 }
+	color_ui = rgb { 209 86 58 }
 }
 HUROM = {
-	color = rgb { 133 102 100 }
-	color_ui = rgb { 133 102 100 }
+	color = rgb { 190 75 48 }
+	color_ui = rgb { 209 86 58 }
 }
 FRMAD = {
 	color = rgb { 132 139 199 }

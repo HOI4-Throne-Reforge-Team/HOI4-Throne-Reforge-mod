@@ -4,7 +4,7 @@ defined_text = {
 		trigger = {
 			tag = FRA
 		}
-		localization_key = econmoic_bad_fra>
+		localization_key = econmoic_bad_france
 	}
 	text = {
 		trigger = {
@@ -17,6 +17,16 @@ defined_text = {
 		localization_key =  econmoic_bad_communism
 	}
 	text = {
+		trigger = {
+			NOT = {
+				OR = {
+					has_government = communism
+					has_government = syndicalist
+					has_government = anarchism
+					tag = FRA
+				}
+			}
+		}
 		localization_key =  econmoic_bad_common
 	}
 }

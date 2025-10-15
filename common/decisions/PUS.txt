@@ -218,7 +218,7 @@ Prussian_parliamentary_elections = {
 		visible = {
 			has_global_flag = PUS_elections_are_taking_place
 			has_completed_focus = PUS_Prepare_for_propaganda_offensive
-			has_completed_focus = PUS_PDP_elections
+			has_completed_focus = PUS_SPP_elections
 			has_global_flag = PUS_has_already_prepare_for_election
 		}
 		cost = 12
@@ -235,7 +235,7 @@ Prussian_parliamentary_elections = {
 		visible = {
 			has_global_flag = PUS_elections_are_taking_place
 			has_completed_focus = PUS_Prepare_for_propaganda_offensive
-			has_completed_focus = PUS_PDP_elections
+			has_completed_focus = PUS_PVP_elections
 			has_global_flag = PUS_has_already_prepare_for_election
 		}
 		cost = 12
