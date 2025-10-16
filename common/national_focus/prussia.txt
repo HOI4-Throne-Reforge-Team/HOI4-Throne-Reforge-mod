@@ -18,6 +18,9 @@ focus_tree = {
 		cost = 1
 		x = 7
 		y = 1
+		ai_will_do = {
+			factor = 20
+		}
 		available = {
 			always = yes
 		}
@@ -32,6 +35,9 @@ focus_tree = {
 		cost = 5
 		x = 7
 		y = 2
+		ai_will_do = {
+			factor = 30
+		}
 		prerequisite = {
 			focus = PUS_Final_term
 		}
@@ -47,6 +53,9 @@ focus_tree = {
 		cost = 5
 		x = 7
 		y = 3
+		ai_will_do = {
+			factor = 40
+		}
 		prerequisite = {
 			focus = PUS_Visit_Sweden
 		}
@@ -60,6 +69,9 @@ focus_tree = {
 		cost = 5
 		x = 7
 		y = 4
+		ai_will_do = {
+			factor = 50
+		}
 		prerequisite = {
 			focus = PUS_Urging_industrial_construction
 		}
@@ -74,6 +86,9 @@ focus_tree = {
 		cost = 5
 		x = 5
 		y = 5
+		ai_will_do = {
+			factor = 50
+		}
 		available = {
 			NOT = {
 				has_global_flag = PUS_elections_are_taking_place
@@ -95,6 +110,9 @@ focus_tree = {
 		cost = 5
 		x = 7
 		y = 5
+		ai_will_do = {
+			factor = 20
+		}
 		available = {
 			NOT = {
 				has_global_flag = PUS_elections_are_taking_place
@@ -144,6 +162,9 @@ focus_tree = {
 		cost = 5
 		x = 9
 		y = 5
+		ai_will_do = {
+			factor = 30
+		}
 		available = {
 			NOT = {
 				has_global_flag = PUS_elections_are_taking_place
@@ -651,6 +672,9 @@ focus_tree = {
 		cost = 5
 		x = 25
 		y = 1
+		available = {
+			has_completed_focus = PUS_Review_domestic_political_situation
+		}
 		completion_reward = { 
 		}
 	}
@@ -781,6 +805,9 @@ focus_tree = {
 		relative_position_id = PUS_Expanding_industrial_areas
 		x = 5
 		y = 0
+		available = {
+			has_completed_focus = PUS_Review_domestic_political_situation
+		}
 		completion_reward = { 
 		}
 	}
@@ -1069,6 +1096,9 @@ focus_tree = {
 		relative_position_id = PUS_Expanding_industrial_areas
 		x = -5
 		y = 0
+		available = {
+			has_completed_focus = PUS_Review_domestic_political_situation
+		}
 		completion_reward = { 
 		}
 	}
@@ -1243,6 +1273,9 @@ focus_tree = {
 		relative_position_id = PUS_Expanding_industrial_areas
 		x = -10
 		y = 2
+		available = {
+			has_completed_focus = PUS_Review_domestic_political_situation
+		}
 		completion_reward = { 
 		}
 	}

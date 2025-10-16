@@ -143,6 +143,19 @@ country_event = {
 		trigger = {
 			tag = PUS
 		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_AI_SPP = 1
+					}
+				}
+				add = 40
+			}
+			}
+		}
 		add_political_power = 150
 		PUS = {
 			complete_national_focus = PUS_1936_Election
@@ -154,6 +167,19 @@ country_event = {
 		trigger = {
 			tag = PUS
 		}
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_AI_PDP = 1
+					}
+				}
+				add = 70
+			}
+			}
+		}
 		PUS = {
 			complete_national_focus = PUS_1936_Election
 			complete_national_focus = PUS_PDP_elections
@@ -163,6 +189,19 @@ country_event = {
 		name = PUS.0.c
 		trigger = {
 			tag = PUS
+		}
+		ai_will_do = {
+			factor = 30
+			modifier = {
+				IF = {
+				limit = {
+					check_variable = {
+						global.PUS_Election_AI_PVP = 1
+					}
+				}
+				add = 60
+			}
+			}
 		}
 		PUS = {
 			complete_national_focus = PUS_1936_Election

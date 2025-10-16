@@ -295,6 +295,9 @@ on_actions = {
 		
 	}
 	on_startup = {
+		trigger = {
+			date < 1937.1.1
+		}
 		#议会选举三党AI初始随机数
 		effect = {
 			set_variable_to_random = {

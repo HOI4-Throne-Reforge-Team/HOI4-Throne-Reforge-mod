@@ -1367,7 +1367,7 @@ PUS_Economy_Broken = {
 			add_war_support = -0.05
 			add_political_power = -10
 			country_event = { id = focus_PUS.3 days = 1 }
-			if = {
+			IF = {
 				limit = {
 					PUS = {
 						has_idea = {
