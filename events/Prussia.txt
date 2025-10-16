@@ -463,3 +463,37 @@ news_event = {
 		}
 	}
 }
+
+country_event = {
+	id = focus_PUS.2
+	title = focus_PUS.2.t
+	desc = focus_PUS.2.d
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS.2.a
+		add_political_power = -50
+		complete_national_focus = PUS_Sudden_economic_crisis
+		add_ideas = FRA_E_B_4
+	}
+}
+
+country_event = {
+	id = focus_PUS.3
+	title = focus_PUS.3.t
+	desc = focus_PUS.3.d
+	is_triggered_only = yes
+	fire_only_once = no
+	trigger = {
+		tag = PUS
+	}
+	option = {
+		name = focus_PUS.a
+		custom_effect_tooltip = {
+			Description_of_economic_deterioration
+		}
+	}
+}

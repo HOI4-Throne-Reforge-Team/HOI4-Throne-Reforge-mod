@@ -1353,3 +1353,97 @@ Prussian_parliamentary_elections = {
 		}
 	}
 }
+
+PUS_Economy_Broken = {
+	Economic_deterioration = {
+		activation = {
+			has_country_flag = PUS_Economy_Broken
+		}
+		days_mission_timeout = 60
+		is_good = no
+		days_re_enable = 0
+		timeout_effect = {
+			add_stability = -0.03
+			add_war_support = -0.05
+			add_political_power = -10
+			country_event = { id = focus_PUS.3 days = 1 }
+			if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_1
+						}
+					}
+				}
+				remove_idea = FRA_E_B_1
+				add_idea = FRA_E_B_2
+			}
+			else_if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_2
+						}
+					}
+				}
+				remove_idea = FRA_E_B_2
+				add_idea = FRA_E_B_3
+			}
+			else_if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_3
+						}
+					}
+				}
+				remove_idea = FRA_E_B_3
+				add_idea = FRA_E_B_4
+			}
+			else_if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_4
+						}
+					}
+				}
+				remove_idea = FRA_E_B_4
+				add_idea = FRA_E_B_5
+			}
+			else_if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_5
+						}
+					}
+				}
+				remove_idea = FRA_E_B_5
+				add_idea = FRA_E_B_6
+			}
+			else_if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_6
+						}
+					}
+				}
+				remove_idea = FRA_E_B_6
+				add_idea = FRA_E_B_7
+			}
+			else_if = {
+				limit = {
+					PUS = {
+						has_idea = {
+							FRA_E_B_7
+						}
+					}
+				}
+				add_stability = -0.07
+				add_war_support = -0.05
+			}
+		}
+	}
+}

@@ -342,16 +342,10 @@ news_event = {  #黑色圣诞节
 		name = FRA.1.a
 		if = {
 			limit = {
-				OR = {
 				tag = PUS
-				tag = ENG
-				tag = RUS
-				tag = AUS
-				tag = USA
-				tag = CHI
-				}
 			}
-			add_ideas = FRA_E_B_4
+			add_political_power = -10
+			country_event = { id = focus_PUS.2 days = 5 }
 		}
 		else_if = {
 			limit = { 

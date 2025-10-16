@@ -9,3 +9,15 @@ Prussian_parliamentary_elections = {
 		has_completed_focus = PUS_Review_domestic_political_situation
 	}
 }
+
+PUS_Economy_Broken = {
+	icon = x
+	visible = {
+		tag = PUS
+		has_completed_focus = PUS_Sudden_economic_crisis
+	}
+	visible_when_empty = no
+	available = {
+		has_completed_focus = PUS_Sudden_economic_crisis
+	}
+}

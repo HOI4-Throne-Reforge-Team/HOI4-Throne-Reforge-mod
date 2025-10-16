@@ -461,7 +461,13 @@ focus_tree = {
 		#		has_idea = FRA_E_B_7
 		#	}
 		#}
-		completion_reward = { }
+		available = {
+			always = no
+		}
+		completion_reward = { 
+			unlock_decision_category_tooltip = PUS_Economy_Broken
+			set_country_flag = PUS_Economy_Broken
+		 }
 	}
 	focus = {   #成立紧急金融委员会
 		id = PUS_Emergency_financial_committee_established
