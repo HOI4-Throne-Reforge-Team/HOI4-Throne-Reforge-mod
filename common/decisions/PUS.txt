@@ -994,7 +994,9 @@ Prussian_parliamentary_elections = {
 			}
 		}
 		available = {
-			always = no
+			NOT = {
+				has_global_flag = PUS_elections_are_taking_place
+			}
 		}
 		cancel_if_not_visible = yes
 		days_mission_timeout = 15
@@ -1117,7 +1119,9 @@ Prussian_parliamentary_elections = {
 			}
 		}
 		available = {
-			always = no
+			NOT = {
+				has_global_flag = PUS_elections_are_taking_place
+			}
 		}
 		cancel_if_not_visible = yes
 		days_mission_timeout = 15
@@ -1243,7 +1247,9 @@ Prussian_parliamentary_elections = {
 			}
 		}
 		available = {
-			always = no
+			NOT = {
+				has_global_flag = PUS_elections_are_taking_place
+			}
 		}
 		cancel_if_not_visible = yes
 		days_mission_timeout = 15
@@ -1359,6 +1365,10 @@ PUS_Economy_Broken = {
 		activation = {
 			has_country_flag = PUS_Economy_Broken
 		}
+		visible = {
+			has_country_flag = PUS_Economy_Broken
+		}
+		cancel_if_not_visible = yes
 		days_mission_timeout = 60
 		is_good = no
 		days_re_enable = 0
@@ -1443,6 +1453,9 @@ PUS_Economy_Broken = {
 				}
 				add_stability = -0.07
 				add_war_support = -0.05
+			}
+			else = {
+
 			}
 		}
 	}

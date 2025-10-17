@@ -338,6 +338,8 @@ news_event = {  #黑色圣诞节
 	title = FRA.1.t
 	desc = FRA.1.d
 	is_triggered_only = yes
+	fire_only_once = no
+	major = yes
 	option = {
 		name = FRA.1.a
 		if = {
@@ -352,6 +354,9 @@ news_event = {  #黑色圣诞节
 				tag = FRA
 			}
 			add_ideas = FRA_E_B_5
+		}
+		else = {
+			add_political_power = -10
 		}
 	}
 }

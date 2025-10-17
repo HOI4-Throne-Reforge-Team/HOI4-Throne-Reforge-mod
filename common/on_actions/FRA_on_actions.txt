@@ -13,30 +13,21 @@ on_actions = {
 		}
 	}
 	on_startup = {
-		effect = {
-			FRA = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-			PUS = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-			ENG = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-			RUS = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-			AUS = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-			USA = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-			CHI = {
-				news_event = { id = FRA.1 days = 357 }
-			}
-		}
+    effect = {
+        every_country = {
+            limit = {
+                OR = {
+                    tag = FRA
+                    tag = PUS
+                    tag = ENG
+                    tag = RUS
+                    tag = AUS
+                    tag = USA
+                    tag = CHI
+                }
+            }
+            news_event = { id = FRA.1 days = 357 }
+        }
+    }
 	}
-	
-
 }
