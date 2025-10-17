@@ -469,7 +469,7 @@ focus_tree = {
 		id = PUS_Sudden_economic_crisis
 		icon = GFX_PUS_Sudden_economic_crisis
 		cost = 5
-		x = 35
+		x = 42
 		y = 1
 		#allow_branch = {
 		#	OR = {
@@ -670,7 +670,7 @@ focus_tree = {
 		id = PUS_Expanding_industrial_areas
 		icon = GFX_PUS_Expanding_industrial_areas
 		cost = 5
-		x = 25
+		x = 30
 		y = 1
 		available = {
 			has_completed_focus = PUS_Review_domestic_political_situation
@@ -803,7 +803,7 @@ focus_tree = {
 		icon = GFX_PUS_Army
 		cost = 5
 		relative_position_id = PUS_Expanding_industrial_areas
-		x = 5
+		x = 7
 		y = 0
 		available = {
 			has_completed_focus = PUS_Review_domestic_political_situation
@@ -1094,7 +1094,7 @@ focus_tree = {
 		icon = GFX_PUS_Rebuilding_prussian_navy
 		cost = 5
 		relative_position_id = PUS_Expanding_industrial_areas
-		x = -5
+		x = -7
 		y = 0
 		available = {
 			has_completed_focus = PUS_Review_domestic_political_situation
@@ -1271,7 +1271,7 @@ focus_tree = {
 		icon = GFX_PUS_Air_force_construction
 		cost = 5
 		relative_position_id = PUS_Expanding_industrial_areas
-		x = -10
+		x = -13
 		y = 2
 		available = {
 			has_completed_focus = PUS_Review_domestic_political_situation
@@ -1456,6 +1456,480 @@ focus_tree = {
 		x = 0
 		y = 6
 		completion_reward = { 
+		}
+	}
+	#################选举后国策#####################
+	focus = {  #再度上任
+		id = PUS_Return_to_office
+		icon = GFX_PUS_Return_to_office
+		cost = 5
+		relative_position_id = PUS_The_moment_of_reveal
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = PUS_The_moment_of_reveal
+		}
+		completion_reward = { 
+			clr_country_flag = Election_Winmer_SPP
+		}
+	}
+
+	focus = {  #蹒跚独行
+		id = PUS_Walking_unsteadily_alone
+		icon = GFX_PUS_Walking_unsteadily_alone
+		cost = 5
+		relative_position_id = PUS_Return_to_office
+		x = -5
+		y = 1
+		prerequisite = {
+			focus = PUS_Return_to_office
+		}
+		mutually_exclusive = {
+			focus = PUS_Hold_the_reins_of_power
+			focus = PUS_Coalition_government
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #有限妥协
+		id = PUS_Limited_compromise
+		icon = GFX_PUS_Limited_compromise
+		cost = 5
+		relative_position_id = PUS_Walking_unsteadily_alone
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Walking_unsteadily_alone
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #独掌大权
+		id = PUS_Hold_the_reins_of_power
+		icon = GFX_PUS_Hold_the_reins_of_power
+		cost = 5
+		relative_position_id = PUS_Return_to_office
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Return_to_office
+		}
+		mutually_exclusive = {
+			focus = PUS_Walking_unsteadily_alone
+			focus = PUS_Coalition_government
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #社保改革
+		id = PUS_Social_Security_Reform
+		icon = GFX_PUS_Social_Security_Reform
+		cost = 5
+		relative_position_id = PUS_Hold_the_reins_of_power
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = PUS_Hold_the_reins_of_power
+			focus = PUS_Walking_unsteadily_alone
+			focus = PUS_Coalition_government
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #女性生育保障
+		id = PUS_Womens_reproductive_protection
+		icon = GFX_PUS_Womens_reproductive_protection
+		cost = 5
+		relative_position_id = PUS_Social_Security_Reform
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = PUS_Social_Security_Reform
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #提高失业补助
+		id = PUS_Increase_unemployment_benefits
+		icon = GFX_PUS_Increase_unemployment_benefits
+		cost = 5
+		relative_position_id = PUS_Womens_reproductive_protection
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Womens_reproductive_protection
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #复立国家医保
+		id = PUS_Reestablish_national_medical_insurance
+		icon = GFX_PUS_Womens_reproductive_protection
+		cost = 5
+		relative_position_id = PUS_Social_Security_Reform
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = PUS_Social_Security_Reform
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #发展公共交通
+		id = PUS_Develop_public_transportation
+		icon = GFX_PUS_Develop_public_transportation
+		cost = 5
+		relative_position_id = PUS_Reestablish_national_medical_insurance
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Reestablish_national_medical_insurance
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #向福利社会迈进
+		id = PUS_Moving_towards_welfare_society
+		icon = GFX_PUS_Moving_towards_welfare_society
+		cost = 5
+		relative_position_id = PUS_Develop_public_transportation
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = PUS_Develop_public_transportation
+		}
+		prerequisite = {
+			focus = PUS_Increase_unemployment_benefits
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #清扫余孽
+		id = PUS_Eliminate_the_remnants
+		icon = GFX_PUS_Eliminate_the_remnants
+		cost = 5
+		relative_position_id = PUS_Hold_the_reins_of_power
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = PUS_Hold_the_reins_of_power
+			focus = PUS_Walking_unsteadily_alone
+			focus = PUS_Coalition_government
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #集中内务部权力
+		id = PUS_Consolidate_power_of_Ministry_of_Internal_Affairs
+		icon = GFX_PUS_Consolidate_power_of_Ministry_of_Internal_Affairs
+		cost = 5
+		relative_position_id = PUS_Eliminate_the_remnants
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Eliminate_the_remnants
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #成立公共秩序监察局
+		id = PUS_Establish_the_Public_Order_Monitoring_Bureau
+		icon = GFX_PUS_Establish_the_Public_Order_Monitoring_Bureau
+		cost = 5
+		relative_position_id = PUS_Consolidate_power_of_Ministry_of_Internal_Affairs
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Consolidate_power_of_Ministry_of_Internal_Affairs
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #查禁极端份子
+		id = PUS_Crack_down_on_extremists
+		icon = GFX_PUS_Crack_down_on_extremists
+		cost = 5
+		relative_position_id = PUS_Establish_the_Public_Order_Monitoring_Bureau
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Establish_the_Public_Order_Monitoring_Bureau
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #查禁极端份子
+		id = PUS_Political_stability
+		icon = GFX_PUS_Political_stability
+		cost = 5
+		relative_position_id = PUS_Crack_down_on_extremists
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = PUS_Crack_down_on_extremists
+		}
+		prerequisite = {
+			focus = PUS_Moving_towards_welfare_society
+		}
+		prerequisite = {
+			focus = PUS_Moving_towards_welfare_society
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #联合执政
+		id = PUS_Coalition_government
+		icon = GFX_PUS_Coalition_government
+		cost = 5
+		relative_position_id = PUS_Return_to_office
+		x = 5
+		y = 1
+		prerequisite = {
+			focus = PUS_Return_to_office
+		}
+		mutually_exclusive = {
+			focus = PUS_Hold_the_reins_of_power
+			focus = PUS_Walking_unsteadily_alone
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #外党内阁
+		id = PUS_External_Cabinet
+		icon = GFX_PUS_External_Cabinet
+		cost = 5
+		relative_position_id = PUS_Coalition_government
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_Coalition_government
+		}
+		completion_reward = { 
+		}
+	}
+
+	focus = {  #全面合作
+		id = PUS_Comprehensive_Cooperation
+		icon = GFX_PUS_Comprehensive_Cooperation
+		cost = 5
+		relative_position_id = PUS_External_Cabinet
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = PUS_External_Cabinet
+		}
+		completion_reward = { 
+		}
+	}
+
+	#################统一德意志#####################
+	focus = {#未竟之事
+		id = PUS_Unfinished_business
+		icon = GFX_PUS_Unfinished_business
+		cost = 5
+		x = 23
+		y = 12
+		completion_reward = {
+		}
+	}
+	focus = {#温和策略
+		id = PUS_Moderate_strategy
+		icon = GFX_PUS_Unfinished_business
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PUS_Unfinished_business
+		mutually_exclusive = {
+			focus = PUS_Water_with_blood
+		}
+		prerequisite = {
+			focus = PUS_Unfinished_business
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#影响梅克伦堡
+		id = PUS_Impact_Mecklenburg
+		icon = GFX_PUS_Impact_Mecklenburg
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PUS_Moderate_strategy
+		prerequisite = {
+			focus = PUS_Moderate_strategy
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#影响汉诺威
+		id = PUS_Impact_Hanover
+		icon = GFX_PUS_Impact_Hanover
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PUS_Impact_Mecklenburg
+		prerequisite = {
+			focus = PUS_Impact_Mecklenburg
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#影响魏玛
+		id = PUS_Impact_Weimar
+		icon = GFX_PUS_Impact_Mecklenburg
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PUS_Moderate_strategy
+		prerequisite = {
+			focus = PUS_Moderate_strategy
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#影响萨克森
+		id = PUS_Impact_Saxony
+		icon = GFX_PUS_Impact_Saxony
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PUS_Impact_Weimar
+		prerequisite = {
+			focus = PUS_Impact_Weimar
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#与丹麦的谈判
+		id = PUS_Negotiations_with_Denmark
+		icon = GFX_PUS_Negotiations_with_Denmark
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PUS_Impact_Saxony
+		prerequisite = {
+			focus = PUS_Impact_Saxony
+		}
+		prerequisite = {
+			focus = PUS_Impact_Hanover
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {#以血浇灌
+		id = PUS_Water_with_blood
+		icon = GFX_PUS_Water_with_blood
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = PUS_Unfinished_business
+		mutually_exclusive = {
+			focus = PUS_Moderate_strategy
+		}
+		prerequisite = {
+			focus = PUS_Unfinished_business
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#收复梅克伦堡
+		id = PUS_Attack_Mecklenburg
+		icon = GFX_PUS_Attack_Mecklenburg
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PUS_Water_with_blood
+		prerequisite = {
+			focus = PUS_Water_with_blood
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#进军汉诺威
+		id = PUS_Attack_Hanover
+		icon = GFX_PUS_Attack_Hanover
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PUS_Attack_Mecklenburg
+		prerequisite = {
+			focus = PUS_Attack_Mecklenburg
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#入驻魏玛
+		id = PUS_Attack_Weimar
+		icon = GFX_PUS_Attack_Mecklenburg
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = PUS_Water_with_blood
+		prerequisite = {
+			focus = PUS_Water_with_blood
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#攻击萨克森
+		id = PUS_Attack_Saxony
+		icon = GFX_PUS_Attack_Saxony
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = PUS_Attack_Weimar
+		prerequisite = {
+			focus = PUS_Attack_Weimar
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#对丹麦最后通牒
+		id = PUS_Ultimatum_with_Denmark
+		icon = GFX_PUS_Negotiations_with_Denmark
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = PUS_Attack_Saxony
+		prerequisite = {
+			focus = PUS_Attack_Saxony
+		}
+		prerequisite = {
+			focus = PUS_Attack_Hanover
+		}
+		completion_reward = {
+		}
+	}
+	focus = {#再统一北德意志
+		id = PUS_North_Germany_reunified
+		icon = GFX_PUS_North_Germany_reunified
+		cost = 5
+		x = -3
+		y = 1
+		relative_position_id = PUS_Ultimatum_with_Denmark
+		prerequisite = {
+			focus = PUS_Ultimatum_with_Denmark
+		}
+		prerequisite = {
+			focus = PUS_Negotiations_with_Denmark
+		}
+		completion_reward = {
 		}
 	}
 }

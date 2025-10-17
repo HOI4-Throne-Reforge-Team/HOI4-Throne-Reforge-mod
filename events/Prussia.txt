@@ -432,7 +432,7 @@ news_event = {
 					has_country_flag = Election_Winmer_SPP
 				}
 				PUS = {
-					clr_country_flag = Election_Winmer_SPP
+					
 					set_politics = {
 						ruling_party = social_democrat
 						last_election = "1936.6.18"
