@@ -5,6 +5,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/goals/DEN/NOT_PHOTO.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_denmark_GREENLAND"
+		textureFile = "gfx/interface/goals/DEN/GREENLAND.png"
+		legacy_lazy_load = no
+	}
 }
+
 
 
